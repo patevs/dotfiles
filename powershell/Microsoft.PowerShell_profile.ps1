@@ -14,7 +14,12 @@ Import-Module -Name posh-git
 Start-SshAgent
 
 # Setup alias'
+# thefuck
+$env:PYTHONIOENCODING = "utf-8"
+Invoke-Expression "$(thefuck --alias)"
+# git status
 Set-Alias -Name gs -Value get-gitstatus
+# list directory
 Set-Alias -Name ls -Value get-dirlist -option AllScope -Force
 function get-gitstatus { git status }
 function get-dirlist { lsd -a1 }
