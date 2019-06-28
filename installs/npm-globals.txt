@@ -1,0 +1,16 @@
+C:\Program Files\nodejs
++-- eslint@6.0.1
++-- g3l@10.0.26
++-- generator-h5bp@1.4.0
++-- generator-nm@5.0.0
++-- generator-node@2.6.0
++-- generator-node-typescript@4.4.1
++-- generator-webapp@4.0.0-6
++-- git-open@2.1.0
++-- gitmoji-cli@1.9.2
++-- npm@6.9.0
++-- ntl@3.2.4
++-- pnpm@3.5.3
++-- yarn@1.16.0
+`-- yo@2.0.6
+
