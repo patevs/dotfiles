@@ -1,8 +1,5 @@
-:: REM install.cmd 
-:: REM NPM global installs script
-
 @ECHO OFF
-ECHO Running NPM global installs script!
+ECHO Just Testing!
 
 REM # Unless already being reinvoked via cmd.exe, see if the batch
 REM # file is being run from PowerShell.
