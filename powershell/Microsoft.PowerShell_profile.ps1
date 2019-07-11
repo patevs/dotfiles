@@ -5,24 +5,45 @@
 #          @author patevs          #
 # -------------------------------- #
 
-#C:\tools\cmdermini\icons\cmder.ico
-
 # Import Posh-Git module
 Import-Module -Name posh-git
 
 # Start SSH agent
 Start-SshAgent
 
-# Setup alias'
-# thefuck
-$env:PYTHONIOENCODING = "utf-8"
-Invoke-Expression "$(thefuck --alias)"
-# git status
-Set-Alias -Name gs -Value get-gitstatus
-# list directory
-Set-Alias -Name ls -Value get-dirlist -option AllScope -Force
-function get-gitstatus { git status }
-function get-dirlist { lsd -a1 }
+#--------------#
+# Setup alias' #
+#--------------#
+
+# thefuck (https://github.com/nvbn/thefuck)
+# $env:PYTHONIOENCODING = "utf-8"
+# Invoke-Expression "$(thefuck --alias)"
+
+# Move to Desktop directory
+Set-Alias -Name desktop -Value moveDesktop
+Set-Alias -Name desk -Value moveDesktop
+function moveDesktop {
+  $desktopPath = $env:USERPROFILE + "\desktop"
+  Set-Location $desktopPath
+}
+
+# Print list of current directory contents
+Set-Alias -Name ls -Value getDirList -option AllScope -Force
+function getDirList { lsd -a1 }
+
+# Print Git status
+Set-Alias -Name gs -Value getGitStatus
+function getGitStatus { git status }
+
+# NPM
+Set-Alias -Name npl -Value getNpmLocals
+function getNpmLocals {
+  npm list --depth=0
+}
+Set-Alias -Name nplg -Value getNpmGlobals
+function getNpmGlobals {
+  npm list --global --depth=0
+}
 
 # Print a welcome message
 function printWelcome {
