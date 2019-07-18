@@ -51,7 +51,7 @@ ECHO. & ECHO [96m Upgrading PNPM: [0m & ECHO.
 
 CALL pnpm install --global pnpm
 
-ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
+ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 
 REM Print NPM global installs
 
