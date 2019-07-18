@@ -7,7 +7,7 @@ ECHO. & ECHO [92m Installing NPM Global Modules... [0m & ECHO.
 
 REM Linting and style check
 
-ECHO. & ECHO [96m Installing linting and style check modules: [0m & ECHO.
+ECHO [96m Installing linting and style check modules: [0m & ECHO.
 
 CALL npm install --global eslint
 CALL npm install --global jshint
