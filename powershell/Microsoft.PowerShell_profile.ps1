@@ -27,6 +27,13 @@ function moveDesktop {
   Set-Location $desktopPath
 }
 
+# Move to development directory (~\desktop\git)
+Set-Alias -Name dev -Value moveDev
+function moveDev {
+  $devPath = $env:USERPROFILE + "\desktop\git"
+  Set-Location $devPath
+}
+
 # Print list of current directory contents
 Set-Alias -Name ls -Value getDirList -option AllScope -Force
 function getDirList { lsd -a1 }
@@ -114,4 +121,4 @@ function prompt {
 #  Import-Module "$ChocolateyProfile" 
 #}
 
-# EOF
+# EOF #
