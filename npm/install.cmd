@@ -47,6 +47,8 @@ CALL npm install --global open-cli
 CALL npm install --global spaceholder
 CALL npm install --global trash-cli
 CALL npm install --global wifi-password-cli
+CALL npm install --global david
+CALL npm install --global jsome
 
 REM Yeoman and generators
 
@@ -54,6 +56,8 @@ ECHO. & ECHO [96m Installing Yeoman and Generators: [0m & ECHO.
 
 CALL npm install --global yo
 CALL npm install --global generator-nm
+CALL npm install --global generator-node
+CALL npm install --global generator-node-typescript
 
 REM Package Managers
 
