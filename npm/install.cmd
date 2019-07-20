@@ -49,6 +49,7 @@ CALL npm install --global trash-cli
 CALL npm install --global wifi-password-cli
 CALL npm install --global david
 CALL npm install --global jsome
+CALL npm install --global typescript
 
 REM Yeoman and generators
 
