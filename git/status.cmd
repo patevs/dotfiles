@@ -28,13 +28,13 @@ ECHO. & ECHO [96m Listing SubDirectories: [0m & ECHO.
 
 CALL dir /a:d /b
 
-ECHO. & ECHO [92m Checking Status of Projects: [0m & ECHO.
+ECHO. & ECHO [92m Checking Status of Git Projects... [0m & ECHO.
 
 :: Use ~fD for full path or nxD for just name
 :: for /f "delims=" %%D in ('dir /a:d /b') do echo %%~fD
 :: for /d %%D in (*) do echo %%~fD
-for /d %%D in (*) do echo %%~nxD & cd %%~nxD & git status
+for /d %%D in (*) do ECHO [96m %%~nxD [0m & ECHO. & cd %%~nxD & git status
 
-ECHO. & ECHO [92m Done! [0m & ECHO.
+ECHO. & ECHO [92m Done! [0m
 
 GOTO :EOF
