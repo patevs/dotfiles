@@ -60,7 +60,7 @@ ECHO. & ECHO [96m Installing Yeoman and Generators: [0m & ECHO.
 
 CALL npm install --global yo
 CALL npm install --global generator-nm
-CALL npm install --global generator-node
+REM :: CALL npm install --global generator-node
 CALL npm install --global generator-node-typescript
 
 REM Package Managers
