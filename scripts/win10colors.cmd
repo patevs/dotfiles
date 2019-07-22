@@ -1,3 +1,5 @@
+REM :: https://gist.github.com/mlocati/fdabcaeb8071d5c75a2d51712db24011#file-win10colors-cmd
+
 @echo off
 cls
 echo [101;93m STYLES [0m
