@@ -30,6 +30,24 @@ CALL dir /a:d /b
 
 ECHO. & ECHO [92m Checking Status of Git Projects... [0m
 
+:: ---------------------------------------------------------
+::Syntax
+::      FOR /D [/r] %%parameter IN (folder_set) DO command
+::
+::Key
+::   folder_set  :  A set of one or more folders enclosed in parenthesis (folder1,folder2).
+::                  Wildcards must be used.
+::
+::   command     :  The command to carry out, including any parameters.
+::                  This can be a single command, or if you enclose it
+::                  in (brackets), several commands, one per line.
+::
+::   %%parameter :  A replaceable parameter:
+::                  in a batch file use %%G (on the command line %G)
+::
+::   /r          :  Recurse into subfolders (see notes below)
+:: ---------------------------------------------------------
+
 :: Use ~fD for full path or nxD for just name
 :: for /f "delims=" %%D in ('dir /a:d /b') do echo %%~fD
 :: for /d %%D in (*) do echo %%~fD
