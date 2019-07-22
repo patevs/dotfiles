@@ -3,7 +3,7 @@ REM Script to install beets along with required dependencies
 REM Requires Python3 and pip to be installed
 
 CLS
-ECHO. & ECHO [92m Installing Beets and dependencies... [0m & ECHO.
+ECHO. & ECHO [92m Installing Beets and Required Dependencies... [0m & ECHO.
 
 REM Install beets
 CALL python -m pip install beets
@@ -13,7 +13,7 @@ REM Install required dependencies
 CALL python -m pip install discogs-client
 CALL python -m pip install pylast
 
-ECHO. & ECHO [92m Finished installing Beets and required dependencies! [0m & ECHO.
+ECHO. & ECHO [92m Finished Installing Beets and Required Dependencies! [0m & ECHO.
 
 REM Print pip installs
 
