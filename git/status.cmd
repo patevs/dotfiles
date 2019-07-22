@@ -27,8 +27,10 @@ ECHO %CURRENTDIR%
 ECHO. & ECHO [96m Listing Directory Contents: [0m & ECHO.
 
 REM :: CALL dir /a:d /b
-SET DIRCONTENTS = "dir /a:d /b"
-ECHO %DIRCONTENTS%
+:: Use ~fD for full path or nxD for just name
+:: for /f "delims=" %%D in ('dir /a:d /b') do echo %%~fD
+:: for /d %%D in (*) do echo %%~fD
+for /d %%D in (*) do echo %%~nxD
 
 ECHO. & ECHO [92m Done! [0m & ECHO.
 
