@@ -26,7 +26,9 @@ ECHO %CURRENTDIR%
 
 ECHO. & ECHO [96m Listing Directory Contents: [0m & ECHO.
 
-CALL dir /a:d /b
+REM :: CALL dir /a:d /b
+SET DIRCONTENTS = "dir /a:d /b"
+ECHO %DIRCONTENTS%
 
 ECHO. & ECHO [92m Done! [0m & ECHO.
 
