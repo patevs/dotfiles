@@ -5,8 +5,7 @@ REM Requires Node.js and NPM to be installed
 REM Verify Node.js and NPM are installed
 
 CLS
-ECHO. & ECHO [92m Verifying NodeJS and NPM Installations... [0m 
-REM & ECHO.
+ECHO. & ECHO [92m Verifying NodeJS and NPM Installations... [0m
 
 ECHO. & ECHO [96m NodeJS Installation: [0m & ECHO.
 
