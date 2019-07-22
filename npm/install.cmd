@@ -2,20 +2,22 @@
 REM Script to install global NPM modules
 REM Requires Node.js and NPM to be installed
 
+CLS
+ECHO. & ECHO [4mNPM Globals Install Script[0m
+
 REM Verify Node.js and NPM are installed
 
-CLS
 ECHO. & ECHO [92m Verifying NodeJS and NPM Installations... [0m
 
 ECHO. & ECHO [96m NodeJS Installation: [0m & ECHO.
 
 WHERE node
-IF %ERRORLEVEL% NEQ 0 ECHO node installation wasn't found... exiting! & GOTO :EOF
+IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m NodeJS installation could not be found... exiting! [0m & GOTO :EOF
 
 ECHO. & ECHO [96m NPM Installation: [0m & ECHO.
 
 WHERE npm
-IF %ERRORLEVEL% NEQ 0 ECHO npm installation wasn't found... exiting! & GOTO :EOF
+IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
 REM Begin install script
 
