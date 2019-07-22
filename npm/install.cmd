@@ -1,11 +1,11 @@
 @ECHO OFF
-REM Script to install global NPM modules
-REM Requires Node.js and NPM to be installed
+REM Script to install useful NPM global modules.
+REM Requires Node.js and NPM to be installed.
 
 CLS
-ECHO. & ECHO [4mNPM Globals Install Script[0m
+ECHO. & ECHO [4mNPM Global Modules Install Script[0m
 
-REM Verify Node.js and NPM are installed
+REM Verify Node.js and NPM are installed & can be found
 
 ECHO. & ECHO [92m Verifying NodeJS and NPM Installations... [0m
 
@@ -19,34 +19,36 @@ ECHO. & ECHO [96m NPM Installation: [0m & ECHO.
 WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
-REM Begin install script
+REM Begin install
 
-ECHO. & ECHO [92m Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
+ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
 
-REM Linting and style check
+REM Linting and Style Check
 
 ECHO [96m Installing Linting and Style Check Modules: [0m & ECHO.
 
 CALL npm install --global eslint
 CALL npm install --global jshint
 
-REM Git integrations
+REM Git Integrations
 
 ECHO. & ECHO [96m Installing Git Integration Modules: [0m & ECHO.
 
 CALL npm install --global g3l
 CALL npm install --global git-open
 CALL npm install --global gitmoji-cli
+CALL npm install --global add-gitignore
 
 REM Utilities
 
 ECHO. & ECHO [96m Installing Utility Modules: [0m & ECHO.
 
-CALL npm install --global fkill-cli
+REM :: CALL npm install --global fkill-cli
 CALL npm install --global ntl
 CALL npm install --global open-cli
-CALL npm install --global spaceholder
+REM :: CALL npm install --global spaceholder
 CALL npm install --global trash-cli
+REM :: CALL npm install --global empty-trash-cli
 CALL npm install --global wifi-password-cli
 CALL npm install --global david
 CALL npm install --global jsome
@@ -81,6 +83,8 @@ REM Print NPM global installs
 ECHO [96m Listing NPM Global Installs: [0m & ECHO.
 
 CALL npm list --global --depth=0
+
+REM :: CALL david -g # Check for outdated modules 
 
 ECHO [92m Done! [0m & ECHO.
 
