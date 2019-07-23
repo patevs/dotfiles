@@ -58,6 +58,7 @@ ECHO. & ECHO [96m Installing TypeScript and Utility Modules: [0m & ECHO.
 CALL npm install --global typescript
 CALL npm install --global typesync
 CALL npm install --global typed-install
+REM :: CALL npm install --global typescript-starter
 
 REM Development & System Utilities
 
@@ -79,6 +80,7 @@ CALL npm install --global yo
 CALL npm install --global generator-nm
 REM :: CALL npm install --global generator-node
 CALL npm install --global generator-node-typescript
+CALL npm install --global generator-typescript-starter
 
 REM Alternative Package Managers
 
