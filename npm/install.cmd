@@ -45,11 +45,11 @@ ECHO. & ECHO [96m Installing NodeJS Utility Modules: [0m & ECHO.
 
 CALL npm install --global ntl
 CALL npm install --global david
-CALL npm install --global np
+REM :: CALL npm install --global np
 REM :: windows-build-tools install must be run in admin prompt
 REM :: CALL npm install --global windows-build-tools
 REM :: ndb requires windows-build-tools
-CALL npm install --global ndb
+REM :: CALL npm install --global ndb
 
 REM TypeScript and Utilities
 
@@ -80,7 +80,7 @@ CALL npm install --global yo
 CALL npm install --global generator-nm
 REM :: CALL npm install --global generator-node
 CALL npm install --global generator-node-typescript
-CALL npm install --global generator-typescript-starter
+REM :: CALL npm install --global generator-typescript-starter
 
 REM Alternative Package Managers
 
