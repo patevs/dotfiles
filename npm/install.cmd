@@ -66,11 +66,11 @@ ECHO. & ECHO [96m Installing Development and System Utility Modules: [0m & ECH
 
 CALL npm install --global fkill-cli
 CALL npm install --global open-cli
-CALL npm install --global spaceholder
+REM :: CALL npm install --global spaceholder
 CALL npm install --global trash-cli
 CALL npm install --global empty-trash-cli
 CALL npm install --global wifi-password-cli
-CALL npm install --global jsome
+REM :: CALL npm install --global jsome
 
 REM Yeoman and generators
 
