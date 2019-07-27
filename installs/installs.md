@@ -59,19 +59,3 @@
 - [Caprine](https://sindresorhus.com/caprine/)
 
 ---
-
-## `bat` Install & Setup
-
-- [`sharkdp/bat`](https://github.com/sharkdp/bat)
-
-To install `bat` run the following:
-
-```powershell
-# Install with chocolately
-$ choco install bat -y
-# Verify installation
-$ bat --version # or $ bat -V
-# bat 0.11.0
-```
-
----
