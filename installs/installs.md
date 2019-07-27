@@ -45,9 +45,13 @@
 
 ## Media/Music
 
+- [Aimp](https://chocolatey.org/packages/aimp)
 - [Dopamine](http://www.digimezzo.com/software/dopamine/)
 - [Kodi](https://kodi.tv/)
+  - [chocolatey/kodi](https://chocolatey.org/packages/kodi)
 - [Picard](https://picard.musicbrainz.org/)
+- [HermesPod](http://hermespod.com/)
+- [Samsumg Kies](https://chocolatey.org/packages/samsung-kies)
 
 ## Messenger Client
 
