@@ -52,6 +52,7 @@
 - [Picard](https://picard.musicbrainz.org/)
 - [HermesPod](http://hermespod.com/)
 - [Samsumg Kies](https://chocolatey.org/packages/samsung-kies)
+- [SideSync](https://chocolatey.org/packages/sidesync)
 
 ## Messenger Client
 
