@@ -16,9 +16,9 @@ CALL python -m pip install mps-youtube
 ECHO. & ECHO [92m Finished Installing MPS-YouTube and Required Dependencies! [0m & ECHO.
 
 REM Set mpsyt configuartion
-CALL mpsyt set order views
-CALL mpsyt set encoder 3
-CALL mpsyt set columns user:14 date rating views likes dislikes category:9
+REM CALL mpsyt set order views
+REM CALL mpsyt set encoder 3
+REM CALL mpsyt set columns user:14 date rating views likes dislikes category:9
 
 REM Print pip installs
 
