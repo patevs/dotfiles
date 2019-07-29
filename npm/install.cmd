@@ -53,10 +53,10 @@ REM :: CALL npm install --global ndb
 
 REM TypeScript and Utilities
 
-ECHO. & ECHO [96m Installing TypeScript and Utility Modules: [0m & ECHO.
+REM :: ECHO. & ECHO [96m Installing TypeScript and Utility Modules: [0m & ECHO.
 
-CALL npm install --global typescript
-CALL npm install --global typesync
+REM :: CALL npm install --global typescript
+REM :: CALL npm install --global typesync
 REM :: CALL npm install --global typed-install
 REM :: CALL npm install --global typescript-starter
 
@@ -79,7 +79,7 @@ ECHO. & ECHO [96m Installing Yeoman and Generators: [0m & ECHO.
 CALL npm install --global yo
 CALL npm install --global generator-nm
 REM :: CALL npm install --global generator-node
-CALL npm install --global generator-node-typescript
+REM :: CALL npm install --global generator-node-typescript
 REM :: CALL npm install --global generator-typescript-starter
 
 REM Alternative Package Managers
