@@ -86,13 +86,12 @@ REM Alternative Package Managers
 
 ECHO. & ECHO [96m Installing Alternative Package Managers: [0m & ECHO.
 
-CALL npm install --global yarn
+REM :: CALL npm install --global yarn
 CALL npm install --global pnpm
 
 REM Upgrade pnpm
 
 ECHO. & ECHO [96m Upgrading PNPM: [0m & ECHO.
-
 CALL pnpm install --global pnpm
 
 ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
@@ -103,7 +102,11 @@ ECHO [96m Listing NPM Global Installs: [0m & ECHO.
 
 CALL npm list --global --depth=0
 
-REM :: CALL david -g # Check for outdated modules 
+REM Check for outdated modules
+
+ECHO [96m Checking for Outdated Modules: [0m & ECHO.
+
+CALL david -g
 
 ECHO [92m Done! [0m & ECHO.
 
