@@ -64,7 +64,7 @@ REM Development & System Utilities
 
 ECHO. & ECHO [96m Installing Development and System Utility Modules: [0m & ECHO.
 
-CALL npm install --global fkill-cli
+REM :: CALL npm install --global fkill-cli
 CALL npm install --global open-cli
 REM :: CALL npm install --global spaceholder
 CALL npm install --global trash-cli
