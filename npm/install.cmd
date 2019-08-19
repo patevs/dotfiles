@@ -45,6 +45,7 @@ ECHO. & ECHO [96m Installing NodeJS Utility Modules: [0m & ECHO.
 
 CALL npm install --global ntl
 CALL npm install --global david
+CALL npm install --global cost-of-modules
 REM :: CALL npm install --global np
 REM :: windows-build-tools install must be run in admin prompt
 REM :: CALL npm install --global windows-build-tools
@@ -64,12 +65,15 @@ REM Development & System Utilities
 
 ECHO. & ECHO [96m Installing Development and System Utility Modules: [0m & ECHO.
 
-REM :: CALL npm install --global fkill-cli
 CALL npm install --global open-cli
-REM :: CALL npm install --global spaceholder
 CALL npm install --global trash-cli
 CALL npm install --global empty-trash-cli
 CALL npm install --global wifi-password-cli
+CALL npm install --global strapi
+REM :: mobicon-cli depends on GraphicsMagick being installed
+CALL npm install --global mobicon-cli
+REM :: CALL npm install --global fkill-cli
+REM :: CALL npm install --global spaceholder
 REM :: CALL npm install --global jsome
 
 REM Yeoman and generators
