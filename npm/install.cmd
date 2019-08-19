@@ -81,7 +81,7 @@ CALL npm install --global open-cli
 CALL npm install --global trash-cli
 CALL npm install --global empty-trash-cli
 CALL npm install --global wifi-password-cli
-CALL npm install --global @rafaelrinaldi/whereami
+REM :: CALL npm install --global @rafaelrinaldi/whereami
 REM :: CALL npm install --global fkill-cli
 
 REM Yeoman and generators
