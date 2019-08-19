@@ -62,20 +62,26 @@ REM :: CALL npm install --global typesync
 REM :: CALL npm install --global typed-install
 REM :: CALL npm install --global typescript-starter
 
-REM Development & System Utilities
+REM Development Utilities
 
-ECHO. & ECHO [96m Installing Development and System Utility Modules: [0m & ECHO.
+ECHO. & ECHO [96m Installing Development Utility Modules: [0m & ECHO.
+
+CALL npm install --global strapi
+REM :: mobicon-cli depends on GraphicsMagick being installed
+CALL npm install --global mobicon-cli
+CALL npm install --global faviator
+REM :: CALL npm install --global spaceholder
+REM :: CALL npm install --global jsome
+
+REM System Utilities
+
+ECHO. & ECHO [96m Installing System Utility Modules: [0m & ECHO.
 
 CALL npm install --global open-cli
 CALL npm install --global trash-cli
 CALL npm install --global empty-trash-cli
 CALL npm install --global wifi-password-cli
-CALL npm install --global strapi
-REM :: mobicon-cli depends on GraphicsMagick being installed
-CALL npm install --global mobicon-cli
 REM :: CALL npm install --global fkill-cli
-REM :: CALL npm install --global spaceholder
-REM :: CALL npm install --global jsome
 
 REM Yeoman and generators
 
