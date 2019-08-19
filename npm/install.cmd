@@ -68,8 +68,8 @@ ECHO. & ECHO [96m Installing Development Utility Modules: [0m & ECHO.
 
 CALL npm install --global strapi
 REM :: mobicon-cli depends on GraphicsMagick being installed
-CALL npm install --global mobicon-cli
-CALL npm install --global faviator
+REM :: CALL npm install --global mobicon-cli
+REM :: CALL npm install --global faviator
 REM :: CALL npm install --global spaceholder
 REM :: CALL npm install --global jsome
 
