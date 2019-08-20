@@ -67,6 +67,8 @@ REM Development Utilities
 ECHO. & ECHO [96m Installing Development Utility Modules: [0m & ECHO.
 
 CALL npm install --global strapi
+REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
+CALL npm install --global font-awesome-svg-png
 REM :: mobicon-cli depends on GraphicsMagick being installed
 REM :: CALL npm install --global mobicon-cli
 REM :: CALL npm install --global faviator
