@@ -45,6 +45,11 @@ ECHO. & ECHO [96m Installing NodeJS Utility Modules: [0m & ECHO.
 
 CALL npm install --global ntl
 CALL npm install --global david
+REM :: CALL npm install --global dependency-check
+REM :: CALL npm install --global npm-check-updates
+REM :: CALL npm install --global npe
+REM :: CALL npm install --global package-json-to-readme
+REM :: CALL npm install --global module-init
 REM :: CALL npm install --global cost-of-modules
 REM :: CALL npm install --global npkill
 REM :: CALL npm install --global np
@@ -66,7 +71,7 @@ REM Development Utilities
 
 ECHO. & ECHO [96m Installing Development Utility Modules: [0m & ECHO.
 
-CALL npm install --global strapi
+CALL npm install --global strapi@beta
 REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
 CALL npm install --global font-awesome-svg-png
 REM :: mobicon-cli depends on GraphicsMagick being installed
