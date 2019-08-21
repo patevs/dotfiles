@@ -28,7 +28,7 @@ REM Linting and Style Check
 ECHO [96m Installing Linting and Style Check Modules: [0m & ECHO.
 
 CALL npm install --global eslint
-CALL npm install --global jshint
+REM :: CALL npm install --global jshint
 
 REM Git Integrations and Utilities
 
@@ -73,7 +73,7 @@ ECHO. & ECHO [96m Installing Development Utility Modules: [0m & ECHO.
 
 CALL npm install --global strapi@beta
 REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
-CALL npm install --global font-awesome-svg-png
+REM :: CALL npm install --global font-awesome-svg-png
 REM :: mobicon-cli depends on GraphicsMagick being installed
 REM :: CALL npm install --global mobicon-cli
 REM :: CALL npm install --global faviator
@@ -95,8 +95,8 @@ REM Yeoman and generators
 
 ECHO. & ECHO [96m Installing Yeoman and Generators: [0m & ECHO.
 
-CALL npm install --global yo
-CALL npm install --global generator-nm
+REM :: CALL npm install --global yo
+REM :: CALL npm install --global generator-nm
 REM :: CALL npm install --global generator-node
 REM :: CALL npm install --global generator-node-typescript
 REM :: CALL npm install --global generator-typescript-starter
@@ -105,7 +105,7 @@ REM Alternative Package Managers
 
 ECHO. & ECHO [96m Installing Alternative Package Managers: [0m & ECHO.
 
-REM :: CALL npm install --global yarn
+CALL npm install --global yarn
 CALL npm install --global pnpm
 
 REM Upgrade pnpm
