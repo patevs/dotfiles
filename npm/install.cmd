@@ -73,7 +73,7 @@ ECHO. & ECHO [96m Installing Development Utility Modules: [0m & ECHO.
 
 CALL npm install --global strapi@beta
 REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
-REM :: CALL npm install --global font-awesome-svg-png
+CALL npm install --global font-awesome-svg-png
 REM :: mobicon-cli depends on GraphicsMagick being installed
 REM :: CALL npm install --global mobicon-cli
 REM :: CALL npm install --global faviator
@@ -127,6 +127,6 @@ ECHO [96m Checking for Outdated Modules: [0m & ECHO.
 
 CALL david -g
 
-ECHO [92m Done! [0m & ECHO.
+ECHO [42m Done! [0m & ECHO.
 
 GOTO :EOF
