@@ -102,9 +102,11 @@ function prompt {
     $curPath = "~" + $curPath.SubString($Home.Length)
   }
 
+  # Write current path
+  Write-Host $curPath -NoNewline -ForegroundColor Blue
+  Write-Host " : " -NoNewline -ForegroundColor DarkGray
+
   # Write date & time
-  # Write-Host $curPath -NoNewline -ForegroundColor Blue
-  # Write-Host " : " -NoNewline -ForegroundColor DarkGray
   # Write-Host (Get-Date -Format G) -NoNewline -ForegroundColor DarkMagenta
   # Write-Host " :" -NoNewline -ForegroundColor DarkGray
   
