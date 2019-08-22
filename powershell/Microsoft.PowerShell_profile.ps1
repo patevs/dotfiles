@@ -103,10 +103,10 @@ function prompt {
   }
 
   # Write date & time
-  Write-Host $curPath -NoNewline -ForegroundColor Blue
-  Write-Host " : " -NoNewline -ForegroundColor DarkGray
-  Write-Host (Get-Date -Format G) -NoNewline -ForegroundColor DarkMagenta
-  Write-Host " :" -NoNewline -ForegroundColor DarkGray
+  # Write-Host $curPath -NoNewline -ForegroundColor Blue
+  # Write-Host " : " -NoNewline -ForegroundColor DarkGray
+  # Write-Host (Get-Date -Format G) -NoNewline -ForegroundColor DarkMagenta
+  # Write-Host " :" -NoNewline -ForegroundColor DarkGray
   
   # Write posh-git status
   Write-VcsStatus
