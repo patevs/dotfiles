@@ -104,7 +104,7 @@ function prompt {
 
   # Write current path
   Write-Host $curPath -NoNewline -ForegroundColor Blue
-  Write-Host " : " -NoNewline -ForegroundColor DarkGray
+  Write-Host " :" -NoNewline -ForegroundColor DarkGray
 
   # Write date & time
   # Write-Host (Get-Date -Format G) -NoNewline -ForegroundColor DarkMagenta
