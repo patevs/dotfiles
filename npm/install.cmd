@@ -45,12 +45,13 @@ ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 
 CALL npm install --global ntl
 CALL npm install --global david
-CALL npm install --global dependency-check
 CALL npm install --global npm-check-updates
 CALL npm install --global npe
 CALL npm install --global package-json-to-readme
 CALL npm install --global cost-of-modules
 CALL npm install --global npkill
+CALL npm install --global how-to-npm
+REM :: CALL npm install --global dependency-check
 REM :: CALL npm install --global module-init
 REM :: CALL npm install --global np
 REM :: windows-build-tools install must be run in admin prompt
