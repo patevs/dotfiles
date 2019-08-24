@@ -74,6 +74,7 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 CALL npm install --global strapi@beta
 CALL npm install --global create-react-app
+CALL npm install --global imagemin-cli
 REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
 REM :: CALL npm install --global font-awesome-svg-png
 REM :: mobicon-cli depends on GraphicsMagick being installed
