@@ -42,6 +42,7 @@
 - [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
 - [Glary Utilities](https://www.glarysoft.com/)
 - [Speccy](https://www.ccleaner.com/speccy)
+- [OptiPNG](https://chocolatey.org/packages/OptiPNG)
 
 ## Media/Music
 
