@@ -51,6 +51,7 @@ CALL npm install --global package-json-to-readme
 CALL npm install --global cost-of-modules
 CALL npm install --global npkill
 CALL npm install --global how-to-npm
+CALL npm install --global pm2
 REM :: CALL npm install --global dependency-check
 REM :: CALL npm install --global module-init
 REM :: CALL npm install --global np
