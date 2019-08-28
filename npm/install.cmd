@@ -38,6 +38,7 @@ CALL npm install --global g3l
 CALL npm install --global git-open
 CALL npm install --global gitmoji-cli
 CALL npm install --global add-gitignore
+CALL npm install --global git-labelmaker
 
 REM NodeJS Utilities
 
@@ -77,6 +78,7 @@ CALL npm install --global strapi@beta
 CALL npm install --global create-react-app
 CALL npm install --global imagemin-cli
 CALL npm install --global licensed
+CALL npm install --global viewport-list-cli
 REM :: CALL npm install --global korkut
 REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
 REM :: CALL npm install --global font-awesome-svg-png
