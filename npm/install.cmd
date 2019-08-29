@@ -39,7 +39,7 @@ CALL npm install --global git-open
 CALL npm install --global gitmoji-cli
 CALL npm install --global add-gitignore
 CALL npm install --global git-labelmaker
-CALL npm install --global lint-staged
+REM :: CALL npm install --global lint-staged
 
 REM NodeJS Utilities
 
