@@ -27,7 +27,7 @@ REM Linting and Style Check
 
 ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
 
-CALL npm install --global eslint
+REM :: CALL npm install --global eslint
 REM :: CALL npm install --global jshint
 
 REM Git Integrations and Utilities
@@ -36,24 +36,24 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
 CALL npm install --global g3l
 CALL npm install --global git-open
-CALL npm install --global gitmoji-cli
-CALL npm install --global add-gitignore
-CALL npm install --global git-labelmaker
+REM :: CALL npm install --global gitmoji-cli
+REM :: CALL npm install --global add-gitignore
+REM :: CALL npm install --global git-labelmaker
 REM :: CALL npm install --global lint-staged
 
 REM NodeJS Utilities
 
 ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 
+CALL npm install --global pm2
 CALL npm install --global ntl
 CALL npm install --global david
 CALL npm install --global npm-check-updates
-CALL npm install --global npe
-CALL npm install --global package-json-to-readme
-CALL npm install --global cost-of-modules
-CALL npm install --global npkill
-CALL npm install --global how-to-npm
-CALL npm install --global pm2
+REM :: CALL npm install --global npe
+REM :: CALL npm install --global package-json-to-readme
+REM :: CALL npm install --global cost-of-modules
+REM :: CALL npm install --global npkill
+REM :: CALL npm install --global how-to-npm
 REM :: CALL npm install --global dependency-check
 REM :: CALL npm install --global module-init
 REM :: CALL npm install --global np
@@ -75,11 +75,11 @@ REM Development Utilities
 
 ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
-CALL npm install --global strapi@beta
-CALL npm install --global create-react-app
 CALL npm install --global imagemin-cli
-CALL npm install --global licensed
-CALL npm install --global viewport-list-cli
+REM :: CALL npm install --global strapi@beta
+REM :: CALL npm install --global create-react-app
+REM :: CALL npm install --global licensed
+REM :: CALL npm install --global viewport-list-cli
 REM :: CALL npm install --global korkut
 REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
 REM :: CALL npm install --global font-awesome-svg-png
@@ -93,10 +93,10 @@ REM System Utilities
 
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
-CALL npm install --global open-cli
 CALL npm install --global trash-cli
 CALL npm install --global empty-trash-cli
-CALL npm install --global wifi-password-cli
+REM :: CALL npm install --global open-cli
+REM :: CALL npm install --global wifi-password-cli
 REM :: CALL npm install --global @rafaelrinaldi/whereami
 REM :: CALL npm install --global fkill-cli
 
