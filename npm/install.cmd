@@ -25,7 +25,7 @@ ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... 
 
 REM Linting and Style Check
 
-ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
+REM :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
 
 REM :: CALL npm install --global eslint
 REM :: CALL npm install --global jshint
@@ -45,10 +45,10 @@ REM NodeJS Utilities
 
 ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 
-CALL npm install --global pm2
 CALL npm install --global ntl
 CALL npm install --global david
 CALL npm install --global npm-check-updates
+REM :: CALL npm install --global pm2
 REM :: CALL npm install --global npe
 REM :: CALL npm install --global package-json-to-readme
 REM :: CALL npm install --global cost-of-modules
@@ -102,7 +102,7 @@ REM :: CALL npm install --global fkill-cli
 
 REM Yeoman and generators
 
-ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
+REM :: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
 REM :: CALL npm install --global yo
 REM :: CALL npm install --global generator-nm
@@ -112,15 +112,15 @@ REM :: CALL npm install --global generator-typescript-starter
 
 REM Alternative Package Managers
 
-ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
+REM :: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
-CALL npm install --global yarn
-CALL npm install --global pnpm
+REM :: CALL npm install --global yarn
+REM :: CALL npm install --global pnpm
 
 REM Upgrade pnpm
 
-ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-CALL pnpm install --global pnpm
+REM :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
+REM :: CALL pnpm install --global pnpm
 
 ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 
