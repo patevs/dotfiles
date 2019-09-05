@@ -76,6 +76,7 @@ REM Development Utilities
 ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 CALL npm install --global imagemin-cli
+CALL npm install --global stacks-cli
 REM :: CALL npm install --global strapi@beta
 REM :: CALL npm install --global create-react-app
 REM :: CALL npm install --global licensed
