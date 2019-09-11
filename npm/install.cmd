@@ -36,8 +36,8 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
 CALL npm install --global g3l
 CALL npm install --global git-open
+CALL npm install --global add-gitignore
 REM :: CALL npm install --global gitmoji-cli
-REM :: CALL npm install --global add-gitignore
 REM :: CALL npm install --global git-labelmaker
 REM :: CALL npm install --global lint-staged
 
@@ -73,9 +73,9 @@ REM :: CALL npm install --global typescript-starter
 
 REM Development Utilities
 
-ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+REM :: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
-CALL npm install --global stacks-cli
+REM :: CALL npm install --global stacks-cli
 REM :: CALL npm install --global imagemin-cli
 REM :: CALL npm install --global strapi@beta
 REM :: CALL npm install --global create-react-app
@@ -103,9 +103,10 @@ REM :: CALL npm install --global fkill-cli
 
 REM Yeoman and generators
 
-REM :: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
-REM :: CALL npm install --global yo
+CALL npm install --global yo
+CALL npm install --global generator-h5bp
 REM :: CALL npm install --global generator-nm
 REM :: CALL npm install --global generator-node
 REM :: CALL npm install --global generator-node-typescript
