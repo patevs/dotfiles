@@ -103,11 +103,12 @@ REM :: CALL npm install --global fkill-cli
 
 REM Yeoman and generators
 
-ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
+REM :: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
-CALL npm install --global yo
+REM :: CALL npm install --global yo
+
 REM HTML/Frontend
-CALL npm install --global generator-h5bp
+REM :: CALL npm install --global generator-h5bp
 REM :: CALL npm install --global generator-webapp
 
 REM JavaScript/Node
