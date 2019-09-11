@@ -109,9 +109,12 @@ CALL npm install --global yo
 REM HTML/Frontend
 CALL npm install --global generator-h5bp
 REM :: CALL npm install --global generator-webapp
-REM JavaScript
+
+REM JavaScript/Node
 REM :: CALL npm install --global generator-nm
 REM :: CALL npm install --global generator-node
+
+REM Typescript
 REM :: CALL npm install --global generator-node-typescript
 REM :: CALL npm install --global generator-typescript-starter
 
