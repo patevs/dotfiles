@@ -115,7 +115,9 @@ REM :: CALL npm install --global generator-nm
 REM :: CALL npm install --global generator-node
 
 REM Typescript
+REM :: (Jest)
 REM :: CALL npm install --global generator-node-typescript
+REM :: (Ava)
 REM :: CALL npm install --global generator-typescript-starter
 
 REM Alternative Package Managers
