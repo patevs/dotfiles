@@ -112,6 +112,7 @@ REM :: CALL npm install --global generator-webapp
 
 REM JavaScript/Node
 REM :: CALL npm install --global generator-nm
+REM :: (Jest/Coveralls)
 REM :: CALL npm install --global generator-node
 
 REM Typescript
