@@ -111,6 +111,7 @@ CALL npm install --global generator-h5bp
 REM :: CALL npm install --global generator-webapp
 
 REM JavaScript/Node
+REM :: (Ava/Codecov)
 REM :: CALL npm install --global generator-nm
 REM :: (Jest/Coveralls)
 REM :: CALL npm install --global generator-node
