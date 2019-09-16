@@ -37,7 +37,7 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 CALL npm install --global g3l
 CALL npm install --global git-open
 CALL npm install --global add-gitignore
-REM :: CALL npm install --global gitmoji-cli
+CALL npm install --global gitmoji-cli
 REM :: CALL npm install --global git-labelmaker
 REM :: CALL npm install --global lint-staged
 
@@ -55,7 +55,6 @@ REM :: CALL npm install --global cost-of-modules
 REM :: CALL npm install --global npkill
 REM :: CALL npm install --global how-to-npm
 REM :: CALL npm install --global dependency-check
-REM :: CALL npm install --global module-init
 REM :: CALL npm install --global np
 REM :: windows-build-tools install must be run in admin prompt
 REM :: CALL npm install --global windows-build-tools
