@@ -82,6 +82,8 @@ function printWelcome {
   "
 }
 printWelcome
+dev
+lsd
 
 # Test if running as administrator
 # http://serverfault.com/questions/95431
