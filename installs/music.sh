@@ -27,34 +27,34 @@ NC='\033[0m' # No Color
 
 clear
 
-printf "\n\t${GREEN}music.sh${NC}\n\n"
+printf "\n ---- ${GREEN}music.sh${NC} ---- \n"
 
 # printf "\nRunning music.sh\n"
-printf "\nChecking Requirements...\n\n"
+printf "\n${LIGHT_CYAN}Checking Requirements...${NC}\n\n"
 
 # Python
 command -v python >/dev/null 2>&1 || { 
   echo >&2 "I require python but it's not installed.  Aborting."; exit 1; 
 }
-printf " * Python: "
+printf " * ${LIGHT_BLUE}Python${NC}: "
 python -V
 
 # pip
 command -v pip >/dev/null 2>&1 || { 
   echo >&2 "I require pip but it's not installed.  Aborting."; exit 1; 
 }
-printf " * pip: "
+printf " * ${LIGHT_BLUE}pip: "
 pip -V
 
 # Start install
 printf "\nRequirements Satisified!\n Starting install...\n"
 # install beets
-printf " * Installing Beets..."
+# printf " * Installing Beets..."
 # Install beets
 # python -m pip install beets
 
 # Install required dependencies
-printf " * Installing Plugin Dependencies..."
+# printf " * Installing Plugin Dependencies..."
 # python -m pip install discogs-client
 # python -m pip install pylast
 
