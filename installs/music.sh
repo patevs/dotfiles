@@ -43,14 +43,14 @@ python -V
 command -v pip >/dev/null 2>&1 || { 
   echo >&2 "I require pip but it's not installed.  Aborting."; exit 1; 
 }
-printf " * ${LIGHT_BLUE}PIP${NC} : "
+printf " * ${LIGHT_BLUE}PIP${NC}    : "
 pip -V
 
 # ack
 command -v ack >/dev/null 2>&1 || { 
   echo >&2 "I require ack but it's not installed.  Aborting."; exit 1; 
 }
-printf " * ${LIGHT_BLUE}ACK${NC} : "
+printf " * ${LIGHT_BLUE}ACK${NC}    : "
 ack --version | ack ack
 
 
@@ -72,7 +72,7 @@ printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
 python -m pip install colorama
 python -m pip install youtube_dl
 # Install mps-youtube
-# python -m pip install mps-youtube
+python -m pip install mps-youtube
 
 printf "\n${LIGHT_CYAN}PIP List...${NC}\n\n"
 # printf "  * running ${PURPLE}pip list${NC}\n\n"
