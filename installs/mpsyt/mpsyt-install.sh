@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# music.sh
+# mpsyt-install.sh
 
 # Script to install mps-youtube along with required dependencies
 # mpsyt and set configuration.

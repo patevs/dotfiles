@@ -52,12 +52,8 @@ printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
 
 # Install mps-youtube
 bash mpsyt/mpsyt-install.sh
-
-# install beets
-# python -m pip install beets
-# printf " * Installing Plugin Dependencies..."
-# python -m pip install discogs-client
-# python -m pip install pylast
+# Install beets
+bash beets/beets-install.sh
 
 # Print pip installs
 # printf "\n${LIGHT_CYAN}PIP List...${NC}\n\n"
