@@ -5,7 +5,7 @@
 # example of using arguments to a script
 # echo "Total number of arguments is $#" 
 
-printf "\nInstall.sh\n"
+printf "\nInstalls.sh\n"
 
 printf "\nChecking Installs...\n\n"
 
