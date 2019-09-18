@@ -26,7 +26,7 @@ LIGHT_CYAN='\033[1;36m'
 WHITE='\033[1;37m'
 NC='\033[0m' # No Color
 
-printf "\n ---- ${GREEN}mpsyt-install.sh${NC} ---- \n"
+printf "\n ---- ${GREEN}mpsyt-install.sh${NC} ---- \n\n"
 
 # Install dependencies
 python -m pip install colorama
