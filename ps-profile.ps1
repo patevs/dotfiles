@@ -85,6 +85,10 @@ printWelcome
 dev
 lsd
 
+# Write date & time
+# Write-Host (Get-Date -Format G) -NoNewline -ForegroundColor DarkMagenta
+# Write-Host " :" -NoNewline -ForegroundColor DarkGray
+
 # Test if running as administrator
 # http://serverfault.com/questions/95431
 function Test-Administrator {
