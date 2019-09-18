@@ -6,6 +6,7 @@
 # mpsyt and set configuration.
 
 # Requires Python3 and pip to be installed
+# also requires mpv & ffmpeg
 
 # Define color codes
 
