@@ -36,18 +36,18 @@ printf "\n${LIGHT_CYAN}Checking Requirements...${NC}\n\n"
 command -v python >/dev/null 2>&1 || { 
   echo >&2 "I require python but it's not installed.  Aborting."; exit 1; 
 }
-printf " * ${LIGHT_BLUE}Python${NC}: "
+printf " * ${LIGHT_BLUE}Python${NC} : "
 python -V
 
 # pip
 command -v pip >/dev/null 2>&1 || { 
   echo >&2 "I require pip but it's not installed.  Aborting."; exit 1; 
 }
-printf " * ${LIGHT_BLUE}pip: "
+printf " * ${LIGHT_BLUE}pip${NC} : "
 pip -V
 
 # Start install
-printf "\nRequirements Satisified!\n Starting install...\n"
+printf "\n${GREEN}Requirements Satisified!${NC}\n Starting install..."
 # install beets
 # printf " * Installing Beets..."
 # Install beets
