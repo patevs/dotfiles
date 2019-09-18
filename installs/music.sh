@@ -58,9 +58,27 @@ printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
 # Start install
 # printf "${PURPLE} Starting install...${NC}\n\n"
 
+# Install dependencies
+python -m pip install colorama
+# $ python -m pip install youtube_dl
+
 # is beets installed already?
-printf "  * running ${PURPLE}pip list${NC}\n\n"
-pip list
+# printf "  * running ${PURPLE}pip list${NC}\n\n"
+# pip list
+
+#COLORAMA=$(pip list | grep colorama)
+# printf "${COLORAMA}"
+
+#if [ -z "$COLORAMA" ]
+#then
+#      echo "\$colorama is installed!"
+#else
+#      echo "\$colorama is NOT installed!"
+#fi
+
+# Install mps-youtube
+
+# $ python -m pip install mps-youtube
 
 # install beets
 # printf " * Installing Beets..."
