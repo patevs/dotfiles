@@ -99,6 +99,8 @@ CALL npm install --global wifi-password-cli
 REM :: CALL npm install --global open-cli
 REM :: CALL npm install --global @rafaelrinaldi/whereami
 REM :: CALL npm install --global fkill-cli
+REM :: npm install --global pageres-cli
+REM :: npm install -g vtop
 
 REM Yeoman and generators
 
