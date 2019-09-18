@@ -73,21 +73,17 @@ python -m pip install colorama
 python -m pip install youtube_dl
 # Install mps-youtube
 python -m pip install mps-youtube
+# configure mpsyt
+# install beets
+# python -m pip install beets
+# printf " * Installing Plugin Dependencies..."
+# python -m pip install discogs-client
+# python -m pip install pylast
 
+# Print pip installs
 printf "\n${LIGHT_CYAN}PIP List...${NC}\n\n"
 # printf "  * running ${PURPLE}pip list${NC}\n\n"
 pip list
 
-# install beets
-# printf " * Installing Beets..."
-# Install beets
-# python -m pip install beets
-# Install required dependencies
-# printf " * Installing Plugin Dependencies..."
-# python -m pip install discogs-client
-# python -m pip install pylast
-# Print pip installs
-# $ python -m pip list
-# install mpsyt & configure
 
-printf "\n${GREEN}Done!${NC}\n"
+printf "\n  --  ${GREEN}DONE!${NC}  --  \n"
