@@ -21,6 +21,29 @@ pip -V
 
 # install beets
 
+# Script to install beets along with required dependencies
+# Requires Python3 and pip to be installed
+
+clear
+
+# ECHO. & ECHO [92m Installing Beets and Required Dependencies... [0m & ECHO.
+
+# Install beets
+# python -m pip install beets
+
+# Install required dependencies
+
+# python -m pip install discogs-client
+# python -m pip install pylast
+
+# ECHO. & ECHO [92m Finished Installing Beets and Required Dependencies! [0m & ECHO.
+
+# Print pip installs
+
+# ECHO [96m pip installs: [0m & ECHO.
+
+# CALL python -m pip list
+
 # install mpsyt & configure
 
 printf "\nDone"
