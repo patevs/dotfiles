@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# install.sh
+# check-env.sh
 
 # example of using arguments to a script
 # echo "Total number of arguments is $#" 
 
-printf "\nInstalls.sh\n"
-
-printf "\nChecking Installs...\n\n"
+printf "\check-env.sh\n"
+printf "\nChecking Environment...\n\n"
 
 # $ command -v foo >/dev/null 2>&1 || { echo >&2 "I require foo but it's not installed.  Aborting."; exit 1; }
 # $ type foo >/dev/null 2>&1 || { echo >&2 "I require foo but it's not installed.  Aborting."; exit 1; }
