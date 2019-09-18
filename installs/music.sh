@@ -86,4 +86,4 @@ printf "\n${LIGHT_CYAN}PIP List...${NC}\n\n"
 pip list
 
 
-printf "\n  --  ${GREEN}DONE!${NC}  --  \n"
+printf "\n${GREEN}DONE!${NC}\n"
