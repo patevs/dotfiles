@@ -33,11 +33,18 @@ command -v python >/dev/null 2>&1 || {
 printf " * Python: "
 python -V
 
-# pip
+# PIP
 command -v pip >/dev/null 2>&1 || { 
   echo >&2 "I require pip but it's not installed.  Aborting."; exit 1; 
 }
-printf " * pip: "
+printf " * PIP: "
 pip -V
+
+# ACK
+command -v ack >/dev/null 2>&1 || { 
+  echo >&2 "I require ack but it's not installed.  Aborting."; exit 1; 
+}
+printf " * ACK: "
+ack --version | ack ack
 
 printf "\nDone"
