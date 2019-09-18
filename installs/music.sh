@@ -46,26 +46,27 @@ command -v pip >/dev/null 2>&1 || {
 printf " * ${LIGHT_BLUE}pip${NC} : "
 pip -V
 
+
+printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
 # Start install
-printf "\n${GREEN}Requirements Satisified!${NC}\n Starting install..."
+# printf "${PURPLE} Starting install...${NC}\n\n"
+
+# is beets installed already?
+printf "  * running ${PURPLE}pip list${NC}\n\n"
+pip list
+
+# pip list | ack pip
+
 # install beets
 # printf " * Installing Beets..."
 # Install beets
 # python -m pip install beets
-
 # Install required dependencies
 # printf " * Installing Plugin Dependencies..."
 # python -m pip install discogs-client
 # python -m pip install pylast
-
-# ECHO. & ECHO [92m Finished Installing Beets and Required Dependencies! [0m & ECHO.
-
 # Print pip installs
-
-# ECHO [96m pip installs: [0m & ECHO.
-
-# CALL python -m pip list
-
+# $ python -m pip list
 # install mpsyt & configure
 
-printf "\nDone"
+printf "\n${GREEN}Done!${NC}\n"
