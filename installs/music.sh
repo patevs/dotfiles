@@ -2,6 +2,17 @@
 
 # music.sh
 
+# Script to install beets along with required dependencies
+# mpsyt and set configuration
+
+# Requires Python3 and pip to be installed
+
+clear
+
+# ANSI escape codes:
+# RED='\033[0;31m'
+# GREEN='\033[0;32m'
+
 printf "\nRunning music.sh\n"
 printf "\nChecking Requirements...\n\n"
 
@@ -19,20 +30,15 @@ command -v pip >/dev/null 2>&1 || {
 printf " * pip: "
 pip -V
 
+# Start install
+printf "\nRequirements Satisified!\n Starting install...\n"
 # install beets
-
-# Script to install beets along with required dependencies
-# Requires Python3 and pip to be installed
-
-clear
-
-# ECHO. & ECHO [92m Installing Beets and Required Dependencies... [0m & ECHO.
-
+printf " * Installing Beets..."
 # Install beets
 # python -m pip install beets
 
 # Install required dependencies
-
+printf " * Installing Plugin Dependencies..."
 # python -m pip install discogs-client
 # python -m pip install pylast
 
