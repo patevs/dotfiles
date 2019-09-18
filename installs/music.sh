@@ -43,8 +43,15 @@ python -V
 command -v pip >/dev/null 2>&1 || { 
   echo >&2 "I require pip but it's not installed.  Aborting."; exit 1; 
 }
-printf " * ${LIGHT_BLUE}pip${NC} : "
+printf " * ${LIGHT_BLUE}PIP${NC} : "
 pip -V
+
+# ack
+command -v ack >/dev/null 2>&1 || { 
+  echo >&2 "I require ack but it's not installed.  Aborting."; exit 1; 
+}
+printf " * ${LIGHT_BLUE}ACK${NC} : "
+ack --version | ack ack
 
 
 printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
@@ -54,8 +61,6 @@ printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
 # is beets installed already?
 printf "  * running ${PURPLE}pip list${NC}\n\n"
 pip list
-
-# pip list | ack pip
 
 # install beets
 # printf " * Installing Beets..."
