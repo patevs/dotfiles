@@ -47,16 +47,17 @@ printf " * ${LIGHT_BLUE}PIP${NC}    : "
 pip -V
 
 # ack
-command -v ack >/dev/null 2>&1 || { 
-  echo >&2 "I require ack but it's not installed.  Aborting."; exit 1; 
-}
-printf " * ${LIGHT_BLUE}ACK${NC}    : "
-ack --version | ack ack
+# command -v ack >/dev/null 2>&1 || { 
+#   echo >&2 "I require ack but it's not installed.  Aborting."; exit 1; 
+# }
+# printf " * ${LIGHT_BLUE}ACK${NC}    : "
+# ack --version | ack ack
 
-
-printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
 # Start install
-# printf "${PURPLE} Starting install...${NC}\n\n"
+printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
+printf "${PURPLE} Starting install...${NC}\n\n"
+
+bash mpsyt/mpsyt-install.sh
 
 # is colorama installed already?
 #COLORAMA=$(pip list | grep colorama)
@@ -69,7 +70,7 @@ printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
 #fi
 
 # Install dependencies
-python -m pip install colorama
+# python -m pip install colorama
 # python -m pip install youtube_dl
 # Install mps-youtube
 # requires ffmpeg and mpv
