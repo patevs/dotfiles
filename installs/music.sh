@@ -70,10 +70,12 @@ printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
 
 # Install dependencies
 python -m pip install colorama
-python -m pip install youtube_dl
+# python -m pip install youtube_dl
 # Install mps-youtube
-python -m pip install mps-youtube
+# requires ffmpeg and mpv
+# python -m pip install mps-youtube
 # configure mpsyt
+
 # install beets
 # python -m pip install beets
 # printf " * Installing Plugin Dependencies..."
@@ -84,6 +86,5 @@ python -m pip install mps-youtube
 printf "\n${LIGHT_CYAN}PIP List...${NC}\n\n"
 # printf "  * running ${PURPLE}pip list${NC}\n\n"
 pip list
-
 
 printf "\n${GREEN}DONE!${NC}\n"
