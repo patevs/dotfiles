@@ -46,36 +46,12 @@ command -v pip >/dev/null 2>&1 || {
 printf " * ${LIGHT_BLUE}PIP${NC}    : "
 pip -V
 
-# ack
-# command -v ack >/dev/null 2>&1 || { 
-#   echo >&2 "I require ack but it's not installed.  Aborting."; exit 1; 
-# }
-# printf " * ${LIGHT_BLUE}ACK${NC}    : "
-# ack --version | ack ack
-
 # Start install
 printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
-printf "${PURPLE} Starting install...${NC}\n\n"
+# printf "${PURPLE} Starting install...${NC}\n\n"
 
-bash mpsyt/mpsyt-install.sh
-
-# is colorama installed already?
-#COLORAMA=$(pip list | grep colorama)
-# printf "${COLORAMA}"
-#if [ -z "$COLORAMA" ]
-#then
-#      echo "\$colorama is installed!"
-#else
-#      echo "\$colorama is NOT installed!"
-#fi
-
-# Install dependencies
-# python -m pip install colorama
-# python -m pip install youtube_dl
 # Install mps-youtube
-# requires ffmpeg and mpv
-# python -m pip install mps-youtube
-# configure mpsyt
+bash mpsyt/mpsyt-install.sh
 
 # install beets
 # python -m pip install beets
@@ -84,8 +60,8 @@ bash mpsyt/mpsyt-install.sh
 # python -m pip install pylast
 
 # Print pip installs
-printf "\n${LIGHT_CYAN}PIP List...${NC}\n\n"
+# printf "\n${LIGHT_CYAN}PIP List...${NC}\n\n"
 # printf "  * running ${PURPLE}pip list${NC}\n\n"
-pip list
+# pip list
 
 printf "\n${GREEN}DONE!${NC}\n"

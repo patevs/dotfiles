@@ -29,10 +29,10 @@ printf "\n ---- ${GREEN}mpsyt-install.sh${NC} ---- \n"
 
 # Install dependencies
 python -m pip install colorama
-# python -m pip install youtube_dl
+python -m pip install youtube_dl
 # Install mps-youtube
 # requires ffmpeg and mpv
-# python -m pip install mps-youtube
+python -m pip install mps-youtube
 # configure mpsyt
 
 printf "\nmpsyt-install.sh ${GREEN}DONE!${NC}\n"
