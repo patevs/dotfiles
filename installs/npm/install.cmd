@@ -98,7 +98,6 @@ ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
 CALL npm install --global empty-trash-cli
 CALL npm install --global trash-cli
-CALL npm install --global vtop
 CALL npm install --global wifi-password-cli
 
 REM :: CALL npm install --global open-cli
