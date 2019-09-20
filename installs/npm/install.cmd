@@ -34,10 +34,11 @@ REM Git Integrations and Utilities
 
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
+CALL npm install --global add-gitignore
 CALL npm install --global g3l
 CALL npm install --global git-open
-CALL npm install --global add-gitignore
 CALL npm install --global gitmoji-cli
+
 REM :: CALL npm install --global git-labelmaker
 REM :: CALL npm install --global lint-staged
 
@@ -45,15 +46,16 @@ REM NodeJS Utilities
 
 ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 
-CALL npm install --global ntl
+CALL npm install --global cost-of-modules
 CALL npm install --global david
+CALL npm install --global how-to-npm
+CALL npm install --global npkill
 CALL npm install --global npm-check-updates
+CALL npm install --global ntl
+CALL npm install --global package-json-to-readme
+
 REM :: CALL npm install --global pm2
 REM :: CALL npm install --global npe
-REM :: CALL npm install --global package-json-to-readme
-REM :: CALL npm install --global cost-of-modules
-REM :: CALL npm install --global npkill
-REM :: CALL npm install --global how-to-npm
 REM :: CALL npm install --global dependency-check
 REM :: CALL npm install --global np
 REM :: windows-build-tools install must be run in admin prompt
@@ -72,13 +74,15 @@ REM :: CALL npm install --global typescript-starter
 
 REM Development Utilities
 
-REM :: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+
+CALL npm install --global licensed
+CALL npm install --global spaceholder
 
 REM :: CALL npm install --global stacks-cli
 REM :: CALL npm install --global imagemin-cli
 REM :: CALL npm install --global strapi@beta
 REM :: CALL npm install --global create-react-app
-REM :: CALL npm install --global licensed
 REM :: CALL npm install --global viewport-list-cli
 REM :: CALL npm install --global korkut
 REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
@@ -86,21 +90,21 @@ REM :: CALL npm install --global font-awesome-svg-png
 REM :: mobicon-cli depends on GraphicsMagick being installed
 REM :: CALL npm install --global mobicon-cli
 REM :: CALL npm install --global faviator
-REM :: CALL npm install --global spaceholder
 REM :: CALL npm install --global jsome
 
 REM System Utilities
 
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
-CALL npm install --global trash-cli
 CALL npm install --global empty-trash-cli
+CALL npm install --global trash-cli
+CALL npm install --global vtop
 CALL npm install --global wifi-password-cli
+
 REM :: CALL npm install --global open-cli
 REM :: CALL npm install --global @rafaelrinaldi/whereami
 REM :: CALL npm install --global fkill-cli
 REM :: npm install --global pageres-cli
-REM :: npm install -g vtop
 
 REM Yeoman and generators
 
