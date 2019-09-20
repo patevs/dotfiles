@@ -15,9 +15,26 @@ Start-SshAgent
 # Set command alias' #
 # ------------------ #
 
+# Shutdown and reboot commands
+Set-Alias -Name shut -Value shutdownSys
+function shutdownSys {
+  Write-Host "`nShutting down system...`n"
+  shutdown /p
+}
+
+Set-Alias -Name restart -Value restartSys
+Set-Alias -Name reboot -Value restartSys
+function restartSys {
+  Write-Host "`nRestarting system...`n"
+  shutdown /r /t 0
+}
+
 # Print list of current directory contents
 Set-Alias -Name ls -Value getDirList -option AllScope -Force
-function getDirList { lsd -a1 }
+function getDirList { 
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  lsd -a1
+}
 
 # Move to Desktop directory (~\desktop)
 Set-Alias -Name desktop -Value moveDesktop
@@ -32,9 +49,7 @@ Set-Alias -Name dev -Value moveDev
 function moveDev {
   $devPath = $env:USERPROFILE + "\desktop\git"
   Set-Location $devPath
-  # Get-ChildItem
   Clear-Host
-  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
   getDirList
 }
 
