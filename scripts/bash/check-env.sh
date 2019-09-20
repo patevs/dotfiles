@@ -2,9 +2,6 @@
 
 # check-env.sh
 
-# example of using arguments to a script
-# echo "Total number of arguments is $#" 
-
 printf "\check-env.sh\n"
 printf "\nChecking Environment...\n\n"
 
@@ -58,3 +55,5 @@ pip -V
 #fi
 
 printf "\nDone"
+
+# EOF #

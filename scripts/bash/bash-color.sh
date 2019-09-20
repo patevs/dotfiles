@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# example of using arguments to a script
-# echo "My first name is $1"
-
 # ANSI escape codes:
 # https://en.wikipedia.org/wiki/ANSI_escape_code
 
@@ -16,8 +13,6 @@ Purple       0;35     Light Purple  1;35
 Cyan         0;36     Light Cyan    1;36
 Light Gray   0;37     White         1;37
 '
-
-# bash=color.sh
 
 # Define color codes
 
@@ -57,3 +52,5 @@ printf "\t * ${LIGHT_PURPLE}LIGHT_PURPLE${NC} Stack Overflow\n"
 printf "\t * ${LIGHT_CYAN}LIGHT_CYAN${NC} Stack Overflow\n"
 
 printf "\nDone.\n"
+
+# EOF #
