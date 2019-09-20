@@ -104,17 +104,17 @@ REM :: npm install -g vtop
 
 REM Yeoman and generators
 
-REM :: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
-REM :: CALL npm install --global yo
+CALL npm install --global yo
 
 REM HTML/Frontend
-REM :: CALL npm install --global generator-h5bp
+CALL npm install --global generator-h5bp
 REM :: CALL npm install --global generator-webapp
 
 REM JavaScript/Node
 REM :: (Ava/Codecov)
-REM :: CALL npm install --global generator-nm
+CALL npm install --global generator-nm
 REM :: (Jest/Coveralls)
 REM :: CALL npm install --global generator-node
 
