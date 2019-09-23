@@ -50,7 +50,7 @@ printf "\n${LIGHT_GREEN}Requirements Satisified! Beginning Install...${NC}\n"
 # Install mps-youtube
 bash mpsyt/mpsyt-install.sh
 # Install beets
-# bash beets/beets-install.sh
+bash beets/beets-install.sh
 
 # Print pip installs
 # printf "\n${LIGHT_CYAN}PIP List...${NC}\n\n"
