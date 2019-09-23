@@ -35,6 +35,7 @@ REM Git Integrations and Utilities
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
 CALL npm install --global add-gitignore
+CALL npm install --global diff-so-fancy
 CALL npm install --global g3l
 CALL npm install --global git-open
 CALL npm install --global gitmoji-cli
