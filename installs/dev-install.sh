@@ -46,14 +46,20 @@ pip -V
 # Start install
 printf "\n${LIGHT_GREEN}Requirements Satisified! Beginning Install...${NC}\n\n"
 
-# Install required dependencies
+# Install buku required dependencies
 python -m pip install certifi urllib3 cryptography beautifulsoup4
 # Install buku
 python -m pip install buku
 
+# Install bukuserver required dependencies
+python -m pip install flask flask_admin flask_api flask_bootstrap flask_paginate flask_wtf arrow
+
 # Print buku version
 printf "\n${PURPLE}Buku version${NC} : "
 buku --version
+# Print bukuserver version
+printf "\n${PURPLE}Bukuserver version${NC} : "
+bukuserver --version
 
 # Print pip installs
 # printf "\n${LIGHT_CYAN}PIP List...${NC}\n\n"
