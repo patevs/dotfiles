@@ -72,6 +72,6 @@ bukuserver --version
 # printf "  * running ${PURPLE}pip list${NC}\n\n"
 # pip list
 
-printf "\n ---- ${GREEN}DONE!${NC} ---- \n"
+printf "\n ---- ${GREEN}DONE!${NC} ---- \n\n"
 
 # EOF #
