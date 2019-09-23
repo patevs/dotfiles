@@ -78,6 +78,7 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 CALL npm install --global licensed
 CALL npm install --global spaceholder
+CALL npm install --global tldr
 
 REM :: CALL npm install --global stacks-cli
 REM :: CALL npm install --global imagemin-cli
