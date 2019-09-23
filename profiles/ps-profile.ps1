@@ -38,7 +38,11 @@ function getDirList {
 
 # Print file contents using bat
 Set-Alias -Name cat -Value getFileContents
-function getDirList { bat }
+function getFileContents { bat }
+
+# Get help using tldr
+Set-Alias -Name help -Value getHelp
+function getHelp { tldr }
 
 # Move to Desktop directory (~\desktop)
 Set-Alias -Name desktop -Value moveDesktop
