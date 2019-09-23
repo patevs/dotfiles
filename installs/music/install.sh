@@ -45,10 +45,10 @@ printf " * ${PURPLE}Pip${NC}    : "
 pip -V
 
 # Start install
-printf "\n${LIGHT_GREEN}Requirements Satisified! Beginning Install...${NC}\n\n"
+printf "\n${LIGHT_GREEN}Requirements Satisified! Beginning Install...${NC}\n"
 
 # Install mps-youtube
-# bash mpsyt/mpsyt-install.sh
+bash mpsyt/mpsyt-install.sh
 # Install beets
 # bash beets/beets-install.sh
 
