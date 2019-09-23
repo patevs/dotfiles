@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# music.sh
+# dev-install.sh
 
 # Script to install various development packages
-
 # Requires Python3 and pip to be installed
 
 # Define color codes
@@ -12,51 +11,48 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 # BROWN='\033[0;33m'
 # BLUE='\033[0;34m'
-# PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
+PURPLE='\033[0;35m'
+# CYAN='\033[0;36m'
 # LIGHT_GRAY='\033[0;37m'
 # LIGHT_RED='\033[1;31m'
-# LIGHT_GREEN='\033[1;32m'
+LIGHT_GREEN='\033[1;32m'
 # YELLOW='\033[1;33m'
-LIGHT_BLUE='\033[1;34m'
+# LIGHT_BLUE='\033[1;34m'
 # LIGHT_PURPLE='\033[1;35m'
-LIGHT_CYAN='\033[1;36m'
+# LIGHT_CYAN='\033[1;36m'
 # WHITE='\033[1;37m'
 NC='\033[0m' # No Color
 
 clear
-
 printf "\n ---- ${GREEN}dev-install.sh${NC} ---- \n"
-
 printf "\n${LIGHT_CYAN}Checking Requirements...${NC}\n\n"
 
-# Python
+# Check Python
 command -v python >/dev/null 2>&1 || {
-  printf >&2 "${CYAN}Python${NC} is required but it's not installed. ${RED}Aborting${NC}."
+  printf >&2 "${PURPLE}Python${NC} is required but it's not installed. ${RED}Aborting${NC}."
   exit 1
 }
-printf " * ${LIGHT_BLUE}Python${NC} : "
+printf " * ${PURPLE}Python${NC} : "
 python -V
 
-# pip
+# Check Pip
 command -v pip >/dev/null 2>&1 || {
-  printf >&2 "${CYAN}Pip${NC} is required but it's not installed. ${RED}Aborting${NC}."
+  printf >&2 "${PURPLE}Pip${NC} is required but it's not installed. ${RED}Aborting${NC}."
   exit 1
 }
-printf " * ${LIGHT_BLUE}PIP${NC}    : "
+printf " * ${PURPLE}PIP${NC}    : "
 pip -V
 
 # Start install
-printf "\n${GREEN}Requirements Satisified!${NC}\n\n"
-
-# printf "${PURPLE} Starting install...${NC}\n\n"
+printf "\n${LIGHT_GREEN}Requirements Satisified! Beginning Install...${NC}\n\n"
 
 # Install required dependencies
 python -m pip install certifi urllib3 cryptography beautifulsoup4
 # Install buku
 python -m pip install buku
 
-# print buku version
+# Print buku version
+printf "\n${PURPLE}Buku version${NC} : "
 buku --version
 
 # Print pip installs
@@ -64,4 +60,6 @@ buku --version
 # printf "  * running ${PURPLE}pip list${NC}\n\n"
 # pip list
 
-printf "\n${GREEN}DONE!${NC}\n"
+printf "\n ---- ${GREEN}DONE!${NC} ---- \n"
+
+# EOF #
