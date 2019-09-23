@@ -31,7 +31,7 @@ function restartSys {
 
 # Print list of current directory contents
 Set-Alias -Name ls -Value getDirList -option AllScope -Force
-function getDirList { 
+function getDirList {
   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
   lsd -a1
 }
@@ -64,6 +64,10 @@ function moveDev {
 # --- #
 # Git #
 # --- #
+
+# Use github client
+Set-Alias -Name git -Value getGithubClient
+function getGithubClient { hub $args }
 
 # Print Git status
 Set-Alias -Name gs -Value getGitStatus
@@ -99,8 +103,8 @@ function getChocoOutdated {
 
 # Chocolatey profile
 # $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-# if (Test-Path($ChocolateyProfile)) { 
-#   Import-Module "$ChocolateyProfile" 
+# if (Test-Path($ChocolateyProfile)) {
+#   Import-Module "$ChocolateyProfile"
 # }
 
 # thefuck (https://github.com/nvbn/thefuck)
@@ -113,10 +117,10 @@ function getChocoOutdated {
 function printWelcome {
   Write-Host
   "             _    _ _____ _     _____ ________  ___ _____
-            | |  | |  ___| |   /  __ \  _  |  \/  ||  ___| 
-            | |  | | |__ | |   | /  \/ | | | .  . || |__ 
-            | |/\| |  __|| |   | |   | | | | |\/| ||  __| 
-            \  /\  / |___| |___| \__/\ \_/ / |  | || |___ 
+            | |  | |  ___| |   /  __ \  _  |  \/  ||  ___|
+            | |  | | |__ | |   | /  \/ | | | .  . || |__
+            | |/\| |  __|| |   | |   | | | | |\/| ||  __|
+            \  /\  / |___| |___| \__/\ \_/ / |  | || |___
              \/  \/\____/\_____/\____/\___/\_|  |_/\____/
 
                       ________ _______ ________
@@ -143,13 +147,13 @@ function prompt {
   # Write new line
   Write-Host
   $origLastExitCode = $LastExitCode
-  
+
   # Test if admin
   if (Test-Administrator) {
     # if elevated
     Write-Host "(Elevated) " -NoNewline -ForegroundColor White
   }
-  
+
   # write username@computername
   Write-Host "$env:USERNAME@" -NoNewline -ForegroundColor DarkYellow
   Write-Host "$env:COMPUTERNAME" -NoNewline -ForegroundColor Magenta
@@ -168,7 +172,7 @@ function prompt {
   # Write date & time
   # Write-Host (Get-Date -Format G) -NoNewline -ForegroundColor DarkMagenta
   # Write-Host " :" -NoNewline -ForegroundColor DarkGray
-  
+
   # Write posh-git status
   Write-VcsStatus
 
