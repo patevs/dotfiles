@@ -23,7 +23,7 @@ GREEN='\033[0;32m'
 # WHITE='\033[1;37m'
 NC='\033[0m' # No Color
 
-printf "\n ---- ${GREEN}beets-install.sh${NC} ---- \n"
+printf "\n ---- ${GREEN}beets-install.sh${NC} ---- \n\n"
 
 # Install beets
 python -m pip install beets
