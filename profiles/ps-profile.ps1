@@ -37,7 +37,7 @@ function getDirList {
 }
 
 # Print file contents using bat
-Set-Alias -Name cat -Value getFileContents
+Set-Alias -Name cat -Value getFileContents -option AllScope -Force
 function getFileContents { bat }
 
 # Get help using tldr
