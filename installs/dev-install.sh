@@ -46,6 +46,9 @@ pip -V
 # Start install
 printf "\n${LIGHT_GREEN}Requirements Satisified! Beginning Install...${NC}\n\n"
 
+# Install DuckDuckGo utility
+python -m pip install ddgr
+
 # Install buku required dependencies
 python -m pip install certifi urllib3 cryptography beautifulsoup4
 # Install buku
@@ -54,6 +57,9 @@ python -m pip install buku
 # Install bukuserver required dependencies
 python -m pip install flask flask_admin flask_api flask_bootstrap flask_paginate flask_wtf arrow
 
+# Print ddgr version
+printf "\n${PURPLE}ddgr version${NC} : "
+ddgr --version
 # Print buku version
 printf "\n${PURPLE}Buku version${NC} : "
 buku --version
