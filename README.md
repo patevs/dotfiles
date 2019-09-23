@@ -1,5 +1,5 @@
 # Dotfiles
 
-> Configuration files and utility scripts
+> Configuration files and utility scripts.
 
 ---
