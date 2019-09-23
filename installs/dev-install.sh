@@ -23,7 +23,7 @@ LIGHT_GREEN='\033[1;32m'
 # WHITE='\033[1;37m'
 NC='\033[0m' # No Color
 
-clear
+# clear
 printf "\n ---- ${GREEN}dev-install.sh${NC} ---- \n"
 printf "\n${LIGHT_CYAN}Checking Requirements...${NC}\n\n"
 
