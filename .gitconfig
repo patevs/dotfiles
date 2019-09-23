@@ -1,3 +1,7 @@
 [user]
-	email = ppevans11@gmail.com
-	name = PatEvs
+email = ppevans11@gmail.com
+name = PatEvs
+
+[pager]
+diff = diff-so-fancy | less --tabs=1,5 -RFX
+show = diff-so-fancy | less --tabs=1,5 -RFX
