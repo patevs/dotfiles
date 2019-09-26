@@ -54,24 +54,24 @@ CALL npm install --global npkill
 CALL npm install --global npm-check-updates
 CALL npm install --global ntl
 
-REM :: CALL npm install --global package-json-to-readme
-REM :: CALL npm install --global pm2
-REM :: CALL npm install --global npe
 REM :: CALL npm install --global dependency-check
-REM :: CALL npm install --global np
-REM :: windows-build-tools install must be run in admin prompt
-REM :: CALL npm install --global windows-build-tools
 REM :: ndb requires windows-build-tools
 REM :: CALL npm install --global ndb
+REM :: CALL npm install --global np
+REM :: CALL npm install --global npe
+REM :: CALL npm install --global package-json-to-readme
+REM :: CALL npm install --global pm2
+REM :: windows-build-tools install must be run in admin prompt
+REM :: CALL npm install --global windows-build-tools
 
 REM TypeScript and Utilities
 
 REM :: ECHO. & ECHO  [44m Installing TypeScript and Utility Modules: [0m & ECHO.
 
-REM :: CALL npm install --global typescript
-REM :: CALL npm install --global typesync
 REM :: CALL npm install --global typed-install
+REM :: CALL npm install --global typescript
 REM :: CALL npm install --global typescript-starter
+REM :: CALL npm install --global typesync
 
 REM Development Utilities
 
@@ -82,30 +82,30 @@ CALL npm install --global licensed
 CALL npm install --global spaceholder
 CALL npm install --global tldr
 
-REM :: CALL npm install --global stacks-cli
-REM :: CALL npm install --global strapi@beta
 REM :: CALL npm install --global create-react-app
-REM :: CALL npm install --global viewport-list-cli
-REM :: CALL npm install --global korkut
+REM :: CALL npm install --global faviator
 REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
 REM :: CALL npm install --global font-awesome-svg-png
+REM :: CALL npm install --global jsome
+REM :: CALL npm install --global korkut
 REM :: mobicon-cli depends on GraphicsMagick being installed
 REM :: CALL npm install --global mobicon-cli
-REM :: CALL npm install --global faviator
-REM :: CALL npm install --global jsome
+REM :: CALL npm install --global stacks-cli
+REM :: CALL npm install --global strapi@beta
+REM :: CALL npm install --global viewport-list-cli
 
 REM System Utilities
 
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
 CALL npm install --global empty-trash-cli
+CALL npm install --global pageres-cli
 CALL npm install --global trash-cli
 CALL npm install --global wifi-password-cli
 
-REM :: CALL npm install --global open-cli
 REM :: CALL npm install --global @rafaelrinaldi/whereami
 REM :: CALL npm install --global fkill-cli
-REM :: npm install --global pageres-cli
+REM :: CALL npm install --global open-cli
 
 REM Yeoman and generators
 
@@ -133,8 +133,8 @@ REM Alternative Package Managers
 
 REM :: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
-REM :: CALL npm install --global yarn
 REM :: CALL npm install --global pnpm
+REM :: CALL npm install --global yarn
 
 REM Upgrade pnpm
 
