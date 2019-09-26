@@ -156,6 +156,6 @@ ECHO  [44m Checking for Outdated Modules: [0m & ECHO.
 
 CALL david -g
 
-ECHO. & ECHO  [42m Done! [0m & ECHO.
+ECHO. & ECHO  [42m Done! [0m
 
 GOTO :EOF
