@@ -79,6 +79,7 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 CALL npm install --global imagemin-cli
 CALL npm install --global licensed
+CALL npm install --global lighthouse
 CALL npm install --global spaceholder
 CALL npm install --global tldr
 
