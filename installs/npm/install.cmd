@@ -77,10 +77,17 @@ REM Development Utilities
 
 ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
+REM # Image minifier
 CALL npm install --global imagemin-cli
+REM # License generator
 CALL npm install --global licensed
+REM # Google's website performance test
 CALL npm install --global lighthouse
+REM # Placeholder image generator
 CALL npm install --global spaceholder
+REM # SVG Optimizer
+CALL npm install --global svgo
+REM # man pages and cheat sheets
 CALL npm install --global tldr
 
 REM :: CALL npm install --global create-react-app
@@ -132,15 +139,16 @@ REM :: CALL npm install --global generator-typescript-starter
 
 REM Alternative Package Managers
 
-REM :: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
-REM :: CALL npm install --global pnpm
-REM :: CALL npm install --global yarn
+CALL npm install --global pnpm
+CALL npm install --global yarn
 
 REM Upgrade pnpm
 
-REM :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-REM :: CALL pnpm install --global pnpm
+ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
+
+CALL pnpm install --global pnpm
 
 ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 
