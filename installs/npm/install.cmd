@@ -38,7 +38,7 @@ CALL npm install --global add-gitignore
 CALL npm install --global diff-so-fancy
 CALL npm install --global g3l
 CALL npm install --global git-open
-CALL npm install --global gitmoji-cli
+REM :: CALL npm install --global gitmoji-cli
 
 REM :: CALL npm install --global git-labelmaker
 REM :: CALL npm install --global lint-staged
@@ -47,10 +47,10 @@ REM NodeJS Utilities
 
 ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 
-CALL npm install --global cost-of-modules
+REM :: CALL npm install --global cost-of-modules
 CALL npm install --global david
-CALL npm install --global how-to-npm
-CALL npm install --global npkill
+REM :: CALL npm install --global how-to-npm
+REM :: CALL npm install --global npkill
 CALL npm install --global npm-check-updates
 REM # Node task list
 CALL npm install --global ntl
@@ -79,15 +79,15 @@ REM Development Utilities
 ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 REM # Image minifier
-CALL npm install --global imagemin-cli
+REM :: CALL npm install --global imagemin-cli
 REM # License generator
-CALL npm install --global licensed
+REM :: CALL npm install --global licensed
 REM # Google's website performance test
-CALL npm install --global lighthouse
+REM :: CALL npm install --global lighthouse
 REM # Placeholder image generator
-CALL npm install --global spaceholder
+REM :: CALL npm install --global spaceholder
 REM # SVG Optimizer
-CALL npm install --global svgo
+REM :: CALL npm install --global svgo
 REM # man pages and cheat sheets
 CALL npm install --global tldr
 
@@ -140,16 +140,16 @@ REM :: CALL npm install --global generator-typescript-starter
 
 REM Alternative Package Managers
 
-ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
+REM :: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
-CALL npm install --global pnpm
-CALL npm install --global yarn
+REM :: CALL npm install --global pnpm
+REM :: CALL npm install --global yarn
 
 REM Upgrade pnpm
 
-ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
+REM :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
 
-CALL pnpm install --global pnpm
+REM :: CALL pnpm install --global pnpm
 
 ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 
