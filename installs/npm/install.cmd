@@ -82,8 +82,15 @@ REM # Image minifier
 REM :: CALL npm install --global imagemin-cli
 REM # License generator
 REM :: CALL npm install --global licensed
+
 REM # Google's website performance test
+REM # https://github.com/GoogleChrome/lighthouse/
 REM :: CALL npm install --global lighthouse
+
+REM # Progressive web metrics
+REM # https://github.com/paulirish/pwmetrics
+REM :: CALL npm install --global pwmetrics
+
 REM # Placeholder image generator
 REM :: CALL npm install --global spaceholder
 REM # SVG Optimizer
