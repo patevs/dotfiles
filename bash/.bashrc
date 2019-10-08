@@ -8,5 +8,4 @@ eval "$(hub alias -s bash)"
 
 alias git='hub'
 alias gs='git status'
-
 alias ls='lsd -a1'

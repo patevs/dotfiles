@@ -6,7 +6,7 @@
 # -------------------------------- #
 
 # Import Posh-Git module
-Import-Module -Name posh-git
+# Import-Module -Name posh-git
 
 # Start SSH agent
 Start-SshAgent
@@ -29,12 +29,35 @@ function restartSys {
   shutdown /r /t 0
 }
 
+Set-Alias -Name l -Value getDir
+function getDir {
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  # C:\bin\lsd\lsd -a1
+  lsd
+}
+
 # Print list of current directory contents
-Set-Alias -Name ls -Value getDirList -option AllScope -Force
+Set-Alias -Name ll -Value getDirList
 function getDirList {
-  # Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  # C:\bin\lsd\lsd -a1
   lsd -a1
 }
+
+# Print list of current directory contents
+Set-Alias -Name lll -Value getDirListLong
+function getDirListLong {
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  # C:\bin\lsd\lsd -a1
+  lsd -al
+}
+
+# Print list of current directory contents
+Set-Alias -Name ls -Value getDirList -option AllScope -Force
+#function getDirList {
+#  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+#  lsd -a1
+#}
 
 # Print file contents using bat
 # Set-Alias -Name cat -Value getFileContents -option AllScope -Force
@@ -58,7 +81,7 @@ function moveDev {
   $devPath = $env:USERPROFILE + "\desktop\git"
   Set-Location $devPath
   # Clear-Host
-  getDirList
+  # getDirList
 }
 
 # --- #
