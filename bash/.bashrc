@@ -76,15 +76,15 @@ alias dir="ls"
 # alias tasklist="htop"
 # alias tracert="traceroute"
 
-#Generate a random strong password
-alias genpasswd="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr -d '\n'; echo"
+# Generate a random strong password
+# alias genpasswd="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr -d '\n'; echo"
 
-#Show active ports
-alias port='netstat -tulanp'
+# Show active ports
+# alias port='netstat -tulanp'
 
 # Grab a pretty ascii forecast picture for anywhere
 # Example: weather New York, NY
-function weather() { curl -s http://wttr.in/$2; }
+# function weather() { curl -s http://wttr.in/$2; }
 
 
 # EOF #
