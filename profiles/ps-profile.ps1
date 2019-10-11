@@ -119,6 +119,55 @@ function pstree {
 # Set-Alias -Name gc -Value checkout
 # Set-Alias -Name gp -Value pull
 
+##################
+# System Related #
+##################
+
+# Shutdown system
+function shutdownSys {
+  Write-Host "`nShutting down system...`n"
+  shutdown /p
+}
+
+# Restart system
+function restartSys {
+  Write-Host "`nRestarting system...`n"
+  shutdown /r /t 0
+}
+
+Set-Alias -Name shut -Value shutdownSys
+Set-Alias -Name restart -Value restartSys
+Set-Alias -Name reboot -Value restartSys
+
+# Move to Desktop directory (~\desktop)
+function moveDesktop {
+  $desktopPath = $env:USERPROFILE + "\desktop"
+  Set-Location $desktopPath
+}
+
+# Move to development directory (~\desktop\git)
+function moveDev {
+  $devPath = $env:USERPROFILE + "\desktop\git"
+  Set-Location $devPath
+  # Clear-Host
+  # getDirList
+}
+
+Set-Alias -Name desktop -Value moveDesktop
+Set-Alias -Name desk -Value moveDesktop
+Set-Alias -Name dev -Value moveDev
+
+###############
+# Git Related #
+###############
+
+# Use github client
+Set-Alias -Name git -Value getGithubClient
+function getGithubClient { hub $args }
+
+# Print Git status
+Set-Alias -Name gs -Value getGitStatus
+function getGitStatus { git status }
 
 
 # EOF #
