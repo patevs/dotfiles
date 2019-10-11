@@ -167,6 +167,7 @@ function getGithubClient { hub $args }
 
 # Print Git status
 Set-Alias -Name gs -Value getGitStatus
+# TODO: Check for presence of g3l command
 function getGitStatus { git status }
 
 
