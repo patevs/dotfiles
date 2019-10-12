@@ -62,18 +62,38 @@ REM NodeJS Utilities
 
 ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 
+REM # https://github.com/alanshaw/david
 CALL npm install --global david
+
+REM # https://github.com/dylang/npm-check
+CALL npm install --global npm-check 
+
+REM # https://github.com/tjunnone/npm-check-updates
 CALL npm install --global npm-check-updates
-REM # Node task list
+
+REM # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
 
+REM # https://github.com/siddharthkp/cost-of-modules
 REM :: CALL npm install --global cost-of-modules
+
+REM # https://github.com/dependency-check-team/dependency-check
 REM :: CALL npm install --global dependency-check
+
+REM # https://github.com/workshopper/how-to-npm
 REM :: CALL npm install --global how-to-npm
-REM :: ndb requires windows-build-tools
+
+REM # https://github.com/GoogleChromeLabs/ndb
+REM :: NOTE: ndb requires windows-build-tools
 REM :: CALL npm install --global ndb
+
+REM # https://github.com/sindresorhus/np
 REM :: CALL npm install --global np
+
+REM # https://github.com/zeke/npe
 REM :: CALL npm install --global npe
+
+REM # https://github.com/voidcosmos/npkill
 REM :: CALL npm install --global npkill
 REM :: CALL npm install --global package-json-to-readme
 REM :: CALL npm install --global pm2
