@@ -126,9 +126,15 @@ REM Development Utilities
 
 ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
+REM # man pages and cheat sheets
+CALL npm install --global tldr
+
 REM # Image minifier
+REM # https://github.com/imagemin/imagemin-cli
 REM :: CALL npm install --global imagemin-cli
+
 REM # License generator
+REM # https://github.com/plibither8/licensed
 REM :: CALL npm install --global licensed
 
 REM # Google's website performance test
@@ -140,14 +146,16 @@ REM # https://github.com/paulirish/pwmetrics
 REM :: CALL npm install --global pwmetrics
 
 REM # Placeholder image generator
+REM # https://github.com/ecrmnn/spaceholder
 REM :: CALL npm install --global spaceholder
-REM # SVG Optimizer
-REM :: CALL npm install --global svgo
-REM # man pages and cheat sheets
-CALL npm install --global tldr
 
+REM # SVG Optimizer
+REM # https://github.com/svg/svgo
+REM :: CALL npm install --global svgo
+
+REM # https://github.com/facebook/create-react-app
 REM :: CALL npm install --global create-react-app
-REM :: CALL npm install --global faviator
+
 REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
 REM :: CALL npm install --global font-awesome-svg-png
 REM :: CALL npm install --global jsome
