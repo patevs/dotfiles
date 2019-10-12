@@ -127,6 +127,8 @@ REM Development Utilities
 ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 REM # man pages and cheat sheets
+REM # https://github.com/tldr-pages/tldr
+REM # https://github.com/tldr-pages/tldr-node-client
 CALL npm install --global tldr
 
 REM # Image minifier
@@ -156,14 +158,20 @@ REM :: CALL npm install --global svgo
 REM # https://github.com/facebook/create-react-app
 REM :: CALL npm install --global create-react-app
 
-REM :: font-awesome-svg-png requires rsvg-convert to be on $PATH
+REM # https://github.com/encharm/Font-Awesome-SVG-PNG
+REM :: NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
 REM :: CALL npm install --global font-awesome-svg-png
+
+REM # https://github.com/Javascipt/Jsome
 REM :: CALL npm install --global jsome
-REM :: CALL npm install --global korkut
-REM :: mobicon-cli depends on GraphicsMagick being installed
-REM :: CALL npm install --global mobicon-cli
+
+REM # https://github.com/WeiChiaChang/stacks-cli
 REM :: CALL npm install --global stacks-cli
+
+REM # https://github.com/strapi/strapi
 REM :: CALL npm install --global strapi@beta
+
+REM # https://github.com/kevva/viewport-list-cli
 REM :: CALL npm install --global viewport-list-cli
 
 REM System Utilities
