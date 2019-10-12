@@ -203,16 +203,25 @@ REM Yeoman and generators
 
 REM :: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
+REM # https://github.com/yeoman/yo
 REM :: CALL npm install --global yo
 
 REM HTML/Frontend
+
+REM # https://github.com/h5bp/generator-h5bp
 REM :: CALL npm install --global generator-h5bp
+
+REM # https://github.com/yeoman/generator-webapp
 REM :: CALL npm install --global generator-webapp
 
 REM JavaScript/Node
+
 REM :: (Ava/Codecov)
+REM # https://github.com/sindresorhus/generator-nm
 REM :: CALL npm install --global generator-nm
+
 REM :: (Jest/Coveralls)
+REM # https://github.com/yeoman/generator-node
 REM :: CALL npm install --global generator-node
 
 REM Typescript
