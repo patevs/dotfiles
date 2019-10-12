@@ -62,19 +62,19 @@ REM NodeJS Utilities
 
 ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 
-REM :: CALL npm install --global cost-of-modules
 CALL npm install --global david
-REM :: CALL npm install --global how-to-npm
-REM :: CALL npm install --global npkill
 CALL npm install --global npm-check-updates
 REM # Node task list
 CALL npm install --global ntl
 
+REM :: CALL npm install --global cost-of-modules
 REM :: CALL npm install --global dependency-check
+REM :: CALL npm install --global how-to-npm
 REM :: ndb requires windows-build-tools
 REM :: CALL npm install --global ndb
 REM :: CALL npm install --global np
 REM :: CALL npm install --global npe
+REM :: CALL npm install --global npkill
 REM :: CALL npm install --global package-json-to-readme
 REM :: CALL npm install --global pm2
 REM :: windows-build-tools install must be run in admin prompt
