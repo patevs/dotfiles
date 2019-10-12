@@ -45,14 +45,18 @@ CALL npm install --global add-gitignore
 
 REM # https://github.com/so-fancy/diff-so-fancy
 CALL npm install --global diff-so-fancy
+
+REM # https://github.com/svhawks/g3l
 CALL npm install --global g3l
 
 REM # https://github.com/paulirish/git-open
 CALL npm install --global git-open
 
+REM # https://github.com/carloscuesta/gitmoji-cli
 REM :: CALL npm install --global gitmoji-cli
+
+REM # https://github.com/himynameisdave/git-labelmaker
 REM :: CALL npm install --global git-labelmaker
-REM :: CALL npm install --global lint-staged
 
 REM NodeJS Utilities
 
