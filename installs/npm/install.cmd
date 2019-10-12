@@ -110,9 +110,16 @@ REM TypeScript and Utilities
 
 REM :: ECHO. & ECHO  [44m Installing TypeScript and Utility Modules: [0m & ECHO.
 
+REM # https://github.com/xavdid/typed-install
 REM :: CALL npm install --global typed-install
+
+REM # https://github.com/microsoft/TypeScript
 REM :: CALL npm install --global typescript
+
+REM # https://github.com/bitjson/typescript-starter
 REM :: CALL npm install --global typescript-starter
+
+REM # https://github.com/jeffijoe/typesync
 REM :: CALL npm install --global typesync
 
 REM Development Utilities
