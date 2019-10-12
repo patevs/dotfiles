@@ -238,7 +238,10 @@ REM Alternative Package Managers
 
 REM :: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
+REM # https://github.com/pnpm/pnpm
 REM :: CALL npm install --global pnpm
+
+REM # https://github.com/yarnpkg/yarn
 REM :: CALL npm install --global yarn
 
 REM Upgrade pnpm
