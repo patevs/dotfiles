@@ -40,12 +40,17 @@ REM Git Integrations and Utilities
 
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
+REM # https://github.com/TejasQ/add-gitignore
 CALL npm install --global add-gitignore
+
+REM # https://github.com/so-fancy/diff-so-fancy
 CALL npm install --global diff-so-fancy
 CALL npm install --global g3l
-CALL npm install --global git-open
-REM :: CALL npm install --global gitmoji-cli
 
+REM # https://github.com/paulirish/git-open
+CALL npm install --global git-open
+
+REM :: CALL npm install --global gitmoji-cli
 REM :: CALL npm install --global git-labelmaker
 REM :: CALL npm install --global lint-staged
 
