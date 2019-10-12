@@ -27,8 +27,14 @@ REM Linting and Style Check
 
 REM :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
 
+REM # https://github.com/eslint/eslint
 REM :: CALL npm install --global eslint
+
+REM # https://github.com/jshint/jshint
 REM :: CALL npm install --global jshint
+
+REM # https://github.com/prettier/prettier
+REM :: CALL npm install --global prettier
 
 REM Git Integrations and Utilities
 
