@@ -178,13 +178,25 @@ REM System Utilities
 
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
+REM # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
+
+REM # https://github.com/sindresorhus/trash-cli
 CALL npm install --global trash-cli
+
+REM # https://github.com/kevva/wifi-password-cli
 CALL npm install --global wifi-password-cli
 
+REM # https://github.com/rafaelrinaldi/whereami
 REM :: CALL npm install --global @rafaelrinaldi/whereami
+
+REM # https://github.com/sindresorhus/fkill-cli
 REM :: CALL npm install --global fkill-cli
+
+REM # https://github.com/sindresorhus/open-cli
 REM :: CALL npm install --global open-cli
+
+REM # https://github.com/sindresorhus/pageres-cli
 REM :: CALL npm install --global pageres-cli
 
 REM Yeoman and generators
