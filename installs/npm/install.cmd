@@ -225,9 +225,13 @@ REM # https://github.com/yeoman/generator-node
 REM :: CALL npm install --global generator-node
 
 REM Typescript
+
 REM :: (Jest)
+REM # https://github.com/ospatil/generator-node-typescript
 REM :: CALL npm install --global generator-node-typescript
+
 REM :: (Ava)
+REM # https://github.com/phunguyen19/generator-typescript-starter
 REM :: CALL npm install --global generator-typescript-starter
 
 REM Alternative Package Managers
