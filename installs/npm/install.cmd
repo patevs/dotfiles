@@ -95,9 +95,15 @@ REM :: CALL npm install --global npe
 
 REM # https://github.com/voidcosmos/npkill
 REM :: CALL npm install --global npkill
+
+REM # https://github.com/zeke/package-json-to-readme
 REM :: CALL npm install --global package-json-to-readme
+
+REM # https://github.com/Unitech/pm2
 REM :: CALL npm install --global pm2
-REM :: windows-build-tools install must be run in admin prompt
+
+REM # https://github.com/felixrieseberg/windows-build-tools
+REM :: NOTE: windows-build-tools install must be run in admin prompt
 REM :: CALL npm install --global windows-build-tools
 
 REM TypeScript and Utilities
