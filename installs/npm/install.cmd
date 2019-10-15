@@ -260,7 +260,7 @@ CALL npm list --global --depth=0
 
 REM Check for outdated modules
 
-ECHO  [44m Checking for Outdated Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Checking for Outdated Modules: [0m & ECHO.
 
 CALL david -g
 
