@@ -12,6 +12,7 @@ $MaximumHistoryCount = 10000
 $PSDefaultParameterValues["Out-File:Encoding"]="utf8"
 
 # Import Posh-Git module
+# TODO: ensure posh-git is installed
 # Import-Module -Name posh-git
 
 # Start SSH agent
@@ -29,8 +30,14 @@ function print-path {
 	($Env:Path).Split(";")
 }
 
+# Print PowerShell version
 function ps-version {
   $PSVersionTable.PSVersion
+}
+
+# Print installed PowerShell modules
+function get-modules {
+  Get-InstalledModule
 }
 
 # Check if a given command exists
