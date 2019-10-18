@@ -4,11 +4,8 @@ REM Requires Node.js and NPM to be installed.
 
 CLS
 ECHO. & ECHO [100;4mNPM Global Modules Install Script[0m
-
 REM Verify Node.js and NPM are installed & can be found
-
 ECHO. & ECHO [92m Verifying NodeJS and NPM Installations... [0m
-
 ECHO. & ECHO  [45m NodeJS Installation: [0m & ECHO.
 
 WHERE node
@@ -20,157 +17,116 @@ WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
 REM Begin install
-
 ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
 
 REM Linting and Style Check
-
 REM :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
 
 REM # https://github.com/eslint/eslint
 REM :: CALL npm install --global eslint
-
 REM # https://github.com/jshint/jshint
 REM :: CALL npm install --global jshint
-
 REM # https://github.com/prettier/prettier
 REM :: CALL npm install --global prettier
 
 REM Git Integrations and Utilities
-
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
 REM # https://github.com/TejasQ/add-gitignore
-CALL npm install --global add-gitignore
-
+REM # CALL npm install --global add-gitignore
 REM # https://github.com/so-fancy/diff-so-fancy
-CALL npm install --global diff-so-fancy
-
+REM # CALL npm install --global diff-so-fancy
 REM # https://github.com/svhawks/g3l
 CALL npm install --global g3l
-
 REM # https://github.com/paulirish/git-open
 CALL npm install --global git-open
-
 REM # https://github.com/carloscuesta/gitmoji-cli
 REM :: CALL npm install --global gitmoji-cli
-
 REM # https://github.com/himynameisdave/git-labelmaker
 REM :: CALL npm install --global git-labelmaker
 
 REM NodeJS Utilities
-
 ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 
 REM # https://github.com/alanshaw/david
 CALL npm install --global david
-
 REM # https://github.com/dylang/npm-check
-CALL npm install --global npm-check 
-
+REM # CALL npm install --global npm-check
 REM # https://github.com/tjunnone/npm-check-updates
-CALL npm install --global npm-check-updates
-
+REM # CALL npm install --global npm-check-updates
 REM # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
-
 REM # https://github.com/siddharthkp/cost-of-modules
 REM :: CALL npm install --global cost-of-modules
-
 REM # https://github.com/dependency-check-team/dependency-check
 REM :: CALL npm install --global dependency-check
-
 REM # https://github.com/workshopper/how-to-npm
 REM :: CALL npm install --global how-to-npm
-
 REM # https://github.com/GoogleChromeLabs/ndb
 REM :: NOTE: ndb requires windows-build-tools
 REM :: CALL npm install --global ndb
-
 REM # https://github.com/sindresorhus/np
 REM :: CALL npm install --global np
-
 REM # https://github.com/zeke/npe
 REM :: CALL npm install --global npe
-
 REM # https://github.com/voidcosmos/npkill
 REM :: CALL npm install --global npkill
-
 REM # https://github.com/zeke/package-json-to-readme
 REM :: CALL npm install --global package-json-to-readme
-
 REM # https://github.com/Unitech/pm2
 REM :: CALL npm install --global pm2
-
 REM # https://github.com/felixrieseberg/windows-build-tools
 REM :: NOTE: windows-build-tools install must be run in admin prompt
 REM :: CALL npm install --global windows-build-tools
 
 REM TypeScript and Utilities
-
 REM :: ECHO. & ECHO  [44m Installing TypeScript and Utility Modules: [0m & ECHO.
 
 REM # https://github.com/xavdid/typed-install
 REM :: CALL npm install --global typed-install
-
 REM # https://github.com/microsoft/TypeScript
 REM :: CALL npm install --global typescript
-
 REM # https://github.com/bitjson/typescript-starter
 REM :: CALL npm install --global typescript-starter
-
 REM # https://github.com/jeffijoe/typesync
 REM :: CALL npm install --global typesync
 
 REM Development Utilities
-
-ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+REM :: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 REM # man pages and cheat sheets
 REM # https://github.com/tldr-pages/tldr
 REM # https://github.com/tldr-pages/tldr-node-client
-CALL npm install --global tldr
-
+REM :: CALL npm install --global tldr
 REM # Image minifier
 REM # https://github.com/imagemin/imagemin-cli
 REM :: CALL npm install --global imagemin-cli
-
 REM # License generator
 REM # https://github.com/plibither8/licensed
 REM :: CALL npm install --global licensed
-
 REM # Google's website performance test
 REM # https://github.com/GoogleChrome/lighthouse/
 REM :: CALL npm install --global lighthouse
-
 REM # Progressive web metrics
 REM # https://github.com/paulirish/pwmetrics
-REM :: CALL npm install --global pwmetrics
-
+CALL npm install --global pwmetrics
 REM # Placeholder image generator
 REM # https://github.com/ecrmnn/spaceholder
 REM :: CALL npm install --global spaceholder
-
 REM # SVG Optimizer
 REM # https://github.com/svg/svgo
 REM :: CALL npm install --global svgo
-
 REM # https://github.com/facebook/create-react-app
 REM :: CALL npm install --global create-react-app
-
 REM # https://github.com/encharm/Font-Awesome-SVG-PNG
 REM :: NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
 REM :: CALL npm install --global font-awesome-svg-png
-
 REM # https://github.com/Javascipt/Jsome
 REM :: CALL npm install --global jsome
-
 REM # https://github.com/WeiChiaChang/stacks-cli
 REM :: CALL npm install --global stacks-cli
-
 REM # https://github.com/strapi/strapi
 REM :: CALL npm install --global strapi@beta
-
 REM # https://github.com/kevva/viewport-list-cli
 REM :: CALL npm install --global viewport-list-cli
 
@@ -185,7 +141,7 @@ REM # https://github.com/sindresorhus/trash-cli
 CALL npm install --global trash-cli
 
 REM # https://github.com/kevva/wifi-password-cli
-CALL npm install --global wifi-password-cli
+REM :: CALL npm install --global wifi-password-cli
 
 REM # https://github.com/rafaelrinaldi/whereami
 REM :: CALL npm install --global @rafaelrinaldi/whereami
@@ -262,7 +218,7 @@ REM Check for outdated modules
 
 ECHO. & ECHO  [44m Checking for Outdated Modules: [0m & ECHO.
 
-CALL david -g
+REM :: CALL david -g
 
 ECHO. & ECHO  [42m Done! [0m
 
