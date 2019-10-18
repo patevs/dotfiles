@@ -29,6 +29,10 @@ function print-path {
 	($Env:Path).Split(";")
 }
 
+function ps-version {
+  $PSVersionTable.PSVersion
+}
+
 # Check if a given command exists
 # https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
 function Check-Command($cmdname) {
