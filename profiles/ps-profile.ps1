@@ -124,41 +124,43 @@ function sudo {
 # Set-Alias -Name gc -Value checkout
 # Set-Alias -Name gp -Value pull
 
-# ---------------------- #
-# System Related Aliases #
-# ---------------------- #
+# -------------------------------- #
+# System & Utility Related Aliases #
+# -------------------------------- #
 
 # Shutdown System
 function shutdownSys {
   Write-Host "`nShutting down system...`n"
   shutdown /p
 }
+Set-Alias -Name shut -Value shutdownSys
 
 # Restart System
 function restartSys {
   Write-Host "`nRestarting system...`n"
   shutdown /r /t 0
 }
-
-Set-Alias -Name shut -Value shutdownSys
 Set-Alias -Name restart -Value restartSys
 Set-Alias -Name reboot -Value restartSys
+
+# ----------------------------------------------- #
 
 # Move to Desktop Directory (~\desktop)
 function moveDesktop {
   $desktopPath = $env:USERPROFILE + "\desktop"
   Set-Location $desktopPath
 }
+Set-Alias -Name desktop -Value moveDesktop
+Set-Alias -Name desk -Value moveDesktop
 
 # Move to Development Directory (~\desktop\git)
 function moveDev {
   $devPath = $env:USERPROFILE + "\desktop\git"
   Set-Location $devPath
 }
-
-Set-Alias -Name desktop -Value moveDesktop
-Set-Alias -Name desk -Value moveDesktop
 Set-Alias -Name dev -Value moveDev
+
+# ----------------------------------------------- #
 
 # Print list of current directory contents
 # Set-Alias l Get-ChildItem -option AllScope
@@ -166,25 +168,32 @@ Set-Alias -Name dev -Value moveDev
 
 # Print list of current directory contents
 function getDirList {
-  # TODO: Ensure lsd command exists
+  # Ensure lsd command exists
   if (Check-Command lsdd) {
     Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
     lsd -a1
   } else {
     # Write-Host "`nlsd installation could not be found!" -ForegroundColor Red
     dir
+    # TODO: Use Terminal-Icons module or Get-ChildItemColor module
   }
 }
 Set-Alias -Name ls -Value getDirList -option AllScope -Force
 Set-Alias -Name ll -Value getDirList
 
-# function getDirListLong {
-#   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
-#   lsd -al
-# }
-
-
-# Set-Alias -Name lll -Value getDirListLong
+# Print long list of current directory contents
+function getDirListLong {
+  # Ensure lsd command exists
+  if (Check-Command lsdd) {
+    Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+    lsd -al
+  } else {
+    # Write-Host "`nlsd installation could not be found!" -ForegroundColor Red
+    dir
+    # TODO: Use Terminal-Icons module or Get-ChildItemColor module
+  }
+}
+Set-Alias -Name lll -Value getDirListLong
 
 # Print file contents using bat
 # Set-Alias -Name cat -Value getFileContents -option AllScope -Force
