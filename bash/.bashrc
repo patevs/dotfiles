@@ -6,7 +6,7 @@
 # ~/.bashrc file.
 
 # Move 'up' so many directories instead of using several cd ../../, etc.
-up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
+# :: up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
 
 ##########
 # Alias' #
