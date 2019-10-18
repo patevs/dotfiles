@@ -152,7 +152,7 @@ Set-Alias -Name dev -Value moveDev
 # NPM Related Aliases #
 # ------------------- #
 
-# TODO: Ensure NPM command exists
+# TODO: Ensure npm command exists
 # function getNpmLocals { npm list --depth=0 }
 # function getNpmGlobals { npm list --global --depth=0 }
 # Set-Alias -Name npl -Value getNpmLocals
@@ -162,12 +162,13 @@ Set-Alias -Name dev -Value moveDev
 # Chocolatey Related Aliases #
 # -------------------------- #
 
-# Set-Alias -Name cll -Value getChocoInstalls
-# Set-Alias -Name clo -Value getChocoOutdated
+# TODO: Ensure choco command exists
 # function getChocoInstalls { choco list -l }
 # function getChocoOutdated { choco upgrade all --noop }
+# Set-Alias -Name cll -Value getChocoInstalls
+# Set-Alias -Name clo -Value getChocoOutdated
 
-# Chocolatey profile
+# Chocolatey Profile
 # $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 # if (Test-Path($ChocolateyProfile)) {
 #   Import-Module "$ChocolateyProfile"
@@ -183,18 +184,18 @@ function prompt {
   Write-Host
   $origLastExitCode = $LastExitCode
 
-  # Test if admin
+  # Test if running as admin
   if (Test-Administrator) {
     # if elevated
     Write-Host "(Elevated) " -NoNewline -ForegroundColor White
   }
 
-  # write username@computername
+  # Write username@computername
   Write-Host "$env:USERNAME@" -NoNewline -ForegroundColor DarkYellow
   Write-Host "$env:COMPUTERNAME" -NoNewline -ForegroundColor Magenta
   Write-Host " : " -NoNewline -ForegroundColor DarkGray
 
-  # Write current path
+  # Build current path
   $curPath = $ExecutionContext.SessionState.Path.CurrentLocation.Path
   if ($curPath.ToLower().StartsWith($Home.ToLower())) {
     $curPath = "~" + $curPath.SubString($Home.Length)
