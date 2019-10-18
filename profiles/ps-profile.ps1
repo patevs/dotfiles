@@ -166,14 +166,26 @@ Set-Alias -Name dev -Value moveDev
 # Set-Alias l Get-ChildItem -option AllScope
 # Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 
+# Print short list of current directory contents
+function getDir {
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  # Ensure lsd command exists
+  if (Check-Command lsd) {
+    lsd
+  } else {
+    dir
+    # TODO: Use Terminal-Icons module or Get-ChildItemColor module
+  }
+}
+Set-Alias -Name l -Value getDir
+
 # Print list of current directory contents
 function getDirList {
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
   # Ensure lsd command exists
-  if (Check-Command lsdd) {
-    Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  if (Check-Command lsd) {
     lsd -a1
   } else {
-    # Write-Host "`nlsd installation could not be found!" -ForegroundColor Red
     dir
     # TODO: Use Terminal-Icons module or Get-ChildItemColor module
   }
@@ -183,12 +195,11 @@ Set-Alias -Name ll -Value getDirList
 
 # Print long list of current directory contents
 function getDirListLong {
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
   # Ensure lsd command exists
-  if (Check-Command lsdd) {
-    Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  if (Check-Command lsd) {
     lsd -al
   } else {
-    # Write-Host "`nlsd installation could not be found!" -ForegroundColor Red
     dir
     # TODO: Use Terminal-Icons module or Get-ChildItemColor module
   }
