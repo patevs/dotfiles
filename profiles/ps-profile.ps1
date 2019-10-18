@@ -173,13 +173,13 @@ Set-Alias -Name dev -Value moveDev
 # function getGithubClient { hub $args }
 # Set-Alias -Name git -Value getGithubClient
 
-# TODO: Ensure git command exists
-# TODO: Check for presence of g3l command
 # Print Git Status
 function getGitStatus { 
   # Check git command exists
   if (Check-Command git){
-    Write-Host "`nGit Exists!`n"  -ForegroundColor Green
+    Write-Host "`nGit Status:"  -ForegroundColor Green
+    git status
+    # TODO: Check for presence of g3l command
   }
   # git status 
 }
