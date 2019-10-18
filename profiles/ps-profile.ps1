@@ -244,22 +244,22 @@ Set-Alias -Name git -Value getGithubClient
 # Print Git Status
 function getGitStatus { 
   # Check current directory is a git repository i.e. contains .git folder
-  if (Test-Path .git) {
-    # Check git command exists
-    if (Check-Command git){
-      Write-Host "`nGit Status:`n"  -ForegroundColor Green
-      # Check g3l command exists
-      if (Check-Command g3l) {
-        g3l --status
-        Write-Host "" # new line
-      }
-      git status
-    } else {
-      Write-Host "`ngit installation could not be found!" -ForegroundColor Red
+  # if (Test-Path .git) {
+  # Check git command exists
+  if (Check-Command git){
+    Write-Host "`nGit Status:`n"  -ForegroundColor Green
+    # Check g3l command exists
+    if (Check-Command g3l) {
+      g3l --status
+      Write-Host "" # new line
     }
+    git status
   } else {
-    Write-Host "`nCurrent directory is not a git repository!" -ForegroundColor Red
+    Write-Host "`ngit installation could not be found!" -ForegroundColor Red
   }
+  # } else {
+  #   Write-Host "`nCurrent directory is not a git repository!" -ForegroundColor Red
+  # }
 }
 Set-Alias -Name gs -Value getGitStatus
 
