@@ -24,14 +24,14 @@ if (Check-Module "posh-git") {
 }
 
 # Check Terminal-Icons module is installed
-if (Check-Module "Terminal-Icons") {
-  Import-Module -Name Terminal-Icons
-}
+# if (Check-Module "Terminal-Icons") {
+#   Import-Module -Name Terminal-Icons
+# }
 
 # Check Get-ChildItemColor module is installed
-if (Check-Module "Get-ChildItemColor") {
-  Import-Module -Name Get-ChildItemColor
-}
+# if (Check-Module "Get-ChildItemColor") {
+#   Import-Module -Name Get-ChildItemColor
+# }
 
 # Start SSH agent
 Start-SshAgent
@@ -183,7 +183,6 @@ function getDir {
     lsd
   } else {
     dir
-    # TODO: Use Terminal-Icons module or Get-ChildItemColor module
   }
 }
 Set-Alias -Name l -Value getDir
@@ -196,7 +195,6 @@ function getDirList {
     lsd -a1
   } else {
     dir
-    # TODO: Use Terminal-Icons module or Get-ChildItemColor module
   }
 }
 Set-Alias -Name ls -Value getDirList -option AllScope -Force
@@ -210,7 +208,6 @@ function getDirListLong {
     lsd -al
   } else {
     dir
-    # TODO: Use Terminal-Icons module or Get-ChildItemColor module
   }
 }
 Set-Alias -Name lll -Value getDirListLong
