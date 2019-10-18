@@ -12,9 +12,13 @@ $MaximumHistoryCount = 10000
 $PSDefaultParameterValues["Out-File:Encoding"]="utf8"
 
 # Import Posh-Git module
-# TODO: ensure posh-git is installed
+# TODO: ensure posh-git module is installed
 # Add-PoshGitToProfile
 Import-Module -Name posh-git
+
+# Import Terminal-Icons module
+# TODO: ensure Terminal-Icons module is installed
+Import-Module -Name Terminal-Icons
 
 # Start SSH agent
 Start-SshAgent
