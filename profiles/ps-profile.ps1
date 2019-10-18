@@ -164,12 +164,19 @@ Set-Alias -Name dev -Value moveDev
 # Set-Alias l Get-ChildItem -option AllScope
 # Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 
-# TODO: Ensure lsd command exists
 # Print list of current directory contents
-# function getDirList {
-#   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
-#   lsd -a1
-# }
+function getDirList {
+  # TODO: Ensure lsd command exists
+  if (Check-Command lsdd) {
+    Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+    lsd -a1
+  } else {
+    # Write-Host "`nlsd installation could not be found!" -ForegroundColor Red
+    dir
+  }
+}
+Set-Alias -Name ls -Value getDirList -option AllScope -Force
+Set-Alias -Name ll -Value getDirList
 
 # function getDirListLong {
 #   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
@@ -177,8 +184,6 @@ Set-Alias -Name dev -Value moveDev
 # }
 
 
-# Set-Alias -Name ls -Value getDirList -option AllScope -Force
-# Set-Alias -Name ll -Value getDirList
 # Set-Alias -Name lll -Value getDirListLong
 
 # Print file contents using bat
