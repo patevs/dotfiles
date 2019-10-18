@@ -170,14 +170,14 @@ Set-Alias -Name dev -Value moveDev
 
 # TODO: Ensure hub command exists
 # Use GitHub's hub Client in favor of git
-# Set-Alias -Name git -Value getGithubClient
 # function getGithubClient { hub $args }
+# Set-Alias -Name git -Value getGithubClient
 
 # TODO: Ensure git command exists
 # TODO: Check for presence of g3l command
 # Print Git Status
-# Set-Alias -Name gs -Value getGitStatus
 # function getGitStatus { git status }
+# Set-Alias -Name gs -Value getGitStatus
 
 # ------------------- #
 # NPM Related Aliases #
