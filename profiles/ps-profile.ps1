@@ -29,6 +29,13 @@ function print-path {
 	($Env:Path).Split(";")
 }
 
+# Check if a given command exists
+# https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
+function Check-Command($cmdname) {
+  # return [bool](Get-Command -Name $cmdname -ea 0)
+  return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
+}
+
 # Test if running as administrator
 # http://serverfault.com/questions/95431
 function Test-Administrator {
