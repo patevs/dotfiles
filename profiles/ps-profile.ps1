@@ -170,8 +170,15 @@ Set-Alias -Name dev -Value moveDev
 
 # TODO: Ensure hub command exists
 # Use GitHub's hub Client in favor of git
-# function getGithubClient { hub $args }
-# Set-Alias -Name git -Value getGithubClient
+function getGithubClient { 
+  # Check hub command exists
+  if (Check-Command hub){
+    hub $args
+  } else {
+    Write-Host "`nhub Installation Could Not Be Found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name git -Value getGithubClient
 
 # Print Git Status
 function getGitStatus { 
@@ -187,7 +194,7 @@ function getGitStatus {
       }
       git status
     } else {
-      Write-Host "`nGit Installation Could Not Be Found!" -ForegroundColor Red
+      Write-Host "`ngit Installation Could Not Be Found!" -ForegroundColor Red
     }
   } else {
     Write-Host "`nCurrent directory is not a git repository!" -ForegroundColor Red
