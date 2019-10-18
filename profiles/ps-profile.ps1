@@ -133,6 +133,30 @@ Set-Alias -Name desktop -Value moveDesktop
 Set-Alias -Name desk -Value moveDesktop
 Set-Alias -Name dev -Value moveDev
 
+# function getDirList {
+#   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+#   lsd -a1
+# }
+
+# function getDirListLong {
+#   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+#   lsd -al
+# }
+
+# TODO: Ensure lsd command exists
+# Print list of current directory contents
+# Set-Alias -Name ls -Value getDirList -option AllScope -Force
+# Set-Alias -Name ll -Value getDirList
+# Set-Alias -Name lll -Value getDirListLong
+
+# Print file contents using bat
+# Set-Alias -Name cat -Value getFileContents -option AllScope -Force
+# function getFileContents { bat $args }
+
+# Get help using tldr
+# Set-Alias -Name help -Value getHelp
+# function getHelp { tldr $args }
+
 # ---------------------------- #
 # Git & GitHub Related Aliases #
 # ---------------------------- #
