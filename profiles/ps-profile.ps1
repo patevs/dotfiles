@@ -233,8 +233,17 @@ function getNpmLocals {
 }
 Set-Alias -Name npl -Value getNpmLocals
 
-# function getNpmGlobals { npm list --global --depth=0 }
-# Set-Alias -Name nplg -Value getNpmGlobals
+# Print list of global NPM dependencies
+function getNpmGlobals {
+  # Check npm command exists
+  if (Check-Command npm){
+    Write-Host "`nGlobal NPM Dependencies:`n" -ForegroundColor Green
+    npm list --global --depth=0 
+  } else {
+    Write-Host "`nnpm Installation Could Not Be Found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name nplg -Value getNpmGlobals
 
 # -------------------------- #
 # Chocolatey Related Aliases #
