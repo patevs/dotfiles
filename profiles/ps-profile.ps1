@@ -168,14 +168,15 @@ Set-Alias -Name dev -Value moveDev
 # Git & GitHub Related Aliases #
 # ---------------------------- #
 
-# TODO: Ensure hub command exists
 # Use GitHub's hub Client in favor of git
 function getGithubClient { 
   # Check hub command exists
   if (Check-Command hub){
     hub $args
+  } else if (Check-Command git) {
+    git $args
   } else {
-    Write-Host "`nhub Installation Could Not Be Found!" -ForegroundColor Red
+    Write-Host "`nNeither git or hub Installations Could Not Be Found!" -ForegroundColor Red
   }
 }
 Set-Alias -Name git -Value getGithubClient
