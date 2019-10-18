@@ -216,16 +216,19 @@ Set-Alias -Name gs -Value getGitStatus
 # NPM Related Aliases #
 # ------------------- #
 
-# TODO: Ensure npm command exists
-# Print local NPM dependencies
+# Print list of local NPM dependencies
 function getNpmLocals {
-  # TODO: Check current directory contains node_modules folder
-  # Check npm command exists
-  if (Check-Command npm){
-    Write-Host "`nLocal NPM Dependencies:" -ForegroundColor Green
-    npm list --depth=0 
+  # Check node_modules directory exists
+  if (Test-Path node_modules){
+    # Check npm command exists
+    if (Check-Command npm){
+      Write-Host "`nLocal NPM Dependencies:`n" -ForegroundColor Green
+      npm list --depth=0 
+    } else {
+      Write-Host "`nnpm Installation Could Not Be Found!" -ForegroundColor Red
+    }
   } else {
-    Write-Host "`nnpm Installation Could Not Be Found!" -ForegroundColor Red
+    Write-Host "`nnode_modules folder does not exist in current directory!" -ForegroundColor Red
   }
 }
 Set-Alias -Name npl -Value getNpmLocals
