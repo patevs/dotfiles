@@ -144,6 +144,8 @@ Set-Alias -Name desktop -Value moveDesktop
 Set-Alias -Name desk -Value moveDesktop
 Set-Alias -Name dev -Value moveDev
 
+# TODO: Ensure lsd command exists
+# Print list of current directory contents
 # function getDirList {
 #   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
 #   lsd -a1
@@ -154,8 +156,7 @@ Set-Alias -Name dev -Value moveDev
 #   lsd -al
 # }
 
-# TODO: Ensure lsd command exists
-# Print list of current directory contents
+
 # Set-Alias -Name ls -Value getDirList -option AllScope -Force
 # Set-Alias -Name ll -Value getDirList
 # Set-Alias -Name lll -Value getDirListLong
@@ -216,9 +217,20 @@ Set-Alias -Name gs -Value getGitStatus
 # ------------------- #
 
 # TODO: Ensure npm command exists
-# function getNpmLocals { npm list --depth=0 }
+# Print local NPM dependencies
+function getNpmLocals {
+  # TODO: Check current directory contains node_modules folder
+  # Check npm command exists
+  if (Check-Command npm){
+    Write-Host "`nLocal NPM Dependencies:" -ForegroundColor Green
+    npm list --depth=0 
+  } else {
+    Write-Host "`nnpm Installation Could Not Be Found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name npl -Value getNpmLocals
+
 # function getNpmGlobals { npm list --global --depth=0 }
-# Set-Alias -Name npl -Value getNpmLocals
 # Set-Alias -Name nplg -Value getNpmGlobals
 
 # -------------------------- #
