@@ -11,18 +11,27 @@ $MaximumHistoryCount = 10000
 # Produce UTF-8 by default
 $PSDefaultParameterValues["Out-File:Encoding"]="utf8"
 
-# Import Posh-Git module
-# TODO: ensure posh-git module is installed
-# Add-PoshGitToProfile
-Import-Module -Name posh-git
+# Check if a given PowerShell module is installed
+# https://stackoverflow.com/questions/28740320/how-do-i-check-if-a-powershell-module-is-installed
+function Check-Module($modname){
+  return [bool](Get-Module -ListAvailable -Name $modname)
+}
 
-# Import Terminal-Icons module
-# TODO: ensure Terminal-Icons module is installed
-# Import-Module -Name Terminal-Icons
+# Check posh-git module is installed
+if (Check-Module "posh-git") {
+  # Add-PoshGitToProfile
+  Import-Module -Name posh-git
+}
 
-# Import Get-ChildItemColor module
-# TODO: ensure Get-ChildItemColor module is installed
-# Import-Module Get-ChildItemColor
+# Check Terminal-Icons module is installed
+if (Check-Module "Terminal-Icons") {
+  Import-Module -Name Terminal-Icons
+}
+
+# Check Get-ChildItemColor module is installed
+if (Check-Module "Get-ChildItemColor") {
+  Import-Module -Name Get-ChildItemColor
+}
 
 # Start SSH agent
 Start-SshAgent
