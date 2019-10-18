@@ -20,6 +20,10 @@ Import-Module -Name posh-git
 # TODO: ensure Terminal-Icons module is installed
 Import-Module -Name Terminal-Icons
 
+# Import Get-ChildItemColor module
+# TODO: ensure Get-ChildItemColor module is installed
+Import-Module Get-ChildItemColor
+
 # Start SSH agent
 Start-SshAgent
 
@@ -155,6 +159,10 @@ function moveDev {
 Set-Alias -Name desktop -Value moveDesktop
 Set-Alias -Name desk -Value moveDesktop
 Set-Alias -Name dev -Value moveDev
+
+# Print list of current directory contents
+Set-Alias l Get-ChildItem -option AllScope
+Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 
 # TODO: Ensure lsd command exists
 # Print list of current directory contents
