@@ -181,7 +181,6 @@ function getGitStatus {
     Write-Host "`nGit Status:`n"  -ForegroundColor Green
     # Check g3l command exists
     if (Check-Command g3l) {
-      # Write-Host "`nG3L Exists!`n"  -ForegroundColor Green  
       g3l --status
       Write-Host "" # new line
     }
