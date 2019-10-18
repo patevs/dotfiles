@@ -19,6 +19,8 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... 
 REM Begin install
 ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
 
+REM :: CALL npm install --global nasa-cli
+
 REM Linting and Style Check
 REM :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
 
@@ -131,80 +133,59 @@ REM # https://github.com/kevva/viewport-list-cli
 REM :: CALL npm install --global viewport-list-cli
 
 REM System Utilities
-
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
 REM # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
-
 REM # https://github.com/sindresorhus/trash-cli
 CALL npm install --global trash-cli
-
 REM # https://github.com/kevva/wifi-password-cli
-REM :: CALL npm install --global wifi-password-cli
-
+CALL npm install --global wifi-password-cli
 REM # https://github.com/rafaelrinaldi/whereami
 REM :: CALL npm install --global @rafaelrinaldi/whereami
-
 REM # https://github.com/sindresorhus/fkill-cli
 REM :: CALL npm install --global fkill-cli
-
 REM # https://github.com/sindresorhus/open-cli
-REM :: CALL npm install --global open-cli
-
+CALL npm install --global open-cli
 REM # https://github.com/sindresorhus/pageres-cli
 REM :: CALL npm install --global pageres-cli
 
 REM Yeoman and generators
-
 REM :: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
 REM # https://github.com/yeoman/yo
 REM :: CALL npm install --global yo
 
 REM HTML/Frontend
-
 REM # https://github.com/h5bp/generator-h5bp
 REM :: CALL npm install --global generator-h5bp
-
 REM # https://github.com/yeoman/generator-webapp
 REM :: CALL npm install --global generator-webapp
-
 REM JavaScript/Node
-
 REM :: (Ava/Codecov)
 REM # https://github.com/sindresorhus/generator-nm
 REM :: CALL npm install --global generator-nm
-
 REM :: (Jest/Coveralls)
 REM # https://github.com/yeoman/generator-node
 REM :: CALL npm install --global generator-node
-
 REM Typescript
-
 REM :: (Jest)
 REM # https://github.com/ospatil/generator-node-typescript
 REM :: CALL npm install --global generator-node-typescript
-
 REM :: (Ava)
 REM # https://github.com/phunguyen19/generator-typescript-starter
 REM :: CALL npm install --global generator-typescript-starter
 
 REM Alternative Package Managers
-
 REM :: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
 REM # https://github.com/pnpm/pnpm
 REM :: CALL npm install --global pnpm
-
+REM Upgrade pnpm
+REM :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
+REM :: CALL pnpm install --global pnpm
 REM # https://github.com/yarnpkg/yarn
 REM :: CALL npm install --global yarn
-
-REM Upgrade pnpm
-
-REM :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-
-REM :: CALL pnpm install --global pnpm
 
 ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 
