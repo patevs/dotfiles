@@ -249,7 +249,6 @@ Set-Alias -Name nplg -Value getNpmGlobals
 # Chocolatey Related Aliases #
 # -------------------------- #
 
-# TODO: Ensure choco command exists
 # Print list of local chocolatey installations
 function getChocoInstalls { 
   # Check choco command exists
@@ -262,14 +261,23 @@ function getChocoInstalls {
 }
 Set-Alias -Name cll -Value getChocoInstalls
 
-# function getChocoOutdated { choco upgrade all --noop }
-# Set-Alias -Name clo -Value getChocoOutdated
+# Print list of outdated chocolatey installations
+function getChocoOutdated { 
+  # Check choco command exists
+  if (Check-Command choco) {
+    Write-Host "`nOutdated Chocolatey Installations:`n" -ForegroundColor Green
+    choco upgrade all --noop 
+  } else {
+    Write-Host "`nchoco installation could not be found!" -ForegroundColor Red
+  } 
+}
+Set-Alias -Name clo -Value getChocoOutdated
 
 # Chocolatey Profile
-# $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-# if (Test-Path($ChocolateyProfile)) {
-#   Import-Module "$ChocolateyProfile"
-# }
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
 
 # --------------------------- #
 # Customize PowerShell Prompt #
