@@ -17,9 +17,9 @@ $PSDefaultParameterValues["Out-File:Encoding"]="utf8"
 # Start SSH agent
 # Start-SshAgent
 
-####################
+# ---------------- #
 # Helper Functions #
-####################
+# ---------------- #
 
 function reload-profile {
 	& $profile
@@ -55,9 +55,9 @@ function printWelcome {
 }
 printWelcome
 
-######################
+# ------------------ #
 # Unix-like Commands #
-######################
+# ------------------ #
 
 function grep($regex, $dir) {
 	if ( $dir ) {
@@ -84,9 +84,9 @@ function sudo {
 	[System.Diagnostics.Process]::Start($psi) >> $null
 }
 
-###########
-# Aliases #
-###########
+# --------------- #
+# Command Aliases #
+# --------------- #
 
 # function pull () { & get pull $args }
 # function checkout () { & git checkout $args }
@@ -97,17 +97,17 @@ function sudo {
 # Set-Alias -Name gc -Value checkout
 # Set-Alias -Name gp -Value pull
 
-##################
-# System Related #
-##################
+# ---------------------- #
+# System Related Aliases #
+# ---------------------- #
 
-# Shutdown system
+# Shutdown System
 function shutdownSys {
   Write-Host "`nShutting down system...`n"
   shutdown /p
 }
 
-# Restart system
+# Restart System
 function restartSys {
   Write-Host "`nRestarting system...`n"
   shutdown /r /t 0
@@ -117,13 +117,13 @@ Set-Alias -Name shut -Value shutdownSys
 Set-Alias -Name restart -Value restartSys
 Set-Alias -Name reboot -Value restartSys
 
-# Move to Desktop directory (~\desktop)
+# Move to Desktop Directory (~\desktop)
 function moveDesktop {
   $desktopPath = $env:USERPROFILE + "\desktop"
   Set-Location $desktopPath
 }
 
-# Move to development directory (~\desktop\git)
+# Move to Development Directory (~\desktop\git)
 function moveDev {
   $devPath = $env:USERPROFILE + "\desktop\git"
   Set-Location $devPath
@@ -135,9 +135,9 @@ Set-Alias -Name desktop -Value moveDesktop
 Set-Alias -Name desk -Value moveDesktop
 Set-Alias -Name dev -Value moveDev
 
-###############
-# Git Related #
-###############
+# ------------------- #
+# Git Related Aliases #
+# ------------------- #
 
 # Use github client
 # Set-Alias -Name git -Value getGithubClient
@@ -148,18 +148,18 @@ Set-Alias -Name dev -Value moveDev
 # TODO: Check for presence of g3l command
 # function getGitStatus { git status }
 
-# --- #
-# NPM #
-# --- #
+# ------------------- #
+# NPM Related Aliases #
+# ------------------- #
 
 # Set-Alias -Name npl -Value getNpmLocals
 # Set-Alias -Name nplg -Value getNpmGlobals
 # function getNpmLocals { npm list --depth=0 }
 # function getNpmGlobals { npm list --global --depth=0 }
 
-# ---------- #
-# Chocolatey #
-# ---------- #
+# -------------------------- #
+# Chocolatey Related Aliases #
+# -------------------------- #
 
 # Set-Alias -Name cll -Value getChocoInstalls
 # Set-Alias -Name clo -Value getChocoOutdated
@@ -172,9 +172,9 @@ Set-Alias -Name dev -Value moveDev
 #   Import-Module "$ChocolateyProfile"
 # }
 
-####################
-# Customize Prompt #
-####################
+# --------------------------- #
+# Customize PowerShell Prompt #
+# --------------------------- #
 
 # https://github.com/dahlbyk/posh-git/wiki/Customizing-Your-PowerShell-Prompt
 function prompt {
@@ -216,3 +216,4 @@ function prompt {
 
 
 # EOF #
+
