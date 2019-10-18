@@ -173,10 +173,14 @@ function getGithubClient {
   # Check hub command exists
   if (Check-Command hub){
     hub $args
-  } else if (Check-Command git) {
-    git $args
   } else {
-    Write-Host "`nNeither git or hub Installations Could Not Be Found!" -ForegroundColor Red
+    Write-Host "`nhub Installation Could Not Be Found!" -ForegroundColor Red
+    # TODO: Check if git command exists
+    # if (Check-Command git) {
+    #   git $args
+    # } else {
+    #   Write-Host "`nNeither git or hub Installations Could Not Be Found!" -ForegroundColor Red
+    # } 
   }
 }
 Set-Alias -Name git -Value getGithubClient
