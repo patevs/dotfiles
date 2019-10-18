@@ -175,11 +175,15 @@ Set-Alias -Name dev -Value moveDev
 
 # Print Git Status
 function getGitStatus { 
+  # TODO: Check current directory contains .git folder i.e. is a git repository
   # Check git command exists
   if (Check-Command git){
     Write-Host "`nGit Status:`n"  -ForegroundColor Green
+    # Check g3l command exists
+    if (Check-Command g3l) {
+      Write-Host "`nG3L Exists!`n"  -ForegroundColor Green  
+    }
     git status
-    # TODO: Check for presence of g3l command
   } else {
     Write-Host "`nGit Installation Could Not Be Found!"  -ForegroundColor Red
   }
