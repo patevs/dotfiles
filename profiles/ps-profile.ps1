@@ -177,11 +177,12 @@ Set-Alias -Name dev -Value moveDev
 function getGitStatus { 
   # Check git command exists
   if (Check-Command git){
-    Write-Host "`nGit Status:"  -ForegroundColor Green
+    Write-Host "`nGit Status:`n"  -ForegroundColor Green
     git status
     # TODO: Check for presence of g3l command
+  } else {
+    Write-Host "`nGit Installation Could Not Be Found!"  -ForegroundColor Red
   }
-  # git status 
 }
 Set-Alias -Name gs -Value getGitStatus
 
