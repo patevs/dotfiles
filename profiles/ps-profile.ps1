@@ -176,8 +176,14 @@ Set-Alias -Name dev -Value moveDev
 # TODO: Ensure git command exists
 # TODO: Check for presence of g3l command
 # Print Git Status
-# function getGitStatus { git status }
-# Set-Alias -Name gs -Value getGitStatus
+function getGitStatus { 
+  # Check git command exists
+  if (Check-Command git){
+    Write-Host "`nGit Exists!`n"  -ForegroundColor Green
+  }
+  # git status 
+}
+Set-Alias -Name gs -Value getGitStatus
 
 # ------------------- #
 # NPM Related Aliases #
