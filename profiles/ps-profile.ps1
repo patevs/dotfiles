@@ -179,7 +179,7 @@ function getGithubClient {
   if (Check-Command hub){
     hub $args
   } else {
-    Write-Host "`nhub Installation Could Not Be Found!" -ForegroundColor Red
+    Write-Host "`nhub installation could not be found!" -ForegroundColor Red
     # TODO: Check if git command exists
     # if (Check-Command git) {
     #   git $args
@@ -204,7 +204,7 @@ function getGitStatus {
       }
       git status
     } else {
-      Write-Host "`ngit Installation Could Not Be Found!" -ForegroundColor Red
+      Write-Host "`ngit installation could not be found!" -ForegroundColor Red
     }
   } else {
     Write-Host "`nCurrent directory is not a git repository!" -ForegroundColor Red
@@ -225,7 +225,7 @@ function getNpmLocals {
       Write-Host "`nLocal NPM Dependencies:`n" -ForegroundColor Green
       npm list --depth=0 
     } else {
-      Write-Host "`nnpm Installation Could Not Be Found!" -ForegroundColor Red
+      Write-Host "`nnpm installation could not be found!" -ForegroundColor Red
     }
   } else {
     Write-Host "`nnode_modules folder does not exist in current directory!" -ForegroundColor Red
@@ -240,7 +240,7 @@ function getNpmGlobals {
     Write-Host "`nGlobal NPM Dependencies:`n" -ForegroundColor Green
     npm list --global --depth=0 
   } else {
-    Write-Host "`nnpm Installation Could Not Be Found!" -ForegroundColor Red
+    Write-Host "`nnpm installation could not be found!" -ForegroundColor Red
   }
 }
 Set-Alias -Name nplg -Value getNpmGlobals
@@ -250,9 +250,19 @@ Set-Alias -Name nplg -Value getNpmGlobals
 # -------------------------- #
 
 # TODO: Ensure choco command exists
-# function getChocoInstalls { choco list -l }
+# Print list of local chocolatey installations
+function getChocoInstalls { 
+  # Check choco command exists
+  if (Check-Command choco) {
+    Write-Host "`nLocal Chocolatey Installations:`n" -ForegroundColor Green
+    choco list -l 
+  } else {
+    Write-Host "`nchoco installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name cll -Value getChocoInstalls
+
 # function getChocoOutdated { choco upgrade all --noop }
-# Set-Alias -Name cll -Value getChocoInstalls
 # Set-Alias -Name clo -Value getChocoOutdated
 
 # Chocolatey Profile
