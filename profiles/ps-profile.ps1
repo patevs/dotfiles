@@ -14,10 +14,10 @@ $PSDefaultParameterValues["Out-File:Encoding"]="utf8"
 # Import Posh-Git module
 # TODO: ensure posh-git is installed
 # Add-PoshGitToProfile
-# Import-Module -Name posh-git
+Import-Module -Name posh-git
 
 # Start SSH agent
-# Start-SshAgent
+Start-SshAgent
 
 # ---------------- #
 # Helper Functions #
@@ -36,8 +36,8 @@ function ps-version {
   $PSVersionTable.PSVersion
 }
 
-# Print installed PowerShell modules
-function get-modules {
+# Print list of installed PowerShell modules
+function ps-modules {
   Get-InstalledModule
 }
 
@@ -323,7 +323,7 @@ function prompt {
   # Write-Host " :" -NoNewline -ForegroundColor DarkGray
 
   # Write posh-git status
-  # Write-VcsStatus
+  Write-VcsStatus
 
   $LastExitCode = $origLastExitCode
   "`n$('>' * ($nestedPromptLevel + 1)) "
