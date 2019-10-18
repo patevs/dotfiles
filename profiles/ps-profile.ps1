@@ -13,6 +13,7 @@ $PSDefaultParameterValues["Out-File:Encoding"]="utf8"
 
 # Import Posh-Git module
 # TODO: ensure posh-git is installed
+# Add-PoshGitToProfile
 # Import-Module -Name posh-git
 
 # Start SSH agent
