@@ -127,35 +127,36 @@ function moveDesktop {
 function moveDev {
   $devPath = $env:USERPROFILE + "\desktop\git"
   Set-Location $devPath
-  # Clear-Host
-  # getDirList
 }
 
 Set-Alias -Name desktop -Value moveDesktop
 Set-Alias -Name desk -Value moveDesktop
 Set-Alias -Name dev -Value moveDev
 
-# ------------------- #
-# Git Related Aliases #
-# ------------------- #
+# ---------------------------- #
+# Git & GitHub Related Aliases #
+# ---------------------------- #
 
-# Use github client
+# TODO: Ensure hub command exists
+# Use GitHub's hub Client in favor of git
 # Set-Alias -Name git -Value getGithubClient
 # function getGithubClient { hub $args }
 
-# Print Git status
-# Set-Alias -Name gs -Value getGitStatus
+# TODO: Ensure git command exists
 # TODO: Check for presence of g3l command
+# Print Git Status
+# Set-Alias -Name gs -Value getGitStatus
 # function getGitStatus { git status }
 
 # ------------------- #
 # NPM Related Aliases #
 # ------------------- #
 
-# Set-Alias -Name npl -Value getNpmLocals
-# Set-Alias -Name nplg -Value getNpmGlobals
+# TODO: Ensure NPM command exists
 # function getNpmLocals { npm list --depth=0 }
 # function getNpmGlobals { npm list --global --depth=0 }
+# Set-Alias -Name npl -Value getNpmLocals
+# Set-Alias -Name nplg -Value getNpmGlobals
 
 # -------------------------- #
 # Chocolatey Related Aliases #
