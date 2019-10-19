@@ -19,10 +19,20 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... 
 REM Begin install
 ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
 
-REM Just for fun
-REM :: ECHO  [44m Installing Just-For-Fun Modules: [0m & ECHO.
+REM Just for fun & testing
+REM :: ECHO  [44m Installing Just-For-Fun & Testing Modules: [0m & ECHO.
 REM # https://github.com/xxczaki/nasa-cli
 REM :: CALL npm install --global nasa-cli
+REM # https://github.com/mishoo/UglifyJS2
+REM # https://github.com/sitespeedio/sitespeed.io
+REM # https://github.com/lirantal/is-website-vulnerable
+REM # https://github.com/webtorrent/webtorrent-cli
+REM # https://github.com/MrRio/vtop
+REM # https://github.com/kangax/html-minifier
+REM # https://github.com/ddopson/underscore-cli
+REM # https://github.com/lordgiotto/google-font-installer
+REM # https://github.com/riyadhalnur/weather-cli
+REM # https://github.com/jhotmann/node-passgen-cli
 
 REM Linting and Style Check
 REM :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
