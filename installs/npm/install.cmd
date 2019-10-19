@@ -19,6 +19,9 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... 
 REM Begin install
 ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
 
+REM Just for fun
+REM :: ECHO  [44m Installing Just-For-Fun Modules: [0m & ECHO.
+REM # https://github.com/xxczaki/nasa-cli
 REM :: CALL npm install --global nasa-cli
 
 REM Linting and Style Check
