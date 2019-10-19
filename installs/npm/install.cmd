@@ -35,9 +35,9 @@ REM Git Integrations and Utilities
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
 REM # https://github.com/TejasQ/add-gitignore
-REM # CALL npm install --global add-gitignore
+CALL npm install --global add-gitignore
 REM # https://github.com/so-fancy/diff-so-fancy
-REM # CALL npm install --global diff-so-fancy
+CALL npm install --global diff-so-fancy
 REM # https://github.com/svhawks/g3l
 CALL npm install --global g3l
 REM # https://github.com/paulirish/git-open
@@ -53,13 +53,13 @@ ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 REM # https://github.com/alanshaw/david
 CALL npm install --global david
 REM # https://github.com/dylang/npm-check
-REM # CALL npm install --global npm-check
+CALL npm install --global npm-check
 REM # https://github.com/tjunnone/npm-check-updates
-REM # CALL npm install --global npm-check-updates
+CALL npm install --global npm-check-updates
 REM # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
 REM # https://github.com/siddharthkp/cost-of-modules
-REM :: CALL npm install --global cost-of-modules
+CALL npm install --global cost-of-modules
 REM # https://github.com/dependency-check-team/dependency-check
 REM :: CALL npm install --global dependency-check
 REM # https://github.com/workshopper/how-to-npm
@@ -108,7 +108,7 @@ REM # https://github.com/plibither8/licensed
 REM :: CALL npm install --global licensed
 REM # Google's website performance test
 REM # https://github.com/GoogleChrome/lighthouse/
-REM :: CALL npm install --global lighthouse
+CALL npm install --global lighthouse
 REM # Progressive web metrics
 REM # https://github.com/paulirish/pwmetrics
 CALL npm install --global pwmetrics
