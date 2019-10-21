@@ -202,6 +202,8 @@ REM :: CALL npm install --global generator-typescript-starter
 REM Alternative Package Managers
 REM :: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
+REM ## https://github.com/alexanderGugel/ied
+REM :: CALL npm install --global ied
 REM # https://github.com/pnpm/pnpm
 REM :: CALL npm install --global pnpm
 REM Upgrade pnpm
