@@ -331,8 +331,8 @@ function prompt {
   # Write-Host "$env:USERNAME@" -NoNewline -ForegroundColor DarkYellow
   # Write-Host "$env:COMPUTERNAME" -NoNewline -ForegroundColor Magenta
   # Write username
-  Write-Host "$env:USERNAME" -NoNewline -ForegroundColor DarkYellow
-  Write-Host " : " -NoNewline -ForegroundColor DarkGray
+  # Write-Host "$env:USERNAME" -NoNewline -ForegroundColor DarkYellow
+  # Write-Host " : " -NoNewline -ForegroundColor DarkGray
 
   # Build current path
   $curPath = $ExecutionContext.SessionState.Path.CurrentLocation.Path
