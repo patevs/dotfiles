@@ -49,6 +49,62 @@ npm --version
 # BEGIN INSTALL #
 #################
 
+# ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
+
+printf "All Requirements Satisfied! Installing NPM Global Modules..."
+
+printf "Installing Git Integration and Utility Modules: "
+
+# https://github.com/TejasQ/add-gitignore
+npm install --global add-gitignore
+# https://github.com/so-fancy/diff-so-fancy
+npm install --global diff-so-fancy
+# https://github.com/svhawks/g3l
+npm install --global g3l
+# https://github.com/paulirish/git-open
+npm install --global git-open
+
+printf "Installing NodeJS Utility Modules: "
+
+# https://github.com/alanshaw/david
+npm install --global david
+# https://github.com/dylang/npm-check
+npm install --global npm-check
+# https://github.com/tjunnone/npm-check-updates
+npm install --global npm-check-updates
+# https://github.com/ruyadorno/ntl
+npm install --global ntl
+# https://github.com/siddharthkp/cost-of-modules
+npm install --global cost-of-modules
+
+# Development Utilities
+# ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+
+printf "Installing Development Utility Modules: "
+
+# Google's website performance test
+# https://github.com/GoogleChrome/lighthouse/
+npm install --global lighthouse
+# Progressive web metrics
+# https://github.com/paulirish/pwmetrics
+npm install --global pwmetrics
+
+printf "Installing System Utility Modules: "
+
+# https://github.com/sindresorhus/empty-trash-cli
+npm install --global empty-trash-cli
+# https://github.com/sindresorhus/trash-cli
+npm install --global trash-cli
+# https://github.com/kevva/wifi-password-cli
+npm install --global wifi-password-cli
+# https://github.com/sindresorhus/open-cli
+npm install --global open-cli
+
+# ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
+printf "Finsihed Installing NPM Global Modules!"
+printf "Listing NPM Global Installs: "
+
+npm list --global --depth=0
 
 printf "\n ---- ${GREEN}DONE!${NC} ---- \n\n"
 
