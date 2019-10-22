@@ -5,37 +5,6 @@
 #          @author patevs          #
 # -------------------------------- #
 
-# Increase history
-$MaximumHistoryCount = 10000
-
-# Produce UTF-8 by default
-$PSDefaultParameterValues["Out-File:Encoding"]="utf8"
-
-# Check if a given PowerShell module is installed
-# https://stackoverflow.com/questions/28740320/how-do-i-check-if-a-powershell-module-is-installed
-function Check-Module($modname){
-  return [bool](Get-Module -ListAvailable -Name $modname)
-}
-
-# Check posh-git module is installed
-if (Check-Module "posh-git") {
-  # Add-PoshGitToProfile
-  Import-Module -Name posh-git
-}
-
-# Check Terminal-Icons module is installed
-# if (Check-Module "Terminal-Icons") {
-#   Import-Module -Name Terminal-Icons
-# }
-
-# Check Get-ChildItemColor module is installed
-# if (Check-Module "Get-ChildItemColor") {
-#   Import-Module -Name Get-ChildItemColor
-# }
-
-# Start SSH agent
-Start-SshAgent
-
 # ---------------- #
 # Helper Functions #
 # ---------------- #
@@ -65,6 +34,12 @@ function Check-Command($cmdname) {
   return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
 }
 
+# Check if a given PowerShell module is installed
+# https://stackoverflow.com/questions/28740320/how-do-i-check-if-a-powershell-module-is-installed
+function Check-Module($modname){
+  return [bool](Get-Module -ListAvailable -Name $modname)
+}
+
 # Test if running as administrator
 # http://serverfault.com/questions/95431
 function Test-Administrator {
@@ -91,6 +66,28 @@ function printWelcome {
 }
 printWelcome
 
+#################
+# CONFIGURATION #
+#################
+
+# Increase history
+$MaximumHistoryCount = 10000
+
+# Produce UTF-8 by default
+$PSDefaultParameterValues["Out-File:Encoding"]="utf8"
+
+# Import posh-git module if installed
+if (Check-Module "posh-git") { Import-Module -Name posh-git }
+
+# Import Terminal-Icons module if installed
+# if (Check-Module "Terminal-Icons") { Import-Module -Name Terminal-Icons }
+
+# Import Get-ChildItemColor module if installed
+# if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
+
+# Start SSH agent
+Start-SshAgent
+
 # ------------------ #
 # Unix-like Commands #
 # ------------------ #
@@ -109,15 +106,6 @@ function which($name) {
 
 function touch($file) {
 	"" | Out-File $file -Encoding ASCII
-}
-
-function sudo {
-	$file, [string]$arguments = $args;
-	$psi = new-object System.Diagnostics.ProcessStartInfo $file;
-	$psi.Arguments = $arguments;
-	$psi.Verb = "runas";
-	$psi.WorkingDirectory = get-location;
-	[System.Diagnostics.Process]::Start($psi) >> $null
 }
 
 # --------------- #
@@ -178,24 +166,18 @@ Set-Alias -Name dev -Value moveDev
 # Print short list of current directory contents
 function getDir {
   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
-  # Ensure lsd command exists
-  if (Check-Command lsd) {
-    lsd
-  } else {
-    dir
-  }
+  # Favour lsd over default dir command
+  if (Check-Command lsd) { lsd } 
+  else { dir }
 }
 Set-Alias -Name l -Value getDir
 
 # Print list of current directory contents
 function getDirList {
   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
-  # Ensure lsd command exists
-  if (Check-Command lsd) {
-    lsd -a1
-  } else {
-    dir
-  }
+  # Favour lsd over default dir command
+  if (Check-Command lsd) { lsd -a1 } 
+  else { dir }
 }
 Set-Alias -Name ls -Value getDirList -option AllScope -Force
 Set-Alias -Name ll -Value getDirList
@@ -203,14 +185,13 @@ Set-Alias -Name ll -Value getDirList
 # Print long list of current directory contents
 function getDirListLong {
   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
-  # Ensure lsd command exists
-  if (Check-Command lsd) {
-    lsd -al
-  } else {
-    dir
-  }
+  # Favour lsd over default dir command
+  if (Check-Command lsd) { lsd -al } 
+  else { dir }
 }
 Set-Alias -Name lll -Value getDirListLong
+
+# ----------------------------------------------- #
 
 # Print file contents using bat
 # Set-Alias -Name cat -Value getFileContents -option AllScope -Force
