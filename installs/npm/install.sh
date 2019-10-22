@@ -49,7 +49,6 @@ npm --version
 # BEGIN INSTALL #
 #################
 
-# ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
 
 printf "All Requirements Satisfied! Installing NPM Global Modules..."
 
@@ -77,9 +76,6 @@ npm install --global ntl
 # https://github.com/siddharthkp/cost-of-modules
 npm install --global cost-of-modules
 
-# Development Utilities
-# ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
-
 printf "Installing Development Utility Modules: "
 
 # Google's website performance test
@@ -100,7 +96,6 @@ npm install --global wifi-password-cli
 # https://github.com/sindresorhus/open-cli
 npm install --global open-cli
 
-# ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 printf "Finsihed Installing NPM Global Modules!"
 printf "Listing NPM Global Installs: "
 
