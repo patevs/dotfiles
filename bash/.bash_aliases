@@ -20,12 +20,21 @@ alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/
 # Example: weather New York, NY
 # function weather() { curl -s http://wttr.in/$2; }
 
-# TODO: Complete this function
 # Check if a given command exists
-# https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
-# function Check-Command($cmdname) {
-#   return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
+# function checkExistCommand()
+# {
+#     local -r command="${1}"
+#     local -r errorMessage="${2}"
+#     if [[ "$(existCommand "${command}")" = 'false' ]]
+#     then
+#         if [[ "$(isEmptyString "${errorMessage}")" = 'true' ]]
+#         then
+#             fatal "\nFATAL : command '${command}' not found"
+#         fi
+#         fatal "\nFATAL : ${errorMessage}"
+#     fi
 # }
+
 
 ##########################
 # System Related Aliases #
