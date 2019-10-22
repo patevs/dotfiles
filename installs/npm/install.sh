@@ -28,7 +28,7 @@ NC='\033[0m' # No Color
 BACKGROUND_GREEN='\033[42m'
 BACKGROUND_BLUE='\033[44m'
 BACKGROUND_PURPLE='\033[45m'
-BOLD='\033[1m'
+# BOLD='\033[1m'
 
 # clear
 # printf "\n ---- ${GREEN}npm/install.sh${NC} ---- \n"
@@ -70,51 +70,51 @@ printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modu
 printf "\n  ${BACKGROUND_GREEN} Installing Git Integration and Utility Modules: ${NC}\n"
 
 # https://github.com/TejasQ/add-gitignore
-# npm install --global add-gitignore
+npm install --global add-gitignore
 # https://github.com/so-fancy/diff-so-fancy
-# npm install --global diff-so-fancy
+npm install --global diff-so-fancy
 # https://github.com/svhawks/g3l
-# npm install --global g3l
+npm install --global g3l
 # https://github.com/paulirish/git-open
-# npm install --global git-open
+npm install --global git-open
 
 printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Utility Modules: ${NC}\n"
 
 # https://github.com/alanshaw/david
-# npm install --global david
+npm install --global david
 # https://github.com/dylang/npm-check
-# npm install --global npm-check
+npm install --global npm-check
 # https://github.com/tjunnone/npm-check-updates
-# npm install --global npm-check-updates
+npm install --global npm-check-updates
 # https://github.com/ruyadorno/ntl
-# npm install --global ntl
+npm install --global ntl
 # https://github.com/siddharthkp/cost-of-modules
-# npm install --global cost-of-modules
+npm install --global cost-of-modules
 
 printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n"
 
 # Google's website performance test
 # https://github.com/GoogleChrome/lighthouse/
-# npm install --global lighthouse
+npm install --global lighthouse
 # Progressive web metrics
 # https://github.com/paulirish/pwmetrics
-# npm install --global pwmetrics
+npm install --global pwmetrics
 
 printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n"
 
 # https://github.com/sindresorhus/empty-trash-cli
-# npm install --global empty-trash-cli
+npm install --global empty-trash-cli
 # https://github.com/sindresorhus/trash-cli
-# npm install --global trash-cli
+npm install --global trash-cli
 # https://github.com/kevva/wifi-password-cli
-# npm install --global wifi-password-cli
+npm install --global wifi-password-cli
 # https://github.com/sindresorhus/open-cli
-# npm install --global open-cli
+npm install --global open-cli
 
 printf "\n ${LIGHT_GREEN} Finished Installing NPM Global Modules!${NC}\n"
 printf "\n  ${BACKGROUND_GREEN} Listing NPM Global Installs: ${NC}\n"
 
-# npm list --global --depth=0
+npm list --global --depth=0
 
 printf "\n ---- ${BACKGROUND_GREEN} DONE! ${NC} ---- \n\n"
 
