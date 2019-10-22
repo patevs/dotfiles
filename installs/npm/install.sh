@@ -20,7 +20,7 @@ NC='\033[0m' # No Color
 
 # clear
 printf "\n ---- ${GREEN}npm/install.sh${NC} ---- \n"
-printf "\nNPM GLobal Modules Install Script\n"
+printf "\nNPM Global Modules Install Script\n"
 printf "\n${LIGHT_CYAN}Checking Requirements...${NC}\n\n"
 
 #######################
