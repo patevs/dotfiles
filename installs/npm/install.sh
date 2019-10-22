@@ -11,17 +11,26 @@
 # COLOR CONSTANTS #
 ###################
 
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
+# BROWN='\033[0;33m'
+BLUE='\033[0;34m'
 PURPLE='\033[0;35m'
+# CYAN='\033[0;36m'
+
 LIGHT_GREEN='\033[1;32m'
-LIGHT_CYAN='\033[1;36m'
+LIGHT_BLUE='\033[1;34m'
+# LIGHT_PURPLE='\033[1;35m'
+# LIGHT_CYAN='\033[1;36m'
 NC='\033[0m' # No Color
 
 # clear
-printf "\n ---- ${GREEN}npm/install.sh${NC} ---- \n"
-printf "\nNPM Global Modules Install Script\n"
-printf "\n${LIGHT_CYAN}Checking Requirements...${NC}\n\n"
+# printf "\n ---- ${GREEN}npm/install.sh${NC} ---- \n"
+printf "\n ${GREEN}NPM Global Modules Install Script${NC}\n"
+printf "\n ${LIGHT_BLUE}Checking Requirements...${NC}\n\n"
+# printf "\n ${CYAN}NPM Global Modules Install Script${NC}\n"
+# printf "\n ${LIGHT_CYAN}Checking Requirements...${NC}\n\n"
 
 #######################
 # VERIFY REQUIREMENTS #
@@ -32,7 +41,7 @@ command -v node >/dev/null 2>&1 || {
   echo >&2 "${PURPLE}NodeJS${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
   exit 1
 }
-printf " * ${PURPLE}NodeJS${NC} : "
+printf "  * ${PURPLE}NodeJS${NC} : "
 node --version
 # which node # --> prints node path
 
@@ -41,7 +50,7 @@ command -v npm >/dev/null 2>&1 || {
   echo >&2 "${PURPLE}NPM${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
   exit 1
 }
-printf " * ${PURPLE}NPM${NC} : "
+printf "  * ${PURPLE}NPM${NC} : "
 npm --version
 # which npm # --> prints npm path
 
@@ -50,9 +59,11 @@ npm --version
 #################
 
 
-printf "All Requirements Satisfied! Installing NPM Global Modules..."
+printf "\n ${LIGHT_GREEN}All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
 
-printf "Installing Git Integration and Utility Modules: "
+printf "\n ${BLUE} Installing Git Integration and Utility Modules:${NC}\n"
+
+exit 0
 
 # https://github.com/TejasQ/add-gitignore
 npm install --global add-gitignore
