@@ -48,33 +48,30 @@ NC='\033[0m' # No Color
 # EXAMPLES #
 ############
 
-echo -e "\e[31mRed Text\e[0m"
-echo -e "\e[42mGreen Background\e[0m"
-echo -e "\e[1mBold Text\e[0m"
-echo -e "\e[3mUnderlined Text\e[0m"
-echo -e "\e[COLOR1;COLOR2mSample Text\e[0m"
-echo -e "\e[1;34mLight Blue Text\e[0m"
-echo -e "\e[1;33;4;44mYellow Underlined Text on Blue Background\e[0m"
+printf "\n\t ---- ${GREEN}bash-colors.sh${NC} ---- \n\n"
 
-printf "\n\t${GREEN}bash-color.sh${NC}\n\n"
+echo -e "\t * \e[31mRed Text\e[0m"
+echo -e "\t * \e[42mGreen Background\e[0m"
+echo -e "\t * \e[1mBold Text\e[0m"
+echo -e "\t * \e[1;34mLight Blue Text\e[0m\n"
 
-printf "\t * ${RED}RED${NC} Stack Overflow\n"
-printf "\t * ${GREEN}GREEN${NC} Stack Overflow\n"
-printf "\t * ${BROWN}DROWN${NC} Stack Overflow\n"
-printf "\t * ${BLUE}BLUE${NC} Stack Overflow\n"
-printf "\t * ${PURPLE}PURPLE${NC} Stack Overflow\n"
-printf "\t * ${CYAN}CYAN${NC} Stack Overflow\n"
-#
-# printf "\t * ${GRAY_GRAY}LIGHT_GRAY${NC} Stack Overflow\n\n"
-# printf "\t * ${WHITE}WHITE${NC} Stack Overflow\n"
+printf "\t * ${RED}RED${NC}\n"
+printf "\t * ${GREEN}GREEN${NC}\n"
+printf "\t * ${BROWN}BROWN/ORANGE${NC}\n"
+printf "\t * ${BLUE}BLUE${NC}\n"
+printf "\t * ${PURPLE}PURPLE${NC}\n"
+printf "\t * ${CYAN}CYAN${NC}\n\n"
 
-printf "\t * ${LIGHT_RED}LIGHT_RED${NC} Stack Overflow\n"
-printf "\t * ${LIGHT_GREEN}LIGHT_GREEN${NC} Stack Overflow\n"
-printf "\t * ${YELLOW}YELLOW${NC} Stack Overflow\n"
-printf "\t * ${LIGHT_BLUE}LIGHT_BLUE${NC} Stack Overflow\n"
-printf "\t * ${LIGHT_PURPLE}LIGHT_PURPLE${NC} Stack Overflow\n"
-printf "\t * ${LIGHT_CYAN}LIGHT_CYAN${NC} Stack Overflow\n"
+# printf "\t * ${GRAY_GRAY}LIGHT_GRAY${NC}\n\n"
+# printf "\t * ${WHITE}WHITE${NC}\n"
 
-printf "\nDone.\n"
+printf "\t * ${LIGHT_RED}LIGHT_RED${NC}\n"
+printf "\t * ${LIGHT_GREEN}LIGHT_GREEN${NC}\n"
+printf "\t * ${YELLOW}YELLOW${NC}\n"
+printf "\t * ${LIGHT_BLUE}LIGHT_BLUE${NC}\n"
+printf "\t * ${LIGHT_PURPLE}LIGHT_PURPLE${NC}\n"
+printf "\t * ${LIGHT_CYAN}LIGHT_CYAN${NC}\n\n"
+
+printf "\t ---- ${GREEN}DONE${NC} ---- \n"
 
 # EOF #
