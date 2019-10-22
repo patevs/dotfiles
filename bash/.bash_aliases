@@ -35,6 +35,16 @@ alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/
 #     fi
 # }
 
+# function existCommand()
+# {
+#     local -r command="${1}"
+#     if [[ "$(which "${command}" 2> '/dev/null')" = '' ]]
+#     then
+#         echo 'false' && return 1
+#     fi
+#     echo 'true' && return 0
+# }
+
 
 ##########################
 # System Related Aliases #
