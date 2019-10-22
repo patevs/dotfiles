@@ -34,6 +34,7 @@ command -v node >/dev/null 2>&1 || {
 }
 printf " * ${PURPLE}NodeJS${NC} : "
 node --version
+# which node # --> prints node path
 
 # Verify NPM is installed and can be found
 command -v npm >/dev/null 2>&1 || {
@@ -42,6 +43,7 @@ command -v npm >/dev/null 2>&1 || {
 }
 printf " * ${PURPLE}NPM${NC} : "
 npm --version
+# which npm # --> prints npm path
 
 #################
 # BEGIN INSTALL #
