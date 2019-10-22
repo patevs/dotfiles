@@ -23,8 +23,9 @@ REM Just for fun, testing, or to be sorted
 REM :: ECHO  [44m Installing Just-For-Fun and Testing Modules: [0m & ECHO.
 
 REM # https://github.com/xxczaki/nasa-cli
-REM :: CALL npm install --global nasa-cli
+REM CALL npm install --global nasa-cli
 REM # https://github.com/mishoo/UglifyJS2
+REM CALL npm install --global uglify-js
 REM # https://github.com/sitespeedio/sitespeed.io
 REM # https://github.com/lirantal/is-website-vulnerable
 REM # https://github.com/webtorrent/webtorrent-cli
