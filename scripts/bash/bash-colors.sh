@@ -50,6 +50,11 @@ NC='\033[0m' # No Color
 
 echo -e "\e[31mRed Text\e[0m"
 echo -e "\e[42mGreen Background\e[0m"
+echo -e "\e[1mBold Text\e[0m"
+echo -e "\e[3mUnderlined Text\e[0m"
+echo -e "\e[COLOR1;COLOR2mSample Text\e[0m"
+echo -e "\e[1;34mLight Blue Text\e[0m"
+echo -e "\e[1;33;4;44mYellow Underlined Text on Blue Background\e[0m"
 
 printf "\n\t${GREEN}bash-color.sh${NC}\n\n"
 
