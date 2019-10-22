@@ -5,9 +5,37 @@
 #          @author patevs          #
 # -------------------------------- #
 
-# ---------------- #
+#################
+# CONFIGURATION #
+#################
+
+# Increase history
+$MaximumHistoryCount = 10000
+
+# Produce UTF-8 by default
+$PSDefaultParameterValues["Out-File:Encoding"]="utf8"
+
+# Check if a given PowerShell module is installed
+# https://stackoverflow.com/questions/28740320/how-do-i-check-if-a-powershell-module-is-installed
+function Check-Module($modname){
+  return [bool](Get-Module -ListAvailable -Name $modname)
+}
+
+# Import posh-git module if installed
+if (Check-Module "posh-git") { Import-Module -Name posh-git }
+
+# Import Terminal-Icons module if installed
+# if (Check-Module "Terminal-Icons") { Import-Module -Name Terminal-Icons }
+
+# Import Get-ChildItemColor module if installed
+# if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
+
+# Start SSH agent
+Start-SshAgent
+
+####################
 # Helper Functions #
-# ---------------- #
+####################
 
 function reload-profile {
 	& $profile
@@ -32,12 +60,6 @@ function ps-modules {
 function Check-Command($cmdname) {
   # return [bool](Get-Command -Name $cmdname -ea 0)
   return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
-}
-
-# Check if a given PowerShell module is installed
-# https://stackoverflow.com/questions/28740320/how-do-i-check-if-a-powershell-module-is-installed
-function Check-Module($modname){
-  return [bool](Get-Module -ListAvailable -Name $modname)
 }
 
 # Test if running as administrator
@@ -65,28 +87,6 @@ function printWelcome {
   "
 }
 printWelcome
-
-#################
-# CONFIGURATION #
-#################
-
-# Increase history
-$MaximumHistoryCount = 10000
-
-# Produce UTF-8 by default
-$PSDefaultParameterValues["Out-File:Encoding"]="utf8"
-
-# Import posh-git module if installed
-if (Check-Module "posh-git") { Import-Module -Name posh-git }
-
-# Import Terminal-Icons module if installed
-# if (Check-Module "Terminal-Icons") { Import-Module -Name Terminal-Icons }
-
-# Import Get-ChildItemColor module if installed
-# if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
-
-# Start SSH agent
-Start-SshAgent
 
 # ------------------ #
 # Unix-like Commands #
@@ -341,7 +341,8 @@ function prompt {
   }
 
   # Write current path
-  Write-Host $curPath -NoNewline -ForegroundColor Blue
+  # Write-Host $curPath -NoNewline -ForegroundColor Blue
+  Write-Host $curPath -NoNewline -ForegroundColor Magenta
   Write-Host " :" -NoNewline -ForegroundColor DarkGray
 
   # Write date & time
