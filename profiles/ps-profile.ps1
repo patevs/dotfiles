@@ -328,8 +328,10 @@ function prompt {
   }
 
   # Write username@computername
-  Write-Host "$env:USERNAME@" -NoNewline -ForegroundColor DarkYellow
-  Write-Host "$env:COMPUTERNAME" -NoNewline -ForegroundColor Magenta
+  # Write-Host "$env:USERNAME@" -NoNewline -ForegroundColor DarkYellow
+  # Write-Host "$env:COMPUTERNAME" -NoNewline -ForegroundColor Magenta
+  # Write username
+  Write-Host "$env:USERNAME" -NoNewline -ForegroundColor DarkYellow
   Write-Host " : " -NoNewline -ForegroundColor DarkGray
 
   # Build current path
