@@ -67,7 +67,7 @@ npm --version
 
 printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
 
-printf "\n  ${BACKGROUND_GREEN} Installing Git Integration and Utility Modules: ${NC}\n"
+printf "\n  ${BACKGROUND_GREEN} Installing Git Integration and Utility Modules: ${NC}\n\n"
 
 # https://github.com/TejasQ/add-gitignore
 npm install --global add-gitignore
@@ -78,7 +78,7 @@ npm install --global g3l
 # https://github.com/paulirish/git-open
 npm install --global git-open
 
-printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Utility Modules: ${NC}\n"
+printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Utility Modules: ${NC}\n\n"
 
 # https://github.com/alanshaw/david
 npm install --global david
@@ -91,7 +91,7 @@ npm install --global ntl
 # https://github.com/siddharthkp/cost-of-modules
 npm install --global cost-of-modules
 
-printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n"
+printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n\n"
 
 # Google's website performance test
 # https://github.com/GoogleChrome/lighthouse/
@@ -100,7 +100,7 @@ npm install --global lighthouse
 # https://github.com/paulirish/pwmetrics
 npm install --global pwmetrics
 
-printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n"
+printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n\n"
 
 # https://github.com/sindresorhus/empty-trash-cli
 npm install --global empty-trash-cli
@@ -112,7 +112,7 @@ npm install --global wifi-password-cli
 npm install --global open-cli
 
 printf "\n ${LIGHT_GREEN} Finished Installing NPM Global Modules!${NC}\n"
-printf "\n  ${BACKGROUND_GREEN} Listing NPM Global Installs: ${NC}\n"
+printf "\n  ${BACKGROUND_GREEN} Listing NPM Global Installs: ${NC}\n\n"
 
 npm list --global --depth=0
 
