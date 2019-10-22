@@ -3,33 +3,68 @@
 # ~/.bash_aliases #
 # --------------- #
 
-# TODO: Verify hub is installed
-eval "$(hub alias -s bash)"
+####################
+# Helper Functions #
+####################
 
-alias git='hub'
-alias gs='git status'
+# Generate a random strong password
+alias genpasswd="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr -d '\n'; echo"
 
-# some more ls aliases
+# Expand current directory structure in tree form
+alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+
+# Show active ports
+# alias port='netstat -tulanp'
+
+# Grab a pretty ascii forecast picture for anywhere
+# Example: weather New York, NY
+# function weather() { curl -s http://wttr.in/$2; }
+
+##########################
+# System Related Aliases #
+##########################
+
+# ? move this to ~/.bashrc or ~/.profile
+# 'cd' into a directory and then list contents
+# cdls() { cd "$1"; ls;}
+
+# Move 'up' so many directories instead of using several cd ../../, etc.
+# up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
+
+# Another variation of the one above
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# Common variations of 'ls' command
+# alias ll="ls -l"
+# alias lo="ls -o"
+# alias lh="ls -lh"
+# alias la="ls -la"
+# alias sl="ls"
+# alias l="ls"
+# alias s="ls"
+
+# More ls aliases
 # alias ll='ls -alF'
 # alias la='ls -A'
 # alias l='ls -CF'
 
-# TODO: Move these to /.bash_aliases
+# TODO: Verify if lsd is installed
 # alias ls='lsd -a1'
 # alias l='lsd -l'
 # alias la='ls -a'
 # alias la='lsd -la'
 # alias lt='lsd --tree'
 
-# alias ls='lsd -a1'
+#######################
+# DOS Related Aliases #
+#######################
 
-# 'cd' into a directory and then list contents
-# TODO: Move this to ~/.bashrc or ~/.profile
-# cdls() { cd "$1"; ls;}
-
-# For when you've spent too much time in DOS
 alias cls="clear"
 alias dir="ls"
+
 # alias deltree="rm -r"
 # alias rmdir="rm -r"
 # alias rd="rm -r"
@@ -46,10 +81,28 @@ alias dir="ls"
 # alias tasklist="htop"
 # alias tracert="traceroute"
 
-# Generate a random strong password
-alias genpasswd="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr -d '\n'; echo"
+################################
+# Git & GitHub Related Aliases #
+################################
 
-# Expand current directory structure in tree form
-alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+# TODO: Verify hub is installed
+# Use GitHubs' cli in favor of git
+# eval "$(hub alias -s bash)"
+# alias git='hub'
+
+alias gs='git status'
+# alias gc='git commit'
+# alias ga='git add'
+# alias gd='git diff'
+# alias gb='git branch'
+# alias gl='git log'
+# alias gsb='git show-branch'
+# alias gco='git checkout'
+# alias gg='git grep'
+# alias gk='gitk --all'
+# alias gr='git rebase'
+# alias gri='git rebase --interactive'
+# alias gcp='git cherry-pick'
+# alias grm='git rm'
 
 # EOF #

@@ -118,12 +118,12 @@ fi
 
 # ------------------------------------ #
 
-# Move 'up' so many directories instead of using several cd ../../, etc.
-# :: up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
-
 ##########
 # Alias' #
 ##########
+
+# Move 'up' so many directories instead of using several cd ../../, etc.
+# :: up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
 
 #Another variation of the one above
 alias ..="cd .."
