@@ -45,6 +45,22 @@ alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/
 #     echo 'true' && return 0
 # }
 
+# function isEmptyString()
+# {
+#     local -r string="${1}"
+#     if [[ "$(trimString "${string}")" = '' ]]
+#     then
+#         echo 'true' && return 0
+#     fi
+#     echo 'false' && return 1
+# }
+
+# function trimString()
+# {
+#     local -r string="${1}"
+#     sed 's,^[[:blank:]]*,,' <<< "${string}" | sed 's,[[:blank:]]*$,,'
+# }
+
 
 ##########################
 # System Related Aliases #
