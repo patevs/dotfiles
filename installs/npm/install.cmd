@@ -28,6 +28,7 @@ REM # https://github.com/mishoo/UglifyJS2
 REM # https://github.com/sitespeedio/sitespeed.io
 REM # https://github.com/lirantal/is-website-vulnerable
 REM # https://github.com/webtorrent/webtorrent-cli
+REM :: vtop must be run using sh/bash
 REM # https://github.com/MrRio/vtop
 REM # https://github.com/kangax/html-minifier
 REM # https://github.com/ddopson/underscore-cli
