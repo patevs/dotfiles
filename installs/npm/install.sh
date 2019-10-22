@@ -1,11 +1,15 @@
 #!/bin/bash
 
-# npm/install.sh
+# -------------------------------------------- #
+#                npm/install.sh                #
+#                                              #
+# Script to install useful NPM global modules. #
+# Requires NodeJS and NPM to be installed.     #
+# -------------------------------------------- #
 
-# Script to install useful NPM global modules.
-# Requires Node.js and NPM to be installed.
-
-# Define color codes
+###################
+# COLOR CONSTANTS #
+###################
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -19,26 +23,29 @@ printf "\n ---- ${GREEN}npm/install.sh${NC} ---- \n"
 printf "\nNPM GLobal Modules Install Script\n"
 printf "\n${LIGHT_CYAN}Checking Requirements...${NC}\n\n"
 
-# Verify Node.js and NPM are installed & can be found
+#######################
+# VERIFY REQUIREMENTS #
+#######################
 
-# ECHO. & ECHO [92m Verifying NodeJS and NPM Installations... [0m
-# ECHO. & ECHO  [45m NodeJS Installation: [0m & ECHO.
-
-# Check Node
+# Verify NodeJS is installed and can be found
 command -v node >/dev/null 2>&1 || {
-  echo >&2 "${PURPLE}Node${NC} is required but it's not installed. ${RED}Aborting${NC}."
+  echo >&2 "${PURPLE}NodeJS${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
   exit 1
 }
 printf " * ${PURPLE}NodeJS${NC} : "
 node --version
 
-# Check Python
-# command -v python >/dev/null 2>&1 || {
-#  echo >&2 "${PURPLE}Python${NC} is required but it's not installed. ${RED}Aborting${NC}."
-#  exit 1
-# }
-# printf " * ${PURPLE}Python${NC} : "
-# python -V
+# Verify NPM is installed and can be found
+command -v npm >/dev/null 2>&1 || {
+  echo >&2 "${PURPLE}NPM${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
+  exit 1
+}
+printf " * ${PURPLE}NPM${NC} : "
+npm --version
+
+#################
+# BEGIN INSTALL #
+#################
 
 
 printf "\n ---- ${GREEN}DONE!${NC} ---- \n\n"
