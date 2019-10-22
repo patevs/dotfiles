@@ -9,7 +9,19 @@ eval "$(hub alias -s bash)"
 alias git='hub'
 alias gs='git status'
 
-alias ls='lsd -a1'
+# some more ls aliases
+# alias ll='ls -alF'
+# alias la='ls -A'
+# alias l='ls -CF'
+
+# TODO: Move these to /.bash_aliases
+# alias ls='lsd -a1'
+# alias l='lsd -l'
+# alias la='ls -a'
+# alias la='lsd -la'
+# alias lt='lsd --tree'
+
+# alias ls='lsd -a1'
 
 # 'cd' into a directory and then list contents
 # TODO: Move this to ~/.bashrc or ~/.profile
