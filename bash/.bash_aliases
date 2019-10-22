@@ -152,7 +152,7 @@ alias gs='git status'
 # NPM Related Aliases #
 #######################
 
-alias npl = 'npm list --depth=0'
-alias nplg = 'npm list --global --depth=0'
+alias npl='npm list --depth=0'
+alias nplg='npm list --global --depth=0'
 
 # EOF #
