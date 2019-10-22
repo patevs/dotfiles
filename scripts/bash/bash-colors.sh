@@ -44,6 +44,13 @@ LIGHT_CYAN='\033[1;36m'
 WHITE='\033[1;37m'
 NC='\033[0m' # No Color
 
+############
+# EXAMPLES #
+############
+
+echo -e "\e[31mRed Text\e[0m"
+echo -e "\e[42mGreen Background\e[0m"
+
 printf "\n\t${GREEN}bash-color.sh${NC}\n\n"
 
 printf "\t * ${RED}RED${NC} Stack Overflow\n"
