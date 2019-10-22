@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
-# ------------------ #
-# bash/bash-utils.sh #
-# ------------------ #
+# -------------------- #
+# bash/bash-utils.bash #
+# -------------------- #
 
 # ------------------------------------------------------------------------- #
 # https://github.com/gdbtek/linux-cookbooks/blob/master/libraries/util.bash #
