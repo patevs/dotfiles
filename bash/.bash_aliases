@@ -20,6 +20,13 @@ alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/
 # Example: weather New York, NY
 # function weather() { curl -s http://wttr.in/$2; }
 
+# TODO: Complete this function
+# Check if a given command exists
+# https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
+# function Check-Command($cmdname) {
+#   return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
+# }
+
 ##########################
 # System Related Aliases #
 ##########################
@@ -91,6 +98,7 @@ alias dir="ls"
 # alias git='hub'
 
 alias gs='git status'
+
 # alias gc='git commit'
 # alias ga='git add'
 # alias gd='git diff'
@@ -104,5 +112,12 @@ alias gs='git status'
 # alias gri='git rebase --interactive'
 # alias gcp='git cherry-pick'
 # alias grm='git rm'
+
+#######################
+# NPM Related Aliases #
+#######################
+
+alias npl = 'npm list --depth=0'
+alias nplg = 'npm list --global --depth=0'
 
 # EOF #
