@@ -380,7 +380,7 @@ function prompt {
 
 # set-location '~/Code'
 
-write-output 'Pats profile loaded.'
+write-output "Pat's profile loaded."
 
 
 # EOF #
