@@ -40,8 +40,6 @@ The terminals below all support:
  
 ....and all the usual things you expect from any decent terminal emulator. I use **Windows Terminal**, which is in Preview right now, but usable as a day to day terminal. **Fluent Terminal** also works great out of the box.
 
-<img src="misc/windows-terminal.png"/>
-
  - [**Microsoft's official Windows Terminal**](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701). Open the Settings file, enable `copyOnSelect` and change `"commandline": "C:\\Program Files\\PowerShell\\6\\pwsh.exe -nologo",` - the `nologo` makes Powershell skip some boring startup messages.
  - [**FluentTerminal**](https://github.com/felixse/FluentTerminal) is a native Windows 10 terminal that feels as if Microsoft had written it. It requires minimal configuration (just to add Powershell 6 to the profiles), has all the features you'd expect, and is fast. 
   - [**Terminus**](https://eugeny.github.io/terminus/) works great. Tweaking colors, keyboard shortcuts etc is easy via the menus, and [my settings file is included](terminus-settings.yaml) if you just want my config. 
