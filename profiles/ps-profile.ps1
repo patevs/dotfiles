@@ -5,10 +5,6 @@
 #          @author patevs          #
 # -------------------------------- #
 
-#################
-# CONFIGURATION #
-#################
-
 # Increase history
 $MaximumHistoryCount = 10000
 
