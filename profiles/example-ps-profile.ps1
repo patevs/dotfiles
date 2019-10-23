@@ -1,3 +1,8 @@
+
+# ---------------------- #
+# example-ps-profile.ps1 #
+# ---------------------- #
+
 # Increase history
 $MaximumHistoryCount = 10000
 
