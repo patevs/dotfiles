@@ -5,6 +5,8 @@
 #          @author patevs          #
 # -------------------------------- #
 
+# TODO: Create script to set profile programmatically
+
 # So we can launch pwsh in subshells if we need
 # Add-PathVariable "${env:ProgramFiles}\PowerShell\6-preview"
 
@@ -33,6 +35,9 @@ if (Check-Module "posh-git") { Import-Module -Name posh-git }
 
 # Start SSH agent
 Start-SshAgent
+
+# Clear the screen
+clear
 
 ####################
 # Helper Functions #
@@ -380,7 +385,7 @@ function prompt {
 
 # set-location '~/Code'
 
-write-output "Pat's profile loaded."
+write-output "\tPat's profile loaded!"
 
 
 # EOF #
