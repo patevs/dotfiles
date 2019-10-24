@@ -145,6 +145,11 @@ function touch($file) {
 	"" | Out-File $file -Encoding ASCII
 }
 
+# From https://github.com/Pscx/Pscx
+function sudo(){
+	Invoke-Elevated @args
+}
+
 # --------------- #
 # Command Aliases #
 # --------------- #
@@ -347,6 +352,23 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
+
+# ------------------- #
+# Text Editor Aliases #
+# ------------------- #
+
+# Kinda like $EDITOR in nix
+# TODO: check out edit-file from PSCX
+function edit {
+	& "code" -g @args
+}
+
+# I used to run Sublime so occasionally my fingers type it
+# Open sublime text
+# function subl {
+	# 	& "$env:ProgramFiles\Sublime Text 3\subl.exe" @args
+	# write-output "Type 'edit' instead"
+# }
 
 # --------------------------- #
 # Customize PowerShell Prompt #
