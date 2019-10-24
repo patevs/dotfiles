@@ -139,6 +139,7 @@ alias dir="ls"
 # eval "$(hub alias -s bash)"
 # alias git='hub'
 
+# TODO: Verify git is installed
 alias gs='git status'
 
 # alias gc='git commit'
@@ -159,6 +160,7 @@ alias gs='git status'
 # NPM Related Aliases #
 #######################
 
+# TODO: Verify node & npm are installed
 alias npl='npm list --depth=0'
 alias nplg='npm list --global --depth=0'
 
