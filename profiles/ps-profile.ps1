@@ -383,7 +383,8 @@ function prompt {
 # . "$profileDir\$includeFile.ps1"
 # }
 
-# set-location '~/Code'
+# TODO: Ensure ~/Desktop/git directory exists
+# set-location '~/Desktop/git'
 
 # write-output "Pat's profile loaded!"
 
