@@ -70,6 +70,7 @@ alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/
 alias desk="cd ~/Desktop"
 
 # Move to dev directory
+# TODO: Ensure this directory exists
 alias dev="cd ~/Desktop/git"
 
 # ? move this to ~/.bashrc or ~/.profile
