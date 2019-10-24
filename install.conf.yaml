@@ -6,13 +6,9 @@
 
 - link:
     ~/.dotfiles: ''
-
-- link:
-    ~/.dotfiles: ''
     ~/.profile:
         path: bash/.profile
         relink: true
-
 
 - create:
     - ~/Desktop/git
