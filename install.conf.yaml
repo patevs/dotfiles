@@ -9,10 +9,10 @@
 
 - clean: ['~']
 
-#- link:
-#    ~/.dotfiles: ''
-#    ~/.profile:
-#        path: bash
+# - link:
+#     ~/.dotfiles: ''
+#     ~/.profile:
+#         path: bash
 
 - create:
     - ~/Desktop/git
