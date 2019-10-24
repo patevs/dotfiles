@@ -48,7 +48,7 @@ clear
 # Helper Functions #
 ####################
 
-Set-Alias trash Remove-ItemSafely
+# Set-Alias trash Remove-ItemSafely
 
 function open($file) {
   invoke-item $file
