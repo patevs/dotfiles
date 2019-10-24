@@ -9,6 +9,13 @@
 
 - clean: ['~']
 
+- link:
+    ~/.profile:
+        path: bash/.profile
+        relink: true
+        force: true
+
+
 # - link:
 #     ~/.dotfiles: ''
 #     ~/.profile:
