@@ -80,21 +80,21 @@ alias dev="cd ~/Desktop/git"
 # Move 'up' so many directories instead of using several cd ../../, etc.
 # up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
 
-# Another variation of the one above
+# Another variation of the above function
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Common variations of 'ls' command
-alias ls="ls -la"
-alias ll="ls -l"
-alias lo="ls -o"
-alias lh="ls -lh"
-alias la="ls -la"
-alias sl="ls"
-alias l="ls"
-alias s="ls"
+# alias ls="ls -la"
+# alias ll="ls -l"
+# alias lo="ls -o"
+# alias lh="ls -lh"
+# alias la="ls -la"
+# alias sl="ls"
+# alias l="ls"
+# alias s="ls"
 
 # More ls aliases
 # alias ll='ls -alF'
@@ -102,11 +102,14 @@ alias s="ls"
 # alias l='ls -CF'
 
 # TODO: Verify if lsd is installed
-# alias ls='lsd -a1'
-# alias l='lsd -l'
-# alias la='ls -a'
-# alias la='lsd -la'
-# alias lt='lsd --tree'
+alias ls='lsd -a1'
+alias ll='lsd -l'
+alias lll='lsd -al'
+alias la='lsd -la'
+alias lt='lsd --tree'
+alias l="lsd -a1"
+alias s="lsd -a1"
+
 
 #######################
 # DOS Related Aliases #
