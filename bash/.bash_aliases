@@ -95,9 +95,7 @@ alias .....="cd ../../../.."
 # alias sl="ls"
 # alias l="ls"
 # alias s="ls"
-
-# More ls aliases
-# alias ll='ls -alF'
+# alias lll='ls -alF'
 # alias la='ls -A'
 # alias l='ls -CF'
 
@@ -110,29 +108,12 @@ alias lt='lsd --tree'
 alias l="lsd -a1"
 alias s="lsd -a1"
 
-
 #######################
 # DOS Related Aliases #
 #######################
 
 alias cls="clear"
 alias dir="ls"
-
-# alias deltree="rm -r"
-# alias rmdir="rm -r"
-# alias rd="rm -r"
-# alias rename="mv"
-# alias cd..="cd .."
-# alias chdir="pwd"
-# alias cmd="bash"
-# alias edit="nano -m -u -c -W --tabsize=4 --fill=100 --autoindent"
-# alias erase="rm"
-# alias del="rm"
-# alias delete="rm"
-# alias expand="extract"
-# diskcopy(){ dd if=$1 of=$2; }
-# alias tasklist="htop"
-# alias tracert="traceroute"
 
 ################################
 # Git & GitHub Related Aliases #
@@ -144,6 +125,7 @@ alias dir="ls"
 # alias git='hub'
 
 # TODO: Verify git is installed
+# TODO: Use g3l tool (if installed) to fetch status
 alias gs='git status'
 
 # alias gc='git commit'
