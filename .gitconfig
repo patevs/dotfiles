@@ -2,7 +2,7 @@
 # .gitconfig #
 # ---------- #
 
-# TODO: Create script to set configuration programatically
+# TODO: Create script to set git configuration programatically
 
 [user]
 email = ppevans11@gmail.com
