@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
+
+# --------------------------------------- #
+# bash/bash-git-prompt/git-prompt-help.sh #
+# --------------------------------------- #
+
 #  git-prompt-help -- show useful info to help new users with the information
 # being displayed.
 
 git_prompt_help() {
   source "${__GIT_PROMPT_DIR}/prompt-colors.sh"
   source "${__GIT_PROMPT_DIR}/themes/Default.bgptheme"
- cat <<EOF | sed 's/\\\[\\033//g' | sed 's/\\\]//g'
+  cat <<EOF | sed 's/\\\[\\033//g' | sed 's/\\\]//g'
 The git prompt format is ${GIT_PROMPT_PREFIX}<BRANCH><TRACKING>${GIT_PROMPT_SEPARATOR}<LOCALSTATUS>${GIT_PROMPT_SUFFIX}
 
 BRANCH is a branch name, such as "master" or "stage", a tag name, or commit
@@ -74,3 +79,5 @@ git_prompt_color_samples() {
     (( x++ ))
   done
 }
+
+# EOF #
