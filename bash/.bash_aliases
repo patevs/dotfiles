@@ -66,6 +66,12 @@ alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/
 # System Related Aliases #
 ##########################
 
+# Move to desktop directory
+alias desk="cd ~/Desktop"
+
+# Move to dev directory
+alias dev="cd ~/Desktop/git"
+
 # ? move this to ~/.bashrc or ~/.profile
 # 'cd' into a directory and then list contents
 # cdls() { cd "$1"; ls;}
