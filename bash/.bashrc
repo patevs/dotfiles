@@ -116,6 +116,9 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
 
+# Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
 ####################
 # Helper Functions #
 ####################
