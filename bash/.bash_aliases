@@ -80,13 +80,14 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Common variations of 'ls' command
-# alias ll="ls -l"
-# alias lo="ls -o"
-# alias lh="ls -lh"
-# alias la="ls -la"
-# alias sl="ls"
-# alias l="ls"
-# alias s="ls"
+alias ls="ls -la"
+alias ll="ls -l"
+alias lo="ls -o"
+alias lh="ls -lh"
+alias la="ls -la"
+alias sl="ls"
+alias l="ls"
+alias s="ls"
 
 # More ls aliases
 # alias ll='ls -alF'
