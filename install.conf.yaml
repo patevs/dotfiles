@@ -10,16 +10,23 @@
 - clean: ['~']
 
 - link:
+    # ~/.dotfiles: ''
+    ~/.bash-git-prompt:
+        path: bash/bash-git-prompt
+        relink: true
+        force: true
+    ~/.bash_aliases:
+        path: bash/.bash_aliases
+        relink: true
+        force: true
+    ~/.bashrc:
+        path: bash/.bashrc
+        relink: true
+        force: true
     ~/.profile:
         path: bash/.profile
         relink: true
         force: true
-
-
-# - link:
-#     ~/.dotfiles: ''
-#     ~/.profile:
-#         path: bash
 
 - create:
     - ~/Desktop/git
