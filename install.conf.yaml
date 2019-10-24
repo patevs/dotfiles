@@ -1,17 +1,25 @@
+
+# ----------------- #
+# install.conf.yaml #
+# ----------------- #
+
 - defaults:
     link:
         relink: true
 
 - clean: ['~']
 
-- link:
-    ~/.dotfiles: ''
-    ~/.profile:
-        path: bash/.profile
-        relink: true
+#- link:
+#    ~/.dotfiles: ''
+#    ~/.profile:
+#        path: bash
 
 - create:
     - ~/Desktop/git
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+
+
+# EOF #
+
