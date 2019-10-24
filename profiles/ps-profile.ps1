@@ -33,6 +33,9 @@ if (Check-Module "posh-git") { Import-Module -Name posh-git }
 # Import Get-ChildItemColor module if installed
 # if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
 
+# Proper history etc
+# Import-Module PSReadLine
+
 # Start SSH agent
 Start-SshAgent
 
@@ -42,6 +45,20 @@ clear
 ####################
 # Helper Functions #
 ####################
+
+Set-Alias trash Remove-ItemSafely
+
+function open($file) {
+  invoke-item $file
+}
+
+function settings {
+  start-process ms-setttings:
+}
+
+# Oddly, Powershell doesn't have an inbuilt variable for the documents directory. So let's make one:
+# From https://stackoverflow.com/questions/3492920/is-there-a-system-defined-environment-variable-for-documents-directory
+# $env:DOCUMENTS = [Environment]::GetFolderPath("mydocuments")
 
 function reload-profile {
 	& $profile
