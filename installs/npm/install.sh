@@ -95,10 +95,10 @@ printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n\
 
 # Google's website performance test
 # https://github.com/GoogleChrome/lighthouse/
-npm install --global lighthouse
+# npm install --global lighthouse
 # Progressive web metrics
 # https://github.com/paulirish/pwmetrics
-npm install --global pwmetrics
+# npm install --global pwmetrics
 
 printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n\n"
 
