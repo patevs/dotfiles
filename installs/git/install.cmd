@@ -47,6 +47,19 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... 
 :GitConfig
 ECHO. & ECHO  [44m Setting Git Global Configuration: [0m & ECHO.
 
+CALL git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+CALL git config --global color.ui true
+CALL git config --global color.diff-highlight.oldNormal    "red bold"
+CALL git config --global color.diff-highlight.oldHighlight "red bold 52"
+CALL git config --global color.diff-highlight.newNormal    "green bold"
+CALL git config --global color.diff-highlight.newHighlight "green bold 22"
+CALL git config --global color.diff.meta       "11"
+CALL git config --global color.diff.frag       "magenta bold"
+CALL git config --global color.diff.commit     "yellow bold"
+CALL git config --global color.diff.old        "red bold"
+CALL git config --global color.diff.new        "green bold"
+CALL git config --global color.diff.whitespace "red reverse"
+
 :: diff-so-fancy --version
 :: CALL npm list --global --depth=0 | findstr diff-so-fancy
 :: Install diff-so-fancy module
