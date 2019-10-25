@@ -21,11 +21,12 @@ REM Begin git Global Configuration Setup
 ECHO. & ECHO [92m All Requirements Satisfied! Starting Git Global Configuration Setup... [0m & ECHO.
 
 :: Check if diff-so-fancy is installed
-ECHO. & ECHO [92m Verifying Diff-So-Fancy Installation... [0m
+:: ECHO. &
+ECHO [92m Verifying Diff-So-Fancy Installation... [0m
 ECHO. & ECHO  [45m Diff-So-Fancy Installation: [0m & ECHO.
 WHERE diff-so-fancy
 IF %ERRORLEVEL% NEQ 0 (
-  ECHO. & ECHO [91m diff-so-fancy installation could not be found... Installing now: [0m
+  ECHO. & ECHO [91m diff-so-fancy installation could not be found...[0m [92m Installing now: [0m
 ) ELSE (
   GOTO :GitConfig
 )
@@ -45,13 +46,17 @@ WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
 :: Install diff-so-fancy module
-ECHO  [44m Installing diff-so-fancy Module: [0m & ECHO.
+ECHO. & ECHO  [44m Installing diff-so-fancy Module: [0m & ECHO.
 CALL npm install --global diff-so-fancy
 
 :GitConfig
-ECHO. & ECHO  [44m Setting Git Global Configuration: [0m & ECHO.
+ECHO. & ECHO  [44m Setting Git Global Configuration [0m & ECHO.
 
-ECHO. & ECHO  [44m Setting Diff-So-Fancy Configuration: [0m & ECHO.
+CALL git config --global user.email "ppevans11@gmail.com"
+CALL git config --global user.name "PatEvs"
+CALL git config --global github.user "PatEvs"
+
+ECHO  [44m Setting Diff-So-Fancy Configuration [0m & ECHO.
 
 CALL git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 CALL git config --global color.ui true
@@ -65,6 +70,10 @@ CALL git config --global color.diff.commit     "yellow bold"
 CALL git config --global color.diff.old        "red bold"
 CALL git config --global color.diff.new        "green bold"
 CALL git config --global color.diff.whitespace "red reverse"
+
+ECHO [92m Git Global Configuration: [0m & ECHO.
+
+CALL git config --global --list
 
 ECHO. & ECHO  [42m Done! [0m
 
