@@ -211,7 +211,7 @@ Set-Alias -Name dev -Value moveDev
 function getDir {
   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
   # Favour lsd over default dir command
-  if (Check-Command lsd) { lsd } 
+  if (Check-Command lsd) { lsd }
   else { dir }
 }
 Set-Alias -Name l -Value getDir
@@ -220,7 +220,7 @@ Set-Alias -Name l -Value getDir
 function getDirList {
   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
   # Favour lsd over default dir command
-  if (Check-Command lsd) { lsd -a1 } 
+  if (Check-Command lsd) { lsd -a1 }
   else { dir }
 }
 Set-Alias -Name ls -Value getDirList -option AllScope -Force
@@ -230,7 +230,7 @@ Set-Alias -Name ll -Value getDirList
 function getDirListLong {
   Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
   # Favour lsd over default dir command
-  if (Check-Command lsd) { lsd -al } 
+  if (Check-Command lsd) { lsd -al }
   else { dir }
 }
 Set-Alias -Name lll -Value getDirListLong
@@ -250,7 +250,7 @@ Set-Alias -Name lll -Value getDirListLong
 # ---------------------------- #
 
 # Use GitHub's hub Client in favor of git
-function getGithubClient { 
+function getGithubClient {
   # Check hub command exists
   if (Check-Command hub){
     hub $args
@@ -261,13 +261,13 @@ function getGithubClient {
     #   git $args
     # } else {
     #   Write-Host "`nNeither git or hub Installations Could Not Be Found!" -ForegroundColor Red
-    # } 
+    # }
   }
 }
 Set-Alias -Name git -Value getGithubClient
 
 # Print Git Status
-function getGitStatus { 
+function getGitStatus {
   # Check current directory is a git repository i.e. contains .git folder
   # if (Test-Path .git) {
   # Check git command exists
@@ -299,7 +299,7 @@ function getNpmLocals {
     # Check npm command exists
     if (Check-Command npm){
       Write-Host "`nLocal NPM Dependencies:`n" -ForegroundColor Green
-      npm list --depth=0 
+      npm list --depth=0
     } else {
       Write-Host "`nnpm installation could not be found!" -ForegroundColor Red
     }
@@ -314,7 +314,7 @@ function getNpmGlobals {
   # Check npm command exists
   if (Check-Command npm){
     Write-Host "`nGlobal NPM Dependencies:`n" -ForegroundColor Green
-    npm list --global --depth=0 
+    npm list --global --depth=0
   } else {
     Write-Host "`nnpm installation could not be found!" -ForegroundColor Red
   }
@@ -326,11 +326,11 @@ Set-Alias -Name nplg -Value getNpmGlobals
 # -------------------------- #
 
 # Print list of local chocolatey installations
-function getChocoInstalls { 
+function getChocoInstalls {
   # Check choco command exists
   if (Check-Command choco) {
     Write-Host "`nLocal Chocolatey Installations:`n" -ForegroundColor Green
-    choco list -l 
+    choco list -l
   } else {
     Write-Host "`nchoco installation could not be found!" -ForegroundColor Red
   }
@@ -338,14 +338,14 @@ function getChocoInstalls {
 Set-Alias -Name cll -Value getChocoInstalls
 
 # Print list of outdated chocolatey installations
-function getChocoOutdated { 
+function getChocoOutdated {
   # Check choco command exists
   if (Check-Command choco) {
     Write-Host "`nOutdated Chocolatey Installations:`n" -ForegroundColor Green
-    choco upgrade all --noop 
+    choco upgrade all --noop
   } else {
     Write-Host "`nchoco installation could not be found!" -ForegroundColor Red
-  } 
+  }
 }
 Set-Alias -Name clo -Value getChocoOutdated
 
