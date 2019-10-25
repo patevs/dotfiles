@@ -5,7 +5,8 @@
 :: ------------------------ ::
 
 REM Script to install setup git global configuation.
-REM Requires Git, Node.js, and NPM to be installed.
+REM Requires Git and diff-so-fancy to be installed.
+REM Perl, Node.js, and NPM installations are also required.
 
 CLS
 ECHO. & ECHO [100;4mGit Global Configuration Setup Script[0m
@@ -28,6 +29,7 @@ REM Begin git configuration setup
 ECHO. & ECHO [92m All Requirements Satisfied! Starting Git Global Configuration Setup... [0m & ECHO.
 
 :: Check if diff-so-fancy is installed
+:: diff-so-fancy --version
 :: CALL npm list --global --depth=0 | findstr diff-so-fancy
 :: Install diff-so-fancy module
 :: ECHO  [44m Installing diff-so-fancy Module: [0m & ECHO.
