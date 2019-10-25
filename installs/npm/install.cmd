@@ -133,10 +133,10 @@ REM # https://github.com/plibither8/licensed
 REM :: CALL npm install --global licensed
 REM # Google's website performance test
 REM # https://github.com/GoogleChrome/lighthouse/
-CALL npm install --global lighthouse
+:: CALL npm install --global lighthouse
 REM # Progressive web metrics
 REM # https://github.com/paulirish/pwmetrics
-CALL npm install --global pwmetrics
+:: CALL npm install --global pwmetrics
 REM # Placeholder image generator
 REM # https://github.com/ecrmnn/spaceholder
 REM :: CALL npm install --global spaceholder
