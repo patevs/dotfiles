@@ -44,6 +44,11 @@ ECHO. & ECHO  [45m NPM Installation: [0m & ECHO.
 WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
+:: Install diff-so-fancy module
+:: ECHO  [44m Installing diff-so-fancy Module: [0m & ECHO.
+:: TODO: Check if diff-so-fancy is already installed
+:: CALL npm install --global diff-so-fancy
+
 :GitConfig
 ECHO. & ECHO  [44m Setting Git Global Configuration: [0m & ECHO.
 
@@ -59,13 +64,6 @@ CALL git config --global color.diff.commit     "yellow bold"
 CALL git config --global color.diff.old        "red bold"
 CALL git config --global color.diff.new        "green bold"
 CALL git config --global color.diff.whitespace "red reverse"
-
-:: diff-so-fancy --version
-:: CALL npm list --global --depth=0 | findstr diff-so-fancy
-:: Install diff-so-fancy module
-:: ECHO  [44m Installing diff-so-fancy Module: [0m & ECHO.
-:: TODO: Check if diff-so-fancy is already installed
-:: CALL npm install --global diff-so-fancy
 
 ECHO. & ECHO  [42m Done! [0m
 
