@@ -45,12 +45,13 @@ WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
 :: Install diff-so-fancy module
-:: ECHO  [44m Installing diff-so-fancy Module: [0m & ECHO.
-:: TODO: Check if diff-so-fancy is already installed
-:: CALL npm install --global diff-so-fancy
+ECHO  [44m Installing diff-so-fancy Module: [0m & ECHO.
+CALL npm install --global diff-so-fancy
 
 :GitConfig
 ECHO. & ECHO  [44m Setting Git Global Configuration: [0m & ECHO.
+
+ECHO. & ECHO  [44m Setting Diff-So-Fancy Configuration: [0m & ECHO.
 
 CALL git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 CALL git config --global color.ui true
