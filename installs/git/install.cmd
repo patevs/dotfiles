@@ -27,10 +27,12 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... 
 REM Begin git configuration setup
 ECHO. & ECHO [92m All Requirements Satisfied! Starting Git Global Configuration Setup... [0m & ECHO.
 
+:: Check if diff-so-fancy is installed
+:: CALL npm list --global --depth=0 | findstr diff-so-fancy
 :: Install diff-so-fancy module
-ECHO  [44m Installing diff-so-fancy Module: [0m & ECHO.
+:: ECHO  [44m Installing diff-so-fancy Module: [0m & ECHO.
 :: TODO: Check if diff-so-fancy is already installed
-CALL npm install --global diff-so-fancy
+:: CALL npm install --global diff-so-fancy
 
 REM :: ECHO  [44m Setting git Global Configuration: [0m & ECHO.
 
