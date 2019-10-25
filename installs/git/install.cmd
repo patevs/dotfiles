@@ -10,12 +10,26 @@ REM Perl, Node.js, and NPM installations are also required.
 
 CLS
 ECHO. & ECHO [100;4mGit Global Configuration Setup Script[0m
-REM Verify Git, Node.js, and NPM are installed & can be found
-ECHO. & ECHO [92m Verifying Git, NodeJS, and NPM Installations... [0m
+REM Verify Git is installed & can be found
+ECHO. & ECHO [92m Verifying Git Installation... [0m
 
 ECHO. & ECHO  [45m Git Installation: [0m & ECHO.
 WHERE git
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m git installation could not be found... exiting! [0m & GOTO :EOF
+
+REM Begin git Global Configuration Setup
+ECHO. & ECHO [92m All Requirements Satisfied! Starting Git Global Configuration Setup... [0m & ECHO.
+
+:: Check if diff-so-fancy is installed
+ECHO. & ECHO  [45m Diff-So-Fancy Installation: [0m & ECHO.
+WHERE diff-so-fancy
+IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m diff-so-fancy installation could not be found... Installing now: [0m
+:: & GOTO :EOF
+
+:: Verify Perl, NodeJS, and NPM installations
+ECHO. & ECHO  [45m Perl Installation: [0m & ECHO.
+WHERE perl
+IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m Perl installation could not be found... exiting! [0m & GOTO :EOF
 
 ECHO. & ECHO  [45m NodeJS Installation: [0m & ECHO.
 WHERE node
@@ -25,10 +39,6 @@ ECHO. & ECHO  [45m NPM Installation: [0m & ECHO.
 WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
-REM Begin git configuration setup
-ECHO. & ECHO [92m All Requirements Satisfied! Starting Git Global Configuration Setup... [0m & ECHO.
-
-:: Check if diff-so-fancy is installed
 :: diff-so-fancy --version
 :: CALL npm list --global --depth=0 | findstr diff-so-fancy
 :: Install diff-so-fancy module
