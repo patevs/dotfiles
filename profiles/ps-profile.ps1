@@ -47,13 +47,13 @@ clear
 ####################
 
 # https://stackoverflow.com/questions/7690994/running-a-command-as-administrator-using-powershell
-function sudo {
-  Start-Process powershell -Verb runAs
-  # if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
-  #   Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs;
-  #   exit
-  # }
-}
+# function sudo {
+  # Start-Process powershell -Verb runAs
+#   if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+#     Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs;
+#     exit
+#   }
+# }
 
 # Set-Alias trash Remove-ItemSafely
 
