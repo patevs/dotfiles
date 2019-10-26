@@ -7,8 +7,6 @@
 
 # ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
-# TODO: Create script to set profile programmatically
-
 # So we can launch pwsh in subshells if we need
 # Add-PathVariable "${env:ProgramFiles}\PowerShell\6-preview"
 
