@@ -46,6 +46,7 @@ REM # https://github.com/voorhoede/lighthouse-security
 REM # https://github.com/gillstrom/screensaver
 REM # https://github.com/cezaraugusto/mklicense
 :: https://github.com/IonicaBizau/git-stats
+:: https://github.com/nogizhopaboroda/iponmap
 
 REM Linting and Style Check
 REM :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
