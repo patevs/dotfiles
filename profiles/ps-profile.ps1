@@ -46,6 +46,10 @@ clear
 # Helper Functions #
 ####################
 
+function sudo {
+  Start-Process powershell -Verb runAs
+}
+
 # Set-Alias trash Remove-ItemSafely
 
 function open($file) {
