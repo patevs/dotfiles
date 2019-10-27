@@ -35,34 +35,34 @@ ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... 
 :: # https://github.com/lirantal/is-website-vulnerable
 :: # https://github.com/webtorrent/webtorrent-cli
 :: vtop must be run using sh/bash
-REM # https://github.com/MrRio/vtop
-REM # https://github.com/kangax/html-minifier
-REM # https://github.com/ddopson/underscore-cli
-REM # https://github.com/lordgiotto/google-font-installer
-REM # https://github.com/riyadhalnur/weather-cli
-REM # https://github.com/jhotmann/node-passgen-cli
-REM # https://github.com/thlorenz/doctoc
-REM # https://github.com/GitbookIO/gitbook
-REM # https://github.com/marionebl/share-cli
-REM # https://github.com/jhotmann/node-rename-cli
-REM # https://github.com/IonicaBizau/cli-github
-REM # https://github.com/mbostock/gistup
-REM # https://github.com/voorhoede/lighthouse-security
-REM # https://github.com/gillstrom/screensaver
-REM # https://github.com/cezaraugusto/mklicense
+:: # https://github.com/MrRio/vtop
+:: # https://github.com/kangax/html-minifier
+:: # https://github.com/ddopson/underscore-cli
+:: # https://github.com/lordgiotto/google-font-installer
+:: # https://github.com/riyadhalnur/weather-cli
+:: # https://github.com/jhotmann/node-passgen-cli
+:: # https://github.com/thlorenz/doctoc
+:: # https://github.com/GitbookIO/gitbook
+:: # https://github.com/marionebl/share-cli
+:: # https://github.com/jhotmann/node-rename-cli
+:: # https://github.com/IonicaBizau/cli-github
+:: # https://github.com/mbostock/gistup
+:: # https://github.com/voorhoede/lighthouse-security
+:: # https://github.com/gillstrom/screensaver
+:: # https://github.com/cezaraugusto/mklicense
 :: https://github.com/IonicaBizau/git-stats
 :: https://github.com/nogizhopaboroda/iponmap
 :: https://github.com/aksakalli/gtop
 
-REM Linting and Style Check
-REM :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
+:: Linting and Style Check
+:: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
 
-REM # https://github.com/eslint/eslint
-REM :: CALL npm install --global eslint
-REM # https://github.com/jshint/jshint
-REM :: CALL npm install --global jshint
-REM # https://github.com/prettier/prettier
-REM :: CALL npm install --global prettier
+:: # https://github.com/eslint/eslint
+:: CALL npm install --global eslint
+:: # https://github.com/jshint/jshint
+:: CALL npm install --global jshint
+:: # https://github.com/prettier/prettier
+:: CALL npm install --global prettier
 
 :: Git Integrations and Utilities
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
