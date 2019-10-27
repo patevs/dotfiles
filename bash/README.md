@@ -1,6 +1,8 @@
 # BASH
 
-> https://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc
+[`.bashrc` vs. `.profile`](https://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc)
+
+---
 
 **TL;DR:**
 
@@ -19,5 +21,11 @@ A few other notes:
     Anything that should be available only to login shells should go in `~/.profile`
 
     Ensure that `~/.bash_login` does not exist.
+
+---
+
+## TODO
+
+- [ ] Add `bash-git-prompt` as a git submodule
 
 ---
