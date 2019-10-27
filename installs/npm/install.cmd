@@ -24,17 +24,17 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... 
 :: Begin install
 ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
 
-REM Just for fun, testing, or to be sorted
-REM :: ECHO  [44m Installing Just-For-Fun and Testing Modules: [0m & ECHO.
+:: Just for fun, testing, or to be sorted
+:: ECHO  [44m Installing Just-For-Fun and Testing Modules: [0m & ECHO.
 
-REM # https://github.com/xxczaki/nasa-cli
-REM CALL npm install --global nasa-cli
-REM # https://github.com/mishoo/UglifyJS2
-REM CALL npm install --global uglify-js
-REM # https://github.com/sitespeedio/sitespeed.io
-REM # https://github.com/lirantal/is-website-vulnerable
-REM # https://github.com/webtorrent/webtorrent-cli
-REM :: vtop must be run using sh/bash
+:: # https://github.com/xxczaki/nasa-cli
+:: CALL npm install --global nasa-cli
+:: # https://github.com/mishoo/UglifyJS2
+:: CALL npm install --global uglify-js
+:: # https://github.com/sitespeedio/sitespeed.io
+:: # https://github.com/lirantal/is-website-vulnerable
+:: # https://github.com/webtorrent/webtorrent-cli
+:: vtop must be run using sh/bash
 REM # https://github.com/MrRio/vtop
 REM # https://github.com/kangax/html-minifier
 REM # https://github.com/ddopson/underscore-cli
