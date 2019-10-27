@@ -1,10 +1,10 @@
 @ECHO OFF
-REM Script to install useful NPM global modules.
-REM Requires Node.js and NPM to be installed.
+:: Script to install useful NPM global modules.
+:: Requires Node.js and NPM to be installed.
 
 CLS
 ECHO. & ECHO [100;4mNPM Global Modules Install Script[0m
-REM Verify Node.js and NPM are installed & can be found
+:: Verify Node.js and NPM are installed & can be found
 ECHO. & ECHO [92m Verifying NodeJS and NPM Installations... [0m
 ECHO. & ECHO  [45m NodeJS Installation: [0m & ECHO.
 
@@ -16,7 +16,7 @@ ECHO. & ECHO  [45m NPM Installation: [0m & ECHO.
 WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
-REM Begin install
+:: Begin install
 ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
 
 REM Just for fun, testing, or to be sorted
@@ -59,34 +59,35 @@ REM :: CALL npm install --global jshint
 REM # https://github.com/prettier/prettier
 REM :: CALL npm install --global prettier
 
-REM Git Integrations and Utilities
+:: Git Integrations and Utilities
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
-REM # https://github.com/TejasQ/add-gitignore
+:: # https://github.com/TejasQ/add-gitignore
 CALL npm install --global add-gitignore
-REM # https://github.com/so-fancy/diff-so-fancy
+:: # https://github.com/so-fancy/diff-so-fancy
 CALL npm install --global diff-so-fancy
-REM # https://github.com/svhawks/g3l
+:: # https://github.com/svhawks/g3l
 CALL npm install --global g3l
-REM # https://github.com/paulirish/git-open
+:: # https://github.com/paulirish/git-open
 CALL npm install --global git-open
-REM # https://github.com/carloscuesta/gitmoji-cli
-REM :: CALL npm install --global gitmoji-cli
-REM # https://github.com/himynameisdave/git-labelmaker
-REM :: CALL npm install --global git-labelmaker
+:: # https://github.com/carloscuesta/gitmoji-cli
+:: CALL npm install --global gitmoji-cli
+:: # https://github.com/himynameisdave/git-labelmaker
+:: :: CALL npm install --global git-labelmaker
 
-REM NodeJS Utilities
+:: NodeJS Utilities
 ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 
-REM # https://github.com/alanshaw/david
+:: # https://github.com/alanshaw/david
 CALL npm install --global david
-REM # https://github.com/dylang/npm-check
+:: # https://github.com/dylang/npm-check
 CALL npm install --global npm-check
-REM # https://github.com/tjunnone/npm-check-updates
+:: # https://github.com/tjunnone/npm-check-updates
 CALL npm install --global npm-check-updates
-REM # https://github.com/ruyadorno/ntl
+:: # https://github.com/ruyadorno/ntl
+:: TODO: Check peer dependencies -> inquirer
 CALL npm install --global ntl
-REM # https://github.com/siddharthkp/cost-of-modules
+:: # https://github.com/siddharthkp/cost-of-modules
 CALL npm install --global cost-of-modules
 REM # https://github.com/dependency-check-team/dependency-check
 REM :: CALL npm install --global dependency-check
@@ -121,8 +122,8 @@ REM :: CALL npm install --global typescript-starter
 REM # https://github.com/jeffijoe/typesync
 REM :: CALL npm install --global typesync
 
-REM Development Utilities
-REM :: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+:: Development Utilities
+ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 REM # man pages and cheat sheets
 REM # https://github.com/tldr-pages/tldr
@@ -131,9 +132,9 @@ REM :: CALL npm install --global tldr
 REM # Image minifier
 REM # https://github.com/imagemin/imagemin-cli
 REM :: CALL npm install --global imagemin-cli
-REM # License generator
-REM # https://github.com/plibither8/licensed
-REM :: CALL npm install --global licensed
+:: # License generator
+:: # https://github.com/plibither8/licensed
+CALL npm install --global licensed
 REM # Google's website performance test
 REM # https://github.com/GoogleChrome/lighthouse/
 :: CALL npm install --global lighthouse
@@ -204,32 +205,28 @@ REM :: (Ava)
 REM # https://github.com/phunguyen19/generator-typescript-starter
 REM :: CALL npm install --global generator-typescript-starter
 
-REM Alternative Package Managers
-REM :: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
+:: Alternative Package Managers
+ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
-REM ## https://github.com/alexanderGugel/ied
-REM :: CALL npm install --global ied
-REM # https://github.com/pnpm/pnpm
-REM :: CALL npm install --global pnpm
-REM Upgrade pnpm
-REM :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-REM :: CALL pnpm install --global pnpm
-REM # https://github.com/yarnpkg/yarn
-REM :: CALL npm install --global yarn
+:: # https://github.com/alexanderGugel/ied
+:: CALL npm install --global ied
+:: # https://github.com/pnpm/pnpm
+CALL npm install --global pnpm
+:: Upgrade pnpm
+ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
+CALL pnpm install --global pnpm
+:: # https://github.com/yarnpkg/yarn
+CALL npm install --global yarn
 
 ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 
-REM Print NPM global installs
-
+:: Print NPM global installs
 ECHO  [44m Listing NPM Global Installs: [0m & ECHO.
-
 CALL npm list --global --depth=0
 
-REM Check for outdated modules
-
-REM :: ECHO. & ECHO  [44m Checking for Outdated Modules: [0m & ECHO.
-
-REM :: CALL david -g
+:: Check for outdated modules
+:: ECHO. & ECHO  [44m Checking for Outdated Modules: [0m & ECHO.
+:: CALL david -g
 
 ECHO. & ECHO  [42m Done! [0m
 
