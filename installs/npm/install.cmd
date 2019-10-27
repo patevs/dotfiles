@@ -94,26 +94,26 @@ CALL npm install --global npm-check-updates
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
 CALL npm install --global cost-of-modules
-REM # https://github.com/dependency-check-team/dependency-check
-REM :: CALL npm install --global dependency-check
-REM # https://github.com/workshopper/how-to-npm
-REM :: CALL npm install --global how-to-npm
-REM # https://github.com/GoogleChromeLabs/ndb
-REM :: NOTE: ndb requires windows-build-tools
-REM :: CALL npm install --global ndb
-REM # https://github.com/sindresorhus/np
-REM :: CALL npm install --global np
-REM # https://github.com/zeke/npe
-REM :: CALL npm install --global npe
-REM # https://github.com/voidcosmos/npkill
-REM :: CALL npm install --global npkill
-REM # https://github.com/zeke/package-json-to-readme
-REM :: CALL npm install --global package-json-to-readme
-REM # https://github.com/Unitech/pm2
-REM :: CALL npm install --global pm2
-REM # https://github.com/felixrieseberg/windows-build-tools
-REM :: NOTE: windows-build-tools install must be run in admin prompt
-REM :: CALL npm install --global windows-build-tools
+:: # https://github.com/dependency-check-team/dependency-check
+:: CALL npm install --global dependency-check
+:: # https://github.com/workshopper/how-to-npm
+:: CALL npm install --global how-to-npm
+:: # https://github.com/GoogleChromeLabs/ndb
+:: NOTE: ndb requires windows-build-tools
+:: CALL npm install --global ndb
+:: # https://github.com/sindresorhus/np
+:: CALL npm install --global np
+:: # https://github.com/zeke/npe
+:: CALL npm install --global npe
+:: # https://github.com/voidcosmos/npkill
+:: CALL npm install --global npkill
+:: # https://github.com/zeke/package-json-to-readme
+:: CALL npm install --global package-json-to-readme
+:: # https://github.com/Unitech/pm2
+:: CALL npm install --global pm2
+:: # https://github.com/felixrieseberg/windows-build-tools
+:: NOTE: windows-build-tools install must be run in admin prompt
+:: CALL npm install --global windows-build-tools
 
 REM TypeScript and Utilities
 REM :: ECHO. & ECHO  [44m Installing TypeScript and Utility Modules: [0m & ECHO.
