@@ -22,7 +22,8 @@ WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
 :: Begin install
-ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m & ECHO.
+ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m
+:: & ECHO.
 
 :: Just for fun, testing, or to be sorted
 :: ECHO  [44m Installing Just-For-Fun and Testing Modules: [0m & ECHO.
