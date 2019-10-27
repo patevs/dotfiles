@@ -7,6 +7,8 @@
 :: Batch script which installs various useful NPM global modules.
 :: Requires NodeJS and NPM to be installed.
 
+:: TODO: Check for already installed packages
+
 CLS
 ECHO. & ECHO [100;4mNPM Global Modules Install Script[0m
 :: Verify Node.js and NPM are installed & can be found
