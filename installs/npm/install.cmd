@@ -1,6 +1,11 @@
 @ECHO OFF
-:: Script to install useful NPM global modules.
-:: Requires Node.js and NPM to be installed.
+
+:: ------------------------ ::
+:: installs/npm/install.cmd ::
+:: ------------------------ ::
+
+:: Batch script which installs various useful NPM global modules.
+:: Requires NodeJS and NPM to be installed.
 
 CLS
 ECHO. & ECHO [100;4mNPM Global Modules Install Script[0m
