@@ -11,15 +11,15 @@
 
 CLS
 ECHO. & ECHO [100;4mNPM Global Modules Install Script[0m
+
 :: Verify Node.js and NPM are installed & can be found
 ECHO. & ECHO [92m Verifying NodeJS and NPM Installations... [0m
-ECHO. & ECHO  [45m NodeJS Installation: [0m & ECHO.
 
+ECHO. & ECHO  [45m NodeJS Installation: [0m & ECHO.
 WHERE node
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m NodeJS installation could not be found... exiting! [0m & GOTO :EOF
 
 ECHO. & ECHO  [45m NPM Installation: [0m & ECHO.
-
 WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
