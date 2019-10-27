@@ -34,7 +34,7 @@ ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... 
 :: # https://github.com/sitespeedio/sitespeed.io
 :: # https://github.com/lirantal/is-website-vulnerable
 :: # https://github.com/webtorrent/webtorrent-cli
-:: vtop must be run using sh/bash
+:: # NOTE: vtop must be run using sh/bash
 :: # https://github.com/MrRio/vtop
 :: # https://github.com/kangax/html-minifier
 :: # https://github.com/ddopson/underscore-cli
@@ -50,9 +50,9 @@ ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... 
 :: # https://github.com/voorhoede/lighthouse-security
 :: # https://github.com/gillstrom/screensaver
 :: # https://github.com/cezaraugusto/mklicense
-:: https://github.com/IonicaBizau/git-stats
-:: https://github.com/nogizhopaboroda/iponmap
-:: https://github.com/aksakalli/gtop
+:: # https://github.com/IonicaBizau/git-stats
+:: # https://github.com/nogizhopaboroda/iponmap
+:: # https://github.com/aksakalli/gtop
 
 :: Linting and Style Check
 :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
@@ -90,7 +90,7 @@ CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
 CALL npm install --global npm-check-updates
 :: # https://github.com/ruyadorno/ntl
-:: TODO: Check peer dependencies -> inquirer
+:: # TODO: Check peer dependencies -> inquirer
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
 CALL npm install --global cost-of-modules
@@ -99,7 +99,7 @@ CALL npm install --global cost-of-modules
 :: # https://github.com/workshopper/how-to-npm
 :: CALL npm install --global how-to-npm
 :: # https://github.com/GoogleChromeLabs/ndb
-:: NOTE: ndb requires windows-build-tools
+:: # NOTE: ndb requires windows-build-tools
 :: CALL npm install --global ndb
 :: # https://github.com/sindresorhus/np
 :: CALL npm install --global np
@@ -112,26 +112,26 @@ CALL npm install --global cost-of-modules
 :: # https://github.com/Unitech/pm2
 :: CALL npm install --global pm2
 :: # https://github.com/felixrieseberg/windows-build-tools
-:: NOTE: windows-build-tools install must be run in admin prompt
+:: # NOTE: windows-build-tools install must be run in admin prompt
 :: CALL npm install --global windows-build-tools
 
-REM TypeScript and Utilities
-REM :: ECHO. & ECHO  [44m Installing TypeScript and Utility Modules: [0m & ECHO.
+:: TypeScript and Utilities
+:: ECHO. & ECHO  [44m Installing TypeScript and Utility Modules: [0m & ECHO.
 
-REM # https://github.com/xavdid/typed-install
-REM :: CALL npm install --global typed-install
-REM # https://github.com/microsoft/TypeScript
-REM :: CALL npm install --global typescript
-REM # https://github.com/bitjson/typescript-starter
-REM :: CALL npm install --global typescript-starter
-REM # https://github.com/jeffijoe/typesync
-REM :: CALL npm install --global typesync
+:: # https://github.com/xavdid/typed-install
+:: CALL npm install --global typed-install
+:: # https://github.com/microsoft/TypeScript
+:: CALL npm install --global typescript
+:: # https://github.com/bitjson/typescript-starter
+:: CALL npm install --global typescript-starter
+:: # https://github.com/jeffijoe/typesync
+:: CALL npm install --global typesync
 
 :: Development Utilities
 ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
-REM # man pages and cheat sheets
-REM # https://github.com/tldr-pages/tldr
+:: # man pages and cheat sheets
+:: # https://github.com/tldr-pages/tldr
 REM # https://github.com/tldr-pages/tldr-node-client
 REM :: CALL npm install --global tldr
 REM # Image minifier
