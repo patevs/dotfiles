@@ -169,46 +169,46 @@ CALL npm install --global licensed
 :: System Utilities
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
-REM # https://github.com/sindresorhus/empty-trash-cli
+:: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
-REM # https://github.com/sindresorhus/trash-cli
+:: # https://github.com/sindresorhus/trash-cli
 CALL npm install --global trash-cli
-REM # https://github.com/kevva/wifi-password-cli
+:: # https://github.com/kevva/wifi-password-cli
 CALL npm install --global wifi-password-cli
-REM # https://github.com/rafaelrinaldi/whereami
-REM :: CALL npm install --global @rafaelrinaldi/whereami
-REM # https://github.com/sindresorhus/fkill-cli
-REM :: CALL npm install --global fkill-cli
-REM # https://github.com/sindresorhus/open-cli
+:: # https://github.com/rafaelrinaldi/whereami
+:: CALL npm install --global @rafaelrinaldi/whereami
+:: # https://github.com/sindresorhus/fkill-cli
+:: CALL npm install --global fkill-cli
+:: # https://github.com/sindresorhus/open-cli
 CALL npm install --global open-cli
-REM # https://github.com/sindresorhus/pageres-cli
-REM :: CALL npm install --global pageres-cli
+:: # https://github.com/sindresorhus/pageres-cli
+:: CALL npm install --global pageres-cli
 
-REM Yeoman and generators
-REM :: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
+:: Yeoman and generators
+:: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
-REM # https://github.com/yeoman/yo
-REM :: CALL npm install --global yo
+:: # https://github.com/yeoman/yo
+:: CALL npm install --global yo
 
-REM HTML/Frontend
-REM # https://github.com/h5bp/generator-h5bp
-REM :: CALL npm install --global generator-h5bp
-REM # https://github.com/yeoman/generator-webapp
-REM :: CALL npm install --global generator-webapp
-REM JavaScript/Node
-REM :: (Ava/Codecov)
-REM # https://github.com/sindresorhus/generator-nm
-REM :: CALL npm install --global generator-nm
-REM :: (Jest/Coveralls)
-REM # https://github.com/yeoman/generator-node
-REM :: CALL npm install --global generator-node
-REM Typescript
-REM :: (Jest)
-REM # https://github.com/ospatil/generator-node-typescript
-REM :: CALL npm install --global generator-node-typescript
-REM :: (Ava)
-REM # https://github.com/phunguyen19/generator-typescript-starter
-REM :: CALL npm install --global generator-typescript-starter
+:: HTML/Frontend
+:: # https://github.com/h5bp/generator-h5bp
+:: CALL npm install --global generator-h5bp
+:: # https://github.com/yeoman/generator-webapp
+:: CALL npm install --global generator-webapp
+:: JavaScript/Node
+:: (Ava/Codecov)
+:: # https://github.com/sindresorhus/generator-nm
+:: CALL npm install --global generator-nm
+:: (Jest/Coveralls)
+:: # https://github.com/yeoman/generator-node
+:: CALL npm install --global generator-node
+:: Typescript
+:: (Jest)
+:: # https://github.com/ospatil/generator-node-typescript
+:: CALL npm install --global generator-node-typescript
+:: (Ava)
+:: # https://github.com/phunguyen19/generator-typescript-starter
+:: CALL npm install --global generator-typescript-starter
 
 :: Alternative Package Managers
 ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
