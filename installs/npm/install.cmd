@@ -214,7 +214,7 @@ CALL npm install --global open-cli
 :: CALL npm install --global generator-typescript-starter
 
 :: Alternative Package Managers
-ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
+:: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
 :: # https://github.com/alexanderGugel/ied
 :: CALL npm install --global ied
