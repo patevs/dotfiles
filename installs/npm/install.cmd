@@ -89,14 +89,14 @@ ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 :: # https://github.com/alanshaw/david
 CALL npm install --global david
 :: # https://github.com/dylang/npm-check
-CALL npm install --global npm-check
+:: CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
-CALL npm install --global npm-check-updates
+:: CALL npm install --global npm-check-updates
 :: # https://github.com/ruyadorno/ntl
 :: # TODO: Check peer dependencies -> inquirer
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
-CALL npm install --global cost-of-modules
+:: CALL npm install --global cost-of-modules
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
@@ -131,7 +131,7 @@ CALL npm install --global cost-of-modules
 :: CALL npm install --global typesync
 
 :: Development Utilities
-ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+:: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 :: # man pages and cheat sheets
 :: # https://github.com/tldr-pages/tldr
@@ -142,7 +142,7 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: CALL npm install --global imagemin-cli
 :: # License generator
 :: # https://github.com/plibither8/licensed
-CALL npm install --global licensed
+:: CALL npm install --global licensed
 :: # Google's website performance test
 :: # https://github.com/GoogleChrome/lighthouse/
 :: CALL npm install --global lighthouse
@@ -219,12 +219,12 @@ ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 :: # https://github.com/alexanderGugel/ied
 :: CALL npm install --global ied
 :: # https://github.com/pnpm/pnpm
-CALL npm install --global pnpm
+:: CALL npm install --global pnpm
 :: Upgrade pnpm
-ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-CALL pnpm install --global pnpm
+:: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
+:: CALL pnpm install --global pnpm
 :: # https://github.com/yarnpkg/yarn
-CALL npm install --global yarn
+:: CALL npm install --global yarn
 
 ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 
