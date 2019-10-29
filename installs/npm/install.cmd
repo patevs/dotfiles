@@ -27,36 +27,6 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... 
 ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m
 :: & ECHO.
 
-:: Just for fun, testing, or to be sorted
-:: ECHO  [44m Installing Just-For-Fun and Testing Modules: [0m & ECHO.
-
-:: # https://github.com/xxczaki/nasa-cli
-:: CALL npm install --global nasa-cli
-:: # https://github.com/mishoo/UglifyJS2
-:: CALL npm install --global uglify-js
-:: # https://github.com/sitespeedio/sitespeed.io
-:: # https://github.com/lirantal/is-website-vulnerable
-:: # https://github.com/webtorrent/webtorrent-cli
-:: # NOTE: vtop must be run using sh/bash
-:: # https://github.com/MrRio/vtop
-:: # https://github.com/kangax/html-minifier
-:: # https://github.com/ddopson/underscore-cli
-:: # https://github.com/lordgiotto/google-font-installer
-:: # https://github.com/riyadhalnur/weather-cli
-:: # https://github.com/jhotmann/node-passgen-cli
-:: # https://github.com/thlorenz/doctoc
-:: # https://github.com/GitbookIO/gitbook
-:: # https://github.com/marionebl/share-cli
-:: # https://github.com/jhotmann/node-rename-cli
-:: # https://github.com/IonicaBizau/cli-github
-:: # https://github.com/mbostock/gistup
-:: # https://github.com/voorhoede/lighthouse-security
-:: # https://github.com/gillstrom/screensaver
-:: # https://github.com/cezaraugusto/mklicense
-:: # https://github.com/IonicaBizau/git-stats
-:: # https://github.com/nogizhopaboroda/iponmap
-:: # https://github.com/aksakalli/gtop
-
 :: Linting and Style Check
 :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
 
@@ -69,6 +39,12 @@ ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... 
 
 :: Git Integrations and Utilities
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
+
+
+:: # https://github.com/IonicaBizau/cli-github
+:: # https://github.com/mbostock/gistup
+:: # https://github.com/IonicaBizau/git-stats
+
 
 :: # https://github.com/TejasQ/add-gitignore
 CALL npm install --global add-gitignore
@@ -133,6 +109,19 @@ CALL npm install --global ntl
 :: Development Utilities
 :: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
+
+:: # https://github.com/sitespeedio/sitespeed.io
+:: # https://github.com/lirantal/is-website-vulnerable
+:: # https://github.com/kangax/html-minifier
+:: # https://github.com/cezaraugusto/mklicense
+:: # https://github.com/voorhoede/lighthouse-security
+:: # https://github.com/jhotmann/node-rename-cli
+:: # https://github.com/jhotmann/node-passgen-cli
+:: # https://github.com/thlorenz/doctoc
+:: # https://github.com/GitbookIO/gitbook
+:: # https://github.com/ddopson/underscore-cli
+
+
 :: # man pages and cheat sheets
 :: # https://github.com/tldr-pages/tldr
 :: # https://github.com/tldr-pages/tldr-node-client
@@ -166,11 +155,25 @@ CALL npm install --global ntl
 :: CALL npm install --global stacks-cli
 :: # https://github.com/strapi/strapi
 :: CALL npm install --global strapi@beta
+:: # https://github.com/mishoo/UglifyJS2
+:: CALL npm install --global uglify-js
 :: # https://github.com/kevva/viewport-list-cli
 :: CALL npm install --global viewport-list-cli
 
 :: System Utilities
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
+
+
+:: # NOTE: vtop must be run using sh/bash
+:: # https://github.com/MrRio/vtop
+:: # https://github.com/gillstrom/screensaver
+:: # https://github.com/nogizhopaboroda/iponmap
+:: # https://github.com/aksakalli/gtop
+:: # https://github.com/marionebl/share-cli
+:: # https://github.com/lordgiotto/google-font-installer
+:: # https://github.com/riyadhalnur/weather-cli
+:: # https://github.com/webtorrent/webtorrent-cli
+
 
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
@@ -225,6 +228,12 @@ CALL npm install --global open-cli
 :: CALL pnpm install --global pnpm
 :: # https://github.com/yarnpkg/yarn
 :: CALL npm install --global yarn
+
+:: Miscellaneous Modules
+:: ECHO. & ECHO  [44m Installing Miscellaneous Modules: [0m & ECHO.
+
+:: # https://github.com/xxczaki/nasa-cli
+:: CALL npm install --global nasa-cli
 
 ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 
