@@ -27,6 +27,8 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... 
 ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... [0m
 :: & ECHO.
 
+:: ---------------------------------------------------------------------------- ::
+
 :: Linting and Style Check
 :: ECHO  [44m Installing Linting and Style Check Modules: [0m & ECHO.
 
@@ -36,6 +38,8 @@ ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... 
 :: CALL npm install --global jshint
 :: # https://github.com/prettier/prettier
 :: CALL npm install --global prettier
+
+:: ---------------------------------------------------------------------------- ::
 
 :: Git Integrations and Utilities
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
@@ -58,6 +62,8 @@ CALL npm install --global git-open
 :: CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
 :: :: CALL npm install --global git-labelmaker
+
+:: ---------------------------------------------------------------------------- ::
 
 :: NodeJS Utilities
 ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
@@ -94,6 +100,8 @@ CALL npm install --global ntl
 :: # NOTE: windows-build-tools install must be run in admin prompt
 :: CALL npm install --global windows-build-tools
 
+:: ---------------------------------------------------------------------------- ::
+
 :: TypeScript and Utilities
 :: ECHO. & ECHO  [44m Installing TypeScript and Utility Modules: [0m & ECHO.
 
@@ -105,6 +113,8 @@ CALL npm install --global ntl
 :: CALL npm install --global typescript-starter
 :: # https://github.com/jeffijoe/typesync
 :: CALL npm install --global typesync
+
+:: ---------------------------------------------------------------------------- ::
 
 :: Development Utilities
 :: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
@@ -160,6 +170,8 @@ CALL npm install --global ntl
 :: # https://github.com/kevva/viewport-list-cli
 :: CALL npm install --global viewport-list-cli
 
+:: ---------------------------------------------------------------------------- ::
+
 :: System Utilities
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
@@ -190,6 +202,8 @@ CALL npm install --global open-cli
 :: # https://github.com/sindresorhus/pageres-cli
 :: CALL npm install --global pageres-cli
 
+:: ---------------------------------------------------------------------------- ::
+
 :: Yeoman and generators
 :: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
@@ -216,6 +230,8 @@ CALL npm install --global open-cli
 :: # https://github.com/phunguyen19/generator-typescript-starter
 :: CALL npm install --global generator-typescript-starter
 
+:: ---------------------------------------------------------------------------- ::
+
 :: Alternative Package Managers
 :: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
@@ -229,11 +245,15 @@ CALL npm install --global open-cli
 :: # https://github.com/yarnpkg/yarn
 :: CALL npm install --global yarn
 
+:: ---------------------------------------------------------------------------- ::
+
 :: Miscellaneous Modules
 :: ECHO. & ECHO  [44m Installing Miscellaneous Modules: [0m & ECHO.
 
 :: # https://github.com/xxczaki/nasa-cli
 :: CALL npm install --global nasa-cli
+
+:: ---------------------------------------------------------------------------- ::
 
 ECHO. & ECHO [92m Finished Installing NPM Global Modules! [0m & ECHO.
 
