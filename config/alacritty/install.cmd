@@ -1,4 +1,3 @@
-
 @ECHO OFF
 
 :: ---------------------------- ::
@@ -17,4 +16,3 @@ CALL xcopy /Y alacritty.yml C:\Users\Patrick\APPDATA\Roaming\alacritty\alacritty
 :: ECHO. & ECHO  [42m Done! [0m
 
 GOTO :EOF
-
