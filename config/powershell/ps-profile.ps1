@@ -50,9 +50,9 @@ $GitPromptSettings.DefaultPromptPath.ForegroundColor =[ConsoleColor]::Cyan
 $GitPromptSettings.DefaultPromptSuffix.Text = "$([char]0x203A) " # chevron unicode symbol
 $GitPromptSettings.DefaultPromptSuffix.ForegroundColor = [ConsoleColor]::Magenta
 # Dracula Git Status Configuration
-$GitPromptSettings.BeforeStatus.ForegroundColor = [ConsoleColor]::Blue
-$GitPromptSettings.BranchColor.ForegroundColor = [ConsoleColor]::Blue
-$GitPromptSettings.AfterStatus.ForegroundColor = [ConsoleColor]::Blue
+# $GitPromptSettings.BeforeStatus.ForegroundColor = [ConsoleColor]::Blue
+# $GitPromptSettings.BranchColor.ForegroundColor = [ConsoleColor]::Blue
+# $GitPromptSettings.AfterStatus.ForegroundColor = [ConsoleColor]::Blue
 
 # Import Terminal-Icons module if installed
 # if (Check-Module "Terminal-Icons") { Import-Module -Name Terminal-Icons }
@@ -61,7 +61,8 @@ $GitPromptSettings.AfterStatus.ForegroundColor = [ConsoleColor]::Blue
 # if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
 
 # Start SSH agent
-Start-SshAgent
+# TODO: Fix this
+# Start-SshAgent
 
 # Clear the screen
 clear
