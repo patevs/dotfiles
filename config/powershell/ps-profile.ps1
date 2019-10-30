@@ -115,15 +115,15 @@ function ps-modules {
 
 # Install a given PowerShell module
 # https://docs.microsoft.com/en-us/powershell/module/powershellget/install-module?view=powershell-6
-function install-module($modname) {
-  Install-Module -Name $modname
-}
+# function install-module($modname) {
+#   Install-Module -Name $modname
+# }
 
 # Uninstall a given PowerShell module
 # https://docs.microsoft.com/en-us/powershell/module/powershellget/uninstall-module?view=powershell-6
-function uninstall-module($modname) {
-  Uninstall-Module -Name $modname
-}
+# function uninstall-module($modname) {
+#   Uninstall-Module -Name $modname
+# }
 
 # Check if a given command exists
 # https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
