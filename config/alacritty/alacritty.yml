@@ -42,8 +42,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 0
-    y: 0
+    x: 4
+    y: 4
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
@@ -104,7 +104,7 @@ scrolling:
 # Some applications, like Emacs, rely on knowing about the width of a tab.
 # To prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
-tabspaces: 8
+tabspaces: 4
 
 # Font configuration (changes require restart)
 font:
