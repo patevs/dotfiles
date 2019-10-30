@@ -49,6 +49,7 @@ $GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::Green
 $GitPromptSettings.DefaultPromptPath.ForegroundColor =[ConsoleColor]::Cyan
 $GitPromptSettings.DefaultPromptSuffix.Text = "$([char]0x203A) " # chevron unicode symbol
 $GitPromptSettings.DefaultPromptSuffix.ForegroundColor = [ConsoleColor]::Magenta
+# $GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n > '
 # Dracula Git Status Configuration
 # $GitPromptSettings.BeforeStatus.ForegroundColor = [ConsoleColor]::Blue
 # $GitPromptSettings.BranchColor.ForegroundColor = [ConsoleColor]::Blue
@@ -457,9 +458,11 @@ function prompt {
 
   # Write posh-git status
   Write-VcsStatus
+  # Have posh-git display its default prompt
+  # & $GitPromptScriptBlock
 
-  $LastExitCode = $origLastExitCode
-  "`n$('>' * ($nestedPromptLevel + 1)) "
+  # $LastExitCode = $origLastExitCode
+  # "`n$('>' * ($nestedPromptLevel + 1)) "
 }
 
 # --------------------------------------------------------------------------- #
