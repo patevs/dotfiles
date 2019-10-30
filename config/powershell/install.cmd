@@ -20,4 +20,3 @@ CALL powershell
 :: ECHO. & ECHO  [42m Done! [0m
 
 GOTO :EOF
-
