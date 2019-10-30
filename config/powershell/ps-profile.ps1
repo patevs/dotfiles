@@ -44,11 +44,11 @@ Set-PSReadlineOption -Color @{
 if (Check-Module "posh-git") { Import-Module -Name posh-git }
 
 # Dracula Prompt Configuration
-$GitPromptSettings.DefaultPromptPrefix.Text = "$([char]0x2192) " # arrow unicode symbol
-$GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::Green
-$GitPromptSettings.DefaultPromptPath.ForegroundColor =[ConsoleColor]::Cyan
-$GitPromptSettings.DefaultPromptSuffix.Text = "$([char]0x203A) " # chevron unicode symbol
-$GitPromptSettings.DefaultPromptSuffix.ForegroundColor = [ConsoleColor]::Magenta
+# $GitPromptSettings.DefaultPromptPrefix.Text = "$([char]0x2192) " # arrow unicode symbol
+# $GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::Green
+# $GitPromptSettings.DefaultPromptPath.ForegroundColor =[ConsoleColor]::Cyan
+# $GitPromptSettings.DefaultPromptSuffix.Text = "$([char]0x203A) " # chevron unicode symbol
+# $GitPromptSettings.DefaultPromptSuffix.ForegroundColor = [ConsoleColor]::Magenta
 # $GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n > '
 # Dracula Git Status Configuration
 # $GitPromptSettings.BeforeStatus.ForegroundColor = [ConsoleColor]::Blue
@@ -461,8 +461,8 @@ function prompt {
   # Have posh-git display its default prompt
   # & $GitPromptScriptBlock
 
-  # $LastExitCode = $origLastExitCode
-  # "`n$('>' * ($nestedPromptLevel + 1)) "
+  $LastExitCode = $origLastExitCode
+  "`n$('>' * ($nestedPromptLevel + 1)) "
 }
 
 # --------------------------------------------------------------------------- #
