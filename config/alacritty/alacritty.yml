@@ -107,7 +107,7 @@ scrolling:
 tabspaces: 4
 
 # Font configuration (changes require restart)
-#font:
+font:
   # Normal (roman) font face
   #normal:
     # Font family
