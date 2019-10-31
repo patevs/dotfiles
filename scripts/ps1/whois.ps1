@@ -1,4 +1,9 @@
 <#
+
+# --------------------- #
+# scripts/ps1/whois.ps1 #
+# --------------------- #
+
 .SYNOPSIS
 Domain name WhoIs
 .DESCRIPTION
@@ -10,7 +15,7 @@ domain ownership, name servers, etc..
 Specifies the domain name (enter the domain name without http:// and www (e.g. power-shell.com))
 
 .EXAMPLE
-WhoIs -domain power-shell.com 
+WhoIs -domain power-shell.com
 whois power-shell.com
 
 .NOTES
@@ -39,3 +44,5 @@ Write-Host "Gathering $domain data..." -ForegroundColor Green
 } catch {
 Write-Host "Please enter valid domain name (e.g. microsoft.com)." -ForegroundColor Red}
 } #end function WhoIs
+
+# EOF #
