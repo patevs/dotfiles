@@ -310,21 +310,24 @@ Set-Alias -Name lll -Value getDirListLong
 # ---------------------------- #
 
 # Use GitHub's hub Client in favor of git
-function getGithubClient {
+if (Check-Command hub){ Set-Alias git hub }
+
+# Use GitHub's hub Client in favor of git
+# function getGithubClient {
   # Check hub command exists
-  if (Check-Command hub){
-    hub $args
-  } else {
-    Write-Host "`nhub installation could not be found!" -ForegroundColor Red
+  # if (Check-Command hub){
+    # hub $args
+  # } else {
+    # Write-Host "`nhub installation could not be found!" -ForegroundColor Red
     # TODO: Check if git command exists
     # if (Check-Command git) {
     #   git $args
     # } else {
     #   Write-Host "`nNeither git or hub Installations Could Not Be Found!" -ForegroundColor Red
     # }
-  }
-}
-Set-Alias -Name git -Value getGithubClient
+  # }
+# }
+# Set-Alias -Name git -Value getGithubClient
 
 # Print G3L Status
 function getG3lStatus {
