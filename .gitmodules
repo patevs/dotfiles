@@ -2,3 +2,6 @@
 	path = submodules/dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "config/bash/bash-git-prompt"]
+	path = config/bash/bash-git-prompt
+	url = https://github.com/magicmonty/bash-git-prompt.git
