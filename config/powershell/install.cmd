@@ -14,6 +14,8 @@ ECHO. & ECHO  [100;4m PowerShell Profile Install Script [0m & ECHO.
 :: Copy PowerShell profile
 :: CALL cp ps-profile.ps1 $PROFILE
 CALL xcopy /Y ps-profile.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+:: New line
+ECHO.
 :: Reload PowerShell
 CALL powershell
 
