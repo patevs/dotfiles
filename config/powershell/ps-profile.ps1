@@ -245,6 +245,7 @@ function moveDev {
   $devPath = $env:USERPROFILE + "\desktop\git"
   Set-Location $devPath
   # getDir
+  Write-Host # New line
   if (Check-Command lsd) { lsd }
 }
 Set-Alias -Name dev -Value moveDev
