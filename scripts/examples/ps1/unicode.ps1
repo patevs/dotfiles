@@ -1,7 +1,7 @@
 
-# ----------------------- #
-# scripts/ps1/unicode.ps1 #
-# ----------------------- #
+# -------------------------------- #
+# scripts/examples/ps1/unicode.ps1 #
+# -------------------------------- #
 
 # Source: https://taraksharma.com/supercharging-powershell-with-hyper-oh-my-posh-posh-git/
 
