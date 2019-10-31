@@ -53,21 +53,21 @@ CALL npm install --global diff-so-fancy
 ECHO. & ECHO  [44m Setting Git Global Configuration [0m & ECHO.
 
 :: Set Username and email
-ECHO [92m Setting Username and Email: [0m & ECHO.
+ECHO [92m Setting Username and Email. [0m
 
 CALL git config --global user.email "ppevans11@gmail.com"
 CALL git config --global user.name "PatEvs"
 CALL git config --global github.user "PatEvs"
 
 :: Set up a submodule-aware status
-ECHO [92m Setting submodule-aware status [0m & ECHO.
+ECHO [92m Setting submodule-aware status. [0m & ECHO.
 
 CALL git config --global status.submoduleSummary true
 
 ECHO  [44m Setting Diff-So-Fancy Configuration [0m & ECHO.
 
 :: Set diff configuration
-ECHO [92m Setting diff configuration [0m & ECHO.
+ECHO [92m Setting diff configuration. [0m & ECHO.
 
 CALL git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 CALL git config --global color.ui true
@@ -82,7 +82,7 @@ CALL git config --global color.diff.old        "red bold"
 CALL git config --global color.diff.new        "green bold"
 CALL git config --global color.diff.whitespace "red reverse"
 
-ECHO [92m Git Global Configuration: [0m & ECHO.
+ECHO [44m Git Global Configuration: [0m & ECHO.
 
 CALL git config --global --list
 
