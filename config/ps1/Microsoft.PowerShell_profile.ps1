@@ -20,13 +20,32 @@ function Test-Administrator  {
 	(New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 }
 
-# Edit whole dir, so we can edit included files etc
-function edit-powershell-profile {
+# Edit whole dir, so we can edit included files etc.
+function edit-profile {
 	edit $profileDir
 }
 
-function update-powershell-profile {
+function reload-profile {
 	& $profile
+}
+
+# function disable-windows-search {
+# 	Set-Service wsearch -StartupType disabled
+# 	stop-service wsearch
+# }
+
+function get-path {
+	($Env:Path).Split(";")
+}
+
+# Print PowerShell version
+function ps-version {
+  $PSVersionTable.PSVersion
+}
+
+# Print list of installed PowerShell modules
+function ps-modules {
+  Get-InstalledModule
 }
 
 # https://blogs.technet.microsoft.com/heyscriptingguy/2012/12/30/powertip-change-the-powershell-console-title
@@ -38,15 +57,6 @@ function update-powershell-profile {
 # function get-windows-build {
 # 	[Environment]::OSVersion
 # }
-
-# function disable-windows-search {
-# 	Set-Service wsearch -StartupType disabled
-# 	stop-service wsearch
-# }
-
-function get-path {
-	($Env:Path).Split(";")
-}
 
 # function get-serial-number {
 #   Get-CimInstance -ClassName Win32_Bios | select-object serialnumber
