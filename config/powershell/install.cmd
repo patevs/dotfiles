@@ -17,7 +17,7 @@ CALL xcopy /Y ps-profile.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\Micros
 :: New line
 ECHO.
 :: Reload PowerShell
-CALL powershell
+CALL powershell -nologo
 
 :: ECHO. & ECHO  [42m Done! [0m
 
