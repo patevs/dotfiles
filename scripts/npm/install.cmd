@@ -48,6 +48,7 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 :: # https://github.com/IonicaBizau/cli-github
 :: # https://github.com/mbostock/gistup
 :: # https://github.com/IonicaBizau/git-stats
+:: # https://github.com/qw3rtman/git-fire
 
 
 :: # https://github.com/TejasQ/add-gitignore
@@ -131,6 +132,7 @@ CALL npm install --global ntl
 :: # https://github.com/GitbookIO/gitbook
 :: # https://github.com/ddopson/underscore-cli
 :: # https://github.com/semantic-release/semantic-release
+:: # https://github.com/release-it/release-it
 
 
 :: # man pages and cheat sheets
