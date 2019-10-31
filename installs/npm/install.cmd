@@ -51,7 +51,7 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
 
 :: # https://github.com/TejasQ/add-gitignore
-CALL npm install --global add-gitignore
+:: CALL npm install --global add-gitignore
 :: # https://github.com/so-fancy/diff-so-fancy
 CALL npm install --global diff-so-fancy
 :: # https://github.com/svhawks/g3l
@@ -198,7 +198,7 @@ CALL npm install --global wifi-password-cli
 :: # https://github.com/sindresorhus/fkill-cli
 :: CALL npm install --global fkill-cli
 :: # https://github.com/sindresorhus/open-cli
-CALL npm install --global open-cli
+:: CALL npm install --global open-cli
 :: # https://github.com/sindresorhus/pageres-cli
 :: CALL npm install --global pageres-cli
 
