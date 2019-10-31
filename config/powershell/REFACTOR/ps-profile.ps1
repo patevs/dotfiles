@@ -28,6 +28,9 @@ function Check-Module($modname){
 # Proper history etc
 if (Check-Module "PSReadLine") { Import-Module -Name PSReadLine }
 
+# Show selection menu for tab
+# Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
+
 # Dracula readline configuration. Requires version 2.0, if you have 1.2 convert to `Set-PSReadlineOption -TokenType`
 Set-PSReadlineOption -Color @{
     "Command" = [ConsoleColor]::Green
@@ -72,15 +75,6 @@ clear
 # Helper Functions #
 ####################
 
-# https://stackoverflow.com/questions/7690994/running-a-command-as-administrator-using-powershell
-# function sudo {
-  # Start-Process powershell -Verb runAs
-#   if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
-#     Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs;
-#     exit
-#   }
-# }
-
 # Set-Alias trash Remove-ItemSafely
 
 function open($file) {
@@ -91,6 +85,11 @@ function settings {
   start-process ms-setttings:
 }
 
+# function uptime {
+# 	Get-WmiObject win32_operatingsystem | select csname, @{LABEL='LastBootUpTime';
+# 	EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}
+# }
+
 # Oddly, Powershell doesn't have an inbuilt variable for the documents directory. So let's make one:
 # From https://stackoverflow.com/questions/3492920/is-there-a-system-defined-environment-variable-for-documents-directory
 # $env:DOCUMENTS = [Environment]::GetFolderPath("mydocuments")
@@ -98,6 +97,13 @@ function settings {
 function reload-profile {
 	& $profile
 }
+
+# function find-file($name) {
+# 	ls -recurse -filter "*${name}*" -ErrorAction SilentlyContinue | foreach {
+# 		$place_path = $_.directory
+# 		echo "${place_path}\${_}"
+# 	}
+# }
 
 function print-path {
 	($Env:Path).Split(";")
@@ -193,22 +199,27 @@ function touch($file) {
 }
 
 # From https://github.com/Pscx/Pscx
-function sudo(){
-	Invoke-Elevated @args
-}
+# function sudo(){
+# 	Invoke-Elevated @args
+# }
 
-# --------------- #
-# Command Aliases #
-# --------------- #
+# function sudo {
+#	 $file, [string]$arguments = $args;
+#	 $psi = new-object System.Diagnostics.ProcessStartInfo $file;
+#  $psi.Arguments = $arguments;
+#  $psi.Verb = "runas";
+#  $psi.WorkingDirectory = get-location;
+#  [System.Diagnostics.Process]::Start($psi) >> $null
+# }
 
-# function pull () { & get pull $args }
-# function checkout () { & git checkout $args }
-
-# del alias:gc -Force
-# del alias:gp -Force
-
-# Set-Alias -Name gc -Value checkout
-# Set-Alias -Name gp -Value pull
+# https://stackoverflow.com/questions/7690994/running-a-command-as-administrator-using-powershell
+# function sudo {
+  # Start-Process powershell -Verb runAs
+#   if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+#     Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs;
+#     exit
+#   }
+# }
 
 # -------------------------------- #
 # System & Utility Related Aliases #
