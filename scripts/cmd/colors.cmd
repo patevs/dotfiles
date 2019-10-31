@@ -1,6 +1,11 @@
-REM :: https://gist.github.com/mlocati/fdabcaeb8071d5c75a2d51712db24011#file-win10colors-cmd
-
 @echo off
+
+:: -------------- ::
+:: cmd/colors.cmd ::
+:: -------------- ::
+
+:: https://gist.github.com/mlocati/fdabcaeb8071d5c75a2d51712db24011#file-win10colors-cmd
+
 cls
 echo [101;93m STYLES [0m
 echo ^<ESC^>[0m [0mReset[0m
@@ -54,3 +59,5 @@ echo ^<ESC^>[7m                      [7minverse foreground ^<-^> background[0m
 echo ^<ESC^>[7;31m                   [7;31minverse red foreground color[0m
 echo ^<ESC^>[7m and nested ^<ESC^>[31m [7mbefore [31mnested[0m
 echo ^<ESC^>[31m and nested ^<ESC^>[7m [31mbefore [7mnested[0m
+
+:: EOF ::

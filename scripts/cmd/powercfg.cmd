@@ -1,4 +1,9 @@
 @ECHO OFF
+
+:: ---------------- ::
+:: cmd/powercfg.cmd ::
+:: ---------------- ::
+
 ECHO. & ECHO Script to generate a Battery Report using powercrg utility & ECHO.
 
 :: powercfg /?
@@ -15,3 +20,5 @@ ECHO. & ECHO Script to generate a Battery Report using powercrg utility & ECHO.
 CALL powercfg /BATTERYREPORT
 
 GOTO :EOF
+
+:: EOF ::
