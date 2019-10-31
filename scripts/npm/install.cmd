@@ -130,6 +130,7 @@ CALL npm install --global ntl
 :: # https://github.com/thlorenz/doctoc
 :: # https://github.com/GitbookIO/gitbook
 :: # https://github.com/ddopson/underscore-cli
+:: # https://github.com/semantic-release/semantic-release
 
 
 :: # man pages and cheat sheets
