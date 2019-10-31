@@ -240,10 +240,12 @@ Set-Alias -Name desktop -Value moveDesktop
 Set-Alias -Name desk -Value moveDesktop
 
 # Move to Development Directory (~\desktop\git)
+# TODO: Ensure this directory exists
 function moveDev {
   $devPath = $env:USERPROFILE + "\desktop\git"
   Set-Location $devPath
-  getDir
+  # getDir
+  if (Check-Command lsd) { lsd }
 }
 Set-Alias -Name dev -Value moveDev
 
