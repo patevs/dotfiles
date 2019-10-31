@@ -1,8 +1,8 @@
 @echo off
 
-:: -------------- ::
-:: cmd/colors.cmd ::
-:: -------------- ::
+:: ------------------------------- ::
+:: scripts/examples/cmd/colors.cmd ::
+:: ------------------------------- ::
 
 :: https://gist.github.com/mlocati/fdabcaeb8071d5c75a2d51712db24011#file-win10colors-cmd
 

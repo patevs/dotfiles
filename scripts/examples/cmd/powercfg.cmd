@@ -1,8 +1,8 @@
 @ECHO OFF
 
-:: ---------------- ::
-:: cmd/powercfg.cmd ::
-:: ---------------- ::
+:: --------------------------------- ::
+:: scripts/examples/cmd/powercfg.cmd ::
+:: --------------------------------- ::
 
 ECHO. & ECHO Script to generate a Battery Report using powercrg utility & ECHO.
 
