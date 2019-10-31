@@ -9,9 +9,9 @@ Add-PathVariable "${env:ProgramFiles}\PowerShell\6-preview"
 $profileDir = $PSScriptRoot;
 
 # From https://serverfault.com/questions/95431/in-a-powershell-script-how-can-i-check-if-im-running-with-administrator-privil#97599
-function Test-Administrator  {  
+function Test-Administrator  {
 	$user = [Security.Principal.WindowsIdentity]::GetCurrent();
-	(New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)  
+	(New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 }
 
 # Edit whole dir, so we can edit included files etc
@@ -59,12 +59,12 @@ function disable-windows-search {
 # 	if ( $secondExtension -eq '.tar' ) {
 # 		# This is a tarball
 # 		$outputDir = $secondBaseName
-# 		write-output "Output dir will be $outputDir"		
+# 		write-output "Output dir will be $outputDir"
 # 		7z x $file -so | 7z x -aoa -si -ttar -o"$outputDir"
 # 		return
-# 	} 
+# 	}
 # 	# Just extract the file
-# 	7z x "-o$outputDir" $file	
+# 	7z x "-o$outputDir" $file
 # }
 
 set-alias unzip expand-archive
