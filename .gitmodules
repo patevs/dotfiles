@@ -8,3 +8,6 @@
 [submodule "themes/dracula-powershell"]
 	path = themes/dracula-powershell
 	url = https://github.com/dracula/powershell.git
+[submodule "submodules/winfetch"]
+	path = submodules/winfetch
+	url = https://github.com/lptstr/winfetch.git
