@@ -60,9 +60,8 @@ CALL git config --global user.name "PatEvs"
 CALL git config --global github.user "PatEvs"
 
 :: Set up a submodule-aware status
-ECHO [92m Setting submodule-aware status. [0m & ECHO.
-
-CALL git config --global status.submoduleSummary true
+:: ECHO [92m Setting submodule-aware status. [0m & ECHO.
+:: CALL git config --global status.submoduleSummary true
 
 ECHO  [44m Setting Diff-So-Fancy Configuration [0m & ECHO.
 
