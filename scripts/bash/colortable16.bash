@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# ---------------------- #
+# bash/colortable16.bash #
+# ---------------------- #
 #
 # Description:
 #
@@ -46,3 +50,5 @@ done
 
 echo
 echo
+
+# EOF #
