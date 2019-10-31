@@ -52,12 +52,17 @@ CALL npm install --global diff-so-fancy
 :GitConfig
 ECHO. & ECHO  [44m Setting Git Global Configuration [0m & ECHO.
 
+:: Set Username and email
 CALL git config --global user.email "ppevans11@gmail.com"
 CALL git config --global user.name "PatEvs"
 CALL git config --global github.user "PatEvs"
 
+:: Set up a submodule-aware status
+:: CALL git config --global status.submoduleSummary true
+
 ECHO  [44m Setting Diff-So-Fancy Configuration [0m & ECHO.
 
+:: Set diff configuration
 CALL git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 CALL git config --global color.ui true
 CALL git config --global color.diff-highlight.oldNormal    "red bold"
