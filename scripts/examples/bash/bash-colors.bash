@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# --------------------- #
-# bash/bash-colors.bash #
-# --------------------- #
+# -------------------------------------- #
+# scripts/examples/bash/bash-colors.bash #
+# -------------------------------------- #
 
 # Resources:
 # https://en.wikipedia.org/wiki/ANSI_escape_code

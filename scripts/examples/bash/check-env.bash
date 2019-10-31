@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# ------------------- #
-# bash/check-env.bash #
-# ------------------- #
+# ------------------------------------ #
+# scripts/examples/bash/check-env.bash #
+# ------------------------------------ #
 
 printf "\check-env.sh\n"
 printf "\nChecking Environment...\n\n"

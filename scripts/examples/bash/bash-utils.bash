@@ -1,12 +1,11 @@
 #!/bin/bash -e
 
-# -------------------- #
-# bash/bash-utils.bash #
-# -------------------- #
+# ------------------------------------- #
+# scripts/examples/bash/bash-utils.bash #
+# ------------------------------------- #
 
-# ------------------------------------------------------------------------- #
-# https://github.com/gdbtek/linux-cookbooks/blob/master/libraries/util.bash #
-# ------------------------------------------------------------------------- #
+# Source:
+# https://github.com/gdbtek/linux-cookbooks/blob/master/libraries/util.bash
 
 ###################
 # ARRAY UTILITIES #
