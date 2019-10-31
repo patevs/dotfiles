@@ -117,7 +117,7 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
 fi
 
 # Cargo
-# export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
