@@ -123,9 +123,6 @@ CALL npm install --global ntl
 :: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 
-:: # https://github.com/sitespeedio/sitespeed.io
-:: # https://github.com/lirantal/is-website-vulnerable
-:: # https://github.com/kangax/html-minifier
 :: # https://github.com/cezaraugusto/mklicense
 :: # https://github.com/voorhoede/lighthouse-security
 :: # https://github.com/jhotmann/node-rename-cli
@@ -138,13 +135,17 @@ CALL npm install --global ntl
 :: # https://github.com/kentcdodds/clog-cli
 
 
-:: # man pages and cheat sheets
-:: # https://github.com/tldr-pages/tldr
-:: # https://github.com/tldr-pages/tldr-node-client
-:: CALL npm install --global tldr
+:: # https://github.com/facebook/create-react-app
+:: CALL npm install --global create-react-app
+:: # https://github.com/encharm/Font-Awesome-SVG-PNG
+:: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
+:: # https://github.com/kangax/html-minifier
+:: CALL npm install --global html-minifer
 :: # Image minifier
 :: # https://github.com/imagemin/imagemin-cli
 :: CALL npm install --global imagemin-cli
+:: # https://github.com/Javascipt/Jsome
+:: CALL npm install --global jsome
 :: # License generator
 :: # https://github.com/plibither8/licensed
 :: CALL npm install --global licensed
@@ -160,17 +161,17 @@ CALL npm install --global ntl
 :: # SVG Optimizer
 :: # https://github.com/svg/svgo
 :: CALL npm install --global svgo
-:: # https://github.com/facebook/create-react-app
-:: CALL npm install --global create-react-app
-:: # https://github.com/encharm/Font-Awesome-SVG-PNG
-:: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
-:: CALL npm install --global font-awesome-svg-png
-:: # https://github.com/Javascipt/Jsome
-:: CALL npm install --global jsome
+:: # https://github.com/lirantal/is-website-vulnerable
+:: CALL npm install --global is-website-vulnerable
+:: # https://github.com/sitespeedio/sitespeed.io
+:: CALL npm install --global sitespeed.io
 :: # https://github.com/WeiChiaChang/stacks-cli
 :: CALL npm install --global stacks-cli
 :: # https://github.com/strapi/strapi
 :: CALL npm install --global strapi@beta
+:: # https://github.com/tldr-pages/tldr
+:: # https://github.com/tldr-pages/tldr-node-client
+:: CALL npm install --global tldr
 :: # https://github.com/mishoo/UglifyJS2
 :: CALL npm install --global uglify-js
 :: # https://github.com/kevva/viewport-list-cli
