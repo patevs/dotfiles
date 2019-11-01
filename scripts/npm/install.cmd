@@ -45,20 +45,23 @@ ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... 
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
 
-:: # https://github.com/IonicaBizau/cli-github
-:: # https://github.com/mbostock/gistup
-:: # https://github.com/IonicaBizau/git-stats
 :: # https://github.com/qw3rtman/git-fire
 
 
 :: # https://github.com/TejasQ/add-gitignore
 :: CALL npm install --global add-gitignore
+:: # https://github.com/IonicaBizau/cli-github
+:: CALL npm install --global cli-github
 :: # https://github.com/so-fancy/diff-so-fancy
 CALL npm install --global diff-so-fancy
 :: # https://github.com/svhawks/g3l
 CALL npm install --global g3l
+:: # https://github.com/mbostock/gistup
+:: CALL npm install --global gistup
 :: # https://github.com/paulirish/git-open
 CALL npm install --global git-open
+:: # https://github.com/IonicaBizau/git-stats
+:: CALL npm install --global git-stats
 :: # https://github.com/carloscuesta/gitmoji-cli
 CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
@@ -76,7 +79,6 @@ CALL npm install --global david
 :: # https://github.com/tjunnone/npm-check-updates
 :: CALL npm install --global npm-check-updates
 :: # https://github.com/ruyadorno/ntl
-:: # TODO: Check peer dependencies -> inquirer
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
 :: CALL npm install --global cost-of-modules
