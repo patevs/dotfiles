@@ -64,7 +64,7 @@ CALL npm install --global git-open
 :: # https://github.com/IonicaBizau/git-stats
 :: CALL npm install --global git-stats
 :: # https://github.com/carloscuesta/gitmoji-cli
-CALL npm install --global gitmoji-cli
+:: CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
 :: :: CALL npm install --global git-labelmaker
 
