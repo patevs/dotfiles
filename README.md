@@ -7,6 +7,7 @@
 ## Links & Resources
 
 * [How to update a git submodule](https://github.com/tj/git-extras/pull/80)
+* [`powershell-profile`](https://github.com/mikemaccana/powershell-profile)
 
 ---
 
