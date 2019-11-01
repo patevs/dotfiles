@@ -133,6 +133,7 @@ CALL npm install --global ntl
 :: # https://github.com/ddopson/underscore-cli
 :: # https://github.com/semantic-release/semantic-release
 :: # https://github.com/release-it/release-it
+:: # https://github.com/kentcdodds/clog-cli
 
 
 :: # man pages and cheat sheets
