@@ -183,6 +183,8 @@ CALL npm install --global ntl
 :: CALL npm install --global underscore-cli
 :: # https://github.com/kevva/viewport-list-cli
 :: CALL npm install --global viewport-list-cli
+:: # https://github.com/yui/yuglify
+:: CALL npm install --global yuglify
 
 :: ---------------------------------------------------------------------------- ::
 
