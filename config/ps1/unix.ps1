@@ -18,6 +18,42 @@
 # For dig, host, etc.
 # Add-PathVariable "${env:ProgramFiles}\ISC BIND 9\bin"
 
+# --------------------------------------------------------------------------- #
+
+# Like Unix touch, creates new files and updates time on old ones
+# PSCX has a touch, but it doesn't make empty files
+Remove-Alias touch
+function touch($file) {
+	if ( Test-Path $file ) {
+		Set-FileTime $file
+	} else {
+		New-Item $file -type file
+	}
+}
+
+function grep($regex, $dir) {
+	if ( $dir ) {
+		get-childitem $dir | select-string $regex
+		return
+	}
+	$input | select-string $regex
+}
+
+function which($name) {
+	Get-Command $name | Select-Object -ExpandProperty Definition
+}
+
+# From https://github.com/Pscx/Pscx
+function sudo(){
+	Invoke-Elevated @args
+}
+
+function reboot {
+	shutdown /r /t 0
+}
+
+# --------------------------------------------------------------------------- #
+
 # Should really be name=value like Unix version of export but not a big deal
 # function export($name, $value) {
 # 	set-item -force -path "env:$name" -value $value;
@@ -30,17 +66,6 @@
 # function pgrep($name) {
 # 	get-process $name
 # }
-
-# Like Unix touch, creates new files and updates time on old ones
-# PSCX has a touch, but it doesn't make empty files
-Remove-Alias touch
-function touch($file) {
-	if ( Test-Path $file ) {
-		Set-FileTime $file
-	} else {
-		New-Item $file -type file
-	}
-}
 
 # From https://stackoverflow.com/questions/894430/creating-hard-and-soft-links-using-powershell
 # function ln($target, $link) {
@@ -70,9 +95,9 @@ function touch($file) {
 # 	EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}
 # }
 
-function df {
-	get-volume
-}
+# function df {
+# 	get-volume
+# }
 
 # Todo: look at 'edit-file' from PSCX
 # Repalced with real 'sed' to interpret sed scripts
@@ -91,14 +116,6 @@ function df {
 # 	}
 # }
 
-function grep($regex, $dir) {
-	if ( $dir ) {
-		get-childitem $dir | select-string $regex
-		return
-	}
-	$input | select-string $regex
-}
-
 # function grepv($regex) {
 # 	$input | where-object { !$_.Contains($regex) }
 # }
@@ -106,10 +123,6 @@ function grep($regex, $dir) {
 # function show-links($dir){
 # 	get-childitem $dir | where-object {$_.LinkType} | select-object FullName,LinkType,Target
 # }
-
-function which($name) {
-	Get-Command $name | Select-Object -ExpandProperty Definition
-}
 
 # function cut(){
 # 	foreach ($part in $input) {
@@ -126,11 +139,6 @@ function which($name) {
 # 	write-output $description
 # }
 
-# From https://github.com/Pscx/Pscx
-function sudo(){
-	Invoke-Elevated @args
-}
-
 # function find-file($name) {
 # 	get-childitem -recurse -filter "*${name}*" -ErrorAction SilentlyContinue | foreach-object {
 # 		write-output($PSItem.FullName)
@@ -138,10 +146,6 @@ function sudo(){
 # }
 # set-alias find find-file
 # set-alias find-name find-file
-
-function reboot {
-	shutdown /r /t 0
-}
 
 
 # EOF #
