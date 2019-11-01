@@ -31,6 +31,10 @@ function touch($file) {
 	}
 }
 
+# function touch($file) {
+# 	"" | Out-File $file -Encoding ASCII
+# }
+
 function grep($regex, $dir) {
 	if ( $dir ) {
 		get-childitem $dir | select-string $regex
@@ -48,9 +52,42 @@ function sudo(){
 	Invoke-Elevated @args
 }
 
-function reboot {
-	shutdown /r /t 0
+# function sudo {
+#	 $file, [string]$arguments = $args;
+#	 $psi = new-object System.Diagnostics.ProcessStartInfo $file;
+#  $psi.Arguments = $arguments;
+#  $psi.Verb = "runas";
+#  $psi.WorkingDirectory = get-location;
+#  [System.Diagnostics.Process]::Start($psi) >> $null
+# }
+
+# https://stackoverflow.com/questions/7690994/running-a-command-as-administrator-using-powershell
+# function sudo {
+  # Start-Process powershell -Verb runAs
+#   if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+#     Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs;
+#     exit
+#   }
+# }
+
+# function reboot {
+# 	shutdown /r /t 0
+# }
+
+# Shutdown System
+function shutdownSys {
+  Write-Host "`nShutting down system...`n"
+  shutdown /p
 }
+Set-Alias -Name shut -Value shutdownSys
+
+# Restart System
+function restartSys {
+  Write-Host "`nRestarting system...`n"
+  shutdown /r /t 0
+}
+Set-Alias -Name restart -Value restartSys
+Set-Alias -Name reboot -Value restartSys
 
 # --------------------------------------------------------------------------- #
 
