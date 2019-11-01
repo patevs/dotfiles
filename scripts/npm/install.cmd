@@ -122,23 +122,16 @@ CALL npm install --global ntl
 :: Development Utilities
 :: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
-
-:: # https://github.com/cezaraugusto/mklicense
-:: # https://github.com/voorhoede/lighthouse-security
-:: # https://github.com/jhotmann/node-rename-cli
-:: # https://github.com/jhotmann/node-passgen-cli
-:: # https://github.com/thlorenz/doctoc
-:: # https://github.com/GitbookIO/gitbook
-:: # https://github.com/ddopson/underscore-cli
-:: # https://github.com/semantic-release/semantic-release
-:: # https://github.com/release-it/release-it
 :: # https://github.com/kentcdodds/clog-cli
-
-
+:: CALL npm install --global clog-cli
 :: # https://github.com/facebook/create-react-app
 :: CALL npm install --global create-react-app
+:: # https://github.com/thlorenz/doctoc
+:: CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
 :: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
+:: # https://github.com/GitbookIO/gitbook
+:: CALL npm install --global gitbook-cli
 :: # https://github.com/kangax/html-minifier
 :: CALL npm install --global html-minifer
 :: # Image minifier
@@ -152,9 +145,21 @@ CALL npm install --global ntl
 :: # Google's website performance test
 :: # https://github.com/GoogleChrome/lighthouse/
 :: CALL npm install --global lighthouse
+:: # https://github.com/voorhoede/lighthouse-security
+:: CALL npm install --global lighthouse-security
+:: # https://github.com/cezaraugusto/mklicense
+:: CALL npm install --global mklicense
+:: # https://github.com/jhotmann/node-passgen-cli
+:: CALL npm install --global passgen-cli
+:: # https://github.com/release-it/release-it
+:: CALL npm install --global release-it
+:: # https://github.com/jhotmann/node-rename-cli
+:: CALL npm install --global rename-cli
 :: # Progressive web metrics
 :: # https://github.com/paulirish/pwmetrics
 :: CALL npm install --global pwmetrics
+:: # https://github.com/semantic-release/semantic-release
+:: CALL npm install --global semantic-release
 :: # Placeholder image generator
 :: # https://github.com/ecrmnn/spaceholder
 :: CALL npm install --global spaceholder
@@ -174,6 +179,8 @@ CALL npm install --global ntl
 :: CALL npm install --global tldr
 :: # https://github.com/mishoo/UglifyJS2
 :: CALL npm install --global uglify-js
+:: # https://github.com/ddopson/underscore-cli
+:: CALL npm install --global underscore-cli
 :: # https://github.com/kevva/viewport-list-cli
 :: CALL npm install --global viewport-list-cli
 
