@@ -6,6 +6,6 @@
 
 ## Links & Resources
 
-* [How to update a submodule](https://github.com/tj/git-extras/pull/80)
+* [How to update a git submodule](https://github.com/tj/git-extras/pull/80)
 
 ---
