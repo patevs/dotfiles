@@ -19,6 +19,8 @@ $MaximumHistoryCount = 10000;
 # PS comes preset with 'HKLM' and 'HKCU' drives but is missing HKCR
 # New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
 
+# --------------------------------------------------------------------------- #
+
 # Set-Alias trash Remove-ItemSafely
 
 function open($file) {
@@ -55,6 +57,8 @@ function prompt {
   $global:LASTEXITCODE = $realLASTEXITCODE
   Return " "
 }
+
+# --------------------------------------------------------------------------- #
 
 # Make $lastObject save the last object output
 # From http://get-powershell.com/post/2008/06/25/Stuffing-the-output-of-the-last-command-into-an-automatic-variable.aspx
