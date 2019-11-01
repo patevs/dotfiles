@@ -29,11 +29,6 @@ function reload-profile {
 	& $profile
 }
 
-# function disable-windows-search {
-# 	Set-Service wsearch -StartupType disabled
-# 	stop-service wsearch
-# }
-
 function get-path {
 	($Env:Path).Split(";")
 }
@@ -47,6 +42,11 @@ function ps-version {
 function ps-modules {
   Get-InstalledModule
 }
+
+# function disable-windows-search {
+# 	Set-Service wsearch -StartupType disabled
+# 	stop-service wsearch
+# }
 
 # https://blogs.technet.microsoft.com/heyscriptingguy/2012/12/30/powertip-change-the-powershell-console-title
 # function set-title([string]$newtitle) {
