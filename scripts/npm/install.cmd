@@ -45,6 +45,7 @@ ECHO. & ECHO [92m All Requirements Satisfied! Installing NPM Global Modules... 
 ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
 
+:: Not an NPM module:
 :: # https://github.com/qw3rtman/git-fire
 
 
@@ -191,32 +192,37 @@ CALL npm install --global ntl
 :: System Utilities
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
-
-:: # NOTE: vtop must be run using sh/bash
-:: # https://github.com/MrRio/vtop
-:: # https://github.com/gillstrom/screensaver
-:: # https://github.com/nogizhopaboroda/iponmap
-:: # https://github.com/aksakalli/gtop
-:: # https://github.com/marionebl/share-cli
-:: # https://github.com/lordgiotto/google-font-installer
-:: # https://github.com/riyadhalnur/weather-cli
-:: # https://github.com/webtorrent/webtorrent-cli
-
-
-:: # https://github.com/sindresorhus/empty-trash-cli
-CALL npm install --global empty-trash-cli
-:: # https://github.com/sindresorhus/trash-cli
-CALL npm install --global trash-cli
-:: # https://github.com/kevva/wifi-password-cli
-CALL npm install --global wifi-password-cli
 :: # https://github.com/rafaelrinaldi/whereami
 :: CALL npm install --global @rafaelrinaldi/whereami
+:: # https://github.com/sindresorhus/empty-trash-cli
+CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
 :: CALL npm install --global fkill-cli
+:: # https://github.com/lordgiotto/google-font-installer
+:: CALL npm install --global google-font-installer
+:: # https://github.com/aksakalli/gtop
+:: CALL npm install --global gtop
+:: # https://github.com/nogizhopaboroda/iponmap
+:: CALL npm install --global iponmap
 :: # https://github.com/sindresorhus/open-cli
 :: CALL npm install --global open-cli
 :: # https://github.com/sindresorhus/pageres-cli
 :: CALL npm install --global pageres-cli
+:: # https://github.com/gillstrom/screensaver
+:: CALL npm install --global screensaver
+:: # https://github.com/marionebl/share-cli
+:: CALL npm install --global share-cli
+:: # https://github.com/sindresorhus/trash-cli
+CALL npm install --global trash-cli
+:: # https://github.com/MrRio/vtop
+:: # NOTE: vtop must be run using sh/bash
+:: CALL npm install --global vtop
+:: # https://github.com/riyadhalnur/weather-cli
+:: CALL npm install --global weather-cli
+:: # https://github.com/webtorrent/webtorrent-cli
+:: CALL npm install --global webtorrent-cli
+:: # https://github.com/kevva/wifi-password-cli
+CALL npm install --global wifi-password-cli
 
 :: ---------------------------------------------------------------------------- ::
 
