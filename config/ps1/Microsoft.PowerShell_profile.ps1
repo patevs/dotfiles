@@ -14,12 +14,6 @@ Add-PathVariable "${env:ProgramFiles}\PowerShell\6-preview"
 
 $profileDir = $PSScriptRoot;
 
-# From https://serverfault.com/questions/95431/in-a-powershell-script-how-can-i-check-if-im-running-with-administrator-privil#97599
-function Test-Administrator  {
-	$user = [Security.Principal.WindowsIdentity]::GetCurrent();
-	(New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
-}
-
 # Edit whole dir, so we can edit included files etc.
 function edit-profile {
 	edit $profileDir
@@ -73,6 +67,25 @@ function ps-modules {
 # set-location '~/Desktop/git'
 
 # write-output "Pat's profile loaded!"
+
+# Print a welcome message
+function printWelcome {
+  Write-Host
+  "             _    _ _____ _     _____ ________  ___ _____
+            | |  | |  ___| |   /  __ \  _  |  \/  ||  ___|
+            | |  | | |__ | |   | /  \/ | | | .  . || |__
+            | |/\| |  __|| |   | |   | | | | |\/| ||  __|
+            \  /\  / |___| |___| \__/\ \_/ / |  | || |___
+             \/  \/\____/\_____/\____/\___/\_|  |_/\____/
+
+                      ________ _______ ________
+                      ___  __ \___    |___  __/
+                      __  /_/ /__  /| |__  /
+                      _  ____/ _  ___ |_  /
+                      /_/      /_/  |_|/_/
+  "
+}
+printWelcome
 
 
 # EOF #

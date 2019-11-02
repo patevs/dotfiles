@@ -71,6 +71,13 @@ function settings {
 #   $Path.Replace("$home", "~")
 # }
 
+# Test if running as administrator
+# http://serverfault.com/questions/95431
+function Test-Administrator {
+  $user = [Security.Principal.WindowsIdentity]::GetCurrent();
+  (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+}
+
 # --------------------------------------------------------------------------- #
 
 # --------------------------- #
