@@ -178,7 +178,7 @@ CALL npm install --global ntl
 :: CALL npm install --global strapi@beta
 :: # https://github.com/tldr-pages/tldr
 :: # https://github.com/tldr-pages/tldr-node-client
-:: CALL npm install --global tldr
+CALL npm install --global tldr
 :: # https://github.com/mishoo/UglifyJS2
 :: CALL npm install --global uglify-js
 :: # https://github.com/ddopson/underscore-cli
@@ -202,7 +202,7 @@ CALL npm install --global empty-trash-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
-:: CALL npm install --global gtop
+CALL npm install --global gtop
 :: # https://github.com/nogizhopaboroda/iponmap
 :: CALL npm install --global iponmap
 :: # https://github.com/sindresorhus/open-cli
@@ -219,7 +219,7 @@ CALL npm install --global trash-cli
 :: # NOTE: vtop must be run using sh/bash
 :: CALL npm install --global vtop
 :: # https://github.com/riyadhalnur/weather-cli
-:: CALL npm install --global weather-cli
+CALL npm install --global weather-cli
 :: # https://github.com/webtorrent/webtorrent-cli
 :: CALL npm install --global webtorrent-cli
 :: # https://github.com/kevva/wifi-password-cli
