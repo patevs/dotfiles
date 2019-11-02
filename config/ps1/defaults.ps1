@@ -21,6 +21,29 @@ $MaximumHistoryCount = 10000;
 
 # --------------------------------------------------------------------------- #
 
+# -------------------------------- #
+# System & Utility Related Aliases #
+# -------------------------------- #
+
+# function reboot {
+# 	shutdown /r /t 0
+# }
+
+# Shutdown System
+function shutdownSys {
+  Write-Host "`nShutting down system...`n"
+  shutdown /p
+}
+Set-Alias -Name shut -Value shutdownSys
+
+# Restart System
+function restartSys {
+  Write-Host "`nRestarting system...`n"
+  shutdown /r /t 0
+}
+Set-Alias -Name restart -Value restartSys
+Set-Alias -Name reboot -Value restartSys
+
 # Set-Alias trash Remove-ItemSafely
 
 function open($file) {
