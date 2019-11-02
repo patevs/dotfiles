@@ -20,6 +20,10 @@
 
 # --------------------------------------------------------------------------- #
 
+# ------------------ #
+# Unix-like Commands #
+# ------------------ #
+
 # Like Unix touch, creates new files and updates time on old ones
 # PSCX has a touch, but it doesn't make empty files
 Remove-Alias touch
@@ -70,6 +74,12 @@ function sudo(){
 #   }
 # }
 
+# --------------------------------------------------------------------------- #
+
+# -------------------------------- #
+# System & Utility Related Aliases #
+# -------------------------------- #
+
 # function reboot {
 # 	shutdown /r /t 0
 # }
@@ -88,6 +98,38 @@ function restartSys {
 }
 Set-Alias -Name restart -Value restartSys
 Set-Alias -Name reboot -Value restartSys
+
+# Print list of current directory contents
+# Set-Alias l Get-ChildItem -option AllScope
+# Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
+
+# Print short list of current directory contents
+function dirList {
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  # Favour lsd over default dir command
+  if (Check-Command lsd) { lsd }
+  else { dir }
+}
+Set-Alias -Name l -Value dirList
+
+# Print list of current directory contents
+function dirListAll {
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  # Favour lsd over default dir command
+  if (Check-Command lsd) { lsd -a1 }
+  else { dir }
+}
+Set-Alias -Name ls -Value dirListAll -option AllScope -Force
+Set-Alias -Name ll -Value dirListAll
+
+# Print long list of current directory contents
+function dirListLong {
+  Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  # Favour lsd over default dir command
+  if (Check-Command lsd) { lsd -al }
+  else { dir }
+}
+Set-Alias -Name lll -Value dirListLong
 
 # --------------------------------------------------------------------------- #
 
