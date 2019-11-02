@@ -97,6 +97,30 @@ function restartSys {
 Set-Alias -Name restart -Value restartSys
 Set-Alias -Name reboot -Value restartSys
 
+# --------------------------------------------------------------------------- #
+
+# Move to Desktop Directory (~\desktop)
+function moveDesktop {
+  $desktopPath = $env:USERPROFILE + "\desktop"
+  Set-Location $desktopPath
+}
+Set-Alias -Name desktop -Value moveDesktop
+Set-Alias -Name desk -Value moveDesktop
+
+# Move to Development Directory (~\desktop\git)
+# TODO: Ensure this directory exists
+# TODO: Run `winfetch`
+function moveDev {
+  $devPath = $env:USERPROFILE + "\desktop\git"
+  Set-Location $devPath
+  # getDir
+  # Write-Host # New line
+  # if (Check-Command lsd) { lsd }
+}
+Set-Alias -Name dev -Value moveDev
+
+# --------------------------------------------------------------------------- #
+
 # Set-Alias trash Remove-ItemSafely
 
 function open($file) {
