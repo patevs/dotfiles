@@ -64,7 +64,7 @@ function ps-modules {
 
 # --------------------------------------------------------------------------- #
 
-# foreach ( $includeFile in ("defaults", "unix", "development", "node") ) {
+# foreach ( $includeFile in ("defaults", "unix", "development") ) {
 # 	Unblock-File $profileDir\$includeFile.ps1
 # . "$profileDir\$includeFile.ps1"
 # }

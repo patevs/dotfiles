@@ -67,18 +67,67 @@ function settings {
 }
 
 # Truncate homedir to ~
-function limit-HomeDirectory($Path) {
-  $Path.Replace("$home", "~")
-}
+# function limit-HomeDirectory($Path) {
+#   $Path.Replace("$home", "~")
+# }
+
+# --------------------------------------------------------------------------- #
+
+# --------------------------- #
+# Customize PowerShell Prompt #
+# --------------------------- #
 
 # Must be called 'prompt' to be used by pwsh
 # https://github.com/gummesson/kapow/blob/master/themes/bashlet.ps1
+# function prompt {
+#   $realLASTEXITCODE = $LASTEXITCODE
+#   Write-Host $(limit-HomeDirectory("$pwd")) -ForegroundColor Yellow -NoNewline
+#   Write-Host " $" -NoNewline
+#   $global:LASTEXITCODE = $realLASTEXITCODE
+#   Return " "
+# }
+
+# https://github.com/dahlbyk/posh-git/wiki/Customizing-Your-PowerShell-Prompt
 function prompt {
-  $realLASTEXITCODE = $LASTEXITCODE
-  Write-Host $(limit-HomeDirectory("$pwd")) -ForegroundColor Yellow -NoNewline
-  Write-Host " $" -NoNewline
-  $global:LASTEXITCODE = $realLASTEXITCODE
-  Return " "
+  # Write new line
+  Write-Host
+  $origLastExitCode = $LastExitCode
+
+  # Test if running as admin
+  if (Test-Administrator) {
+    # if elevated
+    Write-Host "(Elevated) " -NoNewline -ForegroundColor White
+  }
+
+  # Write username@computername
+  # Write-Host "$env:USERNAME@" -NoNewline -ForegroundColor DarkYellow
+  # Write-Host "$env:COMPUTERNAME" -NoNewline -ForegroundColor Magenta
+  # Write username
+  # Write-Host "$env:USERNAME" -NoNewline -ForegroundColor DarkYellow
+  # Write-Host " : " -NoNewline -ForegroundColor DarkGray
+
+  # Build current path
+  $curPath = $ExecutionContext.SessionState.Path.CurrentLocation.Path
+  if ($curPath.ToLower().StartsWith($Home.ToLower())) {
+    $curPath = "~" + $curPath.SubString($Home.Length)
+  }
+
+  # Write current path
+  # Write-Host $curPath -NoNewline -ForegroundColor Blue
+  Write-Host $curPath -NoNewline -ForegroundColor Magenta
+  Write-Host " :" -NoNewline -ForegroundColor DarkGray
+
+  # Write date & time
+  # Write-Host (Get-Date -Format G) -NoNewline -ForegroundColor DarkMagenta
+  # Write-Host " :" -NoNewline -ForegroundColor DarkGray
+
+  # Write posh-git status
+  Write-VcsStatus
+  # Have posh-git display its default prompt
+  # & $GitPromptScriptBlock
+
+  $LastExitCode = $origLastExitCode
+  "`n$('>' * ($nestedPromptLevel + 1)) "
 }
 
 # --------------------------------------------------------------------------- #
