@@ -131,6 +131,7 @@ CALL npm install --global ntl
 :: CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
 :: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
+:: CALL npm install --global font-awesome-svg-png
 :: # https://github.com/GitbookIO/gitbook
 :: CALL npm install --global gitbook-cli
 :: # https://github.com/kangax/html-minifier
