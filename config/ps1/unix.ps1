@@ -26,7 +26,7 @@
 
 # Like Unix touch, creates new files and updates time on old ones
 # PSCX has a touch, but it doesn't make empty files
-Remove-Alias touch
+# Remove-Alias touch
 function touch($file) {
 	if ( Test-Path $file ) {
 		Set-FileTime $file
