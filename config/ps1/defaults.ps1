@@ -19,6 +19,59 @@ $MaximumHistoryCount = 10000;
 # PS comes preset with 'HKLM' and 'HKCU' drives but is missing HKCR
 # New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
 
+# Check if a given PowerShell module is installed
+# https://stackoverflow.com/questions/28740320/how-do-i-check-if-a-powershell-module-is-installed
+function Check-Module($modname){
+  return [bool](Get-Module -ListAvailable -Name $modname)
+}
+
+# Import PSReadLine module if installed
+# Proper history etc
+if (Check-Module "PSReadLine") { Import-Module -Name PSReadLine }
+
+# Show selection menu for tab
+# Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
+
+# Dracula readline configuration. Requires version 2.0, if you have 1.2 convert to `Set-PSReadlineOption -TokenType`
+Set-PSReadlineOption -Color @{
+    "Command" = [ConsoleColor]::Green
+    "Parameter" = [ConsoleColor]::Gray
+    "Operator" = [ConsoleColor]::Magenta
+    "Variable" = [ConsoleColor]::White
+    "String" = [ConsoleColor]::Yellow
+    "Number" = [ConsoleColor]::Blue
+    "Type" = [ConsoleColor]::Cyan
+    "Comment" = [ConsoleColor]::DarkCyan
+}
+
+# Import posh-git module if installed
+if (Check-Module "posh-git") { Import-Module -Name posh-git }
+
+# Dracula Prompt Configuration
+# $GitPromptSettings.DefaultPromptPrefix.Text = "$([char]0x2192) " # arrow unicode symbol
+# $GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::Green
+# $GitPromptSettings.DefaultPromptPath.ForegroundColor =[ConsoleColor]::Cyan
+# $GitPromptSettings.DefaultPromptSuffix.Text = "$([char]0x203A) " # chevron unicode symbol
+# $GitPromptSettings.DefaultPromptSuffix.ForegroundColor = [ConsoleColor]::Magenta
+# $GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n > '
+# Dracula Git Status Configuration
+# $GitPromptSettings.BeforeStatus.ForegroundColor = [ConsoleColor]::Blue
+# $GitPromptSettings.BranchColor.ForegroundColor = [ConsoleColor]::Blue
+# $GitPromptSettings.AfterStatus.ForegroundColor = [ConsoleColor]::Blue
+
+# Import Terminal-Icons module if installed
+# if (Check-Module "Terminal-Icons") { Import-Module -Name Terminal-Icons }
+
+# Import Get-ChildItemColor module if installed
+# if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
+
+# Start SSH agent
+# TODO: Fix this
+# Start-SshAgent
+
+# Clear the screen
+clear
+
 # --------------------------------------------------------------------------- #
 
 # -------------------------------- #
