@@ -45,7 +45,17 @@
 # 	git ls-files . --exclude-standard --others
 # }
 
+# function fork {
+	# Fork requires an absolute path https://github.com/ForkIssues/TrackerWin/issues/416#issuecomment-527067604
+# 	$absolutePath = resolve-path .
+# 	& ${env:LOCALAPPDATA}\Fork\Fork.exe $absolutePath
+# }
+
 # --------------------------------------------------------------------------- #
+
+# ------------------- #
+# Text Editor Aliases #
+# ------------------- #
 
 # For git rebasing
 # --wait required, see https://github.com/Microsoft/vscode/issues/23219
@@ -58,17 +68,130 @@ function edit {
 	& "code" -g @args
 }
 
-# function fork {
-	# Fork requires an absolute path https://github.com/ForkIssues/TrackerWin/issues/416#issuecomment-527067604
-# 	$absolutePath = resolve-path .
-# 	& ${env:LOCALAPPDATA}\Fork\Fork.exe $absolutePath
-# }
-
 # I used to run Sublime so occasionally my fingers type it
 # function subl {
 	# 	& "$env:ProgramFiles\Sublime Text 3\subl.exe" @args
 # 	write-output "Type 'edit' instead"
 # }
+
+# --------------------------------------------------------------------------- #
+
+# Print file contents using bat
+# Set-Alias -Name cat -Value getFileContents -option AllScope -Force
+# function getFileContents { bat $args }
+
+# Get help using tldr
+# Set-Alias -Name help -Value getHelp
+# function getHelp { tldr $args }
+
+# --------------------------------------------------------------------------- #
+
+# ---------------------------- #
+# Git & GitHub Related Aliases #
+# ---------------------------- #
+
+# Use GitHub's hub Client in favor of git
+if (Check-Command hub){ Set-Alias git hub }
+
+# Print G3L Status
+function getG3lStatus {
+  # Check git command exists
+  if (Check-Command git){
+    Write-Host "`nGit Status:`n"  -ForegroundColor Green
+    # Check g3l command exists
+    if (Check-Command g3l) {
+      g3l --status
+      Write-Host "" # new line
+    }
+    git status
+  } else {
+    Write-Host "`ngit installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name gss -Value getG3lStatus
+
+# Print Git Status
+function getGitStatus {
+  # Check git command exists
+  if (Check-Command git){
+    Write-Host "`nGit Status:`n"  -ForegroundColor Green
+    git status
+  } else {
+    Write-Host "`ngit installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name gs -Value getGitStatus
+
+# --------------------------------------------------------------------------- #
+
+# ------------------- #
+# NPM Related Aliases #
+# ------------------- #
+
+# Print list of local NPM dependencies
+function getNpmLocals {
+  # Check node_modules directory exists
+  if (Test-Path node_modules){
+    # Check npm command exists
+    if (Check-Command npm){
+      Write-Host "`nLocal NPM Dependencies:`n" -ForegroundColor Green
+      npm list --depth=0
+    } else {
+      Write-Host "`nnpm installation could not be found!" -ForegroundColor Red
+    }
+  } else {
+    Write-Host "`nnode_modules folder does not exist in current directory!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name npl -Value getNpmLocals
+
+# Print list of global NPM dependencies
+function getNpmGlobals {
+  # Check npm command exists
+  if (Check-Command npm){
+    Write-Host "`nGlobal NPM Dependencies:`n" -ForegroundColor Green
+    npm list --global --depth=0
+  } else {
+    Write-Host "`nnpm installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name nplg -Value getNpmGlobals
+
+# --------------------------------------------------------------------------- #
+
+# -------------------------- #
+# Chocolatey Related Aliases #
+# -------------------------- #
+
+# Print list of local chocolatey installations
+function getChocoInstalls {
+  # Check choco command exists
+  if (Check-Command choco) {
+    Write-Host "`nLocal Chocolatey Installations:`n" -ForegroundColor Green
+    choco list -l
+  } else {
+    Write-Host "`nchoco installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name cll -Value getChocoInstalls
+
+# Print list of outdated chocolatey installations
+function getChocoOutdated {
+  # Check choco command exists
+  if (Check-Command choco) {
+    Write-Host "`nOutdated Chocolatey Installations:`n" -ForegroundColor Green
+    choco upgrade all --noop
+  } else {
+    Write-Host "`nchoco installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name clo -Value getChocoOutdated
+
+# Chocolatey Profile
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
 
 
 # EOF #
