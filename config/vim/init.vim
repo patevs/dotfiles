@@ -15,6 +15,9 @@ call plug#begin(stdpath('data') . '/plugged')
 " https://github.com/tpope/vim-sensible
 Plug 'tpope/vim-sensible'
 
+" https://github.com/scrooloose/nerdtree
+Plug 'scrooloose/nerdtree'
+
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Plug 'junegunn/vim-easy-align'
 
