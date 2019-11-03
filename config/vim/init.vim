@@ -1,4 +1,6 @@
-" config/vim/init.vim
+" ------------------- "
+" config/vim/init.vim "
+" ------------------- "
 
 " ~/APPDATA/Local/nvim/init.vim
 " Or: stdpath('config') . '/init.vim'
@@ -41,6 +43,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 " Plug 'vim-airline/vim-airline'
 " https://github.com/vim-airline/vim-airline-themes
 " Plug 'vim-airline/vim-airline-themes'
+
+" https://github.com/othree/html5.vim
+Plug 'othree/html5.vim'
 
 " Initialize plugin system
 call plug#end()
