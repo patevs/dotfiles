@@ -47,8 +47,8 @@ Plug 'airblade/vim-gitgutter'
 " Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 
 "" Vim-Session
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
+" Plug 'xolox/vim-misc'
+" Plug 'xolox/vim-session'
 
 "" Snippets
 Plug 'SirVer/ultisnips'
