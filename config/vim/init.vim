@@ -46,7 +46,11 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " https://github.com/sheerun/vim-polyglot
 " https://github.com/othree/html5.vim
+
 Plug 'othree/html5.vim'
+
+" https://github.com/editorconfig/editorconfig-vim
+Plug 'editorconfig/editorconfig-vim'
 
 " Initialize plugin system
 call plug#end()
