@@ -55,7 +55,7 @@ Plug 'othree/html5.vim'
 " let g:used_javascript_libs = 'underscore,backbone'
 
 " https://github.com/suan/vim-instant-markdown
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+" Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 filetype plugin on
 "Uncomment to override defaults:
 "let g:instant_markdown_slow = 1
