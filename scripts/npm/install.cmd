@@ -151,6 +151,8 @@ CALL npm install --global ntl
 :: CALL npm install --global lighthouse-security
 :: # https://github.com/cezaraugusto/mklicense
 :: CALL npm install --global mklicense
+::: # https://github.com/neovim/node-client
+CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli
 :: CALL npm install --global passgen-cli
 :: # https://github.com/release-it/release-it
