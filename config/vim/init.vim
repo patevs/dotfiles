@@ -18,6 +18,9 @@ Plug 'tpope/vim-sensible'
 " https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree'
 
+" https://github.com/iamcco/markdown-preview.nvim
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
 " Initialize plugin system
 call plug#end()
 
