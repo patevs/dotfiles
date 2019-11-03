@@ -74,11 +74,11 @@ filetype plugin indent on
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
+
 "" Encoding
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
-
 
 "" Fix backspace indent
 set backspace=indent,eol,start
@@ -101,23 +101,24 @@ set incsearch
 set ignorecase
 set smartcase
 
-set fileformats=unix,dos,mac
+" set fileformats=unix,dos,mac
 
-if exists('$SHELL')
-    set shell=$SHELL
-else
-    set shell=/bin/sh
-endif
+" if exists('$SHELL')
+"     set shell=$SHELL
+" else
+"     set shell=/bin/sh
+" endif
 
 " session management
-let g:session_directory = "~/.config/nvim/session"
-let g:session_autoload = "no"
-let g:session_autosave = "no"
-let g:session_command_aliases = 1
+" let g:session_directory = "~/.config/nvim/session"
+" let g:session_autoload = "no"
+" let g:session_autosave = "no"
+" let g:session_command_aliases = 1
 
 "*****************************************************************************
 "" Visual Settings
 "*****************************************************************************
+
 syntax on
 set ruler
 set number
@@ -127,31 +128,28 @@ silent! colorscheme molokai
 
 set mousemodel=popup
 set t_Co=256
-set guioptions=egmrti
+" set guioptions=egmrti
 set gfn=Monospace\ 10
 
-if has("gui_running")
-  if has("gui_mac") || has("gui_macvim")
-    set guifont=Menlo:h12
-    set transparency=7
-  endif
-else
-  let g:CSApprox_loaded = 1
+" if has("gui_running")
+"   if has("gui_mac") || has("gui_macvim")
+"     set guifont=Menlo:h12
+"     set transparency=7
+"   endif
+" else
+"   let g:CSApprox_loaded = 1
 
   " IndentLine
-  let g:indentLine_enabled = 1
-  let g:indentLine_concealcursor = 0
-  let g:indentLine_char = '┆'
-  let g:indentLine_faster = 1
+"   let g:indentLine_enabled = 1
+"   let g:indentLine_concealcursor = 0
+"   let g:indentLine_char = '┆'
+"   let g:indentLine_faster = 1
 
-
-endif
-
-
+" endif
 
 "" Disable the blinking cursor.
-set gcr=a:blinkon0
-set scrolloff=3
+" set gcr=a:blinkon0
+" set scrolloff=3
 
 "" Status bar
 set laststatus=2
@@ -186,6 +184,7 @@ let g:airline_skip_empty_sections = 1
 "*****************************************************************************
 "" Abbreviations
 "*****************************************************************************
+
 "" no one is really happy until you have this shortcuts
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
@@ -211,24 +210,27 @@ nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
 " grep.vim
-nnoremap <silent> <leader>f :Rgrep<CR>
-let Grep_Default_Options = '-IR'
-let Grep_Skip_Files = '*.log *.db'
-let Grep_Skip_Dirs = '.git node_modules'
+" nnoremap <silent> <leader>f :Rgrep<CR>
+" let Grep_Default_Options = '-IR'
+" let Grep_Skip_Files = '*.log *.db'
+" let Grep_Skip_Dirs = '.git node_modules'
 
 " terminal emulation
-nnoremap <silent> <leader>sh :terminal<CR>
+" nnoremap <silent> <leader>sh :terminal<CR>
 
 
 "*****************************************************************************
 "" Commands
 "*****************************************************************************
+
 " remove trailing whitespaces
 command! FixWhitespace :%s/\s\+$//e
+
 
 "*****************************************************************************
 "" Functions
 "*****************************************************************************
+
 if !exists('*s:setupWrapping')
   function s:setupWrapping()
     set wrap
@@ -237,9 +239,11 @@ if !exists('*s:setupWrapping')
   endfunction
 endif
 
+
 "*****************************************************************************
 "" Autocmd Rules
 "*****************************************************************************
+
 "" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
 augroup vimrc-sync-fromstart
   autocmd!
