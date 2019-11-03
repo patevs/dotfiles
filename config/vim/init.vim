@@ -32,19 +32,19 @@ Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 
 " https://github.com/SirVer/ultisnips
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 " https://github.com/honza/vim-snippets
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 
 " https://github.com/vim-airline/vim-airline
 Plug 'vim-airline/vim-airline'
 " https://github.com/vim-airline/vim-airline-themes
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline-themes'
 " let g:airline_theme='simple'
-let g:airline_theme='dracula.vim'
+" let g:airline_theme='dracula.vim'
 
 " https://github.com/editorconfig/editorconfig-vim
-Plug 'editorconfig/editorconfig-vim'
+" Plug 'editorconfig/editorconfig-vim'
 
 " https://github.com/sheerun/vim-polyglot
 " https://github.com/othree/html5.vim
@@ -84,7 +84,6 @@ call plug#end()
 
 " Set location to python executables
 " let g:python_host_prog  = '/path/to/python'
-let g:python_host_prog  = 'C:\Users\Patrick\.pyenv\pyenv-win\versions\2.7.16\python.exe'
 " let g:python3_host_prog  = '/path/to/python3'
 let g:python3_host_prog  = 'C:\Python37\python.exe'
 
