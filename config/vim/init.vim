@@ -37,8 +37,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'othree/html5.vim'
 
 " https://github.com/othree/javascript-libraries-syntax.vim
-Plug 'othree/javascript-libraries-syntax.vim'
-let g:used_javascript_libs = 'underscore,backbone'
+" Plug 'othree/javascript-libraries-syntax.vim'
+" let g:used_javascript_libs = 'underscore,backbone'
 
 " https://github.com/suan/vim-instant-markdown
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
