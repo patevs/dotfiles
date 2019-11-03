@@ -53,11 +53,12 @@ call plug#end()
 
 " Set location to python executables
 " let g:python_host_prog  = '/path/to/python'
+let g:python_host_prog  = 'C:\Users\Patrick\.pyenv\pyenv-win\versions\2.7.16'
 " let g:python3_host_prog  = '/path/to/python3'
 " let g:python3_host_prog  = 'C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps\python.exe'
 
 " Enable/disable python support
-" let g:loaded_python_provider = 0
+let g:loaded_python_provider = 1
 " let g:loaded_python3_provider = 1
 
 " NERDTree
