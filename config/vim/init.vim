@@ -24,12 +24,21 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " https://github.com/jistr/vim-nerdtree-tabs
 " Plug 'jistr/vim-nerdtree-tabs'
 
+" https://github.com/tpope/vim-fugitive
+Plug 'tpope/vim-fugitive'
+" https://github.com/airblade/vim-gitgutter
+Plug 'airblade/vim-gitgutter'
+
 " https://github.com/editorconfig/editorconfig-vim
 Plug 'editorconfig/editorconfig-vim'
 
 " https://github.com/sheerun/vim-polyglot
 " https://github.com/othree/html5.vim
 Plug 'othree/html5.vim'
+
+" https://github.com/othree/javascript-libraries-syntax.vim
+Plug 'othree/javascript-libraries-syntax.vim'
+let g:used_javascript_libs = 'underscore,backbone'
 
 " https://github.com/suan/vim-instant-markdown
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
