@@ -25,6 +25,15 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 " If you have nodejs and yarn
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
+" Multiple Plug commands can be written in a single line using | separators
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" https://github.com/SirVer/ultisnips
+Plug 'SirVer/ultisnips'
+
+" https://github.com/honza/vim-snippets
+Plug 'honza/vim-snippets'
+
 " Initialize plugin system
 call plug#end()
 
