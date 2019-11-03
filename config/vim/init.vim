@@ -23,6 +23,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " https://github.com/jistr/vim-nerdtree-tabs
 Plug 'jistr/vim-nerdtree-tabs'
+" NERDTree
 
 " https://github.com/tpope/vim-fugitive
 Plug 'tpope/vim-fugitive'
@@ -38,7 +39,8 @@ Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline'
 " https://github.com/vim-airline/vim-airline-themes
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme='simple'
+" let g:airline_theme='simple'
+let g:airline_theme='dracula.vim'
 
 " https://github.com/editorconfig/editorconfig-vim
 Plug 'editorconfig/editorconfig-vim'
