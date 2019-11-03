@@ -24,6 +24,16 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " https://github.com/jistr/vim-nerdtree-tabs
 " Plug 'jistr/vim-nerdtree-tabs'
 
+" https://github.com/editorconfig/editorconfig-vim
+Plug 'editorconfig/editorconfig-vim'
+
+" https://github.com/sheerun/vim-polyglot
+" https://github.com/othree/html5.vim
+Plug 'othree/html5.vim'
+
+" https://github.com/suan/vim-instant-markdown
+Plug 'suan/vim-instant-markdown'
+
 " https://github.com/iamcco/markdown-preview.nvim
 " If you don't have nodejs and yarn
 " use pre build
@@ -43,14 +53,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'vim-airline/vim-airline'
 " https://github.com/vim-airline/vim-airline-themes
 " Plug 'vim-airline/vim-airline-themes'
-
-" https://github.com/sheerun/vim-polyglot
-" https://github.com/othree/html5.vim
-
-Plug 'othree/html5.vim'
-
-" https://github.com/editorconfig/editorconfig-vim
-Plug 'editorconfig/editorconfig-vim'
 
 " Initialize plugin system
 call plug#end()
