@@ -8,6 +8,7 @@
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
+" :h :version
 
 " call plug#begin('~/.vim/plugged')
 call plug#begin(stdpath('data') . '/plugged')
