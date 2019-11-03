@@ -38,7 +38,7 @@ Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline'
 " https://github.com/vim-airline/vim-airline-themes
 Plug 'vim-airline/vim-airline-themes'
-
+let g:airline_theme='simple'
 
 " https://github.com/editorconfig/editorconfig-vim
 Plug 'editorconfig/editorconfig-vim'
