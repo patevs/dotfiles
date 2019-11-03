@@ -22,12 +22,23 @@ Plug 'scrooloose/nerdtree'
 " https://github.com/Xuyuanp/nerdtree-git-plugin
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " https://github.com/jistr/vim-nerdtree-tabs
-" Plug 'jistr/vim-nerdtree-tabs'
+Plug 'jistr/vim-nerdtree-tabs'
 
 " https://github.com/tpope/vim-fugitive
 Plug 'tpope/vim-fugitive'
 " https://github.com/airblade/vim-gitgutter
 Plug 'airblade/vim-gitgutter'
+
+" https://github.com/SirVer/ultisnips
+Plug 'SirVer/ultisnips'
+" https://github.com/honza/vim-snippets
+Plug 'honza/vim-snippets'
+
+" https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline'
+" https://github.com/vim-airline/vim-airline-themes
+Plug 'vim-airline/vim-airline-themes'
+
 
 " https://github.com/editorconfig/editorconfig-vim
 Plug 'editorconfig/editorconfig-vim'
@@ -64,16 +75,6 @@ filetype plugin on
 
 " Multiple Plug commands can be written in a single line using | separators
 " Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
-" https://github.com/SirVer/ultisnips
-" Plug 'SirVer/ultisnips'
-" https://github.com/honza/vim-snippets
-" Plug 'honza/vim-snippets'
-
-" https://github.com/vim-airline/vim-airline
-" Plug 'vim-airline/vim-airline'
-" https://github.com/vim-airline/vim-airline-themes
-" Plug 'vim-airline/vim-airline-themes'
 
 " Initialize plugin system
 call plug#end()
