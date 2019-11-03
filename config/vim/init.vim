@@ -16,18 +16,18 @@ call plug#begin(stdpath('data') . '/plugged')
 " Make sure you use single quotes
 
 " https://github.com/tpope/vim-sensible
-Plug 'tpope/vim-sensible'
+" Plug 'tpope/vim-sensible'
 
 " https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree'
 " https://github.com/Xuyuanp/nerdtree-git-plugin
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 " https://github.com/jistr/vim-nerdtree-tabs
-Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'jistr/vim-nerdtree-tabs'
 " NERDTree
 
 " https://github.com/tpope/vim-fugitive
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 " https://github.com/airblade/vim-gitgutter
 Plug 'airblade/vim-gitgutter'
 

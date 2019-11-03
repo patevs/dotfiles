@@ -6,8 +6,6 @@
 
 ## Links & Resources
 
-* [`powershell-profile`](https://github.com/mikemaccana/powershell-profile)
-
 ---
 
 ```md
