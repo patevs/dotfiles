@@ -2,9 +2,6 @@
 
 > Configuration files and utility scripts.
 
----
-
-## Links & Resources
 
 ---
 
