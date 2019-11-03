@@ -57,6 +57,8 @@ Plug 'honza/vim-snippets'
 "" Color
 Plug 'tomasr/molokai'
 
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 " Required:
