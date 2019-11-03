@@ -1,9 +1,25 @@
-" vim-bootstrap 
+" ----------------------- "
+" config/vim/init-gen.vim "
+" ----------------------- "
+
+" ~/APPDATA/Local/nvim/init.vim
+" Or: stdpath('config') . '/init.vim'
+
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+" :h :version
+
+" call plug#begin('~/.vim/plugged')
+" call plug#begin(stdpath('data') . '/plugged')
+
+" vim-bootstrap
 
 "*****************************************************************************
 "" Vim-PLug core
 "*****************************************************************************
-let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
+" let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
+call plug#begin(stdpath('data') . '/autoload/plug.vim')
 
 let g:vim_bootstrap_langs = ""
 let g:vim_bootstrap_editor = "nvim"				" nvim or vim
@@ -22,7 +38,8 @@ if !filereadable(vimplug_exists)
 endif
 
 " Required:
-call plug#begin(expand('~/.config/nvim/plugged'))
+" call plug#begin(expand('~/.config/nvim/plugged'))
+call plug#begin(stdpath('data') . '/plugged')
 
 "*****************************************************************************
 "" Plug install packages
@@ -158,7 +175,7 @@ else
   let g:indentLine_char = '┆'
   let g:indentLine_faster = 1
 
-  
+
 endif
 
 
