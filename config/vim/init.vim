@@ -17,6 +17,8 @@ Plug 'tpope/vim-sensible'
 
 " https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree'
+" https://github.com/Xuyuanp/nerdtree-git-plugin
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " https://github.com/iamcco/markdown-preview.nvim
 " If you don't have nodejs and yarn
@@ -44,11 +46,11 @@ call plug#end()
 
 " NERDTree
 " Open a NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " Open a NERDTree automatically when vim starts up if no files were specified
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Note: Now start vim with plain vim, not vim .
 
 " MarkdownPreview
