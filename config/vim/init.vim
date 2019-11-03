@@ -27,7 +27,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " https://github.com/iamcco/markdown-preview.nvim
 " If you don't have nodejs and yarn
 " use pre build
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 " If you have nodejs and yarn
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
@@ -54,7 +54,7 @@ call plug#end()
 " Set location to python executables
 " let g:python_host_prog  = '/path/to/python'
 " let g:python3_host_prog  = '/path/to/python3'
-let g:python3_host_prog  = 'C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps\python.exe'
+" let g:python3_host_prog  = 'C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps\python.exe'
 
 " Enable/disable python support
 " let g:loaded_python_provider = 0
