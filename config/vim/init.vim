@@ -19,6 +19,8 @@ Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
 " https://github.com/Xuyuanp/nerdtree-git-plugin
 Plug 'Xuyuanp/nerdtree-git-plugin'
+" https://github.com/jistr/vim-nerdtree-tabs
+" Plug 'jistr/vim-nerdtree-tabs'
 
 " https://github.com/iamcco/markdown-preview.nvim
 " If you don't have nodejs and yarn
@@ -31,10 +33,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 " Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " https://github.com/SirVer/ultisnips
-Plug 'SirVer/ultisnips'
-
+" Plug 'SirVer/ultisnips'
 " https://github.com/honza/vim-snippets
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 
 " https://github.com/vim-airline/vim-airline
 " Plug 'vim-airline/vim-airline'
