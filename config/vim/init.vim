@@ -34,6 +34,11 @@ Plug 'SirVer/ultisnips'
 " https://github.com/honza/vim-snippets
 Plug 'honza/vim-snippets'
 
+" https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline'
+" https://github.com/vim-airline/vim-airline-themes
+" Plug 'vim-airline/vim-airline-themes'
+
 " Initialize plugin system
 call plug#end()
 
