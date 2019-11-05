@@ -11,219 +11,103 @@
 " :h :version
 
 " call plug#begin('~/.vim/plugged')
-" call plug#begin(stdpath('data') . '/plugged')
-
-"*****************************************************************************
-"" Vim-PLug core
-"*****************************************************************************
-
-" let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
-" call plug#begin(stdpath('data') . '/autoload/plug.vim')
-
-" Required:
-" call plug#begin(expand('~/.config/nvim/plugged'))
 call plug#begin(stdpath('data') . '/plugged')
 
-"*****************************************************************************
-"" Plug install packages
-"*****************************************************************************
+" Make sure you use single quotes
 
+" https://github.com/tpope/vim-sensible
+" Plug 'tpope/vim-sensible'
+
+" https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" https://github.com/Xuyuanp/nerdtree-git-plugin
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" https://github.com/jistr/vim-nerdtree-tabs
+" Plug 'jistr/vim-nerdtree-tabs'
+" NERDTree
+
+" https://github.com/tpope/vim-fugitive
+" Plug 'tpope/vim-fugitive'
+" https://github.com/airblade/vim-gitgutter
 Plug 'airblade/vim-gitgutter'
 
-" Plug 'vim-scripts/grep.vim'
-" Plug 'vim-scripts/CSApprox'
-" Plug 'Raimondi/delimitMate'
-" Plug 'majutsushi/tagbar'
-" Plug 'w0rp/ale'
-" Plug 'Yggdroot/indentLine'
-" Plug 'avelino/vim-bootstrap-updater'
-" Plug 'sheerun/vim-polyglot'
-" Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+" https://github.com/SirVer/ultisnips
+" Plug 'SirVer/ultisnips'
+" https://github.com/honza/vim-snippets
+" Plug 'honza/vim-snippets'
 
-"" Vim-Session
-" Plug 'xolox/vim-misc'
-" Plug 'xolox/vim-session'
+" https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline'
+" https://github.com/vim-airline/vim-airline-themes
+" Plug 'vim-airline/vim-airline-themes'
+" let g:airline_theme='simple'
+" let g:airline_theme='dracula.vim'
 
-"" Snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" https://github.com/editorconfig/editorconfig-vim
+" Plug 'editorconfig/editorconfig-vim'
 
-"" Color
-Plug 'tomasr/molokai'
+" https://github.com/sheerun/vim-polyglot
+" https://github.com/othree/html5.vim
+Plug 'othree/html5.vim'
 
-Plug 'ryanoasis/vim-devicons'
+" https://github.com/othree/javascript-libraries-syntax.vim
+" Plug 'othree/javascript-libraries-syntax.vim'
+" let g:used_javascript_libs = 'underscore,backbone'
 
+" https://github.com/suan/vim-instant-markdown
+" Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+filetype plugin on
+"Uncomment to override defaults:
+"let g:instant_markdown_slow = 1
+"let g:instant_markdown_autostart = 0
+"let g:instant_markdown_open_to_the_world = 1
+"let g:instant_markdown_allow_unsafe_content = 1
+"let g:instant_markdown_allow_external_content = 0
+"let g:instant_markdown_mathjax = 1
+"let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
+"let g:instant_markdown_autoscroll = 0
+"let g:instant_markdown_port = 8888
+"let g:instant_markdown_python = 1
+
+" https://github.com/iamcco/markdown-preview.nvim
+" If you don't have nodejs and yarn
+" use pre build
+" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+" If you have nodejs and yarn
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
+" Multiple Plug commands can be written in a single line using | separators
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" Initialize plugin system
 call plug#end()
 
-" Required:
-filetype plugin indent on
+" Set location to python executables
+" let g:python_host_prog  = '/path/to/python'
+" let g:python3_host_prog  = '/path/to/python3'
+
+" Enable/disable python support
+" let g:loaded_python_provider = 1
+" let g:loaded_python3_provider = 1
+
+" NERDTree
+" Open a NERDTree automatically when vim starts up
+" autocmd vimenter * NERDTree
+
+" Open a NERDTree automatically when vim starts up if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Note: Now start vim with plain vim, not vim .
+
+" MarkdownPreview
+" set to 1, nvim will open the preview window after entering the markdown buffer
+" default: 0
+let g:mkdp_auto_start = 1
+
+" set to 1, the nvim will auto close current preview window when change
+" from markdown buffer to another buffer
+" default: 1
+let g:mkdp_auto_close = 1
 
 
-"*****************************************************************************
-"" Basic Setup
-"*****************************************************************************"
-
-"" Encoding
-set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8
-
-"" Fix backspace indent
-set backspace=indent,eol,start
-
-"" Tabs. May be overridden by autocmd rules
-set tabstop=4
-set softtabstop=0
-set shiftwidth=4
-set expandtab
-
-"" Map leader to ,
-let mapleader=','
-
-"" Enable hidden buffers
-set hidden
-
-"" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
-
-"*****************************************************************************
-"" Visual Settings
-"*****************************************************************************
-
-syntax on
-set ruler
-set number
-
-let no_buffers_menu=1
-silent! colorscheme molokai
-
-set mousemodel=popup
-set t_Co=256
-" set guioptions=egmrti
-set gfn=Monospace\ 10
-
-"" Status bar
-set laststatus=2
-
-"" Use modeline overrides
-set modeline
-set modelines=10
-
-set title
-set titleold="Terminal"
-set titlestring=%F
-
-set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
-
-" Search mappings: These will make it so that going to the next one in a
-" search will center on the line it's found in.
-nnoremap n nzzzv
-nnoremap N Nzzzv
-
-" vim-airline
-let g:airline_theme = 'powerlineish'
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#ale#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tagbar#enabled = 1
-let g:airline_skip_empty_sections = 1
-
-"*****************************************************************************
-"" Abbreviations
-"*****************************************************************************
-
-"" no one is really happy until you have this shortcuts
-cnoreabbrev W! w!
-cnoreabbrev Q! q!
-cnoreabbrev Qall! qall!
-cnoreabbrev Wq wq
-cnoreabbrev Wa wa
-cnoreabbrev wQ wq
-cnoreabbrev WQ wq
-cnoreabbrev W w
-cnoreabbrev Q q
-cnoreabbrev Qall qall
-
-"" NERDTree configuration
-let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__']
-let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let g:NERDTreeShowBookmarks=1
-let g:nerdtree_tabs_focus_on_files=1
-let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
-let g:NERDTreeWinSize = 50
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-nnoremap <silent> <F3> :NERDTreeToggle<CR>
-
-
-"*****************************************************************************
-"" Commands
-"*****************************************************************************
-
-" remove trailing whitespaces
-command! FixWhitespace :%s/\s\+$//e
-
-
-"*****************************************************************************
-"" Functions
-"*****************************************************************************
-
-if !exists('*s:setupWrapping')
-  function s:setupWrapping()
-    set wrap
-    set wm=2
-    set textwidth=79
-  endfunction
-endif
-
-
-"*****************************************************************************
-"" Convenience variables
-"*****************************************************************************
-
-" vim-airline
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-
-if !exists('g:airline_powerline_fonts')
-  let g:airline#extensions#tabline#left_sep = ' '
-  let g:airline#extensions#tabline#left_alt_sep = '|'
-  let g:airline_left_sep          = '▶'
-  let g:airline_left_alt_sep      = '»'
-  let g:airline_right_sep         = '◀'
-  let g:airline_right_alt_sep     = '«'
-  let g:airline#extensions#branch#prefix     = '⤴' "➔, ➥, ⎇
-  let g:airline#extensions#readonly#symbol   = '⊘'
-  let g:airline#extensions#linecolumn#prefix = '¶'
-  let g:airline#extensions#paste#symbol      = 'ρ'
-  let g:airline_symbols.linenr    = '␊'
-  let g:airline_symbols.branch    = '⎇'
-  let g:airline_symbols.paste     = 'ρ'
-  let g:airline_symbols.paste     = 'Þ'
-  let g:airline_symbols.paste     = '∥'
-  let g:airline_symbols.whitespace = 'Ξ'
-else
-  let g:airline#extensions#tabline#left_sep = ''
-  let g:airline#extensions#tabline#left_alt_sep = ''
-
-  " powerline symbols
-  let g:airline_left_sep = ''
-  let g:airline_left_alt_sep = ''
-  let g:airline_right_sep = ''
-  let g:airline_right_alt_sep = ''
-  let g:airline_symbols.branch = ''
-  let g:airline_symbols.readonly = ''
-  let g:airline_symbols.linenr = ''
-endif
+" EOF
