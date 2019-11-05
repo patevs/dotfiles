@@ -1,6 +1,6 @@
-" ------------------- "
-" config/vim/init.vim "
-" ------------------- "
+" -------------------- "
+" config/nvim/init.vim "
+" -------------------- "
 
 " ~/APPDATA/Local/nvim/init.vim
 " Or: stdpath('config') . '/init.vim'

@@ -1,8 +1,8 @@
 @ECHO OFF
 
-:: ---------------------- ::
-:: config/vim/install.cmd ::
-:: ---------------------- ::
+:: ----------------------- ::
+:: config/nvim/install.cmd ::
+:: ----------------------- ::
 
 :: Batch script for easily setting up my vim/neovim configuration
 :: The script copies profile scripts to ~\APPDATA\Local\nvim\init.vim
