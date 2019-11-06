@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ##################
 # bashrc - Basic #
@@ -152,7 +152,7 @@ alias genpasswd="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr 
 alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 
 #List by file size in current directory
-sbs() { du -b --max-depth 1 | sort -nr | perl -pe 's{([0-9]+)}{sprintf "%.1f%s", $1>=2**30? ($1/2**30, "G"): $1>=2**20? ($1/2**20, "M"): $1>=2**10? ($1/2**10, "K"): ($1, "")}e';} 
+sbs() { du -b --max-depth 1 | sort -nr | perl -pe 's{([0-9]+)}{sprintf "%.1f%s", $1>=2**30? ($1/2**30, "G"): $1>=2**20? ($1/2**20, "M"): $1>=2**10? ($1/2**10, "K"): ($1, "")}e';}
 
 #Show active ports
 alias port='netstat -tulanp'
@@ -171,8 +171,8 @@ function busytext() { while true; do sleep .15; head /dev/urandom | tr -dc A-Za-
 lastvalue='RET=$?; if [[ $RET -eq 0 ]]; then echo -ne "\033[0;32m$RET\033[0m ;)"; else echo -ne "\033[0;31m$RET\033[0m ;("; fi; echo -n " "'
 
 #Translator; requires Internet
-#Usage: translate <phrase> <output-language> 
-#Example: translate "Bonjour! Ca va?" en 
+#Usage: translate <phrase> <output-language>
+#Example: translate "Bonjour! Ca va?" en
 #See this for a list of language codes: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 function translate(){ wget -U "Mozilla/5.0" -qO - "http://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=$2&dt=t&q=$(echo $1 | sed "s/[\"'<>]//g")" | sed "s/,,,0]],,.*//g" | awk -F'"' '{print $2, $6}'; }
 
