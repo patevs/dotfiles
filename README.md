@@ -12,10 +12,10 @@
 |   |   +-- alacritty.yml
 |   +-- bash
 |   +-- nvim
+|   |   +-- init.vim
 |   +-- ps1
 |   |   +-- defaults.ps1
 |   |   +-- development.ps1
-|   |   +-- install.cmd
 |   |   +-- Microsoft.PowerShell_profile.ps1
 |   |   +-- unix.ps1
 |   +-- WindowsTerminal
