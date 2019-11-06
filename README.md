@@ -9,6 +9,8 @@
 
 * [Dotfiles on GitHub](https://github.com/search?q=dotfiles)
 * [`holman/dotfiles`](https://github.com/holman/dotfiles)
+* [`mathiadbynens/dotfiles`](https://github.com/mathiasbynens/dotfiles)
+* [`paulirish/dotfiles`](https://github.com/paulirish/dotfiles)
 
 ---
 
