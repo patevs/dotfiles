@@ -9,6 +9,11 @@
 * [draculatheme.com](https://draculatheme.com/)
 * [`dracula/dracula-theme`](https://github.com/dracula/dracula-theme)
 
+### GitHub Pages
+
+* [draculatheme/ph-pages](https://draculatheme.com/gh-pages/)
+* [`dracula/gh-pages`](https://github.com/dracula/gh-pages)
+
 ### Vim
 
 * [draculatheme.com/vim](https://draculatheme.com/vim/)
