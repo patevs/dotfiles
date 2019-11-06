@@ -29,11 +29,10 @@ ECHO. & ECHO  [44m Setting NPM Global Configuration [0m & ECHO.
 :: Set Username and email
 :: ECHO [92m Setting Username and Email. [0m & ECHO.
 
-:: CALL git config --global user.email "ppevans11@gmail.com"
-:: CALL git config --global user.name "PatEvs"
-:: CALL git config --global github.user "PatEvs"
-
-:: ECHO  [44m Setting Diff-So-Fancy Configuration [0m & ECHO.
+CALL npm config set --global init.author.email "ppevans11@gmail.com"
+CALL npm config set --global init.author.name "PatEvs"
+CALL npm config set --global init.author.url "https://github.com/patevs"
+CALL npm config set --global init.license "MIT"
 
 :: Print NPM global configuration
 ECHO [44m NPM Global Configuration: [0m & ECHO.
