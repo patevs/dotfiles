@@ -5,6 +5,13 @@
 
 ---
 
+## Links & Resources
+
+* [Dotfiles on GitHub](https://github.com/search?q=dotfiles)
+* [`holman/dotfiles`](https://github.com/holman/dotfiles)
+
+---
+
 ## Git Submodules
 
 * [`anishathalye/dotbot`](https://github.com/anishathalye/dotbot)
