@@ -56,9 +56,9 @@
 |       +-- profiles.json
 +-- scripts
 +-- submodules
++-- themes
 +-- .editorconfig
 +-- .gitmodules
-+-- .npmrc
 +-- install
 +-- install.conf.yaml
 +-- README.md
