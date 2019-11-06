@@ -5,6 +5,14 @@
 
 ---
 
+## Git Submodules
+
+* [`anishathalye/dotbot`](https://github.com/anishathalye/dotbot)
+* [`dylanaraps/neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`lptstr/winfetch`](https://github.com/lptstr/winfetch/)
+
+---
+
 ## Dracula Theme
 
 * [draculatheme.com](https://draculatheme.com/)
