@@ -30,7 +30,7 @@ call plug#begin(stdpath('data') . '/plugged')
 " Make sure you use single quotes
 
 " https://github.com/tpope/vim-sensible
-Plug 'tpope/vim-sensible'
+" Plug 'tpope/vim-sensible'
 
 " Initialize plugin system
 call plug#end()
