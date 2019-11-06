@@ -11,7 +11,7 @@
 ECHO. & ECHO  [100;4m Alacritty Terminal Configuration Script [0m & ECHO.
 
 :: Copy Alacritty configuration
-CALL xcopy /Y alacritty.yml C:\Users\Patrick\APPDATA\Roaming\alacritty\alacritty.yml
+CALL ECHO F | xcopy /Y alacritty.yml C:\Users\Patrick\APPDATA\Roaming\alacritty\alacritty.yml
 :: Reload Alacritty
 CALL alacritty
 
