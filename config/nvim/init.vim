@@ -6,10 +6,13 @@
 "   ~/APPDATA/Local/nvim/init.vim
 "   Or: stdpath('config') . '/init.vim'
 
+" ----------------------------------------------------------------------- "
+
 " Ensure vim-plug is install
 "   https://github.com/junegunn/vim-plug
+"   https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 
-" PowerShell:
+" Install vim-plug using PowerShell:
 " ```
 " md ~\AppData\Local\nvim\autoload
 " $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -20,6 +23,15 @@
 "   )
 " )
 " ```
+
+" AutoInstall vim-plug
+if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
+  silent !curl -fLo ~\AppData\Local\nvim\autoload\plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" ----------------------------------------------------------------------- "
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
