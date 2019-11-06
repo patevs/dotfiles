@@ -1,7 +1,7 @@
 # Dotfiles
 
 > This repository contains my personal configuration files (also known as .files)
-> along with utility scripts to aid in the install and setup of various software.
+> for Windows and Linux machines as well as utility scripts to aid in the install and setup of various software.
 
 ---
 
