@@ -4,19 +4,24 @@
 :: scripts/npm/setup.cmd ::
 :: --------------------- ::
 
-REM Script to setup npm global configuation.
-REM Requires npm to be installed.
+:: Script to setup npm global configuation.
+:: Requires npm to be installed.
 
-CLS
+:: Resources:
+::  https://docs.npmjs.com/cli/config
+::  https://docs.npmjs.com/files/npmrc
+::  https://stackoverflow.com/questions/51330735/npm-config-global-vs-local
+
+:: CLS
 ECHO. & ECHO [100;4mNPM Global Configuration Setup Script[0m
 
-REM Verify NPM is installed & can be found
+:: Verify NPM is installed & can be found
 ECHO. & ECHO [92m Verifying NPM Installation... [0m
 ECHO. & ECHO  [45m NPM Installation: [0m & ECHO.
 WHERE npm
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m npm installation could not be found... exiting! [0m & GOTO :EOF
 
-REM Begin NPM Global Configuration Setup
+:: Begin NPM Global Configuration Setup
 ECHO. & ECHO [92m All Requirements Satisfied! Starting NPM Global Configuration Setup... [0m & ECHO.
 
 ECHO. & ECHO  [44m Setting NPM Global Configuration [0m & ECHO.
@@ -39,3 +44,4 @@ ECHO. & ECHO  [42m Done! [0m
 
 GOTO :EOF
 
+:: EOF ::
