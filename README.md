@@ -7,7 +7,12 @@
 ## Dracula Theme
 
 * [draculatheme.com](https://draculatheme.com/)
-* [dracula/dracula-theme](https://github.com/dracula/dracula-theme)
+* [`dracula/dracula-theme`](https://github.com/dracula/dracula-theme)
+
+### Vim
+
+* [draculatheme.com/vim](https://draculatheme.com/vim/)
+* [`dracula/vim`](https://github.com/dracula/vim)
 
 ---
 
