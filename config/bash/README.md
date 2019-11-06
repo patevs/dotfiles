@@ -23,9 +23,3 @@ A few other notes:
     Ensure that `~/.bash_login` does not exist.
 
 ---
-
-## TODO
-
-- [ ] Add `bash-git-prompt` as a git submodule
-
----
