@@ -12,6 +12,8 @@
 "   https://github.com/junegunn/vim-plug
 "   https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 
+" silent !curl -fLo %USERPROFILE%\AppData\Local\nvim\autoload\plug.vim --create-dirs
+
 " AutoInstall vim-plug
 if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
   silent !curl -fLo C:\Users\Patrick\AppData\Local\nvim\autoload\plug.vim --create-dirs
