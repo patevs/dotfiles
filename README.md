@@ -1,9 +1,17 @@
 # Dotfiles
 
-> Configuration files and utility scripts.
-
+> Personal configuration files (also known as .files) along with various install and setup utility scripts.
 
 ---
+
+## Dracula Theme
+
+* [draculatheme.com](https://draculatheme.com/)
+* [dracula/dracula-theme](https://github.com/dracula/dracula-theme)
+
+---
+
+## Project Structure
 
 ```md
 .
