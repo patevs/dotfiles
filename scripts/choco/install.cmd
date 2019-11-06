@@ -18,7 +18,7 @@ WHERE choco
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m choco installation could not be found... exiting! [0m & GOTO :EOF
 
 :: Begin install
-ECHO. & ECHO [92m All Requirements Satisfied! Installing Chocolately Packages... [0m
+ECHO. & ECHO [92m All Requirements Satisfied! Installing Chocolately Packages... [0m & ECHO.
 :: & ECHO.
 
 :: ---------------------------------------------------------------------------- ::
