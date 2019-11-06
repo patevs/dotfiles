@@ -5,13 +5,13 @@
 :: ---------------------------- ::
 
 :: Batch script for easily setting up my alacritty terminal configuration
-:: The script copies `alacritty.yml` to ~\APPDATA\Roaming\alacritty\alacritty.yml
+:: The script copies `alacritty.yml` to `%USERPROFILE%\APPDATA\Roaming\alacritty\alacritty.yml`
 
 :: CLS
 ECHO. & ECHO  [100;4m Alacritty Terminal Configuration Script [0m & ECHO.
 
 :: Copy Alacritty configuration
-CALL ECHO F | xcopy /Y alacritty.yml C:\Users\Patrick\APPDATA\Roaming\alacritty\alacritty.yml
+CALL ECHO F | xcopy /Y alacritty.yml %USERPROFILE%\APPDATA\Roaming\alacritty\alacritty.yml
 :: Reload Alacritty
 CALL alacritty
 
