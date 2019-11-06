@@ -12,10 +12,10 @@
 ECHO. & ECHO  [100;4m PowerShell Profile Install Script [0m & ECHO.
 
 :: Copy PowerShell profile scripts
-CALL xcopy /Y Microsoft.PowerShell_profile.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-CALL xcopy /Y defaults.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\defaults.ps1
-CALL xcopy /Y unix.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\unix.ps1
-CALL xcopy /Y development.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\development.ps1
+CALL ECHO F | xcopy /Y Microsoft.PowerShell_profile.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+CALL ECHO F | xcopy /Y defaults.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\defaults.ps1
+CALL ECHO F | xcopy /Y unix.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\unix.ps1
+CALL ECHO F | xcopy /Y development.ps1 C:\Users\Patrick\Documents\WindowsPowerShell\development.ps1
 :: New line
 ECHO.
 :: Reload PowerShell
