@@ -19,6 +19,11 @@
 * [draculatheme.com/vim](https://draculatheme.com/vim/)
 * [`dracula/vim`](https://github.com/dracula/vim)
 
+### Visual Studio Code
+
+* [draculatheme.com/visual-studio-code](https://draculatheme.com/visual-studio-code/)
+* [dracula/visual-studio-code](https://github.com/dracula/visual-studio-code)
+
 ---
 
 ## Project Structure
