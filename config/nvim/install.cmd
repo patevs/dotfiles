@@ -5,12 +5,12 @@
 :: ----------------------- ::
 
 :: Batch script for easily setting up my neovim configuration
-:: The script copies profile scripts to ~\APPDATA\Local\nvim\init.vim
+:: The script copies `init.vim` to `~\APPDATA\Local\nvim\init.vim`
 
 :: CLS
-ECHO. & ECHO  [100;4m NeoVim Profile Install Script [0m & ECHO.
+ECHO. & ECHO  [100m [100;4mNeoVim Profile Install Script[0m[100m [0m
 
-:: Copy vim profile scripts
+:: Copy neovim profile
 CALL ECHO F | xcopy /Y /Q init.vim C:\Users\Patrick\APPDATA\Local\nvim\init.vim
 :: New line
 ECHO.
