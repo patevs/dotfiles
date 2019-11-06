@@ -25,7 +25,7 @@ ECHO. & ECHO [92m All Requirements Satisfied! Installing Chocolately Packages..
 
 :: Python2
 ECHO  [44m Installing Python2: [0m & ECHO.
-CALL choco install python2 --params '"/InstallDir:C:\bin\python2"'
+CALL choco install python2 --params '"/InstallDir:C:\bin\python2"' -y
 
 :: ---------------------------------------------------------------------------- ::
 
