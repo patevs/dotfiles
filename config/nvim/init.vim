@@ -25,15 +25,15 @@ endif
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
 
-" call plug#begin(stdpath('data') . '/plugged')
+call plug#begin(stdpath('data') . '/plugged')
 
 " Make sure you use single quotes
 
 " https://github.com/tpope/vim-sensible
-" Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible'
 
 " Initialize plugin system
-" call plug#end()
+call plug#end()
 
 
 " EOF "
