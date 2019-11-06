@@ -1,6 +1,7 @@
 # Dotfiles
 
-> Personal configuration files (also known as .files) along with various install and setup utility scripts.
+> This repository contains my personal configuration files (also known as .files)
+> along with utility scripts to aid in the install and setup of various software.
 
 ---
 
@@ -9,19 +10,29 @@
 * [draculatheme.com](https://draculatheme.com/)
 * [`dracula/dracula-theme`](https://github.com/dracula/dracula-theme)
 
+### ConEmu
+
+* [draculatheme/conemu](https://draculatheme.com/conemu/)
+* [`dracula/conemu`](https://github.com/dracula/conemu)
+
 ### GitHub Pages
 
 * [draculatheme/ph-pages](https://draculatheme.com/gh-pages/)
 * [`dracula/gh-pages`](https://github.com/dracula/gh-pages)
 
+### PowerShell
+
+* [draculatheme/powershell](https://draculatheme.com/powershell/)
+* [`dracula/powershell`](https://github.com/dracula/powershell)
+
 ### Vim
 
-* [draculatheme.com/vim](https://draculatheme.com/vim/)
+* [draculatheme/vim](https://draculatheme.com/vim/)
 * [`dracula/vim`](https://github.com/dracula/vim)
 
 ### Visual Studio Code
 
-* [draculatheme.com/visual-studio-code](https://draculatheme.com/visual-studio-code/)
+* [draculatheme/visual-studio-code](https://draculatheme.com/visual-studio-code/)
 * [dracula/visual-studio-code](https://github.com/dracula/visual-studio-code)
 
 ---
