@@ -12,18 +12,6 @@
 "   https://github.com/junegunn/vim-plug
 "   https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 
-" Install vim-plug using PowerShell:
-" ```
-" md ~\AppData\Local\nvim\autoload
-" $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-" (New-Object Net.WebClient).DownloadFile(
-"   $uri,
-"   $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(
-"     "~\AppData\Local\nvim\autoload\plug.vim"
-"   )
-" )
-" ```
-
 " AutoInstall vim-plug
 if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
   silent !curl -fLo ~\AppData\Local\nvim\autoload\plug.vim --create-dirs
