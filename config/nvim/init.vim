@@ -14,7 +14,7 @@
 
 " Enable/disable python support
 " let g:loaded_python_provider = 1
-" let g:loaded_python3_provider = 1
+let g:loaded_python3_provider = 0
 
 " ----------------------------------------------------------------------- "
 
