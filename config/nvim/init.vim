@@ -51,13 +51,13 @@ call plug#end()
 " autocmd vimenter * NERDTree
 
 " Open a NERDTree automatically when neovim starts up if no files were specified
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Note: Now start neovim with plain nvim, not nvim .
 
 " ----------------------------------------------------------------------- "
 
-echo "Hello Pat!"
+" echo "Hello Pat!"
 " let name = "John"
 " echo "Hello, " . name
 
