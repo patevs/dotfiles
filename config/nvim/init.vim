@@ -6,6 +6,14 @@
 "   ~/APPDATA/Local/nvim/init.vim
 "   Or: stdpath('config') . '/init.vim'
 
+" Resources:
+"   https://devhints.io/vimscript
+
+" ----------------------------------------------------------------------- "
+
+let name = "John"
+echo "Hello, " . name
+
 " ----------------------------------------------------------------------- "
 
 " Set location to python executables
