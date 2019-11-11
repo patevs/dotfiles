@@ -33,7 +33,7 @@
 
 ### GitHub Pages
 
-* [draculatheme/ph-pages](https://draculatheme.com/gh-pages/)
+* [draculatheme/gh-pages](https://draculatheme.com/gh-pages/)
 * [`dracula/gh-pages`](https://github.com/dracula/gh-pages)
 
 ### PowerShell
