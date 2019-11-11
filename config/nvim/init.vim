@@ -11,11 +11,6 @@
 
 " ----------------------------------------------------------------------- "
 
-let name = "John"
-echo "Hello, " . name
-
-" ----------------------------------------------------------------------- "
-
 " Set location to python executables
 " let g:python_host_prog  = '/path/to/python'
 " let g:python3_host_prog  = '/path/to/python3'
@@ -52,13 +47,19 @@ Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " NERDTree
-" Open a NERDTree automatically when vim starts up
+" Open a NERDTree automatically when neovim starts up
 " autocmd vimenter * NERDTree
 
-" Open a NERDTree automatically when vim starts up if no files were specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" Note: Now start vim with plain vim, not vim .
+" Open a NERDTree automatically when neovim starts up if no files were specified
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Note: Now start neovim with plain nvim, not nvim .
+
+" ----------------------------------------------------------------------- "
+
+echo "Hello Pat!"
+" let name = "John"
+" echo "Hello, " . name
 
 
 " EOF "
