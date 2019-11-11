@@ -41,10 +41,13 @@
 
 call plug#begin(stdpath('data') . '/plugged')
 " Make sure you use single quotes
+" (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
+" Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
 
 " Initialize plugin system
+" Remember to run :PlugInstall
 call plug#end()
 
 " NERDTree
