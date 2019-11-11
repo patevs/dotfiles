@@ -13,21 +13,21 @@
 " let g:python3_host_prog  = '/path/to/python3'
 
 " Enable/disable python support
-" let g:loaded_python_provider = 1
-let g:loaded_python3_provider = 0
+" let g:loaded_python_provider = 0
+" let g:loaded_python3_provider = 0
 
 " ----------------------------------------------------------------------- "
 
-" Ensure vim-plug is install
+" Ensure vim-plug is installed
 "   https://github.com/junegunn/vim-plug
 "   https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 
 " AutoInstall vim-plug
-if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
-  silent !curl -fLo C:\Users\Patrick\AppData\Local\nvim\autoload\plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  " autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+" if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
+"   silent !curl -fLo ~\AppData\Local\nvim\autoload\plug.vim --create-dirs
+"     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+" endif
 
 " ----------------------------------------------------------------------- "
 
