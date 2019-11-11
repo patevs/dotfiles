@@ -7,6 +7,7 @@
 "   Or: stdpath('config') . '/init.vim'
 
 " Resources:
+"   https://devhints.io/vim
 "   https://devhints.io/vimscript
 
 " ----------------------------------------------------------------------- "
