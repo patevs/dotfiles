@@ -8,12 +8,3 @@
 [submodule "submodules/neofetch"]
 	path = submodules/neofetch
 	url = https://github.com/dylanaraps/neofetch.git
-[submodule "themes/dracula-conemu"]
-	path = themes/dracula-conemu
-	url = https://github.com/dracula/conemu.git
-[submodule "themes/dracula-vim"]
-	path = themes/dracula-vim
-	url = https://github.com/dracula/vim.git
-[submodule "themes/dracula-powershell"]
-	path = themes/dracula-powershell
-	url = https://github.com/dracula/powershell.git
