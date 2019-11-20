@@ -60,6 +60,7 @@ CALL npm install --global g3l
 :: # https://github.com/mbostock/gistup
 :: CALL npm install --global gistup
 :: # https://github.com/paulirish/git-open
+:: TODO: Check if hub has this function
 CALL npm install --global git-open
 :: # https://github.com/IonicaBizau/git-stats
 :: CALL npm install --global git-stats
@@ -121,7 +122,7 @@ CALL npm install --global ntl
 :: ---------------------------------------------------------------------------- ::
 
 :: Development Utilities
-ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+:: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 :: # https://github.com/kentcdodds/clog-cli
 :: CALL npm install --global clog-cli
@@ -152,7 +153,7 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: # https://github.com/cezaraugusto/mklicense
 :: CALL npm install --global mklicense
 ::: # https://github.com/neovim/node-client
-CALL npm install --global neovim
+:: CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli
 :: CALL npm install --global passgen-cli
 :: # https://github.com/release-it/release-it
@@ -180,7 +181,7 @@ CALL npm install --global neovim
 :: CALL npm install --global strapi@beta
 :: # https://github.com/tldr-pages/tldr
 :: # https://github.com/tldr-pages/tldr-node-client
-CALL npm install --global tldr
+:: CALL npm install --global tldr
 :: # https://github.com/mishoo/UglifyJS2
 :: CALL npm install --global uglify-js
 :: # https://github.com/ddopson/underscore-cli
