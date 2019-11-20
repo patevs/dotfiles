@@ -69,6 +69,8 @@ printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM): ${NC}\n
 # RUN:
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
+# TODO: Install latest node and npm
+
 # ---------------------------------------------------------------------------------- #
 
 # printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n\n"
@@ -77,8 +79,8 @@ printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM): ${NC}\n
 
 # printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n\n"
 
-# printf "\n ${LIGHT_GREEN} Finished Installing NPM Global Modules!${NC}\n"
-# printf "\n  ${BACKGROUND_GREEN} Listing NPM Global Installs: ${NC}\n\n"
+# printf "\n ${LIGHT_GREEN} Finished Installing Packages!${NC}\n"
+# printf "\n  ${BACKGROUND_GREEN} Listing Package Versions: ${NC}\n\n"
 
 printf "\n ---- ${BACKGROUND_GREEN} DONE! ${NC} ---- \n\n"
 
