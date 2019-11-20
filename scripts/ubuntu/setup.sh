@@ -7,7 +7,7 @@
 # Bash script for installing and setting up a fresh ubuntu box.
 # NOTE: This script must be run as sudo
 
-# TODO: Check we are running as sudo
+# TODO: Ensure we are running as sudo
 
 ###################
 # COLOR CONSTANTS #
@@ -50,7 +50,15 @@ printf "\n ${BACKGROUND_BLUE} Ubuntu Setup and Install Script ${NC} \n"
 
 # TODO: Create ../git/setup.sh
 
+# ---------------------------------------------------------------------------------- #
+
 # printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Utility Modules: ${NC}\n\n"
+printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM): ${NC}\n\n"
+# https://github.com/nvm-sh/nvm
+
+# TODO: Ensure we have curl installed
+# RUN:
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
 # nvm, node, npm
 
