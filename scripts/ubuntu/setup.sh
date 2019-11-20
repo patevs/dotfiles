@@ -7,7 +7,7 @@
 # Bash script for installing and setting up a fresh ubuntu box.
 # NOTE: This script must be run as sudo
 
-# TODO: Check we are running as sudo
+# TODO: Ensure we are running as sudo
 
 ###################
 # COLOR CONSTANTS #
@@ -46,10 +46,32 @@ printf "\n ${BACKGROUND_BLUE} Ubuntu Setup and Install Script ${NC} \n"
 # printf "\n  ${BACKGROUND_GREEN} Installing Git and Hub Integration: ${NC}\n\n"
 
 # sudo apt install git
+# sudo snap install hub --classic
+
+# TODO: Create ../git/setup.sh
+
+# TODO: Print git and hub versions
+
+# ---------------------------------------------------------------------------------- #
+
+printf "\n  ${BACKGROUND_GREEN} Installing Curl: ${NC}\n\n"
+
+# sudo apt install curl
+
+# TODO: Print curl version
+
+# ---------------------------------------------------------------------------------- #
 
 # printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Utility Modules: ${NC}\n\n"
+printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM): ${NC}\n\n"
 
-# nvm, node, npm
+# https://github.com/nvm-sh/nvm
+# RUN:
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+
+# TODO: Install latest node and npm
+
+# ---------------------------------------------------------------------------------- #
 
 # printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n\n"
 
@@ -57,8 +79,8 @@ printf "\n ${BACKGROUND_BLUE} Ubuntu Setup and Install Script ${NC} \n"
 
 # printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n\n"
 
-# printf "\n ${LIGHT_GREEN} Finished Installing NPM Global Modules!${NC}\n"
-# printf "\n  ${BACKGROUND_GREEN} Listing NPM Global Installs: ${NC}\n\n"
+# printf "\n ${LIGHT_GREEN} Finished Installing Packages!${NC}\n"
+# printf "\n  ${BACKGROUND_GREEN} Listing Package Versions: ${NC}\n\n"
 
 printf "\n ---- ${BACKGROUND_GREEN} DONE! ${NC} ---- \n\n"
 
