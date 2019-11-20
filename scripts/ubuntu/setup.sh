@@ -46,6 +46,9 @@ printf "\n ${BACKGROUND_BLUE} Ubuntu Setup and Install Script ${NC} \n"
 # printf "\n  ${BACKGROUND_GREEN} Installing Git and Hub Integration: ${NC}\n\n"
 
 # sudo apt install git
+# sudo snap install hub --classic
+
+# TODO: Create ../git/setup.sh
 
 # printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Utility Modules: ${NC}\n\n"
 
