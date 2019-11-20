@@ -5,8 +5,8 @@
 # ----------------------- #
 
 # Bash script for installing and setting up a fresh ubuntu box.
+# NOTE: This script must be run as sudo
 
-# !NOTE: Must be run as sudo
 # TODO: Check we are running as sudo
 
 ###################
@@ -32,8 +32,8 @@ BACKGROUND_PURPLE='\033[45m'
 # BOLD='\033[1m'
 
 # clear
-# printf "\n ---- ${GREEN}npm/install.sh${NC} ---- \n"
-# printf "\n ${BACKGROUND_BLUE} NPM Global Modules Install Script ${NC} \n"
+printf "\n ---- ${GREEN}ubuntu/setup.sh${NC} ---- \n"
+printf "\n ${BACKGROUND_BLUE} Ubuntu Setup and Install Script ${NC} \n"
 # printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
 
 #################
@@ -42,6 +42,8 @@ BACKGROUND_PURPLE='\033[45m'
 
 # printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
 # printf "\n  ${BACKGROUND_GREEN} Installing Git Integration and Utility Modules: ${NC}\n\n"
+
+printf "\n  ${BACKGROUND_GREEN} Installing Git: ${NC}\n\n"
 
 # git...
 
