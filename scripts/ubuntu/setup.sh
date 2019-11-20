@@ -50,17 +50,26 @@ printf "\n ${BACKGROUND_BLUE} Ubuntu Setup and Install Script ${NC} \n"
 
 # TODO: Create ../git/setup.sh
 
+# TODO: Print git and hub versions
+
+# ---------------------------------------------------------------------------------- #
+
+printf "\n  ${BACKGROUND_GREEN} Installing Curl: ${NC}\n\n"
+
+# sudo apt install curl
+
+# TODO: Print curl version
+
 # ---------------------------------------------------------------------------------- #
 
 # printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Utility Modules: ${NC}\n\n"
 printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM): ${NC}\n\n"
-# https://github.com/nvm-sh/nvm
 
-# TODO: Ensure we have curl installed
+# https://github.com/nvm-sh/nvm
 # RUN:
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
-# nvm, node, npm
+# ---------------------------------------------------------------------------------- #
 
 # printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n\n"
 
