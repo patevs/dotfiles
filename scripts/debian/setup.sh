@@ -136,8 +136,12 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 # sudo apt --assume-yes install gcc
 # GNU readline
 # sudo apt --assume-yes install libreadline-dev
-# openssl
-# sudo apt --assume-yes install openssl
+# openssl < 1.1 requires:
+# sudo apt install libcurl3
+# sudo apt install libcurl-openssl1.0-dev
+# bzip2
+# install: libbz2-dev
+# OR install: lbzip2
 
 # Check pyenv installation
 # pyenv doctor
