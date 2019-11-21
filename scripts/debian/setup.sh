@@ -162,7 +162,9 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
 # rbenv , ruby , gem , bundler , rails
 
+# https://github.com/rbenv/rbenv
 # https://github.com/rbenv/rbenv-installer
+# https://github.com/rbenv/ruby-build
 
 # ---------------------------------------------------------------------------------- #
 
