@@ -117,6 +117,7 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 # vim , neovim
 # emacs , spacemacs
 # zsh , oh-my-zsh
+# asdf
 
 # printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n\n"
 
