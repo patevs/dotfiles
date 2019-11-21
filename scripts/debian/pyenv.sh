@@ -43,6 +43,8 @@ printf "\n ${BACKGROUND_BLUE} Pyenv Install Script ${NC} \n"
 # BEGIN SETUP #
 ###############
 
+# https://github.com/pyenv/pyenv/wiki/Common-build-problems
+
 # printf "\n ${BACKGROUND_BLUE} Running Initial Setup Steps: ${NC} \n"
 
 # Requires:
