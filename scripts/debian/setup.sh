@@ -4,7 +4,7 @@
 # scripts/debain/setup.sh #
 # ----------------------- #
 
-# Bash script for installing and setting up a fresh debain/ubuntu box.
+# Bash script setting up a fresh debain/ubuntu installation.
 # NOTE: This script must be run as sudo
 
 # TODO: Ensure we are running as sudo
