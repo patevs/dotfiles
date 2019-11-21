@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # ----------------------- #
-# scripts/ubuntu/setup.sh #
+# scripts/debain/setup.sh #
 # ----------------------- #
 
-# Bash script for installing and setting up a fresh ubuntu box.
+# Bash script for installing and setting up a fresh debain/ubuntu box.
 # NOTE: This script must be run as sudo
 
 # TODO: Ensure we are running as sudo
