@@ -122,8 +122,18 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 # Equivilent to: 
 # curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
+# Enable pyenv by adding the following to ~/.bashrc
+# export PATH="/home/pat/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+
 # Restart shell
 # exec $SHELL
+
+# pyenv doctor
+# checking for gcc... no
+# checking for cc... no
+# checking for cl.exe... no
 
 # Install python
 # pyenv install 3.7.5
