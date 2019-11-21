@@ -45,6 +45,8 @@ printf "\n ${BACKGROUND_BLUE} Debian/Ubuntu Initial Setup and Install Script ${N
 
 printf "\n ${BACKGROUND_BLUE} Running Initial Setup Steps: ${NC} \n"
 
+# TODO: Run commands without prompting user confirmation
+
 printf "\n  ${BACKGROUND_GREEN} Updating Package Repositories: ${NC}\n\n"
 # sudo apt update
 
