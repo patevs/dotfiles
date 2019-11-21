@@ -115,6 +115,28 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 # https://github.com/pyenv/pyenv
 # https://github.com/pyenv/pyenv-installer
 
+# Install pyenv
+
+# curl https://pyenv.run | bash
+
+# Equivilent to: 
+# curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+
+# Restart shell
+# exec $SHELL
+
+# Install python
+# pyenv install 3.7.5
+# pyenv global 3.7.5
+
+# Upgrade pip
+# python -m pip install --upgrade pip
+
+# Print package versions
+# pyenv --version
+# python -V
+# pip -V
+
 # ---------------------------------------------------------------------------------- #
 
 # rbenv , ruby , gem , bundler , rails
