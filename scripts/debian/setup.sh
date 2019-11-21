@@ -88,20 +88,40 @@ printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM) Package 
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
 # TODO: Install latest node and npm
+# TODO: Install global npm utilities
+# TODO: Print NVM, NodeJS, and NPM versions
 
 printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
 # ---------------------------------------------------------------------------------- #
 
+# pyenv , python , pip
+
+# ---------------------------------------------------------------------------------- #
+
+# renv , ruby , gem , bundler , rails
+
+# ---------------------------------------------------------------------------------- #
+
+# rust , cargo
+
+# ---------------------------------------------------------------------------------- #
+
+# lsd , Hack-NF
+
+# ---------------------------------------------------------------------------------- #
+
 # printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n\n"
 
-# vscode, emacs, neovim
+# vscode
+# vim , neovim
+# emacs , spacemacs
+# zsh , oh-my-zsh
 
 # printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n\n"
 
 # ---------------------------------------------------------------------------------- #
 
-# printf "\n ${LIGHT_GREEN} Finished Installing Packages!${NC}\n"
 printf "\n ${LIGHT_GREEN} Package Install Steps Complete! ${NC}\n"
 
 # printf "\n  ${BACKGROUND_GREEN} Listing Package Versions: ${NC}\n\n"
