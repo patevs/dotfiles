@@ -130,13 +130,17 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 # Restart shell
 # exec $SHELL
 
-# Install c compiler
-# sudo apt --assume-yes install gcc
+# Install pyenv requirements
 
+# c compiler
+# sudo apt --assume-yes install gcc
+# GNU readline
+# sudo apt --assume-yes install libreadline-dev
+# openssl
+# sudo apt --assume-yes install openssl
+
+# Check pyenv installation
 # pyenv doctor
-# checking for gcc... no
-# checking for cc... no
-# checking for cl.exe... no
 
 # Install python
 # pyenv install 3.7.5
