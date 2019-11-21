@@ -32,44 +32,64 @@ BACKGROUND_BLUE='\033[44m'
 # BOLD='\033[1m'
 
 # clear
+
 printf "\n ---- ${GREEN}debain/setup.sh${NC} ---- \n"
 printf "\n ${BACKGROUND_BLUE} Debian/Ubuntu Initial Setup and Install Script ${NC} \n"
+
 # printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
+# printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
+
+###############
+# BEGIN SETUP #
+###############
+
+printf "\n ${BACKGROUND_BLUE} Running Initial Setup Steps: ${NC} \n"
+
+printf "\n  ${BACKGROUND_GREEN} Updating Package Repositories: ${NC}\n\n"
+# sudo apt update
+
+printf "\n  ${BACKGROUND_GREEN} Upgrading Installed Packages: ${NC}\n\n"
+# sudo apt upgrade
+
+printf "\n ${LIGHT_GREEN} Initial Setup Steps Complete! ${NC}\n"
 
 #################
 # BEGIN INSTALL #
 #################
 
-# printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
-# printf "\n  ${BACKGROUND_GREEN} Installing Git Integration and Utility Modules: ${NC}\n\n"
+printf "\n ${BACKGROUND_BLUE} Running Package Install Steps: ${NC} \n"
 
-# printf "\n  ${BACKGROUND_GREEN} Installing Git and Hub Integration: ${NC}\n\n"
+printf "\n  ${BACKGROUND_GREEN} Installing Git and GitHub Integration Packages: ${NC}\n\n"
 
 # sudo apt install git
 # sudo snap install hub --classic
 
-# TODO: Create ../git/setup.sh
-
+# TODO: Create and run ../git/setup.sh
 # TODO: Print git and hub versions
+
+printf "\n ${LIGHT_GREEN} Git and GitHub Install Complete! ${NC}\n"
 
 # ---------------------------------------------------------------------------------- #
 
-printf "\n  ${BACKGROUND_GREEN} Installing Curl: ${NC}\n\n"
+printf "\n  ${BACKGROUND_GREEN} Installing Curl Package: ${NC}\n\n"
 
 # sudo apt install curl
 
 # TODO: Print curl version
 
+printf "\n ${LIGHT_GREEN} Curl Install Complete! ${NC}\n"
+
 # ---------------------------------------------------------------------------------- #
 
-# printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Utility Modules: ${NC}\n\n"
-printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM): ${NC}\n\n"
+printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM) Package and Lastest NodeJS/NPM: ${NC}\n\n"
 
 # https://github.com/nvm-sh/nvm
 # RUN:
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
 # TODO: Install latest node and npm
+
+printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
 # ---------------------------------------------------------------------------------- #
 
@@ -79,7 +99,11 @@ printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM): ${NC}\n
 
 # printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n\n"
 
+# ---------------------------------------------------------------------------------- #
+
 # printf "\n ${LIGHT_GREEN} Finished Installing Packages!${NC}\n"
+printf "\n ${LIGHT_GREEN} Package Install Steps Complete! ${NC}\n"
+
 # printf "\n  ${BACKGROUND_GREEN} Listing Package Versions: ${NC}\n\n"
 
 printf "\n ---- ${BACKGROUND_GREEN} DONE! ${NC} ---- \n\n"
