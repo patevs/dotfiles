@@ -106,6 +106,8 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
 # pyenv , python , pip
 
+# https://github.com/pyenv/pyenv
+
 # ---------------------------------------------------------------------------------- #
 
 # renv , ruby , gem , bundler , rails
