@@ -51,6 +51,9 @@ printf "\n  ${BACKGROUND_GREEN} Updating Package Repositories: ${NC}\n\n"
 printf "\n  ${BACKGROUND_GREEN} Upgrading Installed Packages: ${NC}\n\n"
 # sudo apt upgrade
 
+printf "\n  ${BACKGROUND_GREEN} Removing Old Packages: ${NC}\n\n"
+# sudo apt autoremove
+
 printf "\n ${LIGHT_GREEN} Initial Setup Steps Complete! ${NC}\n"
 
 #################
