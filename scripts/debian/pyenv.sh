@@ -45,6 +45,11 @@ printf "\n ${BACKGROUND_BLUE} Pyenv Install Script ${NC} \n"
 
 # printf "\n ${BACKGROUND_BLUE} Running Initial Setup Steps: ${NC} \n"
 
+# Requires:
+# gcc
+# make
+# zlib1g-dev
+
 #################
 # BEGIN INSTALL #
 #################
