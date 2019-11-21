@@ -32,8 +32,8 @@ BACKGROUND_BLUE='\033[44m'
 # BOLD='\033[1m'
 
 # clear
-printf "\n ---- ${GREEN}ubuntu/setup.sh${NC} ---- \n"
-printf "\n ${BACKGROUND_BLUE} Ubuntu Setup and Install Script ${NC} \n"
+printf "\n ---- ${GREEN}debain/setup.sh${NC} ---- \n"
+printf "\n ${BACKGROUND_BLUE} Debian/Ubuntu Initial Setup and Install Script ${NC} \n"
 # printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
 
 #################
