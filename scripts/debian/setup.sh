@@ -92,12 +92,19 @@ printf "\n ${LIGHT_GREEN} Curl Install Complete! ${NC}\n"
 printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM) Package and Lastest NodeJS/NPM: ${NC}\n\n"
 
 # https://github.com/nvm-sh/nvm
-# RUN:
+
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
-# TODO: Install latest node and npm
-# TODO: Install global npm utilities
+# Install latest node and npm
+# nvm install --lts --latest-npm
+
+# TODO: Install global npm utilities from ../npm/install.sh
+# bash ../npm/install.sh
+
 # TODO: Print NVM, NodeJS, and NPM versions
+# nvm --version
+# node --version
+# npm --version
 
 printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
@@ -110,7 +117,9 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
 # ---------------------------------------------------------------------------------- #
 
-# renv , ruby , gem , bundler , rails
+# rbenv , ruby , gem , bundler , rails
+
+# https://github.com/rbenv/rbenv-installer
 
 # ---------------------------------------------------------------------------------- #
 
