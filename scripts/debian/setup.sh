@@ -64,8 +64,11 @@ printf "\n  ${BACKGROUND_GREEN} Installing Git and GitHub Integration Packages: 
 # sudo apt install git
 # sudo snap install hub --classic
 
+# TODO: Install perl
 # TODO: Create and run ../git/setup.sh
-# TODO: Print git and hub versions
+
+# Print Git and GitHub tool versions
+# hub version
 
 printf "\n ${LIGHT_GREEN} Git and GitHub Install Complete! ${NC}\n"
 
@@ -75,7 +78,8 @@ printf "\n  ${BACKGROUND_GREEN} Installing Curl Package: ${NC}\n\n"
 
 # sudo apt install curl
 
-# TODO: Print curl version
+# Print curl version
+# curl --version
 
 printf "\n ${LIGHT_GREEN} Curl Install Complete! ${NC}\n"
 
