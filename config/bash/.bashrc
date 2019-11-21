@@ -105,19 +105,16 @@ fi
 #   fi
 # fi
 
+# Bash-Git-Prompt
+# if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+#     GIT_PROMPT_ONLY_IN_REPO=1
+#     source $HOME/.bash-git-prompt/gitprompt.sh
+# fi
+
 # Node Version Manager (NVM)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-# Bash-Git-Prompt
-if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
-    GIT_PROMPT_ONLY_IN_REPO=1
-    source $HOME/.bash-git-prompt/gitprompt.sh
-fi
-
-# Cargo
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # pyenv
 # export PYENV_ROOT="$HOME/.pyenv"
@@ -128,6 +125,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/home/pat/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Cargo
+# export PATH="$HOME/.cargo/bin:$PATH"
 
 ####################
 # Helper Functions #
