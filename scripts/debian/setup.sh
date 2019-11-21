@@ -89,7 +89,7 @@ printf "\n ${LIGHT_GREEN} Curl Install Complete! ${NC}\n"
 
 # ---------------------------------------------------------------------------------- #
 
-printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM) Package and Lastest NodeJS/NPM: ${NC}\n\n"
+printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM) Package, Latest LTS NodeJS, and Latest NPM: ${NC}\n\n"
 
 # https://github.com/nvm-sh/nvm
 
@@ -129,6 +129,9 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
 # Restart shell
 # exec $SHELL
+
+# Install c compiler
+# sudo apt --assume-yes install gcc
 
 # pyenv doctor
 # checking for gcc... no
