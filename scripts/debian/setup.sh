@@ -45,7 +45,7 @@ printf "\n ${BACKGROUND_BLUE} Debian/Ubuntu Initial Setup and Install Script ${N
 
 printf "\n ${BACKGROUND_BLUE} Running Initial Setup Steps: ${NC} \n"
 
-# TODO: Run commands without prompting user confirmation
+# TODO: Ensure commands run without prompting for user confirmation
 
 printf "\n  ${BACKGROUND_GREEN} Updating Package Repositories: ${NC}\n\n"
 # sudo apt update
@@ -66,10 +66,9 @@ printf "\n ${BACKGROUND_BLUE} Running Package Install Steps: ${NC} \n"
 
 printf "\n  ${BACKGROUND_GREEN} Installing Git and GitHub Integration Packages: ${NC}\n\n"
 
-# sudo apt install git
+# sudo apt --assume-yes install git
 # sudo snap install hub --classic
 
-# TODO: Install perl
 # TODO: Create and run ../git/setup.sh
 
 # Print Git and GitHub tool versions
@@ -107,6 +106,7 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 # pyenv , python , pip
 
 # https://github.com/pyenv/pyenv
+# https://github.com/pyenv/pyenv-installer
 
 # ---------------------------------------------------------------------------------- #
 
