@@ -45,6 +45,8 @@ printf "\n ${BACKGROUND_BLUE} Debian/Ubuntu Initial Setup and Install Script ${N
 
 printf "\n ${BACKGROUND_BLUE} Running Initial Setup Steps: ${NC} \n"
 
+# TODO: Ensure commands run without prompting for user confirmation
+
 printf "\n  ${BACKGROUND_GREEN} Updating Package Repositories: ${NC}\n\n"
 # sudo apt update
 
@@ -64,10 +66,9 @@ printf "\n ${BACKGROUND_BLUE} Running Package Install Steps: ${NC} \n"
 
 printf "\n  ${BACKGROUND_GREEN} Installing Git and GitHub Integration Packages: ${NC}\n\n"
 
-# sudo apt install git
+# sudo apt --assume-yes install git
 # sudo snap install hub --classic
 
-# TODO: Install perl
 # TODO: Create and run ../git/setup.sh
 
 # Print Git and GitHub tool versions
@@ -91,12 +92,19 @@ printf "\n ${LIGHT_GREEN} Curl Install Complete! ${NC}\n"
 printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM) Package and Lastest NodeJS/NPM: ${NC}\n\n"
 
 # https://github.com/nvm-sh/nvm
-# RUN:
+
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
-# TODO: Install latest node and npm
-# TODO: Install global npm utilities
+# Install latest node and npm
+# nvm install --lts --latest-npm
+
+# TODO: Install global npm utilities from ../npm/install.sh
+# bash ../npm/install.sh
+
 # TODO: Print NVM, NodeJS, and NPM versions
+# nvm --version
+# node --version
+# npm --version
 
 printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
@@ -104,9 +112,36 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
 # pyenv , python , pip
 
+# https://github.com/pyenv/pyenv
+# https://github.com/pyenv/pyenv-installer
+
+# Install pyenv
+
+# curl https://pyenv.run | bash
+
+# Equivilent to: 
+# curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+
+# Restart shell
+# exec $SHELL
+
+# Install python
+# pyenv install 3.7.5
+# pyenv global 3.7.5
+
+# Upgrade pip
+# python -m pip install --upgrade pip
+
+# Print package versions
+# pyenv --version
+# python -V
+# pip -V
+
 # ---------------------------------------------------------------------------------- #
 
-# renv , ruby , gem , bundler , rails
+# rbenv , ruby , gem , bundler , rails
+
+# https://github.com/rbenv/rbenv-installer
 
 # ---------------------------------------------------------------------------------- #
 
