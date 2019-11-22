@@ -1,3 +1,7 @@
+# ----------- #
+# .gitmodules #
+# ----------- #
+
 [submodule "submodules/dotbot"]
 	path = submodules/dotbot
 	url = https://github.com/anishathalye/dotbot
@@ -8,3 +12,5 @@
 [submodule "submodules/neofetch"]
 	path = submodules/neofetch
 	url = https://github.com/dylanaraps/neofetch.git
+
+# EOF #
