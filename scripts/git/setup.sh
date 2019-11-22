@@ -12,7 +12,7 @@
 # COLOR CONSTANTS #
 ###################
 
-# RED='\033[0;31m'
+RED='\033[0;31m'
 GREEN='\033[0;32m'
 # BROWN='\033[0;33m'
 # BLUE='\033[0;34m'
@@ -43,14 +43,16 @@ printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
 # Check git is installed
 
 if ! [ -x "$(command -v git)" ]; then
-  echo 'Error: git is not installed.' >&2
+  # echo 'Error: git is not installed.' >&2
+  printf "\n ${RED}Error:${NC} git is not installed.\n\n" # >&2
   exit 1
 fi
 
 # TODO: Check if diff-so-fancy is installed
 
 if ! [ -x "$(command -v gitt)" ]; then
-  echo 'Error: gitt is not installed.' >&2
+  # echo 'Error: gitt is not installed.' >&2
+  printf "\n ${RED}Error:${NC} gitt is not installed.\n\n" # >&2
   exit 1
 fi
 
