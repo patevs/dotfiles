@@ -27,7 +27,7 @@ NC='\033[0m' # No Color
 
 BACKGROUND_GREEN='\033[42m'
 BACKGROUND_BLUE='\033[44m'
-# BACKGROUND_PURPLE='\033[45m'
+BACKGROUND_PURPLE='\033[45m'
 # BOLD='\033[1m'
 
 # clear
@@ -35,26 +35,29 @@ BACKGROUND_BLUE='\033[44m'
 printf "\n ---- ${GREEN}git/setup.sh${NC} ---- \n"
 printf "\n ${BACKGROUND_BLUE} Git Global Configuration Setup Script ${NC} \n"
 
-printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
+printf "\n ${CYAN}Checking Requirements...${NC}\n"
 
 # Check command exists:
 # `command -v <the_command>`
 
 # Check git is installed
-
 if ! [ -x "$(command -v git)" ]; then
   # echo 'Error: git is not installed.' >&2
   printf "\n ${RED}Error:${NC} git is not installed.\n\n" # >&2
   exit 1
 fi
 
+# Print git version
+printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
+git --version
+
 # TODO: Check if diff-so-fancy is installed
 
-if ! [ -x "$(command -v gitt)" ]; then
+# if ! [ -x "$(command -v gitt)" ]; then
   # echo 'Error: gitt is not installed.' >&2
-  printf "\n ${RED}Error:${NC} gitt is not installed.\n\n" # >&2
-  exit 1
-fi
+  # printf "\n ${RED}Error:${NC} gitt is not installed.\n\n" # >&2
+  # exit 1
+# fi
 
 printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Setting Git Global Configuration...${NC}\n"
 
@@ -63,7 +66,7 @@ printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Setting Git Global Configu
 ###############
 
 # Set Username and email
-printf "\n  ${BACKGROUND_GREEN} Setting Username and Email: ${NC}\n\n"
+printf "\n  ${BACKGROUND_GREEN} Setting Username and Email ${NC}\n"
 
 git config --global user.email "ppevans11@gmail.com"
 git config --global user.name "PatEvs"
@@ -86,7 +89,7 @@ git config --global github.user "PatEvs"
 # git config --global color.diff.whitespace "red reverse"
 
 # Print git global configuration
-printf "\n ${LIGHT_GREEN} Git Global Configuration: ${NC}\n"
+printf "\n ${LIGHT_GREEN} Git Global Configuration: ${NC}\n\n"
 
 git config --global --list
 
