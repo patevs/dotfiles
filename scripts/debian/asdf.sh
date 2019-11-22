@@ -21,7 +21,7 @@
 ###################
 
 RED='\033[0;31m'
-GREEN='\033[0;32m'
+# GREEN='\033[0;32m'
 # BROWN='\033[0;33m'
 # BLUE='\033[0;34m'
 # PURPLE='\033[0;35m'
@@ -33,8 +33,8 @@ GREEN='\033[0;32m'
 # LIGHT_CYAN='\033[1;36m'
 NC='\033[0m' # No Color
 
-# BACKGROUND_GREEN='\033[42m'
-BACKGROUND_BLUE='\033[44m'
+BACKGROUND_GREEN='\033[42m'
+# BACKGROUND_BLUE='\033[44m'
 # BACKGROUND_PURPLE='\033[45m'
 # BOLD='\033[1m'
 
@@ -43,9 +43,7 @@ BACKGROUND_BLUE='\033[44m'
 ################
 
 # clear
-
-printf "\n ---- ${GREEN}debain/asdf.sh${NC} ---- \n"
-printf "\n ${BACKGROUND_BLUE} asdf install script ${NC} \n"
+printf "\n ${BACKGROUND_GREEN} asdf-vm install script ${NC} \n"
 
 ####################
 # HELPER FUNCTIONS #
