@@ -30,6 +30,18 @@ BACKGROUND_BLUE='\033[44m'
 BACKGROUND_PURPLE='\033[45m'
 # BOLD='\033[1m'
 
+####################
+# HELPER FUNCTIONS #
+####################
+
+install_diff_so_fancy () {
+  printf "\n  ${BACKGROUND_GREEN} Installing diff-so-fancy... ${NC}\n"
+}
+
+######################
+# CHECK REQUIREMENTS #
+######################
+
 # clear
 
 printf "\n ---- ${GREEN}git/setup.sh${NC} ---- \n"
@@ -54,8 +66,11 @@ git --version
 # Check diff-so-fancy is installed
 if ! [ -x "$(command -v diff-so-fancy)" ]; then
   printf "\n ${RED}Error:${NC} diff-so-fancy is not installed.\n\n" # >&2
-  exit 1
+  # exit 1
+  install_diff_so_fancy
 fi
+
+install_diff_so_fancy
 
 printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Setting Git Global Configuration...${NC}\n"
 
