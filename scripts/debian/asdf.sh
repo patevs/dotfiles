@@ -49,42 +49,26 @@ printf "\n ${BACKGROUND_GREEN} asdf-vm install script ${NC} \n"
 # HELPER FUNCTIONS #
 ####################
 
-# Examples
-
-# Setting a return status for a function
-# print_something () {
-#   echo Hello $1
-#   return 5
-# }
-# print_something Mars
-# print_something Jupiter
-# echo The previous function has a return value of $?
-
-# function_name () {
-#    echo "Parameter #1 is $1"
-# }
-# function_name "$arg1" "$arg2"
-
-# TODO: Create a helper function for checking commands exist
-
+# Helper function for checking a given command exist
+# TODO: Output command version if exists
 command_exists () {
-    echo "arg: $1"
+    # echo "arg: $1"
+    if ! [ -x "$(command -v $1)" ]; then
+        printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
+        exit 1
+    fi
 }
-
-command_exists "git"
 
 ######################
 # CHECK REQUIREMENTS #
 ######################
 
 # printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
-# printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
 
 # Ensure git is installed
-if ! [ -x "$(command -v git)" ]; then
-  printf "\n ${RED}Error:${NC} git is not installed.\n\n" # >&2
-  exit 1
-fi
+command_exists "git"
+
+# printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing asdf-vm...${NC}\n"
 
 #################
 # BEGIN INSTALL #
