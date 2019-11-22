@@ -17,7 +17,7 @@ GREEN='\033[0;32m'
 # BROWN='\033[0;33m'
 # BLUE='\033[0;34m'
 # PURPLE='\033[0;35m'
-# CYAN='\033[0;36m'
+CYAN='\033[0;36m'
 
 LIGHT_GREEN='\033[1;32m'
 # LIGHT_BLUE='\033[1;34m'
@@ -35,19 +35,30 @@ BACKGROUND_BLUE='\033[44m'
 printf "\n ---- ${GREEN}git/setup.sh${NC} ---- \n"
 printf "\n ${BACKGROUND_BLUE} Git Global Configuration Setup Script ${NC} \n"
 
-# printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
+printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
 
-# TODO: Check git is installed
+# Check command exists:
+# `command -v <the_command>`
+
+# Check git is installed
+
+if ! [ -x "$(command -v git)" ]; then
+  echo 'Error: git is not installed.' >&2
+  exit 1
+fi
 
 # TODO: Check if diff-so-fancy is installed
 
-# printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
+if ! [ -x "$(command -v gitt)" ]; then
+  echo 'Error: gitt is not installed.' >&2
+  exit 1
+fi
+
+printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Setting Git Global Configuration...${NC}\n"
 
 ###############
 # BEGIN SETUP #
 ###############
-
-printf "\n ${BACKGROUND_BLUE} Setting Git Global Configuration ${NC} \n"
 
 # Set Username and email
 printf "\n  ${BACKGROUND_GREEN} Setting Username and Email: ${NC}\n\n"
