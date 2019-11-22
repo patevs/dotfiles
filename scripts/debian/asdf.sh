@@ -4,7 +4,17 @@
 # scripts/debian/asdf.sh #
 # ---------------------- #
 
-# Bash script for installing asdf and various plugins.
+# Bash script for installing asdf-vm CLI tool.
+
+# Resources:
+#   https://github.com/asdf-vm/asdf
+#
+#   Installation:
+#       https://asdf-vm.com/#/core-manage-asdf-vm
+#   Command List:
+#       https://asdf-vm.com/#/core-commands
+#   Plugin List
+#       https://asdf-vm.com/#/plugins-all
 
 ###################
 # COLOR CONSTANTS #
