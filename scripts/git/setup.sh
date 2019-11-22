@@ -39,11 +39,43 @@ printf "\n ${BACKGROUND_BLUE} Git Global Configuration Setup Script ${NC} \n"
 
 # TODO: Check git is installed
 
+# TODO: Check if diff-so-fancy is installed
+
 # printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
 
 ###############
 # BEGIN SETUP #
 ###############
+
+# ECHO. & ECHO  [44m Setting Git Global Configuration [0m & ECHO.
+
+# Set Username and email
+# ECHO [92m Setting Username and Email. [0m & ECHO.
+
+# CALL git config --global user.email "ppevans11@gmail.com"
+# CALL git config --global user.name "PatEvs"
+# CALL git config --global github.user "PatEvs"
+
+# Set git-diff ui colors and configuration
+# ECHO [92m Setting git-diff UI Color and Configuration. [0m & ECHO.
+
+# CALL git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+# CALL git config --global color.ui true
+# CALL git config --global color.diff-highlight.oldNormal    "red bold"
+# CALL git config --global color.diff-highlight.oldHighlight "red bold 52"
+# CALL git config --global color.diff-highlight.newNormal    "green bold"
+# CALL git config --global color.diff-highlight.newHighlight "green bold 22"
+# CALL git config --global color.diff.meta       "11"
+# CALL git config --global color.diff.frag       "magenta bold"
+# CALL git config --global color.diff.commit     "yellow bold"
+# CALL git config --global color.diff.old        "red bold"
+# CALL git config --global color.diff.new        "green bold"
+# CALL git config --global color.diff.whitespace "red reverse"
+
+# Print git global configuration
+# ECHO [44m Git Global Configuration: [0m & ECHO.
+
+# CALL git config --global --list
 
 # ...
 
