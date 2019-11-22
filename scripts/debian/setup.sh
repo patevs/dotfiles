@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # ----------------------- #
-# scripts/debain/setup.sh #
+# scripts/debian/setup.sh #
 # ----------------------- #
 
-# Bash script setting up a fresh debain/ubuntu installation.
+# Bash script setting up a fresh debian/ubuntu installation.
 # NOTE: This script must be run as sudo
 
 # TODO: Ensure we are running as sudo
