@@ -51,6 +51,8 @@ printf "\n ${BACKGROUND_BLUE} asdf install script ${NC} \n"
 # HELPER FUNCTIONS #
 ####################
 
+# Examples
+
 # Setting a return status for a function
 # print_something () {
 #   echo Hello $1
@@ -60,7 +62,18 @@ printf "\n ${BACKGROUND_BLUE} asdf install script ${NC} \n"
 # print_something Jupiter
 # echo The previous function has a return value of $?
 
+# function_name () {
+#    echo "Parameter #1 is $1"
+# }
+# function_name "$arg1" "$arg2"
+
 # TODO: Create a helper function for checking commands exist
+
+command_exists () {
+    echo "arg: $1"
+}
+
+command_exists "git"
 
 ######################
 # CHECK REQUIREMENTS #
