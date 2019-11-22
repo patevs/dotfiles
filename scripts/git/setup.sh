@@ -51,13 +51,11 @@ fi
 printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
 git --version
 
-# TODO: Check if diff-so-fancy is installed
-
-# if ! [ -x "$(command -v gitt)" ]; then
-  # echo 'Error: gitt is not installed.' >&2
-  # printf "\n ${RED}Error:${NC} gitt is not installed.\n\n" # >&2
-  # exit 1
-# fi
+# Check diff-so-fancy is installed
+if ! [ -x "$(command -v diff-so-fancy)" ]; then
+  printf "\n ${RED}Error:${NC} diff-so-fancy is not installed.\n\n" # >&2
+  exit 1
+fi
 
 printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Setting Git Global Configuration...${NC}\n"
 
