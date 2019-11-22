@@ -4,7 +4,7 @@
 # scripts/debain/setup.sh #
 # ----------------------- #
 
-# Bash script for installing and setting up a fresh debain/ubuntu box.
+# Bash script setting up a fresh debain/ubuntu installation.
 # NOTE: This script must be run as sudo
 
 # TODO: Ensure we are running as sudo
@@ -89,7 +89,7 @@ printf "\n ${LIGHT_GREEN} Curl Install Complete! ${NC}\n"
 
 # ---------------------------------------------------------------------------------- #
 
-printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM) Package and Lastest NodeJS/NPM: ${NC}\n\n"
+printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Version Manager (NVM) Package, Latest LTS NodeJS, and Latest NPM: ${NC}\n\n"
 
 # https://github.com/nvm-sh/nvm
 
@@ -122,8 +122,29 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 # Equivilent to: 
 # curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
+# Enable pyenv by adding the following to ~/.bashrc
+# export PATH="/home/pat/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+
 # Restart shell
 # exec $SHELL
+
+# Install pyenv requirements
+
+# c compiler
+# sudo apt --assume-yes install gcc
+# GNU readline
+# sudo apt --assume-yes install libreadline-dev
+# openssl < 1.1 requires:
+# sudo apt install libcurl3
+# sudo apt install libcurl-openssl1.0-dev
+# bzip2
+# install: libbz2-dev
+# OR install: lbzip2
+
+# Check pyenv installation
+# pyenv doctor
 
 # Install python
 # pyenv install 3.7.5
@@ -141,7 +162,9 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
 # rbenv , ruby , gem , bundler , rails
 
+# https://github.com/rbenv/rbenv
 # https://github.com/rbenv/rbenv-installer
+# https://github.com/rbenv/ruby-build
 
 # ---------------------------------------------------------------------------------- #
 
