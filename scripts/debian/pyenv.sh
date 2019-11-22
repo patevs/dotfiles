@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ----------------------- #
-# scripts/debain/pyenv.sh #
+# scripts/debian/pyenv.sh #
 # ----------------------- #
 
 # Bash script for installing pyenv.
