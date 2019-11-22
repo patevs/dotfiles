@@ -12,10 +12,6 @@
 
 - link:
     # ~/.dotfiles: ''
-    # ~/.bash-git-prompt:
-    #     path: bash/bash-git-prompt
-    #     relink: true
-    #     force: true
     ~/.bash_aliases:
         path: config/bash/.bash_aliases
     ~/.bashrc:
