@@ -34,9 +34,21 @@ BACKGROUND_PURPLE='\033[45m'
 # HELPER FUNCTIONS #
 ####################
 
+# Setting a return status for a function
+# print_something () {
+#   echo Hello $1
+#   return 5
+# }
+# print_something Mars
+# print_something Jupiter
+# echo The previous function has a return value of $?
+
 install_diff_so_fancy () {
   printf "\n  ${BACKGROUND_GREEN} Installing diff-so-fancy... ${NC}\n"
+  # TODO: Check Perl, NodeJS, and NPM are installed
 }
+
+# TODO: Create a helper function for checking commands exist
 
 ######################
 # CHECK REQUIREMENTS #
@@ -48,9 +60,6 @@ printf "\n ---- ${GREEN}git/setup.sh${NC} ---- \n"
 printf "\n ${BACKGROUND_BLUE} Git Global Configuration Setup Script ${NC} \n"
 
 printf "\n ${CYAN}Checking Requirements...${NC}\n"
-
-# Check command exists:
-# `command -v <the_command>`
 
 # Check git is installed
 if ! [ -x "$(command -v git)" ]; then
@@ -66,11 +75,8 @@ git --version
 # Check diff-so-fancy is installed
 if ! [ -x "$(command -v diff-so-fancy)" ]; then
   printf "\n ${RED}Error:${NC} diff-so-fancy is not installed.\n\n" # >&2
-  # exit 1
   install_diff_so_fancy
 fi
-
-install_diff_so_fancy
 
 printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Setting Git Global Configuration...${NC}\n"
 
