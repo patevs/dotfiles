@@ -20,7 +20,7 @@
 # COLOR CONSTANTS #
 ###################
 
-# RED='\033[0;31m'
+RED='\033[0;31m'
 GREEN='\033[0;32m'
 # BROWN='\033[0;33m'
 # BLUE='\033[0;34m'
@@ -47,11 +47,42 @@ BACKGROUND_BLUE='\033[44m'
 printf "\n ---- ${GREEN}debain/asdf.sh${NC} ---- \n"
 printf "\n ${BACKGROUND_BLUE} asdf install script ${NC} \n"
 
+####################
+# HELPER FUNCTIONS #
+####################
+
+# Setting a return status for a function
+# print_something () {
+#   echo Hello $1
+#   return 5
+# }
+# print_something Mars
+# print_something Jupiter
+# echo The previous function has a return value of $?
+
+# TODO: Create a helper function for checking commands exist
+
 ######################
 # CHECK REQUIREMENTS #
 ######################
 
 # printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
 # printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
+
+# Ensure git is installed
+if ! [ -x "$(command -v git)" ]; then
+  printf "\n ${RED}Error:${NC} git is not installed.\n\n" # >&2
+  exit 1
+fi
+
+#################
+# BEGIN INSTALL #
+#################
+
+# Clone the asdf repo and checkout the latest branch:
+
+# git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+# cd ~/.asdf
+# git checkout "$(git describe --abbrev=0 --tags)"
 
 # EOF #
