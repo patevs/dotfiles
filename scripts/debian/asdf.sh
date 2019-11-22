@@ -4,7 +4,7 @@
 # scripts/debian/asdf.sh #
 # ---------------------- #
 
-# Bash script for installing and various plugins.
+# Bash script for installing asdf and various plugins.
 
 ###################
 # COLOR CONSTANTS #
