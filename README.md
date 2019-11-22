@@ -52,7 +52,6 @@
 |       +-- profiles.json
 +-- scripts
 +-- submodules
-+-- themes
 +-- .editorconfig
 +-- .gitmodules
 +-- install
