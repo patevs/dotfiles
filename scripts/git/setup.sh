@@ -46,11 +46,11 @@ command_exists () {
     # Check command exists
     if ! [ -x "$(command -v $1)" ]; then
         printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
-        exit 1
-        # return false
-    # else
+        # exit 1
+        return 1
+    else
       # printf "\n ${GREEN} $1 ${NC} command exists!"
-      # return true
+      return 0
     fi
 }
 
@@ -69,6 +69,10 @@ printf "\n ${CYAN}Checking System Requirements...${NC}\n"
 # Check git is installed
 # TODO: install git if not installed
 command_exists "git"
+
+if ! [ command_exists "git" ]; then
+  printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
+fi
 
 # Print git version
 printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
