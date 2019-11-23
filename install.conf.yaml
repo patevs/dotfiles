@@ -44,21 +44,21 @@
 - vscode:
     dbaeumer.vscode-eslint:
         status: install
-        insiders: true
+        # insiders: true
     eamodio.gitlens:
-        status: uninstall
-        insiders: true
+        status: install
+        # insiders: true
     eg2.tslint:
         status: install
-        insiders: false
+        # insiders: false
 
-- vscodefile:
-    file: Vscodefile
-    insiders: true
+# - vscodefile:
+    # file: Vscodefile
+    # insiders: true
 
-- vscodefile:
-    file: Vscodefile
-    insiders: false
+# - vscodefile:
+    # file: Vscodefile
+    # insiders: false
 
 
 # EOF #
