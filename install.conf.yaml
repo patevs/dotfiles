@@ -3,6 +3,11 @@
 # install.conf.yaml #
 # ----------------- #
 
+# Configuration for dotbot
+
+# https://github.com/anishathalye/dotbot
+# https://github.com/hujianxin/dotbot-vscode
+
 - defaults:
     link:
         relink: true
