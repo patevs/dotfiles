@@ -25,9 +25,9 @@ RED='\033[0;31m'
 # BROWN='\033[0;33m'
 # BLUE='\033[0;34m'
 # PURPLE='\033[0;35m'
-# CYAN='\033[0;36m'
+CYAN='\033[0;36m'
 
-# LIGHT_GREEN='\033[1;32m'
+LIGHT_GREEN='\033[1;32m'
 # LIGHT_BLUE='\033[1;34m'
 # LIGHT_PURPLE='\033[1;35m'
 # LIGHT_CYAN='\033[1;36m'
@@ -49,13 +49,13 @@ printf "\n ${BACKGROUND_GREEN} asdf-vm install script ${NC} \n"
 # HELPER FUNCTIONS #
 ####################
 
-# Helper function for checking a given command exist
-# TODO: Output command version if exists
+# Helper function used for checking a given command exist
 command_exists () {
     # echo "arg: $1"
     if ! [ -x "$(command -v $1)" ]; then
         printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
         exit 1
+        # ? return bool value instead of exiting
     fi
 }
 
@@ -63,18 +63,20 @@ command_exists () {
 # CHECK REQUIREMENTS #
 ######################
 
-# printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
+printf "\n ${CYAN}Checking System Requirements...${NC}\n\n"
 
 # Ensure git is installed
 command_exists "git"
 
-# printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing asdf-vm...${NC}\n"
+printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing asdf-vm...${NC}\n"
 
 #################
 # BEGIN INSTALL #
 #################
 
 # Clone the asdf repo and checkout the latest branch:
+
+# TODO: Complete this...
 
 # git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 # cd ~/.asdf
