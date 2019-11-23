@@ -2,15 +2,18 @@
 # .gitmodules #
 # ----------- #
 
-[submodule "submodules/dotbot"]
-	path = submodules/dotbot
-	url = https://github.com/anishathalye/dotbot
-	ignore = dirty
-[submodule "submodules/winfetch"]
-	path = submodules/winfetch
+[submodule "tools/dotbot"]
+	path = tools/dotbot
+	url = https://github.com/anishathalye/dotbot.git
+    ignore = dirty
+[submodule "tools/winfetch"]
+	path = tools/winfetch
 	url = https://github.com/lptstr/winfetch.git
-[submodule "submodules/neofetch"]
-	path = submodules/neofetch
+[submodule "tools/neofetch"]
+	path = tools/neofetch
 	url = https://github.com/dylanaraps/neofetch.git
 
 # EOF #
+[submodule "tools/dotbot-vscode"]
+	path = tools/dotbot-vscode
+	url = https://github.com/hujianxin/dotbot-vscode.git

@@ -3,6 +3,11 @@
 # install.conf.yaml #
 # ----------------- #
 
+# Configuration for dotbot
+
+# https://github.com/anishathalye/dotbot
+# https://github.com/hujianxin/dotbot-vscode
+
 - defaults:
     link:
         relink: true
@@ -24,6 +29,36 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+#    - chsh -s $(which zsh)
+#    - [chsh -s $(which zsh), Making zsh the default shell]
+#    -
+#        command: read var && echo Your variable is $var
+#        stdin: true
+#        stdout: true
+#        description: Reading and printing variable
+#        quiet: true
+#    -
+#        command: read fail
+#        stderr: true
+
+- vscode:
+    dbaeumer.vscode-eslint:
+        status: install
+        insiders: true
+    eamodio.gitlens:
+        status: uninstall
+        insiders: true
+    eg2.tslint:
+        status: install
+        insiders: false
+
+- vscodefile:
+    file: Vscodefile
+    insiders: true
+
+- vscodefile:
+    file: Vscodefile
+    insiders: false
 
 
 # EOF #
