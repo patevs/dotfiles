@@ -11,3 +11,6 @@
 [submodule "tools/winfetch"]
 	path = tools/winfetch
 	url = https://github.com/lptstr/winfetch.git
+[submodule "tools/neofetch"]
+	path = tools/neofetch
+	url = https://github.com/dylanaraps/neofetch.git
