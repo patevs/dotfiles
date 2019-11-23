@@ -42,23 +42,35 @@
 #        stderr: true
 
 - vscode:
-    dbaeumer.vscode-eslint:
+    aaron-bond.better-comments:
         status: install
         # insiders: true
-    eamodio.gitlens:
+    codezombiech.gitignore:
         status: install
-        # insiders: true
-    eg2.tslint:
+    CoenraadS.bracket-pair-colorizer-2:
         status: install
-        # insiders: false
+    DavidAnson.vscode-markdownlint:
+        status: install
+    dracula-theme.theme-dracula:
+        status: install
+    Gruntfuggly.todo-tree:
+        status: install
+    riussi.code-stats-vscode:
+        status: install
+    vincaslt.highlight-matching-tag:
+        status: install
+    vscode-icons-team.vscode-icons:
+        status: install
+    WakaTime.vscode-wakatime:
+        status: install
+    yzhang.markdown-all-in-one:
+        status: install
 
+# Generate vscodefile using command:
+#   code --list-extensions > vscodefile
 # - vscodefile:
     # file: Vscodefile
     # insiders: true
-
-# - vscodefile:
-    # file: Vscodefile
-    # insiders: false
 
 
 # EOF #
