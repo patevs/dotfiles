@@ -1,0 +1,16 @@
+# ----------- #
+# .gitmodules #
+# ----------- #
+
+[submodule "submodules/dotbot"]
+	path = submodules/dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule "submodules/winfetch"]
+	path = submodules/winfetch
+	url = https://github.com/lptstr/winfetch.git
+[submodule "submodules/neofetch"]
+	path = submodules/neofetch
+	url = https://github.com/dylanaraps/neofetch.git
+
+# EOF #
