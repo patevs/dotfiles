@@ -141,3 +141,7 @@ $HOME/.asdf/completions/asdf.bash
 
 
 # EOF #
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
