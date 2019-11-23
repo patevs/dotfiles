@@ -8,3 +8,6 @@
     ignore = dirty
 
 # EOF #
+[submodule "tools/winfetch"]
+	path = tools/winfetch
+	url = https://github.com/lptstr/winfetch.git
