@@ -42,12 +42,25 @@ printf "\n ${BACKGROUND_GREEN} Git Global Configuration Setup Script ${NC} \n"
 ####################
 
 # Helper function used for checking a given command exist
-command_exists () {
+command_exists_ () {
     # echo "arg: $1"
     if ! [ -x "$(command -v $1)" ]; then
         printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
         exit 1
         # ? return bool value instead of exiting
+    fi
+}
+
+# Helper function used for checking a given command exist
+command_exists () {
+    # Check command exists
+    if ! [ -x "$(command -v $1)" ]; then
+        printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
+        # command doesnt exist
+        return false
+    else
+      # command exists
+      return true
     fi
 }
 
@@ -64,9 +77,8 @@ install_diff_so_fancy () {
 printf "\n ${CYAN}Checking System Requirements...${NC}\n"
 
 # Check git is installed
-command_exists "git"
-
 # TODO: install git if not installed
+command_exists "git"
 
 # Print git version
 printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
