@@ -8,7 +8,7 @@
 
 set -e
 
-CONFIG="install.conf.yaml"
+CONFIG="config/install.conf.yaml"
 DOTBOT_DIR="tools/dotbot"
 
 DOTBOT_BIN="bin/dotbot"
