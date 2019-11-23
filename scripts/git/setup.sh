@@ -30,50 +30,72 @@ BACKGROUND_BLUE='\033[44m'
 BACKGROUND_PURPLE='\033[45m'
 # BOLD='\033[1m'
 
+################
+# START SCRIPT #
+################
+
+# clear
+printf "\n ${BACKGROUND_GREEN} Git Global Configuration Setup Script ${NC} \n"
+
 ####################
 # HELPER FUNCTIONS #
 ####################
 
-# Setting a return status for a function
-# print_something () {
-#   echo Hello $1
-#   return 5
-# }
-# print_something Mars
-# print_something Jupiter
-# echo The previous function has a return value of $?
-
-install_diff_so_fancy () {
-  printf "\n  ${BACKGROUND_GREEN} Installing diff-so-fancy... ${NC}\n"
-  # TODO: Check Perl, NodeJS, and NPM are installed
+# Helper function used for checking a given command exist
+# https://stackoverflow.com/questions/5431909/returning-a-boolean-from-a-bash-function/5431932
+command_exists () {
+    # Check command exists
+    if ! [ -x "$(command -v $1)" ]; then
+        # exit 1
+        false
+        return
+    else
+      true
+      return
+    fi
 }
 
-# TODO: Create a helper function for checking commands exist
+# Helper function for installing diff-so-fancy
+install_diff_so_fancy () {
+  printf "\n  ${BACKGROUND_GREEN} Installing diff-so-fancy... ${NC}\n"
+  # Check Perl, NodeJS, and NPM are installed
+  if ! command_exists "perl"; then
+    printf "\n ${RED}Error:${NC} Perl is not installed.\n\n" 
+    exit 1
+  fi
+  if ! command_exists "node"; then
+    printf "\n ${RED}Error:${NC} NodeJS is not installed.\n\n" 
+    exit 1
+  fi
+  if ! command_exists "npm"; then
+    printf "\n ${RED}Error:${NC} NPM is not installed.\n\n" 
+    exit 1
+  fi
+  # Install diff-so-fancy
+  npm install --global diff-so-fancy
+}
 
 ######################
 # CHECK REQUIREMENTS #
 ######################
 
-# clear
-
-printf "\n ---- ${GREEN}git/setup.sh${NC} ---- \n"
-printf "\n ${BACKGROUND_BLUE} Git Global Configuration Setup Script ${NC} \n"
-
-printf "\n ${CYAN}Checking Requirements...${NC}\n"
+printf "\n ${CYAN}Checking System Requirements...${NC}\n"
 
 # Check git is installed
-if ! [ -x "$(command -v git)" ]; then
-  # echo 'Error: git is not installed.' >&2
-  printf "\n ${RED}Error:${NC} git is not installed.\n\n" # >&2
+if command_exists "git"; then
+  printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
+  git --version
+else
+  printf "\n ${RED}Error:${NC} Git is not installed.\n\n" # >&2
   exit 1
+  # TODO: Install git
 fi
 
-# Print git version
-printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
-git --version
-
 # Check diff-so-fancy is installed
-if ! [ -x "$(command -v diff-so-fancy)" ]; then
+if command_exists "diff-so-fancy"; then
+  printf "\n ${BACKGROUND_PURPLE} diff-so-fancy installation: ${NC}\n\n"
+  diff-so-fancy --version
+else
   printf "\n ${RED}Error:${NC} diff-so-fancy is not installed.\n\n" # >&2
   install_diff_so_fancy
 fi
@@ -112,6 +134,6 @@ printf "\n ${LIGHT_GREEN} Git Global Configuration: ${NC}\n\n"
 
 git config --global --list
 
-printf "\n ---- ${BACKGROUND_GREEN} DONE! ${NC} ---- \n\n"
+printf "\n ${BACKGROUND_GREEN} DONE! ${NC} \n\n"
 
 # EOF #
