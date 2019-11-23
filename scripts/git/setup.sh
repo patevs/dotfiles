@@ -58,12 +58,21 @@ command_exists () {
 # Helper function for installing diff-so-fancy
 install_diff_so_fancy () {
   printf "\n  ${BACKGROUND_GREEN} Installing diff-so-fancy... ${NC}\n"
-  # TODO: Check Perl, NodeJS, and NPM are installed
-  command_exists "perl"
-  command_exists "node"
-  command_exists "npm"
+  # Check Perl, NodeJS, and NPM are installed
+  if ! command_exists "perl"; then
+    printf "\n ${RED}Error:${NC} Perl is not installed.\n\n" 
+    exit 1
+  fi
+  if ! command_exists "node"; then
+    printf "\n ${RED}Error:${NC} NodeJS is not installed.\n\n" 
+    exit 1
+  fi
+  if ! command_exists "npm"; then
+    printf "\n ${RED}Error:${NC} NPM is not installed.\n\n" 
+    exit 1
+  fi
   # Install diff-so-fancy
-  # npm install --global diff-so-fancy
+  npm install --global diff-so-fancy
 }
 
 ######################
