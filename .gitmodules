@@ -13,7 +13,10 @@
 	path = tools/neofetch
 	url = https://github.com/dylanaraps/neofetch.git
 
+# [submodule "tools/dotbot-vscode"]
+# 	 path = tools/dotbot-vscode
+#	 url = https://github.com/hujianxin/dotbot-vscode.git
+
+
 # EOF #
-[submodule "tools/dotbot-vscode"]
-	path = tools/dotbot-vscode
-	url = https://github.com/hujianxin/dotbot-vscode.git
+
