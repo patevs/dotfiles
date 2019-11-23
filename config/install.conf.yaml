@@ -69,7 +69,7 @@
 # Generate vscodefile using command:
 #   code --list-extensions > vscodefile
 # - vscodefile:
-    # file: Vscodefile
+    # file: vscodefile
     # insiders: true
 
 
