@@ -42,15 +42,16 @@ printf "\n ${BACKGROUND_GREEN} Git Global Configuration Setup Script ${NC} \n"
 ####################
 
 # Helper function used for checking a given command exist
+# https://stackoverflow.com/questions/5431909/returning-a-boolean-from-a-bash-function/5431932
 command_exists () {
     # Check command exists
     if ! [ -x "$(command -v $1)" ]; then
-        printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
         # exit 1
-        return 1
+        false
+        return
     else
-      # printf "\n ${GREEN} $1 ${NC} command exists!"
-      return 0
+      true
+      return
     fi
 }
 
@@ -67,16 +68,13 @@ install_diff_so_fancy () {
 printf "\n ${CYAN}Checking System Requirements...${NC}\n"
 
 # Check git is installed
-# TODO: install git if not installed
-command_exists "git"
-
-if ! [ command_exists "git" ]; then
+if command_exists "git"; then
+  printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
+  git --version
+else
   printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
+  # TODO: Install git
 fi
-
-# Print git version
-printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
-git --version
 
 # Check diff-so-fancy is installed
 command_exists "diff-so-fancy"
