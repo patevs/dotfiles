@@ -72,6 +72,20 @@
     # file: vscodefile
     # insiders: true
 
+# - asdf:
+  # - plugin: python
+    # url: https://github.com/tuvistavie/asdf-python.git
+    # versions:
+      # - 3.7.4
+  # - plugin: nodejs
+    # url: https://github.com/asdf-vm/asdf-nodejs.git
+    # versions:
+      # - 12.10
+  # - plugin: ruby
+    # url: https://github.com/asdf-vm/asdf-ruby.git
+    # versions:
+      # - 2.6.4
+
 
 # EOF #
 
