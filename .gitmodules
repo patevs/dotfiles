@@ -20,3 +20,6 @@
 
 # EOF #
 
+[submodule "tools/dotbot-plugins/dotbot-vscode"]
+	path = tools/dotbot-plugins/dotbot-vscode
+	url = https://github.com/hujianxin/dotbot-vscode.git
