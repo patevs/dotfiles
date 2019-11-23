@@ -64,21 +64,21 @@ install_diff_so_fancy () {
 printf "\n ${CYAN}Checking System Requirements...${NC}\n"
 
 # Check git is installed
-if ! [ -x "$(command -v git)" ]; then
-  # echo 'Error: git is not installed.' >&2
-  printf "\n ${RED}Error:${NC} git is not installed.\n\n" # >&2
-  exit 1
-fi
+command_exists "git"
+
+# TODO: install git if not installed
 
 # Print git version
 printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
 git --version
 
 # Check diff-so-fancy is installed
-if ! [ -x "$(command -v diff-so-fancy)" ]; then
-  printf "\n ${RED}Error:${NC} diff-so-fancy is not installed.\n\n" # >&2
-  install_diff_so_fancy
-fi
+command_exists "diff-so-fancy"
+
+# if ! [ -x "$(command -v diff-so-fancy)" ]; then
+  # printf "\n ${RED}Error:${NC} diff-so-fancy is not installed.\n\n" # >&2
+  # install_diff_so_fancy
+# fi
 
 printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Setting Git Global Configuration...${NC}\n"
 
@@ -114,6 +114,6 @@ printf "\n ${LIGHT_GREEN} Git Global Configuration: ${NC}\n\n"
 
 git config --global --list
 
-printf "\n ---- ${BACKGROUND_GREEN} DONE! ${NC} ---- \n\n"
+printf "\n ${BACKGROUND_GREEN} DONE! ${NC} \n\n"
 
 # EOF #
