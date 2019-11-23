@@ -44,7 +44,6 @@
 - vscode:
     aaron-bond.better-comments:
         status: install
-        # insiders: true
     codezombiech.gitignore:
         status: install
     CoenraadS.bracket-pair-colorizer-2:
@@ -60,8 +59,6 @@
     vincaslt.highlight-matching-tag:
         status: install
     vscode-icons-team.vscode-icons:
-        status: install
-    WakaTime.vscode-wakatime:
         status: install
     yzhang.markdown-all-in-one:
         status: install
