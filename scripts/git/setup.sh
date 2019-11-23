@@ -59,6 +59,11 @@ command_exists () {
 install_diff_so_fancy () {
   printf "\n  ${BACKGROUND_GREEN} Installing diff-so-fancy... ${NC}\n"
   # TODO: Check Perl, NodeJS, and NPM are installed
+  command_exists "perl"
+  command_exists "node"
+  command_exists "npm"
+  # Install diff-so-fancy
+  # npm install --global diff-so-fancy
 }
 
 ######################
@@ -72,17 +77,19 @@ if command_exists "git"; then
   printf "\n ${BACKGROUND_PURPLE} Git installation: ${NC}\n\n"
   git --version
 else
-  printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
+  printf "\n ${RED}Error:${NC} Git is not installed.\n\n" # >&2
+  exit 1
   # TODO: Install git
 fi
 
 # Check diff-so-fancy is installed
-command_exists "diff-so-fancy"
-
-# if ! [ -x "$(command -v diff-so-fancy)" ]; then
-  # printf "\n ${RED}Error:${NC} diff-so-fancy is not installed.\n\n" # >&2
-  # install_diff_so_fancy
-# fi
+if command_exists "diff-so-fancy"; then
+  printf "\n ${BACKGROUND_PURPLE} diff-so-fancy installation: ${NC}\n\n"
+  diff-so-fancy --version
+else
+  printf "\n ${RED}Error:${NC} diff-so-fancy is not installed.\n\n" # >&2
+  install_diff_so_fancy
+fi
 
 printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Setting Git Global Configuration...${NC}\n"
 
