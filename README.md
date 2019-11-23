@@ -1,7 +1,7 @@
 # dotfiles
 
-> Personal system configuration files often refered to as .files along
-> with various setupn and installation utility scripts.
+> Personal system configuration files which are often refered to as .files (dotfiles).
+> Also included are various utility scripts for system setup and configuration automation.
 
 ---
 
