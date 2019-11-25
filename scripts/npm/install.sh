@@ -1,11 +1,11 @@
 #!/bin/sh
 
-# -------------------------------------------- #
-#                npm/install.sh                #
-#                                              #
-# Script to install useful NPM global modules. #
-# Requires NodeJS and NPM to be installed.     #
-# -------------------------------------------- #
+# ---------------------- #
+# scripts/npm/install.sh #
+# ---------------------- #
+
+# Bash script to install useful NPM global modules.
+# Requires NodeJS and NPM to be installed.
 
 ###################
 # COLOR CONSTANTS #
@@ -70,7 +70,7 @@ printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modu
 printf "\n  ${BACKGROUND_GREEN} Installing Git Integration and Utility Modules: ${NC}\n\n"
 
 # https://github.com/TejasQ/add-gitignore
-npm install --global add-gitignore
+# npm install --global add-gitignore
 # https://github.com/so-fancy/diff-so-fancy
 npm install --global diff-so-fancy
 # https://github.com/svhawks/g3l
@@ -89,27 +89,36 @@ npm install --global npm-check-updates
 # https://github.com/ruyadorno/ntl
 npm install --global ntl
 # https://github.com/siddharthkp/cost-of-modules
-npm install --global cost-of-modules
+# npm install --global cost-of-modules
 
 printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n\n"
 
+# License generator
+# https://github.com/plibither8/licensed
+CALL npm install --global licensed
 # Google's website performance test
 # https://github.com/GoogleChrome/lighthouse/
 # npm install --global lighthouse
+# https://github.com/cezaraugusto/mklicense
+CALL npm install --global mklicense
 # Progressive web metrics
 # https://github.com/paulirish/pwmetrics
 # npm install --global pwmetrics
+# https://github.com/jhotmann/node-rename-cli
+CALL npm install --global rename-cli
 
 printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n\n"
 
 # https://github.com/sindresorhus/empty-trash-cli
 npm install --global empty-trash-cli
+# https://github.com/aksakalli/gtop
+CALL npm install --global gtop
 # https://github.com/sindresorhus/trash-cli
 npm install --global trash-cli
 # https://github.com/kevva/wifi-password-cli
 npm install --global wifi-password-cli
 # https://github.com/sindresorhus/open-cli
-npm install --global open-cli
+# npm install --global open-cli
 
 printf "\n ${LIGHT_GREEN} Finished Installing NPM Global Modules!${NC}\n"
 printf "\n  ${BACKGROUND_GREEN} Listing NPM Global Installs: ${NC}\n\n"
