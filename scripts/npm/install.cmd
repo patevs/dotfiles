@@ -259,7 +259,7 @@ CALL npm install --global wifi-password-cli
 :: ---------------------------------------------------------------------------- ::
 
 :: Alternative Package Managers
-:: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
 :: # https://github.com/alexanderGugel/ied
 :: CALL npm install --global ied
@@ -269,7 +269,7 @@ CALL npm install --global wifi-password-cli
 :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
 :: CALL pnpm install --global pnpm
 :: # https://github.com/yarnpkg/yarn
-:: CALL npm install --global yarn
+CALL npm install --global yarn
 
 :: ---------------------------------------------------------------------------- ::
 
