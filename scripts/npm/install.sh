@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # ---------------------- #
 # scripts/npm/install.sh #
@@ -30,44 +30,70 @@ BACKGROUND_BLUE='\033[44m'
 BACKGROUND_PURPLE='\033[45m'
 # BOLD='\033[1m'
 
+################
+# START SCRIPT #
+################
+
 # clear
-# printf "\n ---- ${GREEN}npm/install.sh${NC} ---- \n"
-printf "\n ${BACKGROUND_BLUE} NPM Global Modules Install Script ${NC} \n"
-printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
+printf "\n ${BACKGROUND_GREEN} NPM Global Modules Install Script ${NC} \n"
+
+####################
+# HELPER FUNCTIONS #
+####################
+
+# Verify NodeJS is installed and can be found
+# command -v node >/dev/null 2>&1 || {
+  # echo >&2 "${BACKGROUND_PURPLE}NodeJS${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
+  # printf " ${BACKGROUND_PURPLE} NodeJS ${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
+  # exit 1
+# }
+
+# Helper function used for checking a given command exist
+# https://stackoverflow.com/questions/5431909/returning-a-boolean-from-a-bash-function/5431932
+command_exists () {
+    # Check command exists
+    if ! [ -x "$(command -v $1)" ]; then
+        # exit 1
+        false
+        return
+    else
+      true
+      return
+    fi
+}
 
 #######################
 # VERIFY REQUIREMENTS #
 #######################
 
-# TODO: Check a command_exists helper function
+printf "\n ${CYAN}Checking System Requirements...${NC}\n\n"
 
 # Verify NodeJS is installed and can be found
-command -v node >/dev/null 2>&1 || {
-  # echo >&2 "${BACKGROUND_PURPLE}NodeJS${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
-  printf " ${BACKGROUND_PURPLE} NodeJS ${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
+if command_exists "node"; then
+  printf "\n ${BACKGROUND_PURPLE} NodeJS installation: ${NC}\n\n"
+  # which node # --> prints path to node
+  node --version
+else
+  printf "\n ${RED}Error:${NC} NodeJS is not installed. Exiting...\n\n" # >&2
   exit 1
-}
-printf "  * ${PURPLE}NodeJS${NC} : "
-node --version
-# TODO: print node path
-# which node # --> prints node path
+  # TODO: Install NodeJS
+fi
 
 # Verify NPM is installed and can be found
-command -v npm >/dev/null 2>&1 || {
-  # echo >&2 "${BACKGROUND_PURPLE}NPM${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
-  printf " ${BACKGROUND_PURPLE} NPM ${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
+if command_exists "npm"; then
+  printf "\n ${BACKGROUND_PURPLE} NPM installation: ${NC}\n\n"
+  # which npm # --> prints path to npm
+  npm --version
+else
+  printf "\n ${RED}Error:${NC} NPM is not installed. Exiting...\n\n" # >&2
   exit 1
-}
-printf "  * ${PURPLE}NPM${NC} : "
-npm --version
-# TODO: print npm path
-# which npm # --> prints npm path
+fi
+
+printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
 
 #################
 # BEGIN INSTALL #
 #################
-
-printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
 
 printf "\n  ${BACKGROUND_GREEN} Installing Git Integration and Utility Modules: ${NC}\n\n"
 
@@ -85,36 +111,36 @@ printf "\n  ${BACKGROUND_GREEN} Installing NodeJS Utility Modules: ${NC}\n\n"
 # https://github.com/alanshaw/david
 npm install --global david
 # https://github.com/dylang/npm-check
-npm install --global npm-check
+# npm install --global npm-check
 # https://github.com/tjunnone/npm-check-updates
-npm install --global npm-check-updates
+# npm install --global npm-check-updates
 # https://github.com/ruyadorno/ntl
 npm install --global ntl
 # https://github.com/siddharthkp/cost-of-modules
 # npm install --global cost-of-modules
 
-printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n\n"
+# printf "\n  ${BACKGROUND_GREEN} Installing Development Utility Modules: ${NC}\n\n"
 
 # License generator
 # https://github.com/plibither8/licensed
-CALL npm install --global licensed
+# CALL npm install --global licensed
 # Google's website performance test
 # https://github.com/GoogleChrome/lighthouse/
 # npm install --global lighthouse
 # https://github.com/cezaraugusto/mklicense
-CALL npm install --global mklicense
+# CALL npm install --global mklicense
 # Progressive web metrics
 # https://github.com/paulirish/pwmetrics
 # npm install --global pwmetrics
 # https://github.com/jhotmann/node-rename-cli
-CALL npm install --global rename-cli
+# CALL npm install --global rename-cli
 
 printf "\n  ${BACKGROUND_GREEN} Installing System Utility Modules: ${NC}\n\n"
 
 # https://github.com/sindresorhus/empty-trash-cli
 npm install --global empty-trash-cli
 # https://github.com/aksakalli/gtop
-CALL npm install --global gtop
+# CALL npm install --global gtop
 # https://github.com/sindresorhus/trash-cli
 npm install --global trash-cli
 # https://github.com/kevva/wifi-password-cli
@@ -127,6 +153,6 @@ printf "\n  ${BACKGROUND_GREEN} Listing NPM Global Installs: ${NC}\n\n"
 
 npm list --global --depth=0
 
-printf "\n ---- ${BACKGROUND_GREEN} DONE! ${NC} ---- \n\n"
+printf "\n ${BACKGROUND_GREEN} DONE! ${NC} \n\n"
 
 # EOF #
