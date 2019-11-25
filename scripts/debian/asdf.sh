@@ -56,12 +56,16 @@ printf "\n ${BACKGROUND_GREEN} asdf-vm install script ${NC} \n"
 ####################
 
 # Helper function used for checking a given command exist
+# https://stackoverflow.com/questions/5431909/returning-a-boolean-from-a-bash-function/5431932
 command_exists () {
-    # echo "arg: $1"
+    # Check command exists
     if ! [ -x "$(command -v $1)" ]; then
-        printf "\n ${RED}Error:${NC} $1 is not installed.\n\n" # >&2
-        exit 1
-        # ? return bool value instead of exiting
+        # exit 1
+        false
+        return
+    else
+      true
+      return
     fi
 }
 
@@ -74,6 +78,15 @@ printf "\n ${CYAN}Checking System Requirements...${NC}\n\n"
 # Ensure git is installed
 command_exists "git"
 
+# TODO: install git if not already installed
+
+# Install Required Dependencies
+sudo apt install \
+automake autoconf libreadline-dev \
+libncurses-dev libssl-dev libyaml-dev \
+libxslt-dev libffi-dev libtool unixodbc-dev \
+unzip curl
+
 printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing asdf-vm...${NC}\n"
 
 #################
@@ -82,20 +95,22 @@ printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing asdf-vm...${NC}
 
 # Clone the asdf repo and checkout the latest branch:
 
-# TODO: Complete this...
+printf "\n ${CYAN} Cloning asdf repository...${NC}\n"
 
-# git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-# cd ~/.asdf
-# git checkout "$(git describe --abbrev=0 --tags)"
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+cd ~/.asdf
+git checkout "$(git describe --abbrev=0 --tags)"
 
-# echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
-# echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
+# Update .bashrc file
+printf "\n ${CYAN} Updating .bashrc file...${NC}\n"
 
-# Dependencies
-# sudo apt install \
-#   automake autoconf libreadline-dev \
-#   libncurses-dev libssl-dev libyaml-dev \
-#   libxslt-dev libffi-dev libtool unixodbc-dev \
-#   unzip curl
+echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
+echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
+
+# TODO: Restart shell and check asdf version
+
+printf "\n ${BACKGROUND_GREEN} asdf-vm install script complete! ${NC} \n"
+
 
 # EOF #
+
