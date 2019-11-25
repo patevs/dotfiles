@@ -81,20 +81,26 @@ else
   exit 1
 fi
 
-printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing NPM Global Modules...${NC}\n"
+printf "\n ${LIGHT_GREEN}All Requirements Satisfied! Starting NPM Global Configuration Setup...${NC}\n"
 
 #################
 # BEGIN INSTALL #
 #################
 
-# printf "\n  ${BACKGROUND_GREEN} Installing Git Integration and Utility Modules: ${NC}\n\n"
+printf "\n  ${BACKGROUND_GREEN} Setting NPM Global Configuration ${NC}\n\n"
 
-# ...
+# Set Username and email
+printf "\n ${LIGHT_GREEN}Setting Username and Email...${NC}\n"
 
-# printf "\n ${LIGHT_GREEN} Finished Installing NPM Global Modules!${NC}\n"
-# printf "\n  ${BACKGROUND_GREEN} Listing NPM Global Installs: ${NC}\n\n"
+npm config set --global init.author.email "ppevans11@gmail.com" 
+npm config set --global init.author.name "PatEvs"
+npm config set --global init.author.url "https://github.com/patevs"
+npm config set --global init.license "MIT"
 
-# npm list --global --depth=0
+# Print NPM global configuration
+printf "\n ${LIGHT_GREEN}NPM Global Configuration:${NC}\n"
+
+npm config list --global
 
 printf "\n ${BACKGROUND_GREEN} DONE! ${NC} \n\n"
 
