@@ -96,6 +96,8 @@ printf "\n ${LIGHT_GREEN} All Requirements Satisfied! Installing asdf-vm...${NC}
 # Clone the asdf repo and checkout the latest branch:
 printf "\n ${CYAN} Cloning asdf repository...${NC}\n"
 
+# TODO: remove ~/.asdf directory if exists
+
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 cd ~/.asdf
 git checkout "$(git describe --abbrev=0 --tags)"
@@ -112,9 +114,9 @@ printf "\n ${CYAN} Restarting Shell...${NC}\n"
 exec $SHELL
 
 # Print asdf version
-printf "\n ${CYAN} asdf version: ${NC}\n"
+# printf "\n ${CYAN} asdf version: ${NC}\n"
 
-asdf current
+# asdf current
 
 printf "\n ${BACKGROUND_GREEN} asdf-vm install script complete! ${NC} \n"
 

@@ -12,17 +12,13 @@
 [submodule "tools/neofetch"]
 	path = tools/neofetch
 	url = https://github.com/dylanaraps/neofetch.git
-
-# [submodule "tools/dotbot-vscode"]
-# 	 path = tools/dotbot-vscode
-#	 url = https://github.com/hujianxin/dotbot-vscode.git
+# [submodule "tools/dotbot-plugins/dotbot-vscode"]
+# 	path = tools/dotbot-plugins/dotbot-vscode
+#	url = https://github.com/hujianxin/dotbot-vscode.git
+# [submodule "tools/dotbot-plugins/dotbot-asdf"]
+# 	path = tools/dotbot-plugins/dotbot-asdf
+# 	url = https://github.com/sobolevn/dotbot-asdf.git
 
 
 # EOF #
 
-[submodule "tools/dotbot-plugins/dotbot-vscode"]
-	path = tools/dotbot-plugins/dotbot-vscode
-	url = https://github.com/hujianxin/dotbot-vscode.git
-[submodule "tools/dotbot-plugins/dotbot-asdf"]
-	path = tools/dotbot-plugins/dotbot-asdf
-	url = https://github.com/sobolevn/dotbot-asdf.git

@@ -95,8 +95,8 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # asdf-vm
-$HOME/.asdf/asdf.sh
-$HOME/.asdf/completions/asdf.bash
+# $HOME/.asdf/asdf.sh
+# $HOME/.asdf/completions/asdf.bash
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -141,7 +141,3 @@ $HOME/.asdf/completions/asdf.bash
 
 
 # EOF #
-
-. $HOME/.asdf/asdf.sh
-
-. $HOME/.asdf/completions/asdf.bash
