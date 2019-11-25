@@ -77,9 +77,9 @@ ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
 :: # https://github.com/alanshaw/david
 CALL npm install --global david
 :: # https://github.com/dylang/npm-check
-:: CALL npm install --global npm-check
+CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
-:: CALL npm install --global npm-check-updates
+CALL npm install --global npm-check-updates
 :: # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
@@ -122,7 +122,7 @@ CALL npm install --global ntl
 :: ---------------------------------------------------------------------------- ::
 
 :: Development Utilities
-:: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 :: # https://github.com/kentcdodds/clog-cli
 :: CALL npm install --global clog-cli
@@ -144,14 +144,14 @@ CALL npm install --global ntl
 :: CALL npm install --global jsome
 :: # License generator
 :: # https://github.com/plibither8/licensed
-:: CALL npm install --global licensed
+CALL npm install --global licensed
 :: # Google's website performance test
 :: # https://github.com/GoogleChrome/lighthouse/
 :: CALL npm install --global lighthouse
 :: # https://github.com/voorhoede/lighthouse-security
 :: CALL npm install --global lighthouse-security
 :: # https://github.com/cezaraugusto/mklicense
-:: CALL npm install --global mklicense
+CALL npm install --global mklicense
 ::: # https://github.com/neovim/node-client
 :: CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli
@@ -159,7 +159,7 @@ CALL npm install --global ntl
 :: # https://github.com/release-it/release-it
 :: CALL npm install --global release-it
 :: # https://github.com/jhotmann/node-rename-cli
-:: CALL npm install --global rename-cli
+CALL npm install --global rename-cli
 :: # Progressive web metrics
 :: # https://github.com/paulirish/pwmetrics
 :: CALL npm install --global pwmetrics
@@ -205,7 +205,7 @@ CALL npm install --global empty-trash-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
-:: CALL npm install --global gtop
+CALL npm install --global gtop
 :: # https://github.com/nogizhopaboroda/iponmap
 :: CALL npm install --global iponmap
 :: # https://github.com/sindresorhus/open-cli
@@ -219,7 +219,7 @@ CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/trash-cli
 CALL npm install --global trash-cli
 :: # https://github.com/MrRio/vtop
-:: # NOTE: vtop must be run using sh/bash
+:: # NOTE: vtop must be run using sh/bash. try gtop instead
 :: CALL npm install --global vtop
 :: # https://github.com/riyadhalnur/weather-cli
 :: CALL npm install --global weather-cli
