@@ -39,6 +39,8 @@ printf "\n ${CYAN}Checking Requirements...${NC}\n\n"
 # VERIFY REQUIREMENTS #
 #######################
 
+# TODO: Check a command_exists helper function
+
 # Verify NodeJS is installed and can be found
 command -v node >/dev/null 2>&1 || {
   # echo >&2 "${BACKGROUND_PURPLE}NodeJS${NC} is required but no installation could not be found! ${RED}Aborting${NC}..."
