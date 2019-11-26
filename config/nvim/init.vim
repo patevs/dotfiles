@@ -50,12 +50,29 @@ call plug#begin(stdpath('data') . '/plugged')
 
 " (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" let g:airline_theme='simple'
+let g:airline_theme='dracula.vim'
+
 " Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+
+" Plug 'sheerun/vim-polyglot'
+" Plug 'editorconfig/editorconfig-vim'
+" Plug 'othree/html5.vim'
 
 " Initialize plugin system
 " Remember to run :PlugInstall
 call plug#end()
+
+" filetype plugin on
 
 " NERDTree
 " Open a NERDTree automatically when neovim starts up
