@@ -53,6 +53,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 " Plug 'tpope/vim-sensible'
 " Plug 'mhinz/vim-startify'
+" Plug 'jceb/vim-orgmode'
 
 " Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
@@ -67,10 +68,13 @@ Plug 'airblade/vim-gitgutter'
 " Plug 'Shougo/deoplete.nvim'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Plug 'jiangmiao/auto-pairs'
+
 Plug 'sheerun/vim-polyglot'
 " Plug 'editorconfig/editorconfig-vim'
 " Plug 'othree/html5.vim'
 
+" Plug 'itchyny/lightline.vim'
 " (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
 Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'vim-airline/vim-airline'
