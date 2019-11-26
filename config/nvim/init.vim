@@ -12,6 +12,9 @@
 
 " ----------------------------------------------------------------------- "
 
+" No need to set explicitly as Neovim always uses UTF-8 as the default encoding.
+" set encoding=UTF-8
+
 " Set location to python executables
 " let g:python_host_prog  = '/path/to/python'
 " let g:python3_host_prog  = '/path/to/python3'
@@ -48,13 +51,6 @@ endif
 call plug#begin(stdpath('data') . '/plugged')
 " Make sure you use single quotes
 
-" (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-" let g:airline_theme='simple'
-let g:airline_theme='dracula.vim'
-
 " Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -64,9 +60,17 @@ Plug 'airblade/vim-gitgutter'
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
 
-" Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 " Plug 'editorconfig/editorconfig-vim'
 " Plug 'othree/html5.vim'
+
+" (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" let g:airline_theme='simple'
+" let g:airline_theme='dracula.vim'
+Plug 'ryanoasis/vim-devicons'
 
 " Initialize plugin system
 " Remember to run :PlugInstall
