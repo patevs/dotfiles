@@ -51,12 +51,16 @@ endif
 call plug#begin(stdpath('data') . '/plugged')
 " Make sure you use single quotes
 
+" Plug 'tpope/vim-sensible'
 " Plug 'mhinz/vim-startify'
+
 " Plug 'Shougo/neocomplete.vim'
 " Plug 'ycm-core/YouCompleteMe'
 " Plug 'Shougo/deoplete.nvim'
 
-" Plug 'tpope/vim-sensible'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'majutsushi/tagbar'
+
 Plug 'scrooloose/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'jistr/vim-nerdtree-tabs'
