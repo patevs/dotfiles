@@ -62,13 +62,15 @@ Plug 'scrooloose/nerdtree'
 " Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
-
 " Plug 'Shougo/deoplete.nvim'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
 " Plug 'jiangmiao/auto-pairs'
+
+" Plug 'scrooloose/nerdcommenter
+" Plug 'tpope/vim-commentary'
 
 Plug 'sheerun/vim-polyglot'
 " Plug 'editorconfig/editorconfig-vim'
