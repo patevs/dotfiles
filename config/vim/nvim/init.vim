@@ -54,6 +54,7 @@ call plug#begin(stdpath('data') . '/plugged')
 " Plug 'mhinz/vim-startify'
 " Plug 'Shougo/neocomplete.vim'
 " Plug 'ycm-core/YouCompleteMe'
+" Plug 'Shougo/deoplete.nvim'
 
 " Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
