@@ -51,6 +51,10 @@ endif
 call plug#begin(stdpath('data') . '/plugged')
 " Make sure you use single quotes
 
+" Plug 'mhinz/vim-startify'
+" Plug 'Shougo/neocomplete.vim'
+" Plug 'ycm-core/YouCompleteMe'
+
 " Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -90,7 +94,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " ----------------------------------------------------------------------- "
 
 " echo "Hello Pat!"
-" let name = "John"
+" let name = "Pat"
 " echo "Hello, " . name
 
 
