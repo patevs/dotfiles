@@ -54,20 +54,18 @@ call plug#begin(stdpath('data') . '/plugged')
 " Plug 'tpope/vim-sensible'
 " Plug 'mhinz/vim-startify'
 
-" Plug 'Shougo/neocomplete.vim'
-" Plug 'ycm-core/YouCompleteMe'
-" Plug 'Shougo/deoplete.nvim'
-
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'majutsushi/tagbar'
-
 Plug 'scrooloose/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'jistr/vim-nerdtree-tabs'
 " Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
+
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'sheerun/vim-polyglot'
 " Plug 'editorconfig/editorconfig-vim'
