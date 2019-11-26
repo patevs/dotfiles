@@ -44,7 +44,7 @@ call plug#begin(stdpath('data') . '/plugged')
 " (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
 " Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'tpope/vim-sensible'
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 
 " Initialize plugin system
 " Remember to run :PlugInstall
@@ -55,8 +55,8 @@ call plug#end()
 " autocmd vimenter * NERDTree
 
 " Open a NERDTree automatically when neovim starts up if no files were specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Note: Now start neovim with plain nvim, not nvim .
 
 " ----------------------------------------------------------------------- "
