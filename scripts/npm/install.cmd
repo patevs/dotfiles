@@ -80,6 +80,8 @@ CALL npm install --global david
 CALL npm install --global npm-check
 :: # https://github.com/tjunnone/npm-check-updates
 CALL npm install --global npm-check-updates
+:: # https://github.com/sculove/nti
+:: CALL npm install --global nti
 :: # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules

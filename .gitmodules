@@ -22,3 +22,6 @@
 
 # EOF #
 
+[submodule "tools/onefetch"]
+	path = tools/onefetch
+	url = https://github.com/o2sh/onefetch.git
