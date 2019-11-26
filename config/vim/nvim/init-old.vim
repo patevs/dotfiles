@@ -18,6 +18,9 @@ call plug#begin(stdpath('data') . '/plugged')
 " https://github.com/tpope/vim-sensible
 " Plug 'tpope/vim-sensible'
 
+" Plug 'Shougo/neocomplete.vim'
+" Plug 'ycm-core/YouCompleteMe'
+
 " https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree'
 " https://github.com/Xuyuanp/nerdtree-git-plugin

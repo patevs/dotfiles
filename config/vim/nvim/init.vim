@@ -51,23 +51,32 @@ endif
 call plug#begin(stdpath('data') . '/plugged')
 " Make sure you use single quotes
 
-" Plug 'mhinz/vim-startify'
-" Plug 'Shougo/neocomplete.vim'
-" Plug 'ycm-core/YouCompleteMe'
-
 " Plug 'tpope/vim-sensible'
+" Plug 'mhinz/vim-startify'
+" Plug 'jceb/vim-orgmode'
+
+" Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'jistr/vim-nerdtree-tabs'
 " Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
+" Plug 'jiangmiao/auto-pairs'
+
+" Plug 'scrooloose/nerdcommenter
+" Plug 'tpope/vim-commentary'
 
 Plug 'sheerun/vim-polyglot'
 " Plug 'editorconfig/editorconfig-vim'
 " Plug 'othree/html5.vim'
 
+" Plug 'itchyny/lightline.vim'
 " (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
 Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'vim-airline/vim-airline'
