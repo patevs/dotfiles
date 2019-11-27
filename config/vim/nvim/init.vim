@@ -54,13 +54,6 @@ call plug#begin(stdpath('data') . '/plugged')
 " Plug 'mhinz/vim-startify'
 " Plug 'jceb/vim-orgmode'
 
-" Plug 'majutsushi/tagbar'
-Plug 'scrooloose/nerdtree'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'jistr/vim-nerdtree-tabs'
-" Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -80,6 +73,14 @@ endif
 Plug 'sheerun/vim-polyglot'
 " Plug 'editorconfig/editorconfig-vim'
 " Plug 'othree/html5.vim'
+
+" Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/vim-gitbranch'
 
 Plug 'itchyny/lightline.vim'
 " (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
@@ -118,6 +119,17 @@ let g:deoplete#enable_at_startup = 1
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
+
+" let g:lightline = {
+"       \ 'colorscheme': 'wombat',
+"       \ 'active': {
+"       \   'left': [ [ 'mode', 'paste' ],
+"       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+"       \ },
+"       \ 'component_function': {
+"       \   'gitbranch': 'gitbranch#name'
+"       \ },
+"       \ }
 
 " ----------------------------------------------------------------------- "
 
