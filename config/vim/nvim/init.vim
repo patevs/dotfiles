@@ -115,11 +115,7 @@ let g:deoplete#enable_at_startup = 1
 
 " ----------------------------------------------------------------------- "
 
-" Set lightline theme
-" let g:lightline = {
-"       \ 'colorscheme': 'wombat',
-"       \ }
-
+" Set lightline configuration
 let g:lightline = {
       \ 'colorscheme': 'powerline',
       \ 'active': {
@@ -130,6 +126,9 @@ let g:lightline = {
       \   'gitbranch': 'gitbranch#name'
       \ },
       \ }
+
+" Dont show `-- INSERT --` because the mode information is displayed in the statusline. 
+set noshowmode
 
 " ----------------------------------------------------------------------- "
 
