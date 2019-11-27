@@ -116,13 +116,13 @@ call plug#begin(stdpath('data') . '/plugged')
 " Plug 'jceb/vim-orgmode'
 " Plug 'chrisbra/unicode.vim', {'on': ['UnicodeName', 'UnicodeTable']}
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+" if has('nvim')
+"   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+"   Plug 'Shougo/deoplete.nvim'
+"   Plug 'roxma/nvim-yarp'
+"   Plug 'roxma/vim-hug-neovim-rpc'
+" endif
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Plug 'SirVer/ultisnips'
@@ -161,7 +161,7 @@ call plug#end()
 " ----------------------------------------------------------------------- "
 
 " Enable deplete plugin
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 
 " ----------------------------------------------------------------------- "
 
