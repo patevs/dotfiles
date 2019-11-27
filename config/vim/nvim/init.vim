@@ -116,20 +116,20 @@ let g:deoplete#enable_at_startup = 1
 " ----------------------------------------------------------------------- "
 
 " Set lightline theme
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
-
 " let g:lightline = {
 "       \ 'colorscheme': 'wombat',
-"       \ 'active': {
-"       \   'left': [ [ 'mode', 'paste' ],
-"       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-"       \ },
-"       \ 'component_function': {
-"       \   'gitbranch': 'gitbranch#name'
-"       \ },
 "       \ }
+
+let g:lightline = {
+      \ 'colorscheme': 'powerline',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ }
 
 " ----------------------------------------------------------------------- "
 
