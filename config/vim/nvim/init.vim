@@ -114,6 +114,13 @@ let g:deoplete#enable_at_startup = 1
 
 " ----------------------------------------------------------------------- "
 
+" Set lightline theme
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
+" ----------------------------------------------------------------------- "
+
 " echo "Hello Pat!"
 " let name = "Pat"
 " echo "Hello, " . name
