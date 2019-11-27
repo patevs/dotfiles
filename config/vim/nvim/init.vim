@@ -83,7 +83,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/vim-gitbranch'
 
 " (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
-" Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 " let g:airline_theme='simple'
@@ -96,6 +96,11 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " filetype plugin on
+
+" ----------------------------------------------------------------------- "
+
+" Enable deplete plugin
+let g:deoplete#enable_at_startup = 1
 
 " ----------------------------------------------------------------------- "
 
@@ -145,8 +150,23 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " ----------------------------------------------------------------------- "
 
-" Enable deplete plugin
-let g:deoplete#enable_at_startup = 1
+" nerdtree-git-plugin
+" Set custom symbols
+" let g:NERDTreeIndicatorMapCustom = {
+"     \ "Modified"  : "✹",
+"     \ "Staged"    : "✚",
+"     \ "Untracked" : "✭",
+"     \ "Renamed"   : "➜",
+"     \ "Unmerged"  : "═",
+"     \ "Deleted"   : "✖",
+"     \ "Dirty"     : "✗",
+"     \ "Clean"     : "✔︎",
+"     \ 'Ignored'   : '☒',
+"     \ "Unknown"   : "?"
+"     \ }
+
+" Show ignored status (a heavy feature may cost much more time)
+" let g:NERDTreeShowIgnoredStatus = 1
 
 " ----------------------------------------------------------------------- "
 
