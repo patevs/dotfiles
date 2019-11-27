@@ -81,7 +81,7 @@ Plug 'sheerun/vim-polyglot'
 " Plug 'editorconfig/editorconfig-vim'
 " Plug 'othree/html5.vim'
 
-" Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
 " (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
 Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'vim-airline/vim-airline'
