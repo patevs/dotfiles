@@ -16,9 +16,8 @@
 " set encoding=UTF-8
 
 " Set location to python executables
-" let g:python_host_prog  = '/path/to/python'
+let g:python_host_prog  = 'C:\tools\python2\python.exe'
 let g:python3_host_prog  = 'C:\tools\python3\python.exe'
-
 " Enable/disable python support
 " let g:loaded_python_provider = 0
 " let g:loaded_python3_provider = 0
@@ -62,7 +61,13 @@ Plug 'scrooloose/nerdtree'
 " Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-" Plug 'Shougo/deoplete.nvim'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Plug 'SirVer/ultisnips'
@@ -91,6 +96,8 @@ call plug#end()
 
 " filetype plugin on
 
+" ----------------------------------------------------------------------- "
+
 " NERDTree
 " Open a NERDTree automatically when neovim starts up
 " autocmd vimenter * NERDTree
@@ -99,6 +106,11 @@ call plug#end()
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Note: Now start neovim with plain nvim, not nvim .
+
+" ----------------------------------------------------------------------- "
+
+" Enable deplete plugin
+let g:deoplete#enable_at_startup = 1
 
 " ----------------------------------------------------------------------- "
 
