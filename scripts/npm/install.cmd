@@ -60,8 +60,8 @@ CALL npm install --global g3l
 :: # https://github.com/mbostock/gistup
 :: CALL npm install --global gistup
 :: # https://github.com/paulirish/git-open
-:: TODO: Check if hub has this function
-CALL npm install --global git-open
+:: NOTE: Use `hub browse` command instead
+:: CALL npm install --global git-open
 :: # https://github.com/IonicaBizau/git-stats
 :: CALL npm install --global git-stats
 :: # https://github.com/carloscuesta/gitmoji-cli
