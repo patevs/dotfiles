@@ -14,8 +14,9 @@
 
 " Basic Configuration
 
+" filetype plugin on
 filetype plugin indent on  " Load plugins according to detected filetype.
-syntax on                  " Enable syntax highlighting.
+" syntax on                  " Enable syntax highlighting.
 
 set autoindent             " Indent according to previous line.
 set expandtab              " Use spaces instead of tabs.
@@ -26,6 +27,19 @@ set shiftround             " >> indents to next multiple of 'shiftwidth'.
 set backspace   =indent,eol,start  " Make backspace work as you would expect.
 " set hidden                 " Switch between buffers without having to save first.
 
+" display settings
+" set display      +=lastline
+" set laststatus    =2
+" set list
+" set modeline
+" set modelines     =1
+" set nostartofline
+" set numberwidth   =1
+" set ruler
+" set shortmess     =aoOTI
+" set showcmd
+" set showmatch
+" set showmode
 
 " ----------------------------------------------------------------------- "
 
@@ -38,6 +52,23 @@ set backspace   =indent,eol,start  " Make backspace work as you would expect.
 "   set shell=cmd.exe
 "   set shellcmdflag=/c
 "   set encoding=utf-8
+" endif
+
+" ----------------------------------------------------------------------- "
+
+" Neovim Specific Configuration
+
+" if has('nvim')
+"   let $GIT_EDITOR = 'nvr -cc split --remote-wait'
+"   let $ELIXIR_EDITOR = 'nvr -l +__LINE__ __FILE__'
+"   if v:progpath =~# 'build/bin/nvim$'
+    " for build/runtime/syntax/vim/generated.vim
+"     let &runtimepath .= ','.$VIM.'/build/runtime'
+"   endif
+" else
+"   filetype plugin indent on
+"   syntax on
+"   packadd! matchit
 " endif
 
 " ----------------------------------------------------------------------- "
@@ -83,6 +114,7 @@ call plug#begin(stdpath('data') . '/plugged')
 " Plug 'tpope/vim-sensible'
 " Plug 'mhinz/vim-startify'
 " Plug 'jceb/vim-orgmode'
+" Plug 'chrisbra/unicode.vim', {'on': ['UnicodeName', 'UnicodeTable']}
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -99,6 +131,7 @@ endif
 
 " Plug 'scrooloose/nerdcommenter
 " Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-surround'
 
 Plug 'sheerun/vim-polyglot'
 " Plug 'editorconfig/editorconfig-vim'
@@ -124,8 +157,6 @@ Plug 'ryanoasis/vim-devicons'
 " Initialize plugin system
 " Remember to run :PlugInstall
 call plug#end()
-
-" filetype plugin on
 
 " ----------------------------------------------------------------------- "
 
