@@ -15,16 +15,16 @@
 " Basic Configuration
 
 " filetype plugin on
-filetype plugin indent on  " Load plugins according to detected filetype.
+" filetype plugin indent on  " Load plugins according to detected filetype.
 " syntax on                  " Enable syntax highlighting.
 
-set autoindent             " Indent according to previous line.
-set expandtab              " Use spaces instead of tabs.
-set softtabstop =4         " Tab key indents by 4 spaces.
-set shiftwidth  =4         " >> indents by 4 spaces.
-set shiftround             " >> indents to next multiple of 'shiftwidth'.
+" set autoindent             " Indent according to previous line.
+" set expandtab              " Use spaces instead of tabs.
+" set softtabstop =4         " Tab key indents by 4 spaces.
+" set shiftwidth  =4         " >> indents by 4 spaces.
+" set shiftround             " >> indents to next multiple of 'shiftwidth'.
 
-set backspace   =indent,eol,start  " Make backspace work as you would expect.
+" set backspace   =indent,eol,start  " Make backspace work as you would expect.
 " set hidden                 " Switch between buffers without having to save first.
 
 " display settings
@@ -146,7 +146,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/vim-gitbranch'
 
 " (`as` will install the plugin in a directory called 'dracula' instead of just 'vim')
-" Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 " let g:airline_theme='simple'
