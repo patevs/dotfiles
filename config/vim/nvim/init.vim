@@ -12,6 +12,36 @@
 
 " ----------------------------------------------------------------------- "
 
+" Basic Configuration
+
+filetype plugin indent on  " Load plugins according to detected filetype.
+syntax on                  " Enable syntax highlighting.
+
+set autoindent             " Indent according to previous line.
+set expandtab              " Use spaces instead of tabs.
+set softtabstop =4         " Tab key indents by 4 spaces.
+set shiftwidth  =4         " >> indents by 4 spaces.
+set shiftround             " >> indents to next multiple of 'shiftwidth'.
+
+set backspace   =indent,eol,start  " Make backspace work as you would expect.
+" set hidden                 " Switch between buffers without having to save first.
+
+
+" ----------------------------------------------------------------------- "
+
+" OS Specific Configuration
+
+" let s:is_win = has('win32')
+" let $v = $HOME.(s:is_win ? '\vimfiles' : '/.vim')
+
+" if s:is_win
+"   set shell=cmd.exe
+"   set shellcmdflag=/c
+"   set encoding=utf-8
+" endif
+
+" ----------------------------------------------------------------------- "
+
 " No need to set explicitly as Neovim always uses UTF-8 as the default encoding.
 " set encoding=UTF-8
 
