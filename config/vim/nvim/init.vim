@@ -12,6 +12,9 @@
 
 " ----------------------------------------------------------------------- "
 
+" No need to set this explicitly as Neovim always uses UTF-8 as the default encoding.
+" set encoding=UTF-8
+
 " Basic Configuration
 
 " filetype plugin on
@@ -73,12 +76,11 @@
 
 " ----------------------------------------------------------------------- "
 
-" No need to set explicitly as Neovim always uses UTF-8 as the default encoding.
-" set encoding=UTF-8
+" TODO: Check has('python2') & has('python3')
 
 " Set location to python executables
-let g:python_host_prog  = 'C:\tools\python2\python.exe'
-let g:python3_host_prog  = 'C:\tools\python3\python.exe'
+" let g:python_host_prog  = 'C:\tools\python2\python.exe'
+" let g:python3_host_prog  = 'C:\tools\python3\python.exe'
 " Enable/disable python support
 " let g:loaded_python_provider = 0
 " let g:loaded_python3_provider = 0
