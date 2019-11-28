@@ -21,6 +21,11 @@ set encoding=UTF-8
 " We set it explicitely to make our position clear!
 set nocompatible
 
+set autoread " detect when a file is changed
+
+set history=1000 " change history to 1000
+set textwidth=120
+
 " filetype plugin on
 filetype plugin indent on  " Load plugins according to detected filetype.
 syntax on                  " Enable syntax highlighting.
@@ -30,9 +35,14 @@ syntax on                  " Enable syntax highlighting.
 " set softtabstop =4         " Tab key indents by 4 spaces.
 " set shiftwidth  =4         " >> indents by 4 spaces.
 " set shiftround             " >> indents to next multiple of 'shiftwidth'.
-
-" set backspace   =indent,eol,start  " Make backspace work as you would expect.
 " set hidden                 " Switch between buffers without having to save first.
+
+set backspace=indent,eol,start " make backspace behave in a sane manner
+set clipboard=unnamed
+
+if has('mouse')
+    set mouse=a
+endif
 
 " display settings
 
