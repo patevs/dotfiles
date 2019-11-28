@@ -12,14 +12,18 @@
 
 " ----------------------------------------------------------------------- "
 
-" No need to set this explicitly as Neovim always uses UTF-8 as the default encoding.
-" set encoding=UTF-8
-
 " Basic Configuration
 
+" No need to set this explicitly as Neovim always uses UTF-8 as the default encoding.
+set encoding=UTF-8
+
+" You want Vim, not vi. When Vim finds a vimrc, 'nocompatible' is set anyway.
+" We set it explicitely to make our position clear!
+set nocompatible
+
 " filetype plugin on
-" filetype plugin indent on  " Load plugins according to detected filetype.
-" syntax on                  " Enable syntax highlighting.
+filetype plugin indent on  " Load plugins according to detected filetype.
+syntax on                  " Enable syntax highlighting.
 
 " set autoindent             " Indent according to previous line.
 " set expandtab              " Use spaces instead of tabs.
