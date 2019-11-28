@@ -35,8 +35,27 @@ syntax on                  " Enable syntax highlighting.
 " set hidden                 " Switch between buffers without having to save first.
 
 " display settings
-" set display      +=lastline
-" set laststatus    =2
+
+" set laststatus  =2         " Always show statusline.
+" set display     =lastline  " Show as much as possible of the last line.
+
+" set showmode               " Show current mode in command-line.
+" set showcmd                " Show already typed keys when more are expected.
+
+" set incsearch              " Highlight while searching with / or ?.
+" set hlsearch               " Keep matches highlighted.
+
+set ttyfast                " Faster redrawing.
+set lazyredraw             " Only redraw when necessary.
+
+" set splitbelow             " Open new windows below the current window.
+" set splitright             " Open new windows right of the current window.
+
+" set cursorline             " Find the current line quickly.
+" set wrapscan               " Searches wrap around end-of-file.
+" set report      =0         " Always report changed lines.
+" set synmaxcol   =200       " Only highlight the first 200 columns.
+
 " set list
 " set modeline
 " set modelines     =1
@@ -44,9 +63,13 @@ syntax on                  " Enable syntax highlighting.
 " set numberwidth   =1
 " set ruler
 " set shortmess     =aoOTI
-" set showcmd
 " set showmatch
-" set showmode
+
+" The fish shell is not very compatible to other shells and unexpectedly
+" breaks things that use 'shell'.
+if &shell =~# 'fish$'
+  set shell=/bin/bash
+endif
 
 " ----------------------------------------------------------------------- "
 
