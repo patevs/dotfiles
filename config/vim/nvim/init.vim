@@ -14,22 +14,58 @@
 
 " Basic Configuration
 
+" No need to set this explicitly as Neovim always uses UTF-8 as the default encoding.
+set encoding=UTF-8
+
+" You want Vim, not vi. When Vim finds a vimrc, 'nocompatible' is set anyway.
+" We set it explicitely to make our position clear!
+set nocompatible
+
+set autoread " detect when a file is changed
+
+set history=1000 " change history to 1000
+set textwidth=120
+
 " filetype plugin on
-" filetype plugin indent on  " Load plugins according to detected filetype.
-" syntax on                  " Enable syntax highlighting.
+filetype plugin indent on  " Load plugins according to detected filetype.
+syntax on                  " Enable syntax highlighting.
 
 " set autoindent             " Indent according to previous line.
 " set expandtab              " Use spaces instead of tabs.
 " set softtabstop =4         " Tab key indents by 4 spaces.
 " set shiftwidth  =4         " >> indents by 4 spaces.
 " set shiftround             " >> indents to next multiple of 'shiftwidth'.
-
-" set backspace   =indent,eol,start  " Make backspace work as you would expect.
 " set hidden                 " Switch between buffers without having to save first.
 
+set backspace=indent,eol,start " make backspace behave in a sane manner
+set clipboard=unnamed
+
+if has('mouse')
+    set mouse=a
+endif
+
 " display settings
-" set display      +=lastline
-" set laststatus    =2
+
+" set laststatus  =2         " Always show statusline.
+" set display     =lastline  " Show as much as possible of the last line.
+
+" set showmode               " Show current mode in command-line.
+" set showcmd                " Show already typed keys when more are expected.
+
+" set incsearch              " Highlight while searching with / or ?.
+" set hlsearch               " Keep matches highlighted.
+
+set ttyfast                " Faster redrawing.
+set lazyredraw             " Only redraw when necessary.
+
+" set splitbelow             " Open new windows below the current window.
+" set splitright             " Open new windows right of the current window.
+
+" set cursorline             " Find the current line quickly.
+" set wrapscan               " Searches wrap around end-of-file.
+" set report      =0         " Always report changed lines.
+" set synmaxcol   =200       " Only highlight the first 200 columns.
+
 " set list
 " set modeline
 " set modelines     =1
@@ -37,9 +73,13 @@
 " set numberwidth   =1
 " set ruler
 " set shortmess     =aoOTI
-" set showcmd
 " set showmatch
-" set showmode
+
+" The fish shell is not very compatible to other shells and unexpectedly
+" breaks things that use 'shell'.
+if &shell =~# 'fish$'
+  set shell=/bin/bash
+endif
 
 " ----------------------------------------------------------------------- "
 
@@ -73,12 +113,11 @@
 
 " ----------------------------------------------------------------------- "
 
-" No need to set explicitly as Neovim always uses UTF-8 as the default encoding.
-" set encoding=UTF-8
+" TODO: Check has('python2') & has('python3')
 
 " Set location to python executables
-let g:python_host_prog  = 'C:\tools\python2\python.exe'
-let g:python3_host_prog  = 'C:\tools\python3\python.exe'
+" let g:python_host_prog  = 'C:\tools\python2\python.exe'
+" let g:python3_host_prog  = 'C:\tools\python3\python.exe'
 " Enable/disable python support
 " let g:loaded_python_provider = 0
 " let g:loaded_python3_provider = 0

@@ -31,6 +31,10 @@ CALL choco install python2 -y --params '"/InstallDir:C:\bin\python2"'
 ECHO  [44m Installing Python3: [0m & ECHO.
 CALL choco install python3 -y --params "/InstallDir:C:\tools\python3"
 
+:: PostgreSQL
+ECHO  [44m Installing PostgreSQL: [0m & ECHO.
+CALL choco install postgresql12 -y --params "/Password:test"
+
 :: ---------------------------------------------------------------------------- ::
 
 ECHO. & ECHO  [42m Done! [0m
