@@ -107,11 +107,27 @@ function edit {
 # Use GitHub's hub Client in favor of git
 if (Check-Command hub){ Set-Alias git hub }
 
-# Print G3L Status
+# Print Git Status
+function getGitStatus {
+  # Check git command exists
+  if (Check-Command git){
+    Write-Host "`n Git Status:`n"  -ForegroundColor Green
+    git status
+  } else {
+    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name gs -Value getGitStatus
+
+
+# Print git status using g3l
 function getG3lStatus {
   # Check git command exists
   if (Check-Command git){
-    Write-Host "`nGit Status:`n"  -ForegroundColor Green
+    # Fetch git remote
+    Write-Host "`n Git Remotes:`n"  -ForegroundColor Green
+    git remote -v
+    Write-Host "`n Git Status:`n"  -ForegroundColor Green
     # Check g3l command exists
     if (Check-Command g3l) {
       g3l --status
@@ -119,22 +135,10 @@ function getG3lStatus {
     }
     git status
   } else {
-    Write-Host "`ngit installation could not be found!" -ForegroundColor Red
+    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
   }
 }
 Set-Alias -Name gss -Value getG3lStatus
-
-# Print Git Status
-function getGitStatus {
-  # Check git command exists
-  if (Check-Command git){
-    Write-Host "`nGit Status:`n"  -ForegroundColor Green
-    git status
-  } else {
-    Write-Host "`ngit installation could not be found!" -ForegroundColor Red
-  }
-}
-Set-Alias -Name gs -Value getGitStatus
 
 # --------------------------------------------------------------------------- #
 
@@ -148,13 +152,13 @@ function getNpmLocals {
   if (Test-Path node_modules){
     # Check npm command exists
     if (Check-Command npm){
-      Write-Host "`nLocal NPM Dependencies:`n" -ForegroundColor Green
+      Write-Host "`n Local NPM Dependencies:`n" -ForegroundColor Green
       npm list --depth=0
     } else {
-      Write-Host "`nnpm installation could not be found!" -ForegroundColor Red
+      Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
     }
   } else {
-    Write-Host "`nnode_modules folder does not exist in current directory!" -ForegroundColor Red
+    Write-Host "`n node_modules folder does not exist in current directory!" -ForegroundColor Red
   }
 }
 Set-Alias -Name npl -Value getNpmLocals
@@ -163,10 +167,10 @@ Set-Alias -Name npl -Value getNpmLocals
 function getNpmGlobals {
   # Check npm command exists
   if (Check-Command npm){
-    Write-Host "`nGlobal NPM Dependencies:`n" -ForegroundColor Green
+    Write-Host "`n Global NPM Dependencies:`n" -ForegroundColor Green
     npm list --global --depth=0
   } else {
-    Write-Host "`nnpm installation could not be found!" -ForegroundColor Red
+    Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
   }
 }
 Set-Alias -Name nplg -Value getNpmGlobals
@@ -181,10 +185,10 @@ Set-Alias -Name nplg -Value getNpmGlobals
 function getChocoInstalls {
   # Check choco command exists
   if (Check-Command choco) {
-    Write-Host "`nLocal Chocolatey Installations:`n" -ForegroundColor Green
+    Write-Host "`n Local Chocolatey Installations:`n" -ForegroundColor Green
     choco list -l
   } else {
-    Write-Host "`nchoco installation could not be found!" -ForegroundColor Red
+    Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
   }
 }
 Set-Alias -Name cll -Value getChocoInstalls
@@ -193,10 +197,10 @@ Set-Alias -Name cll -Value getChocoInstalls
 function getChocoOutdated {
   # Check choco command exists
   if (Check-Command choco) {
-    Write-Host "`nOutdated Chocolatey Installations:`n" -ForegroundColor Green
+    Write-Host "`n Outdated Chocolatey Installations:`n" -ForegroundColor Green
     choco upgrade all --noop
   } else {
-    Write-Host "`nchoco installation could not be found!" -ForegroundColor Red
+    Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
   }
 }
 Set-Alias -Name clo -Value getChocoOutdated
