@@ -78,10 +78,6 @@ if (Check-Module "posh-git") { Import-Module -Name posh-git }
 # System & Utility Related Aliases #
 # -------------------------------- #
 
-# function reboot {
-# 	shutdown /r /t 0
-# }
-
 # Shutdown System
 function shutdownSys {
   Write-Host "`nShutting down system...`n"
@@ -131,6 +127,7 @@ function explorer {
   explorer.exe .
 }
 
+# TODO: Create function to start FireFox
 # function edge {
   # Old Edge
   # start microsoft-edge:
