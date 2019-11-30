@@ -124,7 +124,7 @@ CALL npm install --global ntl
 :: ---------------------------------------------------------------------------- ::
 
 :: Development Utilities
-ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
+:: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 :: # https://github.com/kentcdodds/clog-cli
 :: CALL npm install --global clog-cli
@@ -146,14 +146,14 @@ ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 :: CALL npm install --global jsome
 :: # License generator
 :: # https://github.com/plibither8/licensed
-CALL npm install --global licensed
+:: CALL npm install --global licensed
 :: # Google's website performance test
 :: # https://github.com/GoogleChrome/lighthouse/
 :: CALL npm install --global lighthouse
 :: # https://github.com/voorhoede/lighthouse-security
 :: CALL npm install --global lighthouse-security
 :: # https://github.com/cezaraugusto/mklicense
-CALL npm install --global mklicense
+:: CALL npm install --global mklicense
 ::: # https://github.com/neovim/node-client
 :: CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli
@@ -161,7 +161,7 @@ CALL npm install --global mklicense
 :: # https://github.com/release-it/release-it
 :: CALL npm install --global release-it
 :: # https://github.com/jhotmann/node-rename-cli
-CALL npm install --global rename-cli
+:: CALL npm install --global rename-cli
 :: # Progressive web metrics
 :: # https://github.com/paulirish/pwmetrics
 :: CALL npm install --global pwmetrics
@@ -207,7 +207,7 @@ CALL npm install --global empty-trash-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
-CALL npm install --global gtop
+:: CALL npm install --global gtop
 :: # https://github.com/nogizhopaboroda/iponmap
 :: CALL npm install --global iponmap
 :: # https://github.com/sindresorhus/open-cli
@@ -266,10 +266,10 @@ ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 :: # https://github.com/alexanderGugel/ied
 :: CALL npm install --global ied
 :: # https://github.com/pnpm/pnpm
-:: CALL npm install --global pnpm
+CALL npm install --global pnpm
 :: Upgrade pnpm
-:: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-:: CALL pnpm install --global pnpm
+ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
+CALL pnpm install --global pnpm
 :: # https://github.com/yarnpkg/yarn
 CALL npm install --global yarn
 
