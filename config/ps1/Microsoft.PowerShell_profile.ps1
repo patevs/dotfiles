@@ -2,7 +2,7 @@
 # config/ps1/Microsoft.PowerShell_profile.ps1 #
 # ------------------------------------------- #
 
-# $PROFILE
+# PowerShell $PROFILE
 # ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
 # --------------------------------------------------------------------------- #

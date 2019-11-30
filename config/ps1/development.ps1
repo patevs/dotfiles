@@ -2,6 +2,11 @@
 # config/ps1/development.ps1 #
 # -------------------------- #
 
+# PowerShell $PROFILE development settings
+# ~\Documents\WindowsPowerShell\development.ps1
+
+# --------------------------------------------------------------------------- #
+
 # RethinkDB and Python (needed for the Python rethinkdb dump tool)
 # Add-PathVariable "${env:ProgramFiles}\rethinkdb"
 # Add-PathVariable "${env:ProgramFiles}\Python"

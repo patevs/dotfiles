@@ -2,6 +2,11 @@
 # config/ps1/defaults.ps1 #
 # ----------------------- #
 
+# PowerShell $PROFILE default settings
+# ~\Documents\WindowsPowerShell\defaults.ps1
+
+# --------------------------------------------------------------------------- #
+
 # Proper history etc
 # Import-Module PSReadLine
 
