@@ -158,13 +158,16 @@ CALL npm install --global ntl
 :: CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli
 :: CALL npm install --global passgen-cli
+:: https://github.com/sdras/project-explorer
+:: Note: requires yarn to be installed
+:: npm install --global project-explorer
+:: # Progressive web metrics
+:: # https://github.com/paulirish/pwmetrics
+:: CALL npm install --global pwmetrics
 :: # https://github.com/release-it/release-it
 :: CALL npm install --global release-it
 :: # https://github.com/jhotmann/node-rename-cli
 :: CALL npm install --global rename-cli
-:: # Progressive web metrics
-:: # https://github.com/paulirish/pwmetrics
-:: CALL npm install --global pwmetrics
 :: # https://github.com/semantic-release/semantic-release
 :: CALL npm install --global semantic-release
 :: # Placeholder image generator
