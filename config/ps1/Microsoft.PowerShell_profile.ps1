@@ -68,6 +68,8 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 
 # write-output "Pat's profile loaded!"
 
+# --------------------------------------------------------------------------- #
+
 # ------------------------ #
 # Logging Helper Functions #
 # ------------------------ #
@@ -86,6 +88,8 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
   #  <Escape Character>[4m = "Underline on"
   #  <Escape Character>[24m = "Underline off"
 # }
+
+# --------------------------------------------------------------------------- #
 
 # Print a welcome message
 function Print-Welcome {
