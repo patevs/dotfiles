@@ -75,11 +75,9 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 # ------------------------ #
 
 # Print a given string formatted colored green and underlined
-function Print-Green-Underline ($str) {
-  # Write-Host "Hello $([char]27)[4mWorld$([char]27)[24m"
-  Write-Host "$([char]27)[4m$str$([char]27)[24m" -ForegroundColor Green
-}
-Print-Green-Underline "HELLO!!!"
+# function Print-Green-Underline ($str) {
+  # Write-Host "$([char]27)[4m$str$([char]27)[24m" -ForegroundColor Green
+# }
 
 # Print a given string formatted colored green
 # function Print-Green ($str) {
