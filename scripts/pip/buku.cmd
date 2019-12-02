@@ -7,7 +7,7 @@
 :: Batch script used to install buku and required dependencies.
 :: Requires Python and PIP to be installed.
 
-CLS
+:: CLS
 ECHO. & ECHO  [100m [100;4mBuku Install Script[0m[100m [0m
 
 :: Verify Python and PIP are installed & can be found
@@ -31,6 +31,8 @@ IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m PIP installation could not be found... 
 ECHO. & ECHO [92m All Requirements Satisfied! Beginning Install... [0m
 :: & ECHO.
 
+GOTO :EOF
+
 :: ---------------------------------------------------------------------------- ::
 
 ECHO. & ECHO  [44m Installing Buku and Required Dependencies: [0m & ECHO.
@@ -39,7 +41,7 @@ ECHO. & ECHO  [44m Installing Buku and Required Dependencies: [0m & ECHO.
 :: python -m pip install certifi urllib3 cryptography beautifulsoup4
 
 :: Install buku
-CALL python -m pip install buku
+:: CALL python -m pip install buku
 
 :: Install bukuserver required dependencies
 :: CALL python -m pip install flask flask_admin flask_api flask_bootstrap flask_paginate flask_wtf arrow
