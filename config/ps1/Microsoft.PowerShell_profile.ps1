@@ -73,10 +73,9 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 # ------------------------ #
 
 # Print a given string colored green
-function Print-Green ($str) {
-  Write-Host $str -ForegroundColor Green
-}
-Print-Green "HELLO!"
+# function Print-Green ($str) {
+  # Write-Host $str -ForegroundColor Green
+# }
 
 # https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/write-host?view=powershell-6
 # https://www.reddit.com/r/PowerShell/comments/d74lce/how_to_underline_text_in_output_using_writehost/
@@ -90,8 +89,8 @@ Print-Green "HELLO!"
 
 # Print a welcome message
 function Print-Welcome {
-  Write-Host
-  "             _    _ _____ _     _____ ________  ___ _____
+  # Write-Host
+  $msg = "             _    _ _____ _     _____ ________  ___ _____
             | |  | |  ___| |   /  __ \  _  |  \/  ||  ___|
             | |  | | |__ | |   | /  \/ | | | .  . || |__
             | |/\| |  __|| |   | |   | | | | |\/| ||  __|
@@ -104,6 +103,7 @@ function Print-Welcome {
                       _  ____/ _  ___ |_  /
                       /_/      /_/  |_|/_/
   "
+  Write-Host $msg -ForegroundColor Green
 }
 Print-Welcome
 
