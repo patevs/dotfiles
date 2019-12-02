@@ -68,9 +68,14 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 
 # write-output "Pat's profile loaded!"
 
+# https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/write-host?view=powershell-6
+# https://www.reddit.com/r/PowerShell/comments/d74lce/how_to_underline_text_in_output_using_writehost/
 function printTest {
   # Write-Host "Red on white text." -ForegroundColor red -BackgroundColor white
   Write-Host "Hello $([char]27)[4mWorld$([char]27)[24m"
+  # Explanation:
+  #  <Escape Character>[4m = "Underline on"
+  #  <Escape Character>[24m = "Underline off"
 }
 printTest
 
