@@ -9,7 +9,7 @@
 :: and then reloads PowerShell to activate the profile.
 
 :: CLS
-ECHO. & ECHO  [100m [100;4mPowerShell Profile Install Script[0m[100m [0m
+ECHO. & ECHO  [100m [100;4mPowerShell Profile Install Script[0m[100m [0m & ECHO.
 :: ECHO. & ECHO  [100;4m PowerShell Profile Install Script [0m & ECHO.
 
 :: Copy PowerShell profile scripts
