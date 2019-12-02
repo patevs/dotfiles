@@ -18,14 +18,14 @@ WHERE python
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m Python installation could not be found... exiting! [0m & GOTO :EOF
 
 :: print python vesion
-CALL python -V
+:: CALL python -V
 
 ECHO. & ECHO  [45m PIP Installation: [0m & ECHO.
 WHERE pip
 IF %ERRORLEVEL% NEQ 0 ECHO. & ECHO [91m PIP installation could not be found... exiting! [0m & GOTO :EOF
 
 :: print pip vesion
-CALL pip -V
+:: CALL pip -V
 
 :: Begin install
 ECHO. & ECHO [92m All Requirements Satisfied! Beginning Install... [0m
