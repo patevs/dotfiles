@@ -74,7 +74,14 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 # Logging Helper Functions #
 # ------------------------ #
 
-# Print a given string colored green
+# Print a given string formatted colored green and underlined
+function Print-Green-Underline ($str) {
+  # Write-Host "Hello $([char]27)[4mWorld$([char]27)[24m"
+  Write-Host "$([char]27)[4m$str$([char]27)[24m" -ForegroundColor Green
+}
+Print-Green-Underline "HELLO!!!"
+
+# Print a given string formatted colored green
 # function Print-Green ($str) {
   # Write-Host $str -ForegroundColor Green
 # }
