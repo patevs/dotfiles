@@ -73,9 +73,10 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 # ------------------------ #
 
 # Print a given string colored green
-# function Print-Green ($str) {
-  # Write-Host $str -ForegroundColor green
-# }
+function Print-Green ($str) {
+  Write-Host $str -ForegroundColor Green
+}
+Print-Green "HELLO!"
 
 # https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/write-host?view=powershell-6
 # https://www.reddit.com/r/PowerShell/comments/d74lce/how_to_underline_text_in_output_using_writehost/
