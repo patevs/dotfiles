@@ -75,10 +75,15 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 # ------------------------ #
 
 # Print a given string formatted colored green and underlined
+# https://www.reddit.com/r/PowerShell/comments/d74lce/how_to_underline_text_in_output_using_writehost/
 # function Print-Green-Underline ($str) {
-  # Write-Host "$([char]27)[4m$str$([char]27)[24m" -ForegroundColor Green
+  # Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n" -ForegroundColor Green
+  # Explanation:
+  #  <Escape Character>[4m = "Underline on"
+  #  <Escape Character>[24m = "Underline off"
 # }
 
+# https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/write-host?view=powershell-6
 # Print a given string formatted colored green
 # function Print-Green ($str) {
   # Write-Host $str -ForegroundColor Green

@@ -87,7 +87,7 @@ function sudo(){
 
 # Print a given string formatted colored green and underlined
 function Print-Green-Underline ($str) {
-  Write-Host "$([char]27)[4m$str$([char]27)[24m" -ForegroundColor Green
+  Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n" -ForegroundColor Green
 }
 
 # --------------------------------------------------------------------------- #
@@ -99,9 +99,7 @@ function Print-Green-Underline ($str) {
 # Print short list of current directory contents
 function dirList {
   # Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
-  Write-Host # new line
   Print-Green-Underline "Directory Contents:"
-  Write-Host # new line
   # Favour lsd over default dir command
   if (Check-Command lsd) { lsd }
   else { dir }
@@ -110,9 +108,7 @@ Set-Alias -Name l -Value dirList
 
 # Print list of current directory contents
 function dirListAll {
-  Write-Host # new line
   Print-Green-Underline "Directory Contents:"
-  Write-Host # new line
   # Favour lsd over default dir command
   if (Check-Command lsd) { lsd -a1 }
   else { dir }
@@ -122,9 +118,7 @@ Set-Alias -Name ll -Value dirListAll
 
 # Print long list of current directory contents
 function dirListLong {
-  Write-Host # new line
   Print-Green-Underline "Directory Contents:"
-  Write-Host # new line
   # Favour lsd over default dir command
   if (Check-Command lsd) { lsd -al }
   else { dir }
