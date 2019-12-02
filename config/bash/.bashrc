@@ -105,10 +105,11 @@ fi
 #   fi
 # fi
 
-# asdf-vm
-# TODO: Verify '$HOME/.asdf' path exists
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# Verify ~/.asdf/ path exists
+if [ -f ~/.asdf ]; then
+  . $HOME/.asdf/asdf.sh
+  . $HOME/.asdf/completions/asdf.bash
+fi
 
 # Bash-Git-Prompt
 # if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
