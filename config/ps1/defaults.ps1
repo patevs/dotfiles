@@ -79,20 +79,33 @@ if (Check-Module "posh-git") { Import-Module -Name posh-git }
 
 # --------------------------------------------------------------------------- #
 
+# ------------------------ #
+# Logging Helper Functions #
+# ------------------------ #
+
+# Print a given string formatted colored green and underlined
+function Print-Green-Underline ($str) {
+  Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n" -ForegroundColor Green
+}
+
+# --------------------------------------------------------------------------- #
+
 # -------------------------------- #
 # System & Utility Related Aliases #
 # -------------------------------- #
 
 # Shutdown System
 function shutdownSys {
-  Write-Host "`nShutting down system...`n"
+  # Write-Host "`nShutting down system...`n"
+  Print-Green-Underline "Shutting Down System..."
   shutdown /p
 }
 Set-Alias -Name shut -Value shutdownSys
 
 # Restart System
 function restartSys {
-  Write-Host "`nRestarting system...`n"
+  # Write-Host "`nRestarting system...`n"
+  Print-Green-Underline "Restarting System..."
   shutdown /r /t 0
 }
 Set-Alias -Name restart -Value restartSys
