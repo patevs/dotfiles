@@ -68,6 +68,12 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 
 # write-output "Pat's profile loaded!"
 
+function printTest {
+  # Write-Host "Red on white text." -ForegroundColor red -BackgroundColor white
+  Write-Host "Hello $([char]27)[4mWorld$([char]27)[24m"
+}
+printTest
+
 # Print a welcome message
 function printWelcome {
   Write-Host
@@ -85,7 +91,7 @@ function printWelcome {
                       /_/      /_/  |_|/_/
   "
 }
-printWelcome
+# printWelcome
 
 
 # EOF #
