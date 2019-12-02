@@ -2,6 +2,11 @@
 # config/ps1/unix.ps1 #
 # ----------------------- #
 
+# PowerShell $PROFILE unix-like settings
+# ~\Documents\WindowsPowerShell\unix.ps1
+
+# --------------------------------------------------------------------------- #
+
 # Just a couple of things (sed, to interpret sed scripts) from http://unxutils.sourceforge.net/
 # Add-PathVariable "${env:ProgramFiles}\UnxUtils"
 
