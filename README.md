@@ -1,7 +1,7 @@
 # dotfiles
 
-> Personal system configuration files which are often refered to as .files (dotfiles).
-> Also included are various utility scripts for system setup and configuration automation.
+> My personal system configuration files commonly refered to as .files (dotfiles).
+> Also included are various utility scripts use for system setup and configuration automation.
 
 ---
 
@@ -19,6 +19,7 @@
 
 * [`anishathalye/dotbot`](https://github.com/anishathalye/dotbot)
 * [`dylanaraps/neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`o2sh/onefetch`](https://github.com/o2sh/onefetch)
 * [`lptstr/winfetch`](https://github.com/lptstr/winfetch/)
 
 ---
@@ -41,6 +42,10 @@
 |   +-- alacritty
 |   |   +-- alacritty.yml
 |   +-- bash
+|   |   +-- .bash_aliases
+|   |   +-- .bash_profile
+|   |   +-- .bashrc
+|   |   +-- .profile
 |   +-- nvim
 |   |   +-- init.vim
 |   +-- ps1
@@ -49,13 +54,21 @@
 |   |   +-- Microsoft.PowerShell_profile.ps1
 |   |   +-- unix.ps1
 |   +-- WindowsTerminal
-|       +-- profiles.json
+|   |   +-- profiles.json
+|   +-- install.conf.yaml
 +-- scripts
-+-- submodules
+|   +-- choco
+|   +-- git
+|   +-- npm
+|   +-- pip
++-- tools
+|   +-- dotbot
+|   +-- neofetch
+|   +-- onefetch
+|   +-- winfetch
 +-- .editorconfig
 +-- .gitmodules
 +-- install
-+-- install.conf.yaml
 +-- README.md
 ```
 
