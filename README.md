@@ -19,6 +19,7 @@
 
 * [`anishathalye/dotbot`](https://github.com/anishathalye/dotbot)
 * [`dylanaraps/neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`o2sh/onefetch`](https://github.com/o2sh/onefetch)
 * [`lptstr/winfetch`](https://github.com/lptstr/winfetch/)
 
 ---
