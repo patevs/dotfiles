@@ -110,6 +110,8 @@ CALL npm install --global npms-cli
 :: # https://github.com/felixrieseberg/windows-build-tools
 :: # NOTE: windows-build-tools install must be run in admin prompt
 :: CALL npm install --global windows-build-tools
+:: # https://github.com/Muldoser/ytl
+:: CALL npm install --global ytl
 
 :: ---------------------------------------------------------------------------- ::
 
