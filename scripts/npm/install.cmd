@@ -50,7 +50,7 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 
 
 :: # https://github.com/TejasQ/add-gitignore
-:: CALL npm install --global add-gitignore
+CALL npm install --global add-gitignore
 :: # https://github.com/IonicaBizau/cli-github
 :: CALL npm install --global cli-github
 :: # https://github.com/so-fancy/diff-so-fancy
@@ -71,8 +71,9 @@ CALL npm install --global g3l
 
 :: ---------------------------------------------------------------------------- ::
 
-:: NodeJS Utilities
-ECHO. & ECHO  [44m Installing NodeJS Utility Modules: [0m & ECHO.
+:: NodeJS and NPM Utilities
+ECHO. & ECHO  [44m Installing NodeJS and NPM Utility Modules: [0m & ECHO.
+
 
 :: # https://github.com/alanshaw/david
 CALL npm install --global david
@@ -98,6 +99,9 @@ CALL npm install --global ntl
 :: # https://github.com/zeke/npe
 :: CALL npm install --global npe
 :: # https://github.com/voidcosmos/npkill
+:: CALL npm install --global npkill
+:: https://github.com/npms-io/npms-cli
+CALL npm install --global npms-cli
 :: CALL npm install --global npkill
 :: # https://github.com/zeke/package-json-to-readme
 :: CALL npm install --global package-json-to-readme
