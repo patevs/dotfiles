@@ -88,6 +88,7 @@ function sudo(){
 # Print a given string formatted colored green and underlined
 function Print-Green-Underline ($str) {
   Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n" -ForegroundColor Green
+  # Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n"
 }
 
 # --------------------------------------------------------------------------- #
