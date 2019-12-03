@@ -1,3 +1,12 @@
+:: ---------------------------- ::
+:: scripts/spacevim/install.cmd ::
+:: ---------------------------- ::
+
+:: SpaceVim install script.
+::
+:: Source:
+::  https://spacevim.org/install.cmd
+
 @PowerShell -ExecutionPolicy Bypass -Command Invoke-Expression $('$args=@(^&{$args} %*);'+[String]::Join(';',(Get-Content '%~f0') -notmatch '^^@PowerShell.*EOF$')) & goto :EOF
 
 echo "        /######                                     /##    /##/##             "
@@ -105,4 +114,6 @@ echo ""
 
 Pause
 
-# vim:set ft=powershell nowrap: 
+# vim:set ft=powershell nowrap:
+
+:: EOF ::
