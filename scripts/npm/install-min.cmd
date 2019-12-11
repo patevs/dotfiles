@@ -63,9 +63,9 @@ CALL npm install --global g3l
 :: NOTE: Use `hub browse` command instead
 :: CALL npm install --global git-open
 :: # https://github.com/IonicaBizau/git-stats
-CALL npm install --global git-stats
+:: CALL npm install --global git-stats
 :: # https://github.com/carloscuesta/gitmoji-cli
-CALL npm install --global gitmoji-cli
+:: CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
 :: :: CALL npm install --global git-labelmaker
 
@@ -86,11 +86,11 @@ CALL npm install --global npm-check-updates
 :: # https://github.com/ruyadorno/ntl
 CALL npm install --global ntl
 :: # https://github.com/siddharthkp/cost-of-modules
-CALL npm install --global cost-of-modules
+:: CALL npm install --global cost-of-modules
 :: # https://github.com/dependency-check-team/dependency-check
 :: CALL npm install --global dependency-check
 :: # https://github.com/workshopper/how-to-npm
-CALL npm install --global how-to-npm
+:: CALL npm install --global how-to-npm
 :: # https://github.com/GoogleChromeLabs/ndb
 :: # NOTE: ndb requires windows-build-tools
 :: CALL npm install --global ndb
@@ -135,7 +135,7 @@ CALL npm install --global npms-cli
 :: # https://github.com/kentcdodds/clog-cli
 :: CALL npm install --global clog-cli
 :: # https://github.com/facebook/create-react-app
-CALL npm install --global create-react-app
+:: CALL npm install --global create-react-app
 :: # https://github.com/thlorenz/doctoc
 :: CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
@@ -152,7 +152,7 @@ CALL npm install --global create-react-app
 :: CALL npm install --global jsome
 :: # License generator
 :: # https://github.com/plibither8/licensed
-CALL npm install --global licensed
+:: CALL npm install --global licensed
 :: # Google's website performance test
 :: # https://github.com/GoogleChrome/lighthouse/
 :: CALL npm install --global lighthouse
@@ -166,7 +166,7 @@ CALL npm install --global licensed
 :: CALL npm install --global passgen-cli
 :: https://github.com/sdras/project-explorer
 :: Note: requires yarn to be installed
-CALL npm install --global project-explorer
+:: npm install --global project-explorer
 :: # Progressive web metrics
 :: # https://github.com/paulirish/pwmetrics
 :: CALL npm install --global pwmetrics
@@ -178,7 +178,7 @@ CALL npm install --global project-explorer
 :: CALL npm install --global semantic-release
 :: # Placeholder image generator
 :: # https://github.com/ecrmnn/spaceholder
-CALL npm install --global spaceholder
+:: CALL npm install --global spaceholder
 :: # SVG Optimizer
 :: # https://github.com/svg/svgo
 :: CALL npm install --global svgo
@@ -192,7 +192,7 @@ CALL npm install --global spaceholder
 :: CALL npm install --global strapi@beta
 :: # https://github.com/tldr-pages/tldr
 :: # https://github.com/tldr-pages/tldr-node-client
-CALL npm install --global tldr
+:: CALL npm install --global tldr
 :: # https://github.com/mishoo/UglifyJS2
 :: CALL npm install --global uglify-js
 :: # https://github.com/ddopson/underscore-cli
@@ -208,7 +208,7 @@ CALL npm install --global tldr
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
 :: # https://github.com/rafaelrinaldi/whereami
-CALL npm install --global @rafaelrinaldi/whereami
+:: CALL npm install --global @rafaelrinaldi/whereami
 :: # https://github.com/sindresorhus/empty-trash-cli
 CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
@@ -216,11 +216,11 @@ CALL npm install --global empty-trash-cli
 :: # https://github.com/lordgiotto/google-font-installer
 :: CALL npm install --global google-font-installer
 :: # https://github.com/aksakalli/gtop
-CALL npm install --global gtop
+:: CALL npm install --global gtop
 :: # https://github.com/nogizhopaboroda/iponmap
-CALL npm install --global iponmap
+:: CALL npm install --global iponmap
 :: # https://github.com/sindresorhus/open-cli
-CALL npm install --global open-cli
+:: CALL npm install --global open-cli
 :: # https://github.com/sindresorhus/pageres-cli
 :: CALL npm install --global pageres-cli
 :: # https://github.com/gillstrom/screensaver
@@ -233,7 +233,7 @@ CALL npm install --global trash-cli
 :: # NOTE: vtop must be run using sh/bash. try gtop instead
 :: CALL npm install --global vtop
 :: # https://github.com/riyadhalnur/weather-cli
-CALL npm install --global weather-cli
+:: CALL npm install --global weather-cli
 :: # https://github.com/webtorrent/webtorrent-cli
 :: CALL npm install --global webtorrent-cli
 :: # https://github.com/kevva/wifi-password-cli
@@ -242,20 +242,20 @@ CALL npm install --global wifi-password-cli
 :: ---------------------------------------------------------------------------- ::
 
 :: Yeoman and generators
-ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
+:: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
 :: # https://github.com/yeoman/yo
-CALL npm install --global yo
+:: CALL npm install --global yo
 
 :: HTML/Frontend
 :: # https://github.com/h5bp/generator-h5bp
-CALL npm install --global generator-h5bp
+:: CALL npm install --global generator-h5bp
 :: # https://github.com/yeoman/generator-webapp
 :: CALL npm install --global generator-webapp
 :: JavaScript/Node
 :: (Ava/Codecov)
 :: # https://github.com/sindresorhus/generator-nm
-CALL npm install --global generator-nm
+:: CALL npm install --global generator-nm
 :: (Jest/Coveralls)
 :: # https://github.com/yeoman/generator-node
 :: CALL npm install --global generator-node
