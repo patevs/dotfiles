@@ -133,11 +133,11 @@ CALL npm install --global npms-cli
 :: ECHO. & ECHO  [44m Installing Development Utility Modules: [0m & ECHO.
 
 :: # https://github.com/kentcdodds/clog-cli
-:: CALL npm install --global clog-cli
+CALL npm install --global clog-cli
 :: # https://github.com/facebook/create-react-app
 CALL npm install --global create-react-app
 :: # https://github.com/thlorenz/doctoc
-:: CALL npm install --global doctoc
+CALL npm install --global doctoc
 :: # https://github.com/encharm/Font-Awesome-SVG-PNG
 :: # NOTE: font-awesome-svg-png requires rsvg-convert to be on $PATH
 :: CALL npm install --global font-awesome-svg-png
@@ -161,7 +161,7 @@ CALL npm install --global licensed
 :: # https://github.com/cezaraugusto/mklicense
 :: CALL npm install --global mklicense
 ::: # https://github.com/neovim/node-client
-:: CALL npm install --global neovim
+CALL npm install --global neovim
 :: # https://github.com/jhotmann/node-passgen-cli
 :: CALL npm install --global passgen-cli
 :: https://github.com/sdras/project-explorer
