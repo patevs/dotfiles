@@ -242,10 +242,10 @@ CALL npm install --global wifi-password-cli
 :: ---------------------------------------------------------------------------- ::
 
 :: Yeoman and generators
-:: ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Yeoman and Generators: [0m & ECHO.
 
 :: # https://github.com/yeoman/yo
-:: CALL npm install --global yo
+CALL npm install --global yo
 
 :: HTML/Frontend
 :: # https://github.com/h5bp/generator-h5bp
@@ -255,7 +255,7 @@ CALL npm install --global wifi-password-cli
 :: JavaScript/Node
 :: (Ava/Codecov)
 :: # https://github.com/sindresorhus/generator-nm
-:: CALL npm install --global generator-nm
+CALL npm install --global generator-nm
 :: (Jest/Coveralls)
 :: # https://github.com/yeoman/generator-node
 :: CALL npm install --global generator-node
