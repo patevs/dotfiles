@@ -152,7 +152,7 @@ CALL npm install --global npms-cli
 :: CALL npm install --global jsome
 :: # License generator
 :: # https://github.com/plibither8/licensed
-:: CALL npm install --global licensed
+CALL npm install --global licensed
 :: # Google's website performance test
 :: # https://github.com/GoogleChrome/lighthouse/
 :: CALL npm install --global lighthouse
