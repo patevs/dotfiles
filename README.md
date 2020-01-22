@@ -1,7 +1,6 @@
 # dotfiles
 
 > My personal system configuration files commonly refered to as .files (dotfiles).
-> Also included are various utility scripts use for system setup and configuration automation.
 
 ---
 
@@ -56,11 +55,6 @@
 |   +-- WindowsTerminal
 |   |   +-- profiles.json
 |   +-- install.conf.yaml
-+-- scripts
-|   +-- choco
-|   +-- git
-|   +-- npm
-|   +-- pip
 +-- tools
 |   +-- dotbot
 |   +-- neofetch
@@ -70,6 +64,7 @@
 +-- .gitmodules
 +-- install
 +-- README.md
++-- VERSION
 ```
 
 ---
