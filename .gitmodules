@@ -5,23 +5,21 @@
 [submodule "tools/dotbot"]
 	path = tools/dotbot
 	url = https://github.com/anishathalye/dotbot.git
-    ignore = dirty
-[submodule "tools/winfetch"]
-	path = tools/winfetch
-	url = https://github.com/lptstr/winfetch.git
-[submodule "tools/neofetch"]
-	path = tools/neofetch
-	url = https://github.com/dylanaraps/neofetch.git
+  ignore = dirty
 # [submodule "tools/dotbot-plugins/dotbot-vscode"]
 # 	path = tools/dotbot-plugins/dotbot-vscode
 #	url = https://github.com/hujianxin/dotbot-vscode.git
 # [submodule "tools/dotbot-plugins/dotbot-asdf"]
 # 	path = tools/dotbot-plugins/dotbot-asdf
 # 	url = https://github.com/sobolevn/dotbot-asdf.git
-
-
-# EOF #
-
+[submodule "tools/neofetch"]
+	path = tools/neofetch
+	url = https://github.com/dylanaraps/neofetch.git
 [submodule "tools/onefetch"]
 	path = tools/onefetch
 	url = https://github.com/o2sh/onefetch.git
+[submodule "tools/winfetch"]
+	path = tools/winfetch
+	url = https://github.com/lptstr/winfetch.git
+
+# EOF #
