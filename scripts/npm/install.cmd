@@ -145,6 +145,8 @@ CALL npm install --global doctoc
 :: CALL npm install --global gatsby-cli
 :: # https://github.com/GitbookIO/gitbook
 :: CALL npm install --global gitbook-cli
+:: # https://github.com/cutenode/good-first-issue
+:: CALL npm install --global good-first-issue
 :: # https://github.com/kangax/html-minifier
 :: CALL npm install --global html-minifer
 :: # Image minifier
