@@ -30,6 +30,9 @@ function Check-Module($modname){
   return [bool](Get-Module -ListAvailable -Name $modname)
 }
 
+# Import post-dotnet module if installed
+if (Check-Module "posh-dotnet") { Import-Module posh-dotnet }
+
 # Import PSReadLine module if installed
 # Proper history etc
 if (Check-Module "PSReadLine") { Import-Module -Name PSReadLine }
