@@ -310,7 +310,7 @@ let g:lightline = {
       \ },
       \ }
 
-" Dont show `-- INSERT --` because the mode information is displayed in the statusline. 
+" Dont show `-- INSERT --` because the mode information is displayed in the statusline.
 set noshowmode
 
 " ----------------------------------------------------------------------- "
