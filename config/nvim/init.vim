@@ -145,7 +145,7 @@ set lazyredraw             " Only redraw when necessary.
 
 " Set location to python executables
 let g:python_host_prog  = 'C:\tools\python2\python.exe'
-" let g:python3_host_prog  = 'C:\tools\python3\python.exe'
+let g:python3_host_prog  = 'C:\tools\python3\python.exe'
 " Enable/disable python support
 " let g:loaded_python_provider = 0
 " let g:loaded_python3_provider = 0
