@@ -24,3 +24,6 @@
 
 # EOF #
 
+[submodule "utils"]
+	path = utils
+	url = https://github.com/patevs/utility-scripts
