@@ -231,6 +231,14 @@ if (Test-Path($ChocolateyProfile)) {
 
 # Import-Module “$env:ChocolateyInstall\helpers\chocolateyProfile.psm1” -Force
 
+# --------------------- #
+# Scoop Related Aliases #
+#---------------------- #
+
+try {
+  Import-Module -ErrorAction Stop "$($(Get-Item $(Get-Command -ErrorAction Stop scoop).Path).Directory.Parent.FullName)\modules\scoop-completion"
+} catch { }
+
 
 # EOF #
 
