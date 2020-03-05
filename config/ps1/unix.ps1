@@ -57,9 +57,9 @@ function which($name) {
 }
 
 # From https://github.com/Pscx/Pscx
-function sudo(){
-	Invoke-Elevated @args
-}
+# function sudo(){
+# 	Invoke-Elevated @args
+# }
 
 # function sudo {
 #	 $file, [string]$arguments = $args;
