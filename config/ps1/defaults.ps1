@@ -7,9 +7,6 @@
 
 # --------------------------------------------------------------------------- #
 
-# Proper history etc
-# Import-Module PSReadLine
-
 # Produce UTF-8 by default
 # https://news.ycombinator.com/item?id=12991690
 $PSDefaultParameterValues["Out-File:Encoding"] = "utf8"
@@ -38,7 +35,7 @@ if (Check-Module "posh-dotnet") { Import-Module posh-dotnet }
 if (Check-Module "PSReadLine") { Import-Module -Name PSReadLine }
 
 # Show selection menu for tab
-# Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
+Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
 
 # Dracula readline configuration. Requires version 2.0, if you have 1.2 convert to `Set-PSReadlineOption -TokenType`
 Set-PSReadlineOption -Color @{
@@ -74,8 +71,7 @@ if (Check-Module "posh-git") { Import-Module -Name posh-git }
 # if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
 
 # Start SSH agent
-# TODO: Fix this
-# Start-SshAgent
+Start-SshAgent
 
 # Clear the screen
 # clear
