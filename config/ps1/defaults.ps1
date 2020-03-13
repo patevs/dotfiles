@@ -71,10 +71,10 @@ if (Check-Module "posh-git") { Import-Module -Name posh-git }
 # if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
 
 # Start SSH agent
-Start-SshAgent
-
-# Clear the screen
-# clear
+# Redirect output to null
+#   https://stackoverflow.com/questions/5881174/redirecting-output-to-null-in-powershell-but-ensuring-the-variable-remains-set
+# Start-SshAgent 2>&1> $null
+Start-SshAgent 2>&1 | Out-Null
 
 # --------------------------------------------------------------------------- #
 
