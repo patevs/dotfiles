@@ -72,7 +72,7 @@ if (Check-Module "posh-git") { Import-Module -Name posh-git }
 
 # Start SSH agent
 # TODO: Fix this
-# Start-SshAgent
+Start-SshAgent
 
 # Clear the screen
 # clear
