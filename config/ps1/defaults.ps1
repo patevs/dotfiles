@@ -71,7 +71,6 @@ if (Check-Module "posh-git") { Import-Module -Name posh-git }
 # if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
 
 # Start SSH agent
-# TODO: Fix this
 Start-SshAgent
 
 # Clear the screen
