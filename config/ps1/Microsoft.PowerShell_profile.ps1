@@ -121,6 +121,10 @@ function Print-Welcome {
 }
 Print-Welcome
 
+# Start thyme
+# TODO: Ensure thyme is installed
+# for(1){thyme track -o thyme.json; Start-Sleep -s 5}
+# thyme show -i thyme.json -w stats | Out-File -e utf8 thyme.html
 
 # EOF #
 
