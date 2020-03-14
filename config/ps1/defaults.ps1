@@ -58,6 +58,9 @@ if (Check-Module "posh-cargo") { Import-Module -Name posh-cargo }
 # Import posh-npm module if installed
 if (Check-Module "posh-npm") { Import-Module -Name posh-npm }
 
+# Import posh-yarn module if installed
+if (Check-Module "posh-yarn") { Import-Module -Name posh-yarn }
+
 # Dracula Prompt Configuration
 # $GitPromptSettings.DefaultPromptPrefix.Text = "$([char]0x2192) " # arrow unicode symbol
 # $GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::Green
