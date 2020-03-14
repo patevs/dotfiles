@@ -27,9 +27,6 @@ function Check-Module($modname){
   return [bool](Get-Module -ListAvailable -Name $modname)
 }
 
-# Import post-dotnet module if installed
-if (Check-Module "posh-dotnet") { Import-Module posh-dotnet }
-
 # Import PSReadLine module if installed
 # Proper history etc
 if (Check-Module "PSReadLine") { Import-Module -Name PSReadLine }
@@ -49,11 +46,17 @@ Set-PSReadlineOption -Color @{
     "Comment" = [ConsoleColor]::DarkCyan
 }
 
+# Import post-dotnet module if installed
+if (Check-Module "posh-dotnet") { Import-Module posh-dotnet }
+
 # Import posh-git module if installed
 if (Check-Module "posh-git") { Import-Module -Name posh-git }
 
 # Import posh-cargo module if installed
 if (Check-Module "posh-cargo") { Import-Module -Name posh-cargo }
+
+# Import posh-npm module if installed
+if (Check-Module "posh-npm") { Import-Module -Name posh-npm }
 
 # Dracula Prompt Configuration
 # $GitPromptSettings.DefaultPromptPrefix.Text = "$([char]0x2192) " # arrow unicode symbol
