@@ -52,6 +52,9 @@ Set-PSReadlineOption -Color @{
 # Import posh-git module if installed
 if (Check-Module "posh-git") { Import-Module -Name posh-git }
 
+# Import posh-cargo module if installed
+if (Check-Module "posh-cargo") { Import-Module -Name posh-cargo }
+
 # Dracula Prompt Configuration
 # $GitPromptSettings.DefaultPromptPrefix.Text = "$([char]0x2192) " # arrow unicode symbol
 # $GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::Green
