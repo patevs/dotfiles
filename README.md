@@ -11,6 +11,10 @@
 
 [](.)
 
+* [`ubnt-intrepid/dot`](https://github.com/ubnt-intrepid/dot)
+
+[](.)
+
 * [`holman/dotfiles`](https://github.com/holman/dotfiles)
 * [`mathiadbynens/dotfiles`](https://github.com/mathiasbynens/dotfiles)
 * [`paulirish/dotfiles`](https://github.com/paulirish/dotfiles)
