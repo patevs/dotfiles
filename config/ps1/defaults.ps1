@@ -58,20 +58,13 @@ Set-PSReadlineOption -Color @{
 # $GitPromptSettings.BranchColor.ForegroundColor = [ConsoleColor]::Blue
 # $GitPromptSettings.AfterStatus.ForegroundColor = [ConsoleColor]::Blue
 
-# Import post-dotnet module if installed
-# if (Check-Module "posh-dotnet") { Import-Module posh-dotnet }
-
-# Import posh-git module if installed
-# if (Check-Module "posh-git") { Import-Module -Name posh-git }
-
-# Import posh-cargo module if installed
-# if (Check-Module "posh-cargo") { Import-Module -Name posh-cargo }
-
-# Import posh-npm module if installed
+# Import available completion modules
+if (Check-Module "posh-cargo") { Import-Module -Name posh-cargo }
+if (Check-Module "posh-dotnet") { Import-Module posh-dotnet }
+if (Check-Module "posh-git") { Import-Module -Name posh-git }
 # if (Check-Module "posh-npm") { Import-Module -Name posh-npm }
-
-# Import posh-yarn module if installed
-# if (Check-Module "posh-yarn") { Import-Module -Name posh-yarn }
+if (Check-Module "npm-completion") { Import-Module -Name npm-completion }
+if (Check-Module "yarn-completion") { Import-Module -Name yarn-completion }
 
 # Import Terminal-Icons module if installed
 # if (Check-Module "Terminal-Icons") { Import-Module -Name Terminal-Icons }
