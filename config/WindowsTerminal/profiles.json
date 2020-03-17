@@ -1,245 +1,78 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+// %HOME%\AppData\Local\Microsoft\Windows Terminal\profiles.json
+
 {
-  "globals": {
-    "alwaysShowTabs": true,
-    "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "initialCols": 120,
-    "initialRows": 30,
-    "keybindings": [
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+
+  "profiles":
+  {
+      "defaults":
       {
-        "command": "closePane",
-        "keys": [
-          "ctrl+shift+w"
-        ]
+          // Put settings here that you want to apply to all profiles
+          "colorScheme" : "Dracula"
       },
-      {
-        "command": "copy",
-        "keys": [
-          "ctrl+shift+c"
-        ]
-      },
-      {
-        "command": "duplicateTab",
-        "keys": [
-          "ctrl+shift+d"
-        ]
-      },
-      {
-        "command": "newTab",
-        "keys": [
-          "ctrl+shift+t"
-        ]
-      },
-      {
-        "command": "newTabProfile0",
-        "keys": [
-          "ctrl+shift+1"
-        ]
-      },
-      {
-        "command": "newTabProfile1",
-        "keys": [
-          "ctrl+shift+2"
-        ]
-      },
-      {
-        "command": "newTabProfile2",
-        "keys": [
-          "ctrl+shift+3"
-        ]
-      },
-      {
-        "command": "newTabProfile3",
-        "keys": [
-          "ctrl+shift+4"
-        ]
-      },
-      {
-        "command": "newTabProfile4",
-        "keys": [
-          "ctrl+shift+5"
-        ]
-      },
-      {
-        "command": "newTabProfile5",
-        "keys": [
-          "ctrl+shift+6"
-        ]
-      },
-      {
-        "command": "newTabProfile6",
-        "keys": [
-          "ctrl+shift+7"
-        ]
-      },
-      {
-        "command": "newTabProfile7",
-        "keys": [
-          "ctrl+shift+8"
-        ]
-      },
-      {
-        "command": "newTabProfile8",
-        "keys": [
-          "ctrl+shift+9"
-        ]
-      },
-      {
-        "command": "nextTab",
-        "keys": [
-          "ctrl+tab"
-        ]
-      },
-      {
-        "command": "openNewTabDropdown",
-        "keys": [
-          "ctrl+shift+space"
-        ]
-      },
-      {
-        "command": "openSettings",
-        "keys": [
-          "ctrl+,"
-        ]
-      },
-      {
-        "command": "paste",
-        "keys": [
-          "ctrl+shift+v"
-        ]
-      },
-      {
-        "command": "prevTab",
-        "keys": [
-          "ctrl+shift+tab"
-        ]
-      },
-      {
-        "command": "scrollDown",
-        "keys": [
-          "ctrl+shift+down"
-        ]
-      },
-      {
-        "command": "scrollDownPage",
-        "keys": [
-          "ctrl+shift+pgdn"
-        ]
-      },
-      {
-        "command": "scrollUp",
-        "keys": [
-          "ctrl+shift+up"
-        ]
-      },
-      {
-        "command": "scrollUpPage",
-        "keys": [
-          "ctrl+shift+pgup"
-        ]
-      },
-      {
-        "command": "switchToTab0",
-        "keys": [
-          "ctrl+alt+1"
-        ]
-      },
-      {
-        "command": "switchToTab1",
-        "keys": [
-          "ctrl+alt+2"
-        ]
-      },
-      {
-        "command": "switchToTab2",
-        "keys": [
-          "ctrl+alt+3"
-        ]
-      },
-      {
-        "command": "switchToTab3",
-        "keys": [
-          "ctrl+alt+4"
-        ]
-      },
-      {
-        "command": "switchToTab4",
-        "keys": [
-          "ctrl+alt+5"
-        ]
-      },
-      {
-        "command": "switchToTab5",
-        "keys": [
-          "ctrl+alt+6"
-        ]
-      },
-      {
-        "command": "switchToTab6",
-        "keys": [
-          "ctrl+alt+7"
-        ]
-      },
-      {
-        "command": "switchToTab7",
-        "keys": [
-          "ctrl+alt+8"
-        ]
-      },
-      {
-        "command": "switchToTab8",
-        "keys": [
-          "ctrl+alt+9"
-        ]
-      }
-    ],
-    "requestedTheme": "system",
-    "showTabsInTitlebar": true,
-    "showTerminalTitleInTitlebar": true,
-    "wordDelimiters": " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
+      "list":
+      [
+          {
+              // Make changes here to the powershell.exe profile
+              "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+              "name": "Windows PowerShell",
+              "commandline": "powershell.exe",
+              "hidden": false
+          },
+          {
+              // Make changes here to the cmd.exe profile
+              "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+              "name": "cmd",
+              "commandline": "cmd.exe",
+              "hidden": false
+          },
+          {
+              "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+              "hidden": false,
+              "name": "PowerShell",
+              "source": "Windows.Terminal.PowershellCore"
+          },
+          {
+              "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+              "hidden": false,
+              "name": "Azure Cloud Shell",
+              "source": "Windows.Terminal.Azure"
+          }
+      ]
   },
-  "profiles": [
-    {
-      "acrylicOpacity": 0.5,
-      "background": "#282a36",
-      "closeOnExit": true,
-      "colorScheme": "Dracula",
-      "commandline": "powershell.exe",
-      "cursorColor": "#FFFFFF",
-      "cursorShape": "bar",
-      "fontFace": "Hack NF",
-      "fontSize": 9,
-      "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-      "historySize": 9001,
-      "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
-      "name": "PowerShell",
-      "padding": "8, 8, 8, 8",
-      "snapOnInput": true,
-      "startingDirectory": "%USERPROFILE%",
-      "useAcrylic": false
-    }
-  ],
+
+  // Add custom color schemes to this array
   "schemes": [
-    {
-      "background": "#282a36",
-      "black": "#282a36",
-      "blue": "#0037DA",
-      "brightBlack": "#767676",
-      "brightBlue": "#3B78FF",
-      "brightCyan": "#61D6D6",
-      "brightGreen": "#16C60C",
-      "brightPurple": "#B4009E",
-      "brightRed": "#E74856",
-      "brightWhite": "#F2F2F2",
-      "brightYellow": "#F9F1A5",
-      "cyan": "#8be9fd",
-      "foreground": "#f8f8f2",
-      "green": "#50fa7b",
-      "name": "Dracula",
-      "purple": "#bd93f9",
-      "red": "#ff5555",
-      "white": "#CCCCCC",
-      "yellow": "#f1fa8c"
-    }
-  ]
+      {
+          "name" : "Dracula",
+          "background" : "#282A36",
+          "black" : "#21222C",
+          "blue" : "#BD93F9",
+          "brightBlack" : "#6272A4",
+          "brightBlue" : "#D6ACFF",
+          "brightCyan" : "#A4FFFF",
+          "brightGreen" : "#69FF94",
+          "brightPurple" : "#FF92DF",
+          "brightRed" : "#FF6E6E",
+          "brightWhite" : "#FFFFFF",
+          "brightYellow" : "#FFFFA5",
+          "cyan" : "#8BE9FD",
+          "foreground" : "#F8F8F2",
+          "green" : "#50FA7B",
+          "purple" : "#FF79C6",
+          "red" : "#FF5555",
+          "white" : "#F8F8F2",
+          "yellow" : "#F1FA8C"
+      }
+  ],
+
+  // Add any keybinding overrides to this array.
+  // To unbind a default keybinding, set the command to "unbound"
+  "keybindings": []
 }
