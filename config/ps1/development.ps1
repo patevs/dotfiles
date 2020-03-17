@@ -115,6 +115,13 @@ function Print-Green-Underline ($str) {
 # Git & GitHub Related Aliases #
 # ---------------------------- #
 
+# Git Multi Status
+function getGitMultiStatus {
+  # Invoke-Expression
+  bash C:\tools\multi-git-status\mgitstatus
+}
+Set-Alias -Name mgs -Value getGitMultiStatus
+
 # Use GitHub's hub Client in favor of git
 if (Check-Command hub){ Set-Alias git hub }
 
