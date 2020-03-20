@@ -62,12 +62,12 @@ Set-PSReadlineOption -Color @{
 # TODO: Ensure cargo is installed
 if (Check-Module "posh-cargo") { Import-Module -Name posh-cargo }
 # TODO: Ensure dotnet is installed
-# if (Check-Module "posh-dotnet") { Import-Module posh-dotnet }
+if (Check-Module "posh-dotnet") { Import-Module posh-dotnet }
 # TODO: Ensure git is installed
 if (Check-Module "posh-git") { Import-Module -Name posh-git }
-# if (Check-Module "posh-npm") { Import-Module -Name posh-npm }
 # TODO: Ensure npm is installed
 if (Check-Module "npm-completion") { Import-Module -Name npm-completion }
+# if (Check-Module "posh-npm") { Import-Module -Name posh-npm }
 # TODO: Ensure yarn is installed
 if (Check-Module "yarn-completion") { Import-Module -Name yarn-completion }
 
