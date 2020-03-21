@@ -29,6 +29,7 @@
 ### DotNet Tools
 
 * [`dotnet-outdated`](https://github.com/jerriep/dotnet-outdated)
+* [`dotnet-retire`](https://github.com/RetireNet/dotnet-retire)
 
 ### Rust Tools
 
