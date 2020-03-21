@@ -9,21 +9,23 @@
 * [Dotfiles on GitHub](https://github.com/search?q=dotfiles)
 * [`awesome-dotfiles`](https://github.com/webpro/awesome-dotfiles)
 
-[](.)
-
-* [`ubnt-intrepid/dot`](https://github.com/ubnt-intrepid/dot)
-* [`NerdyPepper/eva`](https://github.com/NerdyPepper/eva)
-* [`bootandy/dust`](https://github.com/bootandy/dust)
-* [`Y2Z/monolith`](https://github.com/Y2Z/monolith)
-* [`Peltoche/lsd`](https://github.com/Peltoche/lsd)
-
-[](.)
+### Example Dotfiles
 
 * [`holman/dotfiles`](https://github.com/holman/dotfiles)
 * [`mathiadbynens/dotfiles`](https://github.com/mathiasbynens/dotfiles)
 * [`paulirish/dotfiles`](https://github.com/paulirish/dotfiles)
 * [`sanctum.geek.nz/dotfiles`](https://sanctum.geek.nz/cgit/dotfiles.git/about/)
 * [`nicknisi/dotfiles`](https://github.com/nicknisi/dotfiles)
+
+---
+
+## Rust Tools
+
+* [`NerdyPepper/eva`](https://github.com/NerdyPepper/eva)
+* [`ubnt-intrepid/dot`](https://github.com/ubnt-intrepid/dot)
+* [`bootandy/dust`](https://github.com/bootandy/dust)
+* [`Peltoche/lsd`](https://github.com/Peltoche/lsd)
+* [`Y2Z/monolith`](https://github.com/Y2Z/monolith)
 
 ---
 
