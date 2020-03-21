@@ -2,10 +2,10 @@
 # .gitmodules #
 # ----------- #
 
-[submodule "tools/dotbot"]
-	path = tools/dotbot
-	url = https://github.com/anishathalye/dotbot.git
-	ignore = dirty
+# [submodule "tools/dotbot"]
+# 	path = tools/dotbot
+#	url = https://github.com/anishathalye/dotbot.git
+#	ignore = dirty
 # [submodule "tools/dotbot-plugins/dotbot-vscode"]
 # 	path = tools/dotbot-plugins/dotbot-vscode
 #	url = https://github.com/hujianxin/dotbot-vscode.git
