@@ -26,6 +26,10 @@
 * [`o2sh/onefetch`](https://github.com/o2sh/onefetch)
 * [`lptstr/winfetch`](https://github.com/lptstr/winfetch/)
 
+### DotNet Tools
+
+* [`dotnet-outdated`](https://github.com/jerriep/dotnet-outdated)
+
 ### Rust Tools
 
 * [`NerdyPepper/eva`](https://github.com/NerdyPepper/eva)
