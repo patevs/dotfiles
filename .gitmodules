@@ -21,9 +21,11 @@
 [submodule "tools/winfetch"]
 	path = tools/winfetch
 	url = https://github.com/lptstr/winfetch.git
-
-# EOF #
-
 [submodule "utils"]
 	path = utils
 	url = https://github.com/patevs/utility-scripts
+[submodule "tools/rust/eva"]
+	path = tools/rust/eva
+	url = https://github.com/NerdyPepper/eva
+
+# EOF #
