@@ -27,6 +27,10 @@
 	path = tools/winfetch
 	url = https://github.com/lptstr/winfetch.git
 
+[submodule "tools/bash/multi-git-status"]
+	path = tools/bash/multi-git-status
+	url = https://github.com/fboender/multi-git-status
+
 [submodule "tools/rust/eva"]
 	path = tools/rust/eva
 	url = https://github.com/NerdyPepper/eva
