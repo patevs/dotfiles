@@ -94,7 +94,8 @@
 |   |   +-- profiles.json
 |   +-- install.conf.yaml
 +-- tools
-|   +-- dotbot
+|   +-- bash
+|   |   +-- multi-git-status
 |   +-- neofetch
 |   +-- onefetch
 |   +-- winfetch
