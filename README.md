@@ -30,6 +30,10 @@
 
 * [`dotnet-outdated`](https://github.com/jerriep/dotnet-outdated)
 * [`dotnet-retire`](https://github.com/RetireNet/dotnet-retire)
+* [`Elemental.SysInfoTool`](https://github.com/MarkPflug/Elemental.SysInfoTool)
+* [`git-status-cli`](https://github.com/jerriep/git-status-cli)
+* [`Moniker`](https://github.com/alexmg/Moniker)
+* [`nyancat.cs`](https://github.com/nickvdyck/nyancat.cs)
 
 ### Rust Tools
 
