@@ -72,7 +72,7 @@ if (Check-Module "npm-completion") { Import-Module -Name npm-completion }
 if (Check-Module "yarn-completion") { Import-Module -Name yarn-completion }
 
 # Import Terminal-Icons module if installed
-# if (Check-Module "Terminal-Icons") { Import-Module -Name Terminal-Icons }
+if (Check-Module "Terminal-Icons") { Import-Module -Name Terminal-Icons }
 
 # Import Get-ChildItemColor module if installed
 # if (Check-Module "Get-ChildItemColor") { Import-Module -Name Get-ChildItemColor }
