@@ -21,10 +21,10 @@
 
 ## Git Submodules
 
-* [`anishathalye/dotbot`](https://github.com/anishathalye/dotbot)
-* [`dylanaraps/neofetch`](https://github.com/dylanaraps/neofetch/)
-* [`o2sh/onefetch`](https://github.com/o2sh/onefetch)
-* [`lptstr/winfetch`](https://github.com/lptstr/winfetch/)
+* [`dotbot`](https://github.com/anishathalye/dotbot)
+* [`neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`onefetch`](https://github.com/o2sh/onefetch)
+* [`winfetch`](https://github.com/lptstr/winfetch/)
 
 ### DotNet Tools
 
@@ -49,11 +49,11 @@
 
 ### Rust Tools
 
-* [`NerdyPepper/eva`](https://github.com/NerdyPepper/eva)
-* [`ubnt-intrepid/dot`](https://github.com/ubnt-intrepid/dot)
-* [`bootandy/dust`](https://github.com/bootandy/dust)
-* [`Peltoche/lsd`](https://github.com/Peltoche/lsd)
-* [`Y2Z/monolith`](https://github.com/Y2Z/monolith)
+* [`eva`](https://github.com/NerdyPepper/eva)
+* [`dot`](https://github.com/ubnt-intrepid/dot)
+* [`dust`](https://github.com/bootandy/dust)
+* [`lsd`](https://github.com/Peltoche/lsd)
+* [`monolith`](https://github.com/Y2Z/monolith)
 
 ---
 
