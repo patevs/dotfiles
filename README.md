@@ -39,6 +39,7 @@
 
 * [`gitbatch`](https://github.com/patevs/gitbatch)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
+* [`MusicRepair`](https://github.com/patevs/MusicRepair)
 
 ### Python Tools
 
