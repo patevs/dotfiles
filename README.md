@@ -35,6 +35,11 @@
 * [`Moniker`](https://github.com/alexmg/Moniker)
 * [`nyancat.cs`](https://github.com/nickvdyck/nyancat.cs)
 
+### Go Tools
+
+* [`gitbatch`](https://github.com/patevs/gitbatch)
+* [`lazygit`](https://github.com/jesseduffield/lazygit)
+
 ### Python Tools
 
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
