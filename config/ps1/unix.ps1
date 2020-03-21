@@ -138,6 +138,19 @@ function dirListLong {
 }
 Set-Alias -Name lll -Value dirListLong
 
+# Print directory tree
+function dirTree {
+  Print-Green-Underline "Directory Tree:"
+  # Favour lsd over default tree command
+  if (Check-Command lsd) {
+    lsd --tree --color always --icon always
+  }
+  else {
+    tree
+  }
+}
+Set-Alias -Name lst -Value dirTree
+
 # --------------------------------------------------------------------------- #
 
 # Should really be name=value like Unix version of export but not a big deal

@@ -83,6 +83,8 @@
 |   |   +-- .bash_profile
 |   |   +-- .bashrc
 |   |   +-- .profile
+|   +-- dotbot
+|   |   +-- install.conf.yaml
 |   +-- nvim
 |   |   +-- init.vim
 |   +-- ps1
@@ -91,16 +93,23 @@
 |   |   +-- Microsoft.PowerShell_profile.ps1
 |   |   +-- unix.ps1
 |   +-- WindowsTerminal
-|   |   +-- profiles.json
-|   +-- install.conf.yaml
+|       +-- profiles.json
 +-- tools
-|   +-- dotbot
+|   +-- bash
+|   |   +-- multi-git-status
 |   +-- neofetch
-|   +-- onefetch
+|   +-- python
+|   |   +-- pidcat-win10
+|   +-- rust
+|   |   +-- dot
+|   |   +-- dust
+|   |   +-- eva
+|   |   +-- lsd
+|   |   +-- onefetch
 |   +-- winfetch
++-- utils
 +-- .editorconfig
 +-- .gitmodules
-+-- install
 +-- README.md
 +-- VERSION
 ```
