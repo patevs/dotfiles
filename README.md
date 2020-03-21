@@ -12,6 +12,9 @@
 [](.)
 
 * [`ubnt-intrepid/dot`](https://github.com/ubnt-intrepid/dot)
+* [`NerdyPepper/eva`](https://github.com/NerdyPepper/eva)
+* [`bootandy/dust`](https://github.com/bootandy/dust)
+* [`Y2Z/monolith`](https://github.com/Y2Z/monolith)
 
 [](.)
 
