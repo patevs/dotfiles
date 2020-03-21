@@ -20,9 +20,6 @@
 [submodule "tools/neofetch"]
 	path = tools/neofetch
 	url = https://github.com/dylanaraps/neofetch.git
-[submodule "tools/onefetch"]
-	path = tools/onefetch
-	url = https://github.com/o2sh/onefetch.git
 [submodule "tools/winfetch"]
 	path = tools/winfetch
 	url = https://github.com/lptstr/winfetch.git
@@ -47,5 +44,8 @@
 [submodule "tools/rust/lsd"]
 	path = tools/rust/lsd
 	url = https://github.com/Peltoche/lsd
+[submodule "tools/rust/onefetch"]
+	path = tools/onefetch
+	url = https://github.com/o2sh/onefetch.git
 
 # EOF #
