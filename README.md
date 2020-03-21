@@ -26,6 +26,10 @@
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`winfetch`](https://github.com/lptstr/winfetch/)
 
+### Bash Tools
+
+* [`multi-git-status`](https://github.com/fboender/multi-git-status)
+
 ### DotNet Tools
 
 * [`dotnet-outdated`](https://github.com/jerriep/dotnet-outdated)
