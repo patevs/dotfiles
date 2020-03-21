@@ -31,6 +31,10 @@
 	path = tools/bash/multi-git-status
 	url = https://github.com/fboender/multi-git-status
 
+[submodule "tools/python/pidcat-win10"]
+	path = tools/python/pidcat-win10
+	url = https://github.com/patevs/pidcat-win10
+
 [submodule "tools/rust/eva"]
 	path = tools/rust/eva
 	url = https://github.com/NerdyPepper/eva
