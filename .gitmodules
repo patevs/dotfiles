@@ -27,6 +27,9 @@
 [submodule "tools/rust/eva"]
 	path = tools/rust/eva
 	url = https://github.com/NerdyPepper/eva
+[submodule "tools/rust/dot"]
+	path = tools/rust/dot
+	url = https://github.com/ubnt-intrepid/dot
 [submodule "tools/rust/dust"]
 	path = tools/rust/dust
 	url = https://github.com/bootandy/dust
