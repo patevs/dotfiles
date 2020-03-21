@@ -37,9 +37,11 @@
 
 ### Go Tools
 
-* [`gitbatch`](https://github.com/patevs/gitbatch)
+* [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
-* [`MusicRepair`](https://github.com/patevs/MusicRepair)
+* [`lsp`](https://github.com/dborzov/lsp)
+* [`MusicRepair`](https://github.com/kalbhor/MusicRepair)
+* [`thyme`](https://github.com/sourcegraph/thyme)
 
 ### Python Tools
 
