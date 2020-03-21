@@ -44,6 +44,7 @@
 [submodule "tools/rust/lsd"]
 	path = tools/rust/lsd
 	url = https://github.com/Peltoche/lsd
+
 # [submodule "tools/rust/onefetch"]
 #	path = tools/rust/onefetch
 #	url = https://github.com/o2sh/onefetch.git
