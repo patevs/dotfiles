@@ -12,6 +12,11 @@
 # [submodule "tools/dotbot-plugins/dotbot-asdf"]
 # 	path = tools/dotbot-plugins/dotbot-asdf
 # 	url = https://github.com/sobolevn/dotbot-asdf.git
+
+[submodule "utils"]
+	path = utils
+	url = https://github.com/patevs/utility-scripts
+
 [submodule "tools/neofetch"]
 	path = tools/neofetch
 	url = https://github.com/dylanaraps/neofetch.git
@@ -21,9 +26,7 @@
 [submodule "tools/winfetch"]
 	path = tools/winfetch
 	url = https://github.com/lptstr/winfetch.git
-[submodule "utils"]
-	path = utils
-	url = https://github.com/patevs/utility-scripts
+
 [submodule "tools/rust/eva"]
 	path = tools/rust/eva
 	url = https://github.com/NerdyPepper/eva
