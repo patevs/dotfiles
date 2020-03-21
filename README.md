@@ -9,11 +9,7 @@
 * [Dotfiles on GitHub](https://github.com/search?q=dotfiles)
 * [`awesome-dotfiles`](https://github.com/webpro/awesome-dotfiles)
 
-[](.)
-
-* [`ubnt-intrepid/dot`](https://github.com/ubnt-intrepid/dot)
-
-[](.)
+### Example Dotfiles
 
 * [`holman/dotfiles`](https://github.com/holman/dotfiles)
 * [`mathiadbynens/dotfiles`](https://github.com/mathiasbynens/dotfiles)
@@ -25,10 +21,39 @@
 
 ## Git Submodules
 
-* [`anishathalye/dotbot`](https://github.com/anishathalye/dotbot)
-* [`dylanaraps/neofetch`](https://github.com/dylanaraps/neofetch/)
-* [`o2sh/onefetch`](https://github.com/o2sh/onefetch)
-* [`lptstr/winfetch`](https://github.com/lptstr/winfetch/)
+* [`dotbot`](https://github.com/anishathalye/dotbot)
+* [`neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`onefetch`](https://github.com/o2sh/onefetch)
+* [`winfetch`](https://github.com/lptstr/winfetch/)
+
+### DotNet Tools
+
+* [`dotnet-outdated`](https://github.com/jerriep/dotnet-outdated)
+* [`dotnet-retire`](https://github.com/RetireNet/dotnet-retire)
+* [`Elemental.SysInfoTool`](https://github.com/MarkPflug/Elemental.SysInfoTool)
+* [`git-status-cli`](https://github.com/jerriep/git-status-cli)
+* [`Moniker`](https://github.com/alexmg/Moniker)
+* [`nyancat.cs`](https://github.com/nickvdyck/nyancat.cs)
+
+### Go Tools
+
+* [`gitbatch`](https://github.com/isacikgoz/gitbatch)
+* [`lazygit`](https://github.com/jesseduffield/lazygit)
+* [`lsp`](https://github.com/dborzov/lsp)
+* [`MusicRepair`](https://github.com/kalbhor/MusicRepair)
+* [`thyme`](https://github.com/sourcegraph/thyme)
+
+### Python Tools
+
+* [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+
+### Rust Tools
+
+* [`eva`](https://github.com/NerdyPepper/eva)
+* [`dot`](https://github.com/ubnt-intrepid/dot)
+* [`dust`](https://github.com/bootandy/dust)
+* [`lsd`](https://github.com/Peltoche/lsd)
+* [`monolith`](https://github.com/Y2Z/monolith)
 
 ---
 
