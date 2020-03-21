@@ -21,10 +21,9 @@
 
 ## Git Submodules
 
-* [`dotbot`](https://github.com/anishathalye/dotbot)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
-* [`onefetch`](https://github.com/o2sh/onefetch)
 * [`winfetch`](https://github.com/lptstr/winfetch/)
+* [`utility-scripts`](https://github.com/patevs/utility-scripts)
 
 ### Bash Tools
 
@@ -58,6 +57,7 @@
 * [`dust`](https://github.com/bootandy/dust)
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
+* [`onefetch`](https://github.com/o2sh/onefetch)
 
 ---
 
