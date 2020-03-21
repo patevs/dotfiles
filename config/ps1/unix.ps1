@@ -102,8 +102,12 @@ function dirList {
   # Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
   Print-Green-Underline "Directory Contents:"
   # Favour lsd over default dir command
-  if (Check-Command lsd) { lsd }
-  else { dir }
+  if (Check-Command lsd) {
+    lsd --color always --icon always
+  }
+  else {
+    Get-ChildItem
+  }
 }
 Set-Alias -Name l -Value dirList
 
@@ -111,8 +115,12 @@ Set-Alias -Name l -Value dirList
 function dirListAll {
   Print-Green-Underline "Directory Contents:"
   # Favour lsd over default dir command
-  if (Check-Command lsd) { lsd -a1 }
-  else { dir }
+  if (Check-Command lsd) {
+    lsd -a1 --color always --icon always
+  }
+  else {
+    Get-ChildItem | Format-Wide
+  }
 }
 Set-Alias -Name ls -Value dirListAll -option AllScope -Force
 Set-Alias -Name ll -Value dirListAll
@@ -121,8 +129,12 @@ Set-Alias -Name ll -Value dirListAll
 function dirListLong {
   Print-Green-Underline "Directory Contents:"
   # Favour lsd over default dir command
-  if (Check-Command lsd) { lsd -al }
-  else { dir }
+  if (Check-Command lsd) {
+    lsd -al --color always --icon always
+  }
+  else {
+    Get-ChildItem | Format-List
+  }
 }
 Set-Alias -Name lll -Value dirListLong
 
