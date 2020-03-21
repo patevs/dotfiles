@@ -35,6 +35,10 @@
 * [`Moniker`](https://github.com/alexmg/Moniker)
 * [`nyancat.cs`](https://github.com/nickvdyck/nyancat.cs)
 
+### Python Tools
+
+* [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+
 ### Rust Tools
 
 * [`NerdyPepper/eva`](https://github.com/NerdyPepper/eva)
