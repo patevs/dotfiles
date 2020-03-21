@@ -30,5 +30,8 @@
 [submodule "tools/rust/dust"]
 	path = tools/rust/dust
 	url = https://github.com/bootandy/dust
+[submodule "tools/rust/lsd"]
+	path = tools/rust/lsd
+	url = https://github.com/Peltoche/lsd
 
 # EOF #
