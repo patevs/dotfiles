@@ -119,7 +119,7 @@ function dirListAll {
     lsd -a1 --color always --icon always
   }
   else {
-    Get-ChildItem
+    Get-ChildItem | Format-Wide
   }
 }
 Set-Alias -Name ls -Value dirListAll -option AllScope -Force
@@ -133,7 +133,7 @@ function dirListLong {
     lsd -al --color always --icon always
   }
   else {
-    Get-ChildItem
+    Get-ChildItem | Format-List
   }
 }
 Set-Alias -Name lll -Value dirListLong
