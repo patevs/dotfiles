@@ -238,6 +238,8 @@ if (Test-Path($ChocolateyProfile)) {
 
 # Import-Module “$env:ChocolateyInstall\helpers\chocolateyProfile.psm1” -Force
 
+# --------------------------------------------------------------------------- #
+
 # --------------------- #
 # Scoop Related Aliases #
 #---------------------- #
