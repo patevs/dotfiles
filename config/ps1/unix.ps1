@@ -116,7 +116,7 @@ function dirListAll {
   Print-Green-Underline "Directory Contents:"
   # Favour lsd over default dir command
   if (Check-Command lsd) {
-    lsd -a1 --color always --icon always
+    lsd -A1 --color always --icon always
   }
   else {
     Get-ChildItem | Format-Wide
