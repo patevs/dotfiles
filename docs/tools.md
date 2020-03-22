@@ -45,5 +45,6 @@
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
+* [`tokei`](https://github.com/XAMPPRocky/tokei)
 
 ---
