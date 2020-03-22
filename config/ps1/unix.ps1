@@ -45,11 +45,16 @@ function touch($file) {
 # }
 
 function grep($regex, $dir) {
-	if ( $dir ) {
-		get-childitem $dir | select-string $regex
-		return
-	}
-	$input | select-string $regex
+  # Favor ripgrep over grep
+  if(Check-Command rg){
+    rg $regex
+  } else {
+    if ( $dir ) {
+      get-childitem $dir | select-string $regex
+      return
+    }
+    $input | select-string $regex
+  }
 }
 
 function which($name) {
