@@ -45,17 +45,15 @@ function touch($file) {
 # }
 
 function grep($regex, $dir) {
-  # Favor ripgrep over grep
-  if(Check-Command rg){
-    rg $regex
-  } else {
-    if ( $dir ) {
-      get-childitem $dir | select-string $regex
-      return
-    }
-    $input | select-string $regex
+  if ( $dir ) {
+    get-childitem $dir | select-string $regex
+    return
   }
+  $input | select-string $regex
 }
+
+# Favour ripgrep over grep if installed
+Set-Alias -Name grep -Value rg
 
 function which($name) {
 	Get-Command $name | Select-Object -ExpandProperty Definition
