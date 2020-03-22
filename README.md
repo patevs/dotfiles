@@ -19,14 +19,6 @@
 
 ---
 
-## Git Submodules
-
-* [`neofetch`](https://github.com/dylanaraps/neofetch/)
-* [`winfetch`](https://github.com/lptstr/winfetch/)
-* [`utility-scripts`](https://github.com/patevs/utility-scripts)d
-
----
-
 ## [Dracula Theme](https://github.com/dracula/dracula-theme)
 
 * [ConEmu](https://github.com/dracula/conemu)
