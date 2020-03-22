@@ -4,16 +4,12 @@
 
 ---
 
-## System Tools
-
-* [`neofetch`](https://github.com/dylanaraps/neofetch/)
-* [`winfetch`](https://github.com/lptstr/winfetch/)
-
-### Bash Tools
+## Bash Tools
 
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
+* [`neofetch`](https://github.com/dylanaraps/neofetch/)
 
-### DotNet Tools
+## DotNet Tools
 
 * [`dotnet-outdated`](https://github.com/jerriep/dotnet-outdated)
 * [`dotnet-retire`](https://github.com/RetireNet/dotnet-retire)
@@ -22,7 +18,7 @@
 * [`Moniker`](https://github.com/alexmg/Moniker)
 * [`nyancat.cs`](https://github.com/nickvdyck/nyancat.cs)
 
-### Go Tools
+## Go Tools
 
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
@@ -30,11 +26,15 @@
 * [`MusicRepair`](https://github.com/kalbhor/MusicRepair)
 * [`thyme`](https://github.com/sourcegraph/thyme)
 
-### Python Tools
+## PowerShell Tools
+
+* [`winfetch`](https://github.com/lptstr/winfetch/)
+
+## Python Tools
 
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 
-### Rust Tools
+## Rust Tools
 
 * [`bat`](https://github.com/sharkdp/bat)
   * [`bat-extras`](https://github.com/eth-p/bat-extras)
