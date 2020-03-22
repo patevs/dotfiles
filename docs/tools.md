@@ -6,6 +6,7 @@
 
 ## Bash Tools
 
+* [`git-extras`](https://github.com/tj/git-extras)
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
 
