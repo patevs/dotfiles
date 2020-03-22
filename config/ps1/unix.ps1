@@ -45,11 +45,16 @@ function touch($file) {
 # }
 
 function grep($regex, $dir) {
-	if ( $dir ) {
-		get-childitem $dir | select-string $regex
-		return
-	}
-	$input | select-string $regex
+  # Favor ripgrep over grep
+  if(Check-Command rg){
+    rg $regex
+  } else {
+    if ( $dir ) {
+      get-childitem $dir | select-string $regex
+      return
+    }
+    $input | select-string $regex
+  }
 }
 
 function which($name) {
@@ -116,7 +121,7 @@ function dirListAll {
   Print-Green-Underline "Directory Contents:"
   # Favour lsd over default dir command
   if (Check-Command lsd) {
-    lsd -a1 --color always --icon always
+    lsd -A1 --color always --icon always
   }
   else {
     Get-ChildItem | Format-Wide

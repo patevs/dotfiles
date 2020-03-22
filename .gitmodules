@@ -2,17 +2,6 @@
 # .gitmodules #
 # ----------- #
 
-# [submodule "tools/dotbot"]
-# 	path = tools/dotbot
-#	url = https://github.com/anishathalye/dotbot.git
-#	ignore = dirty
-# [submodule "tools/dotbot-plugins/dotbot-vscode"]
-# 	path = tools/dotbot-plugins/dotbot-vscode
-#	url = https://github.com/hujianxin/dotbot-vscode.git
-# [submodule "tools/dotbot-plugins/dotbot-asdf"]
-# 	path = tools/dotbot-plugins/dotbot-asdf
-# 	url = https://github.com/sobolevn/dotbot-asdf.git
-
 [submodule "utils"]
 	path = utils
 	url = https://github.com/patevs/utility-scripts
@@ -24,28 +13,39 @@
 	path = tools/winfetch
 	url = https://github.com/lptstr/winfetch.git
 
-[submodule "tools/bash/multi-git-status"]
-	path = tools/bash/multi-git-status
-	url = https://github.com/fboender/multi-git-status
+# [submodule "tools/dotbot"]
+# 	path = tools/dotbot
+#	url = https://github.com/anishathalye/dotbot.git
+#	ignore = dirty
+# [submodule "tools/dotbot-plugins/dotbot-vscode"]
+# 	path = tools/dotbot-plugins/dotbot-vscode
+#	url = https://github.com/hujianxin/dotbot-vscode.git
+# [submodule "tools/dotbot-plugins/dotbot-asdf"]
+# 	path = tools/dotbot-plugins/dotbot-asdf
+# 	url = https://github.com/sobolevn/dotbot-asdf.git
 
-[submodule "tools/python/pidcat-win10"]
-	path = tools/python/pidcat-win10
-	url = https://github.com/patevs/pidcat-win10
+# [submodule "tools/bash/multi-git-status"]
+# 	path = tools/bash/multi-git-status
+# 	url = https://github.com/fboender/multi-git-status
 
-[submodule "tools/rust/eva"]
-	path = tools/rust/eva
-	url = https://github.com/NerdyPepper/eva
-[submodule "tools/rust/dot"]
-	path = tools/rust/dot
-	url = https://github.com/ubnt-intrepid/dot
-[submodule "tools/rust/dust"]
-	path = tools/rust/dust
-	url = https://github.com/bootandy/dust
-[submodule "tools/rust/lsd"]
-	path = tools/rust/lsd
-	url = https://github.com/Peltoche/lsd
-[submodule "tools/rust/onefetch"]
-	path = tools/rust/onefetch
-	url = https://github.com/o2sh/onefetch
+# [submodule "tools/python/pidcat-win10"]
+# 	path = tools/python/pidcat-win10
+# 	url = https://github.com/patevs/pidcat-win10
+
+# [submodule "tools/rust/eva"]
+# 	path = tools/rust/eva
+# 	url = https://github.com/NerdyPepper/eva
+# [submodule "tools/rust/dot"]
+# 	path = tools/rust/dot
+# 	url = https://github.com/ubnt-intrepid/dot
+# [submodule "tools/rust/dust"]
+# 	path = tools/rust/dust
+# 	url = https://github.com/bootandy/dust
+# [submodule "tools/rust/lsd"]
+# 	path = tools/rust/lsd
+# 	url = https://github.com/Peltoche/lsd
+# [submodule "tools/rust/onefetch"]
+# 	path = tools/rust/onefetch
+# 	url = https://github.com/o2sh/onefetch
 
 # EOF #
