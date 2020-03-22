@@ -52,10 +52,12 @@ function grep($regex, $dir) {
   $input | select-string $regex
 }
 
+Set-Alias -Name grep -Value rg
+
 # Favour ripgrep over grep if installed
-if(Check-Command rg){
-  Set-Alias -Name grep -Value rg
-}
+# if(Check-Command rg) {
+#   Set-Alias -Name grep -Value rg
+# }
 
 function which($name) {
 	Get-Command $name | Select-Object -ExpandProperty Definition
