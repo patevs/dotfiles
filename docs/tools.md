@@ -36,6 +36,7 @@
 
 ### Rust Tools
 
+* [`bat`](https://github.com/sharkdp/bat)
 * [`eva`](https://github.com/NerdyPepper/eva)
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dust`](https://github.com/bootandy/dust)
