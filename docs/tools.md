@@ -37,6 +37,7 @@
 ### Rust Tools
 
 * [`bat`](https://github.com/sharkdp/bat)
+  * [`bat-extras`](https://github.com/eth-p/bat-extras)
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dust`](https://github.com/bootandy/dust)
