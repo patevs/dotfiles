@@ -41,6 +41,7 @@
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dust`](https://github.com/bootandy/dust)
 * [`eva`](https://github.com/NerdyPepper/eva)
+* [`fd`](https://github.com/sharkdp/fd)
 * [`grex`](https://github.com/pemistahl/grex)
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
