@@ -37,9 +37,11 @@
 ### Rust Tools
 
 * [`bat`](https://github.com/sharkdp/bat)
-* [`eva`](https://github.com/NerdyPepper/eva)
 * [`dot`](https://github.com/ubnt-intrepid/dot)
+* [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dust`](https://github.com/bootandy/dust)
+* [`eva`](https://github.com/NerdyPepper/eva)
+* [`grex`](https://github.com/pemistahl/grex)
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
