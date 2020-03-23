@@ -22,6 +22,7 @@
 ## Go Tools
 
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
+* [`gotop`](https://github.com/xxxserxxx/gotop)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`MusicRepair`](https://github.com/kalbhor/MusicRepair)
