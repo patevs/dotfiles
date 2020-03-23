@@ -19,6 +19,7 @@ function edit-profile {
 	edit $profileDir
 }
 
+# TODO: Update function name to use an approved verb
 function reload-profile {
 	& $profile
 }
@@ -28,11 +29,13 @@ function get-path {
 }
 
 # Print PowerShell version
+# TODO: Update function name to use an approved verb
 function ps-version {
   $PSVersionTable.PSVersion
 }
 
 # Print list of installed PowerShell modules
+# TODO: Update function name to use an approved verb
 function ps-modules {
   Get-InstalledModule
 }
@@ -121,10 +124,11 @@ function Print-Welcome {
 }
 Print-Welcome
 
+# --------------------------------------------------------------------------- #
+
 # Start thyme
 # TODO: Ensure thyme is installed
 # for(1){thyme track -o thyme.json; Start-Sleep -s 5}
 # thyme show -i thyme.json -w stats | Out-File -e utf8 thyme.html
 
 # EOF #
-
