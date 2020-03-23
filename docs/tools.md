@@ -51,5 +51,6 @@
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
+* [`ytop`](https://github.com/cjbassi/ytop)
 
 ---
