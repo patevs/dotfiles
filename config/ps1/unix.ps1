@@ -89,6 +89,7 @@ function which($name) {
 # ------------------------ #
 
 # Print a given string formatted colored green and underlined
+# TODO: Remove this function as it is included in ./defaults.ps1
 function Print-Green-Underline ($str) {
   Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n" -ForegroundColor Green
   # Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n"
