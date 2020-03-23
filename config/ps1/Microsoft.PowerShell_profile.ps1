@@ -42,6 +42,7 @@ function ps-modules {
 
 # Reset the console colors
 # https://stackoverflow.com/questions/33859498/how-can-i-reset-the-powershell-colors/42624497
+# TODO: Fix this function
 function reset-colors {
   [Console]::ResetColor()
 }
