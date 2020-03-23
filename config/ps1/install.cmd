@@ -8,6 +8,8 @@
 :: The script copies profile scripts to '%USERPROFILE%\Documents\WindowsPowerShell\'
 :: and then reloads PowerShell to activate the profile.
 
+:: TODO: Create a .ps1 version of this script
+
 :: CLS
 ECHO. & ECHO  [100m [100;4mPowerShell Profile Install Script[0m[100m [0m & ECHO.
 :: ECHO. & ECHO  [100;4m PowerShell Profile Install Script [0m & ECHO.
