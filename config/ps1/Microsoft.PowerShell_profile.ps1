@@ -61,6 +61,7 @@ function ps-modules {
 
 # --------------------------------------------------------------------------- #
 
+# Source additional config files
 foreach ( $includeFile in ("defaults", "unix", "development") ) {
 	Unblock-File $profileDir\$includeFile.ps1
   . "$profileDir\$includeFile.ps1"
