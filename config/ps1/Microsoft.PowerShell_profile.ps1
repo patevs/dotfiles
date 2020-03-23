@@ -105,6 +105,7 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 # --------------------------------------------------------------------------- #
 
 # Print a welcome message
+# TODO: Update function name to use an approved verb
 function Print-Welcome {
   # Write-Host
   $msg = "             _    _ _____ _     _____ ________  ___ _____
