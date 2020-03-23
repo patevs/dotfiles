@@ -62,15 +62,11 @@ function ps-modules {
 # --------------------------------------------------------------------------- #
 
 # Source additional config files
-foreach ( $includeFile in ("defaults", "unix", "development") ) {
+# TODO: Ensure rustup is installed
+foreach ( $includeFile in ("defaults", "unix", "development", "completions/rustup.ps1") ) {
 	Unblock-File $profileDir\$includeFile.ps1
   . "$profileDir\$includeFile.ps1"
 }
-
-# TODO: Ensure ~/Desktop/git directory exists
-# set-location '~/Desktop/git'
-
-# write-output "Pat's profile loaded!"
 
 # --------------------------------------------------------------------------- #
 
@@ -125,6 +121,11 @@ function Print-Welcome {
   Write-Host $msg -ForegroundColor Green
 }
 Print-Welcome
+
+# TODO: Ensure ~/Desktop/git directory exists
+# set-location '~/Desktop/git'
+
+# write-output "Pat's profile loaded!"
 
 # --------------------------------------------------------------------------- #
 
