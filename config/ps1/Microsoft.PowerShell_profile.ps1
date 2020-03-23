@@ -40,6 +40,12 @@ function ps-modules {
   Get-InstalledModule
 }
 
+# Reset the console colors
+# https://stackoverflow.com/questions/33859498/how-can-i-reset-the-powershell-colors/42624497
+function reset-colors {
+  [Console]::ResetColor()
+}
+
 # function disable-windows-search {
 # 	Set-Service wsearch -StartupType disabled
 # 	stop-service wsearch
