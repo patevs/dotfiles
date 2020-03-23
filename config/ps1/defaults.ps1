@@ -23,6 +23,9 @@ $MaximumHistoryCount = 10000;
 
 # Check if a given PowerShell module is installed
 # https://stackoverflow.com/questions/28740320/how-do-i-check-if-a-powershell-module-is-installed
+# TODO: Change function name to use an approved verb
+# Approved verbs can be found by running the command:
+# > Get-Verb
 function Check-Module($modname){
   return [bool](Get-Module -ListAvailable -Name $modname)
 }
@@ -90,6 +93,9 @@ Start-SshAgent 2>&1 | Out-Null
 # ------------------------ #
 
 # Print a given string formatted colored green and underlined
+# TODO: Change function name to use an approved verb
+# Approved verbs can be found by running the command:
+# > Get-Verb
 function Print-Green-Underline ($str) {
   Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n" -ForegroundColor Green
 }
@@ -120,6 +126,7 @@ Set-Alias -Name reboot -Value restartSys
 # --------------------------------------------------------------------------- #
 
 # Move to Desktop Directory (~\desktop)
+# TODO: Remove desktop alias and change function name to desktop
 function moveDesktop {
   $desktopPath = $env:USERPROFILE + "\desktop"
   Set-Location $desktopPath
@@ -129,7 +136,7 @@ Set-Alias -Name desk -Value moveDesktop
 
 # Move to Development Directory (~\desktop\git)
 # TODO: Ensure this directory exists
-# TODO: Run `winfetch`
+# TODO: Remove dev alias and change function name to dev
 function moveDev {
   $devPath = $env:USERPROFILE + "\desktop\git"
   Set-Location $devPath

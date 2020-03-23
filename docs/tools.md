@@ -22,6 +22,7 @@
 ## Go Tools
 
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
+* [`gotop`](https://github.com/xxxserxxx/gotop)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`MusicRepair`](https://github.com/kalbhor/MusicRepair)
@@ -39,6 +40,7 @@
 
 * [`bat`](https://github.com/sharkdp/bat)
   * [`bat-extras`](https://github.com/eth-p/bat-extras)
+* [`broot`](https://github.com/Canop/broot)
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dust`](https://github.com/bootandy/dust)
@@ -50,5 +52,6 @@
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
+* [`ytop`](https://github.com/cjbassi/ytop)
 
 ---

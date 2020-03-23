@@ -60,6 +60,7 @@
 
 # Check if a given command exists
 # https://stackoverflow.com/questions/3919798/how-to-check-if-a-cmdlet-exists-in-powershell-at-runtime-via-script
+# TODO: Remove this function as it exists in ./defaults.ps1
 function Check-Command($cmdname) {
   # return [bool](Get-Command -Name $cmdname -ea 0)
   return [bool](Get-Command -Name $cmdname -ErrorAction SilentlyContinue)
@@ -105,6 +106,7 @@ function edit {
 # ------------------------ #
 
 # Print a given string formatted colored green and underlined
+# TODO: Remove this function as it exists in ./defaults.ps1
 function Print-Green-Underline ($str) {
   Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n" -ForegroundColor Green
 }
@@ -124,6 +126,8 @@ Set-Alias -Name mgs -Value getGitMultiStatus
 
 # Use GitHub's hub Client in favor of git
 if (Check-Command hub){ Set-Alias git hub }
+
+# ! TODO: Refactor the following functions to be more concise
 
 # Print Git Status
 function getGitStatus {

@@ -19,6 +19,7 @@ function edit-profile {
 	edit $profileDir
 }
 
+# TODO: Update function name to use an approved verb
 function reload-profile {
 	& $profile
 }
@@ -28,13 +29,22 @@ function get-path {
 }
 
 # Print PowerShell version
+# TODO: Update function name to use an approved verb
 function ps-version {
   $PSVersionTable.PSVersion
 }
 
 # Print list of installed PowerShell modules
+# TODO: Update function name to use an approved verb
 function ps-modules {
   Get-InstalledModule
+}
+
+# Reset the console colors
+# https://stackoverflow.com/questions/33859498/how-can-i-reset-the-powershell-colors/42624497
+# TODO: Fix this function
+function reset-colors {
+  [Console]::ResetColor()
 }
 
 # function disable-windows-search {
@@ -58,15 +68,12 @@ function ps-modules {
 
 # --------------------------------------------------------------------------- #
 
-foreach ( $includeFile in ("defaults", "unix", "development") ) {
+# Source additional config files
+# TODO: Ensure rustup is installed
+foreach ( $includeFile in ("defaults", "unix", "development", "completions/rustup") ) {
 	Unblock-File $profileDir\$includeFile.ps1
   . "$profileDir\$includeFile.ps1"
 }
-
-# TODO: Ensure ~/Desktop/git directory exists
-# set-location '~/Desktop/git'
-
-# write-output "Pat's profile loaded!"
 
 # --------------------------------------------------------------------------- #
 
@@ -102,6 +109,7 @@ foreach ( $includeFile in ("defaults", "unix", "development") ) {
 # --------------------------------------------------------------------------- #
 
 # Print a welcome message
+# TODO: Update function name to use an approved verb
 function Print-Welcome {
   # Write-Host
   $msg = "             _    _ _____ _     _____ ________  ___ _____
@@ -121,10 +129,16 @@ function Print-Welcome {
 }
 Print-Welcome
 
+# TODO: Ensure ~/Desktop/git directory exists
+# set-location '~/Desktop/git'
+
+# write-output "Pat's profile loaded!"
+
+# --------------------------------------------------------------------------- #
+
 # Start thyme
 # TODO: Ensure thyme is installed
 # for(1){thyme track -o thyme.json; Start-Sleep -s 5}
 # thyme show -i thyme.json -w stats | Out-File -e utf8 thyme.html
 
 # EOF #
-
