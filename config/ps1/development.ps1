@@ -106,6 +106,7 @@ function edit {
 # ------------------------ #
 
 # Print a given string formatted colored green and underlined
+# TODO: Remove this function as it exists in ./defaults.ps1
 function Print-Green-Underline ($str) {
   Write-Host "`n$([char]27)[4m$str$([char]27)[24m`n" -ForegroundColor Green
 }
@@ -125,6 +126,8 @@ Set-Alias -Name mgs -Value getGitMultiStatus
 
 # Use GitHub's hub Client in favor of git
 if (Check-Command hub){ Set-Alias git hub }
+
+# ! TODO: Refactor the following functions to be more concise
 
 # Print Git Status
 function getGitStatus {
