@@ -53,17 +53,7 @@
 |   +-- WindowsTerminal
 |       +-- profiles.json
 +-- tools
-|   +-- bash
-|   |   +-- multi-git-status
 |   +-- neofetch
-|   +-- python
-|   |   +-- pidcat-win10
-|   +-- rust
-|   |   +-- dot
-|   |   +-- dust
-|   |   +-- eva
-|   |   +-- lsd
-|   |   +-- onefetch
 |   +-- winfetch
 +-- utils
 +-- .editorconfig
