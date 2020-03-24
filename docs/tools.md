@@ -35,6 +35,7 @@
 ## Python Tools
 
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+* [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
 ## Rust Tools
 
