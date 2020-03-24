@@ -34,7 +34,9 @@
 
 ## Python Tools
 
+* [`Buku`](https://github.com/jarun/Buku)
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+* [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
 ## Rust Tools
 
@@ -47,6 +49,7 @@
 * [`eva`](https://github.com/NerdyPepper/eva)
 * [`fd`](https://github.com/sharkdp/fd)
 * [`grex`](https://github.com/pemistahl/grex)
+* [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
