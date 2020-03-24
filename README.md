@@ -4,16 +4,6 @@
 
 ---
 
-## [Dracula Theme](https://github.com/dracula/dracula-theme)
-
-* [ConEmu](https://github.com/dracula/conemu)
-* [gh-pages](https://github.com/dracula/gh-pages)
-* [PowerShell](https://github.com/dracula/powershell)
-* [Vim](https://github.com/dracula/vim)
-* [Visual Studio Code](https://github.com/dracula/visual-studio-code)
-
----
-
 ## Project Structure
 
 ```md
@@ -31,6 +21,8 @@
 |   +-- nvim
 |   |   +-- init.vim
 |   +-- ps1
+|   |   +-- completions
+|   |   |   +-- rustup.ps1
 |   |   +-- defaults.ps1
 |   |   +-- development.ps1
 |   |   +-- Microsoft.PowerShell_profile.ps1
