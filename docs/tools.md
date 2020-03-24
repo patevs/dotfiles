@@ -34,6 +34,7 @@
 
 ## Python Tools
 
+* [`Buku`](https://github.com/jarun/Buku)
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
