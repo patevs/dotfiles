@@ -1,5 +1,7 @@
 # Links and Resources
 
+> Various links and resources relating to system configuration, dotfiles, and their management.
+
 ---
 
 * [Dotfiles on GitHub](https://github.com/search?q=dotfiles)
