@@ -30,6 +30,7 @@
 
 ## Go Tools
 
+* [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gotop`](https://github.com/xxxserxxx/gotop)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
