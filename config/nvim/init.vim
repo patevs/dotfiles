@@ -221,6 +221,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'KabbAmine/zeavim.vim'
+
 " Initialize plugin system
 " Remember to run :PlugInstall
 call plug#end()
