@@ -7,6 +7,7 @@
 ## Developer Tools
 
 * [`zeal`](https://github.com/zealdocs/zeal)
+  * [Documentation](https://zealdocs.org/usage.html)
   * [User Contributions](https://zealusercontributions.herokuapp.com/)
 
 ---
