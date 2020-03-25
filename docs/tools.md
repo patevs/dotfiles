@@ -15,6 +15,7 @@
 ## Bash Tools
 
 * [`git-extras`](https://github.com/tj/git-extras)
+* [`git-friendly`](https://github.com/jamiew/git-friendly)
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
 
@@ -29,6 +30,7 @@
 
 ## Go Tools
 
+* [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gotop`](https://github.com/xxxserxxx/gotop)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
@@ -44,6 +46,7 @@
 
 * [`Buku`](https://github.com/jarun/Buku)
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+* [`wig`](https://github.com/jekyc/wig)
 * [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
 ## Rust Tools
