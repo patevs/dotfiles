@@ -44,6 +44,7 @@
 
 * [`Buku`](https://github.com/jarun/Buku)
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+* [`wig`](https://github.com/jekyc/wig)
 * [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
 ## Rust Tools
