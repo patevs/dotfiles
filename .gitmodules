@@ -32,3 +32,6 @@
 # 	url = https://github.com/sobolevn/dotbot-asdf.git
 
 # EOF #
+[submodule "examples/powershell-profile"]
+	path = examples/powershell-profile
+	url = https://github.com/mikemaccana/powershell-profile
