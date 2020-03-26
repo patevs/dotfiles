@@ -28,3 +28,6 @@
 [submodule "examples/dotfiles-windows"]
 	path = examples/dotfiles-windows
 	url = https://github.com/jayharris/dotfiles-windows
+[submodule "examples/windows-development-environment"]
+	path = examples/windows-development-environment
+	url = https://github.com/felixrieseberg/windows-development-environment
