@@ -11,11 +11,15 @@
 
 ## Example Dotfiles
 
+* [`jayharris/dotfiles-windows`](https://github.com/jayharris/dotfiles-windows)
+* [`felixriesebery/windows-development-environment`](https://github.com/felixrieseberg/windows-development-environment)
+
+[](.)
+
 * [`holman/dotfiles`](https://github.com/holman/dotfiles)
 * [`mathiadbynens/dotfiles`](https://github.com/mathiasbynens/dotfiles)
 * [`paulirish/dotfiles`](https://github.com/paulirish/dotfiles)
 * [`sanctum.geek.nz/dotfiles`](https://sanctum.geek.nz/cgit/dotfiles.git/about/)
 * [`nicknisi/dotfiles`](https://github.com/nicknisi/dotfiles)
-* [`jayharris/dotfiles-windows`](https://github.com/jayharris/dotfiles-windows)
 
 ---
