@@ -6,6 +6,13 @@
 	path = utils
 	url = https://github.com/patevs/utility-scripts
 
+[submodule "examples/dotfiles-windows"]
+	path = examples/dotfiles-windows
+	url = https://github.com/jayharris/dotfiles-windows
+[submodule "examples/windows-development-environment"]
+	path = examples/windows-development-environment
+	url = https://github.com/felixrieseberg/windows-development-environment
+
 [submodule "tools/neofetch"]
 	path = tools/neofetch
 	url = https://github.com/dylanaraps/neofetch.git
@@ -25,9 +32,3 @@
 # 	url = https://github.com/sobolevn/dotbot-asdf.git
 
 # EOF #
-[submodule "examples/dotfiles-windows"]
-	path = examples/dotfiles-windows
-	url = https://github.com/jayharris/dotfiles-windows
-[submodule "examples/windows-development-environment"]
-	path = examples/windows-development-environment
-	url = https://github.com/felixrieseberg/windows-development-environment
