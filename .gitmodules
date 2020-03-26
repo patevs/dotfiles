@@ -25,3 +25,6 @@
 # 	url = https://github.com/sobolevn/dotbot-asdf.git
 
 # EOF #
+[submodule "examples/dotfiles-windows"]
+	path = examples/dotfiles-windows
+	url = https://github.com/jayharris/dotfiles-windows
