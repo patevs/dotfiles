@@ -12,6 +12,7 @@
 ## Example Dotfiles
 
 * [`jayharris/dotfiles-windows`](https://github.com/jayharris/dotfiles-windows)
+* [`mikemaccana/powershell-profile`](https://github.com/mikemaccana/powershell-profile)
 * [`felixriesebery/windows-development-environment`](https://github.com/felixrieseberg/windows-development-environment)
 
 [](.)

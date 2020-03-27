@@ -9,6 +9,9 @@
 [submodule "examples/dotfiles-windows"]
 	path = examples/dotfiles-windows
 	url = https://github.com/jayharris/dotfiles-windows
+[submodule "examples/powershell-profile"]
+	path = examples/powershell-profile
+	url = https://github.com/mikemaccana/powershell-profile
 [submodule "examples/windows-development-environment"]
 	path = examples/windows-development-environment
 	url = https://github.com/felixrieseberg/windows-development-environment
