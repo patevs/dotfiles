@@ -46,6 +46,7 @@
 
 * [`Buku`](https://github.com/jarun/Buku)
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+* [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`wig`](https://github.com/jekyc/wig)
 * [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
