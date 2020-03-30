@@ -21,7 +21,7 @@ CALL ECHO F | xcopy /Y /Q Microsoft.PowerShell_profile.ps1 %USERPROFILE%\Documen
 CALL ECHO F | xcopy /Y /Q defaults.ps1 %USERPROFILE%\Documents\WindowsPowerShell\defaults.ps1
 CALL ECHO F | xcopy /Y /Q unix.ps1 %USERPROFILE%\Documents\WindowsPowerShell\unix.ps1
 CALL ECHO F | xcopy /Y /Q development.ps1 %USERPROFILE%\Documents\WindowsPowerShell\development.ps1
-CALL ECHO F | xcopy /Y /Q completions\rustup.ps1 %USERPROFILE%\Documents\WindowsPowerShell\completions\rustup.ps1
+:: CALL ECHO F | xcopy /Y /Q completions\rustup.ps1 %USERPROFILE%\Documents\WindowsPowerShell\completions\rustup.ps1
 :: New line
 ECHO.
 :: Reload PowerShell
