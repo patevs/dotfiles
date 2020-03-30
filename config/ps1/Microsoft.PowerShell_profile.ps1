@@ -69,8 +69,7 @@ function reset-colors {
 # --------------------------------------------------------------------------- #
 
 # Source additional config files
-# TODO: Ensure rustup is installed
-foreach ( $includeFile in ("defaults", "unix", "development", "completions/rustup") ) {
+foreach ( $includeFile in ("defaults", "unix", "development") ) {
 	Unblock-File $profileDir\$includeFile.ps1
   . "$profileDir\$includeFile.ps1"
 }
