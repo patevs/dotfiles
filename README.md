@@ -37,8 +37,9 @@
 ├── utils
 ├── .editorconfig
 ├── .gitmodules
-├── README.md
-└── VERSION
+├── LICENSE
+├── package.json
+└── README.md
 ```
 
 ---
