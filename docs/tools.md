@@ -46,6 +46,8 @@
 
 * [`Buku`](https://github.com/jarun/Buku)
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+* [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
+* [`spotify-downloader`](https://github.com/ritiek/spotify-downloader) Download Spotify playlists from YouTube with albumart and metadata.
 * [`wig`](https://github.com/jekyc/wig)
 * [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
@@ -65,6 +67,7 @@
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
+* [`spotify-tui`](https://github.com/Rigellute/spotify-tui) A Spotify client for the terminal.
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
 * [`ytop`](https://github.com/cjbassi/ytop)
 
