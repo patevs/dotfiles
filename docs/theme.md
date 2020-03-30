@@ -4,7 +4,7 @@
 
 ---
 
-## [Dracula Theme](https://github.com/dracula/dracula-theme)
+## [Dracula Themes](https://github.com/dracula/dracula-theme)
 
 * [ConEmu](https://github.com/dracula/conemu)
   * [`ConEmu-Color-Themes`](https://github.com/joonro/ConEmu-Color-Themes)
@@ -12,5 +12,12 @@
 * [PowerShell](https://github.com/dracula/powershell)
 * [Vim](https://github.com/dracula/vim)
 * [Visual Studio Code](https://github.com/dracula/visual-studio-code)
+
+---
+
+## qBittorrent Theme
+
+* [`qBittorrentDarktheme`](https://github.com/maboroshin/qBittorrentDarktheme)
+* [`qbt-theme`](https://github.com/jagannatharjun/qbt-theme)
 
 ---
