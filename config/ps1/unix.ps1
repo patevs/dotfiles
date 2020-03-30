@@ -51,7 +51,6 @@ function grep($regex, $dir) {
   }
   $input | select-string $regex
 }
-
 # Favour ripgrep over grep if installed
 Set-Alias -Name grep -Value rg
 

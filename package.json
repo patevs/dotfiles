@@ -1,0 +1,17 @@
+{
+  "name": "dotfiles",
+  "version": "0.5.9",
+  "description": "PatEvs' personal dotfiles",
+  "author": "PatEvs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patevs/dotfiles.git"
+  },
+  "keywords": [
+    "dotfiles"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
