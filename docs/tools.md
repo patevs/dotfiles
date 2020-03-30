@@ -67,6 +67,7 @@
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
+* [`spotify-tui`](https://github.com/Rigellute/spotify-tui) A Spotify client for the terminal.
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
 * [`ytop`](https://github.com/cjbassi/ytop)
 
