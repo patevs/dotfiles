@@ -139,7 +139,7 @@ Set-Alias -Name desk -Value moveDesktop
 # TODO: Remove dev alias and change function name to dev
 function moveDev {
   # $devPath = $env:USERPROFILE + "\desktop\git"
-  $devPath = $envLUSERPROFILE + "\git"
+  $devPath = $env:USERPROFILE + "\git"
   Set-Location $devPath
 }
 Set-Alias -Name dev -Value moveDev
