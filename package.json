@@ -2,14 +2,8 @@
   "name": "dotfiles",
   "version": "0.5.8",
   "description": "PatEvs' personal dotfiles",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "example": "examples"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "PatEvs",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/patevs/dotfiles.git"
@@ -17,10 +11,7 @@
   "keywords": [
     "dotfiles"
   ],
-  "author": "PatEvs",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/patevs/dotfiles/issues"
-  },
-  "homepage": "https://github.com/patevs/dotfiles#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
