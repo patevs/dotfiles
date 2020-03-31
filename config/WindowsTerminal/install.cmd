@@ -14,6 +14,12 @@ ECHO. & ECHO  [100m [100;4mWindows Terminal Profile Install Script[0m[100m 
 :: Copy profile
 CALL ECHO F | xcopy /Y /Q profiles.json "%USERPROFILE%\APPDATA\Local\Microsoft\Windows Terminal\profiles.json"
 
+:: New line
+ECHO.
+:: Reload WindowsTerminal
+:: CALL powershell -nologo
+CALL windowsterminal.ps1
+
 :: ECHO. & ECHO  [42m Done! [0m
 
 GOTO :EOF
