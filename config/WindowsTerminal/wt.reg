@@ -15,7 +15,9 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CLASSES_ROOT\*\shell\wt\command]
-@="C:\\Users\\Patrick\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
+@="C:\Users\\Patrick\\scoop\\apps\\windows-terminal\\current\\WindowsTerminal.exe"
+
+; @="C:\\Users\\Patrick\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
 
 ; @="\"C:\\Users\\Patrick\\scoop\\apps\git\\current\\git-bash.exe\" \"--cd=%1\""
 
@@ -28,7 +30,7 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_CLASSES_ROOT\Directory\shell\wt\command]
-@="C:\\Users\\Patrick\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
+@="C:\Users\\Patrick\\scoop\\apps\\windows-terminal\\current\\WindowsTerminal.exe"
 
 ; @="\"C:\\Users\\Patrick\\scoop\\apps\git\\current\\git-bash.exe\" \"--cd=%1\""
 
@@ -40,6 +42,6 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Users\\Patrick\\AppData\\Local\\WTerminal\\terminal.ico"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\wt\command]
-@="C:\\Users\\Patrick\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
+@="C:\Users\\Patrick\\scoop\\apps\\windows-terminal\\current\\WindowsTerminal.exe"
 
 ; @="\"C:\\Users\\Patrick\\scoop\\apps\git\\current\\git-bash.exe\" \"--cd=%v.\""
