@@ -1,4 +1,5 @@
 Windows Registry Editor Version 5.00
+; source: https://windowsloop.com/add-open-windows-terminal-here-option-to-right-click-menu/
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\wt]
 @="Open Windows Terminal here"
