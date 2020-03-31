@@ -32,7 +32,7 @@
               "name": "PowerShell",
               "commandline": "powershell.exe",
               "hidden": false,
-              "startingDirectory": ".",
+              "startingDirectory": "%USERPROFILE%",
               "closeOnExit": "graceful",
               "cursorColor": "#FFFFFF",
               "cursorShape": "underscore",
