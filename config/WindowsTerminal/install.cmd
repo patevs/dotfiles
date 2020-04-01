@@ -17,9 +17,9 @@ CALL ECHO F | xcopy /Y /Q profiles.json "%USERPROFILE%\APPDATA\Local\Microsoft\W
 :: New line
 ECHO.
 :: Reload WindowsTerminal
-:: CALL powershell -nologo
+CALL powershell -nologo
 :: CALL windowsterminal.exe
-CALL windowsterminal
+:: CALL windowsterminal
 
 :: ECHO. & ECHO  [42m Done! [0m
 
