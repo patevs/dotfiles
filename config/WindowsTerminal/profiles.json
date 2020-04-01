@@ -30,9 +30,9 @@
               // Make changes here to the powershell.exe profile
               "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
               "name": "PowerShell",
-              "commandline": "powershell.exe",
+              "commandline": "powershell.exe -NoLogo",
               "hidden": false,
-              "startingDirectory": ".",
+              "startingDirectory": "%USERPROFILE%",
               "closeOnExit": "graceful",
               "cursorColor": "#FFFFFF",
               "cursorShape": "underscore",
