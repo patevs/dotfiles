@@ -26,7 +26,7 @@
 │  └── WinTerm
 │     └── profiles.json
 ├── docs
-   ├── docs.md
+│  ├── docs.md
 │  ├── links.md
 │  ├── theme.md
 │  └── tools.md
