@@ -6,7 +6,7 @@
 
 ## Bash
 
-[`.bashrc` vs. `.profile`](https://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc)
+* [`.bashrc` vs. `.profile`](https://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc)
 
 ---
 
@@ -27,5 +27,11 @@ A few other notes:
   Anything that should be available only to login shells should go in `~/.profile`
 
   Ensure that `~/.bash_login` does not exist.
+
+---
+
+## Windows Terminal
+
+* [Profiles.json Documentation](https://github.com/microsoft/terminal/blob/master/doc/cascadia/SettingsSchema.md)
 
 ---
