@@ -19,15 +19,14 @@
 │  ├── nvim
 │  │  └── init.vim
 │  ├── ps1
-│  │  ├── completions
-│  │  │  └── rustup.ps1
 │  │  ├── defaults.ps1
 │  │  ├── development.ps1
 │  │  ├── Microsoft.PowerShell_profile.ps1
 │  │  └── unix.ps1
-│  └── WindowsTerminal
+│  └── WinTerm
 │     └── profiles.json
 ├── docs
+│  ├── docs.md
 │  ├── links.md
 │  ├── theme.md
 │  └── tools.md

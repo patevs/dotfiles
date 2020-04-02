@@ -89,6 +89,12 @@ set lazyredraw             " Only redraw when necessary.
 " set splitbelow             " Open new windows below the current window.
 " set splitright             " Open new windows right of the current window.
 
+" Disable cursor styling
+"   See `:help 'guicursor'` for more details.
+:set guicursor=
+" Workaround some broken plugins which set guicursor indiscriminately.
+:autocmd OptionSet guicursor noautocmd set guicursor=
+
 " set cursorline             " Find the current line quickly.
 " set wrapscan               " Searches wrap around end-of-file.
 " set report      =0         " Always report changed lines.
