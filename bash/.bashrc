@@ -27,7 +27,7 @@ shopt -s checkwinsize
 #shopt -s globstar
 
 # Make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+# [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
@@ -70,28 +70,28 @@ xterm* | rxvt*)
 esac
 
 # Enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+# if [ -x /usr/bin/dircolors ]; then
+  # test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
   # alias ls='ls --color=auto'
   # alias dir='dir --color=auto'
   # alias vdir='vdir --color=auto'
 
-  alias grep='grep --color=auto'
-  alias fgrep='fgrep --color=auto'
-  alias egrep='egrep --color=auto'
-fi
+  # alias grep='grep --color=auto'
+  # alias fgrep='fgrep --color=auto'
+  # alias egrep='egrep --color=auto'
+# fi
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+# Colored GCC warnings and errors
+# export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 # alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
-fi
+# if [ -f ~/.bash_aliases ]; then
+#   . ~/.bash_aliases
+# fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -104,40 +104,10 @@ fi
 #   fi
 # fi
 
-# Verify ~/.asdf/ path exists
-# if [ -f ~/.asdf ]; then
-#   . $HOME/.asdf/asdf.sh
-#   . $HOME/.asdf/completions/asdf.bash
-# fi
+# TODO: Ensure wakatime is installed with: `pip install wakatime`
+# Wakatime
+source bash-wakatime/bash-wakatime.sh
 
-# Bash-Git-Prompt
-# if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
-#     GIT_PROMPT_ONLY_IN_REPO=1
-#     source $HOME/.bash-git-prompt/gitprompt.sh
-# fi
-
-# Node Version Manager (NVM)
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-# pyenv
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-
-# pyenv-installer
-# export PATH="/home/pat/.pyenv/bin:$PATH"
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
-
-# Cargo
-# export PATH="$HOME/.cargo/bin:$PATH"
-
-####################
-# Helper Functions #
-####################
-
-# PROMPT_COMMAND='__posh_git_ps1 "\[\033[01;32m\]\h \[\033[00m\]: \[\033[01;34m\]\w \[\033[00m\]: " "\n \[\033[00m\]$ ";'$PROMPT_COMMAND
-
-# EOF #
+#
+# -------------------- EOF -------------------- #
+#
