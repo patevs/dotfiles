@@ -105,10 +105,10 @@ fi
 # fi
 
 # Verify ~/.asdf/ path exists
-if [ -f ~/.asdf ]; then
-  . $HOME/.asdf/asdf.sh
-  . $HOME/.asdf/completions/asdf.bash
-fi
+# if [ -f ~/.asdf ]; then
+#   . $HOME/.asdf/asdf.sh
+#   . $HOME/.asdf/completions/asdf.bash
+# fi
 
 # Bash-Git-Prompt
 # if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
