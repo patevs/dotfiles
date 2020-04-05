@@ -35,3 +35,6 @@
 # 	url = https://github.com/sobolevn/dotbot-asdf.git
 
 # EOF #
+[submodule "bash/bash-wakatime"]
+	path = bash/bash-wakatime
+	url = https://github.com/gjsheep/bash-wakatime.git
