@@ -146,6 +146,16 @@ Set-Alias -Name dev -Value moveDev
 
 # --------------------------------------------------------------------------- #
 
+function neofetch {
+  bash C:\tools\neofetch\neofetch
+}
+
+function winfetch {
+  C:\tools\winfetch\src\winfetch.ps1
+}
+
+# --------------------------------------------------------------------------- #
+
 # Set-Alias trash Remove-ItemSafely
 
 function open($file) {
