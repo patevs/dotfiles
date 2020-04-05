@@ -16,12 +16,12 @@
 	path = examples/windows-development-environment
 	url = https://github.com/felixrieseberg/windows-development-environment
 
-[submodule "tools/neofetch"]
-	path = tools/neofetch
-	url = https://github.com/dylanaraps/neofetch.git
-[submodule "tools/winfetch"]
-	path = tools/winfetch
-	url = https://github.com/lptstr/winfetch.git
+# [submodule "tools/neofetch"]
+# 	path = tools/neofetch
+# 	url = https://github.com/dylanaraps/neofetch.git
+# [submodule "tools/winfetch"]
+# 	path = tools/winfetch
+# 	url = https://github.com/lptstr/winfetch.git
 
 # [submodule "tools/dotbot"]
 # 	path = tools/dotbot
