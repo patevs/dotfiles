@@ -104,6 +104,7 @@ esac
 #   fi
 # fi
 
+# TODO: Ensure wakatime is installed with: `pip install wakatime`
 # Wakatime
 source bash-wakatime/bash-wakatime.sh
 
