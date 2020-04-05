@@ -104,6 +104,9 @@ esac
 #   fi
 # fi
 
+# Wakatime
+source bash-wakatime/bash-wakatime.sh
+
 #
 # -------------------- EOF -------------------- #
 #
