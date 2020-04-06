@@ -33,5 +33,7 @@ A few other notes:
 ## Windows Terminal
 
 * [Profiles.json Documentation](https://github.com/microsoft/terminal/blob/master/doc/cascadia/SettingsSchema.md)
+* [PowerShell Wakatime](https://github.com/wakatime/wakatime/issues/126)
+* [`powerwaka`](https://github.com/iamkarlson/powerwaka)
 
 ---
