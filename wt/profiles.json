@@ -57,7 +57,6 @@
               "name": "cmd",
               "commandline": "cmd.exe",
               "hidden": false,
-              "startingDirectory": "%USERPROFILE%"
           },
           {
               "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
