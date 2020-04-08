@@ -58,7 +58,7 @@
         "name": "PowerShell Core",
         "source": "Windows.Terminal.PowershellCore",
         "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
-        "hidden": true
+        "hidden": false
       },
       {
         // Make changes here to the cmd.exe profile
