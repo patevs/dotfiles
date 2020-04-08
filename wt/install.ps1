@@ -53,6 +53,6 @@ Remove-Variable destinationDir
 Invoke-Expression "wt -d $cwd"
 
 # Close Old Windows Terminal
-exit
+# exit
 
 # ------------------------------------ [END] ------------------------------------ #
