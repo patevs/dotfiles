@@ -38,7 +38,7 @@ New-Item $destinationDir -ItemType Directory -Force -ErrorAction SilentlyContinu
 New-Item $iconsDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
 
 # Copy icons to destination
-Copy-Item -Path ./icons/powershell-256.png -Destination $iconsDir
+Copy-Item -Path ./icons/powershell-32.png -Destination $iconsDir
 
 # Copy profile to destination
 Copy-Item -Path ./profiles.json -Destination $destinationDir
