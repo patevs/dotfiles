@@ -21,8 +21,11 @@
 #Script Version
 # $sScriptVersion = "1.0"
 
-# Profile location
+# Profile directory location
 $destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
+
+# Icons directory location
+$iconsDir = "$destinationDir\icons"
 
 # --------------------------------- [Functions] --------------------------------- #
 
@@ -30,15 +33,17 @@ $destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
 
 # --------------------------------- [Execution] --------------------------------- #
 
-# TODO: Create destination directory if doesnt exist already
-# New-Item $profileDir -ItemType Directory -Force -ErrorAction SilentlyContinue
+# Create destination and icons directories
+New-Item $destinationDir -ItemType Directory -Force -ErrorAction SilentlyContinue
+New-Item $iconsDir -ItemType Directory -Force -ErrorAction SilentlyContinue
 
 # Copy icons to destination
-Copy-Item -Path ./icons/powershell-256.png -Destination $destinationDir/icons
+Copy-Item -Path ./icons/powershell-256.png -Destination $iconsDir
 
 # Copy profile to destination
 Copy-Item -Path ./profiles.json -Destination $destinationDir
 
+Remove-Variable iconsDir
 Remove-Variable destinationDir
 
 # Reload Windows Terminal
