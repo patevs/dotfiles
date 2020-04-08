@@ -34,8 +34,8 @@ $iconsDir = "$destinationDir\icons"
 # --------------------------------- [Execution] --------------------------------- #
 
 # Create destination and icons directories
-New-Item $destinationDir -ItemType Directory -Force -ErrorAction SilentlyContinue 2>&1 | Out-Null
-New-Item $iconsDir -ItemType Directory -Force -ErrorAction SilentlyContinue 2>&1 | Out-Null
+New-Item $destinationDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
+New-Item $iconsDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
 
 # Copy icons to destination
 Copy-Item -Path ./icons/powershell-256.png -Destination $iconsDir
