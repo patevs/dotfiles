@@ -5,7 +5,7 @@
 .DESCRIPTION
   Copies Windows Terminal profile.json to:
 
-    "%USERPROFILE%\AppData\Local\Microsoft\Windows Terminal\profiles.json"
+    "%LOCALAPPDATA%\Microsoft\Windows Terminal\profiles.json"
 
 .NOTES
   Version:        1.0
@@ -21,60 +21,26 @@
 #Script Version
 # $sScriptVersion = "1.0"
 
-#Log File Info
-# $sLogPath = "C:\Windows\Temp"
-# $sLogName = "<script_name>.log"
-# $sLogFile = Join-Path -Path $sLogPath -ChildPath $sLogName
+# Profile location
+$destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
 
-# $profileDir = Split-Path -parent $profile
-# $componentDir = Join-Path $profileDir "components"
+# Write-Output "APPDATA: $destinationDir"
 
 # --------------------------------- [Functions] --------------------------------- #
 
-<#
-
-Function <FunctionName>{
-  Param()
-
-  Begin{
-    Log-Write -LogPath $sLogFile -LineValue "<description of what is going on>..."
-  }
-
-  Process{
-    Try{
-      <code goes here>
-    }
-
-    Catch{
-      Log-Error -LogPath $sLogFile -ErrorDesc $_.Exception -ExitGracefully $True
-      Break
-    }
-  }
-
-  End{
-    If($?){
-      Log-Write -LogPath $sLogFile -LineValue "Completed Successfully."
-      Log-Write -LogPath $sLogFile -LineValue " "
-    }
-  }
-}
-
-#>
+# ..
 
 # --------------------------------- [Execution] --------------------------------- #
 
-#Log-Start -LogPath $sLogPath -LogName $sLogName -ScriptVersion $sScriptVersion
-#Script Execution goes here
-#Log-Finish -LogPath $sLogFile
-
+# TODO: Create destination directory if doesnt exist already
 # New-Item $profileDir -ItemType Directory -Force -ErrorAction SilentlyContinue
-# New-Item $componentDir -ItemType Directory -Force -ErrorAction SilentlyContinue
 
-# Copy-Item -Path ./*.ps1 -Destination $profileDir -Exclude "bootstrap.ps1"
-# Copy-Item -Path ./components/** -Destination $componentDir -Include **
-# Copy-Item -Path ./home/** -Destination $home -Include **
+# Copy profile to destination
+Copy-Item -Path ./profiles.json -Destination $destinationDir
 
-# Remove-Variable componentDir
-# Remove-Variable profileDir
+Remove-Variable $destinationDir
+
+# Reload Windows Terminal
+Invoke-Expression "wt"
 
 # ------------------------------------ [END] ------------------------------------ #
