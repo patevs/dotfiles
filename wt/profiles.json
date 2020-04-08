@@ -9,6 +9,7 @@
 
 // Default location:
 //  "%HOME%\AppData\Local\Microsoft\Windows Terminal\profiles.json"
+//  "%LOCALAPPDATA%\Microsoft\Windows Terminal\profiles.json"
 
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
@@ -17,17 +18,20 @@
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
   "initialCols": 120,
   "initialRows": 30,
-  "showTabsInTitlebar": true,
-  "showTerminalTitleInTitlebar": true,
+  "launchMode": "maximized",
+  // "showTabsInTitlebar": true,
+  // "showTerminalTitleInTitlebar": true,
   "snapToGridOnResize": true,
-  "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502",
+  "tabWidthMode": "titleLength",
+  // "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502",
   "confirmCloseAllTabs": true,
 
   "profiles": {
     "defaults":
     {
       // Put settings here that you want to apply to all profiles
-      "colorScheme" : "Dracula"
+      "colorScheme" : "Dracula",
+      "padding": "8, 8, 8, 8"
     },
     "list":
     [
@@ -44,8 +48,8 @@
         "cursorShape": "bar",
         "fontFace": "Hack NF",
         "fontSize": 10,
+        "icon": "./icons/powershell-256.png",
         // "icon": "C:/Users/Patrick/Documents/dev/icons/powershell/powershell-512.png",
-        "padding": "8, 8, 8, 8",
         "snapOnInput": true,
         "useAcrylic": false,
         "antialiasingMode": "grayscale"
