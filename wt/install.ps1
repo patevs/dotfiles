@@ -16,15 +16,7 @@
   .\install.ps1
 #>
 
-#---------------------------------------------------------[Initialisations]--------------------------------------------------------
-
-#Set Error Action to Silently Continue
-# $ErrorActionPreference = "SilentlyContinue"
-
-#Dot Source required Function Libraries
-# . "C:\Scripts\Functions\Logging_Functions.ps1"
-
-#----------------------------------------------------------[Declarations]----------------------------------------------------------
+# -------------------------------- [Declarations] ------------------------------- #
 
 #Script Version
 # $sScriptVersion = "1.0"
@@ -34,7 +26,10 @@
 # $sLogName = "<script_name>.log"
 # $sLogFile = Join-Path -Path $sLogPath -ChildPath $sLogName
 
-#-----------------------------------------------------------[Functions]------------------------------------------------------------
+# $profileDir = Split-Path -parent $profile
+# $componentDir = Join-Path $profileDir "components"
+
+# --------------------------------- [Functions] --------------------------------- #
 
 <#
 
@@ -66,25 +61,20 @@ Function <FunctionName>{
 
 #>
 
-#-----------------------------------------------------------[Execution]------------------------------------------------------------
+# --------------------------------- [Execution] --------------------------------- #
 
 #Log-Start -LogPath $sLogPath -LogName $sLogName -ScriptVersion $sScriptVersion
 #Script Execution goes here
 #Log-Finish -LogPath $sLogFile
 
-# EOF #
+# New-Item $profileDir -ItemType Directory -Force -ErrorAction SilentlyContinue
+# New-Item $componentDir -ItemType Directory -Force -ErrorAction SilentlyContinue
 
-<#
-$profileDir = Split-Path -parent $profile
-$componentDir = Join-Path $profileDir "components"
+# Copy-Item -Path ./*.ps1 -Destination $profileDir -Exclude "bootstrap.ps1"
+# Copy-Item -Path ./components/** -Destination $componentDir -Include **
+# Copy-Item -Path ./home/** -Destination $home -Include **
 
-New-Item $profileDir -ItemType Directory -Force -ErrorAction SilentlyContinue
-New-Item $componentDir -ItemType Directory -Force -ErrorAction SilentlyContinue
+# Remove-Variable componentDir
+# Remove-Variable profileDir
 
-Copy-Item -Path ./*.ps1 -Destination $profileDir -Exclude "bootstrap.ps1"
-Copy-Item -Path ./components/** -Destination $componentDir -Include **
-Copy-Item -Path ./home/** -Destination $home -Include **
-
-Remove-Variable componentDir
-Remove-Variable profileDir
-#>
+# ------------------------------------ [END] ------------------------------------ #
