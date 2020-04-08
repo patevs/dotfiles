@@ -33,6 +33,9 @@ $destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
 # TODO: Create destination directory if doesnt exist already
 # New-Item $profileDir -ItemType Directory -Force -ErrorAction SilentlyContinue
 
+# Copy icons to destination
+Copy-Item -Path ./icons/powershell-256.png -Destination $destinationDir/icons
+
 # Copy profile to destination
 Copy-Item -Path ./profiles.json -Destination $destinationDir
 
