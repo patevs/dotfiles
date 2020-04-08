@@ -1,6 +1,29 @@
 # Dotfiles Documentation
 
-> This document contains infomation relating to dotfiles that isnt suitable to be in the `README.md`.
+> This document contains infomation and resources relating to system configuration, dotfiles, and their management.
+
+---
+
+## Links and Resources
+
+* [Dotfiles on GitHub](https://github.com/search?q=dotfiles)
+* [`awesome-dotfiles`](https://github.com/webpro/awesome-dotfiles)
+
+---
+
+### Example Dotfiles
+
+* [`jayharris/dotfiles-windows`](https://github.com/jayharris/dotfiles-windows)
+* [`mikemaccana/powershell-profile`](https://github.com/mikemaccana/powershell-profile)
+* [`felixriesebery/windows-development-environment`](https://github.com/felixrieseberg/windows-development-environment)
+
+[](.)
+
+* [`holman/dotfiles`](https://github.com/holman/dotfiles)
+* [`mathiadbynens/dotfiles`](https://github.com/mathiasbynens/dotfiles)
+* [`paulirish/dotfiles`](https://github.com/paulirish/dotfiles)
+* [`sanctum.geek.nz/dotfiles`](https://sanctum.geek.nz/cgit/dotfiles.git/about/)
+* [`nicknisi/dotfiles`](https://github.com/nicknisi/dotfiles)
 
 ---
 
@@ -33,6 +56,9 @@ A few other notes:
 ## Windows Terminal
 
 * [Profiles.json Documentation](https://github.com/microsoft/terminal/blob/master/doc/cascadia/SettingsSchema.md)
+
+[](.)
+
 * [PowerShell Wakatime](https://github.com/wakatime/wakatime/issues/126)
 * [`powerwaka`](https://github.com/iamkarlson/powerwaka)
 
