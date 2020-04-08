@@ -21,6 +21,9 @@
 #Script Version
 # $sScriptVersion = "1.0"
 
+# Current working directory
+$cwd = Get-Location
+
 # Profile directory location
 $destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
 
@@ -46,7 +49,10 @@ Copy-Item -Path ./profiles.json -Destination $destinationDir
 Remove-Variable iconsDir
 Remove-Variable destinationDir
 
-# Reload Windows Terminal
-Invoke-Expression "wt"
+# Open New Windows Terminal
+Invoke-Expression "wt -d $cwd"
+
+# Close Old Windows Terminal
+exit
 
 # ------------------------------------ [END] ------------------------------------ #
