@@ -48,7 +48,7 @@
         "cursorShape": "bar",
         "fontFace": "Hack NF",
         "fontSize": 10,
-        "icon": "C:/Users/Patrick/AppData/Local/Microsoft/Windows Terminal/icons/powershell-256.png",
+        "icon": "C:/Users/Patrick/AppData/Local/Microsoft/Windows Terminal/icons/powershell-32.png",
         "snapOnInput": true,
         "useAcrylic": false,
         "antialiasingMode": "grayscale"
