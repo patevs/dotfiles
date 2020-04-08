@@ -24,7 +24,7 @@
 # Profile location
 $destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
 
-# Write-Output "APPDATA: $destinationDir"
+Write-Output "APPDATA: $destinationDir"
 
 # --------------------------------- [Functions] --------------------------------- #
 
@@ -38,7 +38,7 @@ $destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
 # Copy profile to destination
 Copy-Item -Path ./profiles.json -Destination $destinationDir
 
-Remove-Variable $destinationDir
+Remove-Variable destinationDir
 
 # Reload Windows Terminal
 Invoke-Expression "wt"
