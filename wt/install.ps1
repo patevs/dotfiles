@@ -24,8 +24,6 @@
 # Profile location
 $destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
 
-Write-Output "APPDATA: $destinationDir"
-
 # --------------------------------- [Functions] --------------------------------- #
 
 # ..
