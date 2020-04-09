@@ -86,5 +86,4 @@ Set-Alias unmute Set-SoundUnmute
 # Set neovim as default vim
 Set-Alias vim nvim
 
-
 # EOF #
