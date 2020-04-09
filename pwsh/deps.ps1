@@ -66,7 +66,7 @@ if ((which cinst) -eq $null) {
 # choco install vim                 --limit-output
 # choco install winmerge            --limit-output
 
-Refresh-Environment
+RefreshEnvironment
 
 # nvm on
 # $nodeLtsVersion = choco search nodejs-lts --limit-output | ConvertFrom-String -TemplateContent "{Name:package-name}\|{Version:1.11.1}" | Select -ExpandProperty "Version"
