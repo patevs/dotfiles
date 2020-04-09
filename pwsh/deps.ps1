@@ -3,7 +3,7 @@
 # -------- #
 
 # Check to see if we are currently running "as Administrator"
-if (!(Verify-Elevated)) {
+if (!(Test-Elevated)) {
   $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
   $newProcess.Arguments = $myInvocation.MyCommand.Definition;
   $newProcess.Verb = "runas";
