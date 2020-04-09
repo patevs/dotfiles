@@ -13,8 +13,6 @@ function Test-Elevated {
   $myPrincipal=new-object System.Security.Principal.WindowsPrincipal($myIdentity)
   # Check to see if we are currently running "as Administrator"
   return $myPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
-  # $user = [Security.Principal.WindowsIdentity]::GetCurrent();
-  # (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 }
 
 <#
