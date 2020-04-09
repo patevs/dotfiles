@@ -7,8 +7,8 @@ function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select
 function touch($file) { "" | Out-File $file -Encoding ASCII }
 
 # Common Editing needs
-function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
-function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
+# function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
+# function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
 
 # Sudo
 function sudo() {
@@ -21,7 +21,7 @@ function sudo() {
 }
 
 # System Update - Update RubyGems, NPM, and their installed packages
-function System-Update() {
+function SystemUpdate() {
     Install-WindowsUpdate -IgnoreUserInput -IgnoreReboot -AcceptAll
     Update-Module
     Update-Help -Force
@@ -32,7 +32,7 @@ function System-Update() {
 }
 
 # Reload the Shell
-function Reload-Powershell {
+function ReloadPowershell {
     $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
     $newProcess.Arguments = "-nologo";
     [System.Diagnostics.Process]::Start($newProcess);
@@ -40,132 +40,34 @@ function Reload-Powershell {
 }
 
 # Download a file into a temporary folder
+<#
 function curlex($url) {
-    $uri = new-object system.uri $url
-    $filename = $name = $uri.segments | Select-Object -Last 1
-    $path = join-path $env:Temp $filename
-    if( test-path $path ) { rm -force $path }
+  $uri = new-object system.uri $url
+  $filename = $name = $uri.segments | Select-Object -Last 1
+  $path = join-path $env:Temp $filename
+  if( test-path $path ) { rm -force $path }
 
-    (new-object net.webclient).DownloadFile($url, $path)
+  (new-object net.webclient).DownloadFile($url, $path)
 
-    return new-object io.fileinfo $path
+  return new-object io.fileinfo $path
 }
+#>
 
 # Empty the Recycle Bin on all drives
-function Empty-RecycleBin {
-    $RecBin = (New-Object -ComObject Shell.Application).Namespace(0xA)
-    $RecBin.Items() | %{Remove-Item $_.Path -Recurse -Confirm:$false}
-}
-
-# Sound Volume
-function Get-SoundVolume {
-  <#
-  .SYNOPSIS
-  Get audio output volume.
-
-  .DESCRIPTION
-  The Get-SoundVolume cmdlet gets the current master volume of the default audio output device. The returned value is an integer between 0 and 100.
-
-  .LINK
-  Set-SoundVolume
-
-  .LINK
-  Set-SoundMute
-
-  .LINK
-  Set-SoundUnmute
-
-  .LINK
-  https://github.com/jayharris/dotfiles-windows/
-  #>
-  [math]::Round([Audio]::Volume * 100)
-}
-function Set-SoundVolume([Parameter(mandatory=$true)][Int32] $Volume) {
-  <#
-  .SYNOPSIS
-  Set audio output volume.
-
-  .DESCRIPTION
-  The Set-SoundVolume cmdlet sets the current master volume of the default audio output device to a value between 0 and 100.
-
-  .PARAMETER Volume
-  An integer between 0 and 100.
-
-  .EXAMPLE
-  Set-SoundVolume 65
-  Sets the master volume to 65%.
-
-  .EXAMPLE
-  Set-SoundVolume -Volume 100
-  Sets the master volume to a maximum 100%.
-
-  .LINK
-  Get-SoundVolume
-
-  .LINK
-  Set-SoundMute
-
-  .LINK
-  Set-SoundUnmute
-
-  .LINK
-  https://github.com/jayharris/dotfiles-windows/
-  #>
-  [Audio]::Volume = ($Volume / 100)
-}
-function Set-SoundMute {
-  <#
-  .SYNOPSIS
-  Mote audio output.
-
-  .DESCRIPTION
-  The Set-SoundMute cmdlet mutes the default audio output device.
-
-  .LINK
-  Get-SoundVolume
-
-  .LINK
-  Set-SoundVolume
-
-  .LINK
-  Set-SoundUnmute
-
-  .LINK
-  https://github.com/jayharris/dotfiles-windows/
-  #>
-   [Audio]::Mute = $true
-}
-function Set-SoundUnmute {
-  <#
-  .SYNOPSIS
-  Unmote audio output.
-
-  .DESCRIPTION
-  The Set-SoundUnmute cmdlet unmutes the default audio output device.
-
-  .LINK
-  Get-SoundVolume
-
-  .LINK
-  Set-SoundVolume
-
-  .LINK
-  Set-SoundMute
-
-  .LINK
-  https://github.com/jayharris/dotfiles-windows/
-  #>
-   [Audio]::Mute = $false
+function EmptyRecycleBin {
+  $RecBin = (New-Object -ComObject Shell.Application).Namespace(0xA)
+  # $RecBin.Items() | %{Remove-Item $_.Path -Recurse -Confirm:$false}
+  $RecBin.Items() | ForEach-Object{Remove-Item $_.Path -Recurse -Confirm:$false}
 }
 
 
 ### File System functions
 ### ----------------------------
 # Create a new directory and enter it
-function CreateAndSet-Directory([String] $path) { New-Item $path -ItemType Directory -ErrorAction SilentlyContinue; Set-Location $path}
+function CreateAndSetDirectory([String] $path) { New-Item $path -ItemType Directory -ErrorAction SilentlyContinue; Set-Location $path}
 
 # Determine size of a file or total size of a directory
-function Get-DiskUsage([string] $path=(Get-Location).Path) {
+function GetDiskUsage([string] $path=(Get-Location).Path) {
     Convert-ToDiskSize `
         ( `
             Get-ChildItem .\ -recurse -ErrorAction SilentlyContinue `
@@ -175,17 +77,20 @@ function Get-DiskUsage([string] $path=(Get-Location).Path) {
 }
 
 # Cleanup all disks (Based on Registry Settings in `windows.ps1`)
-function Clean-Disks {
+<#
+function CleanDisks {
     Start-Process "$(Join-Path $env:WinDir 'system32\cleanmgr.exe')" -ArgumentList "/sagerun:6174" -Verb "runAs"
 }
+#>
 
 ### Environment functions
 ### ----------------------------
 
 # Reload the $env object from the registry
-function Refresh-Environment {
-    $locations = 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment',
-                 'HKCU:\Environment'
+function RefreshEnvironment {
+    $locations =
+      'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment',
+      'HKCU:\Environment'
 
     $locations | ForEach-Object {
         $k = Get-Item $_
@@ -200,7 +105,7 @@ function Refresh-Environment {
 }
 
 # Set a permanent Environment variable, and reload it into $env
-function Set-Environment([String] $variable, [String] $value) {
+function SetEnvironment([String] $variable, [String] $value) {
     Set-ItemProperty "HKCU:\Environment" $variable $value
     # Manually setting Registry entry. SetEnvironmentVariable is too slow because of blocking HWND_BROADCAST
     #[System.Environment]::SetEnvironmentVariable("$variable", "$value","User")
@@ -208,10 +113,10 @@ function Set-Environment([String] $variable, [String] $value) {
 }
 
 # Add a folder to $env:Path
-function Prepend-EnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
-function Prepend-EnvPathIfExists([String]$path) { if (Test-Path $path) { Prepend-EnvPath $path } }
-function Append-EnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
-function Append-EnvPathIfExists([String]$path) { if (Test-Path $path) { Append-EnvPath $path } }
+function PrependEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+function PrependEnvPathIfExists([String]$path) { if (Test-Path $path) { PrependEnvPath $path } }
+function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+function AppendEnvPathIfExists([String]$path) { if (Test-Path $path) { AppendEnvPath $path } }
 
 
 ### Utilities
