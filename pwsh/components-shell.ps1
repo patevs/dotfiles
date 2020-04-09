@@ -7,8 +7,7 @@
 Push-Location (Join-Path (Split-Path -parent $profile) "components")
 
 # From within the ./components directory...
-# . .\visualstudio.ps1
-# . .\console.ps1
+. .\console.ps1
 
 Pop-Location
 
