@@ -19,11 +19,11 @@
   "initialCols": 120,
   "initialRows": 30,
   "launchMode": "maximized",
-  // "showTabsInTitlebar": true,
-  // "showTerminalTitleInTitlebar": true,
+  "showTabsInTitlebar": true,
+  "showTerminalTitleInTitlebar": true,
   "snapToGridOnResize": true,
   "tabWidthMode": "titleLength",
-  // "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502",
+  "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502",
   "confirmCloseAllTabs": true,
 
   "profiles": {
@@ -32,15 +32,14 @@
       // Put settings here that you want to apply to all profiles
       "acrylicOpacity": 0.8,
       "antialiasingMode": "grayscale",
-      // "closeOnExit": "graceful",
+      "closeOnExit": "graceful",
       "colorScheme" : "Dracula",
-      // "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
       "fontFace": "Hack NF",
       "fontSize": 10,
       "padding": "8, 8, 8, 8",
-      // "startingDirectory": "%USERPROFILE%",
-      // "snapOnInput": true,
+      "startingDirectory": "%USERPROFILE%",
+      "snapOnInput": true,
       "useAcrylic": false
     },
     "list":
