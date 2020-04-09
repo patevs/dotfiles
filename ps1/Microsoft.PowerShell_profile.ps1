@@ -2,8 +2,16 @@
 # ps1/Microsoft.PowerShell_profile.ps1 #
 # ------------------------------------ #
 #
-# Profile for the Microsoft.Powershell Shell, only. (Not Visual Studio or other PoSh instances)
-# ===========
+# Profile for Powershell
+# ======================
+#
+# PowerShell Profile Location:
+#   $env:HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+#
+# PowerShell Core Profile Location:
+#   $env:HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+#
+# ======================
 
 # Push-Location (Split-Path -parent $profile)
 # "components-shell" | Where-Object {Test-Path "$_.ps1"} | ForEach-Object -process {Invoke-Expression ". .\$_.ps1"}
