@@ -57,7 +57,7 @@ if (Get-Module -ListAvailable PSReadLine -ErrorAction SilentlyContinue) {
 # Start SSH agent redirecting output to null
 #   https://stackoverflow.com/a/6461021
 # Start-SshAgent 2>&1> $null
-Start-SshAgent 2>&1 | Out-Null
+# Start-SshAgent 2>&1 | Out-Null
 
 # --------------------------------------------------------------------------------------------- #
 
