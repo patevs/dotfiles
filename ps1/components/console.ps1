@@ -27,21 +27,19 @@ $MaximumHistoryCount = 10000;
 # Import PSReadLine module (if installed) for Proper history, tab completion, etc
 if (Get-Module -ListAvailable PSReadLine -ErrorAction SilentlyContinue) {
   Import-Module -Name PSReadLine
-}
-
-# Show selection menu for tab
-Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
-
-# Dracula readline configuration. Requires version 2.0, if you have 1.2 convert to `Set-PSReadlineOption -TokenType`
-Set-PSReadlineOption -Color @{
-  "Command" = [ConsoleColor]::Green
-  "Parameter" = [ConsoleColor]::Gray
-  "Operator" = [ConsoleColor]::Magenta
-  "Variable" = [ConsoleColor]::White
-  "String" = [ConsoleColor]::Yellow
-  "Number" = [ConsoleColor]::Blue
-  "Type" = [ConsoleColor]::Cyan
-  "Comment" = [ConsoleColor]::DarkCyan
+  # Show selection menu for tab
+  Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
+  # Dracula readline configuration. Requires version 2.0, if you have 1.2 convert to `Set-PSReadlineOption -TokenType`
+  Set-PSReadlineOption -Color @{
+    "Command" = [ConsoleColor]::Green
+    "Parameter" = [ConsoleColor]::Gray
+    "Operator" = [ConsoleColor]::Magenta
+    "Variable" = [ConsoleColor]::White
+    "String" = [ConsoleColor]::Yellow
+    "Number" = [ConsoleColor]::Blue
+    "Type" = [ConsoleColor]::Cyan
+    "Comment" = [ConsoleColor]::DarkCyan
+  }
 }
 
 # Dracula Prompt Configuration
