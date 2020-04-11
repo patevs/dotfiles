@@ -195,7 +195,7 @@ function getGitMultiStatus {
 Set-Alias -Name mgs -Value getGitMultiStatus
 
 # Use GitHub's hub Client in favor of git
-if (Check-Command hub){ Set-Alias git hub }
+if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
 
 # ! TODO: Refactor the following functions to be more concise
 
