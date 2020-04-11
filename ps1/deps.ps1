@@ -36,6 +36,7 @@ Install-Module npm-completion -Scope CurrentUser -Force
 Install-Module yarn-completion -Scope CurrentUser -Force
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
+Install-Module -Name PSReadLine -Scope CurrentUser -Force
 Install-Module PSWindowsUpdate -Scope CurrentUser -Force
 
 
