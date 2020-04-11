@@ -6,8 +6,8 @@
 #   Import-Module Posh-Git
 # }
 
-if ((Get-Command git -ErrorAction SilentlyContinue) -and (Get-Module -ListAvailable Post-Git -ErrorAction SilentlyContinue)) {
-  Import-Module Post-Git
+if ((Get-Command git -ErrorAction SilentlyContinue) -and (Get-Module -ListAvailable Posh-Git -ErrorAction SilentlyContinue)) {
+  Import-Module Posh-Git
 }
 
 # EOF #
