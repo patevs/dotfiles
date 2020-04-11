@@ -39,19 +39,6 @@ function ReloadPowershell {
     exit
 }
 
-# Download a file into a temporary folder
-<#
-function curlex($url) {
-  $uri = new-object system.uri $url
-  $filename = $name = $uri.segments | Select-Object -Last 1
-  $path = join-path $env:Temp $filename
-  if( test-path $path ) { rm -force $path }
-
-  (new-object net.webclient).DownloadFile($url, $path)
-
-  return new-object io.fileinfo $path
-}
-#>
 
 # Empty the Recycle Bin on all drives
 function EmptyRecycleBin {
