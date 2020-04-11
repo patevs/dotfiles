@@ -10,15 +10,26 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 # function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
 # function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
 
-# Sudo
-function sudo() {
-    if ($args.Length -eq 1) {
-        start-process $args[0] -verb "runAs"
-    }
-    if ($args.Length -gt 1) {
-        start-process $args[0] -ArgumentList $args[1..$args.Length] -verb "runAs"
-    }
+# So we can launch pwsh in subshells if we need
+# Add-PathVariable "${env:ProgramFiles}\PowerShell\6-preview"
+
+# $profileDir = $PSScriptRoot;
+# Edit whole dir, so we can edit included files etc.
+function edit-profile {
+	edit $profileDir
 }
+
+# Sudo
+<#
+function sudo() {
+  if ($args.Length -eq 1) {
+    start-process $args[0] -verb "runAs"
+  }
+  if ($args.Length -gt 1) {
+    start-process $args[0] -ArgumentList $args[1..$args.Length] -verb "runAs"
+  }
+}
+#>
 
 # System Update - Update RubyGems, NPM, and their installed packages
 function SystemUpdate() {
@@ -33,6 +44,7 @@ function SystemUpdate() {
 
 # Reload the Shell
 function ReloadPowershell {
+    # & $profile
     $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
     $newProcess.Arguments = "-nologo";
     [System.Diagnostics.Process]::Start($newProcess);
@@ -48,6 +60,31 @@ function version {
 function modules {
   Get-InstalledModule
 }
+
+# Reset the console colors
+#   https://stackoverflow.com/a/42624497
+# function reset-colors {
+#   [Console]::ResetColor()
+# }
+
+# function disable-windows-search {
+# 	Set-Service wsearch -StartupType disabled
+# 	stop-service wsearch
+# }
+
+# https://blogs.technet.microsoft.com/heyscriptingguy/2012/12/30/powertip-change-the-powershell-console-title
+# function set-title([string]$newtitle) {
+# 	$host.ui.RawUI.WindowTitle = $newtitle + ' – ' + $host.ui.RawUI.WindowTitle
+# }
+
+# From http://stackoverflow.com/questions/7330187/how-to-find-the-windows-version-from-the-powershell-command-line
+# function get-windows-build {
+# 	[Environment]::OSVersion
+# }
+
+# function get-serial-number {
+#   Get-CimInstance -ClassName Win32_Bios | select-object serialnumber
+# }
 
 # Empty the Recycle Bin on all drives
 function EmptyRecycleBin {
