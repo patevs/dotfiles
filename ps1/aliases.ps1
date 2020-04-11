@@ -15,6 +15,10 @@ ${function:......} = { Set-Location ..\..\..\..\.. }
 ${function:dt} = { Set-Location ~\Desktop }
 ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
+${function:dev} = { Set-Location ~\git }
+
+# $desktopPath = $env:USERPROFILE + "\desktop"
+# $devPath = $env:USERPROFILE + "\git"
 
 # Oddly, Powershell doesn't have an inbuilt variable for the documents directory. So let's make one:
 # From: https://stackoverflow.com/a/12949659
