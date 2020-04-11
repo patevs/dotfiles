@@ -64,7 +64,10 @@ function EmptyRecycleBin {
 ### File System functions
 ### ----------------------------
 # Create a new directory and enter it
-function CreateAndSetDirectory([String] $path) { New-Item $path -ItemType Directory -ErrorAction SilentlyContinue; Set-Location $path}
+function CreateAndSetDirectory([String] $path) {
+  New-Item $path -ItemType Directory -ErrorAction SilentlyContinue
+  Set-Location $path
+}
 
 # Determine size of a file or total size of a directory
 function GetDiskUsage([string] $path=(Get-Location).Path) {
@@ -113,10 +116,10 @@ function SetEnvironment([String] $variable, [String] $value) {
 }
 
 # Add a folder to $env:Path
-function PrependEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
-function PrependEnvPathIfExists([String]$path) { if (Test-Path $path) { PrependEnvPath $path } }
-function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
-function AppendEnvPathIfExists([String]$path) { if (Test-Path $path) { AppendEnvPath $path } }
+# function PrependEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+# function PrependEnvPathIfExists([String]$path) { if (Test-Path $path) { PrependEnvPath $path } }
+# function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+# function AppendEnvPathIfExists([String]$path) { if (Test-Path $path) { AppendEnvPath $path } }
 
 
 ### Utilities
