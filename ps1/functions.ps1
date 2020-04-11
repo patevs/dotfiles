@@ -86,6 +86,28 @@ function modules {
 #   Get-CimInstance -ClassName Win32_Bios | select-object serialnumber
 # }
 
+### System & Utility functions
+### ----------------------------
+
+# Shutdown System
+function shutdown {
+  # Write-Host "`nShutting down system...`n"
+  # Print-Green-Underline "Shutting Down System..."
+  Write-Output "`nShutting Down System...`n"
+  shutdown /p
+}
+Set-Alias -Name shut -Value shutdown
+
+# Restart System
+function restart {
+  # Write-Host "`nRestarting system...`n"
+  # Print-Green-Underline "Restarting System..."
+  Write-Output "`nRestarting System...`n"
+  shutdown /r /t 0
+}
+Set-Alias -Name reboot -Value restart
+
+
 # Empty the Recycle Bin on all drives
 function EmptyRecycleBin {
   $RecBin = (New-Object -ComObject Shell.Application).Namespace(0xA)
