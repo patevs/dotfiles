@@ -2,26 +2,13 @@
 # .gitmodules #
 # ----------- #
 
+[submodule "bash/bash-wakatime"]
+	path = bash/bash-wakatime
+	url = https://github.com/gjsheep/bash-wakatime.git
+
 [submodule "utils"]
 	path = utils
 	url = https://github.com/patevs/utility-scripts
-
-[submodule "examples/dotfiles-windows"]
-	path = examples/dotfiles-windows
-	url = https://github.com/jayharris/dotfiles-windows
-[submodule "examples/powershell-profile"]
-	path = examples/powershell-profile
-	url = https://github.com/mikemaccana/powershell-profile
-[submodule "examples/windows-development-environment"]
-	path = examples/windows-development-environment
-	url = https://github.com/felixrieseberg/windows-development-environment
-
-# [submodule "tools/neofetch"]
-# 	path = tools/neofetch
-# 	url = https://github.com/dylanaraps/neofetch.git
-# [submodule "tools/winfetch"]
-# 	path = tools/winfetch
-# 	url = https://github.com/lptstr/winfetch.git
 
 # [submodule "tools/dotbot"]
 # 	path = tools/dotbot
@@ -35,6 +22,3 @@
 # 	url = https://github.com/sobolevn/dotbot-asdf.git
 
 # EOF #
-[submodule "bash/bash-wakatime"]
-	path = bash/bash-wakatime
-	url = https://github.com/gjsheep/bash-wakatime.git
