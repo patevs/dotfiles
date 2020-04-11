@@ -7,7 +7,7 @@
 # }
 
 if ((Get-Command git -ErrorAction SilentlyContinue) -and (Get-Module -ListAvailable Posh-Git -ErrorAction SilentlyContinue)) {
-  Import-Module Posh-Git
+  Import-Module -Name posh-git
 }
 
 # EOF #
