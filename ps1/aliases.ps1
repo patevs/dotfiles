@@ -16,6 +16,10 @@ ${function:dt} = { Set-Location ~\Desktop }
 ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
 
+# Oddly, Powershell doesn't have an inbuilt variable for the documents directory. So let's make one:
+# From: https://stackoverflow.com/a/12949659
+# $env:DOCUMENTS = [Environment]::GetFolderPath("mydocuments")
+
 # Missing Bash aliases
 Set-Alias time Measure-Command
 
