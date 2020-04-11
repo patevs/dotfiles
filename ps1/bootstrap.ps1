@@ -15,4 +15,10 @@ Copy-Item -Path ./components/** -Destination $componentDir -Include **
 Remove-Variable componentDir
 Remove-Variable profileDir
 
+# Open a New Shell
+Invoke-Expression "powershell -NoLogo"
+
+# Open New Windows Terminal
+# Invoke-Expression "wt -d $cwd"
+
 # EOF #
