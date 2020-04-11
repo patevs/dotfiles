@@ -2,13 +2,13 @@
 # .gitmodules #
 # ----------- #
 
-[submodule "utils"]
-	path = utils
-	url = https://github.com/patevs/utility-scripts
-
 [submodule "bash/bash-wakatime"]
 	path = bash/bash-wakatime
 	url = https://github.com/gjsheep/bash-wakatime.git
+
+[submodule "utils"]
+	path = utils
+	url = https://github.com/patevs/utility-scripts
 
 # [submodule "tools/dotbot"]
 # 	path = tools/dotbot
