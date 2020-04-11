@@ -58,6 +58,81 @@ Set-PSReadlineOption -Color @{
 
 # --------------------------------------------------------------------------------------------- #
 
+# --------------------------- #
+# Customize PowerShell Prompt #
+# --------------------------- #
+
+# Must be called 'prompt' to be used by pwsh
+# https://github.com/gummesson/kapow/blob/master/themes/bashlet.ps1
+# function prompt {
+#   $realLASTEXITCODE = $LASTEXITCODE
+#   Write-Host $(limit-HomeDirectory("$pwd")) -ForegroundColor Yellow -NoNewline
+#   Write-Host " $" -NoNewline
+#   $global:LASTEXITCODE = $realLASTEXITCODE
+#   Return " "
+# }
+
+# https://github.com/dahlbyk/posh-git/wiki/Customizing-Your-PowerShell-Prompt
+function prompt {
+  # Write new line
+  Write-Host
+  $origLastExitCode = $LastExitCode
+
+  # Test if running as admin
+  if (Test-Administrator) {
+    # if elevated
+    Write-Host "(Elevated) " -NoNewline -ForegroundColor White
+  }
+
+  # Write username@computername
+  # Write-Host "$env:USERNAME@" -NoNewline -ForegroundColor DarkYellow
+  # Write-Host "$env:COMPUTERNAME" -NoNewline -ForegroundColor Magenta
+  # Write username
+  # Write-Host "$env:USERNAME" -NoNewline -ForegroundColor DarkYellow
+  # Write-Host " : " -NoNewline -ForegroundColor DarkGray
+
+  # Build current path
+  $curPath = $ExecutionContext.SessionState.Path.CurrentLocation.Path
+  if ($curPath.ToLower().StartsWith($Home.ToLower())) {
+    $curPath = "~" + $curPath.SubString($Home.Length)
+  }
+
+  # Write current path
+  # Write-Host $curPath -NoNewline -ForegroundColor Blue
+  Write-Host $curPath -NoNewline -ForegroundColor Magenta
+  Write-Host " :" -NoNewline -ForegroundColor DarkGray
+
+  # Write date & time
+  # Write-Host (Get-Date -Format G) -NoNewline -ForegroundColor DarkMagenta
+  # Write-Host " :" -NoNewline -ForegroundColor DarkGray
+
+  # Write posh-git status
+  Write-VcsStatus
+  # Have posh-git display its default prompt
+  # & $GitPromptScriptBlock
+
+  $LastExitCode = $origLastExitCode
+  "`n$('>' * ($nestedPromptLevel + 1)) "
+}
+
+# --------------------------------------------------------------------------------------------- #
+
+# Make $lastObject save the last object output
+# From http://get-powershell.com/post/2008/06/25/Stuffing-the-output-of-the-last-command-into-an-automatic-variable.aspx
+# function out-default {
+#   $input | Tee-Object -var global:lastobject | Microsoft.PowerShell.Core\out-default
+# }
+
+# If you prefer oh-my-posh
+# Import-Module posh-git
+# Import-Module oh-my-posh
+
+# function rename-extension($newExtension){
+#   Rename-Item -NewName { [System.IO.Path]::ChangeExtension($_.Name, $newExtension) }
+# }
+
+# --------------------------------------------------------------------------------------------- #
+
 <#
 function Verify-PowershellShortcut {
     [CmdletBinding()]
