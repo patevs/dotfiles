@@ -182,6 +182,143 @@ function GetPath {
 # function AppendEnvPathIfExists([String]$path) { if (Test-Path $path) { AppendEnvPath $path } }
 
 
+### Git & Github
+### ----------------------------
+
+# TODO: Move the following functions to aliases.ps1
+
+# Git Multi Status
+function getGitMultiStatus {
+  # Invoke-Expression
+  bash C:\tools\multi-git-status\mgitstatus
+}
+Set-Alias -Name mgs -Value getGitMultiStatus
+
+# Use GitHub's hub Client in favor of git
+if (Check-Command hub){ Set-Alias git hub }
+
+# ! TODO: Refactor the following functions to be more concise
+
+# Print Git Status
+function getGitStatus {
+  # Check git command exists
+  if (Check-Command git){
+    # Write-Host "`n Git Status:`n"  -ForegroundColor Green
+    Print-Green-Underline "Git Status:"
+    git status
+  } else {
+    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name gs -Value getGitStatus
+
+
+# Print git status using g3l
+function getG3lStatus {
+  # Check git command exists
+  if (Check-Command git){
+    # Fetch git remote
+    # Write-Host "`n Git Remotes:`n"  -ForegroundColor Green
+    Print-Green-Underline "Git Remotes:"
+    git remote -v
+    # Write-Host "`n Git Status:`n"  -ForegroundColor Green
+    Print-Green-Underline "Git Status:"
+    # Check g3l command exists
+    if (Check-Command g3l) {
+      g3l --status
+      Write-Host "" # new line
+    }
+    git status
+  } else {
+    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name gss -Value getG3lStatus
+
+
+### NodeJS & NPM
+### ----------------------------
+
+# Print list of local NPM dependencies
+function getNpmLocals {
+  # Check node_modules directory exists
+  if (Test-Path node_modules){
+    # Check npm command exists
+    if (Check-Command npm){
+      # Write-Host "`n Local NPM Dependencies:`n" -ForegroundColor Green
+      Print-Green-Underline "Local NPM Dependencies:"
+      npm list --depth=0
+    } else {
+      Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
+    }
+  } else {
+    Write-Host "`n node_modules folder does not exist in current directory!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name npl -Value getNpmLocals
+
+# Print list of global NPM dependencies
+function getNpmGlobals {
+  # Check npm command exists
+  if (Check-Command npm){
+    # Write-Host "`n Global NPM Dependencies:`n" -ForegroundColor Green
+    Print-Green-Underline "Global NPM Dependencies:"
+    npm list --global --depth=0
+  } else {
+    Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name nplg -Value getNpmGlobals
+
+
+### Chocolatey
+### ----------------------------
+
+# Print list of local chocolatey installations
+function getChocoInstalls {
+  # Check choco command exists
+  if (Check-Command choco) {
+    # Write-Host "`n Local Chocolatey Installations:`n" -ForegroundColor Green
+    Print-Green-Underline "Local Chocolatey Installations:"
+    choco list -l
+  } else {
+    Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name cll -Value getChocoInstalls
+
+# Print list of outdated chocolatey installations
+function getChocoOutdated {
+  # Check choco command exists
+  if (Check-Command choco) {
+    # Write-Host "`n Outdated Chocolatey Installations:`n" -ForegroundColor Green
+    Print-Green-Underline "Outdated Chocolatey Installations:"
+    choco upgrade all --noop
+  } else {
+    Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
+  }
+}
+Set-Alias -Name clo -Value getChocoOutdated
+
+# Chocolatey Profile
+# TODO: Move this to components/choco.ps1
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile" -Force
+}
+
+# Import-Module “$env:ChocolateyInstall\helpers\chocolateyProfile.psm1” -Force
+
+
+### Scoop
+### ----------------------------
+
+# TODO: Move this to components/scoop.ps1
+try {
+  Import-Module -ErrorAction Stop "$($(Get-Item $(Get-Command -ErrorAction Stop scoop).Path).Directory.Parent.FullName)\modules\scoop-completion"
+} catch { }
+
+
 ### Utilities
 ### ----------------------------
 
