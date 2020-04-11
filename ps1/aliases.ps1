@@ -12,20 +12,29 @@ ${function:.....} = { Set-Location ..\..\..\.. }
 ${function:......} = { Set-Location ..\..\..\..\.. }
 
 # Navigation Shortcuts
-${function:dt} = { Set-Location ~\Desktop }
+# $devPath = $env:USERPROFILE + "\git"
+${function:dev} = { Set-Location ~\git }
 ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
-${function:dev} = { Set-Location ~\git }
-
 # $desktopPath = $env:USERPROFILE + "\desktop"
-# $devPath = $env:USERPROFILE + "\git"
+${function:dt} = { Set-Location ~\Desktop }
+Set-Alias desktop -Value dt
+Set-Alias desk -Value dt
 
 # Oddly, Powershell doesn't have an inbuilt variable for the documents directory. So let's make one:
 # From: https://stackoverflow.com/a/12949659
 # $env:DOCUMENTS = [Environment]::GetFolderPath("mydocuments")
 
+# --------------------------------------------------------------------------------------------- #
+
+# ..
+
+# --------------------------------------------------------------------------------------------- #
+
 # Missing Bash aliases
 Set-Alias time Measure-Command
+
+# --------------------------------------------------------------------------------------------- #
 
 # Correct PowerShell Aliases if tools are available (aliases win if set)
 # WGet: Use `wget.exe` if available
@@ -69,6 +78,8 @@ if (Get-Command curl.exe -ErrorAction SilentlyContinue | Test-Path) {
 }
 #>
 
+# --------------------------------------------------------------------------------------------- #
+
 # Create a new directory and enter it
 Set-Alias mkd CreateAndSetDirectory
 
@@ -77,6 +88,9 @@ Set-Alias fs GetDiskUsage
 
 # Empty the Recycle Bin on all drives
 Set-Alias emptytrash EmptyRecycleBin
+
+# Send an item to the Recycle Bin
+# Set-Alias trash Remove-ItemSafely
 
 # Cleanup old files all drives
 # Set-Alias cleandisks CleanDisks
