@@ -54,6 +54,11 @@ if (Get-Module -ListAvailable PSReadLine -ErrorAction SilentlyContinue) {
 # $GitPromptSettings.BranchColor.ForegroundColor = [ConsoleColor]::Blue
 # $GitPromptSettings.AfterStatus.ForegroundColor = [ConsoleColor]::Blue
 
+# Start SSH agent redirecting output to null
+#   https://stackoverflow.com/a/6461021
+# Start-SshAgent 2>&1> $null
+Start-SshAgent 2>&1 | Out-Null
+
 # --------------------------------------------------------------------------------------------- #
 
 # --------------------------- #
