@@ -3,7 +3,7 @@
 # ------------------ #
 
 if ((Get-Command yarn -ErrorAction SilentlyContinue) -and (Get-Module -ListAvailable yarn-completion -ErrorAction SilentlyContinue)) {
-  Import-Module yarn-completion
+  Import-Module -Name yarn-completion
 }
 
 # EOF #
