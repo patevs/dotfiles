@@ -15,12 +15,48 @@ function Test-Elevated {
   return $myPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
 }
 
+# --------------------------------------------------------------------------------------------- #
+
 # Produce UTF-8 by default
 # https://news.ycombinator.com/item?id=12991690
 $PSDefaultParameterValues["Out-File:Encoding"] = "utf8"
 
 # https://technet.microsoft.com/en-us/magazine/hh241048.aspx
 $MaximumHistoryCount = 10000;
+
+# Import PSReadLine module (if installed) for Proper history, tab completion, etc
+if (Get-Module -ListAvailable PSReadLine -ErrorAction SilentlyContinue) {
+  Import-Module -Name PSReadLine
+}
+
+# Show selection menu for tab
+Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
+
+# Dracula readline configuration. Requires version 2.0, if you have 1.2 convert to `Set-PSReadlineOption -TokenType`
+Set-PSReadlineOption -Color @{
+  "Command" = [ConsoleColor]::Green
+  "Parameter" = [ConsoleColor]::Gray
+  "Operator" = [ConsoleColor]::Magenta
+  "Variable" = [ConsoleColor]::White
+  "String" = [ConsoleColor]::Yellow
+  "Number" = [ConsoleColor]::Blue
+  "Type" = [ConsoleColor]::Cyan
+  "Comment" = [ConsoleColor]::DarkCyan
+}
+
+# Dracula Prompt Configuration
+# $GitPromptSettings.DefaultPromptPrefix.Text = "$([char]0x2192) " # arrow unicode symbol
+# $GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::Green
+# $GitPromptSettings.DefaultPromptPath.ForegroundColor =[ConsoleColor]::Cyan
+# $GitPromptSettings.DefaultPromptSuffix.Text = "$([char]0x203A) " # chevron unicode symbol
+# $GitPromptSettings.DefaultPromptSuffix.ForegroundColor = [ConsoleColor]::Magenta
+# $GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n > '
+# Dracula Git Status Configuration
+# $GitPromptSettings.BeforeStatus.ForegroundColor = [ConsoleColor]::Blue
+# $GitPromptSettings.BranchColor.ForegroundColor = [ConsoleColor]::Blue
+# $GitPromptSettings.AfterStatus.ForegroundColor = [ConsoleColor]::Blue
+
+# --------------------------------------------------------------------------------------------- #
 
 <#
 function Verify-PowershellShortcut {
