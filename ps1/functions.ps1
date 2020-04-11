@@ -39,6 +39,15 @@ function ReloadPowershell {
     exit
 }
 
+# Get Current PowerShell Version
+function version {
+  $PSVersionTable.PSVersion
+}
+
+# Get Installed PowerShell Modules
+function modules {
+  Get-InstalledModule
+}
 
 # Empty the Recycle Bin on all drives
 function EmptyRecycleBin {
@@ -100,6 +109,11 @@ function SetEnvironment([String] $variable, [String] $value) {
     # Manually setting Registry entry. SetEnvironmentVariable is too slow because of blocking HWND_BROADCAST
     #[System.Environment]::SetEnvironmentVariable("$variable", "$value","User")
     Invoke-Expression "`$env:${variable} = `"$value`""
+}
+
+# Get Environment Path
+function GetPath {
+	($Env:Path).Split(";")
 }
 
 # Add a folder to $env:Path
