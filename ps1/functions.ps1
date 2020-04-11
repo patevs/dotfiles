@@ -33,22 +33,22 @@ function sudo() {
 
 # System Update - Update RubyGems, NPM, and their installed packages
 function SystemUpdate() {
-    Install-WindowsUpdate -IgnoreUserInput -IgnoreReboot -AcceptAll
-    Update-Module
-    Update-Help -Force
-    gem update --system
-    gem update
-    npm install npm -g
-    npm update -g
+  Install-WindowsUpdate -IgnoreUserInput -IgnoreReboot -AcceptAll
+  Update-Module
+  Update-Help -Force
+  gem update --system
+  gem update
+  npm install npm -g
+  npm update -g
 }
 
 # Reload the Shell
+# & $profile
 function ReloadPowershell {
-    # & $profile
-    $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
-    $newProcess.Arguments = "-nologo";
-    [System.Diagnostics.Process]::Start($newProcess);
-    exit
+  $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
+  $newProcess.Arguments = "-nologo";
+  [System.Diagnostics.Process]::Start($newProcess);
+  exit
 }
 
 # Get Current PowerShell Version
