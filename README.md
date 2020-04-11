@@ -8,6 +8,7 @@
 
 ```md
 .
+├── bash
 ├── config
 │  ├── alacritty
 │  │  └── alacritty.yml
@@ -23,17 +24,15 @@
 │  │  ├── development.ps1
 │  │  ├── Microsoft.PowerShell_profile.ps1
 │  │  └── unix.ps1
-│  └── WinTerm
-│     └── profiles.json
 ├── docs
 │  ├── docs.md
-│  ├── links.md
 │  ├── theme.md
 │  └── tools.md
-├── tools
-│  ├── neofetch
-│  └── winfetch
+├── git
+├── ps1
 ├── utils
+├── wt
+|  └── profiles.json
 ├── .editorconfig
 ├── .gitmodules
 ├── LICENSE
