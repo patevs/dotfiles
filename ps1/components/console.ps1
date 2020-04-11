@@ -15,6 +15,13 @@ function Test-Elevated {
   return $myPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
 }
 
+# Produce UTF-8 by default
+# https://news.ycombinator.com/item?id=12991690
+$PSDefaultParameterValues["Out-File:Encoding"] = "utf8"
+
+# https://technet.microsoft.com/en-us/magazine/hh241048.aspx
+$MaximumHistoryCount = 10000;
+
 <#
 function Verify-PowershellShortcut {
     [CmdletBinding()]
