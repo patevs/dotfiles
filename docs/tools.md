@@ -36,6 +36,7 @@
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`MusicRepair`](https://github.com/kalbhor/MusicRepair)
+* [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 
 ## PowerShell Tools
