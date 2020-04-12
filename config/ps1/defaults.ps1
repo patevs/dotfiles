@@ -32,13 +32,12 @@ function Check-Module($modname){
 
 # Import PSReadLine module if installed
 # Proper history etc
-# if (Check-Module "PSReadLine") { Import-Module -Name PSReadLine }
+if (Check-Module "PSReadLine") { Import-Module -Name PSReadLine }
 
 # Show selection menu for tab
-# Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
+Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
 
 # Dracula readline configuration. Requires version 2.0, if you have 1.2 convert to `Set-PSReadlineOption -TokenType`
-<#
 Set-PSReadlineOption -Color @{
     "Command" = [ConsoleColor]::Green
     "Parameter" = [ConsoleColor]::Gray
@@ -49,7 +48,6 @@ Set-PSReadlineOption -Color @{
     "Type" = [ConsoleColor]::Cyan
     "Comment" = [ConsoleColor]::DarkCyan
 }
-#>
 
 # Dracula Prompt Configuration
 # $GitPromptSettings.DefaultPromptPrefix.Text = "$([char]0x2192) " # arrow unicode symbol
@@ -86,7 +84,7 @@ if (Check-Module "yarn-completion") { Import-Module -Name yarn-completion }
 # Redirect output to null
 #   https://stackoverflow.com/questions/5881174/redirecting-output-to-null-in-powershell-but-ensuring-the-variable-remains-set
 # Start-SshAgent 2>&1> $null
-# Start-SshAgent 2>&1 | Out-Null
+Start-SshAgent 2>&1 | Out-Null
 
 # --------------------------------------------------------------------------- #
 
