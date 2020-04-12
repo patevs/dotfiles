@@ -28,16 +28,22 @@ Get-PackageProvider NuGet -Force | Out-Null
 
 ### Install PowerShell Modules
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
-Install-Module posh-cargo -Scope CurrentUser -Force
-Install-Module posh-dotnet -Scope CurrentUser -Force
-Install-Module posh-git -Scope CurrentUser -Force
+# PackageManagement
+# PowerShellGet
+# Configuration
 Install-Module npm-completion -Scope CurrentUser -Force
+Install-Module posh-cargo -Scope CurrentUser -Force -AllowClobber
+# posh-cli
+Install-Module posh-dotnet -Scope CurrentUser -Force
+Install-Module posh-git -Scope CurrentUser -Force -AllowClobber
 # Install-Module posh-npm -Scope CurrentUser -Force
-Install-Module yarn-completion -Scope CurrentUser -Force
-# Install-Module Terminal-Icons -Scope CurrentUser -Force
-# Install-Module Get-ChildItemColor -Scope CurrentUser -Force
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
 Install-Module PSWindowsUpdate -Scope CurrentUser -Force
+# PSWriteColor
+# scoop-completion
+# Install-Module Terminal-Icons -Scope CurrentUser -Force
+# Install-Module Get-ChildItemColor -Scope CurrentUser -Force
+Install-Module yarn-completion -Scope CurrentUser -Force
 
 
 ### Chocolatey
