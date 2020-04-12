@@ -32,10 +32,10 @@ Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 # PowerShellGet
 # Configuration
 Install-Module npm-completion -Scope CurrentUser -Force
-Install-Module posh-cargo -Scope CurrentUser -Force
+Install-Module posh-cargo -Scope CurrentUser -Force -AllowClobber
 # posh-cli
 Install-Module posh-dotnet -Scope CurrentUser -Force
-Install-Module posh-git -Scope CurrentUser -Force
+Install-Module posh-git -Scope CurrentUser -Force -AllowClobber
 # Install-Module posh-npm -Scope CurrentUser -Force
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
 Install-Module PSWindowsUpdate -Scope CurrentUser -Force
