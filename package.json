@@ -13,10 +13,13 @@
     "config"
   ],
   "scripts": {
+    "commit": "git-cz",
     "release": "np",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
+    "commitizen": "^4.0.4",
+    "cz-emoji": "^1.2.1",
     "np": "^6.2.1"
   },
   "np": {
@@ -24,5 +27,16 @@
     "publish": false,
     "preview": false,
     "releaseDraft": true
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    },
+    "cz-emoji": {
+      "skipQuestions": [
+        "body",
+        "issues"
+      ]
+    }
   }
 }
