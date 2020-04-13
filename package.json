@@ -18,5 +18,11 @@
   },
   "devDependencies": {
     "np": "^6.2.1"
+  },
+  "np": {
+    "yolo": false,
+    "publish": false,
+    "preview": false,
+    "releaseDraft": true
   }
 }
