@@ -9,7 +9,8 @@
     "url": "git+https://github.com/patevs/dotfiles.git"
   },
   "keywords": [
-    "dotfiles"
+    "dotfiles",
+    "config"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
