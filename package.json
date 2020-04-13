@@ -1,7 +1,7 @@
 {
   "name": "dotfiles",
   "version": "0.7.7",
-  "description": "PatEvs' personal dotfiles",
+  "description": "PatEvs' personal system configuration dotfiles",
   "author": "PatEvs",
   "license": "MIT",
   "repository": {
@@ -9,9 +9,20 @@
     "url": "git+https://github.com/patevs/dotfiles.git"
   },
   "keywords": [
-    "dotfiles"
+    "dotfiles",
+    "config"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "np",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "np": "^6.2.1"
+  },
+  "np": {
+    "yolo": false,
+    "publish": false,
+    "preview": false,
+    "releaseDraft": true
   }
 }
