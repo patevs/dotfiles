@@ -63,3 +63,9 @@ A few other notes:
 * [`powerwaka`](https://github.com/iamkarlson/powerwaka)
 
 ---
+
+## PowerShell
+
+* [About Prompts](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_prompts?view=powershell-7)
+
+---
