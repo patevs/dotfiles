@@ -2,6 +2,8 @@
 # functions.ps1 #
 # ------------- #
 
+Write-Output "functions.ps1"
+
 # Basic commands
 function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object Definition }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
@@ -317,6 +319,16 @@ if (Test-Path($ChocolateyProfile)) {
 try {
   Import-Module -ErrorAction Stop "$($(Get-Item $(Get-Command -ErrorAction Stop scoop).Path).Directory.Parent.FullName)\modules\scoop-completion"
 } catch { }
+
+# --------------------------------------------------------------------------------------------- #
+
+function neofetch {
+  bash C:\tools\neofetch\neofetch
+}
+
+function winfetch {
+  C:\tools\winfetch\src\winfetch.ps1
+}
 
 
 ### Utilities
