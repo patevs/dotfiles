@@ -88,9 +88,10 @@ RefreshEnvironment
 # nvm use $nodeLtsVersion
 # Remove-Variable nodeLtsVersion
 
-gem pristine --all --env-shebang
+# gem pristine --all --env-shebang
 
 ### Node Packages
+<#
 Write-Host "Installing Node Packages..." -ForegroundColor "Yellow"
 if (which npm) {
   npm update npm
@@ -99,5 +100,6 @@ if (which npm) {
   # npm install -g node-inspector
   npm install -g yo
 }
+#>
 
 # EOF #
