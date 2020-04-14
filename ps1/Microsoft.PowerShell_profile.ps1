@@ -5,8 +5,8 @@
 # Profile for Powershell
 # ======================
 #
-# PowerShell Core Profile Location:
-#   $env:HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+# PowerShell Profile Location:
+#   $env:HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 #
 # ======================
 
