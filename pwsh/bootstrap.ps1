@@ -15,6 +15,7 @@ Remove-Variable componentDir
 Remove-Variable profileDir
 
 # Open a New Shell
-Invoke-Expression "powershell -NoLogo"
+# Invoke-Expression "powershell -NoLogo"
+Invoke-Expression "pwsh"
 
 # EOF #
