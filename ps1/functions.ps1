@@ -13,7 +13,7 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 # So we can launch pwsh in subshells if we need
 # Add-PathVariable "${env:ProgramFiles}\PowerShell\6-preview"
 
-# $profileDir = $PSScriptRoot;
+$profileDir = $PSScriptRoot;
 # Edit whole dir, so we can edit included files etc.
 function edit-profile {
 	edit $profileDir
