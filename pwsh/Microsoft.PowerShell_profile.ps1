@@ -2,13 +2,15 @@
 # Microsoft.PowerShell_profile.ps1 #
 # -------------------------------- #
 #
-# Profile for Powershell
-# ======================
+# Profile for Powershell Core
+# ===========================
 #
-# PowerShell Profile Location:
-#   $env:HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+# PowerShell Core Profile Location:
+#   $env:HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 #
-# ======================
+# ===========================
+
+Write-Output "Microsoft.PowerShell_profile.ps1"
 
 Push-Location (Split-Path -parent $profile)
 "components-shell" | Where-Object {Test-Path "$_.ps1"} | ForEach-Object -process {Invoke-Expression ". .\$_.ps1"}
