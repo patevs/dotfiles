@@ -57,16 +57,6 @@ function settings {
 
 # --------------------------------------------------------------------------------------------- #
 
-function neofetch {
-  bash C:\tools\neofetch\neofetch
-}
-
-function winfetch {
-  C:\tools\winfetch\src\winfetch.ps1
-}
-
-# --------------------------------------------------------------------------------------------- #
-
 # Missing Bash aliases
 Set-Alias time Measure-Command
 
