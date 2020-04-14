@@ -2,13 +2,13 @@
 # Microsoft.PowerShell_profile.ps1 #
 # -------------------------------- #
 #
-# Profile for Powershell
-# ======================
+# Profile for Powershell Core
+# ===========================
 #
 # PowerShell Core Profile Location:
 #   $env:HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 #
-# ======================
+# ===========================
 
 Write-Output "Microsoft.PowerShell_profile.ps1"
 
