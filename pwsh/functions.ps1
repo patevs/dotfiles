@@ -71,9 +71,7 @@ function ReloadPowershell {
   [System.Diagnostics.Process]::Start($newProcess);
   exit
 }
-<#
-function ReloadPowershell { & $profile }
-#>
+# function ReloadPowershell { & $profile }
 
 # Get Current PowerShell Version
 function version {
