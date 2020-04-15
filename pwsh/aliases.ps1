@@ -29,34 +29,6 @@ Set-Alias desk -Value dt
 
 # --------------------------------------------------------------------------------------------- #
 
-function open($file) {
-  invoke-item $file
-}
-
-function explorer {
-  explorer.exe .
-}
-
-# TODO: Create function to start FireFox
-# function edge {
-  # Old Edge
-  # start microsoft-edge:
-  #
-  # New Chromioum Edge
-#   & "${env:ProgramFiles(x86)}\Microsoft\Edge Dev\Application\msedge.exe"
-# }
-
-function settings {
-  start-process ms-setttings:
-}
-
-# Truncate homedir to ~
-# function limit-HomeDirectory($Path) {
-#   $Path.Replace("$home", "~")
-# }
-
-# --------------------------------------------------------------------------------------------- #
-
 # Missing Bash aliases
 Set-Alias time Measure-Command
 

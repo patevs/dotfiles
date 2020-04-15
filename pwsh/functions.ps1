@@ -4,7 +4,9 @@
 
 Write-Output "functions.ps1"
 
-# Basic commands
+# Basic Commands
+# ==============
+
 function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object Definition }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
 
@@ -12,14 +14,40 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 # function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
 # function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
 
-# So we can launch pwsh in subshells if we need
-# Add-PathVariable "${env:ProgramFiles}\PowerShell\6-preview"
-
-$profileDir = $PSScriptRoot;
 # Edit whole dir, so we can edit included files etc.
 function edit-profile {
-	edit $profileDir
+  edit $PSScriptRoot
 }
+
+# Open a given file
+function open($file) {
+  invoke-item $file
+}
+
+# Open Windows Explorer
+function explorer {
+  explorer.exe .
+}
+
+# Open Windows Settings
+function settings {
+  start-process ms-setttings:
+}
+
+# Truncate homedir to ~
+# function limit-HomeDirectory($Path) {
+#   $Path.Replace("$home", "~")
+# }
+
+# TODO: Create function to start FireFox
+# function edge {
+  # Old Edge
+  # start microsoft-edge:
+  #
+  # New Chromioum Edge
+#   & "${env:ProgramFiles(x86)}\Microsoft\Edge Dev\Application\msedge.exe"
+# }
+
 
 # Sudo
 <#
@@ -33,25 +61,21 @@ function sudo() {
 }
 #>
 
-# System Update - Update RubyGems, NPM, and their installed packages
-function SystemUpdate() {
-  Install-WindowsUpdate -IgnoreUserInput -IgnoreReboot -AcceptAll
-  Update-Module
-  Update-Help -Force
-  gem update --system
-  gem update
-  npm install npm -g
-  npm update -g
-}
+# ------------------------------------------------------------------------------------------------------- #
+
+# PowerShell Utility Functions
+# ============================
 
 # Reload the Shell
-# & $profile
 function ReloadPowershell {
   $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
   $newProcess.Arguments = "-nologo";
   [System.Diagnostics.Process]::Start($newProcess);
   exit
 }
+<#
+function ReloadPowershell { & $profile }
+#>
 
 # Get Current PowerShell Version
 function version {
@@ -63,33 +87,34 @@ function modules {
   Get-InstalledModule
 }
 
+# Set the current console title
+# https://blogs.technet.microsoft.com/heyscriptingguy/2012/12/30/powertip-change-the-powershell-console-title
+
+function set-title([string]$newtitle) {
+  $host.ui.RawUI.WindowTitle = $newtitle + ' – ' + $host.ui.RawUI.WindowTitle
+}
+
 # Reset the console colors
 #   https://stackoverflow.com/a/42624497
 # function reset-colors {
 #   [Console]::ResetColor()
 # }
 
-# function disable-windows-search {
-# 	Set-Service wsearch -StartupType disabled
-# 	stop-service wsearch
-# }
+# ------------------------------------------------------------------------------------------------------- #
 
-# https://blogs.technet.microsoft.com/heyscriptingguy/2012/12/30/powertip-change-the-powershell-console-title
-# function set-title([string]$newtitle) {
-# 	$host.ui.RawUI.WindowTitle = $newtitle + ' – ' + $host.ui.RawUI.WindowTitle
-# }
+# System Utility Functions
+# ========================
 
-# From http://stackoverflow.com/questions/7330187/how-to-find-the-windows-version-from-the-powershell-command-line
-# function get-windows-build {
-# 	[Environment]::OSVersion
-# }
-
-# function get-serial-number {
-#   Get-CimInstance -ClassName Win32_Bios | select-object serialnumber
-# }
-
-### System & Utility functions
-### ----------------------------
+# System Update - Update RubyGems, NPM, and their installed packages
+function SystemUpdate() {
+  Install-WindowsUpdate -IgnoreUserInput -IgnoreReboot -AcceptAll
+  Update-Module
+  Update-Help -Force
+  gem update --system
+  gem update
+  npm install npm -g
+  npm update -g
+}
 
 # Shutdown System
 function shutdown {
@@ -98,6 +123,7 @@ function shutdown {
   Write-Output "`nShutting Down System...`n"
   shutdown /p
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name shut -Value shutdown
 
 # Restart System
@@ -107,8 +133,34 @@ function restart {
   Write-Output "`nRestarting System...`n"
   shutdown /r /t 0
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name reboot -Value restart
 
+# https://stackoverflow.com/a/7330368
+function get-windows-build {
+  # [System.Environment]::OSVersion.Version
+  [Environment]::OSVersion
+}
+
+# function get-serial-number {
+#   Get-CimInstance -ClassName Win32_Bios | select-object serialnumber
+# }
+
+# function disable-windows-search {
+# 	Set-Service wsearch -StartupType disabled
+# 	stop-service wsearch
+# }
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# File System Functions
+# =====================
+
+# Create a new directory and enter it
+function CreateAndSetDirectory([String] $path) {
+  New-Item $path -ItemType Directory -ErrorAction SilentlyContinue
+  Set-Location $path
+}
 
 # Empty the Recycle Bin on all drives
 function EmptyRecycleBin {
@@ -117,59 +169,42 @@ function EmptyRecycleBin {
   $RecBin.Items() | ForEach-Object{Remove-Item $_.Path -Recurse -Confirm:$false}
 }
 
-
-### File System functions
-### ----------------------------
-# Create a new directory and enter it
-function CreateAndSetDirectory([String] $path) {
-  New-Item $path -ItemType Directory -ErrorAction SilentlyContinue
-  Set-Location $path
-}
-
-# Determine size of a file or total size of a directory
-function GetDiskUsage([string] $path=(Get-Location).Path) {
-    Convert-ToDiskSize `
-        ( `
-            Get-ChildItem .\ -recurse -ErrorAction SilentlyContinue `
-            | Measure-Object -property length -sum -ErrorAction SilentlyContinue
-        ).Sum `
-        1
-}
-
 # Cleanup all disks (Based on Registry Settings in `windows.ps1`)
 <#
 function CleanDisks {
-    Start-Process "$(Join-Path $env:WinDir 'system32\cleanmgr.exe')" -ArgumentList "/sagerun:6174" -Verb "runAs"
+  Start-Process "$(Join-Path $env:WinDir 'system32\cleanmgr.exe')" -ArgumentList "/sagerun:6174" -Verb "runAs"
 }
 #>
 
-### Environment functions
-### ----------------------------
+# ------------------------------------------------------------------------------------------------------- #
+
+# Environment Functions
+# =====================
 
 # Reload the $env object from the registry
 function RefreshEnvironment {
-    $locations =
-      'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment',
-      'HKCU:\Environment'
+  $locations =
+    'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment',
+    'HKCU:\Environment'
 
-    $locations | ForEach-Object {
-        $k = Get-Item $_
-        $k.GetValueNames() | ForEach-Object {
-            $name  = $_
-            $value = $k.GetValue($_)
-            Set-Item -Path Env:\$name -Value $value
-        }
+  $locations | ForEach-Object {
+    $k = Get-Item $_
+    $k.GetValueNames() | ForEach-Object {
+      $name  = $_
+      $value = $k.GetValue($_)
+      Set-Item -Path Env:\$name -Value $value
     }
+  }
 
-    $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+  $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 }
 
 # Set a permanent Environment variable, and reload it into $env
 function SetEnvironment([String] $variable, [String] $value) {
-    Set-ItemProperty "HKCU:\Environment" $variable $value
-    # Manually setting Registry entry. SetEnvironmentVariable is too slow because of blocking HWND_BROADCAST
-    #[System.Environment]::SetEnvironmentVariable("$variable", "$value","User")
-    Invoke-Expression "`$env:${variable} = `"$value`""
+  Set-ItemProperty "HKCU:\Environment" $variable $value
+  # Manually setting Registry entry. SetEnvironmentVariable is too slow because of blocking HWND_BROADCAST
+  #[System.Environment]::SetEnvironmentVariable("$variable", "$value","User")
+  Invoke-Expression "`$env:${variable} = `"$value`""
 }
 
 # Get Environment Path
@@ -183,20 +218,21 @@ function GetPath {
 # function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
 # function AppendEnvPathIfExists([String]$path) { if (Test-Path $path) { AppendEnvPath $path } }
 
+# ------------------------------------------------------------------------------------------------------- #
 
-### Git & Github
-### ----------------------------
-
-# TODO: Move the following functions to aliases.ps1
+# Git & Github functions
+# ======================
 
 # Git Multi Status
 function getGitMultiStatus {
   # Invoke-Expression
   bash C:\tools\multi-git-status\mgitstatus
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name mgs -Value getGitMultiStatus
 
 # Use GitHub's hub Client in favor of git
+# TODO: Move to aliases.ps1
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
 
 # ! TODO: Refactor the following functions to be more concise
@@ -212,6 +248,7 @@ function getGitStatus {
     Write-Host "`n Git installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name gs -Value getGitStatus
 
 
@@ -235,11 +272,14 @@ function getG3lStatus {
     Write-Host "`n Git installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name gss -Value getG3lStatus
 
 
-### NodeJS & NPM
-### ----------------------------
+# ------------------------------------------------------------------------------------------------------- #
+
+# NodeJS & NPM Functions
+# ======================
 
 # Print list of local NPM dependencies
 function getNpmLocals {
@@ -257,6 +297,7 @@ function getNpmLocals {
     Write-Host "`n node_modules folder does not exist in current directory!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name npl -Value getNpmLocals
 
 # Print list of global NPM dependencies
@@ -270,11 +311,13 @@ function getNpmGlobals {
     Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name nplg -Value getNpmGlobals
 
+# ------------------------------------------------------------------------------------------------------- #
 
-### Chocolatey
-### ----------------------------
+# Chocolatey Functions
+# ====================
 
 # Print list of local chocolatey installations
 function getChocoInstalls {
@@ -287,6 +330,7 @@ function getChocoInstalls {
     Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name cll -Value getChocoInstalls
 
 # Print list of outdated chocolatey installations
@@ -300,20 +344,13 @@ function getChocoOutdated {
     Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name clo -Value getChocoOutdated
 
-# Chocolatey Profile
-# TODO: Move this to components/choco.ps1
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile" -Force
-}
+# ------------------------------------------------------------------------------------------------------- #
 
-# Import-Module “$env:ChocolateyInstall\helpers\chocolateyProfile.psm1” -Force
-
-
-### Scoop
-### ----------------------------
+# Scoop Functions
+# ---------------
 
 # TODO: Move this to components/scoop.ps1
 try {
@@ -329,93 +366,5 @@ function neofetch {
 function winfetch {
   C:\tools\winfetch\src\winfetch.ps1
 }
-
-
-### Utilities
-### ----------------------------
-
-# Convert a number to a disk size (12.4K or 5M)
-<#
-function Convert-ToDiskSize {
-    param ( $bytes, $precision='0' )
-    foreach ($size in ("B","K","M","G","T")) {
-        if (($bytes -lt 1000) -or ($size -eq "T")){
-            $bytes = ($bytes).tostring("F0" + "$precision")
-            return "${bytes}${size}"
-        }
-        else { $bytes /= 1KB }
-    }
-}
-#>
-
-# Extract a .zip file
-<#
-function Unzip-File {
-    <#
-    .SYNOPSIS
-      Extracts the contents of a zip file.
-
-    .DESCRIPTION
-      Extracts the contents of a zip file specified via the -File parameter to the
-      location specified via the -Destination parameter.
-
-    .PARAMETER File
-        The zip file to extract. This can be an absolute or relative path.
-
-    .PARAMETER Destination
-        The destination folder to extract the contents of the zip file to.
-
-    .PARAMETER ForceCOM
-        Switch parameter to force the use of COM for the extraction even if the .NET Framework 4.5 is present.
-
-    .EXAMPLE
-      Unzip-File -File archive.zip -Destination .\d
-
-    .EXAMPLE
-      'archive.zip' | Unzip-File
-
-    .EXAMPLE
-      Get-ChildItem -Path C:\zipfiles | ForEach-Object {$_.fullname | Unzip-File -Destination C:\databases}
-
-    .INPUTS
-      String
-
-    .NOTES
-      Inspired by:  Mike F Robbins, @mikefrobbins
-
-      This function first checks to see if the .NET Framework 4.5 is installed and uses it for the unzipping process, otherwise COM is used.
-
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [string]$File,
-
-        [ValidateNotNullOrEmpty()]
-        [string]$Destination = (Get-Location).Path
-    )
-
-    $filePath = Resolve-Path $File
-    $destinationPath = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($Destination)
-
-    if (($PSVersionTable.PSVersion.Major -ge 3) -and
-      ((Get-ItemProperty -Path "HKLM:\Software\Microsoft\NET Framework Setup\NDP\v4\Full" -ErrorAction SilentlyContinue).Version -like "4.5*" -or
-      (Get-ItemProperty -Path "HKLM:\Software\Microsoft\NET Framework Setup\NDP\v4\Client" -ErrorAction SilentlyContinue).Version -like "4.5*")) {
-
-        try {
-            [System.Reflection.Assembly]::LoadWithPartialName("System.IO.Compression.FileSystem") | Out-Null
-            [System.IO.Compression.ZipFile]::ExtractToDirectory("$filePath", "$destinationPath")
-        } catch {
-            Write-Warning -Message "Unexpected Error. Error details: $_.Exception.Message"
-        }
-    } else {
-        try {
-            $shell = New-Object -ComObject Shell.Application
-            $shell.Namespace($destinationPath).copyhere(($shell.NameSpace($filePath)).items())
-        } catch {
-            Write-Warning -Message "Unexpected Error. Error details: $_.Exception.Message"
-        }
-    }
-}
-#>
 
 # EOF #
