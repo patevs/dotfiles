@@ -75,9 +75,7 @@ function ReloadPowershell {
   exit
 }
 <#
-function ReloadPowershell {
-  & $profile
-}
+function ReloadPowershell { & $profile }
 #>
 
 # Get Current PowerShell Version
