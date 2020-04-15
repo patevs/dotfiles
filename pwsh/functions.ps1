@@ -45,13 +45,17 @@ function SystemUpdate() {
 }
 
 # Reload the Shell
-# & $profile
 function ReloadPowershell {
   $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
   $newProcess.Arguments = "-nologo";
   [System.Diagnostics.Process]::Start($newProcess);
   exit
 }
+<#
+function ReloadPowershell {
+  & $profile
+}
+#>
 
 # Get Current PowerShell Version
 function version {
