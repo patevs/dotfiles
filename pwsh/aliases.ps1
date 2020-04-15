@@ -4,6 +4,9 @@
 
 Write-Output "aliases.ps1"
 
+# Navigation Aliases
+# ==================
+
 # Easier Navigation: .., ..., ...., ....., and ~
 ${function:~} = { Set-Location ~ }
 # PoSh won't allow ${function:..} because of an invalid path error, so...
@@ -14,12 +17,11 @@ ${function:.....} = { Set-Location ..\..\..\.. }
 ${function:......} = { Set-Location ..\..\..\..\.. }
 
 # Navigation Shortcuts
-# $devPath = $env:USERPROFILE + "\git"
 ${function:dev} = { Set-Location ~\git }
 ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
-# $desktopPath = $env:USERPROFILE + "\desktop"
 ${function:dt} = { Set-Location ~\Desktop }
+
 Set-Alias desktop -Value dt
 Set-Alias desk -Value dt
 
@@ -27,10 +29,36 @@ Set-Alias desk -Value dt
 # From: https://stackoverflow.com/a/12949659
 # $env:DOCUMENTS = [Environment]::GetFolderPath("mydocuments")
 
-# --------------------------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------- #
+
+# System Aliases
+# ==============
+
+# Shutdown System
+Set-Alias -Name shut -Value shutdown
+# Restart System
+Set-Alias -Name reboot -Value restart
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Unix-like Aliases
+# =================
 
 # Missing Bash aliases
 Set-Alias time Measure-Command
+
+# --------------------------------------------------------------------------------------------- #
+
+# Git & GitHub Aliases
+# ====================
+
+# Git Multi Status
+${function:mgs} = {
+  bash C:\tools\multi-git-status\mgitstatus
+}
+
+# Favour GitHub's hub client over vanilla git
+if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
 
 # --------------------------------------------------------------------------------------------- #
 

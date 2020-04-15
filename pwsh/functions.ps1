@@ -15,9 +15,7 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 # function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
 
 # Edit whole dir, so we can edit included files etc.
-function edit-profile {
-  edit $PSScriptRoot
-}
+# function edit-profile { edit $PSScriptRoot }
 
 # Open a given file
 function open($file) {
@@ -73,9 +71,7 @@ function ReloadPowershell {
   [System.Diagnostics.Process]::Start($newProcess);
   exit
 }
-<#
-function ReloadPowershell { & $profile }
-#>
+# function ReloadPowershell { & $profile }
 
 # Get Current PowerShell Version
 function version {
@@ -89,16 +85,15 @@ function modules {
 
 # Set the current console title
 # https://blogs.technet.microsoft.com/heyscriptingguy/2012/12/30/powertip-change-the-powershell-console-title
-
 function set-title([string]$newtitle) {
   $host.ui.RawUI.WindowTitle = $newtitle + ' – ' + $host.ui.RawUI.WindowTitle
 }
 
 # Reset the console colors
-#   https://stackoverflow.com/a/42624497
-# function reset-colors {
-#   [Console]::ResetColor()
-# }
+# https://stackoverflow.com/a/42624497
+function reset-colors {
+  [Console]::ResetColor()
+}
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -117,24 +112,22 @@ function SystemUpdate() {
 }
 
 # Shutdown System
+# TODO: Move this to aliases.ps1
 function shutdown {
   # Write-Host "`nShutting down system...`n"
   # Print-Green-Underline "Shutting Down System..."
   Write-Output "`nShutting Down System...`n"
   shutdown /p
 }
-# TODO: Move to aliases.ps1
-Set-Alias -Name shut -Value shutdown
 
 # Restart System
+# TODO: Move this to aliases.ps1
 function restart {
   # Write-Host "`nRestarting system...`n"
   # Print-Green-Underline "Restarting System..."
   Write-Output "`nRestarting System...`n"
   shutdown /r /t 0
 }
-# TODO: Move to aliases.ps1
-Set-Alias -Name reboot -Value restart
 
 # https://stackoverflow.com/a/7330368
 function get-windows-build {
@@ -220,22 +213,12 @@ function GetPath {
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Git & Github functions
+# Git & GitHub Functions
 # ======================
 
-# Git Multi Status
-function getGitMultiStatus {
-  # Invoke-Expression
-  bash C:\tools\multi-git-status\mgitstatus
-}
-# TODO: Move to aliases.ps1
-Set-Alias -Name mgs -Value getGitMultiStatus
-
-# Use GitHub's hub Client in favor of git
-# TODO: Move to aliases.ps1
-if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
-
 # ! TODO: Refactor the following functions to be more concise
+
+# TODO: Move git functions to global .gitconfig
 
 # Print Git Status
 function getGitStatus {
@@ -281,6 +264,8 @@ Set-Alias -Name gss -Value getG3lStatus
 # NodeJS & NPM Functions
 # ======================
 
+# TODO: Move these functions to aliases.ps1
+
 # Print list of local NPM dependencies
 function getNpmLocals {
   # Check node_modules directory exists
@@ -319,6 +304,8 @@ Set-Alias -Name nplg -Value getNpmGlobals
 # Chocolatey Functions
 # ====================
 
+# TODO: Move these functions to aliases.ps1
+
 # Print list of local chocolatey installations
 function getChocoInstalls {
   # Check choco command exists
@@ -347,17 +334,9 @@ function getChocoOutdated {
 # TODO: Move to aliases.ps1
 Set-Alias -Name clo -Value getChocoOutdated
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# Scoop Functions
-# ---------------
-
-# TODO: Move this to components/scoop.ps1
-try {
-  Import-Module -ErrorAction Stop "$($(Get-Item $(Get-Command -ErrorAction Stop scoop).Path).Directory.Parent.FullName)\modules\scoop-completion"
-} catch { }
-
 # --------------------------------------------------------------------------------------------- #
+
+# TODO: Move these to aliases.ps1
 
 function neofetch {
   bash C:\tools\neofetch\neofetch
