@@ -347,15 +347,6 @@ function getChocoOutdated {
 # TODO: Move to aliases.ps1
 Set-Alias -Name clo -Value getChocoOutdated
 
-# Chocolatey Profile
-# TODO: Move this to components/choco.ps1
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile" -Force
-}
-
-# Import-Module “$env:ChocolateyInstall\helpers\chocolateyProfile.psm1” -Force
-
 # ------------------------------------------------------------------------------------------------------- #
 
 # Scoop Functions
