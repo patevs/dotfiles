@@ -260,8 +260,6 @@ Set-Alias -Name gss -Value getG3lStatus
 # NodeJS & NPM Functions
 # ======================
 
-# TODO: Move these functions to aliases.ps1
-
 # Print list of local NPM dependencies
 function npmLocals {
   # Print-Green-Underline "Local NPM Dependencies:"
