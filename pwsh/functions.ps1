@@ -212,8 +212,6 @@ function GetPath {
 # Git & GitHub Functions
 # ======================
 
-# ! TODO: Refactor the following functions to be more concise
-
 # TODO: Move git functions to global .gitconfig
 
 # Print Git Status
@@ -222,20 +220,6 @@ function gs {
   Write-Output "`n Git Status:`n"
   git status
 }
-<#
-function getGitStatus {
-  # Check git command exists
-  if (Get-Command git -ErrorAction SilentlyContinue){
-    Write-Host "`n Git Status:`n"  -ForegroundColor Green
-    # Print-Green-Underline "Git Status:"
-    git status
-  } else {
-    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
-  }
-}
-# TODO: Move to aliases.ps1
-Set-Alias -Name gs -Value getGitStatus
-#>
 
 # Print git status using g3l
 function gss {
@@ -249,30 +233,6 @@ function gss {
   Write-Output "" # new line
   git status
 }
-
-<#
-function getG3lStatus {
-  # Check git command exists
-  if (Get-Command git -ErrorAction SilentlyContinue){
-    # Fetch git remote
-    Write-Host "`n Git Remotes:`n"  -ForegroundColor Green
-    # Print-Green-Underline "Git Remotes:"
-    git remote -v
-    Write-Host "`n Git Status:`n"  -ForegroundColor Green
-    # Print-Green-Underline "Git Status:"
-    # Check g3l command exists
-    if (Get-Command g3l -ErrorAction SilentlyContinue) {
-      g3l --status
-      Write-Host "" # new line
-    }
-    git status
-  } else {
-    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
-  }
-}
-# TODO: Move to aliases.ps1
-Set-Alias -Name gss -Value getG3lStatus
-#>
 
 # ------------------------------------------------------------------------------------------------------- #
 
