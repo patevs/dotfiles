@@ -216,6 +216,8 @@ function GetPath {
 
 # ! TODO: Refactor the following functions to be more concise
 
+# TODO: Move git functions to global .gitconfig
+
 # Print Git Status
 function getGitStatus {
   # Check git command exists
