@@ -8,10 +8,6 @@
     "type": "git",
     "url": "git+https://github.com/patevs/dotfiles.git"
   },
-  "keywords": [
-    "dotfiles",
-    "config"
-  ],
   "scripts": {
     "commit": "git-cz",
     "release": "np",
