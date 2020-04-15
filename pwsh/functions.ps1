@@ -217,6 +217,12 @@ function GetPath {
 # TODO: Move git functions to global .gitconfig
 
 # Print Git Status
+function gs {
+  # Print-Green-Underline "Git Status:"
+  Write-Output "`n Git Status:`n"
+  git status
+}
+<#
 function getGitStatus {
   # Check git command exists
   if (Get-Command git -ErrorAction SilentlyContinue){
@@ -229,7 +235,7 @@ function getGitStatus {
 }
 # TODO: Move to aliases.ps1
 Set-Alias -Name gs -Value getGitStatus
-
+#>
 
 # Print git status using g3l
 function getG3lStatus {
