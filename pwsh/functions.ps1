@@ -7,15 +7,33 @@ Write-Output "functions.ps1"
 # Basic Commands
 # ==============
 
-function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object Definition }
+# function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object Definition }
+function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Definition }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
+
+function grep($regex, $dir) {
+  if ( $dir ) {
+    get-childitem $dir | select-string $regex
+    return
+  }
+  $input | select-string $regex
+}
 
 # Common Editing needs
 # function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
 # function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
 
+# Kinda like $EDITOR in nix
+# TODO: check out edit-file from PSCX
+# You may prefer eg 'subl' or 'code' or whatever else
+function edit {
+	& "code" -g @args
+}
+
 # Edit whole dir, so we can edit included files etc.
-# function edit-profile { edit $PSScriptRoot }
+function edit-profile {
+  edit $PSScriptRoot
+}
 
 # Open a given file
 function open($file) {
@@ -57,7 +75,93 @@ function sudo() {
     start-process $args[0] -ArgumentList $args[1..$args.Length] -verb "runAs"
   }
 }
+
+# From https://github.com/Pscx/Pscx
+function sudo(){
+  Invoke-Elevated @args
+}
+
+function sudo {
+  $file, [string]$arguments = $args;
+  $psi = new-object System.Diagnostics.ProcessStartInfo $file;
+  $psi.Arguments = $arguments;
+  $psi.Verb = "runas";
+  $psi.WorkingDirectory = get-location;
+  [System.Diagnostics.Process]::Start($psi) >> $null
+}
+
+# https://stackoverflow.com/questions/7690994/running-a-command-as-administrator-using-powershell
+function sudo {
+  Start-Process powershell -Verb runAs
+  if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs;
+    exit
+  }
+}
 #>
+
+# ! TODO: Refactor the following functions
+
+# Print list of current directory contents
+# Set-Alias l Get-ChildItem -option AllScope
+# Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
+
+# Print short list of current directory contents
+function dirList {
+  # Print-Green-Underline "Directory Contents:"
+  Write-Output "`nDirectory Contents:`n"
+  # Favour lsd over default dir command
+  if (Get-Command lsd) {
+    lsd --color always --icon always
+  }
+  else {
+    Get-ChildItem
+  }
+}
+Set-Alias -Name l -Value dirList
+
+# Print list of current directory contents
+function dirListAll {
+  # Print-Green-Underline "Directory Contents:"
+  Write-Output "`nDirectory Contents:`n"
+  # Favour lsd over default dir command
+  if (Get-Command lsd) {
+    lsd -A1 --color always --icon always
+  }
+  else {
+    Get-ChildItem | Format-Wide
+  }
+}
+Set-Alias -Name ls -Value dirListAll -option AllScope -Force
+Set-Alias -Name ll -Value dirListAll
+
+# Print long list of current directory contents
+function dirListLong {
+  # Print-Green-Underline "Directory Contents:"
+  Write-Output "`nDirectory Contents:`n"
+  # Favour lsd over default dir command
+  if (Get-Command lsd) {
+    lsd -al --color always --icon always
+  }
+  else {
+    Get-ChildItem | Format-List
+  }
+}
+Set-Alias -Name lll -Value dirListLong
+
+# Print directory tree
+function dirTree {
+  # Print-Green-Underline "Directory Tree:"
+  Write-Output "`nDirectory Tree:`n"
+  # Favour lsd over default tree command
+  if (Get-Command lsd) {
+    lsd --tree --color always --icon always
+  }
+  else {
+    tree
+  }
+}
+Set-Alias -Name lst -Value dirTree
 
 # ------------------------------------------------------------------------------------------------------- #
 
