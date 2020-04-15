@@ -23,6 +23,7 @@ ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
 # $desktopPath = $env:USERPROFILE + "\desktop"
 ${function:dt} = { Set-Location ~\Desktop }
+
 Set-Alias desktop -Value dt
 Set-Alias desk -Value dt
 
@@ -30,7 +31,17 @@ Set-Alias desk -Value dt
 # From: https://stackoverflow.com/a/12949659
 # $env:DOCUMENTS = [Environment]::GetFolderPath("mydocuments")
 
-# --------------------------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------- #
+
+# System Aliases
+# ==============
+
+Set-Alias -Name shut -Value shutdown
+
+Set-Alias -Name reboot -Value restart
+
+
+# ------------------------------------------------------------------------------------------------------- #
 
 # Missing Bash aliases
 Set-Alias time Measure-Command
