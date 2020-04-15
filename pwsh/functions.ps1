@@ -238,6 +238,19 @@ Set-Alias -Name gs -Value getGitStatus
 #>
 
 # Print git status using g3l
+function gss {
+  # Fetch git remote
+  # Print-Green-Underline "Git Remotes:"
+  Write-Output "`n Git Remotes:`n"
+  git remote -v
+  # Print-Green-Underline "Git Status:"
+  Write-Output "`n Git Status:`n"
+  g3l --status
+  Write-Output "" # new line
+  git status
+}
+
+<#
 function getG3lStatus {
   # Check git command exists
   if (Get-Command git -ErrorAction SilentlyContinue){
@@ -259,7 +272,7 @@ function getG3lStatus {
 }
 # TODO: Move to aliases.ps1
 Set-Alias -Name gss -Value getG3lStatus
-
+#>
 
 # ------------------------------------------------------------------------------------------------------- #
 
