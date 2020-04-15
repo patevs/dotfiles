@@ -268,7 +268,7 @@ function npl {
 }
 
 # Print list of global NPM dependencies
-function npmGlobals {
+function nplg {
   # Print-Green-Underline "Global NPM Dependencies:"
   Write-Output "`n Global NPM Dependencies: `n"
   npm list --global --depth=0
