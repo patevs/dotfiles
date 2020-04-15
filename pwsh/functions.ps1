@@ -7,8 +7,22 @@ Write-Output "functions.ps1"
 # Basic Commands
 # ==============
 
-function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object Definition }
+# function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object Definition }
+function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Definition }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
+
+# Like Unix touch, creates new files and updates time on old ones
+# PSCX has a touch, but it doesn't make empty files
+# Remove-Alias touch
+<#
+function touch($file) {
+	if ( Test-Path $file ) {
+		Set-FileTime $file
+	} else {
+		New-Item $file -type file
+	}
+}
+#>
 
 # Common Editing needs
 # function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
