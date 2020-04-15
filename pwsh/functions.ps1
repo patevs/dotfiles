@@ -291,7 +291,7 @@ function getNpmLocals {
 # Set-Alias -Name npl -Value getNpmLocals
 
 # Print list of global NPM dependencies
-function npmGLobals {
+function npmGlobals {
   # Print-Green-Underline "Global NPM Dependencies:"
   Write-Output "`n Global NPM Dependencies: `n"
   npm list --global --depth=0

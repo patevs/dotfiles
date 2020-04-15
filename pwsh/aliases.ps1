@@ -63,6 +63,15 @@ if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
 
 # --------------------------------------------------------------------------------------------- #
 
+# NodeJS & NPM Aliases
+# ====================
+
+Set-Alias -Name npl -Value npmLocals
+
+Set-Alias -Name nplg -Value npmGlobals
+
+# --------------------------------------------------------------------------------------------- #
+
 # Correct PowerShell Aliases if tools are available (aliases win if set)
 # WGet: Use `wget.exe` if available
 <#
