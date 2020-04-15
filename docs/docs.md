@@ -17,6 +17,7 @@
   * [`cz-emoji`](https://github.com/ngryman/cz-emoji)
 * [`commitlint`](https://github.com/conventional-changelog/commitlint)
   * [Documentation](https://commitlint.js.org)
+  * [`commitlint-config-gitmoji`](https://github.com/arvinxx/commitlint-config-gitmoji)
 
 ---
 
