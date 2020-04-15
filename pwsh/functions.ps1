@@ -118,8 +118,6 @@ function shutdown {
   Write-Output "`nShutting Down System...`n"
   shutdown /p
 }
-# TODO: Move to aliases.ps1
-Set-Alias -Name shut -Value shutdown
 
 # Restart System
 function restart {
@@ -128,8 +126,6 @@ function restart {
   Write-Output "`nRestarting System...`n"
   shutdown /r /t 0
 }
-# TODO: Move to aliases.ps1
-Set-Alias -Name reboot -Value restart
 
 # https://stackoverflow.com/a/7330368
 function get-windows-build {
