@@ -262,6 +262,8 @@ Set-Alias -Name gss -Value getG3lStatus
 # NodeJS & NPM Functions
 # ======================
 
+# TODO: Move these functions to aliases.ps1
+
 # Print list of local NPM dependencies
 function getNpmLocals {
   # Check node_modules directory exists
@@ -299,6 +301,8 @@ Set-Alias -Name nplg -Value getNpmGlobals
 
 # Chocolatey Functions
 # ====================
+
+# TODO: Move these functions to aliases.ps1
 
 # Print list of local chocolatey installations
 function getChocoInstalls {
