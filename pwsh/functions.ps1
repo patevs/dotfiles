@@ -258,8 +258,6 @@ function nplg {
 # Chocolatey Functions
 # ====================
 
-# TODO: Move these functions to aliases.ps1
-
 # Print list of local chocolatey installations
 function cll {
   # Print-Green-Underline "Local Chocolatey Installations:"
@@ -267,38 +265,12 @@ function cll {
   choco list -l
 }
 
-function getChocoInstalls {
-  # Check choco command exists
-  if (Get-Command choco -ErrorAction SilentlyContinue) {
-    Write-Host "`n Local Chocolatey Installations:`n" -ForegroundColor Green
-    # Print-Green-Underline "Local Chocolatey Installations:"
-    choco list -l
-  } else {
-    Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
-  }
-}
-# TODO: Move to aliases.ps1
-Set-Alias -Name cll -Value getChocoInstalls
-
 # Print list of outdated chocolatey installations
 function clo {
   # Print-Green-Underline "Outdated Chocolatey Installations:"
   Write-Output "`n Outdated Chocolatey Installations:`n"
   choco upgrade all --noop
 }
-
-function getChocoOutdated {
-  # Check choco command exists
-  if (Get-Command choco -ErrorAction SilentlyContinue) {
-    Write-Host "`n Outdated Chocolatey Installations:`n" -ForegroundColor Green
-    # Print-Green-Underline "Outdated Chocolatey Installations:"
-    choco upgrade all --noop
-  } else {
-    Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
-  }
-}
-# TODO: Move to aliases.ps1
-Set-Alias -Name clo -Value getChocoOutdated
 
 # --------------------------------------------------------------------------------------------- #
 
