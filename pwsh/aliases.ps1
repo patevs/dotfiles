@@ -52,7 +52,10 @@ Set-Alias time Measure-Command
 # Git & GitHub Aliases
 # ====================
 
-# ..
+# Git Multi Status
+${function:mgs} = {
+  bash C:\tools\multi-git-status\mgitstatus
+}
 
 # --------------------------------------------------------------------------------------------- #
 
