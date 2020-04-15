@@ -54,6 +54,16 @@
   dependencies:
     conventional-changelog-conventionalcommits "4.2.1"
 
+"@commitlint/core@^8.3.5":
+  version "8.3.5"
+  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-8.3.5.tgz#00689ad817489263c71aad65875841961bce688d"
+  integrity sha512-UjfNA95fXZW20dmNJ8upBfH/Br7RPQro3osatmE9l9EZBv0xzHS5Cc4TzXMwe32xxHCqIEUtPFedxAHgELVHmg==
+  dependencies:
+    "@commitlint/format" "^8.3.4"
+    "@commitlint/lint" "^8.3.5"
+    "@commitlint/load" "^8.3.5"
+    "@commitlint/read" "^8.3.4"
+
 "@commitlint/ensure@^8.3.4":
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/@commitlint/ensure/-/ensure-8.3.4.tgz#6931677e4ca0fde71686ae3b7a367261647a341d"
