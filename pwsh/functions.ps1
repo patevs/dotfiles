@@ -15,9 +15,7 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 # function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
 
 # Edit whole dir, so we can edit included files etc.
-function edit-profile {
-  edit $PSScriptRoot
-}
+# function edit-profile { edit $PSScriptRoot }
 
 # Open a given file
 function open($file) {
