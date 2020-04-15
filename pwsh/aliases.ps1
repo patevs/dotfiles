@@ -40,6 +40,10 @@ Set-Alias -Name shut -Value shutdown
 # Restart System
 Set-Alias -Name reboot -Value restart
 
+# System information tools
+${function:neofetch} = { bash C:\tools\neofetch\neofetch }
+${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Unix-like Aliases
