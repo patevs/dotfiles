@@ -31,11 +31,12 @@ Set-Alias desk -Value dt
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# System Aliases
-# ==============
+# System Utility Aliases
+# ======================
 
 # Shutdown System
 Set-Alias -Name shut -Value shutdown
+
 # Restart System
 Set-Alias -Name reboot -Value restart
 
@@ -59,6 +60,17 @@ ${function:mgs} = {
 
 # Favour GitHub's hub client over vanilla git
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
+
+# --------------------------------------------------------------------------------------------- #
+
+# NodeJS & NPM Aliases
+# ====================
+
+# Print list of local NPM dependencies
+Set-Alias -Name npl -Value npmLocals
+
+# Print list of global NPM dependencies
+Set-Alias -Name nplg -Value npmGlobals
 
 # --------------------------------------------------------------------------------------------- #
 

@@ -112,18 +112,14 @@ function SystemUpdate() {
 }
 
 # Shutdown System
-# TODO: Move this to aliases.ps1
 function shutdown {
-  # Write-Host "`nShutting down system...`n"
   # Print-Green-Underline "Shutting Down System..."
   Write-Output "`nShutting Down System...`n"
   shutdown /p
 }
 
 # Restart System
-# TODO: Move this to aliases.ps1
 function restart {
-  # Write-Host "`nRestarting system...`n"
   # Print-Green-Underline "Restarting System..."
   Write-Output "`nRestarting System...`n"
   shutdown /r /t 0
@@ -267,37 +263,18 @@ Set-Alias -Name gss -Value getG3lStatus
 # TODO: Move these functions to aliases.ps1
 
 # Print list of local NPM dependencies
-function getNpmLocals {
-  # Check node_modules directory exists
-  if (Test-Path node_modules){
-    # Check npm command exists
-    if (Get-Command npm -ErrorAction SilentlyContinue){
-      Write-Host "`n Local NPM Dependencies:`n" -ForegroundColor Green
-      # Print-Green-Underline "Local NPM Dependencies:"
-      npm list --depth=0
-    } else {
-      Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
-    }
-  } else {
-    Write-Host "`n node_modules folder does not exist in current directory!" -ForegroundColor Red
-  }
+function npmLocals {
+  # Print-Green-Underline "Local NPM Dependencies:"
+  Write-Output "`n Local NPM Dependencies: `n"
+  npm list --depth=0
 }
-# TODO: Move to aliases.ps1
-Set-Alias -Name npl -Value getNpmLocals
 
 # Print list of global NPM dependencies
-function getNpmGlobals {
-  # Check npm command exists
-  if (Get-Command npm -ErrorAction SilentlyContinue){
-    Write-Host "`n Global NPM Dependencies:`n" -ForegroundColor Green
-    # Print-Green-Underline "Global NPM Dependencies:"
-    npm list --global --depth=0
-  } else {
-    Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
-  }
+function npmGlobals {
+  # Print-Green-Underline "Global NPM Dependencies:"
+  Write-Output "`n Global NPM Dependencies: `n"
+  npm list --global --depth=0
 }
-# TODO: Move to aliases.ps1
-Set-Alias -Name nplg -Value getNpmGlobals
 
 # ------------------------------------------------------------------------------------------------------- #
 
