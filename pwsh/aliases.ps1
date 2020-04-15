@@ -66,8 +66,10 @@ if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
 # NodeJS & NPM Aliases
 # ====================
 
+# Print list of local NPM dependencies
 Set-Alias -Name npl -Value npmLocals
 
+# Print list of global NPM dependencies
 Set-Alias -Name nplg -Value npmGlobals
 
 # --------------------------------------------------------------------------------------------- #
