@@ -112,6 +112,7 @@ function SystemUpdate() {
 }
 
 # Shutdown System
+# TODO: Move this to aliases.ps1
 function shutdown {
   # Write-Host "`nShutting down system...`n"
   # Print-Green-Underline "Shutting Down System..."
@@ -120,6 +121,7 @@ function shutdown {
 }
 
 # Restart System
+# TODO: Move this to aliases.ps1
 function restart {
   # Write-Host "`nRestarting system...`n"
   # Print-Green-Underline "Restarting System..."
