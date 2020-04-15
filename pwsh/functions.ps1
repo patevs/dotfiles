@@ -18,8 +18,6 @@ function grep($regex, $dir) {
   }
   $input | select-string $regex
 }
-# Favour ripgrep over grep if installed
-# Set-Alias -Name grep -Value rg
 
 # Common Editing needs
 # function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
