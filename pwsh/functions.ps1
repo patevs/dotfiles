@@ -261,7 +261,7 @@ Set-Alias -Name gss -Value getG3lStatus
 # ======================
 
 # Print list of local NPM dependencies
-function npmLocals {
+function npl {
   # Print-Green-Underline "Local NPM Dependencies:"
   Write-Output "`n Local NPM Dependencies: `n"
   npm list --depth=0
