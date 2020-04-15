@@ -23,12 +23,6 @@
     "cz-emoji": "^1.2.1",
     "np": "^6.2.1"
   },
-  "np": {
-    "yolo": false,
-    "publish": false,
-    "preview": false,
-    "releaseDraft": true
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-emoji"
@@ -39,5 +33,11 @@
         "issues"
       ]
     }
+  },
+  "np": {
+    "yolo": false,
+    "publish": false,
+    "preview": false,
+    "releaseDraft": true
   }
 }
