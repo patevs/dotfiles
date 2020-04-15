@@ -57,6 +57,9 @@ ${function:mgs} = {
   bash C:\tools\multi-git-status\mgitstatus
 }
 
+# Favour GitHub's hub client over vanilla git
+if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
+
 # --------------------------------------------------------------------------------------------- #
 
 # Correct PowerShell Aliases if tools are available (aliases win if set)

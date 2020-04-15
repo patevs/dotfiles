@@ -214,14 +214,6 @@ function GetPath {
 # Git & GitHub Functions
 # ======================
 
-# Git Multi Status
-function getGitMultiStatus {
-  # Invoke-Expression
-  bash C:\tools\multi-git-status\mgitstatus
-}
-# TODO: Move to aliases.ps1
-Set-Alias -Name mgs -Value getGitMultiStatus
-
 # Use GitHub's hub Client in favor of git
 # TODO: Move to aliases.ps1
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
