@@ -44,6 +44,9 @@ Set-Alias -Name reboot -Value restart
 ${function:neofetch} = { bash C:\tools\neofetch\neofetch }
 ${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
 
+# Favour ripgrep over grep if installed
+if (Get-Command rg) { Set-Alias -Name grep -Value rg }
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Unix-like Aliases
