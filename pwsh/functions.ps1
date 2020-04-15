@@ -5,6 +5,8 @@
 Write-Output "functions.ps1"
 
 # Basic commands
+# ==============
+
 function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object Definition }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
 
@@ -20,6 +22,36 @@ $profileDir = $PSScriptRoot;
 function edit-profile {
 	edit $profileDir
 }
+
+# Open a given file
+function open($file) {
+  invoke-item $file
+}
+
+# Open Windows Explorer
+function explorer {
+  explorer.exe .
+}
+
+# Open Windows Settings
+function settings {
+  start-process ms-setttings:
+}
+
+# Truncate homedir to ~
+# function limit-HomeDirectory($Path) {
+#   $Path.Replace("$home", "~")
+# }
+
+# TODO: Create function to start FireFox
+# function edge {
+  # Old Edge
+  # start microsoft-edge:
+  #
+  # New Chromioum Edge
+#   & "${env:ProgramFiles(x86)}\Microsoft\Edge Dev\Application\msedge.exe"
+# }
+
 
 # Sudo
 <#
@@ -43,6 +75,10 @@ function SystemUpdate() {
   npm install npm -g
   npm update -g
 }
+
+
+# PowerShell Utilities
+# ====================
 
 # Reload the Shell
 function ReloadPowershell {
@@ -92,8 +128,20 @@ function modules {
 #   Get-CimInstance -ClassName Win32_Bios | select-object serialnumber
 # }
 
+
 ### System & Utility functions
 ### ----------------------------
+
+# System Update - Update RubyGems, NPM, and their installed packages
+function SystemUpdate() {
+  Install-WindowsUpdate -IgnoreUserInput -IgnoreReboot -AcceptAll
+  Update-Module
+  Update-Help -Force
+  gem update --system
+  gem update
+  npm install npm -g
+  npm update -g
+}
 
 # Shutdown System
 function shutdown {
@@ -102,6 +150,7 @@ function shutdown {
   Write-Output "`nShutting Down System...`n"
   shutdown /p
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name shut -Value shutdown
 
 # Restart System
@@ -111,8 +160,8 @@ function restart {
   Write-Output "`nRestarting System...`n"
   shutdown /r /t 0
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name reboot -Value restart
-
 
 # Empty the Recycle Bin on all drives
 function EmptyRecycleBin {
@@ -122,8 +171,9 @@ function EmptyRecycleBin {
 }
 
 
-### File System functions
-### ----------------------------
+# File System functions
+# =====================
+
 # Create a new directory and enter it
 function CreateAndSetDirectory([String] $path) {
   New-Item $path -ItemType Directory -ErrorAction SilentlyContinue
@@ -147,8 +197,9 @@ function CleanDisks {
 }
 #>
 
-### Environment functions
-### ----------------------------
+
+# Environment functions
+# =====================
 
 # Reload the $env object from the registry
 function RefreshEnvironment {
