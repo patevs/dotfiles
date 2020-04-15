@@ -100,6 +100,65 @@ function sudo {
 }
 #>
 
+# ! TODO: Refactor the following functions
+
+# Print list of current directory contents
+# Set-Alias l Get-ChildItem -option AllScope
+# Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
+
+# Print short list of current directory contents
+function dirList {
+  # Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
+  Print-Green-Underline "Directory Contents:"
+  # Favour lsd over default dir command
+  if (Check-Command lsd) {
+    lsd --color always --icon always
+  }
+  else {
+    Get-ChildItem
+  }
+}
+Set-Alias -Name l -Value dirList
+
+# Print list of current directory contents
+function dirListAll {
+  Print-Green-Underline "Directory Contents:"
+  # Favour lsd over default dir command
+  if (Check-Command lsd) {
+    lsd -A1 --color always --icon always
+  }
+  else {
+    Get-ChildItem | Format-Wide
+  }
+}
+Set-Alias -Name ls -Value dirListAll -option AllScope -Force
+Set-Alias -Name ll -Value dirListAll
+
+# Print long list of current directory contents
+function dirListLong {
+  Print-Green-Underline "Directory Contents:"
+  # Favour lsd over default dir command
+  if (Check-Command lsd) {
+    lsd -al --color always --icon always
+  }
+  else {
+    Get-ChildItem | Format-List
+  }
+}
+Set-Alias -Name lll -Value dirListLong
+
+# Print directory tree
+function dirTree {
+  Print-Green-Underline "Directory Tree:"
+  # Favour lsd over default tree command
+  if (Check-Command lsd) {
+    lsd --tree --color always --icon always
+  }
+  else {
+    tree
+  }
+}
+Set-Alias -Name lst -Value dirTree
 
 # ------------------------------------------------------------------------------------------------------- #
 
