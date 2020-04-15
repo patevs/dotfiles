@@ -65,17 +65,7 @@ function sudo() {
 }
 #>
 
-# System Update - Update RubyGems, NPM, and their installed packages
-function SystemUpdate() {
-  Install-WindowsUpdate -IgnoreUserInput -IgnoreReboot -AcceptAll
-  Update-Module
-  Update-Help -Force
-  gem update --system
-  gem update
-  npm install npm -g
-  npm update -g
-}
-
+# --------------------------------------------------------------------------------------------- #
 
 # PowerShell Utilities
 # ====================
@@ -128,9 +118,10 @@ function modules {
 #   Get-CimInstance -ClassName Win32_Bios | select-object serialnumber
 # }
 
+# --------------------------------------------------------------------------------------------- #
 
-### System & Utility functions
-### ----------------------------
+# System & Utility functions
+# ==========================
 
 # System Update - Update RubyGems, NPM, and their installed packages
 function SystemUpdate() {
@@ -163,13 +154,7 @@ function restart {
 # TODO: Move to aliases.ps1
 Set-Alias -Name reboot -Value restart
 
-# Empty the Recycle Bin on all drives
-function EmptyRecycleBin {
-  $RecBin = (New-Object -ComObject Shell.Application).Namespace(0xA)
-  # $RecBin.Items() | %{Remove-Item $_.Path -Recurse -Confirm:$false}
-  $RecBin.Items() | ForEach-Object{Remove-Item $_.Path -Recurse -Confirm:$false}
-}
-
+# --------------------------------------------------------------------------------------------- #
 
 # File System functions
 # =====================
@@ -188,6 +173,13 @@ function GetDiskUsage([string] $path=(Get-Location).Path) {
             | Measure-Object -property length -sum -ErrorAction SilentlyContinue
         ).Sum `
         1
+}
+
+# Empty the Recycle Bin on all drives
+function EmptyRecycleBin {
+  $RecBin = (New-Object -ComObject Shell.Application).Namespace(0xA)
+  # $RecBin.Items() | %{Remove-Item $_.Path -Recurse -Confirm:$false}
+  $RecBin.Items() | ForEach-Object{Remove-Item $_.Path -Recurse -Confirm:$false}
 }
 
 # Cleanup all disks (Based on Registry Settings in `windows.ps1`)
