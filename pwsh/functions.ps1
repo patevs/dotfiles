@@ -272,16 +272,4 @@ function clo {
   choco upgrade all --noop
 }
 
-# --------------------------------------------------------------------------------------------- #
-
-# TODO: Move these to aliases.ps1
-
-function neofetch {
-  bash C:\tools\neofetch\neofetch
-}
-
-function winfetch {
-  C:\tools\winfetch\src\winfetch.ps1
-}
-
 # EOF #
