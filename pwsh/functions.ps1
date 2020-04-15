@@ -281,6 +281,12 @@ function getChocoInstalls {
 Set-Alias -Name cll -Value getChocoInstalls
 
 # Print list of outdated chocolatey installations
+function clo {
+  # Print-Green-Underline "Outdated Chocolatey Installations:"
+  Write-Output "`n Outdated Chocolatey Installations:`n"
+  choco upgrade all --noop
+}
+
 function getChocoOutdated {
   # Check choco command exists
   if (Get-Command choco -ErrorAction SilentlyContinue) {
