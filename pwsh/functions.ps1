@@ -14,10 +14,9 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 # function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
 # function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
 
-$profileDir = $PSScriptRoot;
 # Edit whole dir, so we can edit included files etc.
 function edit-profile {
-	edit $profileDir
+  edit $PSScriptRoot
 }
 
 # Open a given file
