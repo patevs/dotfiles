@@ -214,10 +214,6 @@ function GetPath {
 # Git & GitHub Functions
 # ======================
 
-# Use GitHub's hub Client in favor of git
-# TODO: Move to aliases.ps1
-if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
-
 # ! TODO: Refactor the following functions to be more concise
 
 # Print Git Status
