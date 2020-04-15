@@ -17,11 +17,9 @@ ${function:.....} = { Set-Location ..\..\..\.. }
 ${function:......} = { Set-Location ..\..\..\..\.. }
 
 # Navigation Shortcuts
-# $devPath = $env:USERPROFILE + "\git"
 ${function:dev} = { Set-Location ~\git }
 ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
-# $desktopPath = $env:USERPROFILE + "\desktop"
 ${function:dt} = { Set-Location ~\Desktop }
 
 Set-Alias desktop -Value dt
