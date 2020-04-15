@@ -14,6 +14,7 @@ Push-Location (Join-Path (Split-Path -parent $profile) "components")
 . .\choco.ps1
 . .\git.ps1
 . .\npm.ps1
+. .\scoop.ps1
 . .\yarn.ps1
 
 Pop-Location
