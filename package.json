@@ -28,7 +28,7 @@
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "./node_modules/commitlint-config-gitmoji"
     ]
   },
   "config": {
