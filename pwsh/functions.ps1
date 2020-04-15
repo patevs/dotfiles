@@ -261,6 +261,12 @@ function nplg {
 # TODO: Move these functions to aliases.ps1
 
 # Print list of local chocolatey installations
+function cll {
+  # Print-Green-Underline "Local Chocolatey Installations:"
+  Write-Output "`n Local Chocolatey Installations:`n"
+  choco list -l
+}
+
 function getChocoInstalls {
   # Check choco command exists
   if (Get-Command choco -ErrorAction SilentlyContinue) {
