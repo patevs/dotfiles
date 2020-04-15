@@ -4,6 +4,9 @@
 
 Write-Output "aliases.ps1"
 
+# Navigation Aliases
+# ==================
+
 # Easier Navigation: .., ..., ...., ....., and ~
 ${function:~} = { Set-Location ~ }
 # PoSh won't allow ${function:..} because of an invalid path error, so...
