@@ -347,17 +347,9 @@ function getChocoOutdated {
 # TODO: Move to aliases.ps1
 Set-Alias -Name clo -Value getChocoOutdated
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# Scoop Functions
-# ---------------
-
-# TODO: Move this to components/scoop.ps1
-try {
-  Import-Module -ErrorAction Stop "$($(Get-Item $(Get-Command -ErrorAction Stop scoop).Path).Directory.Parent.FullName)\modules\scoop-completion"
-} catch { }
-
 # --------------------------------------------------------------------------------------------- #
+
+# TODO: Move these to aliases.ps1
 
 function neofetch {
   bash C:\tools\neofetch\neofetch
