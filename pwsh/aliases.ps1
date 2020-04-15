@@ -114,9 +114,6 @@ if (Get-Command curl.exe -ErrorAction SilentlyContinue | Test-Path) {
 # Create a new directory and enter it
 Set-Alias mkd CreateAndSetDirectory
 
-# Determine size of a file or total size of a directory
-Set-Alias fs GetDiskUsage
-
 # Empty the Recycle Bin on all drives
 Set-Alias emptytrash EmptyRecycleBin
 
@@ -128,10 +125,6 @@ Set-Alias emptytrash EmptyRecycleBin
 
 # Reload the shell
 Set-Alias reload ReloadPowershell
-
-# http://xkcd.com/530/
-# Set-Alias mute Set-SoundMute
-# Set-Alias unmute Set-SoundUnmute
 
 # Update installed Ruby Gems, NPM, and their installed packages.
 # Set-Alias update System-Update
