@@ -209,51 +209,30 @@ function GetPath {
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Git & GitHub Functions
-# ======================
+# Git Functions
+# =============
 
-# ! TODO: Refactor the following functions to be more concise
-
-# TODO: Move git functions to global .gitconfig
+# TODO: Move these functions to global .gitconfig file
 
 # Print Git Status
-function getGitStatus {
-  # Check git command exists
-  if (Get-Command git -ErrorAction SilentlyContinue){
-    Write-Host "`n Git Status:`n"  -ForegroundColor Green
-    # Print-Green-Underline "Git Status:"
-    git status
-  } else {
-    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
-  }
+function gs {
+  # Print-Green-Underline "Git Status:"
+  Write-Output "`n Git Status:`n"
+  git status
 }
-# TODO: Move to aliases.ps1
-Set-Alias -Name gs -Value getGitStatus
-
 
 # Print git status using g3l
-function getG3lStatus {
-  # Check git command exists
-  if (Get-Command git -ErrorAction SilentlyContinue){
-    # Fetch git remote
-    Write-Host "`n Git Remotes:`n"  -ForegroundColor Green
-    # Print-Green-Underline "Git Remotes:"
-    git remote -v
-    Write-Host "`n Git Status:`n"  -ForegroundColor Green
-    # Print-Green-Underline "Git Status:"
-    # Check g3l command exists
-    if (Get-Command g3l -ErrorAction SilentlyContinue) {
-      g3l --status
-      Write-Host "" # new line
-    }
-    git status
-  } else {
-    Write-Host "`n Git installation could not be found!" -ForegroundColor Red
-  }
+function gss {
+  # Fetch git remote
+  # Print-Green-Underline "Git Remotes:"
+  Write-Output "`n Git Remotes:`n"
+  git remote -v
+  # Print-Green-Underline "Git Status:"
+  Write-Output "`n Git Status:`n"
+  g3l --status
+  Write-Output "" # new line
+  git status
 }
-# TODO: Move to aliases.ps1
-Set-Alias -Name gss -Value getG3lStatus
-
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -261,14 +240,14 @@ Set-Alias -Name gss -Value getG3lStatus
 # ======================
 
 # Print list of local NPM dependencies
-function npmLocals {
+function npl {
   # Print-Green-Underline "Local NPM Dependencies:"
   Write-Output "`n Local NPM Dependencies: `n"
   npm list --depth=0
 }
 
 # Print list of global NPM dependencies
-function npmGlobals {
+function nplg {
   # Print-Green-Underline "Global NPM Dependencies:"
   Write-Output "`n Global NPM Dependencies: `n"
   npm list --global --depth=0
@@ -279,46 +258,18 @@ function npmGlobals {
 # Chocolatey Functions
 # ====================
 
-# TODO: Move these functions to aliases.ps1
-
 # Print list of local chocolatey installations
-function getChocoInstalls {
-  # Check choco command exists
-  if (Get-Command choco -ErrorAction SilentlyContinue) {
-    Write-Host "`n Local Chocolatey Installations:`n" -ForegroundColor Green
-    # Print-Green-Underline "Local Chocolatey Installations:"
-    choco list -l
-  } else {
-    Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
-  }
+function cll {
+  # Print-Green-Underline "Local Chocolatey Installations:"
+  Write-Output "`n Local Chocolatey Installations:`n"
+  choco list -l
 }
-# TODO: Move to aliases.ps1
-Set-Alias -Name cll -Value getChocoInstalls
 
 # Print list of outdated chocolatey installations
-function getChocoOutdated {
-  # Check choco command exists
-  if (Get-Command choco -ErrorAction SilentlyContinue) {
-    Write-Host "`n Outdated Chocolatey Installations:`n" -ForegroundColor Green
-    # Print-Green-Underline "Outdated Chocolatey Installations:"
-    choco upgrade all --noop
-  } else {
-    Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
-  }
-}
-# TODO: Move to aliases.ps1
-Set-Alias -Name clo -Value getChocoOutdated
-
-# --------------------------------------------------------------------------------------------- #
-
-# TODO: Move these to aliases.ps1
-
-function neofetch {
-  bash C:\tools\neofetch\neofetch
-}
-
-function winfetch {
-  C:\tools\winfetch\src\winfetch.ps1
+function clo {
+  # Print-Green-Underline "Outdated Chocolatey Installations:"
+  Write-Output "`n Outdated Chocolatey Installations:`n"
+  choco upgrade all --noop
 }
 
 # EOF #

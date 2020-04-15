@@ -40,6 +40,10 @@ Set-Alias -Name shut -Value shutdown
 # Restart System
 Set-Alias -Name reboot -Value restart
 
+# System information tools
+${function:neofetch} = { bash C:\tools\neofetch\neofetch }
+${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Unix-like Aliases
@@ -60,17 +64,6 @@ ${function:mgs} = {
 
 # Favour GitHub's hub client over vanilla git
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
-
-# --------------------------------------------------------------------------------------------- #
-
-# NodeJS & NPM Aliases
-# ====================
-
-# Print list of local NPM dependencies
-Set-Alias -Name npl -Value npmLocals
-
-# Print list of global NPM dependencies
-Set-Alias -Name nplg -Value npmGlobals
 
 # --------------------------------------------------------------------------------------------- #
 
@@ -121,9 +114,6 @@ if (Get-Command curl.exe -ErrorAction SilentlyContinue | Test-Path) {
 # Create a new directory and enter it
 Set-Alias mkd CreateAndSetDirectory
 
-# Determine size of a file or total size of a directory
-Set-Alias fs GetDiskUsage
-
 # Empty the Recycle Bin on all drives
 Set-Alias emptytrash EmptyRecycleBin
 
@@ -135,10 +125,6 @@ Set-Alias emptytrash EmptyRecycleBin
 
 # Reload the shell
 Set-Alias reload ReloadPowershell
-
-# http://xkcd.com/530/
-# Set-Alias mute Set-SoundMute
-# Set-Alias unmute Set-SoundUnmute
 
 # Update installed Ruby Gems, NPM, and their installed packages.
 # Set-Alias update System-Update
