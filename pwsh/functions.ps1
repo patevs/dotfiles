@@ -269,48 +269,12 @@ function npmLocals {
   npm list --depth=0
 }
 
-<#
-function getNpmLocals {
-  # Check node_modules directory exists
-  if (Test-Path node_modules){
-    # Check npm command exists
-    if (Get-Command npm -ErrorAction SilentlyContinue){
-      Write-Host "`n Local NPM Dependencies:`n" -ForegroundColor Green
-      # Print-Green-Underline "Local NPM Dependencies:"
-      npm list --depth=0
-    } else {
-      Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
-    }
-  } else {
-    Write-Host "`n node_modules folder does not exist in current directory!" -ForegroundColor Red
-  }
-}
-#>
-
-# TODO: Move to aliases.ps1
-# Set-Alias -Name npl -Value getNpmLocals
-
 # Print list of global NPM dependencies
 function npmGlobals {
   # Print-Green-Underline "Global NPM Dependencies:"
   Write-Output "`n Global NPM Dependencies: `n"
   npm list --global --depth=0
 }
-
-<#
-function getNpmGlobals {
-  # Check npm command exists
-  if (Get-Command npm -ErrorAction SilentlyContinue){
-    Write-Host "`n Global NPM Dependencies:`n" -ForegroundColor Green
-    # Print-Green-Underline "Global NPM Dependencies:"
-    npm list --global --depth=0
-  } else {
-    Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
-  }
-}
-#>
-# TODO: Move to aliases.ps1
-# Set-Alias -Name nplg -Value getNpmGlobals
 
 # ------------------------------------------------------------------------------------------------------- #
 
