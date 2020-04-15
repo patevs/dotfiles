@@ -108,10 +108,10 @@ function sudo {
 
 # Print short list of current directory contents
 function dirList {
-  # Write-Host "`nDirectory Contents:`n"  -ForegroundColor Green
-  Print-Green-Underline "Directory Contents:"
+  # Print-Green-Underline "Directory Contents:"
+  Write-Output "`nDirectory Contents:`n"
   # Favour lsd over default dir command
-  if (Check-Command lsd) {
+  if (Get-Command lsd) {
     lsd --color always --icon always
   }
   else {
@@ -122,9 +122,10 @@ Set-Alias -Name l -Value dirList
 
 # Print list of current directory contents
 function dirListAll {
-  Print-Green-Underline "Directory Contents:"
+  # Print-Green-Underline "Directory Contents:"
+  Write-Output "`nDirectory Contents:`n"
   # Favour lsd over default dir command
-  if (Check-Command lsd) {
+  if (Get-Command lsd) {
     lsd -A1 --color always --icon always
   }
   else {
@@ -136,9 +137,10 @@ Set-Alias -Name ll -Value dirListAll
 
 # Print long list of current directory contents
 function dirListLong {
-  Print-Green-Underline "Directory Contents:"
+  # Print-Green-Underline "Directory Contents:"
+  Write-Output "`nDirectory Contents:`n"
   # Favour lsd over default dir command
-  if (Check-Command lsd) {
+  if (Get-Command lsd) {
     lsd -al --color always --icon always
   }
   else {
@@ -149,9 +151,10 @@ Set-Alias -Name lll -Value dirListLong
 
 # Print directory tree
 function dirTree {
-  Print-Green-Underline "Directory Tree:"
+  # Print-Green-Underline "Directory Tree:"
+  Write-Output "`nDirectory Tree:`n"
   # Favour lsd over default tree command
-  if (Check-Command lsd) {
+  if (Get-Command lsd) {
     lsd --tree --color always --icon always
   }
   else {
