@@ -14,8 +14,17 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 # function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
 # function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
 
+# Kinda like $EDITOR in nix
+# TODO: check out edit-file from PSCX
+# You may prefer eg 'subl' or 'code' or whatever else
+function edit {
+	& "code" -g @args
+}
+
 # Edit whole dir, so we can edit included files etc.
-# function edit-profile { edit $PSScriptRoot }
+function edit-profile {
+  edit $PSScriptRoot
+}
 
 # Open a given file
 function open($file) {
