@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "commitizen": "^4.0.4",
-    "commitlint": "^8.3.5",
     "cz-emoji": "^1.2.1",
     "np": "^6.2.1"
   },
