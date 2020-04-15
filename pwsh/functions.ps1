@@ -14,9 +14,6 @@ function touch($file) { "" | Out-File $file -Encoding ASCII }
 # function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
 # function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
 
-# So we can launch pwsh in subshells if we need
-# Add-PathVariable "${env:ProgramFiles}\PowerShell\6-preview"
-
 $profileDir = $PSScriptRoot;
 # Edit whole dir, so we can edit included files etc.
 function edit-profile {
@@ -189,6 +186,7 @@ function CleanDisks {
 }
 #>
 
+# --------------------------------------------------------------------------------------------- #
 
 # Environment functions
 # =====================
@@ -230,11 +228,10 @@ function GetPath {
 # function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
 # function AppendEnvPathIfExists([String]$path) { if (Test-Path $path) { AppendEnvPath $path } }
 
+# --------------------------------------------------------------------------------------------- #
 
-### Git & Github
-### ----------------------------
-
-# TODO: Move the following functions to aliases.ps1
+# Git & Github functions
+# ======================
 
 # Git Multi Status
 function getGitMultiStatus {
