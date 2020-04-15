@@ -11,6 +11,16 @@
 
 ---
 
+## Development Dependencies
+
+* [`commitizen`](https://github.com/commitizen/cz-cli)
+  * [`cz-emoji`](https://github.com/ngryman/cz-emoji)
+* [`commitlint`](https://github.com/conventional-changelog/commitlint)
+  * [Documentation](https://commitlint.js.org)
+  * [`commitlint-config-gitmoji`](https://github.com/arvinxx/commitlint-config-gitmoji)
+
+---
+
 ### Example Dotfiles
 
 * [`jayharris/dotfiles-windows`](https://github.com/jayharris/dotfiles-windows)

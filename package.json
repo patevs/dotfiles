@@ -8,25 +8,29 @@
     "type": "git",
     "url": "git+https://github.com/patevs/dotfiles.git"
   },
-  "keywords": [
-    "dotfiles",
-    "config"
-  ],
   "scripts": {
     "commit": "git-cz",
     "release": "np",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/core": "^8.3.5",
     "commitizen": "^4.0.4",
+    "commitlint-config-gitmoji": "^1.0.1",
     "cz-emoji": "^1.2.1",
+    "husky": "^4.2.5",
     "np": "^6.2.1"
   },
-  "np": {
-    "yolo": false,
-    "publish": false,
-    "preview": false,
-    "releaseDraft": true
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "./node_modules/commitlint-config-gitmoji"
+    ]
   },
   "config": {
     "commitizen": {
@@ -38,5 +42,11 @@
         "issues"
       ]
     }
+  },
+  "np": {
+    "yolo": false,
+    "publish": false,
+    "preview": false,
+    "releaseDraft": true
   }
 }
