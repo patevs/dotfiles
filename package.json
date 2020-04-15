@@ -24,6 +24,11 @@
     "cz-emoji": "^1.2.1",
     "np": "^6.2.1"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-emoji"
