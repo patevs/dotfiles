@@ -136,10 +136,11 @@ function restart {
 # TODO: Move to aliases.ps1
 Set-Alias -Name reboot -Value restart
 
-# From http://stackoverflow.com/questions/7330187/how-to-find-the-windows-version-from-the-powershell-command-line
-# function get-windows-build {
-# 	[Environment]::OSVersion
-# }
+# https://stackoverflow.com/a/7330368
+function get-windows-build {
+  # [System.Environment]::OSVersion.Version
+  [Environment]::OSVersion
+}
 
 # function get-serial-number {
 #   Get-CimInstance -ClassName Win32_Bios | select-object serialnumber
@@ -200,10 +201,10 @@ function RefreshEnvironment {
 
 # Set a permanent Environment variable, and reload it into $env
 function SetEnvironment([String] $variable, [String] $value) {
-    Set-ItemProperty "HKCU:\Environment" $variable $value
-    # Manually setting Registry entry. SetEnvironmentVariable is too slow because of blocking HWND_BROADCAST
-    #[System.Environment]::SetEnvironmentVariable("$variable", "$value","User")
-    Invoke-Expression "`$env:${variable} = `"$value`""
+  Set-ItemProperty "HKCU:\Environment" $variable $value
+  # Manually setting Registry entry. SetEnvironmentVariable is too slow because of blocking HWND_BROADCAST
+  #[System.Environment]::SetEnvironmentVariable("$variable", "$value","User")
+  Invoke-Expression "`$env:${variable} = `"$value`""
 }
 
 # Get Environment Path
@@ -227,9 +228,11 @@ function getGitMultiStatus {
   # Invoke-Expression
   bash C:\tools\multi-git-status\mgitstatus
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name mgs -Value getGitMultiStatus
 
 # Use GitHub's hub Client in favor of git
+# TODO: Move to aliases.ps1
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
 
 # ! TODO: Refactor the following functions to be more concise
@@ -245,6 +248,7 @@ function getGitStatus {
     Write-Host "`n Git installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name gs -Value getGitStatus
 
 
@@ -268,6 +272,7 @@ function getG3lStatus {
     Write-Host "`n Git installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name gss -Value getG3lStatus
 
 
@@ -292,6 +297,7 @@ function getNpmLocals {
     Write-Host "`n node_modules folder does not exist in current directory!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name npl -Value getNpmLocals
 
 # Print list of global NPM dependencies
@@ -305,6 +311,7 @@ function getNpmGlobals {
     Write-Host "`n NPM installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name nplg -Value getNpmGlobals
 
 # ------------------------------------------------------------------------------------------------------- #
@@ -323,6 +330,7 @@ function getChocoInstalls {
     Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name cll -Value getChocoInstalls
 
 # Print list of outdated chocolatey installations
@@ -336,6 +344,7 @@ function getChocoOutdated {
     Write-Host "`n Chocolatey installation could not be found!" -ForegroundColor Red
   }
 }
+# TODO: Move to aliases.ps1
 Set-Alias -Name clo -Value getChocoOutdated
 
 # Chocolatey Profile
