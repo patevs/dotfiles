@@ -11,6 +11,16 @@ Write-Output "functions.ps1"
 function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Definition }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
 
+function grep($regex, $dir) {
+  if ( $dir ) {
+    get-childitem $dir | select-string $regex
+    return
+  }
+  $input | select-string $regex
+}
+# Favour ripgrep over grep if installed
+# Set-Alias -Name grep -Value rg
+
 # Common Editing needs
 # function Edit-Hosts { Invoke-Expression "sudo $(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $env:windir\system32\drivers\etc\hosts" }
 # function Edit-Profile { Invoke-Expression "$(if($env:EDITOR -ne $null)  {$env:EDITOR } else { 'notepad' }) $profile" }
