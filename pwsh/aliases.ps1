@@ -34,10 +34,10 @@ Set-Alias desk -Value dt
 # System Aliases
 # ==============
 
+# Shutdown System
 Set-Alias -Name shut -Value shutdown
-
+# Restart System
 Set-Alias -Name reboot -Value restart
-
 
 # ------------------------------------------------------------------------------------------------------- #
 
