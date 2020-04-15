@@ -209,10 +209,10 @@ function GetPath {
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Git & GitHub Functions
-# ======================
+# Git Functions
+# =============
 
-# TODO: Move git functions to global .gitconfig
+# TODO: Move these functions to global .gitconfig file
 
 # Print Git Status
 function gs {
