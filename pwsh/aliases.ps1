@@ -75,10 +75,11 @@ if (Get-Command rg) { Set-Alias -Name grep -Value rg }
 
 # Directory Listing: Use `lsd.exe` if available
 if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
-  # Print short list of current directory contents
+  # List directory contents in short format
   ${function:l} = { lsd --color always --icon always @args }
-  # Print list of current directory contents
+  # List directory contents
   ${function:ll} = { lsd -A1 --color always --icon always @args }
+  # List directory contents in long format
 }
 
 # Directory Listing: Use `ls.exe` if available
