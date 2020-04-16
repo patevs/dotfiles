@@ -7,10 +7,8 @@ Write-Output "functions.ps1"
 # Basic Commands
 # ==============
 
-# function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object Definition }
 function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Definition }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
-
 function grep($regex, $dir) {
   if ( $dir ) {
     get-childitem $dir | select-string $regex
@@ -99,60 +97,6 @@ function sudo {
   }
 }
 #>
-
-# ! TODO: Refactor the following functions and move to aliases.ps1
-
-# Print list of current directory contents
-# Set-Alias l Get-ChildItem -option AllScope
-# Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
-
-# Print short list of current directory contents
-function l {
-  # Print-Green-Underline "Directory Contents:"
-  Write-Output "`nDirectory Contents:`n"
-    # Favour lsd over default dir command
-  if (Get-Command lsd) {
-    lsd --color always --icon always
-  } else {
-    Get-ChildItem
-  }
-}
-
-# Print list of current directory contents
-function ll {
-  # Print-Green-Underline "Directory Contents:"
-  Write-Output "`nDirectory Contents:`n"
-  # Favour lsd over default dir command
-  if (Get-Command lsd) {
-    lsd -A1 --color always --icon always
-  } else {
-    Get-ChildItem | Format-Wide
-  }
-}
-
-# Print long list of current directory contents
-function lll {
-  # Print-Green-Underline "Directory Contents:"
-  Write-Output "`nDirectory Contents:`n"
-  # Favour lsd over default dir command
-  if (Get-Command lsd) {
-    lsd -al --color always --icon always
-  } else {
-    Get-ChildItem | Format-List
-  }
-}
-
-# Print directory tree
-function lst {
-  # Print-Green-Underline "Directory Tree:"
-  Write-Output "`nDirectory Tree:`n"
-  # Favour lsd over default tree command
-  if (Get-Command lsd) {
-    lsd --tree --color always --icon always
-  } else {
-    tree
-  }
-}
 
 # ------------------------------------------------------------------------------------------------------- #
 
