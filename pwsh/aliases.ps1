@@ -22,8 +22,8 @@ ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
 ${function:dt} = { Set-Location ~\Desktop }
 
-Set-Alias desktop -Value dt
-Set-Alias desk -Value dt
+Set-Alias -Name desk -Value dt
+Set-Alias -Name desktop -Value dt
 
 # Oddly, Powershell doesn't have an inbuilt variable for the documents directory. So let's make one:
 # From: https://stackoverflow.com/a/12949659
