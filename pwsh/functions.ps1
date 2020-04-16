@@ -130,9 +130,6 @@ function ll {
   }
 }
 
-# TODO: Move to aliases.ps1
-# Set-Alias -Name ls -Value dirListAll -option AllScope -Force
-
 # Print long list of current directory contents
 function lll {
   # Print-Green-Underline "Directory Contents:"
