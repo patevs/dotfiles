@@ -41,7 +41,7 @@ Set-Alias -Name reload -Value ReloadPowershell
 ${function:version} = { $PSVersionTable.PSVersion }
 
 # Get installed PowerShell modules
-${function:modules} = { Get-InstalledModule }
+${function:modules} = { Get-Module -ListAvailable }
 
 # ------------------------------------------------------------------------------------------------------- #
 
