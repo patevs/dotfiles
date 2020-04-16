@@ -108,7 +108,7 @@ Set-Alias -Name ls -Value ll -option AllScope -Force
 if (Get-Command rg -ErrorAction SilentlyContinue) { Set-Alias -Name grep -Value rg }
 
 # Measure the time taken for a command to execute
-Set-Alias time Measure-Command
+Set-Alias -Name time -Value Measure-Command
 
 # --------------------------------------------------------------------------------------------- #
 
@@ -119,7 +119,7 @@ Set-Alias time Measure-Command
 ${function:mgs} = { bash C:\tools\multi-git-status\mgitstatus }
 
 # Favour GitHub's hub client over vanilla git
-if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
+if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias -Name git -Value hub }
 
 # --------------------------------------------------------------------------------------------- #
 
