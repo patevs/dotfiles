@@ -112,16 +112,6 @@ function ReloadPowershell {
 }
 # function ReloadPowershell { & $profile }
 
-# Get Current PowerShell Version
-function PowershellVersion {
-  $PSVersionTable.PSVersion
-}
-
-# Get Installed PowerShell Modules
-function PowershellModules {
-  Get-InstalledModule
-}
-
 # Set the current console title
 # https://blogs.technet.microsoft.com/heyscriptingguy/2012/12/30/powertip-change-the-powershell-console-title
 function set-title([string]$newtitle) {
