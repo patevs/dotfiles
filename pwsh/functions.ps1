@@ -107,6 +107,17 @@ function sudo {
 # Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 
 # Print short list of current directory contents
+function l {
+  # Print-Green-Underline "Directory Contents:"
+  Write-Output "`nDirectory Contents:`n"
+    # Favour lsd over default dir command
+  if (Get-Command lsd) {
+    lsd --color always --icon always
+  } else {
+    Get-ChildItem
+  }
+}
+<#
 function dirList {
   # Print-Green-Underline "Directory Contents:"
   Write-Output "`nDirectory Contents:`n"
@@ -119,6 +130,7 @@ function dirList {
   }
 }
 Set-Alias -Name l -Value dirList
+#>
 
 # Print list of current directory contents
 function dirListAll {
