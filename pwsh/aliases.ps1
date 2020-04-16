@@ -85,6 +85,7 @@ if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
   ${function:lst} = { lsd --tree --color always --icon always @args }
 } else {
   ${function:l} = { Get-ChildItem }
+  ${function:ll} = { Get-ChildItem | Format-Wide }
 }
 
 # Directory Listing: Use `ls.exe` if available
