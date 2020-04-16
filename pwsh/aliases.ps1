@@ -77,6 +77,8 @@ if (Get-Command rg) { Set-Alias -Name grep -Value rg }
 if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
   # Print short list of current directory contents
   ${function:l} = { lsd --color always --icon always @args }
+  # Print list of current directory contents
+  ${function:ll} = { lsd -A1 --color always --icon always @args }
 }
 
 # Directory Listing: Use `ls.exe` if available
