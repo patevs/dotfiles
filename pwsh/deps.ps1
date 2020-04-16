@@ -29,6 +29,7 @@ Get-PackageProvider NuGet -Force | Out-Null
 ### Install PowerShell Modules
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 # PackageManagement
+Install-Module -Name PackageManagement
 # PowerShellGet
 # Configuration
 Install-Module npm-completion -Scope CurrentUser -Force
