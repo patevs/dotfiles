@@ -37,6 +37,9 @@ Set-Alias -Name desktop -Value dt
 # Reload the shell
 Set-Alias -Name reload -Value ReloadPowershell
 
+# Get current PowerShell version
+${function:version} = { $PSVersionTable.PSVersion }
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # System Utility Aliases
