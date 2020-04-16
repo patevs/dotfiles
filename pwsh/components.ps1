@@ -4,6 +4,8 @@
 
 # These components will be loaded for all PowerShell instances
 
+# TODO: Add rustup component
+
 Write-Output "components.ps1"
 
 Push-Location (Join-Path (Split-Path -parent $profile) "components")
