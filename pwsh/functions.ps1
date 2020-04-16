@@ -119,7 +119,7 @@ function l {
 }
 
 # Print list of current directory contents
-function ls {
+function ll {
   # Print-Green-Underline "Directory Contents:"
   Write-Output "`nDirectory Contents:`n"
   # Favour lsd over default dir command
