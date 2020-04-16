@@ -129,8 +129,10 @@ function ls {
     Get-ChildItem | Format-Wide
   }
 }
+
 # TODO: Move to aliases.ps1
-Set-Alias -Name ll -Value dirListAll
+# Set-Alias -Name ls -Value dirListAll -option AllScope -Force
+# Set-Alias -Name ll -Value dirListAll
 
 # Print long list of current directory contents
 function dirListLong {
