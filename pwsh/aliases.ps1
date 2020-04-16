@@ -73,14 +73,6 @@ if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
 
 # --------------------------------------------------------------------------------------------- #
 
-# Correct PowerShell Aliases if tools are available (aliases win if set)
-# WGet: Use `wget.exe` if available
-<#
-if (Get-Command wget.exe -ErrorAction SilentlyContinue | Test-Path) {
-  rm alias:wget -ErrorAction SilentlyContinue
-}
-#>
-
 # Directory Listing: Use `ls.exe` if available
 <#
 if (Get-Command ls.exe -ErrorAction SilentlyContinue | Test-Path) {
@@ -98,20 +90,6 @@ if (Get-Command ls.exe -ErrorAction SilentlyContinue | Test-Path) {
     ${function:la} = { ls -Force @args }
     # List only directories
     ${function:lsd} = { Get-ChildItem -Directory -Force @args }
-}
-#>
-
-# curl: Use `curl.exe` if available
-<#
-if (Get-Command curl.exe -ErrorAction SilentlyContinue | Test-Path) {
-    rm alias:curl -ErrorAction SilentlyContinue
-    # Set `ls` to call `ls.exe` and always use --color
-    ${function:curl} = { curl.exe @args }
-    # Gzip-enabled `curl`
-    ${function:gurl} = { curl --compressed @args }
-} else {
-    # Gzip-enabled `curl`
-    ${function:gurl} = { curl -TransferEncoding GZip }
 }
 #>
 
