@@ -113,7 +113,7 @@ function ReloadPowershell {
 # function ReloadPowershell { & $profile }
 
 # Get Current PowerShell Version
-function version {
+function PowershellVersion {
   $PSVersionTable.PSVersion
 }
 
