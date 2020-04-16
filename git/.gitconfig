@@ -47,7 +47,7 @@
 	required = true
 [alias]
 	a = add --all
-	ai = add -i
+	# ai = add -i
 	#############
   b = branch
   # ba = branch -a
@@ -88,8 +88,8 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
   #############
-	ls = ls-files
-	lsf = !git ls-files | grep -i
+	# ls = ls-files
+	# lsf = !git ls-files | grep -i
 	#############
 	m = merge
 	# ma = merge --abort
@@ -171,6 +171,6 @@
 	#############
   # unstage = reset HEAD
   # Show files ignored by git:
-  ign = ls-files -o -i --exclude-standard
+  # ign = ls-files -o -i --exclude-standard
 
 # EOF #
