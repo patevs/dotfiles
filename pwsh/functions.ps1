@@ -132,7 +132,6 @@ function ll {
 
 # TODO: Move to aliases.ps1
 # Set-Alias -Name ls -Value dirListAll -option AllScope -Force
-# Set-Alias -Name ll -Value dirListAll
 
 # Print long list of current directory contents
 function lll {
