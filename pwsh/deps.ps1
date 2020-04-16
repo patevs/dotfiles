@@ -13,12 +13,16 @@ if (!(Test-Elevated)) {
 }
 
 
-### Update Help for Modules
-# Write-Host "Updating Help..." -ForegroundColor "Yellow"
-# Update-Help -Force
+# Update Help for Modules
+# =======================
+
+Write-Host "Updating Help..." -ForegroundColor "Yellow"
+Update-Help -Force
 
 
-### Package Providers
+# Package Providers
+# =================
+
 Write-Host "Installing Package Providers..." -ForegroundColor "Yellow"
 Get-PackageProvider NuGet -Force | Out-Null
 # Chocolatey Provider is not ready yet. Use normal Chocolatey
@@ -26,7 +30,9 @@ Get-PackageProvider NuGet -Force | Out-Null
 #Set-PackageSource -Name chocolatey -Trusted
 
 
-### Install PowerShell Modules
+# Install PowerShell Modules
+# ==========================
+
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 Install-Module -Name PackageManagement
 Install-Module -Name PowerShellGet
