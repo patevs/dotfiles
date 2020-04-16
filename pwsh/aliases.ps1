@@ -40,6 +40,9 @@ Set-Alias -Name reload -Value ReloadPowershell
 # Get current PowerShell version
 ${function:version} = { $PSVersionTable.PSVersion }
 
+# Get installed PowerShell modules
+${function:modules} = { Get-InstalledModule }
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # System Utility Aliases
