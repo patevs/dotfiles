@@ -117,20 +117,6 @@ function l {
     Get-ChildItem
   }
 }
-<#
-function dirList {
-  # Print-Green-Underline "Directory Contents:"
-  Write-Output "`nDirectory Contents:`n"
-  # Favour lsd over default dir command
-  if (Get-Command lsd) {
-    lsd --color always --icon always
-  }
-  else {
-    Get-ChildItem
-  }
-}
-Set-Alias -Name l -Value dirList
-#>
 
 # Print list of current directory contents
 function dirListAll {
