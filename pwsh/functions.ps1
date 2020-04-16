@@ -7,10 +7,8 @@ Write-Output "functions.ps1"
 # Basic Commands
 # ==============
 
-# function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object Definition }
 function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Definition }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
-
 function grep($regex, $dir) {
   if ( $dir ) {
     get-childitem $dir | select-string $regex
@@ -100,69 +98,6 @@ function sudo {
 }
 #>
 
-# ! TODO: Refactor the following functions
-
-# Print list of current directory contents
-# Set-Alias l Get-ChildItem -option AllScope
-# Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
-
-# Print short list of current directory contents
-function dirList {
-  # Print-Green-Underline "Directory Contents:"
-  Write-Output "`nDirectory Contents:`n"
-  # Favour lsd over default dir command
-  if (Get-Command lsd) {
-    lsd --color always --icon always
-  }
-  else {
-    Get-ChildItem
-  }
-}
-Set-Alias -Name l -Value dirList
-
-# Print list of current directory contents
-function dirListAll {
-  # Print-Green-Underline "Directory Contents:"
-  Write-Output "`nDirectory Contents:`n"
-  # Favour lsd over default dir command
-  if (Get-Command lsd) {
-    lsd -A1 --color always --icon always
-  }
-  else {
-    Get-ChildItem | Format-Wide
-  }
-}
-Set-Alias -Name ls -Value dirListAll -option AllScope -Force
-Set-Alias -Name ll -Value dirListAll
-
-# Print long list of current directory contents
-function dirListLong {
-  # Print-Green-Underline "Directory Contents:"
-  Write-Output "`nDirectory Contents:`n"
-  # Favour lsd over default dir command
-  if (Get-Command lsd) {
-    lsd -al --color always --icon always
-  }
-  else {
-    Get-ChildItem | Format-List
-  }
-}
-Set-Alias -Name lll -Value dirListLong
-
-# Print directory tree
-function dirTree {
-  # Print-Green-Underline "Directory Tree:"
-  Write-Output "`nDirectory Tree:`n"
-  # Favour lsd over default tree command
-  if (Get-Command lsd) {
-    lsd --tree --color always --icon always
-  }
-  else {
-    tree
-  }
-}
-Set-Alias -Name lst -Value dirTree
-
 # ------------------------------------------------------------------------------------------------------- #
 
 # PowerShell Utility Functions
@@ -176,16 +111,6 @@ function ReloadPowershell {
   exit
 }
 # function ReloadPowershell { & $profile }
-
-# Get Current PowerShell Version
-function version {
-  $PSVersionTable.PSVersion
-}
-
-# Get Installed PowerShell Modules
-function modules {
-  Get-InstalledModule
-}
 
 # Set the current console title
 # https://blogs.technet.microsoft.com/heyscriptingguy/2012/12/30/powertip-change-the-powershell-console-title
@@ -215,22 +140,8 @@ function SystemUpdate() {
   npm update -g
 }
 
-# Shutdown System
-function shutdown {
-  # Print-Green-Underline "Shutting Down System..."
-  Write-Output "`nShutting Down System...`n"
-  shutdown /p
-}
-
-# Restart System
-function restart {
-  # Print-Green-Underline "Restarting System..."
-  Write-Output "`nRestarting System...`n"
-  shutdown /r /t 0
-}
-
 # https://stackoverflow.com/a/7330368
-function get-windows-build {
+function WindowsBuild {
   # [System.Environment]::OSVersion.Version
   [Environment]::OSVersion
 }
@@ -263,11 +174,9 @@ function EmptyRecycleBin {
 }
 
 # Cleanup all disks (Based on Registry Settings in `windows.ps1`)
-<#
 function CleanDisks {
   Start-Process "$(Join-Path $env:WinDir 'system32\cleanmgr.exe')" -ArgumentList "/sagerun:6174" -Verb "runAs"
 }
-#>
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -375,5 +284,7 @@ function clo {
   Write-Output "`n Outdated Chocolatey Installations:`n"
   choco upgrade all --noop
 }
+
+# ------------------------------------------------------------------------------------------------------- #
 
 # EOF #

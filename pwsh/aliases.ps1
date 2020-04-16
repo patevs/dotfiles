@@ -22,8 +22,8 @@ ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
 ${function:dt} = { Set-Location ~\Desktop }
 
-Set-Alias desktop -Value dt
-Set-Alias desk -Value dt
+Set-Alias -Name desk -Value dt
+Set-Alias -Name desktop -Value dt
 
 # Oddly, Powershell doesn't have an inbuilt variable for the documents directory. So let's make one:
 # From: https://stackoverflow.com/a/12949659
@@ -31,29 +31,84 @@ Set-Alias desk -Value dt
 
 # ------------------------------------------------------------------------------------------------------- #
 
+# PowerShell Utility Aliases
+# ==========================
+
+# Reload the shell
+Set-Alias -Name reload -Value ReloadPowershell
+
+# Get current PowerShell version
+${function:version} = { $PSVersionTable.PSVersion }
+
+# Get installed PowerShell modules
+${function:modules} = { Get-InstalledModule }
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # System Utility Aliases
 # ======================
-
-# Shutdown System
-Set-Alias -Name shut -Value shutdown
-
-# Restart System
-Set-Alias -Name reboot -Value restart
 
 # System information tools
 ${function:neofetch} = { bash C:\tools\neofetch\neofetch }
 ${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
 
-# Favour ripgrep over grep if installed
-if (Get-Command rg) { Set-Alias -Name grep -Value rg }
+# Shutdown System
+${function:shutdown} = { shutdown /p }
+Set-Alias -Name shut -Value shutdown
+
+# Restart System
+${function:restart} = { shutdown /r /t 0 }
+Set-Alias -Name reboot -Value restart
+
+# Create a new directory and enter it
+Set-Alias -Name mkd -Value CreateAndSetDirectory
+
+# Send an item to the Recycle Bin
+Set-Alias -Name trash -Value Remove-ItemSafely
+
+# Empty the Recycle Bin on all drives
+Set-Alias -Name emptytrash -Value EmptyRecycleBin
+
+# Cleanup old files all drives
+Set-Alias -Name cleandisks -Value CleanDisks
+
+# Reload the shell
+Set-Alias -Name reload -Value ReloadPowershell
+
+# Update installed Ruby Gems, NPM, and their installed packages.
+Set-Alias -Name update -Value SystemUpdate
+
+# Set neovim as default vim
+Set-Alias -Name vim -Value nvim
 
 # ------------------------------------------------------------------------------------------------------- #
 
 # Unix-like Aliases
 # =================
 
-# Missing Bash aliases
-Set-Alias time Measure-Command
+# Directory Listing: Use `lsd.exe` if available
+if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
+  # List directory contents in short format
+  ${function:l} = { lsd --color always --icon always @args }
+  # List directory contents
+  ${function:ll} = { lsd -A1 --color always --icon always @args }
+  # List directory contents in long format
+  ${function:lll} = { lsd -al --color always --icon always @args }
+  # List directory tree
+  ${function:lst} = { lsd --tree --color always --icon always @args }
+} else {
+  ${function:l} = { Get-ChildItem }
+  ${function:ll} = { Get-ChildItem | Format-Wide }
+  ${function:lll} = { Get-ChildItem | Format-List }
+  ${function:lst} = { tree }
+}
+Set-Alias -Name ls -Value ll -option AllScope -Force
+
+# Favour ripgrep over grep if installed
+if (Get-Command rg -ErrorAction SilentlyContinue) { Set-Alias -Name grep -Value rg }
+
+# Measure the time taken for a command to execute
+Set-Alias -Name time -Value Measure-Command
 
 # --------------------------------------------------------------------------------------------- #
 
@@ -61,78 +116,11 @@ Set-Alias time Measure-Command
 # ====================
 
 # Git Multi Status
-${function:mgs} = {
-  bash C:\tools\multi-git-status\mgitstatus
-}
+${function:mgs} = { bash C:\tools\multi-git-status\mgitstatus }
 
 # Favour GitHub's hub client over vanilla git
-if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
+if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias -Name git -Value hub }
 
 # --------------------------------------------------------------------------------------------- #
-
-# Correct PowerShell Aliases if tools are available (aliases win if set)
-# WGet: Use `wget.exe` if available
-<#
-if (Get-Command wget.exe -ErrorAction SilentlyContinue | Test-Path) {
-  rm alias:wget -ErrorAction SilentlyContinue
-}
-#>
-
-# Directory Listing: Use `ls.exe` if available
-<#
-if (Get-Command ls.exe -ErrorAction SilentlyContinue | Test-Path) {
-    rm alias:ls -ErrorAction SilentlyContinue
-    # Set `ls` to call `ls.exe` and always use --color
-    ${function:ls} = { ls.exe --color @args }
-    # List all files in long format
-    ${function:l} = { ls -lF @args }
-    # List all files in long format, including hidden files
-    ${function:la} = { ls -laF @args }
-    # List only directories
-    ${function:lsd} = { Get-ChildItem -Directory -Force @args }
-} else {
-    # List all files, including hidden files
-    ${function:la} = { ls -Force @args }
-    # List only directories
-    ${function:lsd} = { Get-ChildItem -Directory -Force @args }
-}
-#>
-
-# curl: Use `curl.exe` if available
-<#
-if (Get-Command curl.exe -ErrorAction SilentlyContinue | Test-Path) {
-    rm alias:curl -ErrorAction SilentlyContinue
-    # Set `ls` to call `ls.exe` and always use --color
-    ${function:curl} = { curl.exe @args }
-    # Gzip-enabled `curl`
-    ${function:gurl} = { curl --compressed @args }
-} else {
-    # Gzip-enabled `curl`
-    ${function:gurl} = { curl -TransferEncoding GZip }
-}
-#>
-
-# --------------------------------------------------------------------------------------------- #
-
-# Create a new directory and enter it
-Set-Alias mkd CreateAndSetDirectory
-
-# Empty the Recycle Bin on all drives
-Set-Alias emptytrash EmptyRecycleBin
-
-# Send an item to the Recycle Bin
-# Set-Alias trash Remove-ItemSafely
-
-# Cleanup old files all drives
-# Set-Alias cleandisks CleanDisks
-
-# Reload the shell
-Set-Alias reload ReloadPowershell
-
-# Update installed Ruby Gems, NPM, and their installed packages.
-# Set-Alias update System-Update
-
-# Set neovim as default vim
-Set-Alias vim nvim
 
 # EOF #
