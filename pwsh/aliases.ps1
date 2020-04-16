@@ -89,7 +89,7 @@ if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
 Set-Alias -Name ls -Value ll -option AllScope -Force
 
 # Favour ripgrep over grep if installed
-if (Get-Command rg) { Set-Alias -Name grep -Value rg }
+if (Get-Command rg -ErrorAction SilentlyContinue) { Set-Alias -Name grep -Value rg }
 
 # Measure the time taken for a command to execute
 Set-Alias time Measure-Command
