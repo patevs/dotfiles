@@ -52,27 +52,6 @@ if (Get-Command rg) { Set-Alias -Name grep -Value rg }
 # Unix-like Aliases
 # =================
 
-# Print list of current directory contents
-Set-Alias -Name ls -Value ll -option AllScope -Force
-
-# Missing Bash aliases
-Set-Alias time Measure-Command
-
-# --------------------------------------------------------------------------------------------- #
-
-# Git & GitHub Aliases
-# ====================
-
-# Git Multi Status
-${function:mgs} = {
-  bash C:\tools\multi-git-status\mgitstatus
-}
-
-# Favour GitHub's hub client over vanilla git
-if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
-
-# --------------------------------------------------------------------------------------------- #
-
 # Directory Listing: Use `ls.exe` if available
 <#
 if (Get-Command ls.exe -ErrorAction SilentlyContinue | Test-Path) {
@@ -92,6 +71,25 @@ if (Get-Command ls.exe -ErrorAction SilentlyContinue | Test-Path) {
     ${function:lsd} = { Get-ChildItem -Directory -Force @args }
 }
 #>
+
+# Print list of current directory contents
+Set-Alias -Name ls -Value ll -option AllScope -Force
+
+# Missing Bash aliases
+Set-Alias time Measure-Command
+
+# --------------------------------------------------------------------------------------------- #
+
+# Git & GitHub Aliases
+# ====================
+
+# Git Multi Status
+${function:mgs} = {
+  bash C:\tools\multi-git-status\mgitstatus
+}
+
+# Favour GitHub's hub client over vanilla git
+if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
 
 # --------------------------------------------------------------------------------------------- #
 
