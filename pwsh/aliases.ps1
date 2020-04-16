@@ -34,6 +34,27 @@ Set-Alias desk -Value dt
 # System Utility Aliases
 # ======================
 
+# Create a new directory and enter it
+Set-Alias mkd CreateAndSetDirectory
+
+# Empty the Recycle Bin on all drives
+Set-Alias emptytrash EmptyRecycleBin
+
+# Send an item to the Recycle Bin
+# Set-Alias trash Remove-ItemSafely
+
+# Cleanup old files all drives
+# Set-Alias cleandisks CleanDisks
+
+# Reload the shell
+Set-Alias reload ReloadPowershell
+
+# Update installed Ruby Gems, NPM, and their installed packages.
+# Set-Alias update System-Update
+
+# Set neovim as default vim
+Set-Alias vim nvim
+
 # Shutdown System
 Set-Alias -Name shut -Value shutdown
 
@@ -92,26 +113,5 @@ ${function:mgs} = {
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
 
 # --------------------------------------------------------------------------------------------- #
-
-# Create a new directory and enter it
-Set-Alias mkd CreateAndSetDirectory
-
-# Empty the Recycle Bin on all drives
-Set-Alias emptytrash EmptyRecycleBin
-
-# Send an item to the Recycle Bin
-# Set-Alias trash Remove-ItemSafely
-
-# Cleanup old files all drives
-# Set-Alias cleandisks CleanDisks
-
-# Reload the shell
-Set-Alias reload ReloadPowershell
-
-# Update installed Ruby Gems, NPM, and their installed packages.
-# Set-Alias update System-Update
-
-# Set neovim as default vim
-Set-Alias vim nvim
 
 # EOF #
