@@ -118,7 +118,7 @@ function PowershellVersion {
 }
 
 # Get Installed PowerShell Modules
-function modules {
+function PowershellModules {
   Get-InstalledModule
 }
 
