@@ -28,10 +28,10 @@ Get-PackageProvider NuGet -Force | Out-Null
 
 ### Install PowerShell Modules
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
-# PackageManagement
 Install-Module -Name PackageManagement
-# PowerShellGet
-# Configuration
+Install-Module -Name PowerShellGet
+# Install-Module -Name Configuration
+
 Install-Module npm-completion -Scope CurrentUser -Force
 Install-Module posh-cargo -Scope CurrentUser -Force -AllowClobber
 # posh-cli
