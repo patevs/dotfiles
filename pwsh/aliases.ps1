@@ -73,6 +73,12 @@ if (Get-Command rg) { Set-Alias -Name grep -Value rg }
 # Unix-like Aliases
 # =================
 
+# Directory Listing: Use `lsd.exe` if available
+if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
+  # Print short list of current directory contents
+  ${function:l} = { lsd --color always --icon always @args }
+}
+
 # Directory Listing: Use `ls.exe` if available
 <#
 if (Get-Command ls.exe -ErrorAction SilentlyContinue | Test-Path) {
