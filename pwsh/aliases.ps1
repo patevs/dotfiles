@@ -51,7 +51,7 @@ Set-Alias mkd CreateAndSetDirectory
 Set-Alias emptytrash EmptyRecycleBin
 
 # Send an item to the Recycle Bin
-# Set-Alias trash Remove-ItemSafely
+Set-Alias trash Remove-ItemSafely
 
 # Cleanup old files all drives
 # Set-Alias cleandisks CleanDisks
