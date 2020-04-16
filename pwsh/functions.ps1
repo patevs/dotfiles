@@ -100,7 +100,7 @@ function sudo {
 }
 #>
 
-# ! TODO: Refactor the following functions
+# ! TODO: Refactor the following functions and move to aliases.ps1
 
 # Print list of current directory contents
 # Set-Alias l Get-ChildItem -option AllScope
