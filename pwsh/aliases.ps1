@@ -87,6 +87,7 @@ if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
   ${function:l} = { Get-ChildItem }
   ${function:ll} = { Get-ChildItem | Format-Wide }
   ${function:lll} = { Get-ChildItem | Format-List }
+  ${function:lst} = { tree }
 }
 
 # Directory Listing: Use `ls.exe` if available
