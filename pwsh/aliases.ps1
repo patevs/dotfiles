@@ -52,6 +52,9 @@ if (Get-Command rg) { Set-Alias -Name grep -Value rg }
 # Unix-like Aliases
 # =================
 
+# Print list of current directory contents
+Set-Alias -Name ls -Value ll -option AllScope -Force
+
 # Missing Bash aliases
 Set-Alias time Measure-Command
 
