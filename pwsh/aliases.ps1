@@ -61,25 +61,25 @@ ${function:restart} = { shutdown /r /t 0 }
 Set-Alias -Name reboot -Value restart
 
 # Create a new directory and enter it
-Set-Alias mkd CreateAndSetDirectory
-
-# Empty the Recycle Bin on all drives
-Set-Alias emptytrash EmptyRecycleBin
+Set-Alias -Name mkd -Value CreateAndSetDirectory
 
 # Send an item to the Recycle Bin
-Set-Alias trash Remove-ItemSafely
+Set-Alias -Name trash -Value Remove-ItemSafely
+
+# Empty the Recycle Bin on all drives
+Set-Alias -Name emptytrash -Value EmptyRecycleBin
 
 # Cleanup old files all drives
-Set-Alias cleandisks CleanDisks
+Set-Alias -Name cleandisks -Value CleanDisks
 
 # Reload the shell
-Set-Alias reload ReloadPowershell
+Set-Alias -Name reload -Value ReloadPowershell
 
 # Update installed Ruby Gems, NPM, and their installed packages.
-Set-Alias update SystemUpdate
+Set-Alias -Name update -Value SystemUpdate
 
 # Set neovim as default vim
-Set-Alias vim nvim
+Set-Alias -Name vim -Value nvim
 
 # ------------------------------------------------------------------------------------------------------- #
 
