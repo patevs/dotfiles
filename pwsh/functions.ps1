@@ -2,7 +2,7 @@
 # functions.ps1 #
 # ------------- #
 
-Write-Output "functions.ps1"
+# Write-Output "functions.ps1"
 
 # Basic Commands
 # ==============

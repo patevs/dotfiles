@@ -13,12 +13,16 @@ if (!(Test-Elevated)) {
 }
 
 
-### Update Help for Modules
-Write-Host "Updating Help..." -ForegroundColor "Yellow"
-Update-Help -Force
+# Update Help for Modules
+# =======================
+
+# Write-Host "Updating Help..." -ForegroundColor "Yellow"
+# Update-Help -Force
 
 
-### Package Providers
+# Package Providers
+# =================
+
 Write-Host "Installing Package Providers..." -ForegroundColor "Yellow"
 Get-PackageProvider NuGet -Force | Out-Null
 # Chocolatey Provider is not ready yet. Use normal Chocolatey
@@ -26,24 +30,29 @@ Get-PackageProvider NuGet -Force | Out-Null
 #Set-PackageSource -Name chocolatey -Trusted
 
 
-### Install PowerShell Modules
+# Install PowerShell Modules
+# ==========================
+
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
-# PackageManagement
-# PowerShellGet
-# Configuration
-Install-Module npm-completion -Scope CurrentUser -Force
-Install-Module posh-cargo -Scope CurrentUser -Force -AllowClobber
-# posh-cli
-Install-Module posh-dotnet -Scope CurrentUser -Force
-Install-Module posh-git -Scope CurrentUser -Force -AllowClobber
-# Install-Module posh-npm -Scope CurrentUser -Force
+Install-Module -Name PackageManagement
+Install-Module -Name PowerShellGet
+# Install-Module -Name Configuration
+
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
-Install-Module PSWindowsUpdate -Scope CurrentUser -Force
-# PSWriteColor
-# scoop-completion
+Install-Module -Name PSWindowsUpdate -Scope CurrentUser -Force
+# Install-Module -Name PSWriteColor -Scope CurrentUser -Force
+
+Install-Module -Name npm-completion -Scope CurrentUser -Force
+Install-Module -Name posh-cargo -Scope CurrentUser -Force -AllowClobber
+# Install-Module -Name posh-cli -Scope CurrentUser -Force
+Install-Module -Name posh-dotnet -Scope CurrentUser -Force
+Install-Module -Name posh-git -Scope CurrentUser -Force -AllowClobber
+# Install-Module -Name posh-npm -Scope CurrentUser -Force
+Install-Module -Name scoop-completion -Scope CurrentUser -Force -AllowClobber
+Install-Module -Name yarn-completion -Scope CurrentUser -Force
+
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
-Install-Module yarn-completion -Scope CurrentUser -Force
 
 
 ### Chocolatey

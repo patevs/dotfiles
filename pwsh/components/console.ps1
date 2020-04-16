@@ -2,7 +2,7 @@
 # components/console.ps1 #
 # ---------------------- #
 
-Write-Output "components/console.ps1"
+# Write-Output "components/console.ps1"
 
 # Utilities to manage PowerShell Consoles
 # Based on code from ConCFG: https://github.com/lukesampson/concfg/
@@ -21,7 +21,7 @@ function Test-Elevated {
 
 # Produce UTF-8 by default
 # https://news.ycombinator.com/item?id=12991690
-$PSDefaultParameterValues["Out-File:Encoding"] = "utf8"
+# $PSDefaultParameterValues["Out-File:Encoding"] = "utf8"
 
 # https://technet.microsoft.com/en-us/magazine/hh241048.aspx
 $MaximumHistoryCount = 10000;
