@@ -16,8 +16,8 @@ if (!(Test-Elevated)) {
 # Update Help for Modules
 # =======================
 
-Write-Host "Updating Help..." -ForegroundColor "Yellow"
-Update-Help -Force
+# Write-Host "Updating Help..." -ForegroundColor "Yellow"
+# Update-Help -Force
 
 
 # Package Providers
