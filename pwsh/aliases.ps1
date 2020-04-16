@@ -81,6 +81,8 @@ if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
   ${function:ll} = { lsd -A1 --color always --icon always @args }
   # List directory contents in long format
   ${function:lll} = { lsd -al --color always --icon always @args }
+  # List directory tree
+  ${function:lst} = { lsd --tree --color always --icon always @args }
 }
 
 # Directory Listing: Use `ls.exe` if available
