@@ -32,19 +32,21 @@ Install-Module -Name PackageManagement
 Install-Module -Name PowerShellGet
 # Install-Module -Name Configuration
 
-Install-Module npm-completion -Scope CurrentUser -Force
-Install-Module posh-cargo -Scope CurrentUser -Force -AllowClobber
-# posh-cli
-Install-Module posh-dotnet -Scope CurrentUser -Force
-Install-Module posh-git -Scope CurrentUser -Force -AllowClobber
-# Install-Module posh-npm -Scope CurrentUser -Force
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
 Install-Module -Name PSWindowsUpdate -Scope CurrentUser -Force
 # Install-Module -Name PSWriteColor -Scope CurrentUser -Force
+
+Install-Module -Name npm-completion -Scope CurrentUser -Force
+Install-Module -Name posh-cargo -Scope CurrentUser -Force -AllowClobber
+# Install-Module -Name posh-cli -Scope CurrentUser -Force
+Install-Module -Name posh-dotnet -Scope CurrentUser -Force
+Install-Module -Name posh-git -Scope CurrentUser -Force -AllowClobber
+# Install-Module -Name posh-npm -Scope CurrentUser -Force
 Install-Module -Name scoop-completion -Scope CurrentUser -Force -AllowClobber
+Install-Module -Name yarn-completion -Scope CurrentUser -Force
+
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
-Install-Module -Name yarn-completion -Scope CurrentUser -Force
 
 
 ### Chocolatey
