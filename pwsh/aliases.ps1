@@ -93,7 +93,7 @@ if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
 # List directory contents
 Set-Alias -Name ls -Value ll -option AllScope -Force
 
-# Missing Bash aliases
+# Measure the time taken for a command to execute
 Set-Alias time Measure-Command
 
 # --------------------------------------------------------------------------------------------- #
