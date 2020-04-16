@@ -2,7 +2,7 @@
 # components/choco.ps1 #
 # -------------------- #
 
-Write-Output "components/choco.ps1"
+# Write-Output "components/choco.ps1"
 
 # Chocolatey Profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"

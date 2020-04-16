@@ -2,7 +2,7 @@
 # aliases.ps1 #
 # ----------- #
 
-Write-Output "aliases.ps1"
+# Write-Output "aliases.ps1"
 
 # Navigation Aliases
 # ==================
