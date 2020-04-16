@@ -140,20 +140,6 @@ function SystemUpdate() {
   npm update -g
 }
 
-# Shutdown System
-function shutdown {
-  # Print-Green-Underline "Shutting Down System..."
-  Write-Output "`nShutting Down System...`n"
-  shutdown /p
-}
-
-# Restart System
-function restart {
-  # Print-Green-Underline "Restarting System..."
-  Write-Output "`nRestarting System...`n"
-  shutdown /r /t 0
-}
-
 # https://stackoverflow.com/a/7330368
 function get-windows-build {
   # [System.Environment]::OSVersion.Version
