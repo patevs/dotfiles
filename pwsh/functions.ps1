@@ -135,6 +135,18 @@ function ll {
 # Set-Alias -Name ll -Value dirListAll
 
 # Print long list of current directory contents
+function lll {
+  # Print-Green-Underline "Directory Contents:"
+  Write-Output "`nDirectory Contents:`n"
+  # Favour lsd over default dir command
+  if (Get-Command lsd) {
+    lsd -al --color always --icon always
+  } else {
+    Get-ChildItem | Format-List
+  }
+}
+
+<#
 function dirListLong {
   # Print-Green-Underline "Directory Contents:"
   Write-Output "`nDirectory Contents:`n"
@@ -147,6 +159,7 @@ function dirListLong {
   }
 }
 Set-Alias -Name lll -Value dirListLong
+#>
 
 # Print directory tree
 function dirTree {
