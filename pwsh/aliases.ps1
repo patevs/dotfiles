@@ -53,12 +53,14 @@ ${function:neofetch} = { bash C:\tools\neofetch\neofetch }
 ${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
 
 # Shutdown System
-${function:shutdown} = { shutdown /p }
-Set-Alias -Name shut -Value shutdown
+# TODO: Fix me
+# ${function:shutdown} = { shutdown /p }
+# Set-Alias -Name shut -Value shutdown
 
 # Restart System
-${function:restart} = { shutdown /r /t 0 }
-Set-Alias -Name reboot -Value restart
+# TODO: Fix me
+# ${function:restart} = { shutdown /r /t 0 }
+# Set-Alias -Name reboot -Value restart
 
 # Create a new directory and enter it
 Set-Alias -Name mkd -Value CreateAndSetDirectory
