@@ -54,7 +54,7 @@ Set-Alias emptytrash EmptyRecycleBin
 Set-Alias trash Remove-ItemSafely
 
 # Cleanup old files all drives
-# Set-Alias cleandisks CleanDisks
+Set-Alias cleandisks CleanDisks
 
 # Reload the shell
 Set-Alias reload ReloadPowershell
