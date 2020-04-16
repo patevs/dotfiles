@@ -53,6 +53,7 @@ ${function:neofetch} = { bash C:\tools\neofetch\neofetch }
 ${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
 
 # Shutdown System
+${function:shutdown} = { shutdown /p }
 Set-Alias -Name shut -Value shutdown
 
 # Restart System
