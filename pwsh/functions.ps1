@@ -147,6 +147,18 @@ function lll {
 }
 
 # Print directory tree
+function lst {
+  # Print-Green-Underline "Directory Tree:"
+  Write-Output "`nDirectory Tree:`n"
+  # Favour lsd over default tree command
+  if (Get-Command lsd) {
+    lsd --tree --color always --icon always
+  } else {
+    tree
+  }
+}
+
+<#
 function dirTree {
   # Print-Green-Underline "Directory Tree:"
   Write-Output "`nDirectory Tree:`n"
@@ -159,6 +171,7 @@ function dirTree {
   }
 }
 Set-Alias -Name lst -Value dirTree
+#>
 
 # ------------------------------------------------------------------------------------------------------- #
 
