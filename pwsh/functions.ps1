@@ -129,22 +129,7 @@ function ls {
     Get-ChildItem | Format-Wide
   }
 }
-
-<#
-function dirListAll {
-  # Print-Green-Underline "Directory Contents:"
-  Write-Output "`nDirectory Contents:`n"
-  # Favour lsd over default dir command
-  if (Get-Command lsd) {
-    lsd -A1 --color always --icon always
-  }
-  else {
-    Get-ChildItem | Format-Wide
-  }
-}
-Set-Alias -Name ls -Value dirListAll -option AllScope -Force
-#>
-
+# TODO: Move to aliases.ps1
 Set-Alias -Name ll -Value dirListAll
 
 # Print long list of current directory contents
