@@ -15,7 +15,7 @@
   "$schema": "https://aka.ms/terminal-profiles-schema",
 
   "alwaysShowTabs": true,
-  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
   "initialCols": 120,
   "initialRows": 30,
   "launchMode": "maximized",
@@ -45,14 +45,6 @@
     "list":
     [
       {
-        // Make changes here to the powershell.exe profile
-        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "name": "PowerShell",
-        "commandline": "powershell.exe -NoLogo",
-        "icon": "C:/Users/Patrick/AppData/Local/Microsoft/Windows Terminal/icons/powershell.png",
-        "hidden": false
-      },
-      {
         "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
         "name": "PowerShell Core",
         "source": "Windows.Terminal.PowershellCore",
@@ -60,7 +52,13 @@
         "hidden": false
       },
       {
-        // Make changes here to the cmd.exe profile
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "name": "PowerShell",
+        "commandline": "powershell.exe -NoLogo",
+        "icon": "C:/Users/Patrick/AppData/Local/Microsoft/Windows Terminal/icons/powershell.png",
+        "hidden": false
+      },
+      {
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "name": "cmd",
         "commandline": "cmd.exe",

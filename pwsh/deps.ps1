@@ -18,6 +18,7 @@ if (!(Test-Elevated)) {
 
 # Write-Host "Updating Help..." -ForegroundColor "Yellow"
 # Update-Help -Force
+# Update-Help -UICulture en-US
 
 
 # Package Providers
