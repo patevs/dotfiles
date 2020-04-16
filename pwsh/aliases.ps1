@@ -34,6 +34,16 @@ Set-Alias desk -Value dt
 # System Utility Aliases
 # ======================
 
+# System information tools
+${function:neofetch} = { bash C:\tools\neofetch\neofetch }
+${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
+
+# Shutdown System
+Set-Alias -Name shut -Value shutdown
+
+# Restart System
+Set-Alias -Name reboot -Value restart
+
 # Create a new directory and enter it
 Set-Alias mkd CreateAndSetDirectory
 
@@ -54,19 +64,6 @@ Set-Alias reload ReloadPowershell
 
 # Set neovim as default vim
 Set-Alias vim nvim
-
-# Shutdown System
-Set-Alias -Name shut -Value shutdown
-
-# Restart System
-Set-Alias -Name reboot -Value restart
-
-# System information tools
-${function:neofetch} = { bash C:\tools\neofetch\neofetch }
-${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
-
-# Favour ripgrep over grep if installed
-if (Get-Command rg) { Set-Alias -Name grep -Value rg }
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -89,9 +86,10 @@ if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
   ${function:lll} = { Get-ChildItem | Format-List }
   ${function:lst} = { tree }
 }
-
-# List directory contents
 Set-Alias -Name ls -Value ll -option AllScope -Force
+
+# Favour ripgrep over grep if installed
+if (Get-Command rg) { Set-Alias -Name grep -Value rg }
 
 # Measure the time taken for a command to execute
 Set-Alias time Measure-Command
@@ -102,9 +100,7 @@ Set-Alias time Measure-Command
 # ====================
 
 # Git Multi Status
-${function:mgs} = {
-  bash C:\tools\multi-git-status\mgitstatus
-}
+${function:mgs} = { bash C:\tools\multi-git-status\mgitstatus }
 
 # Favour GitHub's hub client over vanilla git
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias git hub }
