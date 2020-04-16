@@ -141,7 +141,7 @@ function SystemUpdate() {
 }
 
 # https://stackoverflow.com/a/7330368
-function get-windows-build {
+function WindowsBuild {
   # [System.Environment]::OSVersion.Version
   [Environment]::OSVersion
 }
