@@ -57,6 +57,7 @@ ${function:shutdown} = { shutdown /p }
 Set-Alias -Name shut -Value shutdown
 
 # Restart System
+${function:restart} = { shutdown /r /t 0 }
 Set-Alias -Name reboot -Value restart
 
 # Create a new directory and enter it
