@@ -44,7 +44,7 @@ Install-Module -Name PSWindowsUpdate -Scope CurrentUser -Force
 Install-Module -Name scoop-completion -Scope CurrentUser -Force -AllowClobber
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
-Install-Module yarn-completion -Scope CurrentUser -Force
+Install-Module -Name yarn-completion -Scope CurrentUser -Force
 
 
 ### Chocolatey
