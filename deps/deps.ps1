@@ -135,6 +135,21 @@ Invoke-Expression "scoop config alias @{}"
 
 # ------------------------------------------------------------------------------------------------------- #
 
+# Bash Tools
+# ==========
+
+# TODO: Ensure bash is installed
+
+# https://github.com/tj/git-extras
+
+# https://github.com/git-friendly/git-friendly
+
+# https://github.com/fboender/multi-git-status
+
+# neofetch (scoop)
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # DotNet Tools
 # ============
 
