@@ -12,6 +12,7 @@ if (!(Test-Elevated)) {
   exit
 }
 
+# ------------------------------------------------------------------------------------------------------- #
 
 # Update Help for Modules
 # =======================
@@ -20,6 +21,7 @@ if (!(Test-Elevated)) {
 # Update-Help -Force
 # Update-Help -UICulture en-US
 
+# ------------------------------------------------------------------------------------------------------- #
 
 # Package Providers
 # =================
@@ -30,9 +32,10 @@ Get-PackageProvider NuGet -Force | Out-Null
 #Get-PackageProvider Chocolatey -Force
 #Set-PackageSource -Name chocolatey -Trusted
 
+# ------------------------------------------------------------------------------------------------------- #
 
-# Install PowerShell Modules
-# ==========================
+# PowerShell Modules
+# ==================
 
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 Install-Module -Name PackageManagement
@@ -55,8 +58,11 @@ Install-Module -Name yarn-completion -Scope CurrentUser -Force
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
 
+# ------------------------------------------------------------------------------------------------------- #
 
-### Chocolatey
+# Chocolatey
+# ==========
+
 <#
 Write-Host "Installing Desktop Utilities..." -ForegroundColor "Yellow"
 if ((which cinst) -eq $null) {
@@ -92,6 +98,20 @@ if ((which cinst) -eq $null) {
 
 RefreshEnvironment
 
+# ------------------------------------------------------------------------------------------------------- #
+
+# Rust Tools
+# ==========
+
+# TODO: Ensure rustup, rust, and cargo are installed
+
+
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# NodeJS
+# ======
+
 # nvm on
 # $nodeLtsVersion = choco search nodejs-lts --limit-output | ConvertFrom-String -TemplateContent "{Name:package-name}\|{Version:1.11.1}" | Select -ExpandProperty "Version"
 # nvm install $nodeLtsVersion
@@ -111,5 +131,7 @@ if (which npm) {
   npm install -g yo
 }
 #>
+
+# ------------------------------------------------------------------------------------------------------- #
 
 # EOF #
