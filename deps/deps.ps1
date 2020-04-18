@@ -103,7 +103,25 @@ RefreshEnvironment
 # Scoop
 # =====
 
-# ..
+Write-Host "Installing Scoop..." -ForegroundColor "Yellow"
+
+# TODO: Check current execution policy
+# Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+
+# Verify if scoop is installed
+if (Get-Command scoop) {
+  # Update scoop
+  Invoke-Expression "scoop update"
+} else {
+  # Install scoop
+  Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+}
+
+# Install scoop packages
+
+Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
+
+# scoop install rustup
 
 # ------------------------------------------------------------------------------------------------------- #
 
