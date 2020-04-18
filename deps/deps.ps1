@@ -143,7 +143,7 @@ Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
 # bat (scoop)
 ## bat-extras
-# dust
+# dust (cargo install du-dust)
 # eva
 # fd (scoop)
 # grex
