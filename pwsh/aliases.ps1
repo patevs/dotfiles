@@ -89,6 +89,8 @@ Set-Alias -Name vim -Value nvim
 # =================
 
 # Directory Listing: Use `lsd.exe` if available
+
+<#
 if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
   # List directory contents in short format
   ${function:l} = { lsd --color always --icon always @args }
@@ -105,6 +107,7 @@ if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
   ${function:lst} = { tree }
 }
 Set-Alias -Name ls -Value ll -option AllScope -Force
+#>
 
 # Favour ripgrep over grep if installed
 if (Get-Command rg -ErrorAction SilentlyContinue) { Set-Alias -Name grep -Value rg }
