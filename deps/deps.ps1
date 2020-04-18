@@ -12,6 +12,7 @@ if (!(Test-Elevated)) {
   exit
 }
 
+# ------------------------------------------------------------------------------------------------------- #
 
 # Update Help for Modules
 # =======================
@@ -20,6 +21,7 @@ if (!(Test-Elevated)) {
 # Update-Help -Force
 # Update-Help -UICulture en-US
 
+# ------------------------------------------------------------------------------------------------------- #
 
 # Package Providers
 # =================
@@ -30,9 +32,10 @@ Get-PackageProvider NuGet -Force | Out-Null
 #Get-PackageProvider Chocolatey -Force
 #Set-PackageSource -Name chocolatey -Trusted
 
+# ------------------------------------------------------------------------------------------------------- #
 
-# Install PowerShell Modules
-# ==========================
+# PowerShell Modules
+# ==================
 
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 Install-Module -Name PackageManagement
@@ -55,8 +58,11 @@ Install-Module -Name yarn-completion -Scope CurrentUser -Force
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
 
+# ------------------------------------------------------------------------------------------------------- #
 
-### Chocolatey
+# Chocolatey
+# ==========
+
 <#
 Write-Host "Installing Desktop Utilities..." -ForegroundColor "Yellow"
 if ((which cinst) -eq $null) {
@@ -92,6 +98,106 @@ if ((which cinst) -eq $null) {
 
 RefreshEnvironment
 
+# ------------------------------------------------------------------------------------------------------- #
+
+# Scoop
+# =====
+
+Write-Host "Installing Scoop..." -ForegroundColor "Yellow"
+
+# TODO: Check current execution policy
+# Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+
+# Verify if scoop is installed
+if (Get-Command scoop) {
+  # Update scoop
+  Invoke-Expression "scoop update"
+} else {
+  # Install scoop
+  Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+}
+
+Write-Host "Adding Scoop Buckets..." -ForegroundColor "Yellow"
+
+Invoke-Expression "scoop bucket add extras"
+Invoke-Expression "scoop bucket add versions"
+Invoke-Expression "scoop bucket add nonportable"
+Invoke-Expression "scoop bucket add nerd-fonts"
+Invoke-Expression "scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket"
+Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
+
+# Fix for scoop error: https://github.com/lukesampson/scoop/issues/3528
+Invoke-Expression "scoop config alias @{}"
+
+# Install scoop packages
+Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
+
+# scoop install rustup
+
+<#
+7zip (v:19.00) [main]
+android-studio (v:3.6.3.0) [extras]
+aria2 (v:1.35.0-1) [main]
+bat (v:0.13.0) [main]
+bulk-crap-uninstaller (v:4.16) [extras]
+ccleaner (v:5.65.7632) [extras]
+colortool (v:1904.29002) [main]
+dark (v:3.11.2) [main]
+dust (v:0.5.1) [main]
+fd (v:8.0.0) [main]
+ffmpeg (v:4.2.2) [main]
+github (v:2.4.1) [extras]
+gitkraken (v:6.5.4) [extras]
+go (v:1.14.2) [main]
+grex (v:1.1.0) [main]
+hack-nf (v:2.1.0) [nerd-fonts]
+heroku-cli (v:7.39.3) [main]
+hub (v:2.14.2) [main]
+imagemagick (v:7.0.10-6) [main]
+inkscape (v:0.92.5) [extras]
+innounp (v:0.49) [main]
+lazygit (v:0.19) [extras]
+less (v:551) [main]
+lessmsi (v:1.6.91) [main]
+make (v:4.3) [main]
+mpv (v:0.32.0) [extras]
+msys2 (v:20190524) [main]
+neovim (v:0.4.3) [main]
+nodejs-lts (v:12.16.2) [main]
+onefetch (v:2.0.0) [extras]
+perl (v:5.30.2.1) [main]
+picard (v:2.3.1) [extras]
+powertoys (v:0.16.1) [extras]
+pwsh (v:7.0.0) [main]
+python (v:3.8.2) [main]
+python27 (v:2.7.17) [versions]
+ripgrep (v:12.0.1) [main]
+ruby26 (v:2.6.6-1) [versions]
+scoop-completion (v:0.2.2) [scoop-completion]
+snappy-driver-installer-origin (v:1.6.1.710) [extras]
+speccy (v:1.32.740) [extras]
+spotify-tui (v:0.17.1) [scoop-bucket]
+sqlite (v:3.31.1) [main]
+sudo (v:0.2020.01.26) [main]
+sumatrapdf (v:3.2) [extras]
+teracopy-np (v:3.26) [nonportable]
+windows-terminal (v:0.10.781.0) [extras]
+youtube-dl (v:2020.03.24) [main]
+zeal (v:0.6.1) [extras]
+#>
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Rust Tools
+# ==========
+
+# TODO: Ensure rustup, rust, and cargo are installed
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# NodeJS
+# ======
+
 # nvm on
 # $nodeLtsVersion = choco search nodejs-lts --limit-output | ConvertFrom-String -TemplateContent "{Name:package-name}\|{Version:1.11.1}" | Select -ExpandProperty "Version"
 # nvm install $nodeLtsVersion
@@ -111,5 +217,7 @@ if (which npm) {
   npm install -g yo
 }
 #>
+
+# ------------------------------------------------------------------------------------------------------- #
 
 # EOF #
