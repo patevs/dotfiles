@@ -141,6 +141,19 @@ Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
 # TODO: Ensure rustup, rust, and cargo are installed
 
+# bat (scoop)
+## bat-extras
+# dust
+# eva
+# fd (scoop)
+# grex
+# lsd
+# monolith
+# onefetch (scoop)
+# ripgrep (scoop)
+# spotify-tui
+# tokei
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # NodeJS
