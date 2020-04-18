@@ -169,11 +169,20 @@ set lazyredraw             " Only redraw when necessary.
 "   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 " endif
 
-if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
-    silent !curl -fLo C:\Users\Patrick\AppData\Local\nvim\autoload\plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+" if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
+"     silent !curl -fLo C:\Users\Patrick\AppData\Local\nvim\autoload\plug.vim --create-dirs
+"     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+" endif
+
+md ~\AppData\Local\nvim\autoload
+$uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+(New-Object Net.WebClient).DownloadFile(
+  $uri,
+  $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(
+    "~\AppData\Local\nvim\autoload\plug.vim"
+  )
+)
 
 " ----------------------------------------------------------------------- "
 
