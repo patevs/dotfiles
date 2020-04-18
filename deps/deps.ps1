@@ -191,6 +191,13 @@ Invoke-Expression "scoop config alias @{}"
 # buku
 # pip3 install buku
 
+# Install buku required dependencies
+# python -m pip install certifi urllib3 cryptography beautifulsoup4
+# Install buku
+# python -m pip install buku
+# Install bukuserver required dependencies
+# python -m pip install flask flask_admin flask_api flask_bootstrap flask_paginate flask_wtf arrow
+
 # wig
 # https://github.com/jekyc/wig
 
