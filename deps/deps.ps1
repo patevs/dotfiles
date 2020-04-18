@@ -156,18 +156,13 @@ Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
 # TODO: Ensure rustup, rust, and cargo are installed
 
-# bat (scoop)
 ## bat-extras
-# dust (cargo install du-dust)
-# eva
-# fd (scoop)
-# grex
-# lsd
-# monolith
-# onefetch (scoop)
-# ripgrep (scoop)
-# spotify-tui
-# tokei
+
+# Invoke-Expression "cargo install du-dust"
+# Invoke-Expression "cargo install eva"
+# Invoke-Expression "cargo install lsd"
+# Invoke-Expression "cargo install monolith"
+# Invoke-Expression "cargo install tokei"
 
 # ------------------------------------------------------------------------------------------------------- #
 
