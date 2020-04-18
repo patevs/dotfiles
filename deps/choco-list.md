@@ -1,5 +1,4 @@
-
- Local Chocolatey Installations:
+# Chocolatey Installs
 
 Chocolatey v0.10.15
 7zip.install 19.0
@@ -28,4 +27,5 @@ visualstudio-installer 2.0.1
 visualstudio2019buildtools 16.5.4.0
 vlc 3.0.8
 vscode.install 1.44.2
-26 packages installed.
+
+---
