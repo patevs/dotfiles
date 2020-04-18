@@ -21,15 +21,22 @@
 #Script Version
 # $sScriptVersion = "1.0"
 
-# Current working directory
-# $cwd = Get-Location
-
 # Destination directory location
 $destinationDir = "$env:LOCALAPPDATA\nvim"
 
 # --------------------------------- [Execution] --------------------------------- #
 
-# Create destination and icons directories
+# Install VimPlug
+New-Item ~\AppData\Local\nvim\autoload -ItemType Directory -Force -ErrorAction SilentlyContinue
+$uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+(New-Object Net.WebClient).DownloadFile(
+  $uri,
+  $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(
+    "~\AppData\Local\nvim\autoload\plug.vim"
+  )
+)
+
+# Create destination directory
 New-Item $destinationDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
 
 # Copy init.vim to destination
