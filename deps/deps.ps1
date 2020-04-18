@@ -135,6 +135,22 @@ Invoke-Expression "scoop config alias @{}"
 
 # ------------------------------------------------------------------------------------------------------- #
 
+# Bash Tools
+# ==========
+
+# TODO: Ensure bash is installed
+
+# https://github.com/tj/git-extras
+
+# https://github.com/git-friendly/git-friendly
+
+# https://github.com/fboender/multi-git-status
+
+# neofetch (scoop -> requires git)
+# https://github.com/dylanaraps/neofetch/
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # DotNet Tools
 # ============
 
@@ -147,6 +163,52 @@ Invoke-Expression "scoop config alias @{}"
 # dotnet tool install --global git-status-cli
 # dotnet tool install --global Moniker.Cli
 # dotnet tool install --global nyancat
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Go Tools
+# ========
+
+# TODO: Ensure go is installed
+
+# gitbatch
+# go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
+
+# gotop
+# go get -u github.com/xxxserxxx/gotop/cmd/gotop
+
+# lsp
+# go get github.com/dborzov/lsp
+
+# s (scoop)
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# PowerShell Tools
+# ================
+
+# Winfetch (scoop)
+# https://github.com/lptstr/winfetch/
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Python Tools
+# ============
+
+# TODO: Ensure python and pip are installed
+
+# buku
+# pip3 install buku
+
+# Install buku required dependencies
+# python -m pip install certifi urllib3 cryptography beautifulsoup4
+# Install buku
+# python -m pip install buku
+# Install bukuserver required dependencies
+# python -m pip install flask flask_admin flask_api flask_bootstrap flask_paginate flask_wtf arrow
+
+# wig
+# https://github.com/jekyc/wig
 
 # ------------------------------------------------------------------------------------------------------- #
 
