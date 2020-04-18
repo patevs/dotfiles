@@ -16,28 +16,23 @@ git submodule update --init --recursive
 
 ```md
 .
+├── alacritty
+│  └── alacritty.yml
 ├── bash
-├── config
-│  ├── alacritty
-│  │  └── alacritty.yml
-│  ├── bash
-│  │  ├── .bash_aliases
-│  │  ├── .bash_profile
-│  │  ├── .bashrc
-│  │  └── .profile
-│  ├── nvim
-│  │  └── init.vim
-│  ├── ps1
-│  │  ├── defaults.ps1
-│  │  ├── development.ps1
-│  │  ├── Microsoft.PowerShell_profile.ps1
-│  │  └── unix.ps1
+│  ├── .bash_aliases
+│  ├── .bash_profile
+│  ├── .bashrc
+│  └── .profile
+├── deps
+│  └── deps.ps1
 ├── docs
 │  ├── docs.md
 │  ├── theme.md
 │  └── tools.md
 ├── git
-├── ps1
+├── nvim
+│  └── init.vim
+├── pwsh
 ├── utils
 ├── wt
 |  └── profiles.json

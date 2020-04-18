@@ -30,14 +30,14 @@
     "defaults":
     {
       // Put settings here that you want to apply to all profiles
-      "acrylicOpacity": 0.8,
+      // "acrylicOpacity": 0.9,
       "antialiasingMode": "grayscale",
       "closeOnExit": "graceful",
       "colorScheme" : "Dracula",
       "cursorShape": "bar",
       "fontFace": "Hack NF",
       "fontSize": 10,
-      "padding": "8, 8, 8, 8",
+      "padding": "10, 10, 10, 10",
       // "startingDirectory": "%USERPROFILE%",
       "snapOnInput": true,
       "useAcrylic": false
@@ -48,21 +48,21 @@
         "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
         "name": "PowerShell Core",
         "source": "Windows.Terminal.PowershellCore",
-        "icon": "C:/Users/Patrick/AppData/Local/Microsoft/Windows Terminal/icons/powershell-core.png",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell-core.png",
         "hidden": false
       },
       {
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "name": "PowerShell",
         "commandline": "powershell.exe -NoLogo",
-        "icon": "C:/Users/Patrick/AppData/Local/Microsoft/Windows Terminal/icons/powershell.png",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell.png",
         "hidden": false
       },
       {
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "name": "cmd",
         "commandline": "cmd.exe",
-        "icon": "C:/Users/Patrick/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png",
         "hidden": false
       },
       {

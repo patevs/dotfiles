@@ -10,10 +10,10 @@
 .NOTES
   Version:        1.0
   Author:         PatEvs (github.com/patevs)
-  Last Modified:  08/04/2020 - April 8th 2020
+  Last Modified:  19/04/2020 - April 19th 2020
 
 .EXAMPLE
-  .\install.ps1
+  .\bootstrap.ps1
 #>
 
 # -------------------------------- [Declarations] ------------------------------- #
@@ -30,9 +30,10 @@ $destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
 # Icons directory location
 $iconsDir = "$destinationDir\icons"
 
-# --------------------------------- [Functions] --------------------------------- #
-
-# ..
+# Windows Terminal installation.
+# Note: Assumes Windows Terminal has been install with scoop
+$wtDir = Invoke-Expression "scoop prefix windows-terminal"
+$wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
 
 # --------------------------------- [Execution] --------------------------------- #
 
@@ -50,7 +51,7 @@ Remove-Variable iconsDir
 Remove-Variable destinationDir
 
 # Open New Windows Terminal
-Invoke-Expression "wt -d $cwd"
+Invoke-Expression "$wt"
 
 # Close Old Windows Terminal
 # exit
