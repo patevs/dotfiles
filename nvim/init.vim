@@ -184,6 +184,8 @@ set lazyredraw             " Only redraw when necessary.
 "   )
 " )
 
+" (New-Object Net.WebClient).DownloadFile($uri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\AppData\Local\nvim\autoload\plug.vim"))
+
 " ----------------------------------------------------------------------- "
 
 " Specify a directory for plugins
