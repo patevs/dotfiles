@@ -118,7 +118,7 @@ Set-Alias -Name time -Value Measure-Command
 # ====================
 
 # Git Multi Status
-${function:mgs} = { bash C:\tools\multi-git-status\mgitstatus }
+${function:mgs} = { bash C:\tools\multi-git-status\mgitstatus --depth=0 }
 
 # Favour GitHub's hub client over vanilla git
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias -Name git -Value hub }
