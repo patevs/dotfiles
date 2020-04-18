@@ -153,6 +153,8 @@ Invoke-Expression "scoop config alias @{}"
 # Go Tools
 # ========
 
+# TODO: Ensure go is installed
+
 # gitbatch
 # go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
 
@@ -163,6 +165,19 @@ Invoke-Expression "scoop config alias @{}"
 # go get github.com/dborzov/lsp
 
 # s (scoop)
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Python Tools
+# ============
+
+# TODO: Ensure python and pip are installed
+
+# buku
+# pip3 install buku
+
+# wig
+# https://github.com/jekyc/wig
 
 # ------------------------------------------------------------------------------------------------------- #
 
