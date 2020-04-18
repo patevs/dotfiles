@@ -1,3 +1,5 @@
+# Scoop Installs
+
 7zip (v:19.00) [main]
 android-studio (v:3.6.3.0) [extras]
 aria2 (v:1.35.0-1) [main]
@@ -53,3 +55,5 @@ windows-terminal (v:0.10.781.0) [extras]
 winfetch (v:1.2.0) [extras]
 youtube-dl (v:2020.03.24) [main]
 zeal (v:0.6.1) [extras]
+
+---
