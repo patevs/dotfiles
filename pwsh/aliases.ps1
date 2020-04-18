@@ -50,7 +50,7 @@ ${function:modules} = { Get-Module -ListAvailable }
 
 # System information tools
 ${function:neofetch} = { bash C:\tools\neofetch\neofetch }
-${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
+# ${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
 
 # Shutdown System
 # TODO: Fix me
