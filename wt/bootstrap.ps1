@@ -33,7 +33,7 @@ $iconsDir = "$destinationDir\icons"
 # Windows Terminal installation.
 # Note: Assumes Windows Terminal has been install with scoop
 $wtDir = Invoke-Expression "scoop prefix windows-terminal"
-$wt = $wtDir + "WindowsTerminal.exe -d $cwd"
+$wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
 
 # --------------------------------- [Execution] --------------------------------- #
 
