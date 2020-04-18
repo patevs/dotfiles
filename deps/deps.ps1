@@ -115,24 +115,38 @@ if (Get-Command scoop) {
 } else {
   # Install scoop
   Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+  # Add scoop buckets
+  Write-Host "Adding Scoop Buckets..." -ForegroundColor "Yellow"
+  Invoke-Expression "scoop bucket add extras"
+  Invoke-Expression "scoop bucket add versions"
+  Invoke-Expression "scoop bucket add nonportable"
+  Invoke-Expression "scoop bucket add nerd-fonts"
+  Invoke-Expression "scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket"
+  Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
 }
-
-Write-Host "Adding Scoop Buckets..." -ForegroundColor "Yellow"
-
-Invoke-Expression "scoop bucket add extras"
-Invoke-Expression "scoop bucket add versions"
-Invoke-Expression "scoop bucket add nonportable"
-Invoke-Expression "scoop bucket add nerd-fonts"
-Invoke-Expression "scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket"
-Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
 
 # Fix for scoop error: https://github.com/lukesampson/scoop/issues/3528
 Invoke-Expression "scoop config alias @{}"
 
 # Install scoop packages
-Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
+# Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
 # scoop install rustup
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# DotNet Tools
+# ============
+
+# TODO: Ensure dotnet is installed
+
+# NOTE: Requires .NET Core 2.1 SDK or newer
+# dotnet tool install --global dotnet-outdated
+# dotnet tool install --global dotnet-retire
+# NOTE: Requires .NET Core 2.1 SDK or newer
+# dotnet tool install --global git-status-cli
+# dotnet tool install --global Moniker.Cli
+# dotnet tool install --global nyancat
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -141,18 +155,13 @@ Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
 # TODO: Ensure rustup, rust, and cargo are installed
 
-# bat (scoop)
 ## bat-extras
-# dust
-# eva
-# fd (scoop)
-# grex
-# lsd
-# monolith
-# onefetch (scoop)
-# ripgrep (scoop)
-# spotify-tui
-# tokei
+
+# Invoke-Expression "cargo install du-dust"
+# Invoke-Expression "cargo install eva"
+# Invoke-Expression "cargo install lsd"
+# Invoke-Expression "cargo install monolith"
+# Invoke-Expression "cargo install tokei"
 
 # ------------------------------------------------------------------------------------------------------- #
 
