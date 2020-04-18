@@ -108,6 +108,41 @@ esac
 # Wakatime
 source bash-wakatime/bash-wakatime.sh
 
-#
-# -------------------- EOF -------------------- #
-#
+
+# Verify ~/.asdf/ path exists
+# if [ -f ~/.asdf ]; then
+#   . $HOME/.asdf/asdf.sh
+#   . $HOME/.asdf/completions/asdf.bash
+# fi
+
+# Bash-Git-Prompt
+# if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+#     GIT_PROMPT_ONLY_IN_REPO=1
+#     source $HOME/.bash-git-prompt/gitprompt.sh
+# fi
+
+# Node Version Manager (NVM)
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+# pyenv
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+
+# pyenv-installer
+# export PATH="/home/pat/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+
+# Cargo
+# export PATH="$HOME/.cargo/bin:$PATH"
+
+####################
+# Helper Functions #
+####################
+
+# PROMPT_COMMAND='__posh_git_ps1 "\[\033[01;32m\]\h \[\033[00m\]: \[\033[01;34m\]\w \[\033[00m\]: " "\n \[\033[00m\]$ ";'$PROMPT_COMMAND
+
+# EOF #
