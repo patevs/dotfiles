@@ -130,15 +130,17 @@ function reset-colors {
 # ========================
 
 # System Update - Update RubyGems, NPM, and their installed packages
+<#
 function SystemUpdate() {
-  Install-WindowsUpdate -IgnoreUserInput -IgnoreReboot -AcceptAll
+  # Install-WindowsUpdate -IgnoreUserInput -IgnoreReboot -AcceptAll
   Update-Module
-  Update-Help -Force
+  # Update-Help -Force
   gem update --system
   gem update
   npm install npm -g
   npm update -g
 }
+#>
 
 # https://stackoverflow.com/a/7330368
 function WindowsBuild {

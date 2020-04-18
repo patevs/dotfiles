@@ -2,6 +2,8 @@
 # bootstrap.ps1 #
 # ------------- #
 
+# TODO: Detect current powershell version and reload shell
+
 $profileDir = Split-Path -parent $profile
 $componentDir = Join-Path $profileDir "components"
 

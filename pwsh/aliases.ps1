@@ -78,7 +78,7 @@ Set-Alias -Name cleandisks -Value CleanDisks
 Set-Alias -Name reload -Value ReloadPowershell
 
 # Update installed Ruby Gems, NPM, and their installed packages.
-Set-Alias -Name update -Value SystemUpdate
+# Set-Alias -Name update -Value SystemUpdate
 
 # Set neovim as default vim
 Set-Alias -Name vim -Value nvim
