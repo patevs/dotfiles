@@ -169,11 +169,22 @@ set lazyredraw             " Only redraw when necessary.
 "   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 " endif
 
-if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
-    silent !curl -fLo C:\Users\Patrick\AppData\Local\nvim\autoload\plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+" if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
+"     silent !curl -fLo C:\Users\Patrick\AppData\Local\nvim\autoload\plug.vim --create-dirs
+"     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+" endif
+
+" md ~\AppData\Local\nvim\autoload
+" $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+" (New-Object Net.WebClient).DownloadFile(
+"   $uri,
+"   $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(
+"    "~\AppData\Local\nvim\autoload\plug.vim"
+"   )
+" )
+
+" (New-Object Net.WebClient).DownloadFile($uri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\AppData\Local\nvim\autoload\plug.vim"))
 
 " ----------------------------------------------------------------------- "
 
@@ -227,7 +238,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
-Plug 'KabbAmine/zeavim.vim'
+" Plug 'KabbAmine/zeavim.vim'
 
 " Initialize plugin system
 " Remember to run :PlugInstall
@@ -266,8 +277,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
- exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
- exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+  exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+  exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
 call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')

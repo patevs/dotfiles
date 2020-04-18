@@ -1,3 +1,5 @@
+# Chocolatey Installs
+
 Chocolatey v0.10.15
 7zip.install 19.0
 chocolatey 0.10.15
@@ -16,16 +18,14 @@ jdk8 8.0.211
 KB2919355 1.0.20160915
 KB2919442 1.0.20160915
 KB2999226 1.0.20181019
-KB3033929 1.0.5
-KB3035131 1.0.3
 qbittorrent 4.2.3
 reactotron 2.17.1
 revo-uninstaller 2.1.0.0
 rsvg-convert 2.40.20
-vcredist140 14.25.28508.3
+spotify 1.1.30.658
 visualstudio-installer 2.0.1
 visualstudio2019buildtools 16.5.4.0
-visualstudio2019community 16.5.4.0
 vlc 3.0.8
-vscode.install 1.44.1
-29 packages installed.
+vscode.install 1.44.2
+
+---
