@@ -115,22 +115,21 @@ if (Get-Command scoop) {
 } else {
   # Install scoop
   Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+  # Add scoop buckets
+  Write-Host "Adding Scoop Buckets..." -ForegroundColor "Yellow"
+  Invoke-Expression "scoop bucket add extras"
+  Invoke-Expression "scoop bucket add versions"
+  Invoke-Expression "scoop bucket add nonportable"
+  Invoke-Expression "scoop bucket add nerd-fonts"
+  Invoke-Expression "scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket"
+  Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
 }
-
-Write-Host "Adding Scoop Buckets..." -ForegroundColor "Yellow"
-
-Invoke-Expression "scoop bucket add extras"
-Invoke-Expression "scoop bucket add versions"
-Invoke-Expression "scoop bucket add nonportable"
-Invoke-Expression "scoop bucket add nerd-fonts"
-Invoke-Expression "scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket"
-Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
 
 # Fix for scoop error: https://github.com/lukesampson/scoop/issues/3528
 Invoke-Expression "scoop config alias @{}"
 
 # Install scoop packages
-Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
+# Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
 # scoop install rustup
 
