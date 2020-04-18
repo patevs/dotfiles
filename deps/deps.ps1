@@ -150,6 +150,22 @@ Invoke-Expression "scoop config alias @{}"
 
 # ------------------------------------------------------------------------------------------------------- #
 
+# Go Tools
+# ========
+
+# gitbatch
+# go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
+
+# gotop
+# go get -u github.com/xxxserxxx/gotop/cmd/gotop
+
+# lsp
+# go get github.com/dborzov/lsp
+
+# s (scoop)
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # Rust Tools
 # ==========
 
