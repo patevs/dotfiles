@@ -31,12 +31,12 @@
     {
       // Put settings here that you want to apply to all profiles
       "acrylicOpacity": 0.8,
-      // "antialiasingMode": "grayscale",
+      "antialiasingMode": "cleartype",
       "closeOnExit": "graceful",
       "colorScheme" : "Dracula",
       "cursorShape": "bar",
       "fontFace": "FiraCode NF",
-      "fontSize": 12,
+      "fontSize": 11,
       "padding": "8, 8, 8, 8",
       // "startingDirectory": "%USERPROFILE%",
       "snapOnInput": true,
