@@ -146,7 +146,8 @@ Invoke-Expression "scoop config alias @{}"
 
 # https://github.com/fboender/multi-git-status
 
-# neofetch (scoop)
+# neofetch (scoop -> requires git)
+# https://github.com/dylanaraps/neofetch/
 
 # ------------------------------------------------------------------------------------------------------- #
 
