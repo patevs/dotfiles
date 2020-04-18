@@ -30,7 +30,7 @@
     "defaults":
     {
       // Put settings here that you want to apply to all profiles
-      "acrylicOpacity": 0.8,
+      "acrylicOpacity": 0.9,
       "antialiasingMode": "grayscale",
       "closeOnExit": "graceful",
       "colorScheme" : "Dracula",
