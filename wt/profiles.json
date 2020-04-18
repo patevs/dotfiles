@@ -30,7 +30,7 @@
     "defaults":
     {
       // Put settings here that you want to apply to all profiles
-      "acrylicOpacity": 0.9,
+      // "acrylicOpacity": 0.9,
       "antialiasingMode": "grayscale",
       "closeOnExit": "graceful",
       "colorScheme" : "Dracula",
@@ -40,7 +40,7 @@
       "padding": "10, 10, 10, 10",
       // "startingDirectory": "%USERPROFILE%",
       "snapOnInput": true,
-      "useAcrylic": true
+      "useAcrylic": false
     },
     "list":
     [
