@@ -107,7 +107,6 @@ if (Get-Command lsd) {
   ${function:lll} = { Get-ChildItem | Format-List }
   ${function:lst} = { tree }
 }
-
 Set-Alias -Name ls -Value ll -option AllScope -Force
 
 # Favour ripgrep over grep if installed
