@@ -91,14 +91,13 @@ Set-Alias -Name vim -Value nvim
 # Directory Listing: Use `lsd.exe` if available
 if (which lsd) {
   # List directory contents in short format
-  ${function:l} = { lsd --color always --icon always @args }
+  ${function:l} = { Write-Host ""; lsd --color always --icon always @args }
   # List directory contents
-  ${function:ll} = { lsd -A1 --color always --icon always @args }
-  # Set-Alias -Name ls -Value ll -option AllScope -Force
+  ${function:ll} = { Write-Host ""; lsd -A1 --color always --icon always @args }
   # List directory contents in long format
-  ${function:lll} = { lsd -al --color always --icon always @args }
+  ${function:lll} = { Write-Host ""; lsd -al --color always --icon always @args }
   # List directory tree
-  ${function:lst} = { lsd --tree --color always --icon always @args }
+  ${function:lst} = { Write-Host ""; lsd --tree --color always --icon always @args }
 } else {
   ${function:l} = { Get-ChildItem }
   ${function:ll} = { Get-ChildItem | Format-Wide }
