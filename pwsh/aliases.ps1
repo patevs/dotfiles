@@ -89,9 +89,7 @@ Set-Alias -Name vim -Value nvim
 # =================
 
 # Directory Listing: Use `lsd.exe` if available
-# if (Get-Command lsd -ErrorAction SilentlyContinue | Test-Path) {
-# TODO: Fixme
-if (Get-Command lsd) {
+if (which lsd) {
   # List directory contents in short format
   ${function:l} = { lsd --color always --icon always @args }
   # List directory contents
