@@ -14,6 +14,7 @@
 
 ## Bash Tools
 
+* [`git-branch-status`](https://github.com/bill-auger/git-branch-status)
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
 * [`has`](https://github.com/kdabir/has)
