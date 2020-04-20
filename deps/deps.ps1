@@ -40,6 +40,7 @@ Get-PackageProvider NuGet -Force | Out-Null
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 Install-Module -Name PackageManagement
 Install-Module -Name PowerShellGet
+# Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
 # Install-Module -Name Configuration
 
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
