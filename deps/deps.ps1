@@ -40,6 +40,7 @@ Get-PackageProvider NuGet -Force | Out-Null
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 Install-Module -Name PackageManagement
 Install-Module -Name PowerShellGet
+# Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
 # Install-Module -Name Configuration
 
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
@@ -57,6 +58,8 @@ Install-Module -Name yarn-completion -Scope CurrentUser -Force
 
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
+
+EXIT
 
 # ------------------------------------------------------------------------------------------------------- #
 
