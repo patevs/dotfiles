@@ -118,7 +118,7 @@ Set-Alias -Name time -Value Measure-Command
 # ====================
 
 # ls with git status
-${function:lsg} = { bash C:\tools\ls-with-git-status\lsg }
+${function:lsg} = { Write-Host ""; bash C:\tools\ls-with-git-status\lsg }
 
 # Git Multi Status
 ${function:mgs} = { bash C:\tools\multi-git-status\mgitstatus --depth=0 }
