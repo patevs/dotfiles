@@ -19,11 +19,11 @@
 [color]
 	ui = true
 [color "branch"]
-	current = yellow bold
+	# current = yellow bold
 	local = green bold
 	remote = cyan bold
 [color "diff"]
-	meta = yellow bold
+	# meta = yellow bold
 	frag = magenta bold
 	commit = 11
   old = red bold
@@ -36,15 +36,15 @@
 	newHighlight = green bold 22
 [color "status"]
 	added = green bold
-	changed = yellow bold
+	# changed = yellow bold
 	untracked = red bold
 [credential]
 	helper = manager
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+# [filter "lfs"]
+# 	clean = git-lfs clean -- %f
+# 	smudge = git-lfs smudge -- %f
+# 	process = git-lfs filter-process
+# 	required = true
 [alias]
 	a = add --all
 	# ai = add -i
@@ -56,7 +56,7 @@
 	# br = branch -r
 	# bc = rev-parse --abbrev-ref HEAD
 	# bu = !git rev-parse --abbrev-ref --symbolic-full-name "@{u}"
-	bs = !git-branch-status
+	# bs = !git-branch-status
 	#############
 	c = commit
 	ca = commit -a
