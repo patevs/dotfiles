@@ -17,6 +17,7 @@
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
 * [`has`](https://github.com/kdabir/has)
+* [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
 
