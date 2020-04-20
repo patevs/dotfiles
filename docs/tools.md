@@ -16,6 +16,8 @@
 
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
+* [`has`](https://github.com/kdabir/has)
+* [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
 
@@ -46,6 +48,7 @@
 
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+* [`ranger`](https://github.com/ranger/ranger)
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`spotify-downloader`](https://github.com/ritiek/spotify-downloader) Download Spotify playlists from YouTube with albumart. and metadata.
