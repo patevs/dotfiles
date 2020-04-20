@@ -97,7 +97,7 @@ if (which lsd) {
   # List directory contents in long format
   ${function:lll} = { Write-Host ""; lsd -al --color always --icon always @args }
   # List directory tree
-  ${function:lst} = { Write-Host ""; lsd --tree --color always --icon always @args }
+  ${function:lst} = { Write-Host ""; lsd --tree --color always --icon always --ignore-glob ".git/ node_modules/"  @args }
 } else {
   ${function:l} = { Get-ChildItem }
   ${function:ll} = { Get-ChildItem | Format-Wide }
