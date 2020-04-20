@@ -59,8 +59,6 @@ Install-Module -Name yarn-completion -Scope CurrentUser -Force
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
 
-EXIT
-
 # ------------------------------------------------------------------------------------------------------- #
 
 # Chocolatey
