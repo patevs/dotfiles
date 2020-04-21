@@ -129,7 +129,7 @@ if (Get-Command scoop) {
   Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
 }
 
-# Fix for scoop error: https://github.com/lukesampson/scoop/issues/3528
+# Fix for scoop-completion error: https://github.com/lukesampson/scoop/issues/3528
 Invoke-Expression "scoop config alias @{}"
 
 # Install scoop packages
