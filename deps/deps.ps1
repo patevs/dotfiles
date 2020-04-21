@@ -170,6 +170,9 @@ scoop install winfetch
 
 scoop install pwsh
 scoop install windows-terminal
+# Required by windows-terminal
+scoop install vcredist2019
+scoop uninstall vcredist2019
 
 scoop install github
 scoop install gitkraken
