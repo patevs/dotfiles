@@ -70,7 +70,12 @@ Install-Module -Name yarn-completion -Scope CurrentUser -Force
 
 Write-Host "Installing Chocolatey..." -ForegroundColor "Yellow"
 
+# Verify chocolatey is installed
 if (which cinst) {
+  # Update chocolatey
+  choco upgrade chocolatey -y
+} else {
+  # Install chocolatey
   Invoke-Expression (new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')
   Refresh-Environment
   choco feature enable -n=allowGlobalConfirmation
@@ -132,7 +137,7 @@ Write-Host "Installing Scoop..." -ForegroundColor "Yellow"
 
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
-# Verify if scoop is installed
+# Verify scoop is installed
 if (Get-Command scoop) {
   # Update scoop
   Invoke-Expression "scoop update"
