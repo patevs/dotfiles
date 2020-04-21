@@ -81,6 +81,27 @@ if ((which cinst) -eq $null) {
 }
 #>
 
+# System and Development Tools
+choco install 7zip.install
+choco install git.install
+choco install jdk8
+choco install reactotron
+choco install rsvg-convert
+choco install visualstudio2019buildtools
+# TODO: Install vscode extensions
+choco install vscode.install
+
+# Web Browsers
+choco install Firefox
+choco install GoogleChrome
+
+# Applications
+choco install gimp
+choco install qbittorrent
+choco install revo-uninstaller
+choco install spotify
+choco install vlc
+
 # system and cli
 # choco install curl                --limit-output
 # choco install nuget.commandline   --limit-output
