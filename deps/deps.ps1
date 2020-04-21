@@ -93,6 +93,7 @@ choco install jdk8
 # choco install nvm.portable        --limit-output
 choco install reactotron
 # choco install rsvg-convert
+# choco install visualstudio2019community
 choco install visualstudio2019buildtools
 # TODO: Install vscode extensions
 choco install vscode.install
@@ -232,10 +233,15 @@ scoop install FiraCode-NF
 scoop install Hack-NF
 
 # Windows Redistributable
+scoop install vcredist2010
 scoop install vcredist2015
-scoop uninstall vcredist2015
 scoop install vcredist2019
+scoop uninstall vcredist2010
+scoop uninstall vcredist2015
 scoop uninstall vcredist2019
+
+# Cleanup Scoop Cache
+scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
