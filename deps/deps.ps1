@@ -209,9 +209,11 @@ scoop install hub
 scoop install lazygit
 scoop install onefetch
 
+scoop install android-studio
 scoop install bulk-crap-uninstaller
 scoop install ccleaner
-scoop install android-studio
+scoop install imagemagick
+scoop install inkscape
 scoop install powertoys
 # scoop install rufus
 scoop install snappy-driver-installer-origin
@@ -219,9 +221,6 @@ scoop install speccy
 scoop install sumatrapdf
 scoop install teracopy-np
 scoop install zeal
-
-scoop install imagemagick
-scoop install inkscape
 
 scoop install dopamine
 scoop install ffmpeg
