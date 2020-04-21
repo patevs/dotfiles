@@ -174,6 +174,7 @@ scoop install ruby26
 # TODO: run gem update --system then gem update
 scoop install rustup
 
+# Development Tools
 scoop install bat
 # scoop install colortool
 scoop install dust
@@ -182,33 +183,27 @@ scoop install fd
 scoop install heroku-cli
 scoop install less
 scoop install lsd
-# lsd requires vcredist2015
-scoop install vcredist2015
-scoop uninstall vcredist2015
 scoop install make
 scoop install msys2
 # TODO: run msys2 then ridk install
 scoop install neovim
-# neovim suggests: vcredist2015
 scoop install ripgrep
-# ripgrep suggests: vcredist2015
 scoop install s
 # scoop install sqlite
 scoop install winfetch
-# winfetch suggests: imagemagick
 
+# Shells and Terminals
 scoop install pwsh
 scoop install windows-terminal
-# Required by windows-terminal
-scoop install vcredist2019
-scoop uninstall vcredist2019
 
+# Git Tools
 scoop install github
 scoop install gitkraken
 scoop install hub
 scoop install lazygit
 scoop install onefetch
 
+# Applications
 scoop install android-studio
 scoop install bulk-crap-uninstaller
 scoop install ccleaner
@@ -222,6 +217,7 @@ scoop install sumatrapdf
 scoop install teracopy-np
 scoop install zeal
 
+# Music Applications
 scoop install dopamine
 scoop install ffmpeg
 scoop install mpv
@@ -230,8 +226,15 @@ scoop install picard
 scoop install spotify-tui
 scoop install youtube-dl
 
+# Fonts
 scoop install FiraCode-NF
 scoop install Hack-NF
+
+# Windows Redistributable
+scoop install vcredist2015
+scoop uninstall vcredist2015
+scoop install vcredist2019
+scoop uninstall vcredist2019
 
 # ------------------------------------------------------------------------------------------------------- #
 
