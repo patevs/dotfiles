@@ -321,6 +321,10 @@ go get github.com/dborzov/lsp
 
 ## bat-extras
 
+cargo install du-dust
+cargo install eva
+cargo install tokei
+
 # Invoke-Expression "cargo install du-dust"
 # Invoke-Expression "cargo install eva"
 # Invoke-Expression "cargo install tokei"
