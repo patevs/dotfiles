@@ -164,13 +164,14 @@ scoop install scoop-completion
 scoop install go
 scoop install nodejs-lts
 scoop install perl
-# TODO: Upgrade pip and setuptools
 scoop install python
 # Allow other applications to find python
 # $pythonDir = Invoke-Expression "scoop prefix python"
 # Invoke-Expression "$pythonDir\install-pep-514.reg"
+# TODO: Upgrade pip and setuptools
 scoop install python27
 scoop install ruby26
+# TODO: run gem update --system then gem update
 scoop install rustup
 
 scoop install bat
@@ -186,11 +187,15 @@ scoop install vcredist2015
 scoop uninstall vcredist2015
 scoop install make
 scoop install msys2
+# TODO: run msys2 then ridk install
 scoop install neovim
+# neovim suggests: vcredist2015
 scoop install ripgrep
+# ripgrep suggests: vcredist2015
 scoop install s
 # scoop install sqlite
 scoop install winfetch
+# winfetch suggests: imagemagick
 
 scoop install pwsh
 scoop install windows-terminal
