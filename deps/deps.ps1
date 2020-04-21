@@ -323,8 +323,6 @@ go get github.com/dborzov/lsp
 
 # Invoke-Expression "cargo install du-dust"
 # Invoke-Expression "cargo install eva"
-# Invoke-Expression "cargo install lsd"
-# Invoke-Expression "cargo install monolith"
 # Invoke-Expression "cargo install tokei"
 
 # ------------------------------------------------------------------------------------------------------- #
