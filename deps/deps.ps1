@@ -156,12 +156,20 @@ scoop install msys2
 scoop install neovim
 scoop install nodejs-lts
 scoop install perl
-scoop install pwsh
+
 # TODO: Upgrade pip and setuptools
 scoop install python
 scoop install python27
 scoop install ripgrep
 scoop install ruby26
+scoop install rustup
+scoop install s
+scoop install scoop-completion
+# scoop install sqlite
+scoop install winfetch
+
+scoop install pwsh
+scoop install windows-terminal
 
 scoop install github
 scoop install gitkraken
@@ -174,6 +182,11 @@ scoop install ccleaner
 scoop install android-studio
 scoop install powertoys
 # scoop install rufus
+scoop install snappy-driver-installer-origin
+scoop install speccy
+scoop install sumatrapdf
+scoop install teracopy-np
+scoop install zeal
 
 scoop install imagemagick
 scoop install inkscape
@@ -183,11 +196,11 @@ scoop install ffmpeg
 scoop install mpv
 scoop install musikcube
 scoop install picard
+scoop install spotify-tui
+scoop install youtube-dl
 
 scoop install FiraCode-NF
 scoop install Hack-NF
-
-# scoop install rustup
 
 # ------------------------------------------------------------------------------------------------------- #
 
