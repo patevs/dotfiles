@@ -9,6 +9,17 @@
 * [`zeal`](https://github.com/zealdocs/zeal)
   * [Documentation](https://zealdocs.org/usage.html)
   * [User Contributions](https://zealusercontributions.herokuapp.com/)
+    * [`pwntools`](https://zealusercontributions.herokuapp.com/docsets/pwntools.xml)
+    * [`yarn`](https://zealusercontributions.herokuapp.com/docsets/Yarn.xml)
+    * [`npm`](https://zealusercontributions.herokuapp.com/docsets/npm.xml)
+    * [`powershell`](https://zealusercontributions.herokuapp.com/docsets/Powershell.xml)
+    * [`electron`](https://zealusercontributions.herokuapp.com/docsets/electron.xml)
+    * [`webpack`](https://zealusercontributions.herokuapp.com/docsets/webpack.xml)
+    * [`react-native`](https://zealusercontributions.herokuapp.com/docsets/React_Native.xml)
+    * [`neovim`](https://zealusercontributions.herokuapp.com/docsets/Neovim.xml)
+    * [`JSDoc`](https://zealusercontributions.herokuapp.com/docsets/JSDoc.xml)
+    * [`Unicode`](https://zealusercontributions.herokuapp.com/docsets/UnicodeCharacters.xml)
+    * [`jest`](https://zealusercontributions.herokuapp.com/docsets/Jest.xml)
 
 ---
 
