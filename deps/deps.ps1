@@ -133,15 +133,15 @@ if (Get-Command scoop) {
 Invoke-Expression "scoop config alias @{}"
 
 # Install scoop packages
-# Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
+Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
 scoop install sudo
+scoop install 7zip
 scoop install innounp
 scoop install dark
 scoop install lessmsi
 scoop install aria2
 
-scoop install 7zip
 scoop install bat
 # scoop install colortool
 scoop install dust
@@ -152,16 +152,28 @@ scoop install heroku-cli
 scoop install less
 scoop install lsd
 scoop install make
-# scoop install msys2
+scoop install msys2
+scoop install neovim
+scoop install nodejs-lts
+scoop install perl
+scoop install pwsh
+# TODO: Upgrade pip and setuptools
+scoop install python
+scoop install python27
+scoop install ripgrep
+scoop install ruby26
 
 scoop install github
 scoop install gitkraken
 scoop install hub
 scoop install lazygit
+scoop install onefetch
 
 scoop install bulk-crap-uninstaller
 scoop install ccleaner
 scoop install android-studio
+scoop install powertoys
+# scoop install rufus
 
 scoop install imagemagick
 scoop install inkscape
@@ -170,6 +182,7 @@ scoop install dopamine
 scoop install ffmpeg
 scoop install mpv
 scoop install musikcube
+scoop install picard
 
 scoop install FiraCode-NF
 scoop install Hack-NF
