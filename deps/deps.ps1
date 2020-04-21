@@ -271,9 +271,9 @@ scoop cache rm *
 # TODO: Ensure dotnet is installed
 
 # NOTE: Requires .NET Core 2.1 SDK or newer
+
 # dotnet tool install --global dotnet-outdated
 # dotnet tool install --global dotnet-retire
-# NOTE: Requires .NET Core 2.1 SDK or newer
 # dotnet tool install --global git-status-cli
 # dotnet tool install --global Moniker.Cli
 # dotnet tool install --global nyancat
