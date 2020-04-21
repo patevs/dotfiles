@@ -166,6 +166,9 @@ scoop install nodejs-lts
 scoop install perl
 # TODO: Upgrade pip and setuptools
 scoop install python
+# Allow other applications to find python
+# $pythonDir = Invoke-Expression "scoop prefix python"
+# Invoke-Expression "$pythonDir\install-pep-514.reg"
 scoop install python27
 scoop install ruby26
 scoop install rustup
