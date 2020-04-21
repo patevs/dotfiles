@@ -286,13 +286,11 @@ scoop cache rm *
 # TODO: Ensure go is installed
 
 # gitbatch
-# go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
-
+go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
 # gotop
-# go get -u github.com/xxxserxxx/gotop/cmd/gotop
-
+go get -u github.com/xxxserxxx/gotop/cmd/gotop
 # lsp
-# go get github.com/dborzov/lsp
+go get github.com/dborzov/lsp
 
 # ------------------------------------------------------------------------------------------------------- #
 
