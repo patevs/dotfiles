@@ -256,6 +256,10 @@ scoop cache rm *
 
 # https://github.com/fboender/multi-git-status
 
+# https://github.com/patevs/ls-with-git-status
+
+# https://github.com/bill-auger/git-branch-status
+
 # neofetch (scoop -> requires git)
 # https://github.com/dylanaraps/neofetch/
 
