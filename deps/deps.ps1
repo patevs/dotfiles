@@ -83,10 +83,11 @@ if ((which cinst) -eq $null) {
 
 # System and Development Tools
 choco install 7zip.install
+# choco install genymotion
 choco install git.install
 choco install jdk8
 choco install reactotron
-choco install rsvg-convert
+# choco install rsvg-convert
 choco install visualstudio2019buildtools
 # TODO: Install vscode extensions
 choco install vscode.install
