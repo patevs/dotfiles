@@ -133,6 +133,12 @@ Invoke-Expression "scoop config alias @{}"
 # Install scoop packages
 # Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
+scoop install sudo
+scoop install innounp
+scoop install dark
+
+scoop install 7zip
+
 # scoop install rustup
 
 # ------------------------------------------------------------------------------------------------------- #
