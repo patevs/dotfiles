@@ -3,6 +3,7 @@
 # -------- #
 
 # Check to see if we are currently running "as Administrator"
+# TODO: Add function to check if elevated
 if (!(Test-Elevated)) {
   $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
   $newProcess.Arguments = $myInvocation.MyCommand.Definition;
@@ -38,9 +39,9 @@ Get-PackageProvider NuGet -Force | Out-Null
 # ==================
 
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
-Install-Module -Name PackageManagement
-Install-Module -Name PowerShellGet
-# Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
+Install-Module -Name PackageManagement -Force
+# Install-Module -Name PowerShellGet -Force
+Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
 # Install-Module -Name Configuration
 
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
@@ -64,8 +65,15 @@ Install-Module -Name yarn-completion -Scope CurrentUser -Force
 # Chocolatey
 # ==========
 
+Write-Host "Installing Chocolatey..." -ForegroundColor "Yellow"
+
+if (which cinst) {
+  Invoke-Expression (new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')
+  Refresh-Environment
+  choco feature enable -n=allowGlobalConfirmation
+}
+
 <#
-Write-Host "Installing Desktop Utilities..." -ForegroundColor "Yellow"
 if ((which cinst) -eq $null) {
   iex (new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')
   Refresh-Environment
@@ -73,29 +81,40 @@ if ((which cinst) -eq $null) {
 }
 #>
 
-# system and cli
+# System and Development Tools
+choco install 7zip.install
+# choco install atom                --limit-output; <# pin; evergreen #> choco pin add --name Atom                --limit-output
 # choco install curl                --limit-output
+# choco install Fiddler             --limit-output
+# choco install genymotion
+choco install git.install
+choco install jdk8
 # choco install nuget.commandline   --limit-output
-# choco install webpi               --limit-output
-# choco install git.install         --limit-output -params '"/GitAndUnixToolsOnPath /NoShellIntegration"'
 # choco install nvm.portable        --limit-output
-# choco install python              --limit-output
-# choco install ruby                --limit-output
+choco install reactotron
+# choco install rsvg-convert
+# choco install visualstudio2019community
+choco install visualstudio2019buildtools
+# TODO: Install vscode extensions
+choco install vscode.install
+# choco install webpi               --limit-output
+# choco install winmerge            --limit-output
 
-#fonts
+# Fonts
 # choco install sourcecodepro       --limit-output
 
-# browsers
-# choco install GoogleChrome        --limit-output; <# pin; evergreen #> choco pin add --name GoogleChrome        --limit-output
-# choco install GoogleChrome.Canary --limit-output; <# pin; evergreen #> choco pin add --name GoogleChrome.Canary --limit-output
+# Web Browsers
+choco install Firefox
 # choco install Firefox             --limit-output; <# pin; evergreen #> choco pin add --name Firefox             --limit-output
-# choco install Opera               --limit-output; <# pin; evergreen #> choco pin add --name Opera               --limit-output
+choco install GoogleChrome
+# choco install GoogleChrome        --limit-output; <# pin; evergreen #> choco pin add --name GoogleChrome        --limit-output
 
-# dev tools and frameworks
-# choco install atom                --limit-output; <# pin; evergreen #> choco pin add --name Atom                --limit-output
-# choco install Fiddler             --limit-output
-# choco install vim                 --limit-output
-# choco install winmerge            --limit-output
+# Applications
+choco install gimp
+choco install qbittorrent
+choco install revo-uninstaller
+choco install spotify
+choco install vlc
 
 RefreshEnvironment
 
@@ -104,10 +123,11 @@ RefreshEnvironment
 # Scoop
 # =====
 
+# TODO: ENsure git is installed
+
 Write-Host "Installing Scoop..." -ForegroundColor "Yellow"
 
-# TODO: Check current execution policy
-# Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
 # Verify if scoop is installed
 if (Get-Command scoop) {
@@ -126,13 +146,102 @@ if (Get-Command scoop) {
   Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
 }
 
-# Fix for scoop error: https://github.com/lukesampson/scoop/issues/3528
+# Fix for scoop-completion error: https://github.com/lukesampson/scoop/issues/3528
 Invoke-Expression "scoop config alias @{}"
 
 # Install scoop packages
-# Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
+Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
-# scoop install rustup
+# Scoop Utilities
+scoop install sudo
+scoop install 7zip
+scoop install innounp
+scoop install dark
+scoop install lessmsi
+scoop install aria2
+scoop install scoop-completion
+
+# Programming Languages
+scoop install go
+scoop install nodejs-lts
+scoop install perl
+scoop install python
+# Allow other applications to find python
+# $pythonDir = Invoke-Expression "scoop prefix python"
+# Invoke-Expression "$pythonDir\install-pep-514.reg"
+# TODO: Upgrade pip and setuptools
+scoop install python27
+scoop install ruby26
+# TODO: run gem update --system then gem update
+scoop install rustup
+
+# Development Tools
+scoop install bat
+# scoop install colortool
+scoop install dust
+scoop install fd
+# scoop install grex
+scoop install heroku-cli
+scoop install less
+scoop install lsd
+scoop install make
+scoop install msys2
+# ridk exec pacman -S mingw-w64-x86_64-gdbm
+# TODO: run msys2 then ridk install
+scoop install neovim
+scoop install ripgrep
+scoop install s
+# scoop install sqlite
+scoop install winfetch
+
+# Shells and Terminals
+scoop install pwsh
+scoop install windows-terminal
+
+# Git Tools
+scoop install github
+scoop install gitkraken
+scoop install hub
+scoop install lazygit
+scoop install onefetch
+
+# Applications
+scoop install android-studio
+scoop install bulk-crap-uninstaller
+scoop install ccleaner
+scoop install imagemagick
+scoop install inkscape
+scoop install powertoys
+# scoop install rufus
+scoop install snappy-driver-installer-origin
+scoop install speccy
+scoop install sumatrapdf
+scoop install teracopy-np
+scoop install zeal
+
+# Music Applications
+scoop install dopamine
+scoop install ffmpeg
+scoop install mpv
+scoop install musikcube
+scoop install picard
+scoop install spotify-tui
+scoop install youtube-dl
+
+# Fonts
+scoop install FiraCode-NF
+scoop install Hack-NF
+
+# Windows Redistributable
+scoop install vcredist2010
+scoop install vcredist2015
+scoop install vcredist2019
+scoop uninstall vcredist2010
+scoop uninstall vcredist2015
+scoop uninstall vcredist2019
+
+# Cleanup Scoop Cache
+scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
