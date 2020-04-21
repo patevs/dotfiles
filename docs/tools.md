@@ -82,6 +82,7 @@
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
+* [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`spotify-tui`](https://github.com/Rigellute/spotify-tui) A Spotify client for the terminal.
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
