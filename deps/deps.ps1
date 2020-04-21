@@ -256,6 +256,10 @@ scoop cache rm *
 
 # https://github.com/fboender/multi-git-status
 
+# https://github.com/patevs/ls-with-git-status
+
+# https://github.com/bill-auger/git-branch-status
+
 # neofetch (scoop -> requires git)
 # https://github.com/dylanaraps/neofetch/
 
@@ -267,9 +271,9 @@ scoop cache rm *
 # TODO: Ensure dotnet is installed
 
 # NOTE: Requires .NET Core 2.1 SDK or newer
+
 # dotnet tool install --global dotnet-outdated
 # dotnet tool install --global dotnet-retire
-# NOTE: Requires .NET Core 2.1 SDK or newer
 # dotnet tool install --global git-status-cli
 # dotnet tool install --global Moniker.Cli
 # dotnet tool install --global nyancat
@@ -283,22 +287,10 @@ scoop cache rm *
 
 # gitbatch
 # go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
-
 # gotop
 # go get -u github.com/xxxserxxx/gotop/cmd/gotop
-
 # lsp
 # go get github.com/dborzov/lsp
-
-# s (scoop)
-
-# ------------------------------------------------------------------------------------------------------- #
-
-# PowerShell Tools
-# ================
-
-# Winfetch (scoop)
-# https://github.com/lptstr/winfetch/
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -329,10 +321,12 @@ scoop cache rm *
 
 ## bat-extras
 
+# cargo install du-dust
+# cargo install eva
+# cargo install tokei
+
 # Invoke-Expression "cargo install du-dust"
 # Invoke-Expression "cargo install eva"
-# Invoke-Expression "cargo install lsd"
-# Invoke-Expression "cargo install monolith"
 # Invoke-Expression "cargo install tokei"
 
 # ------------------------------------------------------------------------------------------------------- #
