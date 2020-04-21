@@ -185,6 +185,7 @@ scoop install less
 scoop install lsd
 scoop install make
 scoop install msys2
+# ridk exec pacman -S mingw-w64-x86_64-gdbm
 # TODO: run msys2 then ridk install
 scoop install neovim
 scoop install ripgrep
