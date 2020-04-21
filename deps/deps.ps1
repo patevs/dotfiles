@@ -151,36 +151,41 @@ Invoke-Expression "scoop config alias @{}"
 # Install scoop packages
 Write-Host "Installing Scoop Packages..." -ForegroundColor "Yellow"
 
+# Scoop Utilities
 scoop install sudo
 scoop install 7zip
 scoop install innounp
 scoop install dark
 scoop install lessmsi
 scoop install aria2
+scoop install scoop-completion
+
+# Programming Languages
+scoop install go
+scoop install nodejs-lts
+scoop install perl
+# TODO: Upgrade pip and setuptools
+scoop install python
+scoop install python27
+scoop install ruby26
+scoop install rustup
 
 scoop install bat
 # scoop install colortool
 scoop install dust
 scoop install fd
-scoop install go
 # scoop install grex
 scoop install heroku-cli
 scoop install less
 scoop install lsd
+# lsd requires vcredist2015
+scoop install vcredist2015
+scoop uninstall vcredist2015
 scoop install make
 scoop install msys2
 scoop install neovim
-scoop install nodejs-lts
-scoop install perl
-
-# TODO: Upgrade pip and setuptools
-scoop install python
-scoop install python27
 scoop install ripgrep
-scoop install ruby26
-scoop install rustup
 scoop install s
-scoop install scoop-completion
 # scoop install sqlite
 scoop install winfetch
 
