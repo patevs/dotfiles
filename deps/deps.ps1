@@ -3,6 +3,7 @@
 # -------- #
 
 # Check to see if we are currently running "as Administrator"
+# TODO: Add function to check if elevated
 if (!(Test-Elevated)) {
   $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
   $newProcess.Arguments = $myInvocation.MyCommand.Definition;
