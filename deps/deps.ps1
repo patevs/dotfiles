@@ -105,6 +105,8 @@ RefreshEnvironment
 # Scoop
 # =====
 
+# TODO: ENsure git is installed
+
 Write-Host "Installing Scoop..." -ForegroundColor "Yellow"
 
 # TODO: Check current execution policy
@@ -136,8 +138,41 @@ Invoke-Expression "scoop config alias @{}"
 scoop install sudo
 scoop install innounp
 scoop install dark
+scoop install lessmsi
+scoop install aria2
 
 scoop install 7zip
+scoop install bat
+# scoop install colortool
+scoop install dust
+scoop install fd
+scoop install go
+# scoop install grex
+scoop install heroku-cli
+scoop install less
+scoop install lsd
+scoop install make
+# scoop install msys2
+
+scoop install github
+scoop install gitkraken
+scoop install hub
+scoop install lazygit
+
+scoop install bulk-crap-uninstaller
+scoop install ccleaner
+scoop install android-studio
+
+scoop install imagemagick
+scoop install inkscape
+
+scoop install dopamine
+scoop install ffmpeg
+scoop install mpv
+scoop install musikcube
+
+scoop install FiraCode-NF
+scoop install Hack-NF
 
 # scoop install rustup
 
