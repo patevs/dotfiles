@@ -19,6 +19,7 @@ if (!(Test-Elevated)) {
 # =======================
 
 # Write-Host "Updating Help..." -ForegroundColor "Yellow"
+
 # Update-Help -Force
 # Update-Help -UICulture en-US
 
@@ -28,10 +29,11 @@ if (!(Test-Elevated)) {
 # =================
 
 Write-Host "Installing Package Providers..." -ForegroundColor "Yellow"
+
 Get-PackageProvider NuGet -Force | Out-Null
 # Chocolatey Provider is not ready yet. Use normal Chocolatey
-#Get-PackageProvider Chocolatey -Force
-#Set-PackageSource -Name chocolatey -Trusted
+# Get-PackageProvider Chocolatey -Force
+# Set-PackageSource -Name chocolatey -Trusted
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -39,6 +41,7 @@ Get-PackageProvider NuGet -Force | Out-Null
 # ==================
 
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
+
 Install-Module -Name PackageManagement -Force
 # Install-Module -Name PowerShellGet -Force
 Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
@@ -67,7 +70,12 @@ Install-Module -Name yarn-completion -Scope CurrentUser -Force
 
 Write-Host "Installing Chocolatey..." -ForegroundColor "Yellow"
 
+# Verify chocolatey is installed
 if (which cinst) {
+  # Update chocolatey
+  choco upgrade chocolatey -y
+} else {
+  # Install chocolatey
   Invoke-Expression (new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')
   Refresh-Environment
   choco feature enable -n=allowGlobalConfirmation
@@ -129,7 +137,7 @@ Write-Host "Installing Scoop..." -ForegroundColor "Yellow"
 
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
-# Verify if scoop is installed
+# Verify scoop is installed
 if (Get-Command scoop) {
   # Update scoop
   Invoke-Expression "scoop update"
@@ -331,8 +339,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# NodeJS
-# ======
+# NodeJS and NPM
+# ==============
 
 # nvm on
 # $nodeLtsVersion = choco search nodejs-lts --limit-output | ConvertFrom-String -TemplateContent "{Name:package-name}\|{Version:1.11.1}" | Select -ExpandProperty "Version"
