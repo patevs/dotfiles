@@ -80,7 +80,7 @@ git submodule update --init --recursive
 ├── pwsh
 ├── utils
 ├── wt
-|  └── profiles.json
+│  └── profiles.json
 ├── .editorconfig
 ├── .gitmodules
 ├── LICENSE
