@@ -53,6 +53,7 @@ Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 Install-Module -Name PackageManagement -Force
 # Install-Module -Name PowerShellGet -Force
 Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
+# Install-Module -Name Pester -Scope CurrentUser
 # Install-Module -Name Pester -Force -SkipPublisherCheck -Scope CurrentUser
 # Install-Module -Name Configuration
 
