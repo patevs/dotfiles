@@ -30,7 +30,16 @@ if (!(Test-Elevated)) {
 
 Write-Host "Installing Package Providers..." -ForegroundColor "Yellow"
 
+# NuGet
 Get-PackageProvider NuGet -Force | Out-Null
+
+# requires `PackageManagement` and `Provider` modules
+# Install-PackageProvider NuGet -Force
+# Import-PackageProvider NuGet -Force
+
+# Set PSGallery as a trusted repository
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+
 # Chocolatey Provider is not ready yet. Use normal Chocolatey
 # Get-PackageProvider Chocolatey -Force
 # Set-PackageSource -Name chocolatey -Trusted
