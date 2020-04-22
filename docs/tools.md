@@ -1,6 +1,6 @@
 # Tools
 
-> A collections of useful tools.
+> Various useful tools and programs that I use.
 
 ---
 
@@ -33,6 +33,8 @@
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
 
+---
+
 ## DotNet Tools
 
 * [`dotnet-outdated`](https://github.com/jerriep/dotnet-outdated)
@@ -40,6 +42,8 @@
 * [`git-status-cli`](https://github.com/jerriep/git-status-cli)
 * [`Moniker`](https://github.com/alexmg/Moniker)
 * [`nyancat.cs`](https://github.com/nickvdyck/nyancat.cs)
+
+---
 
 ## Go Tools
 
@@ -52,9 +56,13 @@
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 
+---
+
 ## PowerShell Tools
 
 * [`winfetch`](https://github.com/lptstr/winfetch/)
+
+---
 
 ## Python Tools
 
@@ -66,6 +74,8 @@
 * [`spotify-downloader`](https://github.com/ritiek/spotify-downloader) Download Spotify playlists from YouTube with albumart. and metadata.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
+
+---
 
 ## Rust Tools
 
