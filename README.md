@@ -4,7 +4,38 @@
 
 ---
 
+## Documentation
+
+- [`docs`](./docs/docs.md)
+- [`theme`](./docs/theme.md)
+- [`tools`](./docs/theme.md)
+
+---
+
 ## Installation
+
+CLone the repository
+
+```powershell
+git clone https://github.com/patevs/dotfiles.git
+cd dotfiles
+```
+
+Install PowerShell profile. Tested with PowerShell `5.1` and `7.0`
+
+```powershell
+cd pwsh
+./bootstrap.ps1
+```
+
+Install Dependencies
+
+```powershell
+cd deps
+./deps.ps1
+```
+
+Initialize Git SUbmodule
 
 ```powershell
 git submodule update --init --recursive
