@@ -32,6 +32,8 @@ Write-Host "Installing Package Providers..." -ForegroundColor "Yellow"
 
 # NuGet
 Get-PackageProvider NuGet -Force | Out-Null
+
+# Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 # Import-PackageProvider NuGet -Force
 
 # Set PSGallery as a trusted repository
@@ -51,11 +53,16 @@ Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 Install-Module -Name PackageManagement -Force
 # Install-Module -Name PowerShellGet -Force
 Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
+# PS 6+
+# Install-Module -Name Pester -Scope CurrentUser
+# PS 5.1
+# Install-Module -Name Pester -Force -SkipPublisherCheck -Scope CurrentUser
 # Install-Module -Name Configuration
 
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
 Install-Module -Name PSWindowsUpdate -Scope CurrentUser -Force
 # Install-Module -Name PSWriteColor -Scope CurrentUser -Force
+# Install-Module -Name PSKoans -Scope CurrentUser -Force
 
 Install-Module -Name npm-completion -Scope CurrentUser -Force
 Install-Module -Name posh-cargo -Scope CurrentUser -Force -AllowClobber
@@ -203,6 +210,7 @@ scoop install msys2
 # ridk exec pacman -S mingw-w64-x86_64-gdbm
 # TODO: run msys2 then ridk install
 scoop install neovim
+# scoop install NuGet
 scoop install ripgrep
 scoop install s
 # scoop install sqlite

@@ -25,14 +25,28 @@ Install PowerShell profile. Tested with PowerShell `5.1` and `7.0`
 
 ```powershell
 cd pwsh
-./bootstrap.ps1
+.\bootstrap.ps1
 ```
 
 Install Dependencies
 
 ```powershell
 cd deps
-./deps.ps1
+.\deps.ps1
+```
+
+Install Git global configuration
+
+```powershell
+cd git
+.\bootstrap.ps1
+```
+
+Install NeoVim profile
+
+```powershell
+cd nvim
+.\bootstrap.ps1
 ```
 
 Initialize Git SUbmodule
@@ -66,7 +80,7 @@ git submodule update --init --recursive
 ├── pwsh
 ├── utils
 ├── wt
-|  └── profiles.json
+│  └── profiles.json
 ├── .editorconfig
 ├── .gitmodules
 ├── LICENSE
