@@ -32,6 +32,8 @@ Write-Host "Installing Package Providers..." -ForegroundColor "Yellow"
 
 # NuGet
 Get-PackageProvider NuGet -Force | Out-Null
+
+# Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 # Import-PackageProvider NuGet -Force
 
 # Set PSGallery as a trusted repository
@@ -51,6 +53,7 @@ Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 Install-Module -Name PackageManagement -Force
 # Install-Module -Name PowerShellGet -Force
 Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
+# Install-Module -Name Pester -Force -SkipPublisherCheck -Scope CurrentUser
 # Install-Module -Name Configuration
 
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
