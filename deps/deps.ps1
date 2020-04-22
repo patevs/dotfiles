@@ -32,9 +32,6 @@ Write-Host "Installing Package Providers..." -ForegroundColor "Yellow"
 
 # NuGet
 Get-PackageProvider NuGet -Force | Out-Null
-
-# requires `PackageManagement` and `Provider` modules
-# Install-PackageProvider NuGet -Force
 # Import-PackageProvider NuGet -Force
 
 # Set PSGallery as a trusted repository
