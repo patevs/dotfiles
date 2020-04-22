@@ -21,7 +21,7 @@ function Test-Elevated {
 
 # Produce UTF-8 by default
 # https://news.ycombinator.com/item?id=12991690
-# $PSDefaultParameterValues["Out-File:Encoding"] = "utf8"
+$PSDefaultParameterValues["Out-File:Encoding"] = "utf8"
 
 # https://technet.microsoft.com/en-us/magazine/hh241048.aspx
 $MaximumHistoryCount = 10000;
@@ -57,9 +57,9 @@ if (Get-Module -ListAvailable PSReadLine -ErrorAction SilentlyContinue) {
 # $GitPromptSettings.AfterStatus.ForegroundColor = [ConsoleColor]::Blue
 
 # Start SSH agent redirecting output to null
-#   https://stackoverflow.com/a/6461021
-# Start-SshAgent 2>&1> $null
+# https://stackoverflow.com/a/6461021
 # Start-SshAgent 2>&1 | Out-Null
+# Start-SshAgent 2>&1> $null
 
 # --------------------------------------------------------------------------------------------- #
 
