@@ -12,44 +12,40 @@
 
 ---
 
-## Installation
+## Usage
 
-CLone the repository
+CLone the repository:
 
 ```powershell
 git clone https://github.com/patevs/dotfiles.git
 cd dotfiles
 ```
 
-Install PowerShell profile. Tested with PowerShell `5.1` and `7.0`
+Install PowerShell profile:
 
 ```powershell
-cd pwsh
-.\bootstrap.ps1
+.\pwsh\bootstrap.ps1
 ```
 
-Install Dependencies
+Install global `Git` configuration:
 
 ```powershell
-cd deps
-.\deps.ps1
+.\git\bootstrap.ps1
 ```
 
-Install Git global configuration
+Install all dependencies:
 
 ```powershell
-cd git
-.\bootstrap.ps1
+.\dep\deps.ps1
 ```
 
-Install NeoVim profile
+Install `Neovim` profile:
 
 ```powershell
-cd nvim
-.\bootstrap.ps1
+.\nvim\bootstrap.ps1
 ```
 
-Initialize Git SUbmodule
+Initialize `Git` submodules:
 
 ```powershell
 git submodule update --init --recursive
@@ -62,25 +58,27 @@ git submodule update --init --recursive
 ```md
 .
 ├── alacritty
-│  └── alacritty.yml
+│   └── alacritty.yml
 ├── bash
-│  ├── .bash_aliases
-│  ├── .bash_profile
-│  ├── .bashrc
-│  └── .profile
+│   ├── .bash_aliases
+│   ├── .bash_profile
+│   ├── .bashrc
+│   └── .profile
 ├── deps
-│  └── deps.ps1
+│   └── deps.ps1
 ├── docs
-│  ├── docs.md
-│  ├── theme.md
-│  └── tools.md
+│   ├── docs.md
+│   ├── theme.md
+│   └── tools.md
 ├── git
+│   ├── .gitconfig
+│   └── .gitignore
 ├── nvim
-│  └── init.vim
+│   └── init.vim
 ├── pwsh
 ├── utils
 ├── wt
-│  └── profiles.json
+│   └── profiles.json
 ├── .editorconfig
 ├── .gitmodules
 ├── LICENSE
