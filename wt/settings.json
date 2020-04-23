@@ -49,19 +49,19 @@
         "name": "PowerShell Core",
         // "source": "Windows.Terminal.PowershellCore",
         "commandline": "C:/Users/Pat/scoop/apps/pwsh/current/pwsh.exe",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell-core.png",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell-core.png"
       },
       {
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "name": "PowerShell",
         "commandline": "powershell.exe -NoLogo",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell.png",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell.png"
       },
       {
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "name": "cmd",
         "commandline": "cmd.exe",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png"
       },
       {
         "guid": "{187e9a26-26c5-4de5-9565-e7379812e4ce}",
