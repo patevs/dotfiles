@@ -324,6 +324,7 @@ scoop cache rm *
 python2 -m pip install --upgrade pip
 python2 -m pip install --upgrade setuptools
 python2 -m pip install --upgrade virtualenv
+python2 -m pip install --upgrade neovim
 
 # ------------------------------------------------------------------------------------------------------- #
 
