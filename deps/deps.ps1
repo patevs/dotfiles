@@ -316,10 +316,21 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Python Installs
-# ===============
+# Python2 Installs
+# ================
 
-# TODO: Ensure python and pip are installed
+# TODO: Ensure python2 and pip2 are installed
+
+python2 -m pip install --upgrade pip
+python2 -m pip install --upgrade setuptools
+python2 -m pip install --upgrade virtualenv
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Python3 Installs
+# ================
+
+# TODO: Ensure python3 and pip3 are installed
 
 # buku
 # pip3 install buku
