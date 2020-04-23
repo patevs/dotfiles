@@ -365,7 +365,16 @@ python3 -m pip install --upgrade setuptools
 # Ruby Installs
 # =============
 
-# TODO: Ensure Ruby, and ridk are installed
+# TODO: Ensure Ruby, gem, and ridk are installed
+
+# ridk install
+
+gem update --system
+gem update
+
+gem install bundler
+gem install rails
+gem install neovim
 
 # ------------------------------------------------------------------------------------------------------- #
 
