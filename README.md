@@ -21,7 +21,7 @@ git clone https://github.com/patevs/dotfiles.git
 cd dotfiles
 ```
 
-Install PowerShell profile:
+Install `PowerShell` profile:
 
 ```powershell
 .\pwsh\bootstrap.ps1
