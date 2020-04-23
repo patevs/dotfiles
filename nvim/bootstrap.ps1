@@ -8,18 +8,15 @@
     "%USERPROFILE%\APPDATA\Local\nvim\init.vim"
 
 .NOTES
-  Version:        1.0
+  Version:        1.1
   Author:         PatEvs (github.com/patevs)
-  Last Modified:  19/04/2020 - April 19th 2020
+  Last Modified:  23/04/2020 - April 19th 2020
 
 .EXAMPLE
   .\bootstrap.ps1
 #>
 
 # -------------------------------- [Declarations] ------------------------------- #
-
-#Script Version
-# $sScriptVersion = "1.0"
 
 # Destination directory location
 $destinationDir = "$env:LOCALAPPDATA\nvim"
