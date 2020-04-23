@@ -78,8 +78,8 @@ Install-Module -Name yarn-completion -Scope CurrentUser -Force
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Chocolatey
-# ==========
+# Chocolatey Installs
+# ===================
 
 Write-Host "Installing Chocolatey..." -ForegroundColor "Yellow"
 
@@ -141,8 +141,8 @@ RefreshEnvironment
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Scoop
-# =====
+# Scoop Installs
+# ==============
 
 # TODO: ENsure git is installed
 
@@ -267,8 +267,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Bash Tools
-# ==========
+# Bash Installs
+# =============
 
 # TODO: Ensure bash is installed
 
@@ -287,8 +287,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# DotNet Tools
-# ============
+# DotNet Installs
+# ===============
 
 # TODO: Ensure dotnet is installed
 
@@ -302,8 +302,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Go Tools
-# ========
+# Go Installs
+# ===========
 
 # TODO: Ensure go is installed
 
@@ -316,10 +316,25 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Python Tools
-# ============
+# Python2 Installs
+# ================
 
-# TODO: Ensure python and pip are installed
+# TODO: Ensure python2 and pip2 are installed
+
+python2 -m pip install --upgrade pip
+python2 -m pip install --upgrade setuptools
+python2 -m pip install --upgrade virtualenv
+python2 -m pip install --upgrade neovim
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Python3 Installs
+# ================
+
+# TODO: Ensure python3 and pip3 are installed
+
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade setuptools
 
 # buku
 # pip3 install buku
@@ -339,13 +354,32 @@ scoop cache rm *
 # DuckDuckGo utility
 # python -m pip install ddgr
 
+# Neovim
+# python -m pip install --upgrade neovim
+
 # wig
 # https://github.com/jekyc/wig
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Rust Tools
-# ==========
+# Ruby Installs
+# =============
+
+# TODO: Ensure Ruby, gem, and ridk are installed
+
+# ridk install
+
+gem update --system
+gem update
+
+gem install bundler
+gem install rails
+gem install neovim
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Rust Installs
+# =============
 
 # TODO: Ensure rustup, rust, and cargo are installed
 
@@ -361,8 +395,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# NodeJS and NPM
-# ==============
+# NodeJS and NPM Installs
+# =======================
 
 # nvm on
 # $nodeLtsVersion = choco search nodejs-lts --limit-output | ConvertFrom-String -TemplateContent "{Name:package-name}\|{Version:1.11.1}" | Select -ExpandProperty "Version"

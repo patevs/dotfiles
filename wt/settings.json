@@ -64,6 +64,12 @@
         "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png"
       },
       {
+        "name" : "VS 2019 Dev Cmd",
+        "commandline" : "cmd.exe /k \"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/Tools/VsDevCmd.bat\"",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/pwsh-preview.png",
+        "startingDirectory" : "%USERPROFILE%"
+      },
+      {
         "guid": "{187e9a26-26c5-4de5-9565-e7379812e4ce}",
         "name" : "Git Bash",
         "commandline" : "C:/Program Files/Git/bin/bash.exe -li",
