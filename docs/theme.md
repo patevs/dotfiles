@@ -14,6 +14,10 @@
 * [`Hack`](https://github.com/source-foundry/Hack)
 * [`Hack NF`](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
 
+[](.)
+
+* [`twemoji-color-font`](https://github.com/eosrei/twemoji-color-font)
+
 ---
 
 ## [Dracula](https://github.com/dracula/dracula-theme)
