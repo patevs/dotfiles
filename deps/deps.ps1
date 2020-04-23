@@ -331,6 +331,14 @@ scoop cache rm *
 # Install bukuserver required dependencies
 # python -m pip install flask flask_admin flask_api flask_bootstrap flask_paginate flask_wtf arrow
 
+# Print Buku version
+# buku --version
+# Print BukuServer version
+# bukuserver --version
+
+# DuckDuckGo utility
+# python -m pip install ddgr
+
 # wig
 # https://github.com/jekyc/wig
 
