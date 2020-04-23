@@ -44,4 +44,6 @@ Copy-Item -Path ./init.vim -Destination $destinationDir
 
 Remove-Variable destinationDir
 
+Invoke-Expression "nvim +PlugInstall"
+
 # ------------------------------------ [END] ------------------------------------ #
