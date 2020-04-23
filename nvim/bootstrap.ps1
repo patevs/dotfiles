@@ -41,6 +41,7 @@ Copy-Item -Path ./init.vim -Destination $destinationDir
 
 Remove-Variable destinationDir
 
+# Install neovim plugins
 Invoke-Expression "nvim +PlugInstall"
 
 # ------------------------------------ [END] ------------------------------------ #
