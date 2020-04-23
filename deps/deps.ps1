@@ -339,6 +339,9 @@ scoop cache rm *
 # DuckDuckGo utility
 # python -m pip install ddgr
 
+# Neovim
+# python -m pip install --upgrade neovim
+
 # wig
 # https://github.com/jekyc/wig
 
