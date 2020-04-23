@@ -333,6 +333,9 @@ python2 -m pip install --upgrade neovim
 
 # TODO: Ensure python3 and pip3 are installed
 
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade setuptools
+
 # buku
 # pip3 install buku
 
