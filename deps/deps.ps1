@@ -78,8 +78,8 @@ Install-Module -Name yarn-completion -Scope CurrentUser -Force
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Chocolatey
-# ==========
+# Chocolatey Installs
+# ===================
 
 Write-Host "Installing Chocolatey..." -ForegroundColor "Yellow"
 
@@ -141,8 +141,8 @@ RefreshEnvironment
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Scoop
-# =====
+# Scoop Installs
+# ==============
 
 # TODO: ENsure git is installed
 
@@ -267,8 +267,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Bash Tools
-# ==========
+# Bash Installs
+# =============
 
 # TODO: Ensure bash is installed
 
@@ -287,8 +287,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# DotNet Tools
-# ============
+# DotNet Installs
+# ===============
 
 # TODO: Ensure dotnet is installed
 
@@ -302,8 +302,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Go Tools
-# ========
+# Go Installs
+# ===========
 
 # TODO: Ensure go is installed
 
@@ -316,8 +316,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Python Tools
-# ============
+# Python Installs
+# ===============
 
 # TODO: Ensure python and pip are installed
 
@@ -344,8 +344,15 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Rust Tools
-# ==========
+# Ruby Installs
+# =============
+
+# TODO: Ensure Ruby, and ridk are installed
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Rust Installs
+# =============
 
 # TODO: Ensure rustup, rust, and cargo are installed
 
@@ -361,8 +368,8 @@ scoop cache rm *
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# NodeJS and NPM
-# ==============
+# NodeJS and NPM Installs
+# =======================
 
 # nvm on
 # $nodeLtsVersion = choco search nodejs-lts --limit-output | ConvertFrom-String -TemplateContent "{Name:package-name}\|{Version:1.11.1}" | Select -ExpandProperty "Version"
