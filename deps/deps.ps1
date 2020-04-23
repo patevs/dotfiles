@@ -336,6 +336,9 @@ scoop cache rm *
 # Print BukuServer version
 # bukuserver --version
 
+# DuckDuckGo utility
+# python -m pip install ddgr
+
 # wig
 # https://github.com/jekyc/wig
 
