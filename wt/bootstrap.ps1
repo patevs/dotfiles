@@ -5,12 +5,12 @@
 .DESCRIPTION
   Copies Windows Terminal profile.json to:
 
-    "%LOCALAPPDATA%\Microsoft\Windows Terminal\profiles.json"
+    "%LOCALAPPDATA%\Microsoft\Windows Terminal\settings.json"
 
 .NOTES
   Version:        1.0
   Author:         PatEvs (github.com/patevs)
-  Last Modified:  19/04/2020 - April 19th 2020
+  Last Modified:  23/04/2020 - April 19th 2020
 
 .EXAMPLE
   .\bootstrap.ps1
@@ -45,7 +45,7 @@ New-Item $iconsDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>
 Copy-Item -Path ./icons/*.png -Destination $iconsDir
 
 # Copy profile to destination
-Copy-Item -Path ./profiles.json -Destination $destinationDir
+Copy-Item -Path ./*.json -Destination $destinationDir
 
 Remove-Variable iconsDir
 Remove-Variable destinationDir

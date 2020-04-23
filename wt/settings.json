@@ -1,5 +1,5 @@
 /**********************
- * * wt/profiles.json *
+ * * wt/settings.json *
  **********************/
 
 // Profiles for use with Windows Terminal
@@ -8,8 +8,8 @@
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 
 // Default location:
-//  "%HOME%\AppData\Local\Microsoft\Windows Terminal\profiles.json"
-//  "%LOCALAPPDATA%\Microsoft\Windows Terminal\profiles.json"
+//  "%HOME%\AppData\Local\Microsoft\Windows Terminal\settings.json"
+//  "%LOCALAPPDATA%\Microsoft\Windows Terminal\settings.json"
 
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
@@ -49,22 +49,19 @@
         "name": "PowerShell Core",
         // "source": "Windows.Terminal.PowershellCore",
         "commandline": "C:/Users/Pat/scoop/apps/pwsh/current/pwsh.exe",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell-core.png",
-        "hidden": false
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell-core.png"
       },
       {
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "name": "PowerShell",
         "commandline": "powershell.exe -NoLogo",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell.png",
-        "hidden": false
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell.png"
       },
       {
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "name": "cmd",
         "commandline": "cmd.exe",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png",
-        "hidden": false
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png"
       },
       {
         "guid": "{187e9a26-26c5-4de5-9565-e7379812e4ce}",
@@ -76,7 +73,8 @@
         "guid": "{7df16305-71ee-4928-ae34-593a2c7ec2d5}",
         "name" : "MSYS2",
         "commandline" : "C:/Users/Pat/scoop/apps/msys2/current/msys2_shell.cmd -defterm -no-start -mingw64",
-        "icon": "C:/Users/Pat/scoop/apps/msys2/current/msys2.ico"
+        "icon": "C:/Users/Pat/scoop/apps/msys2/current/msys2.ico",
+        "hidden": true
       },
       {
         "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",

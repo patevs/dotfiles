@@ -5,17 +5,17 @@
 # Global gitconfig file.
 
 [user]
-  name = Patrick Evans
+    name = Patrick Evans
 	email = ppevans11@gmail.com
 	username = PatEvs
 [github]
 	user = PatEvs
 [core]
-  editor = nvim
+    editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	longpaths = true
-  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  excludesfile = ~/.gitignore
+    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    excludesfile = ~/.gitignore
 [color]
 	ui = true
 [color "branch"]
@@ -26,7 +26,7 @@
 	# meta = yellow bold
 	frag = magenta bold
 	commit = 11
-  old = red bold
+    old = red bold
 	new = green bold
 	whitespace = red reverse
 [color "diff-highlight"]
@@ -49,8 +49,8 @@
 	a = add --all
 	# ai = add -i
 	#############
-  b = branch
-  # ba = branch -a
+    b = branch
+    # ba = branch -a
 	# bd = branch -d
 	# bdd = branch -D
 	# br = branch -r
@@ -74,7 +74,7 @@
 	# clgu = !sh -c 'git clone git@github.com:$(git config --get user.username)/$1 $1' -
 	#############
 	d = diff
-  ds = diff --staged
+    ds = diff --staged
 	# dp = diff --patience
 	# dc = diff --cached
 	# dk = diff --check
@@ -84,10 +84,10 @@
 	#############
 	l = log --oneline
 	# lg = log --oneline --graph --decorate
-  lg = log -p
-  lol = log --graph --decorate --pretty=oneline --abbrev-commit
-  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
-  #############
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+    #############
 	# ls = ls-files
 	# lsf = !git ls-files | grep -i
 	#############
@@ -95,8 +95,8 @@
 	# ma = merge --abort
 	# mc = merge --continue
 	# ms = merge --skip
-  #############
-  o = checkout
+    #############
+    o = checkout
 	om = checkout master
 	ob = checkout -b
 	# opr = !sh -c 'git fo pull/$1/head:pr-$1 && git o pr-$1'
@@ -105,8 +105,8 @@
 	# psf = push -f
 	# psu = push -u
 	pst = push --tags
-  #############
-  pso = push origin
+    #############
+    pso = push origin
 	# psao = push --all origin
 	# psfo = push -f origin
 	# psuo = push -u origin
@@ -137,7 +137,7 @@
 	# pbum = pull --rebase upstream master
 	# pbuc = !git pull --rebase upstream $(git bc)
 	#############
-  r = remote
+    r = remote
 	ra = remote add
 	rr = remote rm
 	rv = remote -v
@@ -153,13 +153,13 @@
 	# rpo = remote prune origin
 	# rpu = remote prune upstream
 	# #############
-  s = status
+    s = status
 	sb = status -s -b
 	#############
-  t = tag
+    t = tag
 	# td = tag -d
 	#############
-  # bump = !sh -c 'git commit -am \"Version bump v$1\" && git psuoc && git release $1' -
+    # bump = !sh -c 'git commit -am \"Version bump v$1\" && git psuoc && git release $1' -
 	# release = !sh -c 'git tag v$1 && git pst' -
 	# unrelease = !sh -c 'git tag -d v$1 && git pso :v$1' -
 	# merged = !sh -c 'git o master && git plom && git bd $1 && git rpo' -
@@ -169,8 +169,8 @@
 	# whois = !sh -c 'git log -i -1 --author=\"$1\" --pretty=\"format:%an <%ae>\"' -
 	# serve = daemon --reuseaddr --verbose --base-path=. --export-all ./.git
 	#############
-  # unstage = reset HEAD
-  # Show files ignored by git:
-  # ign = ls-files -o -i --exclude-standard
+    # unstage = reset HEAD
+    # Show files ignored by git:
+    # ign = ls-files -o -i --exclude-standard
 
 # EOF #
