@@ -8,4 +8,11 @@ function Test-Elevated {
   return $userPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
 }
 
-# .\components/powershell.ps1
+Push-Location ("components")
+
+# From within the ./components directory...
+.\powershell.ps1
+
+Pop-Location
+
+# EOF #
