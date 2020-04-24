@@ -94,6 +94,7 @@
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
+* [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
 * [`spotify-tui`](https://github.com/Rigellute/spotify-tui) A Spotify client for the terminal.
 * [`starship`](https://github.com/starship/starship) Minimal, blazing-fast, and infinitely customizable prompt for any shell!
 * [`tokei`](https://github.com/XAMPPRocky/tokei)

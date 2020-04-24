@@ -66,7 +66,7 @@
       {
         "name" : "VS 2019 Dev Cmd",
         "commandline" : "cmd.exe /k \"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/Tools/VsDevCmd.bat\"",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/pwsh-preview.png",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/visual-studio.png",
         "startingDirectory" : "%USERPROFILE%"
       },
       {
