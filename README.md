@@ -12,7 +12,7 @@
 
 ---
 
-## Usage
+## Usage Instructions
 
 CLone the repository:
 
@@ -24,25 +24,29 @@ cd dotfiles
 Install `PowerShell` profile:
 
 ```powershell
-.\pwsh\bootstrap.ps1
+cd pwsh
+.\bootstrap.ps1
 ```
 
 Install global `Git` configuration:
 
 ```powershell
-.\git\bootstrap.ps1
-```
-
-Install all dependencies:
-
-```powershell
-.\dep\deps.ps1
+cd git
+.\bootstrap.ps1
 ```
 
 Install `Neovim` profile:
 
 ```powershell
-.\nvim\bootstrap.ps1
+cd nvim
+.\bootstrap.ps1
+```
+
+Install all dependencies:
+
+```powershell
+cd deps
+.\deps.ps1
 ```
 
 Initialize `Git` submodules:
