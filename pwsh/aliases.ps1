@@ -120,6 +120,9 @@ Set-Alias -Name time -Value Measure-Command
 # ls with git status
 ${function:lsg} = { Write-Host ""; bash C:\tools\ls-with-git-status\lsg }
 
+# Git branch status
+${function:gbs} = { Write-Host ""; bash C:\tools\git-branch-status\git-branch-status -l }
+
 # Git Multi Status
 ${function:mgs} = { bash C:\tools\multi-git-status\mgitstatus --depth=0 }
 
