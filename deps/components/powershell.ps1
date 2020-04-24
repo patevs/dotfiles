@@ -23,9 +23,9 @@
 
 # Check to see if we are currently running "as Administrator"
 if (!(Test-Elevated)) {
-  Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
-  exit
-  # Start-Process powershell -Verb runAs
+  # Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
+  # exit
+  # Start-Process powershell "-File `"$PSCommandPath`"" -Verb runAs
   # $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
   # $newProcess.Arguments = $myInvocation.MyCommand.Definition;
   # $newProcess.Verb = "runas";
