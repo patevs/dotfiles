@@ -217,9 +217,10 @@ function Get-Path {
 }
 
 # Add a folder to $env:Path
-# function PrependEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+function PrependEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+
 # function PrependEnvPathIfExists([String]$path) { if (Test-Path $path) { PrependEnvPath $path } }
-# function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
 # function AppendEnvPathIfExists([String]$path) { if (Test-Path $path) { AppendEnvPath $path } }
 
 # ------------------------------------------------------------------------------------------------------- #
