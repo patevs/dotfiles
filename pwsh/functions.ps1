@@ -227,8 +227,6 @@ function GetPath {
 # Git Functions
 # =============
 
-# TODO: Move these functions to global .gitconfig file
-
 # Print Git Status
 function gs {
   # Print-Green-Underline "Git Status:"
@@ -244,6 +242,7 @@ function gss {
   git remote -v
   # Print-Green-Underline "Git Status:"
   Write-Output "`n Git Status:`n"
+  # TODO: Replace with git-branch-status
   g3l --status
   Write-Output "" # new line
   git status
