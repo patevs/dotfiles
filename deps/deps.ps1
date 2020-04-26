@@ -207,6 +207,7 @@ scoop install rustup
 
 # Development Tools
 scoop install bat
+# scoop install cmake
 # scoop install colortool
 scoop install dust
 scoop install fd
@@ -214,11 +215,12 @@ scoop install fd
 scoop install heroku-cli
 scoop install less
 scoop install lsd
-scoop install make
+# scoop install make
 scoop install msys2
 # ridk exec pacman -S mingw-w64-x86_64-gdbm
 # TODO: run msys2 then ridk install
 scoop install neovim
+# scoop install ninja
 # scoop install NuGet
 scoop install ripgrep
 scoop install s
@@ -260,7 +262,7 @@ scoop install spotify-tui
 scoop install youtube-dl
 
 # Fonts
-scoop install FiraCode-NF
+# scoop install FiraCode-NF
 scoop install Hack-NF
 
 # Windows Redistributable
