@@ -81,6 +81,7 @@ CALL npm install --global g3l
 CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
 :: CALL npm install --global git-labelmaker
+CALL npm install --global husky
 :: # https://github.com/yyx990803/starz
 :: CALL npm install --global starz
 :: # https://github.com/FredrikNoren/ungit
