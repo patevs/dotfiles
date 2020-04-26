@@ -204,7 +204,7 @@ function RefreshEnvironment {
 }
 
 # Set a permanent Environment variable, and reload it into $env
-function SetEnvironment([String] $variable, [String] $value) {
+function Set-Environment([String] $variable, [String] $value) {
   Set-ItemProperty "HKCU:\Environment" $variable $value
   # Manually setting Registry entry. SetEnvironmentVariable is too slow because of blocking HWND_BROADCAST
   #[System.Environment]::SetEnvironmentVariable("$variable", "$value","User")
@@ -212,14 +212,15 @@ function SetEnvironment([String] $variable, [String] $value) {
 }
 
 # Get Environment Path
-function GetPath {
+function Get-Path {
 	($Env:Path).Split(";")
 }
 
 # Add a folder to $env:Path
-# function PrependEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+function PrependEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
+
 # function PrependEnvPathIfExists([String]$path) { if (Test-Path $path) { PrependEnvPath $path } }
-# function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
 # function AppendEnvPathIfExists([String]$path) { if (Test-Path $path) { AppendEnvPath $path } }
 
 # ------------------------------------------------------------------------------------------------------- #
