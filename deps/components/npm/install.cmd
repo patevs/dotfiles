@@ -398,10 +398,10 @@ ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 :: # https://github.com/alexanderGugel/ied
 :: CALL npm install --global ied
 :: # https://github.com/pnpm/pnpm
-:: CALL npm install --global pnpm
+CALL npm install --global pnpm
 :: Upgrade pnpm
 :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-:: CALL pnpm install --global pnpm
+CALL pnpm install --global pnpm
 :: # https://github.com/yarnpkg/yarn
 CALL npm install --global yarn
 
