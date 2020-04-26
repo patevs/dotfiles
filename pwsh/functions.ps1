@@ -212,7 +212,7 @@ function Set-Environment([String] $variable, [String] $value) {
 }
 
 # Get Environment Path
-function GetPath {
+function Get-Path {
 	($Env:Path).Split(";")
 }
 
