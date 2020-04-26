@@ -28,6 +28,7 @@
 * [`git-stats`](https://github.com/IonicaBizau/git-stats) Local git statistics including GitHub-like contributions calendars.
 * [`gitmoji-cli`](https://github.com/carloscuesta/gitmoji-cli) Interactive command line tool for using emojis on commits.
 * [`git-labelmaker`](https://github.com/himynameisdave/git-labelmaker) Manage your GitHub labels from the command line.
+* [`husky`](https://github.com/typicode/husky) Git hooks made easy.
 * [`starz`](https://github.com/yyx990803/starz) Count a GitHub user's total stars.
 * [`ungit`](https://github.com/FredrikNoren/ungit) The easiest way to use git. On any platform. Anywhere.
 

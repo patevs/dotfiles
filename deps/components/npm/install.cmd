@@ -81,6 +81,7 @@ CALL npm install --global g3l
 CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
 :: CALL npm install --global git-labelmaker
+CALL npm install --global husky
 :: # https://github.com/yyx990803/starz
 :: CALL npm install --global starz
 :: # https://github.com/FredrikNoren/ungit
@@ -397,10 +398,10 @@ ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 :: # https://github.com/alexanderGugel/ied
 :: CALL npm install --global ied
 :: # https://github.com/pnpm/pnpm
-:: CALL npm install --global pnpm
+CALL npm install --global pnpm
 :: Upgrade pnpm
 :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
-:: CALL pnpm install --global pnpm
+CALL pnpm install --global pnpm
 :: # https://github.com/yarnpkg/yarn
 CALL npm install --global yarn
 

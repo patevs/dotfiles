@@ -25,6 +25,9 @@ Set-Environment "HERMES_WS_DIR"  "C:\Users\Pat\git\dev\hermes_ws"
 # MSBuild
 Set-Environment "MSBUILD" "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin"
 
+# Watchman
+Set-Environment "WATCHMAN_HOME" "C:\tools\watchman"
+
 # Make Neovim the default editor
 Set-Environment "EDITOR" "nvim"
 Set-Environment "GIT_EDITOR" $Env:EDITOR
@@ -36,6 +39,7 @@ AppendEnvPath "$env:CODE_HOME\bin"
 AppendEnvPath "$env:GIT_HOME\bin"
 AppendEnvPath "$env:GIT_HOME\cmd"
 AppendEnvPath "$env:MSBUILD"
+AppendEnvPath "$env:WATCHMAN_HOME\bin"
 
 # Disable the Progress Bar
 # $ProgressPreference='SilentlyContinue'
