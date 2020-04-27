@@ -68,6 +68,7 @@
 
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
+* [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`ranger`](https://github.com/ranger/ranger)
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
