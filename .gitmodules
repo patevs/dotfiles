@@ -6,19 +6,12 @@
 	path = bash/bash-wakatime
 	url = https://github.com/gjsheep/bash-wakatime.git
 
+[submodule "music"]
+	path = music
+	url = https://github.com/patevs/music.git
+
 [submodule "utils"]
 	path = utils
 	url = https://github.com/patevs/utility-scripts
-
-# [submodule "tools/dotbot"]
-# 	path = tools/dotbot
-#	url = https://github.com/anishathalye/dotbot.git
-#	ignore = dirty
-# [submodule "tools/dotbot-plugins/dotbot-vscode"]
-# 	path = tools/dotbot-plugins/dotbot-vscode
-#	url = https://github.com/hujianxin/dotbot-vscode.git
-# [submodule "tools/dotbot-plugins/dotbot-asdf"]
-# 	path = tools/dotbot-plugins/dotbot-asdf
-# 	url = https://github.com/sobolevn/dotbot-asdf.git
 
 # EOF #
