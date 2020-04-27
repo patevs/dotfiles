@@ -25,6 +25,7 @@
 
 ## Bash Tools
 
+* [`Geo`](https://github.com/jakewmeyer/Geo) Bash utility for easy wan, lan, router, dns, mac address, and geolocation output
 * [`git-branch-status`](https://github.com/bill-auger/git-branch-status)
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
