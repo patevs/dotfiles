@@ -77,6 +77,7 @@ git submodule update --init --recursive
 ├── git
 │   ├── .gitconfig
 │   └── .gitignore
+├── music
 ├── nvim
 │   └── init.vim
 ├── pwsh
@@ -84,6 +85,7 @@ git submodule update --init --recursive
 ├── wt
 │   └── profiles.json
 ├── .editorconfig
+├── .gitignore
 ├── .gitmodules
 ├── LICENSE
 ├── package.json
