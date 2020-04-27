@@ -22,3 +22,6 @@
 # 	url = https://github.com/sobolevn/dotbot-asdf.git
 
 # EOF #
+[submodule "music"]
+	path = music
+	url = https://github.com/patevs/music.git
