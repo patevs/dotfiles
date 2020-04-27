@@ -25,6 +25,8 @@
 
 ## Bash Tools
 
+* [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Bash script for anonymizing the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
+* [`Geo`](https://github.com/jakewmeyer/Geo) Bash utility for easy wan, lan, router, dns, mac address, and geolocation output.
 * [`git-branch-status`](https://github.com/bill-auger/git-branch-status)
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
@@ -47,6 +49,7 @@
 
 ## Go Tools
 
+* [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gotop`](https://github.com/xxxserxxx/gotop)
@@ -66,7 +69,10 @@
 
 ## Python Tools
 
+* [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
+* [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
+* [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`ranger`](https://github.com/ranger/ranger)
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
