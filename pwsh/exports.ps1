@@ -32,7 +32,7 @@ Set-Environment "JAVA_HOME" "C:\Program Files\Java\jdk1.8.0_211"
 # Set-Environment "EDITOR" "nvim"
 # Set-Environment "GIT_EDITOR" $Env:EDITOR
 
-# Update Path
+# Update Path Environment Variable
 AppendEnvPath "$env:ANDROID_HOME\platform-tools"
 AppendEnvPath "$env:ANDROID_HOME\emulator"
 AppendEnvPath "$env:CODE_HOME\bin"
