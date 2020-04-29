@@ -48,9 +48,10 @@ ${function:modules} = { Get-Module -ListAvailable }
 # System Utility Aliases
 # ======================
 
+# TODO: Created alias bash to use git-bash
+
 # System information tools
-${function:neofetch} = { bash C:\tools\neofetch\neofetch }
-# ${function:winfetch} = { C:\tools\winfetch\src\winfetch.ps1 }
+${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 
 # Shutdown System
 # TODO: Fix me
@@ -118,13 +119,13 @@ Set-Alias -Name time -Value Measure-Command
 # ====================
 
 # ls with git status
-${function:lsg} = { Write-Host ""; bash C:\tools\ls-with-git-status\lsg }
+${function:lsg} = { Write-Host ""; bash C:\bin\ls-with-git-status\lsg }
 
 # Git branch status
-${function:gbs} = { Write-Host ""; bash C:\tools\git-branch-status\git-branch-status -l }
+${function:gbs} = { Write-Host ""; bash C:\bin\git-branch-status\git-branch-status -l }
 
 # Git Multi Status
-${function:mgs} = { bash C:\tools\multi-git-status\mgitstatus --depth=0 }
+${function:mgs} = { bash C:\bin\multi-git-status\mgitstatus --depth=0 }
 
 # Favour GitHub's hub client over vanilla git
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias -Name git -Value hub }

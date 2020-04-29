@@ -26,7 +26,7 @@ Set-Environment "JAVA_HOME" "C:\Program Files\Java\jdk1.8.0_211"
 # Set-Environment "MSBUILD_HOME" "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current"
 
 # Watchman
-# Set-Environment "WATCHMAN_HOME" "C:\tools\watchman"
+# Set-Environment "WATCHMAN_HOME" "C:\bin\watchman"
 
 # Make Neovim the default editor
 # Set-Environment "EDITOR" "nvim"
