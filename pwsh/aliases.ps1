@@ -48,6 +48,8 @@ ${function:modules} = { Get-Module -ListAvailable }
 # System Utility Aliases
 # ======================
 
+# TODO: Created alias bash to use git-bash
+
 # System information tools
 ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 
