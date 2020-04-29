@@ -121,8 +121,10 @@ choco install git.install
 choco install jdk8
 # choco install nuget.commandline   --limit-output
 # choco install nvm.portable        --limit-output
+# choco install pulseaudio
 choco install reactotron
 # choco install rsvg-convert
+# choco install vcxsrv
 # choco install visualstudio2019community
 choco install visualstudio2019buildtools
 # TODO: Install vscode extensions
@@ -224,6 +226,7 @@ scoop install neovim
 # scoop install NuGet
 scoop install ripgrep
 scoop install s
+# scoop install scrcpy
 # scoop install sqlite
 scoop install winfetch
 
