@@ -121,12 +121,12 @@ choco install git.install
 choco install jdk8
 # choco install nuget.commandline   --limit-output
 # choco install nvm.portable        --limit-output
-# choco install pulseaudio
+choco install pulseaudio
 choco install reactotron
 # choco install rsvg-convert
-# choco install vcxsrv
-# choco install visualstudio2019community
-choco install visualstudio2019buildtools
+choco install vcxsrv
+choco install visualstudio2019community
+# choco install visualstudio2019buildtools
 # TODO: Install vscode extensions
 choco install vscode.install
 # choco install webpi               --limit-output
