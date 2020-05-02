@@ -58,6 +58,8 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 :: # https://github.com/qw3rtman/git-fire
 
 
+CALL npm install --global @commitlint/cli
+CALL npm install --global commitlint-config-gitmoji
 :: # https://github.com/TejasQ/add-gitignore
 CALL npm install --global add-gitignore
 :: # https://github.com/IonicaBizau/cli-github
