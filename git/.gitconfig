@@ -12,13 +12,13 @@
 	user = PatEvs
 [core]
     editor = nvim
-	# pager = diff-so-fancy | less --tabs=4 -RFX
-	pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	# pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
 	longpaths = true
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
     excludesfile = ~/.gitignore
-[interactive]
-    diffFilter = delta --color-only
+# [interactive]
+#     diffFilter = delta --color-only
 [color]
 	ui = true
 [color "branch"]
