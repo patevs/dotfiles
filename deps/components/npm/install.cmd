@@ -58,6 +58,8 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 :: # https://github.com/qw3rtman/git-fire
 
 
+CALL npm install --global @commitlint/cli
+CALL npm install --global commitlint-config-gitmoji
 :: # https://github.com/TejasQ/add-gitignore
 CALL npm install --global add-gitignore
 :: # https://github.com/IonicaBizau/cli-github
@@ -72,6 +74,7 @@ CALL npm install --global diff-so-fancy
 CALL npm install --global g3l
 :: # https://github.com/mbostock/gistup
 :: CALL npm install --global gistup
+:: CALL npm install --global git-file-history
 :: # https://github.com/paulirish/git-open
 :: NOTE: Use `hub browse` command instead
 :: CALL npm install --global git-open
