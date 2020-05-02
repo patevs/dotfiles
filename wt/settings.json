@@ -64,22 +64,30 @@
         "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png"
       },
       {
-        "name" : "VS 2019 Dev Cmd",
-        "commandline" : "cmd.exe /k \"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/Tools/VsDevCmd.bat\"",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/visual-studio.png",
-        "startingDirectory" : "%USERPROFILE%"
-      },
-      {
         "guid": "{187e9a26-26c5-4de5-9565-e7379812e4ce}",
         "name" : "Git Bash",
         "commandline" : "C:/Program Files/Git/bin/bash.exe -li",
         "icon" : "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico"
       },
       {
+        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "name": "Ubuntu",
+        "source": "Windows.Terminal.Wsl",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/ubuntu.png"
+      },
+      {
         "guid": "{7df16305-71ee-4928-ae34-593a2c7ec2d5}",
         "name" : "MSYS2",
         "commandline" : "C:/Users/Pat/scoop/apps/msys2/current/msys2_shell.cmd -defterm -no-start -mingw64",
         "icon": "C:/Users/Pat/scoop/apps/msys2/current/msys2.ico",
+        "hidden": true
+      },
+      {
+        "guid": "{27cc0c27-a2cb-4041-88e1-5b0e2c46829e}",
+        "name" : "VS 2019 Dev Cmd",
+        "commandline" : "cmd.exe /k \"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/Tools/VsDevCmd.bat\"",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/visual-studio.png",
+        "startingDirectory" : "%USERPROFILE%",
         "hidden": true
       },
       {
