@@ -39,6 +39,7 @@ AppendEnvPath "$env:CODE_HOME\bin"
 AppendEnvPath "$env:GIT_HOME\bin"
 AppendEnvPath "$env:GIT_HOME\cmd"
 AppendEnvPath "$env:JAVA_HOME\bin"
+AppendEnvPath "C:\bin\git-delta"
 # AppendEnvPath "$env:MSBUILD_HOME\bin"
 # AppendEnvPath "$env:WATCHMAN_HOME\bin"
 
