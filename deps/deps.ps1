@@ -290,29 +290,36 @@ scoop cache rm *
 # DotNet Installs
 # ===============
 
-# TODO: Ensure dotnet is installed
-
 # NOTE: Requires .NET Core 2.1 SDK or newer
 
-# dotnet tool install --global dotnet-outdated
-# dotnet tool install --global dotnet-retire
-# dotnet tool install --global git-status-cli
-# dotnet tool install --global Moniker.Cli
-# dotnet tool install --global nyancat
+Write-Host "Installing DotNet Tools..." -ForegroundColor "Yellow"
+
+# Verify dotnet-sdk is installed
+if (Get-Command dotnet) {
+  dotnet tool install --global dotnet-outdated
+  dotnet tool install --global dotnet-retire
+  dotnet tool install --global git-status-cli
+  dotnet tool install --global Moniker.Cli
+  dotnet tool install --global nyancat
+} else {
+  Write-Host "ERROR DotNet-SDK is not install!" -ForegroundColor "Red"
+}
 
 # ------------------------------------------------------------------------------------------------------- #
 
 # Go Installs
 # ===========
 
-# TODO: Ensure go is installed
+Write-Host "Installing Go Tools..." -ForegroundColor "Yellow"
 
-# gitbatch
-# go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
-# gotop
-# go get -u github.com/xxxserxxx/gotop/cmd/gotop
-# lsp
-# go get github.com/dborzov/lsp
+# Verify Go is installed
+if (Get-Command go) {
+  go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
+  go get -u github.com/xxxserxxx/gotop/cmd/gotop
+  go get github.com/dborzov/lsp
+} else {
+  Write-Host "ERROR Go is not install!" -ForegroundColor "Red"
+}
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -386,8 +393,7 @@ gem install neovim
 
 ## bat-extras
 
-# https://github.com/dandavison/delta
-# cargo install delta
+# cargo install git-delta
 # cargo install eva
 # cargo install tokei
 
