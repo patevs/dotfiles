@@ -70,6 +70,12 @@
         "icon" : "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico"
       },
       {
+        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "name": "Ubuntu",
+        "source": "Windows.Terminal.Wsl",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/ubuntu.png"
+      },
+      {
         "guid": "{7df16305-71ee-4928-ae34-593a2c7ec2d5}",
         "name" : "MSYS2",
         "commandline" : "C:/Users/Pat/scoop/apps/msys2/current/msys2_shell.cmd -defterm -no-start -mingw64",
