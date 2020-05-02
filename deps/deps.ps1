@@ -310,14 +310,16 @@ if (Get-Command dotnet) {
 # Go Installs
 # ===========
 
-# TODO: Ensure go is installed
+Write-Host "Installing Go Tools..." -ForegroundColor "Yellow"
 
-# gitbatch
-# go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
-# gotop
-# go get -u github.com/xxxserxxx/gotop/cmd/gotop
-# lsp
-# go get github.com/dborzov/lsp
+# Verify Go is installed
+if (Get-Command go) {
+  go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
+  go get -u github.com/xxxserxxx/gotop/cmd/gotop
+  go get github.com/dborzov/lsp
+} else {
+  Write-Host "ERROR Go is not install!" -ForegroundColor "Red"
+}
 
 # ------------------------------------------------------------------------------------------------------- #
 
