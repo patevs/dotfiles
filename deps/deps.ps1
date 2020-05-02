@@ -72,6 +72,7 @@ Install-Module -Name PSReadLine -Scope CurrentUser -Force
 Install-Module -Name PSWindowsUpdate -Scope CurrentUser -Force
 # Install-Module -Name PSWriteColor -Scope CurrentUser -Force
 # Install-Module -Name PSKoans -Scope CurrentUser -Force
+# Install-Module -Name PSeudo -Scope CurrentUser -Force
 
 Install-Module -Name npm-completion -Scope CurrentUser -Force
 Install-Module -Name posh-cargo -Scope CurrentUser -Force -AllowClobber
@@ -103,20 +104,11 @@ if (which cinst) {
   choco feature enable -n=allowGlobalConfirmation
 }
 
-<#
-if ((which cinst) -eq $null) {
-  iex (new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')
-  Refresh-Environment
-  choco feature enable -n=allowGlobalConfirmation
-}
-#>
-
 # System and Development Tools
 choco install 7zip.install
 # choco install atom                --limit-output; <# pin; evergreen #> choco pin add --name Atom                --limit-output
 # choco install curl                --limit-output
 # choco install Fiddler             --limit-output
-# choco install genymotion
 choco install git.install
 choco install jdk8
 # choco install nuget.commandline   --limit-output
@@ -127,7 +119,6 @@ choco install reactotron
 choco install vcxsrv
 choco install visualstudio2019community
 # choco install visualstudio2019buildtools
-# TODO: Install vscode extensions
 choco install vscode.install
 # choco install webpi               --limit-output
 # choco install winmerge            --limit-output
@@ -136,10 +127,8 @@ choco install vscode.install
 # choco install sourcecodepro       --limit-output
 
 # Web Browsers
-choco install Firefox
-# choco install Firefox             --limit-output; <# pin; evergreen #> choco pin add --name Firefox             --limit-output
-choco install GoogleChrome
-# choco install GoogleChrome        --limit-output; <# pin; evergreen #> choco pin add --name GoogleChrome        --limit-output
+choco install Firefox               # --limit-output; <# pin; evergreen #> choco pin add --name Firefox             --limit-output
+choco install GoogleChrome          # --limit-output; <# pin; evergreen #> choco pin add --name GoogleChrome        --limit-output
 
 # Applications
 choco install gimp
