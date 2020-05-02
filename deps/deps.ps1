@@ -212,7 +212,7 @@ scoop install neovim
 # scoop install NuGet
 scoop install ripgrep
 scoop install s
-# scoop install scrcpy
+scoop install scrcpy
 # scoop install sqlite
 scoop install winfetch
 
@@ -386,13 +386,8 @@ gem install neovim
 
 ## bat-extras
 
-# cargo install du-dust
 # cargo install eva
 # cargo install tokei
-
-# Invoke-Expression "cargo install du-dust"
-# Invoke-Expression "cargo install eva"
-# Invoke-Expression "cargo install tokei"
 
 # ------------------------------------------------------------------------------------------------------- #
 
