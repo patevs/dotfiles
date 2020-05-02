@@ -72,6 +72,7 @@ CALL npm install --global diff-so-fancy
 CALL npm install --global g3l
 :: # https://github.com/mbostock/gistup
 :: CALL npm install --global gistup
+:: CALL npm install --global git-file-history
 :: # https://github.com/paulirish/git-open
 :: NOTE: Use `hub browse` command instead
 :: CALL npm install --global git-open
