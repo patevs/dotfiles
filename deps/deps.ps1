@@ -393,8 +393,7 @@ gem install neovim
 
 ## bat-extras
 
-# https://github.com/dandavison/delta
-# cargo install delta
+# cargo install git-delta
 # cargo install eva
 # cargo install tokei
 
