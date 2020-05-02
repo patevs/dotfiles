@@ -157,15 +157,16 @@ if (Get-Command scoop) {
 } else {
   # Install scoop
   Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
-  # Add scoop buckets
-  Write-Host "Adding Scoop Buckets..." -ForegroundColor "Yellow"
-  Invoke-Expression "scoop bucket add extras"
-  Invoke-Expression "scoop bucket add versions"
-  Invoke-Expression "scoop bucket add nonportable"
-  Invoke-Expression "scoop bucket add nerd-fonts"
-  Invoke-Expression "scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket"
-  Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
 }
+
+# Add scoop buckets
+Write-Host "Adding Scoop Buckets..." -ForegroundColor "Yellow"
+Invoke-Expression "scoop bucket add extras"
+Invoke-Expression "scoop bucket add versions"
+Invoke-Expression "scoop bucket add nonportable"
+Invoke-Expression "scoop bucket add nerd-fonts"
+Invoke-Expression "scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket"
+Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
 
 # Fix for scoop-completion error: https://github.com/lukesampson/scoop/issues/3528
 Invoke-Expression "scoop config alias @{}"
@@ -190,10 +191,8 @@ scoop install python
 # Allow other applications to find python
 # $pythonDir = Invoke-Expression "scoop prefix python"
 # Invoke-Expression "$pythonDir\install-pep-514.reg"
-# TODO: Upgrade pip and setuptools
 scoop install python27
 scoop install ruby26
-# TODO: run gem update --system then gem update
 scoop install rustup
 
 # Development Tools
@@ -208,8 +207,6 @@ scoop install less
 scoop install lsd
 # scoop install make
 scoop install msys2
-# ridk exec pacman -S mingw-w64-x86_64-gdbm
-# TODO: run msys2 then ridk install
 scoop install neovim
 # scoop install ninja
 # scoop install NuGet
@@ -370,7 +367,8 @@ python3 -m pip install --upgrade setuptools
 
 # TODO: Ensure Ruby, gem, and ridk are installed
 
-# ridk install
+ridk install 1,2,3
+ridk exec pacman -S mingw-w64-x86_64-gdbm
 
 gem update --system
 gem update
