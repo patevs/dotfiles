@@ -144,7 +144,7 @@ RefreshEnvironment
 # Scoop Installs
 # ==============
 
-# TODO: ENsure git is installed
+# TODO: Ensure git is installed
 
 Write-Host "Installing Scoop..." -ForegroundColor "Yellow"
 
@@ -218,6 +218,7 @@ scoop install winfetch
 
 # Shells and Terminals
 scoop install pwsh
+# scoop install starship
 scoop install windows-terminal
 
 # Git Tools
@@ -231,6 +232,7 @@ scoop install onefetch
 scoop install android-studio
 scoop install bulk-crap-uninstaller
 scoop install ccleaner
+# scoop install copyq
 scoop install imagemagick
 scoop install inkscape
 scoop install powertoys
