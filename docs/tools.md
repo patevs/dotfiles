@@ -31,6 +31,7 @@
 * [`Boostnote`](https://github.com/BoostIO/Boostnote) Note-taking app for programmers.
 * [`joplin`](https://github.com/laurent22/joplin) Note-taking and to-do application with synchronization capabilities.
 * [`marktext`](https://github.com/marktext/marktext) Simple and elegant open-source markdown editor that focused on speed and usability.
+* [`takenote`](https://github.com/taniarascia/takenote) A web-based note-taking app with GitHub sync and Markdown support.
 
 ---
 
