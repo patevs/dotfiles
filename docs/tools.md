@@ -21,6 +21,10 @@
     * [`Unicode`](https://zealusercontributions.herokuapp.com/docsets/UnicodeCharacters.xml)
     * [`jest`](https://zealusercontributions.herokuapp.com/docsets/Jest.xml)
 
+### Editors
+
+* [`blocks`](https://github.com/blocks/blocks) Page builder for creating beautiful websites without writing code.
+
 ### Markdown Editors
 
 * [`Boostnote`](https://github.com/BoostIO/Boostnote) Note-taking app for programmers.
