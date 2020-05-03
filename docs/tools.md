@@ -21,6 +21,12 @@
     * [`Unicode`](https://zealusercontributions.herokuapp.com/docsets/UnicodeCharacters.xml)
     * [`jest`](https://zealusercontributions.herokuapp.com/docsets/Jest.xml)
 
+### Markdown Editors
+
+* [`Boostnote`](https://github.com/BoostIO/Boostnote) Note-taking app for programmers.
+* [`joplin`](https://github.com/laurent22/joplin) Note-taking and to-do application with synchronization capabilities.
+* [`marktext`](https://github.com/marktext/marktext) Simple and elegant open-source markdown editor that focused on speed and usability.
+
 ---
 
 ## Bash Tools
