@@ -76,8 +76,8 @@
 
 ## NodeJS Tools
 
-* [`cli-table`](https://github.com/Automattic/cli-table)
-* [`treeify`](https://github.com/notatestuser/treeify)
+* [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
+* [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
 
 ---
 
