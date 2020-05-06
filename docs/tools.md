@@ -46,6 +46,7 @@
 * [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
 
 ---
 
@@ -73,6 +74,15 @@
 
 ---
 
+## NodeJS Tools
+
+* [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
+* [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
+* [`Spicetify`](https://github.com/khanhas/Spicetify) Tool to customize Spotify client UI and expand functionalities.
+* [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
+
+---
+
 ## PowerShell Tools
 
 * [`winfetch`](https://github.com/lptstr/winfetch/)
@@ -83,6 +93,7 @@
 
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
+* [`Mercury`](https://github.com/metachar/Mercury) Hacking tool used to collect information and use the information to further hurt the target.
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
@@ -90,6 +101,8 @@
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`spotify-downloader`](https://github.com/ritiek/spotify-downloader) Download Spotify playlists from YouTube with albumart. and metadata.
+* [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
+* [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
@@ -99,6 +112,7 @@
 
 * [`bat`](https://github.com/sharkdp/bat)
   * [`bat-extras`](https://github.com/eth-p/bat-extras)
+* [`battop`](https://github.com/svartalf/rust-battop) Interactive batteries viewer.
 * [`broot`](https://github.com/Canop/broot)
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
