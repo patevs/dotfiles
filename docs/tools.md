@@ -111,6 +111,7 @@
 
 * [`bat`](https://github.com/sharkdp/bat)
   * [`bat-extras`](https://github.com/eth-p/bat-extras)
+* [`battop`](https://github.com/svartalf/rust-battop) Interactive batteries viewer.
 * [`broot`](https://github.com/Canop/broot)
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
