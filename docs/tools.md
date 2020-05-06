@@ -39,6 +39,7 @@
 
 * [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Bash script for anonymizing the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
+* [`garie`](https://github.com/boyney123/garie) Open source web performance.
 * [`Geo`](https://github.com/jakewmeyer/Geo) Bash utility for easy wan, lan, router, dns, mac address, and geolocation output.
 * [`git-branch-status`](https://github.com/bill-auger/git-branch-status)
 * [`git-extras`](https://github.com/tj/git-extras)
