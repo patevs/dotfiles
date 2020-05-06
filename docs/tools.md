@@ -86,6 +86,7 @@
 * [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
 * [`Spicetify`](https://github.com/khanhas/Spicetify) Tool to customize Spotify client UI and expand functionalities.
+* [`spicetify-cli`](https://github.com/khanhas/spicetify-cli) Command line tool to customize Spotify client.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
 
 ---
