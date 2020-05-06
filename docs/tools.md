@@ -76,6 +76,7 @@
 ## NodeJS Tools
 
 * [`cli-table`](https://github.com/Automattic/cli-table)
+* [`treeify`](https://github.com/notatestuser/treeify)
 
 ---
 
