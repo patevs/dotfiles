@@ -81,6 +81,7 @@
 
 ## NodeJS Tools
 
+* [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
