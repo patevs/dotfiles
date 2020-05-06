@@ -132,6 +132,7 @@
 
 * [`bat`](https://github.com/sharkdp/bat)
   * [`bat-extras`](https://github.com/eth-p/bat-extras)
+* [`battery`](https://github.com/svartalf/rust-battery) Cross-platform information about the notebook batteries.
 * [`battop`](https://github.com/svartalf/rust-battop) Interactive batteries viewer.
 * [`broot`](https://github.com/Canop/broot)
 * [`dot`](https://github.com/ubnt-intrepid/dot)
