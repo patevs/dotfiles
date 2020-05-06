@@ -38,14 +38,17 @@
 ## Bash Tools
 
 * [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Bash script for anonymizing the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
+* [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`Geo`](https://github.com/jakewmeyer/Geo) Bash utility for easy wan, lan, router, dns, mac address, and geolocation output.
 * [`git-branch-status`](https://github.com/bill-auger/git-branch-status)
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
 * [`has`](https://github.com/kdabir/has)
 * [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
+* [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`otseca`](https://github.com/trimstray/otseca) Open source security auditing tool to search and dump system configuration.
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
 
 ---
@@ -78,6 +81,7 @@
 
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
+* [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`Spicetify`](https://github.com/khanhas/Spicetify) Tool to customize Spotify client UI and expand functionalities.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
 
@@ -93,11 +97,17 @@
 
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
+* [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
+* [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
+* [`grip`](https://github.com/joeyespo/grip) Preview GitHub Markdown files like Readme locally before committing them.
+* [`gtui`](https://github.com/CtheSky/gtui) Simple Task Scheduler & Executor with Text User Interface.
+* [`instaloader`](https://github.com/instaloader/instaloader) Download pictures (or videos) along with their captions and other metadata from Instagram.
 * [`Mercury`](https://github.com/metachar/Mercury) Hacking tool used to collect information and use the information to further hurt the target.
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`ranger`](https://github.com/ranger/ranger)
+* [`rebound`](https://github.com/shobrook/rebound) Command-line tool that instantly fetches Stack Overflow results when an exception is thrown.
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`spotify-downloader`](https://github.com/ritiek/spotify-downloader) Download Spotify playlists from YouTube with albumart. and metadata.
@@ -131,5 +141,11 @@
 * [`starship`](https://github.com/starship/starship) Minimal, blazing-fast, and infinitely customizable prompt for any shell!
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
 * [`ytop`](https://github.com/cjbassi/ytop)
+
+---
+
+## Linux Tools
+
+* [`progress`](https://github.com/Xfennec/progress) Linux tool to show progress for cp, mv, dd, ...
 
 ---
