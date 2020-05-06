@@ -77,6 +77,7 @@
 ## NodeJS Tools
 
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
+* [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
 
 ---
