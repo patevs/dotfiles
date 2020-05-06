@@ -98,6 +98,7 @@
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`spotify-downloader`](https://github.com/ritiek/spotify-downloader) Download Spotify playlists from YouTube with albumart. and metadata.
+* [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
