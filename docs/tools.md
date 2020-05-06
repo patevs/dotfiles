@@ -88,6 +88,7 @@
 * [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
+* [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
@@ -108,7 +109,6 @@
 
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
-* [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
