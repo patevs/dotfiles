@@ -32,6 +32,7 @@
 * [`joplin`](https://github.com/laurent22/joplin) Note-taking and to-do application with synchronization capabilities.
 * [`marktext`](https://github.com/marktext/marktext) Simple and elegant open-source markdown editor that focused on speed and usability.
 * [`takenote`](https://github.com/taniarascia/takenote) A web-based note-taking app with GitHub sync and Markdown support.
+* [`vnote`](https://github.com/tamlok/vnote) A note-taking application that knows programmers and Markdown better.
 
 ---
 
@@ -39,11 +40,13 @@
 
 * [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Bash script for anonymizing the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
+* [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
 * [`garie`](https://github.com/boyney123/garie) Open source web performance.
 * [`Geo`](https://github.com/jakewmeyer/Geo) Bash utility for easy wan, lan, router, dns, mac address, and geolocation output.
 * [`git-branch-status`](https://github.com/bill-auger/git-branch-status)
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
+* [`git-quick-stats`](https://github.com/arzzen/git-quick-stats) Simple and efficient way to access various statistics in git repository.
 * [`has`](https://github.com/kdabir/has)
 * [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
@@ -75,17 +78,21 @@
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`MusicRepair`](https://github.com/kalbhor/MusicRepair)
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
+* [`spotitube`](https://github.com/streambinder/spotitube) Synchronize your Spotify collections downloading from external providers.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 
 ---
 
 ## NodeJS Tools
 
+* [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
+* [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
 * [`Spicetify`](https://github.com/khanhas/Spicetify) Tool to customize Spotify client UI and expand functionalities.
+* [`spicetify-cli`](https://github.com/khanhas/spicetify-cli) Command line tool to customize Spotify client.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
 
 ---
@@ -113,6 +120,8 @@
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`ranger`](https://github.com/ranger/ranger)
 * [`rebound`](https://github.com/shobrook/rebound) Command-line tool that instantly fetches Stack Overflow results when an exception is thrown.
+* [`redditripper`](https://github.com/pmma1312/redditripper) Downloads all images of the subreddits specified in a text file.
+* [`routersploit`](https://github.com/threat9/routersploit) Exploitation Framework for Embedded Devices.
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`spotify-downloader`](https://github.com/ritiek/spotify-downloader) Download Spotify playlists from YouTube with albumart. and metadata.
@@ -127,6 +136,7 @@
 
 * [`bat`](https://github.com/sharkdp/bat)
   * [`bat-extras`](https://github.com/eth-p/bat-extras)
+* [`battery`](https://github.com/svartalf/rust-battery) Cross-platform information about the notebook batteries.
 * [`battop`](https://github.com/svartalf/rust-battop) Interactive batteries viewer.
 * [`broot`](https://github.com/Canop/broot)
 * [`dot`](https://github.com/ubnt-intrepid/dot)
@@ -151,7 +161,16 @@
 
 ## Linux Tools
 
+* [`playerctl`](https://github.com/altdesktop/playerctl) 🎧 mpris command-line controller and library for spotify, vlc, audacious, bmp, cmus, and others.
 * [`progress`](https://github.com/Xfennec/progress) Linux tool to show progress for cp, mv, dd, ...
 * [`Stacer`](https://github.com/oguzhaninan/Stacer) Linux System Optimizer and Monitoring.
+
+---
+
+## Windows Tools
+
+* [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
+* [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
+* [`Wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
 
 ---
