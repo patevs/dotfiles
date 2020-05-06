@@ -48,6 +48,7 @@
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`otseca`](https://github.com/trimstray/otseca) Open source security auditing tool to search and dump system configuration.
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
 
 ---
