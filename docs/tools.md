@@ -88,6 +88,7 @@
 * [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
+* [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
