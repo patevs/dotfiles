@@ -73,6 +73,12 @@
 
 ---
 
+## NodeJS Tools
+
+* [`cli-table`](https://github.com/Automattic/cli-table)
+
+---
+
 ## PowerShell Tools
 
 * [`winfetch`](https://github.com/lptstr/winfetch/)
