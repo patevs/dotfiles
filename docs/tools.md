@@ -100,6 +100,7 @@
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
+* [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
 * [`grip`](https://github.com/joeyespo/grip) Preview GitHub Markdown files like Readme locally before committing them.
 * [`gtui`](https://github.com/CtheSky/gtui) Simple Task Scheduler & Executor with Text User Interface.
