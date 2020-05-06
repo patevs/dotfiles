@@ -88,6 +88,8 @@
 * [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
+* [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
+* [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
@@ -108,7 +110,7 @@
 
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
-* [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
+* [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from cookiecutters (project templates).
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
@@ -119,6 +121,7 @@
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+* [`playx`](https://github.com/NISH1001/playx) Search and play any song from terminal.
 * [`ranger`](https://github.com/ranger/ranger)
 * [`rebound`](https://github.com/shobrook/rebound) Command-line tool that instantly fetches Stack Overflow results when an exception is thrown.
 * [`redditripper`](https://github.com/pmma1312/redditripper) Downloads all images of the subreddits specified in a text file.
@@ -129,6 +132,7 @@
 * [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
+* [`wttr.in`](https://github.com/chubin/wttr.in) The right way to check the weather.
 * [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
 ---
