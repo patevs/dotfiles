@@ -159,6 +159,7 @@
 
 ## Linux Tools
 
+* [`playerctl`](https://github.com/altdesktop/playerctl) 🎧 mpris command-line controller and library for spotify, vlc, audacious, bmp, cmus, and others.
 * [`progress`](https://github.com/Xfennec/progress) Linux tool to show progress for cp, mv, dd, ...
 * [`Stacer`](https://github.com/oguzhaninan/Stacer) Linux System Optimizer and Monitoring.
 
