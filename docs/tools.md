@@ -92,6 +92,7 @@
 
 ## PowerShell Tools
 
+* [`JAWS`](https://github.com/411Hall/JAWS) JAWS - Just Another Windows (Enum) Script
 * [`winfetch`](https://github.com/lptstr/winfetch/)
 
 ---
