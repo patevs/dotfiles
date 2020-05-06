@@ -165,3 +165,9 @@
 * [`Stacer`](https://github.com/oguzhaninan/Stacer) Linux System Optimizer and Monitoring.
 
 ---
+
+## Windows Tools
+
+* [`wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
+
+---
