@@ -75,6 +75,7 @@
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`MusicRepair`](https://github.com/kalbhor/MusicRepair)
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
+* [`spotitube`](https://github.com/streambinder/spotitube) Synchronize your Spotify collections downloading from external providers.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 
 ---
