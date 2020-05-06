@@ -46,6 +46,7 @@
 * [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
 * [`multi-git-status`](https://github.com/fboender/multi-git-status)
 * [`neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
 
 ---
 
