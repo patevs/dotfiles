@@ -136,3 +136,9 @@
 * [`ytop`](https://github.com/cjbassi/ytop)
 
 ---
+
+## Linux Tools
+
+* [`progress`](https://github.com/Xfennec/progress) Linux tool to show progress for cp, mv, dd, ...
+
+---
