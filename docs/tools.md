@@ -97,6 +97,7 @@
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
 * [`grip`](https://github.com/joeyespo/grip) Preview GitHub Markdown files like Readme locally before committing them.
+* [`gtui`](https://github.com/CtheSky/gtui) Simple Task Scheduler & Executor with Text User Interface.
 * [`instaloader`](https://github.com/instaloader/instaloader) Download pictures (or videos) along with their captions and other metadata from Instagram.
 * [`Mercury`](https://github.com/metachar/Mercury) Hacking tool used to collect information and use the information to further hurt the target.
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
