@@ -168,6 +168,6 @@
 
 ## Windows Tools
 
-* [`wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
+* [`Wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
 
 ---
