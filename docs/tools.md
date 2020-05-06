@@ -44,6 +44,7 @@
 * [`git-branch-status`](https://github.com/bill-auger/git-branch-status)
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
+* [`git-quick-stats`](https://github.com/arzzen/git-quick-stats) Simple and efficient way to access various statistics in git repository.
 * [`has`](https://github.com/kdabir/has)
 * [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
