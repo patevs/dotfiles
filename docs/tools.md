@@ -150,5 +150,6 @@
 ## Linux Tools
 
 * [`progress`](https://github.com/Xfennec/progress) Linux tool to show progress for cp, mv, dd, ...
+* [`Stacer`](https://github.com/oguzhaninan/Stacer) Linux System Optimizer and Monitoring.
 
 ---
