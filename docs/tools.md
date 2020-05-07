@@ -37,6 +37,7 @@
 
 ### Shells and Terminal Emulators
 
+* [`chafa`](https://github.com/hpjansson/chafa) 📺🗿 Terminal graphics for the 21st century.
 * [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
 * [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
 
