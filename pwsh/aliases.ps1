@@ -50,9 +50,12 @@ ${function:modules} = { Get-Module -ListAvailable }
 
 # TODO: Created alias bash to use git-bash
 
+$bash = "C:\Program Files\Git\bin\bash.exe"
+
 # System information tools
 # ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
-${function:neofetch} = { "C:\Program Files\Git\bin\bash.exe C:\bin\neofetch\neofetch" }
+# ${function:neofetch} = { "C:\Program Files\Git\bin\bash.exe C:\bin\neofetch\neofetch" }
+${function:neofetch} = { Invoke-Expression "$bash C:\bin\neofetch\neofetch" }
 
 # Shutdown System
 # TODO: Fix me
