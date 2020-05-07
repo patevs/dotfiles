@@ -36,6 +36,12 @@
 
 ---
 
+## Hugo
+
+* [`hello`](https://github.com/saragong/hello) A minimalist template for designing a beautiful GitHub Pages personal website or portfolio.
+
+---
+
 ## qBittorrent
 
 * [`qBittorrentDarktheme`](https://github.com/maboroshin/qBittorrentDarktheme)
