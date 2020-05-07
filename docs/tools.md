@@ -4,7 +4,7 @@
 
 ---
 
-## Developer Tools
+## Documentation Tools
 
 * [`zeal`](https://github.com/zealdocs/zeal)
   * [Documentation](https://zealdocs.org/usage.html)
@@ -21,13 +21,15 @@
     * [`Unicode`](https://zealusercontributions.herokuapp.com/docsets/UnicodeCharacters.xml)
     * [`jest`](https://zealusercontributions.herokuapp.com/docsets/Jest.xml)
 
-### Editors
+---
+
+## Editors
 
 * [`amp`](https://github.com/jmacdonald/amp) A complete text editor for your terminal.
 * [`blocks`](https://github.com/blocks/blocks) Page builder for creating beautiful websites without writing code.
 * [`brackets`](https://github.com/adobe/brackets) Code editor for the web, written in JavaScript, HTML and CSS.
 
-### Markdown Editors
+## Markdown Editors
 
 * [`Boostnote`](https://github.com/BoostIO/Boostnote) Note-taking app for programmers.
 * [`joplin`](https://github.com/laurent22/joplin) Note-taking and to-do application with synchronization capabilities.
@@ -35,7 +37,9 @@
 * [`takenote`](https://github.com/taniarascia/takenote) A web-based note-taking app with GitHub sync and Markdown support.
 * [`vnote`](https://github.com/tamlok/vnote) A note-taking application that knows programmers and Markdown better.
 
-### Shells and Terminal Emulators
+---
+
+## Shells and Terminal Emulators
 
 * [`chafa`](https://github.com/hpjansson/chafa) 📺🗿 Terminal graphics for the 21st century.
 * [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
