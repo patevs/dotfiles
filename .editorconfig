@@ -13,10 +13,6 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-# Python
-[*.py]
-indent_size = 4
-
 # Markdown
 [*.md]
 max_line_length = 80

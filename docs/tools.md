@@ -4,7 +4,7 @@
 
 ---
 
-## Developer Tools
+## Documentation Tools
 
 * [`zeal`](https://github.com/zealdocs/zeal)
   * [Documentation](https://zealdocs.org/usage.html)
@@ -21,19 +21,30 @@
     * [`Unicode`](https://zealusercontributions.herokuapp.com/docsets/UnicodeCharacters.xml)
     * [`jest`](https://zealusercontributions.herokuapp.com/docsets/Jest.xml)
 
-### Editors
+---
+
+## Editors
 
 * [`amp`](https://github.com/jmacdonald/amp) A complete text editor for your terminal.
 * [`blocks`](https://github.com/blocks/blocks) Page builder for creating beautiful websites without writing code.
 * [`brackets`](https://github.com/adobe/brackets) Code editor for the web, written in JavaScript, HTML and CSS.
 
-### Markdown Editors
+## Markdown Editors
 
 * [`Boostnote`](https://github.com/BoostIO/Boostnote) Note-taking app for programmers.
 * [`joplin`](https://github.com/laurent22/joplin) Note-taking and to-do application with synchronization capabilities.
 * [`marktext`](https://github.com/marktext/marktext) Simple and elegant open-source markdown editor that focused on speed and usability.
 * [`takenote`](https://github.com/taniarascia/takenote) A web-based note-taking app with GitHub sync and Markdown support.
 * [`vnote`](https://github.com/tamlok/vnote) A note-taking application that knows programmers and Markdown better.
+
+---
+
+## Shells and Terminal Emulators
+
+* [`chafa`](https://github.com/hpjansson/chafa) 📺🗿 Terminal graphics for the 21st century.
+* [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
+* [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
+* [`starship`](https://github.com/starship/starship) Minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 ---
 
@@ -78,9 +89,7 @@
 * [`gotop`](https://github.com/xxxserxxx/gotop)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
-* [`MusicRepair`](https://github.com/kalbhor/MusicRepair)
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
-* [`spotitube`](https://github.com/streambinder/spotitube) Synchronize your Spotify collections downloading from external providers.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 
 ---
@@ -92,15 +101,12 @@
 * [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
 * [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
-* [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
-* [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
+* [`nps`](https://github.com/sezna/nps) All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
-* [`Spicetify`](https://github.com/khanhas/Spicetify) Tool to customize Spotify client UI and expand functionalities.
-* [`spicetify-cli`](https://github.com/khanhas/spicetify-cli) Command line tool to customize Spotify client.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
-* [`workbox`](https://github.com/GoogleChrome/workbox)
+* [`workbox`](https://github.com/GoogleChrome/workbox) JavaScript libraries for Progressive Web Apps.
 
 ---
 
@@ -116,6 +122,7 @@
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from cookiecutters (project templates).
+* [`catcli`](https://github.com/deadc0de6/catcli) The command line catalog tool for your offline data.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
@@ -136,7 +143,6 @@
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`wttr.in`](https://github.com/chubin/wttr.in) The right way to check the weather.
-* [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
 ---
 
@@ -157,13 +163,10 @@
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
-* [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
-* [`spotify-tui`](https://github.com/Rigellute/spotify-tui) A Spotify client for the terminal.
-* [`starship`](https://github.com/starship/starship) Minimal, blazing-fast, and infinitely customizable prompt for any shell!
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
 * [`ytop`](https://github.com/cjbassi/ytop)
 
@@ -181,6 +184,7 @@
 
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
+* [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
 * [`Wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
 
 ---
