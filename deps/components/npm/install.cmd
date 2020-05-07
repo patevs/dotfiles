@@ -71,7 +71,7 @@ CALL npm install --global add-gitignore
 :: Note: requires perl to be installed
 CALL npm install --global diff-so-fancy
 :: # https://github.com/svhawks/g3l
-CALL npm install --global g3l
+:: CALL npm install --global g3l
 :: # https://github.com/mbostock/gistup
 :: CALL npm install --global gistup
 :: CALL npm install --global git-file-history
@@ -328,7 +328,7 @@ CALL npm install --global react-native-cli
 ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 
 :: # https://github.com/sindresorhus/del-cli
-CALL npm install --global del-cli
+:: CALL npm install --global del-cli
 :: # https://github.com/sindresorhus/empty-trash-cli
 :: CALL npm install --global empty-trash-cli
 :: # https://github.com/sindresorhus/fkill-cli
