@@ -168,6 +168,11 @@ function CreateAndSetDirectory([String] $path) {
   Set-Location $path
 }
 
+# Delete a given item
+function RemoveItem([string]$path) {
+  Remove-Item -Path $path -Recurse -Force
+}
+
 # Empty the Recycle Bin on all drives
 function EmptyRecycleBin {
   $RecBin = (New-Object -ComObject Shell.Application).Namespace(0xA)
@@ -243,9 +248,9 @@ function gss {
   git remote -v
   # Print-Green-Underline "Git Status:"
   Write-Output "`n Git Status:`n"
-  # TODO: Replace with git-branch-status
-  g3l --status
-  Write-Output "" # new line
+  # TODO: Replace g3l with git-branch-status
+  # g3l --status
+  # Write-Output "" # new line
   git status
 }
 

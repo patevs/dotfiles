@@ -17,7 +17,6 @@ ${function:.....} = { Set-Location ..\..\..\.. }
 ${function:......} = { Set-Location ..\..\..\..\.. }
 
 # Navigation Shortcuts
-# ${function:dev} = { Set-Location ~\git }
 ${function:dev} = { Set-Location ~\code }
 ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
@@ -65,6 +64,9 @@ ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 # Create a new directory and enter it
 Set-Alias -Name mkd -Value CreateAndSetDirectory
 
+# Remvoe a given item
+Set-Alias -Name del -Value RemoveItem -option AllScope -Force
+
 # Send an item to the Recycle Bin
 Set-Alias -Name trash -Value Remove-ItemSafely
 
@@ -107,7 +109,7 @@ if (which lsd) {
   ${function:lll} = { Get-ChildItem | Format-List }
   ${function:lst} = { tree }
 }
-# Set-Alias -Name ls -Value ll -option AllScope -Force
+Set-Alias -Name ls -Value ll -option AllScope -Force
 
 # Favour ripgrep over grep if installed
 if (Get-Command rg -ErrorAction SilentlyContinue) { Set-Alias -Name grep -Value rg }
@@ -122,7 +124,7 @@ Set-Alias -Name time -Value Measure-Command
 
 # ls with git status
 ${function:lsg} = { Write-Host ""; bash C:\bin\ls-with-git-status\lsg }
-Set-Alias -Name ls -Value lsg -option AllScope -Force
+# Set-Alias -Name ls -Value lsg -option AllScope -Force
 
 # Git branch status
 ${function:gbs} = { Write-Host ""; bash C:\bin\git-branch-status\git-branch-status -l }
