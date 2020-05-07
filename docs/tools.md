@@ -35,6 +35,11 @@
 * [`takenote`](https://github.com/taniarascia/takenote) A web-based note-taking app with GitHub sync and Markdown support.
 * [`vnote`](https://github.com/tamlok/vnote) A note-taking application that knows programmers and Markdown better.
 
+### Shells and Terminal Emulators
+
+* [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
+* [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
+
 ---
 
 ## Bash Tools
@@ -90,10 +95,9 @@
 * [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
 * [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
-* [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
-* [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
+* [`nps`](https://github.com/sezna/nps) All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
 * [`workbox`](https://github.com/GoogleChrome/workbox) JavaScript libraries for Progressive Web Apps.
@@ -152,7 +156,6 @@
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
-* [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
