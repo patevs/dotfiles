@@ -65,6 +65,9 @@ ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 # Create a new directory and enter it
 Set-Alias -Name mkd -Value CreateAndSetDirectory
 
+# Remvoe a given item
+Set-Alias -Name del -Value RemoveItem
+
 # Send an item to the Recycle Bin
 Set-Alias -Name trash -Value Remove-ItemSafely
 
