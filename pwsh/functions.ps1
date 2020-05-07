@@ -168,6 +168,11 @@ function CreateAndSetDirectory([String] $path) {
   Set-Location $path
 }
 
+# Delete a given item
+function RemoveItem([string]$path) {
+  Remove-Item -Path $path -Recurse -Force
+}
+
 # Empty the Recycle Bin on all drives
 function EmptyRecycleBin {
   $RecBin = (New-Object -ComObject Shell.Application).Namespace(0xA)
