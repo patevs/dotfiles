@@ -96,7 +96,7 @@
 * [`nps`](https://github.com/sezna/nps) NPM Package Scripts -- All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
-* [`workbox`](https://github.com/GoogleChrome/workbox)
+* [`workbox`](https://github.com/GoogleChrome/workbox) JavaScript libraries for Progressive Web Apps.
 
 ---
 
