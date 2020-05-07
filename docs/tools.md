@@ -121,14 +121,12 @@
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
-* [`playx`](https://github.com/NISH1001/playx) Search and play any song from terminal.
 * [`ranger`](https://github.com/ranger/ranger)
 * [`rebound`](https://github.com/shobrook/rebound) Command-line tool that instantly fetches Stack Overflow results when an exception is thrown.
 * [`redditripper`](https://github.com/pmma1312/redditripper) Downloads all images of the subreddits specified in a text file.
 * [`routersploit`](https://github.com/threat9/routersploit) Exploitation Framework for Embedded Devices.
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
-* [`spotify-downloader`](https://github.com/ritiek/spotify-downloader) Download Spotify playlists from YouTube with albumart. and metadata.
 * [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
