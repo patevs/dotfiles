@@ -89,6 +89,7 @@
 
 * [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
+* [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
 * [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
