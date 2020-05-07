@@ -48,11 +48,8 @@ ${function:modules} = { Get-Module -ListAvailable }
 # System Utility Aliases
 # ======================
 
-# TODO: Created alias bash to use git-bash
-
-# System information tools
-# ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
-${function:neofetch} = { "C:\Program Files\Git\bin\bash.exe C:\bin\neofetch\neofetch" }
+# System Information
+${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 
 # Shutdown System
 # TODO: Fix me
@@ -90,6 +87,9 @@ Set-Alias -Name vim -Value nvim
 # Unix-like Aliases
 # =================
 
+# Git-bash shell
+Set-Alias -Name bash -Value "C:\Program Files\Git\bin\bash.exe"
+
 # Directory Listing: Use `lsd.exe` if available
 if (which lsd) {
   # List directory contents in short format
@@ -106,7 +106,7 @@ if (which lsd) {
   ${function:lll} = { Get-ChildItem | Format-List }
   ${function:lst} = { tree }
 }
-Set-Alias -Name ls -Value ll -option AllScope -Force
+# Set-Alias -Name ls -Value ll -option AllScope -Force
 
 # Favour ripgrep over grep if installed
 if (Get-Command rg -ErrorAction SilentlyContinue) { Set-Alias -Name grep -Value rg }
@@ -120,17 +120,14 @@ Set-Alias -Name time -Value Measure-Command
 # ====================
 
 # ls with git status
-# TODO: Alias to ls when in a git repo
-# ${function:lsg} = { Write-Host ""; bash C:\bin\ls-with-git-status\lsg }
-${function:lsg} = { Write-Host ""; "C:\Program Files\Git\bin\bash.exe C:\bin\ls-with-git-status\lsg" }
+${function:lsg} = { Write-Host ""; bash C:\bin\ls-with-git-status\lsg }
+Set-Alias -Name ls -Value lsg -option AllScope -Force
 
 # Git branch status
-# ${function:gbs} = { Write-Host ""; bash C:\bin\git-branch-status\git-branch-status -l }
-${function:gbs} = { Write-Host ""; "C:\Program Files\Git\bin\bash.exe C:\bin\git-branch-status\git-branch-status -l" }
+${function:gbs} = { Write-Host ""; bash C:\bin\git-branch-status\git-branch-status -l }
 
 # Git Multi Status
-# ${function:mgs} = { bash C:\bin\multi-git-status\mgitstatus --depth=0 }
-${function:mgs} = { "C:\Program Files\Git\bin\bash.exe C:\bin\multi-git-status\mgitstatus --depth=0" }
+${function:mgs} = { bash C:\bin\multi-git-status\mgitstatus --depth=0 }
 
 # Favour GitHub's hub client over vanilla git
 if (Get-Command hub -ErrorAction SilentlyContinue) { Set-Alias -Name git -Value hub }

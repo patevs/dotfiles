@@ -396,8 +396,9 @@ gem install neovim
 
 ## bat-extras
 
-# cargo install git-delta
 # cargo install eva
+# NOTE: Requires llvm to be installed (choco install llvm)
+# cargo install git-delta
 # cargo install tokei
 
 # ------------------------------------------------------------------------------------------------------- #

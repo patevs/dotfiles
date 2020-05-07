@@ -104,6 +104,7 @@
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
+* [`rot.js`](https://github.com/ondras/rot.js) ROguelike Toolkit.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
 * [`workbox`](https://github.com/GoogleChrome/workbox) JavaScript libraries for Progressive Web Apps.

@@ -73,7 +73,14 @@
         "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
         "name": "Ubuntu",
         "source": "Windows.Terminal.Wsl",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/ubuntu.png"
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/ubuntu.png",
+        "hidden": true
+      },
+      {
+          "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+          "name": "Ubuntu-20.04",
+          "source": "Windows.Terminal.Wsl",
+          "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/ubuntu.png"
       },
       {
         "guid": "{7df16305-71ee-4928-ae34-593a2c7ec2d5}",
