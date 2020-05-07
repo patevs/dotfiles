@@ -23,6 +23,7 @@
 
 ### Editors
 
+* [`amp`](https://github.com/jmacdonald/amp) A complete text editor for your terminal.
 * [`blocks`](https://github.com/blocks/blocks) Page builder for creating beautiful websites without writing code.
 * [`brackets`](https://github.com/adobe/brackets) Code editor for the web, written in JavaScript, HTML and CSS.
 
@@ -47,6 +48,7 @@
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
 * [`git-quick-stats`](https://github.com/arzzen/git-quick-stats) Simple and efficient way to access various statistics in git repository.
+* [`git-wizard`](https://github.com/makelinux/git-wizard) Instant git magic and tricks.
 * [`has`](https://github.com/kdabir/has)
 * [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
@@ -87,7 +89,9 @@
 
 * [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
+* [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
+* [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
 * [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
@@ -96,6 +100,7 @@
 * [`Spicetify`](https://github.com/khanhas/Spicetify) Tool to customize Spotify client UI and expand functionalities.
 * [`spicetify-cli`](https://github.com/khanhas/spicetify-cli) Command line tool to customize Spotify client.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
+* [`workbox`](https://github.com/GoogleChrome/workbox)
 
 ---
 
@@ -121,14 +126,12 @@
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
-* [`playx`](https://github.com/NISH1001/playx) Search and play any song from terminal.
 * [`ranger`](https://github.com/ranger/ranger)
 * [`rebound`](https://github.com/shobrook/rebound) Command-line tool that instantly fetches Stack Overflow results when an exception is thrown.
 * [`redditripper`](https://github.com/pmma1312/redditripper) Downloads all images of the subreddits specified in a text file.
 * [`routersploit`](https://github.com/threat9/routersploit) Exploitation Framework for Embedded Devices.
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
-* [`spotify-downloader`](https://github.com/ritiek/spotify-downloader) Download Spotify playlists from YouTube with albumart. and metadata.
 * [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
@@ -149,10 +152,12 @@
 * [`dust`](https://github.com/bootandy/dust)
 * [`eva`](https://github.com/NerdyPepper/eva)
 * [`fd`](https://github.com/sharkdp/fd)
+* [`ffsend`](https://github.com/timvisee/ffsend) Easily and securely share files from the command line. A fully featured Firefox Send client.
 * [`grex`](https://github.com/pemistahl/grex)
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
+* [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
