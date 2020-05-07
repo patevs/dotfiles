@@ -48,6 +48,7 @@
 * [`git-extras`](https://github.com/tj/git-extras)
 * [`git-friendly`](https://github.com/jamiew/git-friendly)
 * [`git-quick-stats`](https://github.com/arzzen/git-quick-stats) Simple and efficient way to access various statistics in git repository.
+* [`git-wizard`](https://github.com/makelinux/git-wizard) Instant git magic and tricks.
 * [`has`](https://github.com/kdabir/has)
 * [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
