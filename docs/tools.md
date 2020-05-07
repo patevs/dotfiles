@@ -155,6 +155,7 @@
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
+* [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
