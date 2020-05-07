@@ -17,7 +17,6 @@ ${function:.....} = { Set-Location ..\..\..\.. }
 ${function:......} = { Set-Location ..\..\..\..\.. }
 
 # Navigation Shortcuts
-# ${function:dev} = { Set-Location ~\git }
 ${function:dev} = { Set-Location ~\code }
 ${function:docs} = { Set-Location ~\Documents }
 ${function:dl} = { Set-Location ~\Downloads }
