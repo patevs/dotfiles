@@ -243,9 +243,9 @@ function gss {
   git remote -v
   # Print-Green-Underline "Git Status:"
   Write-Output "`n Git Status:`n"
-  # TODO: Replace with git-branch-status
-  g3l --status
-  Write-Output "" # new line
+  # TODO: Replace g3l with git-branch-status
+  # g3l --status
+  # Write-Output "" # new line
   git status
 }
 
