@@ -23,6 +23,7 @@
 
 ### Editors
 
+* [`amp`](https://github.com/jmacdonald/amp) A complete text editor for your terminal.
 * [`blocks`](https://github.com/blocks/blocks) Page builder for creating beautiful websites without writing code.
 * [`brackets`](https://github.com/adobe/brackets) Code editor for the web, written in JavaScript, HTML and CSS.
 
