@@ -132,7 +132,6 @@
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`wttr.in`](https://github.com/chubin/wttr.in) The right way to check the weather.
-* [`ytmdl`](https://github.com/deepjyoti30/ytmdl)
 
 ---
 
