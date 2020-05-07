@@ -39,6 +39,7 @@
 ## Hugo
 
 * [`hello`](https://github.com/saragong/hello) A minimalist template for designing a beautiful GitHub Pages personal website or portfolio.
+* [`hugo-theme-m10c`](https://github.com/vaga/hugo-theme-m10c) A minimalistic (m10c) blog theme for Hugo.
 
 ---
 
