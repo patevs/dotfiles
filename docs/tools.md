@@ -98,6 +98,7 @@
 * [`Spicetify`](https://github.com/khanhas/Spicetify) Tool to customize Spotify client UI and expand functionalities.
 * [`spicetify-cli`](https://github.com/khanhas/spicetify-cli) Command line tool to customize Spotify client.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
+* [`workbox`](https://github.com/GoogleChrome/workbox)
 
 ---
 
