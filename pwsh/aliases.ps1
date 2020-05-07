@@ -107,7 +107,7 @@ if (which lsd) {
   ${function:lll} = { Get-ChildItem | Format-List }
   ${function:lst} = { tree }
 }
-# Set-Alias -Name ls -Value ll -option AllScope -Force
+Set-Alias -Name ls -Value ll -option AllScope -Force
 
 # Favour ripgrep over grep if installed
 if (Get-Command rg -ErrorAction SilentlyContinue) { Set-Alias -Name grep -Value rg }
@@ -122,7 +122,7 @@ Set-Alias -Name time -Value Measure-Command
 
 # ls with git status
 ${function:lsg} = { Write-Host ""; bash C:\bin\ls-with-git-status\lsg }
-Set-Alias -Name ls -Value lsg -option AllScope -Force
+# Set-Alias -Name ls -Value lsg -option AllScope -Force
 
 # Git branch status
 ${function:gbs} = { Write-Host ""; bash C:\bin\git-branch-status\git-branch-status -l }
