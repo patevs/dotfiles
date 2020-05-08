@@ -17,7 +17,7 @@
 # Install the Homebrew dependencies
 sudo apt-get install build-essential
 
-# Configure Homebrew in your /home/pat/.profile by running
+# Configure Homebrew in your .profile by running
 echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/pat/.profile
 
 # Add Homebrew to your PATH
