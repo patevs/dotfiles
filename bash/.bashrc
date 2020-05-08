@@ -104,7 +104,7 @@ esac
 #   fi
 # fi
 
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+# export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 
 # TODO: Ensure wakatime is installed with: `pip install wakatime`
 # Wakatime
