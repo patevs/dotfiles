@@ -104,10 +104,11 @@ esac
 #   fi
 # fi
 
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+
 # TODO: Ensure wakatime is installed with: `pip install wakatime`
 # Wakatime
-source bash-wakatime/bash-wakatime.sh
-
+# source bash-wakatime/bash-wakatime.sh
 
 # Verify ~/.asdf/ path exists
 # if [ -f ~/.asdf ]; then
