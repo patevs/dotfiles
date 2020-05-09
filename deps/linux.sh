@@ -8,22 +8,30 @@
 
 # ------------------------------------------------------------------------------------------------------- #
 
+# System Upgrade
+# ==============
+
+sudo apt update
+sudo apt upgrade -y
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # Homebrew Installs
 # =================
 
 # Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Install the Homebrew dependencies
-sudo apt-get install build-essential
+# sudo apt-get install build-essential
 
 # Configure Homebrew in your .profile by running
-echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/pat/.profile
+# echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/pat/.profile
 
 # Add Homebrew to your PATH
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+# eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 # Install GCC
-brew install gcc
+# brew install gcc
 
 # EOF #
