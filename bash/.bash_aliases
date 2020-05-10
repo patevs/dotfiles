@@ -71,7 +71,7 @@ alias desk="cd ~/Desktop"
 
 # Move to dev directory
 # TODO: Ensure this directory exists
-alias dev="cd ~/Desktop/git"
+# alias dev="cd ~/Desktop/git"
 
 # ? move this to ~/.bashrc or ~/.profile
 # 'cd' into a directory and then list contents
@@ -125,7 +125,6 @@ alias dir="ls"
 # alias git='hub'
 
 # TODO: Verify git is installed
-# TODO: Use g3l tool (if installed) to fetch status
 alias gs='git status'
 
 # alias gc='git commit'
