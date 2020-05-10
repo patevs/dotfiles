@@ -22,7 +22,13 @@ sudo apt upgrade -y
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
 
-# TODO: Ensure curl command exists
+# Ensure curl command exists
+command -v curl >/dev/null 2>&1 || {
+  echo >&2 "This script requires curl but it's not installed. Exiting..."
+  exit 1
+}
+
+# Hack NF
 curl -fLo "Hack Regular Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 # ------------------------------------------------------------------------------------------------------- #
