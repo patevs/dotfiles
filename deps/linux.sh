@@ -6,6 +6,14 @@
 
 # TODO: Ensure running as sudo
 
+# Helper Functions
+# ================
+
+# Check that a given command is available
+# command_exists () {
+#   type "$1" &> /dev/null ;
+# }
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # System Upgrade
@@ -23,10 +31,10 @@ mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
 
 # Ensure curl command exists
-command -v curl >/dev/null 2>&1 || {
-  echo >&2 "This script requires curl but it's not installed. Exiting..."
+if ! [ -x "$(command -v curl)" ]; then
+  echo 'Error: curl is not installed. Exiting...' >&2
   exit 1
-}
+fi
 
 # Hack NF
 curl -fLo "Hack Regular Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
