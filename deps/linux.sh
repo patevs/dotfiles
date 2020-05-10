@@ -6,6 +6,24 @@
 
 # TODO: Ensure running as sudo
 
+echo '' # new line
+
+# Ensure we are running on Linux
+if [[ "$OSTYPE" != "linux-gnu"* ]]; then
+  echo 'Error: This script can only be run on Linux systems. Exiting...' >&2
+  exit 1
+fi
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Helper Functions
+# ================
+
+# Check that a given command is available
+# command_exists () {
+#   type "$1" &> /dev/null ;
+# }
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # System Upgrade
@@ -22,8 +40,33 @@ sudo apt upgrade -y
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
 
-# TODO: Ensure curl command exists
+# Ensure curl command exists
+if ! [ -x "$(command -v curl)" ]; then
+  echo 'Error: curl is not installed. Exiting...' >&2
+  exit 1
+fi
+
+# Hack NF
 curl -fLo "Hack Regular Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Tools
+# =====
+
+# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
+# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
+# | grep "browser_download_url.*deb" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | wget -qi -
+
+# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
+
+# Download LSD
+curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
+# Install LSD
+sudo dpkg -i lsd_0.17.0_amd64.deb
 
 # ------------------------------------------------------------------------------------------------------- #
 
