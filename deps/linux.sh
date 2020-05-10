@@ -51,6 +51,25 @@ curl -fLo "Hack Regular Nerd Font Complete.otf" https://github.com/ryanoasis/ner
 
 # ------------------------------------------------------------------------------------------------------- #
 
+# Tools
+# =====
+
+# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
+# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
+# | grep "browser_download_url.*deb" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | wget -qi -
+
+# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
+
+# Download LSD
+curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
+# Install LSD
+sudo dpkg -i lsd_0.17.0_amd64.deb
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # Homebrew Installs
 # =================
 
