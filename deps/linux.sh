@@ -6,6 +6,8 @@
 
 # TODO: Ensure running as sudo
 
+echo '' # new line
+
 # Ensure we are running on Linux
 if [[ "$OSTYPE" != "linux-gnu"* ]]; then
   echo 'Error: This script can only be run on Linux systems. Exiting...' >&2
