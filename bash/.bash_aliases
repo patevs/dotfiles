@@ -1,11 +1,11 @@
-
 # --------------- #
 # ~/.bash_aliases #
 # --------------- #
 
-####################
-# Helper Functions #
-####################
+# ------------------------------------------------------------------------------------------------------- #
+
+# Helper Functions
+# ================
 
 # Generate a random strong password
 alias genpasswd="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr -d '\n'; echo"
@@ -61,10 +61,10 @@ alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/
 #     sed 's,^[[:blank:]]*,,' <<< "${string}" | sed 's,[[:blank:]]*$,,'
 # }
 
+# ------------------------------------------------------------------------------------------------------- #
 
-##########################
-# System Related Aliases #
-##########################
+# System Related Aliases
+# ======================
 
 # Move to desktop directory
 alias desk="cd ~/Desktop"
@@ -108,16 +108,18 @@ alias lt='lsd --tree'
 alias l="lsd -a1"
 alias s="lsd -a1"
 
-#######################
-# DOS Related Aliases #
-#######################
+# ------------------------------------------------------------------------------------------------------- #
+
+# DOS Like Aliases
+# ================
 
 alias cls="clear"
 alias dir="ls"
 
-################################
-# Git & GitHub Related Aliases #
-################################
+# ------------------------------------------------------------------------------------------------------- #
+
+# Git & GitHub Aliases
+# ====================
 
 # TODO: Verify hub is installed
 # Use GitHubs' cli in favor of git
@@ -141,9 +143,10 @@ alias gs='git status'
 # alias gcp='git cherry-pick'
 # alias grm='git rm'
 
-#######################
-# NPM Related Aliases #
-#######################
+# ------------------------------------------------------------------------------------------------------- #
+
+# NodeJS & NPM Aliases
+# ====================
 
 # TODO: Verify node & npm are installed
 alias npl='npm list --depth=0'
