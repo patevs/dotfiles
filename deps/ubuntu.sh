@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# -------- #
-# linux.sh #
-# -------- #
+# --------- #
+# ubuntu.sh #
+# --------- #
 
 # TODO: Ensure running as sudo
 
