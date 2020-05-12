@@ -32,12 +32,37 @@ fi
 sudo apt update
 sudo apt upgrade -y
 
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# System Utilities
+# ================
+
+sudo apt install neofetch
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # WSL Utilities
 # =============
 
 sudo apt install ubuntu-wsl
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Developer Tools
+# ===============
+
+# Node Version Manager
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+# NodeJS LTS and NPM
+nvm install --lts --latest-npm
+
+# Java 8
+sudo apt install openjdk-8-jdk
+
+# Android SDK
+# sudo apt install android-sdk
 
 # ------------------------------------------------------------------------------------------------------- #
 
