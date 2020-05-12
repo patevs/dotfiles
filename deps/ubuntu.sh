@@ -46,6 +46,9 @@ sudo apt install ubuntu-wsl
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
+# NodeJS LTS and NPM
+nvm install --lts --latest-npm
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Fonts
