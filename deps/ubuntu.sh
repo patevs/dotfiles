@@ -56,6 +56,9 @@ nvm install --lts --latest-npm
 # Java 8
 sudo apt install openjdk-8-jdk
 
+# Android SDK
+# sudo apt install android-sdk
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Fonts
