@@ -41,17 +41,14 @@ sudo apt install ubuntu-wsl
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Node Version Manager
-# ====================
+# Developer Tools
+# ===============
 
+# Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # NodeJS LTS and NPM
 nvm install --lts --latest-npm
-
-# ------------------------------------------------------------------------------------------------------- #
-
-# Developer Tools
 
 # Java 8
 sudo apt install openjdk-8-jdk
