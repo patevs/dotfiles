@@ -82,9 +82,12 @@ sudo apt install firefox
 # Developer Tools
 # ===============
 
-# Python3
+# Python2 and Pip
+sudo apt install python2
+# sudo apt install python-pip
+
+# Python3 and Pip
 sudo apt install python3
-# Pip
 sudo apt install python3-pip
 
 # Python Version Manager
