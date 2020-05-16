@@ -34,6 +34,14 @@ sudo apt upgrade -y
 
 # ------------------------------------------------------------------------------------------------------- #
 
+# WSL Utilities
+# =============
+
+sudo apt install ubuntu-wsl
+sudo apt install xubuntu-desktop
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # System Utilities
 # ================
 
@@ -57,14 +65,6 @@ sudo apt install firefox
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# WSL Utilities
-# =============
-
-sudo apt install ubuntu-wsl
-sudo apt install xubuntu-desktop
-
-# ------------------------------------------------------------------------------------------------------- #
-
 # Developer Tools
 # ===============
 
@@ -79,6 +79,21 @@ sudo apt install openjdk-8-jdk
 
 # Android SDK
 # sudo apt install android-sdk
+
+# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
+# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
+# | grep "browser_download_url.*deb" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | wget -qi -
+
+# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
+
+# TODO: Dynamically download latest version
+# Download LSD
+curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
+# Install LSD
+sudo dpkg -i lsd_0.17.0_amd64.deb
 
 # ------------------------------------------------------------------------------------------------------- #
 
