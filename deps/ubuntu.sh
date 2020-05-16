@@ -82,6 +82,25 @@ sudo apt install firefox
 # Developer Tools
 # ===============
 
+# Python2 and Pip
+sudo apt install python2
+# sudo apt install python-pip
+
+# Python3 and Pip
+sudo apt install python3
+sudo apt install python3-pip
+
+pip3 install --upgrade pip
+pip3 install --upgrade setuptools
+
+# Python Version Manager
+# git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+# echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+# echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+# echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+# Restart Shell
+# exec "$SHELL"
+
 # Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
