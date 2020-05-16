@@ -45,6 +45,7 @@ sudo apt install xubuntu-desktop
 # System Utilities
 # ================
 
+sudo apt install bat
 sudo apt install git
 sudo apt install bash-completion
 sudo apt install ripgrep
@@ -53,6 +54,21 @@ sudo apt install neofetch
 sudo apt install neovim
 # sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 #       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
+# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
+# | grep "browser_download_url.*deb" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | wget -qi -
+
+# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
+
+# TODO: Dynamically download latest version
+# Download LSD
+curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
+# Install LSD
+sudo dpkg -i lsd_0.17.0_amd64.deb
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -77,23 +93,6 @@ sudo apt install openjdk-8-jdk
 
 # Android SDK
 # sudo apt install android-sdk
-
-sudo apt install bat
-
-# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
-# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
-# | grep "browser_download_url.*deb" \
-# | cut -d : -f 2,3 \
-# | tr -d \" \
-# | wget -qi -
-
-# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
-
-# TODO: Dynamically download latest version
-# Download LSD
-curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
-# Install LSD
-sudo dpkg -i lsd_0.17.0_amd64.deb
 
 # ------------------------------------------------------------------------------------------------------- #
 
