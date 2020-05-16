@@ -15,3 +15,6 @@
 	url = https://github.com/patevs/utility-scripts
 
 # EOF #
+[submodule "bash/posh-git-sh"]
+	path = bash/posh-git-sh
+	url = https://github.com/lyze/posh-git-sh
