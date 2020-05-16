@@ -90,6 +90,9 @@ sudo apt install python2
 sudo apt install python3
 sudo apt install python3-pip
 
+pip3 install --upgrade pip
+pip3 install --upgrade setuptools
+
 # Python Version Manager
 # git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 # echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
