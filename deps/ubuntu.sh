@@ -37,10 +37,16 @@ sudo apt upgrade -y
 # System Utilities
 # ================
 
+# sudo apt-get install git bash-completion
+
+sudo apt install git
+sudo apt install bash-completion
+sudo apt install ripgrep
+
 sudo apt install neofetch
 sudo apt install neovim
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+#       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # ------------------------------------------------------------------------------------------------------- #
 
