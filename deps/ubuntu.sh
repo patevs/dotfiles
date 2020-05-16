@@ -45,8 +45,6 @@ sudo apt install xubuntu-desktop
 # System Utilities
 # ================
 
-# sudo apt-get install git bash-completion
-
 sudo apt install git
 sudo apt install bash-completion
 sudo apt install ripgrep
