@@ -46,6 +46,7 @@ sudo apt install neofetch
 # =============
 
 sudo apt install ubuntu-wsl
+sudo apt install xubuntu-desktop
 
 # ------------------------------------------------------------------------------------------------------- #
 
