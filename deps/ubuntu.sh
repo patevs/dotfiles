@@ -34,11 +34,18 @@ sudo apt upgrade -y
 
 # ------------------------------------------------------------------------------------------------------- #
 
+# WSL Utilities
+# =============
+
+sudo apt install ubuntu-wsl
+sudo apt install xubuntu-desktop
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # System Utilities
 # ================
 
-# sudo apt-get install git bash-completion
-
+sudo apt install bat
 sudo apt install git
 sudo apt install bash-completion
 sudo apt install ripgrep
@@ -48,13 +55,27 @@ sudo apt install neovim
 # sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 #       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
+# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
+# | grep "browser_download_url.*deb" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | wget -qi -
+
+# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
+
+# TODO: Dynamically download latest version
+# Download LSD
+curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
+# Install LSD
+sudo dpkg -i lsd_0.17.0_amd64.deb
+
 # ------------------------------------------------------------------------------------------------------- #
 
-# WSL Utilities
-# =============
+# Applications
+# ============
 
-sudo apt install ubuntu-wsl
-sudo apt install xubuntu-desktop
+sudo apt install firefox
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -89,25 +110,6 @@ fi
 
 # Hack NF
 curl -fLo "Hack Regular Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
-
-# ------------------------------------------------------------------------------------------------------- #
-
-# Tools
-# =====
-
-# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
-# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
-# | grep "browser_download_url.*deb" \
-# | cut -d : -f 2,3 \
-# | tr -d \" \
-# | wget -qi -
-
-# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
-
-# Download LSD
-curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
-# Install LSD
-sudo dpkg -i lsd_0.17.0_amd64.deb
 
 # ------------------------------------------------------------------------------------------------------- #
 
