@@ -78,6 +78,8 @@ sudo apt install openjdk-8-jdk
 # Android SDK
 # sudo apt install android-sdk
 
+sudo apt install bat
+
 # https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
 # curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
 # | grep "browser_download_url.*deb" \
