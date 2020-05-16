@@ -113,6 +113,7 @@ choco install git.install
 choco install jdk8
 # choco install nuget.commandline   --limit-output
 # choco install nvm.portable        --limit-output
+# choco install poweriso
 choco install pulseaudio
 choco install reactotron
 # choco install rsvg-convert
