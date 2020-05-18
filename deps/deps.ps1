@@ -348,6 +348,8 @@ python2 -m pip install --upgrade neovim
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade setuptools
 
+python3 -m pip install --upgrade thefuck
+
 # buku
 # pip3 install buku
 
