@@ -25,6 +25,10 @@ Set-Environment "JAVA_HOME" "C:\Program Files\Java\jdk1.8.0_211"
 # MSBuild
 # Set-Environment "MSBUILD_HOME" "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current"
 
+# Python Output Encoding
+# $env:PYTHONIOENCODING="utf-8"
+Set-Environment "PYTHONIOENCODING" "utf-8"
+
 # Watchman
 # Set-Environment "WATCHMAN_HOME" "C:\bin\watchman"
 
