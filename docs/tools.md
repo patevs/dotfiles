@@ -116,6 +116,7 @@
 * [`JAWS`](https://github.com/411Hall/JAWS) JAWS - Just Another Windows (Enum) Script
 * [`Plaster`](https://github.com/PowerShell/Plaster) Template-based file and project generator written in PowerShell.
 * [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) A module that provides tools for other modules and scripts.
+* [`psInlineProgress`](https://github.com/gravejester/psInlineProgress) Write inline progress bars in PowerShell.
 * [`PSModuleDevelopment`](https://github.com/PowershellFrameworkCollective/PSModuleDevelopment) Provides tools that help with module development.
 * [`winfetch`](https://github.com/lptstr/winfetch/)
 * [`z.lua`](https://github.com/skywind3000/z.lua) A command line tool which helps you navigate faster by learning your habits.
