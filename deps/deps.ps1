@@ -334,6 +334,7 @@ if (Get-Command go) {
 
 python2 -m pip install --upgrade pip
 python2 -m pip install --upgrade setuptools
+
 python2 -m pip install --upgrade virtualenv
 python2 -m pip install --upgrade neovim
 
@@ -346,6 +347,8 @@ python2 -m pip install --upgrade neovim
 
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade setuptools
+
+python3 -m pip install --upgrade thefuck
 
 # buku
 # pip3 install buku

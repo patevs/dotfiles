@@ -43,6 +43,9 @@ ${function:version} = { $PSVersionTable.PSVersion }
 # Get installed PowerShell modules
 ${function:modules} = { Get-Module -ListAvailable }
 
+# Correct the previous command
+Invoke-Expression "$(thefuck --alias)"
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # System Utility Aliases
