@@ -115,6 +115,7 @@
 
 * [`JAWS`](https://github.com/411Hall/JAWS) JAWS - Just Another Windows (Enum) Script
 * [`winfetch`](https://github.com/lptstr/winfetch/)
+* [`z.lua`](https://github.com/skywind3000/z.lua) A command line tool which helps you navigate faster by learning your habits.
 * [`ZLocation`](https://github.com/vors/ZLocation) Tracks your most used directories, based on number of previously run commands.
 
 ---
