@@ -177,6 +177,7 @@
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
 * [`ytop`](https://github.com/cjbassi/ytop)
+* [`zoxide`](https://github.com/ajeetdsouza/zoxide) A faster way to navigate your filesystem.
 
 ---
 
