@@ -114,7 +114,13 @@
 ## PowerShell Tools
 
 * [`JAWS`](https://github.com/411Hall/JAWS) JAWS - Just Another Windows (Enum) Script
+* [`Plaster`](https://github.com/PowerShell/Plaster) Template-based file and project generator written in PowerShell.
+* [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) A module that provides tools for other modules and scripts.
+* [`psInlineProgress`](https://github.com/gravejester/psInlineProgress) Write inline progress bars in PowerShell.
+* [`PSModuleDevelopment`](https://github.com/PowershellFrameworkCollective/PSModuleDevelopment) Provides tools that help with module development.
 * [`winfetch`](https://github.com/lptstr/winfetch/)
+* [`z.lua`](https://github.com/skywind3000/z.lua) A command line tool which helps you navigate faster by learning your habits.
+* [`ZLocation`](https://github.com/vors/ZLocation) Tracks your most used directories, based on number of previously run commands.
 
 ---
 
@@ -141,6 +147,7 @@
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
+* [`thefuck`](https://github.com/nvbn/thefuck) Magnificent app which corrects your previous console command.
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`wttr.in`](https://github.com/chubin/wttr.in) The right way to check the weather.
