@@ -17,6 +17,7 @@
 ## Git Integrations and Utilities
 
 * [`add-gitignore`](https://github.com/TejasQ/add-gitignore) Interactive CLI tool that adds a `.gitignore` to your projects.
+* [`check-it-out`](https://github.com/jwu910/check-it-out) A CLI for Git Checkout. See branches available for checkout.
 * [`cli-github`](https://github.com/IonicaBizau/cli-github) A fancy GitHub client for command line.
 * [`cz-cli`](https://github.com/commitizen/cz-cli) The [`commitizen`](https://github.com/commitizen) command line utility.
   * [`cz-conventional-changelog`](https://github.com/commitizen/cz-conventional-changelog) A commitizen adapter for the angular preset of [`conventional-changelog`](https://github.com/conventional-changelog/conventional-changelog).
