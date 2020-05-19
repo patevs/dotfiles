@@ -140,6 +140,7 @@
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
+* [`pipx`](https://github.com/pipxproject/pipx) Install and Run Python Applications in Isolated Environments.
 * [`ranger`](https://github.com/ranger/ranger)
 * [`rebound`](https://github.com/shobrook/rebound) Command-line tool that instantly fetches Stack Overflow results when an exception is thrown.
 * [`redditripper`](https://github.com/pmma1312/redditripper) Downloads all images of the subreddits specified in a text file.
