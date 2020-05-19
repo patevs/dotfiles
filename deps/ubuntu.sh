@@ -46,6 +46,7 @@ sudo apt install xubuntu-desktop
 # ================
 
 sudo apt install bat
+sudo apt install docker.io
 sudo apt install git
 sudo apt install bash-completion
 sudo apt install ripgrep
