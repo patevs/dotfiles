@@ -345,8 +345,13 @@ python2 -m pip install --upgrade neovim
 
 # TODO: Ensure python3 and pip3 are installed
 
+# python3 -m pip install --user --upgrade pip
 python3 -m pip install --upgrade pip
+# python3 -m pip install --user --upgrade setuptools
 python3 -m pip install --upgrade setuptools
+
+python3 -m pip install --upgrade pipx
+python3 -m pipx ensurepath
 
 python3 -m pip install --upgrade thefuck
 
