@@ -217,6 +217,7 @@ scoop install s
 scoop install scrcpy
 # scoop install sqlite
 scoop install winfetch
+scoop install yarn
 
 # Shells and Terminals
 scoop install pwsh
