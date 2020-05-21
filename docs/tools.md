@@ -113,7 +113,9 @@
 
 ## PowerShell Tools
 
+* [`BurntToast`](https://github.com/Windos/BurntToast) Module for creating and displaying Toast Notifications on Microsoft Windows 10.
 * [`JAWS`](https://github.com/411Hall/JAWS) JAWS - Just Another Windows (Enum) Script
+* [`oh-my-posh`](https://github.com/JanDeDobbeleer/oh-my-posh) A prompt theming engine for Powershell.
 * [`Pansies`](https://github.com/PoshCode/Pansies) Powershell ANSI Escape Sequences, functions for colored output, etc.
 * [`Plaster`](https://github.com/PowerShell/Plaster) Template-based file and project generator written in PowerShell.
 * [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) A module that provides tools for other modules and scripts.
@@ -174,6 +176,7 @@
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
+* [`procs`](https://github.com/dalance/procs) A modern replacement for ps written in Rust.
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
