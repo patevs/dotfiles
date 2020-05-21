@@ -142,7 +142,7 @@ CALL npm install --global ntl
 :: # https://github.com/tclindner/npm-package-json-lint
 :: CALL npm install --global npm-package-json-lint
 :: # https://github.com/felixrieseberg/npm-windows-upgrade
-CALL npm install --global --production npm-windows-upgrade
+:: CALL npm install --global --production npm-windows-upgrade
 :: CALL npm install --global npminstall
 :: # https://github.com/npms-io/npms-cli
 :: CALL npm install --global npms-cli
@@ -406,7 +406,7 @@ ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 :: ECHO. & ECHO  [44m Upgrading PNPM: [0m & ECHO.
 :: CALL pnpm install --global pnpm
 :: # https://github.com/yarnpkg/yarn
-CALL npm install --global yarn
+:: CALL npm install --global yarn
 
 :: ---------------------------------------------------------------------------- ::
 
