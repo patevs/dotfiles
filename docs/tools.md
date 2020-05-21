@@ -113,6 +113,7 @@
 
 ## PowerShell Tools
 
+* [`BurntToast`](https://github.com/Windos/BurntToast) Module for creating and displaying Toast Notifications on Microsoft Windows 10.
 * [`JAWS`](https://github.com/411Hall/JAWS) JAWS - Just Another Windows (Enum) Script
 * [`Pansies`](https://github.com/PoshCode/Pansies) Powershell ANSI Escape Sequences, functions for colored output, etc.
 * [`Plaster`](https://github.com/PowerShell/Plaster) Template-based file and project generator written in PowerShell.
