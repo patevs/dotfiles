@@ -174,6 +174,7 @@
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
+* [`procs`](https://github.com/dalance/procs) A modern replacement for ps written in Rust.
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
