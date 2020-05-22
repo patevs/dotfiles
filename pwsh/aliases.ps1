@@ -60,14 +60,13 @@ ${function:shutdown} = { shutdown /p }
 Set-Alias -Name shut -Value shutdown
 
 # Restart System
-# TODO: Fix me
-# ${function:restart} = { shutdown /r /t 0 }
-# Set-Alias -Name reboot -Value restart
+${function:restart} = { shutdown /r /t 0 }
+Set-Alias -Name reboot -Value restart
 
 # Create a new directory and enter it
 Set-Alias -Name mkd -Value CreateAndSetDirectory
 
-# Remvoe a given item
+# Remove a given item
 Set-Alias -Name del -Value RemoveItem -option AllScope -Force
 
 # Send an item to the Recycle Bin
