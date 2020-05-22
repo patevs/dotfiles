@@ -205,6 +205,8 @@ scoop install dust
 scoop install fd
 # scoop install grex
 scoop install heroku-cli
+# scoop install hugo
+scoop install hugo-extended
 scoop install less
 scoop install lsd
 # scoop install make
