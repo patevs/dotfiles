@@ -56,9 +56,8 @@ Invoke-Expression "$(thefuck --alias)"
 ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 
 # Shutdown System
-# TODO: Fix me
-# ${function:shutdown} = { shutdown /p }
-# Set-Alias -Name shut -Value shutdown
+${function:shutdown} = { shutdown /p }
+Set-Alias -Name shut -Value shutdown
 
 # Restart System
 # TODO: Fix me
