@@ -5,9 +5,9 @@
 # Write-Host "exports.ps1"
 
 # Android SDK and NDK
-# Set-Environment "ANDROID_HOME" "C:\Users\Pat\AppData\Local\Android\Sdk"
-# Set-Environment "ANDROID_SDK" "C:\Users\Pat\AppData\Local\Android\Sdk"
-# Set-Environment "ANDROID_SDK_ROOT" "C:\Users\Pat\AppData\Local\Android\Sdk"
+Set-Environment "ANDROID_HOME" "C:\Users\Pat\AppData\Local\Android\Sdk"
+Set-Environment "ANDROID_SDK" "C:\Users\Pat\AppData\Local\Android\Sdk"
+Set-Environment "ANDROID_SDK_ROOT" "C:\Users\Pat\AppData\Local\Android\Sdk"
 # Set-Environment "ANDROID_NDK" "C:\Users\Pat\AppData\Local\Android\Sdk\ndk\21.1.6352462"
 
 # VSCode
@@ -36,8 +36,8 @@ Set-Environment "JAVA_HOME" "C:\Program Files\Java\jdk1.8.0_211"
 # Set-Environment "GIT_EDITOR" $Env:EDITOR
 
 # Update Path Environment Variable
-# AppendEnvPath "$env:ANDROID_HOME\platform-tools"
-# AppendEnvPath "$env:ANDROID_HOME\emulator"
+AppendEnvPath "$env:ANDROID_HOME\platform-tools"
+AppendEnvPath "$env:ANDROID_HOME\emulator"
 AppendEnvPath "$env:CODE_HOME\bin"
 AppendEnvPath "$env:GIT_HOME\bin"
 AppendEnvPath "$env:GIT_HOME\cmd"
