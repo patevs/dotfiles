@@ -359,6 +359,8 @@ python3 -m pipx ensurepath
 
 python3 -m pip install --upgrade thefuck
 
+python3 -m pip install --upgrade wakatime
+
 # buku
 # pip3 install buku
 
