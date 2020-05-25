@@ -60,8 +60,8 @@ ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 # Set-Alias -Name shut -Value shutdown
 
 # Restart System
-${function:restart} = { shutdown /r /t 0 }
-Set-Alias -Name reboot -Value restart
+# ${function:restart} = { shutdown /r /t 0 }
+# Set-Alias -Name reboot -Value restart
 
 # Create a new directory and enter it
 Set-Alias -Name mkd -Value CreateAndSetDirectory
