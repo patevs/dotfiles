@@ -24,7 +24,7 @@ Write-Host "Configuring System..." -ForegroundColor "Yellow"
 ## Set DisplayName for my account. Use only if you are not using a Microsoft Account
 #$myIdentity=[System.Security.Principal.WindowsIdentity]::GetCurrent()
 #$user = Get-WmiObject Win32_UserAccount | Where {$_.Caption -eq $myIdentity.Name}
-#$user.FullName = "Jay Harris
+#$user.FullName = "Patrick Evans"
 #$user.Put() | Out-Null
 #Remove-Variable user
 #Remove-Variable myIdentity
