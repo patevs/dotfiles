@@ -67,6 +67,8 @@ if (Get-Module -ListAvailable PSReadLine -ErrorAction SilentlyContinue) {
 # Customize PowerShell Prompt #
 # --------------------------- #
 
+$wakatime = $(which wakatime);
+
 # Must be called 'prompt' to be used by pwsh
 # https://github.com/gummesson/kapow/blob/master/themes/bashlet.ps1
 # https://github.com/dahlbyk/posh-git/wiki/Customizing-Your-PowerShell-Prompt
@@ -97,6 +99,13 @@ function prompt {
 
   $LastExitCode = $origLastExitCode
   "`n$('>' * ($nestedPromptLevel + 1)) "
+
+  # Wakatime Heartbeat
+  # https://github.com/wakatime/wakatime/issues/126#issuecomment-442892264
+  if($wakatime) {
+    wakatime --entity-type app --project Powershell;
+  }
+  return "=]"
 }
 
 # --------------------------------------------------------------------------------------------- #
