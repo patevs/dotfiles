@@ -62,6 +62,7 @@ CALL npm install --global @commitlint/cli
 CALL npm install --global commitlint-config-gitmoji
 :: # https://github.com/TejasQ/add-gitignore
 CALL npm install --global add-gitignore
+CALL npm install --global check-it-out
 :: # https://github.com/IonicaBizau/cli-github
 :: CALL npm install --global cli-github
 :: CALL npm install --global commitizen
