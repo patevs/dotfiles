@@ -1,25 +1,30 @@
+# ---------------- #
+# pwsh/windows.ps1 #
+# ---------------- #
+
 # Check to see if we are currently running "as Administrator"
 if (!(Verify-Elevated)) {
-   $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
-   $newProcess.Arguments = $myInvocation.MyCommand.Definition;
-   $newProcess.Verb = "runas";
-   [System.Diagnostics.Process]::Start($newProcess);
+  $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
+  $newProcess.Arguments = $myInvocation.MyCommand.Definition;
+  $newProcess.Verb = "runas";
+  [System.Diagnostics.Process]::Start($newProcess);
 
-   exit
+  exit
 }
 
 ###############################################################################
 ### Security and Identity                                                     #
 ###############################################################################
+
 Write-Host "Configuring System..." -ForegroundColor "Yellow"
 
 # Set Computer Name
-(Get-WmiObject Win32_ComputerSystem).Rename("CHOZO") | Out-Null
+(Get-WmiObject Win32_ComputerSystem).Rename("PATTOP") | Out-Null
 
 ## Set DisplayName for my account. Use only if you are not using a Microsoft Account
 #$myIdentity=[System.Security.Principal.WindowsIdentity]::GetCurrent()
 #$user = Get-WmiObject Win32_UserAccount | Where {$_.Caption -eq $myIdentity.Name}
-#$user.FullName = "Jay Harris
+#$user.FullName = "Patrick Evans"
 #$user.Put() | Out-Null
 #Remove-Variable user
 #Remove-Variable myIdentity
@@ -32,6 +37,8 @@ Write-Host "Configuring System..." -ForegroundColor "Yellow"
 ###############################################################################
 ### Privacy                                                                   #
 ###############################################################################
+
+<#
 Write-Host "Configuring Privacy..." -ForegroundColor "Yellow"
 
 # General: Don't let apps use advertising ID for experiences across apps: Allow: 1, Disallow: 0
@@ -193,10 +200,13 @@ Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataC
 
 # Start Menu: Disable suggested content: Enable: 1, Disable: 0
 Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" "SubscribedContent-338388Enabled" 0
+#>
 
 ###############################################################################
 ### Devices, Power, and Startup                                               #
 ###############################################################################
+
+<#
 Write-Host "Configuring Devices, Power, and Startup..." -ForegroundColor "Yellow"
 
 # Sound: Disable Startup Sound
@@ -214,10 +224,13 @@ Set-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory 
 
 # Network: Disable WiFi Sense
 Set-ItemProperty "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config" "AutoConnectAllowedOEM" 0
+#>
 
 ###############################################################################
 ### Explorer, Taskbar, and System Tray                                        #
 ###############################################################################
+
+<#
 Write-Host "Configuring Explorer, Taskbar, and System Tray..." -ForegroundColor "Yellow"
 
 # Ensure necessary registry paths
@@ -278,10 +291,13 @@ Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\SettingSync\Gr
 Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Accessibility" "Enabled" 0
 # Other Windows Settings
 Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Windows" "Enabled" 0
+#>
 
 ###############################################################################
 ### Default Windows Applications                                              #
 ###############################################################################
+
+<#
 Write-Host "Configuring Default Windows Applications..." -ForegroundColor "Yellow"
 
 # Uninstall 3D Builder
@@ -434,6 +450,7 @@ Disable-WindowsOptionalFeature -Online -FeatureName "WindowsMediaPlayer" -NoRest
 # Prevent "Suggested Applications" from returning
 if (!(Test-Path "HKLM:\Software\Policies\Microsoft\Windows\CloudContent")) {New-Item -Path "HKLM:\Software\Policies\Microsoft\Windows\CloudContent" -Type Folder | Out-Null}
 Set-ItemProperty "HKLM:\Software\Policies\Microsoft\Windows\CloudContent" "DisableWindowsConsumerFeatures" 1
+#>
 
 ###############################################################################
 ### Lock Screen                                                               #
@@ -447,6 +464,8 @@ Set-ItemProperty "HKLM:\Software\Policies\Microsoft\Windows\CloudContent" "Disab
 ###############################################################################
 ### Accessibility and Ease of Use                                             #
 ###############################################################################
+
+<#
 Write-Host "Configuring Accessibility..." -ForegroundColor "Yellow"
 
 # Turn Off Windows Narrator
@@ -467,10 +486,13 @@ Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advan
 
 # Disable auto-correct
 Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\TabletTip\1.7" "EnableAutocorrection" 0
+#>
 
 ###############################################################################
 ### Windows Update & Application Updates                                      #
 ###############################################################################
+
+<#
 Write-Host "Configuring Windows Update..." -ForegroundColor "Yellow"
 
 # Ensure Windows Update registry paths
@@ -501,10 +523,13 @@ if (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization"
 if (!(Test-Path "HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\Windows\DeliveryOptimization")) {New-Item -Path "HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\Windows\DeliveryOptimization" -Type Folder | Out-Null}
 Set-ItemProperty "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" "DODownloadMode" 0
 Set-ItemProperty "HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\Windows\DeliveryOptimization" "DODownloadMode" 0
+#>
 
 ###############################################################################
 ### Windows Defender                                                          #
 ###############################################################################
+
+<#
 Write-Host "Configuring Windows Defender..." -ForegroundColor "Yellow"
 
 # Disable Cloud-Based Protection: Enabled Advanced: 2, Enabled Basic: 1, Disabled: 0
@@ -512,10 +537,13 @@ Set-MpPreference -MAPSReporting 0
 
 # Disable automatic sample submission: Prompt: 0, Auto Send Safe: 1, Never: 2, Auto Send All: 3
 Set-MpPreference -SubmitSamplesConsent 2
+#>
 
 ###############################################################################
 ### Internet Explorer                                                         #
 ###############################################################################
+
+<#
 Write-Host "Configuring Internet Explorer..." -ForegroundColor "Yellow"
 
 # Set home page to `about:blank` for faster loading
@@ -526,11 +554,13 @@ Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Internet Explorer\Main" "Check_Associ
 
 # Disable Password Caching [Disable Remember Password]
 Set-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" "DisablePasswordCaching" 1
-
+#>
 
 ###############################################################################
 ### Disk Cleanup (CleanMgr.exe)                                               #
 ###############################################################################
+
+<#
 Write-Host "Configuring Disk Cleanup..." -ForegroundColor "Yellow"
 
 $diskCleanupRegPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\"
@@ -564,14 +594,19 @@ Set-ItemProperty $(Join-Path $diskCleanupRegPath "Windows ESD installation files
 Set-ItemProperty $(Join-Path $diskCleanupRegPath "Windows Upgrade Log Files"                    ) "StateFlags6174" 0   -ErrorAction SilentlyContinue
 
 Remove-Variable diskCleanupRegPath
+#>
 
 ###############################################################################
 ### PowerShell Console                                                        #
 ###############################################################################
+
 Write-Host "Configuring Console..." -ForegroundColor "Yellow"
 
 # Make 'Source Code Pro' an available Console font
-Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont' 000 'Source Code Pro'
+# Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont' 000 'Source Code Pro'
+# Make 'Hack NF' an available Console font
+Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont' 000 'Hack NF'
+
 
 @(`
 "HKCU:\Console\%SystemRoot%_System32_bash.exe",`
@@ -580,11 +615,17 @@ Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\Tru
 "HKCU:\Console\Windows PowerShell (x86)",`
 "HKCU:\Console\Windows PowerShell",`
 "HKCU:\Console"`
-) | ForEach {
-    If (!(Test-Path $_)) {
-        New-Item -path $_ -ItemType Folder | Out-Null
-    }
+) | ForEach-Object {
+  If (!(Test-Path $_)) {
+    New-Item -path $_ -ItemType Folder | Out-Null
+  }
 
+  # Name of display font
+  Set-ItemProperty $_ "FaceName"             "Hack NF"
+
+}
+
+<#
 # Dimensions of window, in characters: 8-byte; 4b height, 4b width. Max: 0x7FFF7FFF (32767h x 32767w)
 Set-ItemProperty $_ "WindowSize"           0x002D0078 # 45h x 120w
 # Dimensions of screen buffer in memory, in characters: 8-byte; 4b height, 4b width. Max: 0x7FFF7FFF (32767h x 32767w)
@@ -651,9 +692,13 @@ Set-PSReadlineOption -Colors @{
     "Emphasis"  = "#f0a0c0"
     "Error"     = "#902020"
 }
+#>
 
 # Remove property overrides from PowerShell and Bash shortcuts
-Reset-AllPowerShellShortcuts
-Reset-AllBashShortcuts
+# Reset-AllPowerShellShortcuts
+# Reset-AllBashShortcuts
 
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+# echo "Done. Note that some of these changes require a logout/restart to take effect."
+Write-Output "Done. Note that some of these changes require a logout/restart to take effect."
+
+# EOF #

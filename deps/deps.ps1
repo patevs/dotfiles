@@ -235,7 +235,7 @@ scoop install onefetch
 
 # Applications
 scoop install android-studio
-scoop install android-sdk
+# scoop install android-sdk
 scoop install bulk-crap-uninstaller
 scoop install ccleaner
 # scoop install copyq
@@ -358,6 +358,8 @@ python3 -m pip install --upgrade pipx
 python3 -m pipx ensurepath
 
 python3 -m pip install --upgrade thefuck
+
+python3 -m pip install --upgrade wakatime
 
 # buku
 # pip3 install buku
