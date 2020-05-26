@@ -116,7 +116,9 @@ choco install jdk8
 # choco install poweriso
 choco install pulseaudio
 choco install reactotron
+# choco install rpi-imager
 # choco install rsvg-convert
+# choco install sdformatter
 choco install vcxsrv
 choco install visualstudio2019community
 # choco install visualstudio2019buildtools
