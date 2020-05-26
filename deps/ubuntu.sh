@@ -8,21 +8,22 @@
 
 echo '' # new line
 
+# Check that a given command is available
+# command_exists () {
+#   type "$1" &> /dev/null ;
+# }
+
 # Ensure we are running on Linux
 if [[ "$OSTYPE" != "linux-gnu"* ]]; then
   echo 'Error: This script can only be run on Linux systems. Exiting...' >&2
   exit 1
 fi
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# Helper Functions
-# ================
-
-# Check that a given command is available
-# command_exists () {
-#   type "$1" &> /dev/null ;
-# }
+# Ensure curl command exists
+if ! [ -x "$(command -v curl)" ]; then
+  echo 'Error: curl is not installed. Exiting...' >&2
+  exit 1
+fi
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -133,12 +134,6 @@ sudo apt install openjdk-8-jdk
 
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
-
-# Ensure curl command exists
-if ! [ -x "$(command -v curl)" ]; then
-  echo 'Error: curl is not installed. Exiting...' >&2
-  exit 1
-fi
 
 # Hack NF
 curl -fLo "Hack Regular Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
