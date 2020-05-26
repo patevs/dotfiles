@@ -45,6 +45,18 @@ sudo apt install xubuntu-desktop
 # System Utilities
 # ================
 
+# Shell and Terminal
+
+sudo apt install zsh
+# Set zsh as default shell
+# Note that this will not work if Zsh is not in your authorized shells list (/etc/shells)
+chsh -s $(which zsh)
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Development tools
+
 sudo apt install bat
 sudo apt install docker.io
 sudo apt install git
@@ -66,9 +78,9 @@ sudo apt install neovim
 # curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
 
 # TODO: Dynamically download latest version
-# Download LSD
+# Download lsd
 curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
-# Install LSD
+# Install lsd
 sudo dpkg -i lsd_0.17.0_amd64.deb
 
 # ------------------------------------------------------------------------------------------------------- #
