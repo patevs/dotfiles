@@ -223,6 +223,7 @@ CALL npm install --global licensed
 :: # https://github.com/localtunnel/localtunnel
 :: CALL npm install --global localtunnel
 :: CALL npm install --global maid
+:: CALL npm install --global @mermaid-js/mermaid-cli
 :: # https://github.com/cezaraugusto/mklicense
 :: Note: try licensed instead
 :: CALL npm install --global mklicense
