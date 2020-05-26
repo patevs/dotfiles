@@ -85,6 +85,7 @@ CALL npm install --global diff-so-fancy
 CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
 :: CALL npm install --global git-labelmaker
+:: CALL npm install --global grafgiti
 CALL npm install --global husky
 :: # https://github.com/yyx990803/starz
 :: CALL npm install --global starz
