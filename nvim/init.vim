@@ -23,14 +23,13 @@
 "                         ██████████▄▄▄▄▄▄▄██████████
 "                         ███████████████████████████
 "
-"   You are about to experience a potent dosage of Vim. Watch your steps.
 "
 "                ╔══════════════════════════════════════════╗
 "                ║           ⎋ HERE BE DRAGONS ⎋            ║
 "                ╚══════════════════════════════════════════╝
 
 
-" NeoVim configuration file location:
+" Default NeoVim configuration file location:
 "   ~/APPDATA/Local/nvim/init.vim
 "   Or: stdpath('config') . '/init.vim'
 
