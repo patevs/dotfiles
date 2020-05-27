@@ -388,7 +388,7 @@ CALL npm install --global wifi-password-cli
 :: ---------------------------------------------------------------------------- ::
 
 :: Alternative Package Managers
-ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
+:: ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 
 :: # https://github.com/alexanderGugel/ied
 :: CALL npm install --global ied
@@ -403,7 +403,7 @@ ECHO. & ECHO  [44m Installing Alternative Package Managers: [0m & ECHO.
 :: ---------------------------------------------------------------------------- ::
 
 :: Miscellaneous Modules
-:: ECHO. & ECHO  [44m Installing Miscellaneous Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing Miscellaneous Modules: [0m & ECHO.
 
 :: # https://github.com/rafaelrinaldi/whereami
 :: CALL npm install --global @rafaelrinaldi/whereami
