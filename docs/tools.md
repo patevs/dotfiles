@@ -86,10 +86,13 @@
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
+* [`gitleaks`](https://github.com/zricethezav/gitleaks) Scan git repos for secrets using regex and entropy 🔑
 * [`gotop`](https://github.com/xxxserxxx/gotop)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
+* [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
+* [`stonks`](https://github.com/ericm/stonks) Terminal based stock visualizer and tracker that displays realtime stocks in graph format.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 
 ---
