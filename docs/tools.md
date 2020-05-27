@@ -86,6 +86,7 @@
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
+* [`gitleaks`](https://github.com/zricethezav/gitleaks) Scan git repos for secrets using regex and entropy 🔑
 * [`gotop`](https://github.com/xxxserxxx/gotop)
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
