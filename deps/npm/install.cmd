@@ -7,17 +7,6 @@
 :: Batch script which installs various useful NPM global modules.
 :: Requires NodeJS and NPM to be installed.
 
-:: Tested Node Versions:
-::  * 13.11.0
-::  * 12.16.1
-::  * 10.19.0
-::  * 8.17.0
-
-:: TODO:
-::  * Create a .ps1 version of this script.
-::  * Created .md document containing links and descriptions for each of these packages.
-::  * Check for and skip already installed packages.
-
 CLS
 ECHO. & ECHO [100;4mNPM Global Modules Install Script[0m
 
