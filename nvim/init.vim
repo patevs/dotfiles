@@ -238,6 +238,9 @@ Plug 'ryanoasis/vim-devicons'
 
 " Plug 'KabbAmine/zeavim.vim'
 
+Plug 'ThePrimeagen/vim-be-good'
+" execute `:UpdateRemotePlugins` to install vim-be-good
+
 " Initialize plugin system
 " Remember to run :PlugInstall
 call plug#end()
