@@ -67,7 +67,7 @@ if (Get-Module -ListAvailable PSReadLine -ErrorAction SilentlyContinue) {
 # Customize PowerShell Prompt #
 # --------------------------- #
 
-$wakatime = $(which wakatime);
+# $wakatime = $(which wakatime);
 
 # Must be called 'prompt' to be used by pwsh
 # https://github.com/gummesson/kapow/blob/master/themes/bashlet.ps1
@@ -102,10 +102,12 @@ function prompt {
 
   # Wakatime Heartbeat
   # https://github.com/wakatime/wakatime/issues/126#issuecomment-442892264
+  <#
   if($wakatime) {
     wakatime --entity-type app --project Powershell;
   }
   return "=]"
+  #>
 }
 
 # --------------------------------------------------------------------------------------------- #
