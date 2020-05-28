@@ -4,6 +4,10 @@
 
 # Write-Host "exports.ps1"
 
+# Pager
+Set-Environment "PAGER" "less -RFSX"
+Set-Environment "BAT_PAGER" "less -RFSX"
+
 # Android SDK and NDK
 Set-Environment "ANDROID_HOME" "C:\Users\Pat\AppData\Local\Android\Sdk"
 Set-Environment "ANDROID_SDK" "C:\Users\Pat\AppData\Local\Android\Sdk"
