@@ -25,7 +25,7 @@ $destinationDir = "~"
 # --------------------------------- [Execution] --------------------------------- #
 
 # Copy files to destination directory
-Copy-Item -Path ./.git* -Exclude ./.gitaliases -Destination $destinationDir
+Copy-Item -Path ./.git* -Destination $destinationDir -Exclude ".gitaliases"
 
 Remove-Variable destinationDir
 
