@@ -224,6 +224,8 @@ scoop install winfetch
 scoop install yarn
 
 # Shells and Terminals
+# scoop install cmder
+# scoop install conemu
 scoop install pwsh
 # scoop install starship
 scoop install windows-terminal
