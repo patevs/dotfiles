@@ -10,6 +10,7 @@ $componentDir = Join-Path $profileDir "components"
 New-Item $profileDir -ItemType Directory -Force -ErrorAction SilentlyContinue
 New-Item $componentDir -ItemType Directory -Force -ErrorAction SilentlyContinue
 
+# TODO: Exclude windows.ps1
 Copy-Item -Path ./*.ps1 -Destination $profileDir -Exclude "bootstrap.ps1"
 Copy-Item -Path ./components/** -Destination $componentDir -Include **
 
