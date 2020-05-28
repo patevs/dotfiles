@@ -5,18 +5,18 @@
 # Global gitconfig file.
 
 [user]
-  name = Patrick Evans
+	name = Patrick Evans
 	email = ppevans11@gmail.com
 	username = PatEvs
 [github]
 	user = PatEvs
 [core]
-  editor = nvim
-  pager = diff-so-fancy | less --tabs=4 -RFSX
-  # pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+	editor = nvim
+	pager = diff-so-fancy | less --tabs=4 -RFSX
+	# pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
 	longpaths = true
-  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  excludesfile = ~/.gitignore
+	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
 # [interactive]
 #     diffFilter = delta --color-only
 [color]
@@ -30,7 +30,7 @@
 	meta = 11
 	frag = magenta bold
 	# commit = 11
-  commit = yellow bold
+	commit = yellow bold
 	old = red bold
 	new = green bold
 	whitespace = red reverse
@@ -53,7 +53,7 @@
 [alias]
 	a = add --all
 	#############
-  b = branch
+	b = branch
 	#############
 	c = commit
 	ca = commit -a
@@ -65,40 +65,40 @@
 	cld = clone --depth 1
 	#############
 	d = diff
-  ds = diff --staged
+	ds = diff --staged
 	dt = difftool
 	#############
 	l = log --oneline
 	# lg = log --oneline --graph --decorate
-  lg = log -p
-  lol = log --graph --decorate --pretty=oneline --abbrev-commit
-  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
-  #############
+	lg = log -p
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+	#############
 	m = merge
 	#############
-  o = checkout
+	o = checkout
 	om = checkout master
 	ob = checkout -b
 	#############
 	ps = push
 	pst = push --tags
-  pso = push origin
+	pso = push origin
 	psom = push origin master
 	#############
 	pl = pull
 	plo = pull origin
 	plom = pull origin master
 	#############
-  r = remote
+	r = remote
 	ra = remote add
 	rr = remote rm
 	rv = remote -v
 	##############
-  s = status
+	s = status
 	sb = status -s -b
 	#############
-  t = tag
+	t = tag
 	#############
-  aliases = !git config -l | grep alias | cut -c 7-
+	aliases = !git config -l | grep alias | cut -c 7-
 
 # EOF #
