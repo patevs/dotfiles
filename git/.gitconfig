@@ -27,9 +27,11 @@
 	remote = cyan bold
 [color "diff"]
 	# meta = yellow bold
+	meta = 11
 	frag = magenta bold
-	commit = 11
-  old = red bold
+	# commit = 11
+  commit = yellow bold
+	old = red bold
 	new = green bold
 	whitespace = red reverse
 [color "diff-highlight"]
