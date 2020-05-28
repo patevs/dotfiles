@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --------- #
-# ubuntu.sh #
+# debian.sh #
 # --------- #
 
 # TODO: Ensure running as sudo
