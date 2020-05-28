@@ -8,7 +8,7 @@
 .NOTES
   Version:        1.0
   Author:         PatEvs (github.com/patevs)
-  Last Modified:  19/04/2020 - April 19th 2020
+  Last Modified:  28/05/2020 - May 28th 2020
 
 .EXAMPLE
   .\bootstrap.ps1
@@ -25,7 +25,7 @@ $destinationDir = "~"
 # --------------------------------- [Execution] --------------------------------- #
 
 # Copy files to destination directory
-Copy-Item -Path ./.git* -Destination $destinationDir
+Copy-Item -Path ./.git* -Exclude ./.gitaliases -Destination $destinationDir
 
 Remove-Variable destinationDir
 
