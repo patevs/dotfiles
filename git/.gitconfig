@@ -52,40 +52,21 @@
 # 	required = true
 [alias]
 	a = add --all
-	# ai = add -i
 	#############
   b = branch
-  # ba = branch -a
-	# bd = branch -d
-	# bdd = branch -D
-	# br = branch -r
-	# bc = rev-parse --abbrev-ref HEAD
-	# bu = !git rev-parse --abbrev-ref --symbolic-full-name "@{u}"
-	# bs = !git-branch-status
 	#############
 	c = commit
 	ca = commit -a
 	cm = commit -m
 	cam = commit -am
 	cem = commit --allow-empty -m
-	# cd = commit --amend
-	# cad = commit -a --amend
-	# ced = commit --allow-empty --amend
 	#############
 	cl = clone
 	cld = clone --depth 1
-	# clg = !sh -c 'git clone git://github.com/$1 $(basename $1)' -
-	# clgp = !sh -c 'git clone git@github.com:$1 $(basename $1)' -
-	# clgu = !sh -c 'git clone git@github.com:$(git config --get user.username)/$1 $1' -
 	#############
 	d = diff
   ds = diff --staged
-	# dp = diff --patience
-	# dc = diff --cached
-	# dk = diff --check
-	# dck = diff --cached --check
 	dt = difftool
-	# dct = difftool --cached
 	#############
 	l = log --oneline
 	# lg = log --oneline --graph --decorate
@@ -93,89 +74,31 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
   #############
-	# ls = ls-files
-	# lsf = !git ls-files | grep -i
-	#############
 	m = merge
-	# ma = merge --abort
-	# mc = merge --continue
-	# ms = merge --skip
-  #############
+	#############
   o = checkout
 	om = checkout master
 	ob = checkout -b
-	# opr = !sh -c 'git fo pull/$1/head:pr-$1 && git o pr-$1'
 	#############
 	ps = push
-	# psf = push -f
-	# psu = push -u
 	pst = push --tags
-  #############
   pso = push origin
-	# psao = push --all origin
-	# psfo = push -f origin
-	# psuo = push -u origin
-	#############
 	psom = push origin master
-	# psaom = push --all origin master
-	# psfom = push -f origin master
-	# psuom = push -u origin master
-	# psoc = !git push origin $(git bc)
-	# psaoc = !git push --all origin $(git bc)
-	# psfoc = !git push -f origin $(git bc)
-	# psuoc = !git push -u origin $(git bc)
-	# psdc = !git push origin :$(git bc)
 	#############
 	pl = pull
-	# pb = pull --rebase
-	#############
 	plo = pull origin
-	# pbo = pull --rebase origin
 	plom = pull origin master
-	# ploc = !git pull origin $(git bc)
-	# pbom = pull --rebase origin master
-	# pboc = !git pull --rebase origin $(git bc)
-	#############
-	# plu = pull upstream
-	# plum = pull upstream master
-	# pluc = !git pull upstream $(git bc)
-	# pbum = pull --rebase upstream master
-	# pbuc = !git pull --rebase upstream $(git bc)
 	#############
   r = remote
 	ra = remote add
 	rr = remote rm
 	rv = remote -v
-	# rn = remote rename
-	# rp = remote prune
-	# rs = remote show
-	# rao = remote add origin
-	# rau = remote add upstream
-	# rro = remote remove origin
-	# rru = remote remove upstream
-	# rso = remote show origin
-	# rsu = remote show upstream
-	# rpo = remote prune origin
-	# rpu = remote prune upstream
-	# #############
+	##############
   s = status
 	sb = status -s -b
 	#############
   t = tag
-	# td = tag -d
 	#############
-  # bump = !sh -c 'git commit -am \"Version bump v$1\" && git psuoc && git release $1' -
-	# release = !sh -c 'git tag v$1 && git pst' -
-	# unrelease = !sh -c 'git tag -d v$1 && git pso :v$1' -
-	# merged = !sh -c 'git o master && git plom && git bd $1 && git rpo' -
-	aliases = !git config -l | grep alias | cut -c 7-
-	# snap = !git stash save 'snapshot: $(date)' && git stash apply 'stash@{0}'
-	# bare = !sh -c 'git symbolic-ref HEAD refs/heads/$1 && git rm --cached -r . && git clean -xfd' -
-	# whois = !sh -c 'git log -i -1 --author=\"$1\" --pretty=\"format:%an <%ae>\"' -
-	# serve = daemon --reuseaddr --verbose --base-path=. --export-all ./.git
-	#############
-  # unstage = reset HEAD
-  # Show files ignored by git:
-  # ign = ls-files -o -i --exclude-standard
+  aliases = !git config -l | grep alias | cut -c 7-
 
 # EOF #
