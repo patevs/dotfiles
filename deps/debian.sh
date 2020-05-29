@@ -8,11 +8,6 @@
 
 echo '' # new line
 
-# Check that a given command is available
-# command_exists () {
-#   type "$1" &> /dev/null ;
-# }
-
 # Ensure we are running on Linux
 if [[ "$OSTYPE" != "linux-gnu"* ]]; then
   echo 'Error: This script can only be run on Linux systems. Exiting...' >&2
@@ -45,6 +40,9 @@ sudo apt install xubuntu-desktop
 
 # System Utilities
 # ================
+
+# Window Manager
+sudo apt install dwm
 
 # Shell and Terminal
 
