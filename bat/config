@@ -1,0 +1,11 @@
+# ---------- #
+# bat config #
+# ---------- #
+
+# ~\AppData\Roaming\bat\config
+
+# Disable paging
+# https://github.com/sharkdp/bat/issues/860#issuecomment-597319507
+--paging=never
+
+# EOF #

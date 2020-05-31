@@ -6,7 +6,10 @@
 
 # Pager
 Set-Environment "PAGER" "less -RFSX"
+
 Set-Environment "BAT_PAGER" "less -RFSX"
+# https://github.com/sharkdp/bat/issues/860#issuecomment-624088510
+Set-Environment "BAT_STYLE" "numbers,plain"
 
 # Android SDK and NDK
 Set-Environment "ANDROID_HOME" "C:\Users\Pat\AppData\Local\Android\Sdk"
