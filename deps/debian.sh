@@ -6,6 +6,8 @@
 
 # TODO: Ensure running as sudo
 
+# ------------------------------------------------------------------------------------------------------- #
+
 echo '' # new line
 
 # Ensure we are running on Linux
@@ -33,8 +35,8 @@ sudo apt upgrade -y
 # WSL Utilities
 # =============
 
-sudo apt install ubuntu-wsl
-sudo apt install xubuntu-desktop
+# sudo apt install ubuntu-wsl
+# sudo apt install xubuntu-desktop
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -54,34 +56,6 @@ chsh -s $(which zsh)
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Development tools
-
-sudo apt install bat
-sudo apt install docker.io
-sudo apt install git
-sudo apt install bash-completion
-sudo apt install ripgrep
-
-sudo apt install neofetch
-sudo apt install neovim
-# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-#       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
-# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
-# | grep "browser_download_url.*deb" \
-# | cut -d : -f 2,3 \
-# | tr -d \" \
-# | wget -qi -
-
-# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
-
-# TODO: Dynamically download latest version
-# Download lsd
-curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
-# Install lsd
-sudo dpkg -i lsd_0.17.0_amd64.deb
-
 # ------------------------------------------------------------------------------------------------------- #
 
 # Applications
@@ -94,24 +68,48 @@ sudo apt install firefox
 # Developer Tools
 # ===============
 
+sudo apt install bash-completion
+sudo apt install bat
+sudo apt install docker.io
+sudo apt install git
+sudo apt install hub
+sudo apt install neofetch
+sudo apt install neovim
+sudo apt install ripgrep
+
+# TODO: Dynamically download latest version
+# Download lsd
+curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
+# Install lsd
+sudo dpkg -i lsd_0.17.0_amd64.deb
+
+# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
+# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
+# | grep "browser_download_url.*deb" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | wget -qi -
+
+# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
+
 # Python2 and Pip
-sudo apt install python2
+# sudo apt install python2
 # sudo apt install python-pip
 
 # Python3 and Pip
-sudo apt install python3
-sudo apt install python3-pip
+# sudo apt install python3
+# sudo apt install python3-pip
 
-pip3 install --upgrade pip
-pip3 install --upgrade setuptools
+# pip3 install --upgrade pip
+# pip3 install --upgrade setuptools
 
 # Python Version Manager
-# git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-# echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-# echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-# echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
 # Restart Shell
-# exec "$SHELL"
+exec "$SHELL"
 
 # Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -155,5 +153,7 @@ curl -fLo "Hack Regular Nerd Font Complete.otf" https://github.com/ryanoasis/ner
 
 # Install GCC
 # brew install gcc
+
+# ------------------------------------------------------------------------------------------------------- #
 
 # EOF #
