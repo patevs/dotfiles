@@ -56,14 +56,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Development tools
 
+sudo apt install bash-completion
 sudo apt install bat
 sudo apt install docker.io
 sudo apt install git
-sudo apt install bash-completion
+sudo apt install hub
 sudo apt install ripgrep
-
 sudo apt install neofetch
 sudo apt install neovim
+
 # sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 #       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
@@ -95,15 +96,15 @@ sudo apt install firefox
 # ===============
 
 # Python2 and Pip
-sudo apt install python2
+# sudo apt install python2
 # sudo apt install python-pip
 
 # Python3 and Pip
-sudo apt install python3
-sudo apt install python3-pip
+# sudo apt install python3
+# sudo apt install python3-pip
 
-pip3 install --upgrade pip
-pip3 install --upgrade setuptools
+# pip3 install --upgrade pip
+# pip3 install --upgrade setuptools
 
 # Python Version Manager
 # git clone https://github.com/pyenv/pyenv.git ~/.pyenv
