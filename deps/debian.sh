@@ -18,8 +18,10 @@ fi
 
 # Ensure curl command exists
 if ! [ -x "$(command -v curl)" ]; then
-  echo 'Error: curl is not installed. Exiting...' >&2
-  exit 2
+  # echo 'Error: curl is not installed. Exiting...' >&2
+  echo 'Error: curl is not installed. Installing now...' >&2
+  sudo apt install curl
+  # exit 2
 fi
 
 # Ensure wget command exists
