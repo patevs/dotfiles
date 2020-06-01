@@ -229,7 +229,7 @@ npm install --global corona-cli
 sudo apt install ruby-full
 
 # Ruby Gems
-gem update --systems
+sudo gem update --system
 gem update
 
 gem install bundler
