@@ -111,6 +111,8 @@ sudo dpkg -i lsd_0.17.0_amd64.deb
 
 # curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
 
+# ------------------------------------------------------------------------------------------------------- #
+
 # Programming Languages
 # =====================
 
@@ -143,20 +145,20 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install --lts --latest-npm
 
 # Ruby
-# sudo apt install ruby-full
-# gem update --systems
-# gem update
+sudo apt install ruby-full
+gem update --systems
+gem update
 
 # Rbenv
 
 # Dependencies
-sudo apt install git libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
-curl -sL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash -
+# sudo apt install git libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
+# curl -sL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash -
 
 # Add `$HOME/.rbenv/bin` to user path
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc
+# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+# echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+# source ~/.bashrc
 # If using ZSH
 # echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 # echo 'eval "$(rbenv init -)"' >> ~/.zshrc
@@ -165,12 +167,24 @@ source ~/.bashrc
 # Install ruby
 # rbenv install 2.6.6
 # rbenv global 2.6.6
-rbenv install 2.7.1
-rbenv global 2.7.1
+# rbenv install 2.7.1
+# rbenv global 2.7.1
 
-# Update Ruby Gems
-gem update --system
-gem update
+# Ruby Version Manager (RVM)
+
+# Dependencies
+# sudo apt install g++, gcc, autoconf, automake, bison, libc6-dev, libffi-dev, libgdbm-dev, libncurses5-dev, libsqlite3-dev, libtool, libyaml-dev, make, pkg-config, sqlite3, zlib1g-dev, libgmp-dev, libreadline-dev, libssl-dev
+
+# gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+# OR:
+# gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+# curl -sSL https://get.rvm.io | bash -s stable
+
+# source ~/.rvm/scripts/rvm
+
+# rvm install 2.7.1
+# rvm use 2.7.1 --default
 
 # ------------------------------------------------------------------------------------------------------- #
 
