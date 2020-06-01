@@ -248,6 +248,7 @@ scoop install ccleaner
 scoop install imagemagick
 scoop install inkscape
 scoop install powertoys
+scoop install vncviewer
 # scoop install rufus
 scoop install snappy-driver-installer-origin
 scoop install speccy
