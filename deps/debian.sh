@@ -82,37 +82,6 @@ curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/inst
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# Developer Tools
-# ===============
-
-# sudo apt install android-sdk
-sudo apt install bash-completion
-sudo apt install bat
-# sudo apt install docker.io
-sudo apt install git
-sudo apt install hub
-sudo apt install jq
-sudo apt install neofetch
-sudo apt install neovim
-sudo apt install ripgrep
-
-# TODO: Dynamically download latest version
-# Download lsd
-curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
-# Install lsd
-sudo dpkg -i lsd_0.17.0_amd64.deb
-
-# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
-# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
-# | grep "browser_download_url.*deb" \
-# | cut -d : -f 2,3 \
-# | tr -d \" \
-# | wget -qi -
-
-# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
-
-# ------------------------------------------------------------------------------------------------------- #
-
 # Programming Languages
 # =====================
 
@@ -256,6 +225,37 @@ gem install neovim
 
 # rvm install 2.7.1
 # rvm use 2.7.1 --default
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Developer Tools
+# ===============
+
+# sudo apt install android-sdk
+sudo apt install bash-completion
+sudo apt install bat
+# sudo apt install docker.io
+sudo apt install git
+sudo apt install hub
+sudo apt install jq
+sudo apt install neofetch
+sudo apt install neovim
+sudo apt install ripgrep
+
+# TODO: Dynamically download latest version
+# Download lsd
+curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
+# Install lsd
+sudo dpkg -i lsd_0.17.0_amd64.deb
+
+# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
+# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
+# | grep "browser_download_url.*deb" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | wget -qi -
+
+# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
 
 # ------------------------------------------------------------------------------------------------------- #
 
