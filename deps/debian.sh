@@ -184,6 +184,8 @@ nvm install --lts --latest-npm
 # NPM Global Installs
 # -------------------
 
+# npm install --global @commitlint/cli commitlint-config-gitmoji add-gitignore check-it-out diff-so-fancy gitmoji-cli husky david npm-check npm-check-updates ntl typescript typesync licensed neovim react-native-cli gtop wifi-password-cli corona-cli
+
 # Git Integrations and Utilities
 npm install --global @commitlint/cli
 npm install --global commitlint-config-gitmoji
