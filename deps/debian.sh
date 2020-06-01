@@ -55,6 +55,8 @@ sudo apt install dwm
 
 # Shell and Terminal
 
+sudo apt install terminator
+
 sudo apt install zsh
 # Set zsh as default shell
 # Note that this will not work if Zsh is not in your authorized shells list (/etc/shells)
