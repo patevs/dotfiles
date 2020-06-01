@@ -18,8 +18,16 @@ fi
 
 # Ensure curl command exists
 if ! [ -x "$(command -v curl)" ]; then
-  echo 'Error: curl is not installed. Exiting...' >&2
-  exit 1
+  # echo 'Error: curl is not installed. Exiting...' >&2
+  echo 'Error: curl is not installed. Installing now...' >&2
+  sudo apt install curl
+  # exit 2
+fi
+
+# Ensure wget command exists
+if ! [ -x "$(command -v wget)" ]; then
+  echo 'Error: wget is not installed. Exiting...' >&2
+  exit 3
 fi
 
 # ------------------------------------------------------------------------------------------------------- #
@@ -48,6 +56,10 @@ sudo apt install dwm
 
 # Shell and Terminal
 
+sudo apt install gnome-terminal
+# sudo apt install stterm
+# sudo apt install terminator
+
 sudo apt install zsh
 # Set zsh as default shell
 # Note that this will not work if Zsh is not in your authorized shells list (/etc/shells)
@@ -63,16 +75,170 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 sudo apt install firefox
 
+# VSCode
+wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
+# OR:
+# . <( wget -O - https://code.headmelted.com/installers/apt.sh )
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Programming Languages
+# =====================
+
+# Java 8
+# ------
+
+sudo apt install openjdk-8-jdk
+
+# Perl
+# ----
+
+sudo apt install perl
+
+# Python2 and PIP
+# ---------------
+
+# sudo apt install python2
+# sudo apt install python-pip
+
+# Python3 and PIP
+# ---------------
+
+# sudo apt install python3
+# sudo apt install python3-pip
+
+# pip3 install --upgrade pip
+# pip3 install --upgrade setuptools
+
+# Python Version Manager
+# ----------------------
+
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+
+# Restart Shell
+exec "$SHELL"
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# NodeJS and NPM
+# --------------
+
+# Node Version Manager
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+# NodeJS LTS and NPM
+nvm install --lts --latest-npm
+
+# NPM Global Installs
+# -------------------
+
+# Git Integrations and Utilities
+npm install --global @commitlint/cli
+npm install --global commitlint-config-gitmoji
+npm install --global add-gitignore
+npm install --global check-it-out
+# Note: Requires Perl
+npm install --global diff-so-fancy
+
+# NodeJS and NPM Utility Modules
+npm install --global gitmoji-cli
+npm install --global husky
+npm install --global david
+npm install --global npm-check
+npm install --global npm-check-updates
+npm install --global ntl
+
+# TypeScript and Utility Modules
+npm install --global typescript
+npm install --global typesync
+
+# Development Utility Modules
+npm install --global licensed
+npm install --global neovim
+
+# React Native Development Utility Modules
+# npm install --global ignite-cli
+npm install --global react-native-cli
+
+# System Utility Modules
+npm install --global gtop
+npm install --global wifi-password-cli
+
+# Miscellaneous Modules
+npm install --global corona-cli
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# Ruby and Ruby Gems
+# ------------------
+
+sudo apt install ruby-full
+
+# Ruby Gems
+gem update --systems
+gem update
+
+gem install bundler
+gem install rails
+gem install neovim
+
+# Rbenv
+
+# Dependencies
+# sudo apt install git libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
+# curl -sL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash -
+
+# Add `$HOME/.rbenv/bin` to user path
+# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+# echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+# source ~/.bashrc
+# If using ZSH
+# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+# echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+# source ~/.zshrc
+
+# Install ruby
+# rbenv install 2.6.6
+# rbenv global 2.6.6
+# rbenv install 2.7.1
+# rbenv global 2.7.1
+
+# Ruby Version Manager (RVM)
+
+# Dependencies
+# sudo apt install g++, gcc, autoconf, automake, bison, libc6-dev, libffi-dev, libgdbm-dev, libncurses5-dev, libsqlite3-dev, libtool, libyaml-dev, make, pkg-config, sqlite3, zlib1g-dev, libgmp-dev, libreadline-dev, libssl-dev
+
+# gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+# OR:
+# gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+# Install RVM
+# curl -sSL https://get.rvm.io | bash -s stable
+# Install RVM with default Ruby and Rails
+# curl -sSL https://get.rvm.io | bash -s stable --rails
+
+# Activate RVM
+# source ~/.rvm/scripts/rvm
+
+# rvm install 2.7.1
+# rvm use 2.7.1 --default
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Developer Tools
 # ===============
 
+# sudo apt install android-sdk
 sudo apt install bash-completion
 sudo apt install bat
-sudo apt install docker.io
+# sudo apt install docker.io
 sudo apt install git
 sudo apt install hub
+sudo apt install jq
 sudo apt install neofetch
 sudo apt install neovim
 sudo apt install ripgrep
@@ -91,37 +257,6 @@ sudo dpkg -i lsd_0.17.0_amd64.deb
 # | wget -qi -
 
 # curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
-
-# Python2 and Pip
-# sudo apt install python2
-# sudo apt install python-pip
-
-# Python3 and Pip
-# sudo apt install python3
-# sudo apt install python3-pip
-
-# pip3 install --upgrade pip
-# pip3 install --upgrade setuptools
-
-# Python Version Manager
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
-# Restart Shell
-exec "$SHELL"
-
-# Node Version Manager
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-
-# NodeJS LTS and NPM
-nvm install --lts --latest-npm
-
-# Java 8
-sudo apt install openjdk-8-jdk
-
-# Android SDK
-# sudo apt install android-sdk
 
 # ------------------------------------------------------------------------------------------------------- #
 

@@ -364,6 +364,7 @@ python3 -m pip install --upgrade setuptools
 python3 -m pip install --upgrade pipx
 python3 -m pipx ensurepath
 
+python -m pip install --upgrade neovim
 python3 -m pip install --upgrade thefuck
 
 # python3 -m pip install --upgrade wakatime
@@ -389,9 +390,6 @@ Invoke-Expression "curl -sSL https://raw.githubusercontent.com/python-poetry/poe
 
 # DuckDuckGo utility
 # python -m pip install ddgr
-
-# Neovim
-# python -m pip install --upgrade neovim
 
 # wig
 # https://github.com/jekyc/wig
