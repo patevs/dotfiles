@@ -137,6 +137,13 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 # Restart Shell
 exec "$SHELL"
 
+# Install Python2 and Python3
+pyenv install 2.7.18
+pyenv install 3.8.3
+
+# Use Python3 Globally
+pyenv global 3.8.3
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # NodeJS and NPM
