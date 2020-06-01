@@ -103,6 +103,14 @@ sudo snap install code --classic
 # Programming Languages
 # =====================
 
+# GO
+# --
+
+sudo snap install --classic go
+
+# sudo add-apt-repository ppa:longsleep/golang-backports
+# sudo apt install golang-go
+
 # Java 8
 # ------
 
