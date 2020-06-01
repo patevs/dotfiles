@@ -55,6 +55,7 @@ sudo apt install dwm
 
 # Shell and Terminal
 
+sudo apt install gnome-terminal
 sudo apt install terminator
 
 sudo apt install zsh
