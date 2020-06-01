@@ -158,6 +158,44 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 # NodeJS LTS and NPM
 nvm install --lts --latest-npm
 
+# NPM Global Installs
+# -------------------
+
+# Git Integrations and Utilities
+npm install --global @commitlint/cli
+npm install --global commitlint-config-gitmoji
+npm install --global add-gitignore
+npm install --global check-it-out
+# Note: Requires Perl
+npm install --global diff-so-fancy
+
+# NodeJS and NPM Utility Modules
+npm install --global gitmoji-cli
+npm install --global husky
+npm install --global david
+npm install --global npm-check
+npm install --global npm-check-updates
+npm install --global ntl
+
+# TypeScript and Utility Modules
+npm install --global typescript
+npm install --global typesync
+
+# Development Utility Modules
+npm install --global licensed
+npm install --global neovim
+
+# React Native Development Utility Modules
+# npm install --global ignite-cli
+npm install --global react-native-cli
+
+# System Utility Modules
+npm install --global gtop
+npm install --global wifi-password-cli
+
+# Miscellaneous Modules
+npm install --global corona-cli
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Ruby and Ruby Gems
