@@ -85,9 +85,10 @@ curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/inst
 # Developer Tools
 # ===============
 
+# sudo apt install android-sdk
 sudo apt install bash-completion
 sudo apt install bat
-sudo apt install docker.io
+# sudo apt install docker.io
 sudo apt install git
 sudo apt install hub
 sudo apt install jq
@@ -109,6 +110,12 @@ sudo dpkg -i lsd_0.17.0_amd64.deb
 # | wget -qi -
 
 # curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
+
+# Programming Languages
+# =====================
+
+# Java 8
+sudo apt install openjdk-8-jdk
 
 # Python2 and Pip
 # sudo apt install python2
@@ -135,11 +142,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 # NodeJS LTS and NPM
 nvm install --lts --latest-npm
 
-# Java 8
-sudo apt install openjdk-8-jdk
+# Ruby
+sudo apt install ruby-full
 
-# Android SDK
-# sudo apt install android-sdk
+gem update --systems
+gem update
 
 # ------------------------------------------------------------------------------------------------------- #
 
