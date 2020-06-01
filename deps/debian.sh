@@ -51,10 +51,20 @@ sudo apt upgrade -y
 # System Utilities
 # ================
 
+# Snap
+# ----
+
+sudo apt install snapd
+# sudo snap install hello-world
+# hello-world
+
 # Window Manager
+# --------------
+
 sudo apt install dwm
 
 # Shell and Terminal
+# ------------------
 
 sudo apt install gnome-terminal
 # sudo apt install stterm
