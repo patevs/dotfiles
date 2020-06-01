@@ -240,9 +240,9 @@ sudo apt install ruby-full
 sudo gem update --system
 sudo gem update
 
-gem install bundler
-gem install rails
-gem install neovim
+sudo gem install bundler
+sudo gem install rails
+sudo gem install neovim
 
 # Rbenv
 
