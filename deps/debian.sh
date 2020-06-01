@@ -90,6 +90,7 @@ sudo apt install bat
 sudo apt install docker.io
 sudo apt install git
 sudo apt install hub
+sudo apt install jq
 sudo apt install neofetch
 sudo apt install neovim
 sudo apt install ripgrep
