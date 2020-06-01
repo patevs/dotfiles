@@ -147,8 +147,21 @@ sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-
 pyenv install 2.7.18
 pyenv install 3.8.3
 
-# Use Python3 Globally
-# pyenv global 3.8.3
+pyenv global 3.8.3 2.7.18 system
+
+pyenv rehash
+
+# Upgrade pip and setuptools
+python2 -m pip install --upgrade pip
+python2 -m pip install --upgrade setuptools
+
+python2 -m pip install --upgrade neovim
+python2 -m pip install --upgrade virtualenv
+
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade setuptools
+
+python3 -m pip install --upgrade neovim
 
 # ------------------------------------------------------------------------------------------------------- #
 
