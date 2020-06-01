@@ -244,6 +244,19 @@ sudo apt install neofetch
 sudo apt install neovim
 sudo apt install ripgrep
 
+# Yarn
+# ----
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt install yarn
+
+# LSDeluxe (LSD)
+# --------------
+
+# sudo snap install lsd
+
 # TODO: Dynamically download latest version
 # Download lsd
 curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
