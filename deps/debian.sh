@@ -141,7 +141,7 @@ exec "$SHELL"
 
 # Install Python2 and Python3
 
-# Dependencies for Python2
+# Dependencies
 sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 
 pyenv install 2.7.18
