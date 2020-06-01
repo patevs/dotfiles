@@ -105,14 +105,19 @@ curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/inst
 
 # ------------------------------------------------------------------------------------------------------- #
 
-# GO
-# --
+# Go Lang
+# -------
 
 sudo snap install --classic go
 
 # sudo add-apt-repository ppa:longsleep/golang-backports
 # sudo apt update
 # sudo apt install golang-go
+
+# Go Installs
+# -----------
+
+go get -u github.com/xxxserxxx/gotop/cmd/gotop
 
 # ------------------------------------------------------------------------------------------------------- #
 
