@@ -151,15 +151,22 @@ pyenv global 3.8.3 2.7.18 system
 
 pyenv rehash
 
-# Upgrade pip and setuptools
+# Python2 Installs
+# ----------------
+
 python2 -m pip install --upgrade pip
 python2 -m pip install --upgrade setuptools
+python2 -m pip install --upgrade wheel
 
 python2 -m pip install --upgrade neovim
 python2 -m pip install --upgrade virtualenv
 
+# Python3 Installs
+# ----------------
+
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade setuptools
+python3 -m pip install --upgrade wheel
 
 python3 -m pip install --upgrade neovim
 
