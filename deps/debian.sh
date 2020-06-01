@@ -293,7 +293,7 @@ sudo gem install neovim
 
 # sudo apt install android-sdk
 sudo apt install bash-completion
-sudo apt install bat
+# sudo apt install bat
 # sudo apt install docker.io
 sudo apt install git
 sudo apt install hub
@@ -311,16 +311,22 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt update
 sudo apt install yarn
 
+# Bat
+# ---
+
+curl -L https://github.com/sharkdp/bat/releases/download/v0.15.4/bat_0.15.4_armhf.deb -o bat_0.15.4_armhf.deb
+sudo dpkg -i bat_0.15.4_armhf.deb
+rm bat_0.15.4_armhf.deb
+
 # LSDeluxe (LSD)
 # --------------
 
-sudo snap install lsd
+# sudo snap install lsd
 
 # TODO: Dynamically download latest version
-# Download lsd
 # curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
-# Install lsd
 # sudo dpkg -i lsd_0.17.0_amd64.deb
+# rm lsd_0.17.0_amd64.deb
 
 # https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
 # curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
