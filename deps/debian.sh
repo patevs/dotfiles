@@ -179,8 +179,12 @@ gem update
 # OR:
 # gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
+# Install RVM
 # curl -sSL https://get.rvm.io | bash -s stable
+# Install RVM with default Ruby and Rails
+# curl -sSL https://get.rvm.io | bash -s stable --rails
 
+# Activate RVM
 # source ~/.rvm/scripts/rvm
 
 # rvm install 2.7.1
