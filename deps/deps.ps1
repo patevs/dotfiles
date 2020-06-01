@@ -209,6 +209,7 @@ scoop install fd
 scoop install heroku-cli
 # scoop install hugo
 scoop install hugo-extended
+scoop install jq
 scoop install less
 scoop install lsd
 # scoop install make
