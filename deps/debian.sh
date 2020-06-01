@@ -74,6 +74,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # ============
 
 sudo apt install firefox
+sudo apt install realvnc-vnc-server realvnc-vnc-viewer
 
 # VSCode
 wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
