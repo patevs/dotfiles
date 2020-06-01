@@ -91,10 +91,10 @@ sudo apt install realvnc-vnc-server realvnc-vnc-viewer
 # VSCode
 # ------
 
-sudo snap install code --classic
+# sudo snap install code --classic
 
-# wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
-# curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
+wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
 # OR:
 # . <( wget -O - https://code.headmelted.com/installers/apt.sh )
 
@@ -102,6 +102,8 @@ sudo snap install code --classic
 
 # Programming Languages
 # =====================
+
+# ------------------------------------------------------------------------------------------------------- #
 
 # GO
 # --
@@ -112,15 +114,72 @@ sudo snap install --classic go
 # sudo apt update
 # sudo apt install golang-go
 
+# ------------------------------------------------------------------------------------------------------- #
+
 # Java 8
 # ------
 
 sudo apt install openjdk-8-jdk
 
+# ------------------------------------------------------------------------------------------------------- #
+
+# NodeJS and NPM
+# --------------
+
+# Node Version Manager
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+# NodeJS LTS and NPM
+nvm install --lts --latest-npm
+
+# NPM Global Installs
+# -------------------
+
+# npm install --global @commitlint/cli commitlint-config-gitmoji add-gitignore check-it-out diff-so-fancy gitmoji-cli david npm-check npm-check-updates ntl typescript typesync licensed neovim react-native-cli gtop wifi-password-cli corona-cli
+
+# Git Integrations and Utilities
+npm install --global @commitlint/cli
+npm install --global commitlint-config-gitmoji
+npm install --global add-gitignore
+npm install --global check-it-out
+# Note: Requires Perl
+npm install --global diff-so-fancy
+
+# NodeJS and NPM Utility Modules
+npm install --global gitmoji-cli
+# npm install --global husky
+npm install --global david
+npm install --global npm-check
+npm install --global npm-check-updates
+npm install --global ntl
+
+# TypeScript and Utility Modules
+npm install --global typescript
+npm install --global typesync
+
+# Development Utility Modules
+npm install --global licensed
+npm install --global neovim
+
+# React Native Development Utility Modules
+# npm install --global ignite-cli
+npm install --global react-native-cli
+
+# System Utility Modules
+npm install --global gtop
+npm install --global wifi-password-cli
+
+# Miscellaneous Modules
+npm install --global corona-cli
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # Perl
 # ----
 
 sudo apt install perl
+
+# ------------------------------------------------------------------------------------------------------- #
 
 # Python2 and PIP
 # ---------------
@@ -178,57 +237,6 @@ python3 -m pip install --upgrade setuptools
 python3 -m pip install --upgrade wheel
 
 python3 -m pip install --upgrade neovim
-
-# ------------------------------------------------------------------------------------------------------- #
-
-# NodeJS and NPM
-# --------------
-
-# Node Version Manager
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-
-# NodeJS LTS and NPM
-nvm install --lts --latest-npm
-
-# NPM Global Installs
-# -------------------
-
-# npm install --global @commitlint/cli commitlint-config-gitmoji add-gitignore check-it-out diff-so-fancy gitmoji-cli david npm-check npm-check-updates ntl typescript typesync licensed neovim react-native-cli gtop wifi-password-cli corona-cli
-
-# Git Integrations and Utilities
-npm install --global @commitlint/cli
-npm install --global commitlint-config-gitmoji
-npm install --global add-gitignore
-npm install --global check-it-out
-# Note: Requires Perl
-npm install --global diff-so-fancy
-
-# NodeJS and NPM Utility Modules
-npm install --global gitmoji-cli
-# npm install --global husky
-npm install --global david
-npm install --global npm-check
-npm install --global npm-check-updates
-npm install --global ntl
-
-# TypeScript and Utility Modules
-npm install --global typescript
-npm install --global typesync
-
-# Development Utility Modules
-npm install --global licensed
-npm install --global neovim
-
-# React Native Development Utility Modules
-# npm install --global ignite-cli
-npm install --global react-native-cli
-
-# System Utility Modules
-npm install --global gtop
-npm install --global wifi-password-cli
-
-# Miscellaneous Modules
-npm install --global corona-cli
 
 # ------------------------------------------------------------------------------------------------------- #
 
