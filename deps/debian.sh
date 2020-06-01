@@ -117,13 +117,19 @@ sudo dpkg -i lsd_0.17.0_amd64.deb
 # =====================
 
 # Java 8
+# ------
+
 sudo apt install openjdk-8-jdk
 
-# Python2 and Pip
+# Python2 and PIP
+# ---------------
+
 # sudo apt install python2
 # sudo apt install python-pip
 
-# Python3 and Pip
+# Python3 and PIP
+# ---------------
+
 # sudo apt install python3
 # sudo apt install python3-pip
 
@@ -131,12 +137,20 @@ sudo apt install openjdk-8-jdk
 # pip3 install --upgrade setuptools
 
 # Python Version Manager
+# ----------------------
+
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+
 # Restart Shell
 exec "$SHELL"
+
+# ------------------------------------------------------------------------------------------------------- #
+
+# NodeJS and NPM
+# --------------
 
 # Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -144,10 +158,20 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 # NodeJS LTS and NPM
 nvm install --lts --latest-npm
 
-# Ruby
+# ------------------------------------------------------------------------------------------------------- #
+
+# Ruby and Ruby Gems
+# ------------------
+
 sudo apt install ruby-full
+
+# Ruby Gems
 gem update --systems
 gem update
+
+gem install bundler
+gem install rails
+gem install neovim
 
 # Rbenv
 
