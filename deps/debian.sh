@@ -26,8 +26,10 @@ fi
 
 # Ensure wget command exists
 if ! [ -x "$(command -v wget)" ]; then
-  echo 'Error: wget is not installed. Exiting...' >&2
-  exit 3
+  # echo 'Error: wget is not installed. Exiting...' >&2
+  echo 'Error: wget is not installed. Installing now...' >&2
+  sudo apt install wget
+  # exit 3
 fi
 
 # ------------------------------------------------------------------------------------------------------- #
@@ -138,11 +140,15 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 exec "$SHELL"
 
 # Install Python2 and Python3
+
+# Dependencies
+sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+
 pyenv install 2.7.18
 pyenv install 3.8.3
 
 # Use Python3 Globally
-pyenv global 3.8.3
+# pyenv global 3.8.3
 
 # ------------------------------------------------------------------------------------------------------- #
 
