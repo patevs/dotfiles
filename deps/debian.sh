@@ -19,8 +19,15 @@ fi
 # Ensure curl command exists
 if ! [ -x "$(command -v curl)" ]; then
   echo 'Error: curl is not installed. Exiting...' >&2
-  exit 1
+  exit 2
 fi
+
+# Ensure wget command exists
+if ! [ -x "$(command -v wget)" ]; then
+  echo 'Error: wget is not installed. Exiting...' >&2
+  exit 3
+fi
+
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -62,6 +69,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # ============
 
 sudo apt install firefox
+
+# VSCode
+wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
+# OR:
+# . <( wget -O - https://code.headmelted.com/installers/apt.sh )
 
 # ------------------------------------------------------------------------------------------------------- #
 
