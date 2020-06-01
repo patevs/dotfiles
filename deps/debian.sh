@@ -230,7 +230,7 @@ sudo apt install ruby-full
 
 # Ruby Gems
 sudo gem update --system
-gem update
+sudo gem update
 
 gem install bundler
 gem install rails
