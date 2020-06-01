@@ -106,7 +106,6 @@ if (which cinst) {
 
 # System and Development Tools
 choco install 7zip.install
-# choco install atom                --limit-output; <# pin; evergreen #> choco pin add --name Atom                --limit-output
 # choco install curl                --limit-output
 # choco install Fiddler             --limit-output
 choco install git.install
