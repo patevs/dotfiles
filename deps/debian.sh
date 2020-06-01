@@ -143,9 +143,33 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install --lts --latest-npm
 
 # Ruby
-sudo apt install ruby-full
+# sudo apt install ruby-full
+# gem update --systems
+# gem update
 
-gem update --systems
+# Rbenv
+
+# Dependencies
+sudo apt install git libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
+curl -sL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash -
+
+# Add `$HOME/.rbenv/bin` to user path
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+# If using ZSH
+# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+# echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+# source ~/.zshrc
+
+# Install ruby
+# rbenv install 2.6.6
+# rbenv global 2.6.6
+rbenv install 2.7.1
+rbenv global 2.7.1
+
+# Update Ruby Gems
+gem update --system
 gem update
 
 # ------------------------------------------------------------------------------------------------------- #
