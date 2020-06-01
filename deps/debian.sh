@@ -109,6 +109,7 @@ sudo snap install code --classic
 sudo snap install --classic go
 
 # sudo add-apt-repository ppa:longsleep/golang-backports
+# sudo apt update
 # sudo apt install golang-go
 
 # Java 8
@@ -307,6 +308,7 @@ sudo apt install ripgrep
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
+sudo apt update
 sudo apt install yarn
 
 # LSDeluxe (LSD)
