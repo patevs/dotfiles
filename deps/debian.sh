@@ -121,6 +121,11 @@ sudo dpkg -i lsd_0.17.0_amd64.deb
 
 sudo apt install openjdk-8-jdk
 
+# Perl
+# ----
+
+sudo apt install perl
+
 # Python2 and PIP
 # ---------------
 
