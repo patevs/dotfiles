@@ -312,6 +312,7 @@ rustup update
 # Cargo Installs
 # --------------
 
+cargo install bat
 cargo install eva
 # cargo install git-delta
 cargo install lsd
@@ -345,9 +346,9 @@ sudo apt install yarn
 # Bat
 # ---
 
-curl -L https://github.com/sharkdp/bat/releases/download/v0.15.4/bat_0.15.4_armhf.deb -o bat_0.15.4_armhf.deb
-sudo dpkg -i bat_0.15.4_armhf.deb
-rm bat_0.15.4_armhf.deb
+# curl -L https://github.com/sharkdp/bat/releases/download/v0.15.4/bat_0.15.4_armhf.deb -o bat_0.15.4_armhf.deb
+# sudo dpkg -i bat_0.15.4_armhf.deb
+# rm bat_0.15.4_armhf.deb
 
 # LSDeluxe (LSD)
 # --------------
