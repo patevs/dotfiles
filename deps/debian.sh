@@ -26,8 +26,10 @@ fi
 
 # Ensure wget command exists
 if ! [ -x "$(command -v wget)" ]; then
-  echo 'Error: wget is not installed. Exiting...' >&2
-  exit 3
+  # echo 'Error: wget is not installed. Exiting...' >&2
+  echo 'Error: wget is not installed. Installing now...' >&2
+  sudo apt install wget
+  # exit 3
 fi
 
 # ------------------------------------------------------------------------------------------------------- #
@@ -89,10 +91,10 @@ sudo apt install realvnc-vnc-server realvnc-vnc-viewer
 # VSCode
 # ------
 
-sudo snap install code --classic
+# sudo snap install code --classic
 
-# wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
-# curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
+wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
 # OR:
 # . <( wget -O - https://code.headmelted.com/installers/apt.sh )
 
@@ -101,15 +103,88 @@ sudo snap install code --classic
 # Programming Languages
 # =====================
 
+# ------------------------------------------------------------------------------------------------------- #
+
+# Go Lang
+# -------
+
+sudo snap install --classic go
+
+# sudo add-apt-repository ppa:longsleep/golang-backports
+# sudo apt update
+# sudo apt install golang-go
+
+# Go Installs
+# -----------
+
+go get -u github.com/xxxserxxx/gotop/cmd/gotop
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # Java 8
 # ------
 
 sudo apt install openjdk-8-jdk
 
+# ------------------------------------------------------------------------------------------------------- #
+
+# NodeJS and NPM
+# --------------
+
+# Node Version Manager
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+# NodeJS LTS and NPM
+nvm install --lts --latest-npm
+
+# NPM Global Installs
+# -------------------
+
+# npm install --global @commitlint/cli commitlint-config-gitmoji add-gitignore check-it-out diff-so-fancy gitmoji-cli david npm-check npm-check-updates ntl typescript typesync licensed neovim react-native-cli gtop wifi-password-cli corona-cli
+
+# Git Integrations and Utilities
+npm install --global @commitlint/cli
+npm install --global commitlint-config-gitmoji
+npm install --global add-gitignore
+npm install --global check-it-out
+# Note: Requires Perl
+npm install --global diff-so-fancy
+
+# NodeJS and NPM Utility Modules
+npm install --global gitmoji-cli
+# npm install --global husky
+npm install --global david
+npm install --global npm-check
+npm install --global npm-check-updates
+npm install --global ntl
+
+# TypeScript and Utility Modules
+npm install --global typescript
+npm install --global typesync
+
+# Development Utility Modules
+npm install --global licensed
+npm install --global neovim
+
+# React Native Development Utility Modules
+# npm install --global ignite-cli
+npm install --global react-native-cli
+
+# System Utility Modules
+npm install --global gtop
+npm install --global wifi-password-cli
+
+# Miscellaneous Modules
+npm install --global corona-cli
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # Perl
 # ----
 
 sudo apt install perl
+
+# ------------------------------------------------------------------------------------------------------- #
 
 # Python2 and PIP
 # ---------------
@@ -137,54 +212,36 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 # Restart Shell
 exec "$SHELL"
 
-# ------------------------------------------------------------------------------------------------------- #
+# Install Python2 and Python3
 
-# NodeJS and NPM
-# --------------
+# Dependencies
+sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 
-# Node Version Manager
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+pyenv install 2.7.18
+pyenv install 3.8.3
 
-# NodeJS LTS and NPM
-nvm install --lts --latest-npm
+pyenv global 3.8.3 2.7.18 system
 
-# NPM Global Installs
-# -------------------
+pyenv rehash
 
-# Git Integrations and Utilities
-npm install --global @commitlint/cli
-npm install --global commitlint-config-gitmoji
-npm install --global add-gitignore
-npm install --global check-it-out
-# Note: Requires Perl
-npm install --global diff-so-fancy
+# Python2 Installs
+# ----------------
 
-# NodeJS and NPM Utility Modules
-npm install --global gitmoji-cli
-npm install --global husky
-npm install --global david
-npm install --global npm-check
-npm install --global npm-check-updates
-npm install --global ntl
+python2 -m pip install --upgrade pip
+python2 -m pip install --upgrade setuptools
+python2 -m pip install --upgrade wheel
 
-# TypeScript and Utility Modules
-npm install --global typescript
-npm install --global typesync
+python2 -m pip install --upgrade neovim
+python2 -m pip install --upgrade virtualenv
 
-# Development Utility Modules
-npm install --global licensed
-npm install --global neovim
+# Python3 Installs
+# ----------------
 
-# React Native Development Utility Modules
-# npm install --global ignite-cli
-npm install --global react-native-cli
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade setuptools
+python3 -m pip install --upgrade wheel
 
-# System Utility Modules
-npm install --global gtop
-npm install --global wifi-password-cli
-
-# Miscellaneous Modules
-npm install --global corona-cli
+python3 -m pip install --upgrade neovim
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -194,12 +251,12 @@ npm install --global corona-cli
 sudo apt install ruby-full
 
 # Ruby Gems
-gem update --systems
-gem update
+sudo gem update --system
+sudo gem update
 
-gem install bundler
-gem install rails
-gem install neovim
+sudo gem install bundler
+sudo gem install rails
+sudo gem install neovim
 
 # Rbenv
 
@@ -244,12 +301,30 @@ gem install neovim
 
 # ------------------------------------------------------------------------------------------------------- #
 
+# Rustup
+# ------
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+rustup self update
+rustup update
+
+# Cargo Installs
+# --------------
+
+cargo install eva
+# cargo install git-delta
+cargo install lsd
+# cargo install tokei
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # Developer Tools
 # ===============
 
 # sudo apt install android-sdk
 sudo apt install bash-completion
-sudo apt install bat
+# sudo apt install bat
 # sudo apt install docker.io
 sudo apt install git
 sudo apt install hub
@@ -264,18 +339,25 @@ sudo apt install ripgrep
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
+sudo apt update
 sudo apt install yarn
+
+# Bat
+# ---
+
+curl -L https://github.com/sharkdp/bat/releases/download/v0.15.4/bat_0.15.4_armhf.deb -o bat_0.15.4_armhf.deb
+sudo dpkg -i bat_0.15.4_armhf.deb
+rm bat_0.15.4_armhf.deb
 
 # LSDeluxe (LSD)
 # --------------
 
-sudo snap install lsd
+# sudo snap install lsd
 
 # TODO: Dynamically download latest version
-# Download lsd
 # curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
-# Install lsd
 # sudo dpkg -i lsd_0.17.0_amd64.deb
+# rm lsd_0.17.0_amd64.deb
 
 # https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
 # curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
