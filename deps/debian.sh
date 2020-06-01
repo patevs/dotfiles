@@ -87,8 +87,12 @@ sudo apt install firefox
 sudo apt install realvnc-vnc-server realvnc-vnc-viewer
 
 # VSCode
-wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
-curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
+# ------
+
+sudo snap install code --classic
+
+# wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+# curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
 # OR:
 # . <( wget -O - https://code.headmelted.com/installers/apt.sh )
 
@@ -265,13 +269,13 @@ sudo apt install yarn
 # LSDeluxe (LSD)
 # --------------
 
-# sudo snap install lsd
+sudo snap install lsd
 
 # TODO: Dynamically download latest version
 # Download lsd
-curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
+# curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
 # Install lsd
-sudo dpkg -i lsd_0.17.0_amd64.deb
+# sudo dpkg -i lsd_0.17.0_amd64.deb
 
 # https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
 # curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
