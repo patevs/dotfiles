@@ -4,7 +4,7 @@
 # bootstrap.sh #
 # ------------ #
 
-# TODO: Detect OS type and ensure running on linux
+# TODO: Check OS type and ensure running on linux
 
 # Install Vim-Plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
