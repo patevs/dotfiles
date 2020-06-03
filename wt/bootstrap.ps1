@@ -16,6 +16,8 @@
   .\bootstrap.ps1
 #>
 
+# TODO: Check OS type and ensure running on windows
+
 # -------------------------------- [Declarations] ------------------------------- #
 
 #Script Version
@@ -31,7 +33,8 @@ $destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
 $iconsDir = "$destinationDir\icons"
 
 # Windows Terminal installation.
-# Note: Assumes Windows Terminal has been install with scoop
+# ! Note: This currently assumes Windows Terminal has been install with scoop
+# TODO: Locate install location when not using scoop
 $wtDir = Invoke-Expression "scoop prefix windows-terminal"
 $wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
 
