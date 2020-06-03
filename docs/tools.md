@@ -121,6 +121,7 @@
 * [`oh-my-posh`](https://github.com/JanDeDobbeleer/oh-my-posh) A prompt theming engine for Powershell.
 * [`Pansies`](https://github.com/PoshCode/Pansies) Powershell ANSI Escape Sequences, functions for colored output, etc.
 * [`Plaster`](https://github.com/PowerShell/Plaster) Template-based file and project generator written in PowerShell.
+* [`PSAppDeployToolkit`](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit) Functions to perform common application deployment tasks and to interact with the user during a deployment.
 * [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) A module that provides tools for other modules and scripts.
 * [`psInlineProgress`](https://github.com/gravejester/psInlineProgress) Write inline progress bars in PowerShell.
 * [`PSModuleDevelopment`](https://github.com/PowershellFrameworkCollective/PSModuleDevelopment) Provides tools that help with module development.
@@ -203,6 +204,7 @@
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
+* [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
 * [`Wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
 
 ---

@@ -79,3 +79,9 @@ A few other notes:
 * [About Prompts](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_prompts?view=powershell-7)
 
 ---
+
+## Windows Registry
+
+* [`regtweaks`](https://github.com/CHEF-KOCH/regtweaks)
+
+---
