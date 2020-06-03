@@ -121,6 +121,7 @@
 * [`oh-my-posh`](https://github.com/JanDeDobbeleer/oh-my-posh) A prompt theming engine for Powershell.
 * [`Pansies`](https://github.com/PoshCode/Pansies) Powershell ANSI Escape Sequences, functions for colored output, etc.
 * [`Plaster`](https://github.com/PowerShell/Plaster) Template-based file and project generator written in PowerShell.
+* [`PSAppDeployToolkit`](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit) Functions to perform common application deployment tasks and to interact with the user during a deployment.
 * [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) A module that provides tools for other modules and scripts.
 * [`psInlineProgress`](https://github.com/gravejester/psInlineProgress) Write inline progress bars in PowerShell.
 * [`PSModuleDevelopment`](https://github.com/PowershellFrameworkCollective/PSModuleDevelopment) Provides tools that help with module development.
