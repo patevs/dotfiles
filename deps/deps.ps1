@@ -2,6 +2,13 @@
 # deps.ps1 #
 # -------- #
 
+# TODO: Check OS type and ensure running on windows
+# https://www.faqforge.com/windows/get-operating-system-details-powershell/
+# https://stackoverflow.com/questions/44703646/determine-the-os-version-linux-and-windows-from-powershell
+# https://devblogs.microsoft.com/scripting/use-powershell-to-find-operating-system-version/
+
+# ------------------------------------------------------------------------------------------------------- #
+
 # Test if running as administrator
 # http://serverfault.com/questions/95431
 function Test-Elevated {

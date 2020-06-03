@@ -2,6 +2,8 @@
 # setup/install.ps1 #
 # ----------------- #
 
+# TODO: Check OS type and ensure running on windows
+
 $account = "patevs"
 $repo    = "dotfiles"
 $branch  = "master"
