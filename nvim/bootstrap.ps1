@@ -16,6 +16,8 @@
   .\bootstrap.ps1
 #>
 
+# TODO: Detect OS type and ensure running on windows
+
 # -------------------------------- [Declarations] ------------------------------- #
 
 # Destination directory location
