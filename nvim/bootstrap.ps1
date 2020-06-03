@@ -16,7 +16,7 @@
   .\bootstrap.ps1
 #>
 
-# TODO: Detect OS type and ensure running on windows
+# TODO: Check OS type and ensure running on windows
 
 # -------------------------------- [Declarations] ------------------------------- #
 
