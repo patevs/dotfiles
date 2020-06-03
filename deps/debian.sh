@@ -130,8 +130,15 @@ sudo apt install openjdk-8-jdk
 # Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
+# Previous node version
+# previous-node=$(nvm current)
+
 # NodeJS LTS and NPM
 nvm install --lts --latest-npm
+
+# nvm install --lts --latest-npm --reinstall-packages-from=$(nvm current)
+# nvm install --lts --latest-npm --reinstall-packages-from=12.17.0
+# nvm reinstall-packages previous-node
 
 # NPM Global Installs
 # -------------------
