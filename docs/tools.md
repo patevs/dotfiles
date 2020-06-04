@@ -151,6 +151,7 @@
 * [`grip`](https://github.com/joeyespo/grip) Preview GitHub Markdown files like Readme locally before committing them.
 * [`gtui`](https://github.com/CtheSky/gtui) Simple Task Scheduler & Executor with Text User Interface.
 * [`instaloader`](https://github.com/instaloader/instaloader) Download pictures (or videos) along with metadata from Instagram.
+* [`jrnl`](https://github.com/jrnl-org/jrnl) Collect your thoughts and notes without leaving the command line.
 * [`Mercury`](https://github.com/metachar/Mercury) Hacking tool used to collect information and use the information to further hurt the target.
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
