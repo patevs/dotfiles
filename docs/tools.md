@@ -95,6 +95,7 @@
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`stonks`](https://github.com/ericm/stonks) Terminal based stock visualizer and tracker that displays realtime stocks in graph format.
 * [`thyme`](https://github.com/sourcegraph/thyme)
+* [`wtf`](https://github.com/wtfutil/wtf) The personal information dashboard for your terminal.
 
 ---
 
