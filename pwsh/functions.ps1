@@ -248,10 +248,10 @@ function gss {
   git remote -v
   # Print-Green-Underline "Git Status:"
   Write-Output "`n Git Status:`n"
-  # TODO: Replace g3l with git-branch-status
-  # g3l --status
-  # Write-Output "" # new line
   git status
+  # TODO: Ensure g3l command exists
+  Write-Output "" # new line
+  g3l --status
 }
 
 # ------------------------------------------------------------------------------------------------------- #
