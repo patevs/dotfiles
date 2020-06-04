@@ -37,6 +37,10 @@
 * [`takenote`](https://github.com/taniarascia/takenote) A web-based note-taking app with GitHub sync and Markdown support.
 * [`vnote`](https://github.com/tamlok/vnote) A note-taking application that knows programmers and Markdown better.
 
+## Web Development
+
+* [`responsively-app`](https://github.com/manojVivek/responsively-app)
+
 ---
 
 ## Shells and Terminal Emulators
