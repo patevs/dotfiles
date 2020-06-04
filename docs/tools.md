@@ -82,6 +82,7 @@
 
 ## Go Tools
 
+* [`bashful`](https://github.com/wagoodman/bashful) Use a yaml file to stitch together commands and run them with a bit of style.
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
@@ -94,6 +95,8 @@
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`stonks`](https://github.com/ericm/stonks) Terminal based stock visualizer and tracker that displays realtime stocks in graph format.
 * [`thyme`](https://github.com/sourcegraph/thyme)
+* [`twf`](https://github.com/wvanlint/twf) Standalone tree view file explorer, inspired by fzf.
+* [`wtf`](https://github.com/wtfutil/wtf) The personal information dashboard for your terminal.
 
 ---
 
@@ -135,14 +138,14 @@
 
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
-* [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from cookiecutters (project templates).
+* [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
 * [`catcli`](https://github.com/deadc0de6/catcli) The command line catalog tool for your offline data.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
 * [`grip`](https://github.com/joeyespo/grip) Preview GitHub Markdown files like Readme locally before committing them.
 * [`gtui`](https://github.com/CtheSky/gtui) Simple Task Scheduler & Executor with Text User Interface.
-* [`instaloader`](https://github.com/instaloader/instaloader) Download pictures (or videos) along with their captions and other metadata from Instagram.
+* [`instaloader`](https://github.com/instaloader/instaloader) Download pictures (or videos) along with metadata from Instagram.
 * [`Mercury`](https://github.com/metachar/Mercury) Hacking tool used to collect information and use the information to further hurt the target.
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
@@ -153,6 +156,7 @@
 * [`rebound`](https://github.com/shobrook/rebound) Command-line tool that instantly fetches Stack Overflow results when an exception is thrown.
 * [`redditripper`](https://github.com/pmma1312/redditripper) Downloads all images of the subreddits specified in a text file.
 * [`routersploit`](https://github.com/threat9/routersploit) Exploitation Framework for Embedded Devices.
+* [`s-tui`](https://github.com/amanusk/s-tui) Terminal-based CPU stress and monitoring utility.
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
