@@ -247,6 +247,7 @@ function gss {
   Write-Output "`n Git Remotes:`n"
   git remote -v
   # Print-Green-Underline "Git Status:"
+  # TODO: Reuse gs function
   Write-Output "`n Git Status:`n"
   git status
   # TODO: Ensure g3l command exists
