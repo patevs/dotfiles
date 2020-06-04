@@ -8,15 +8,21 @@
     "%USERPROFILE%\APPDATA\Local\nvim\init.vim"
 
 .NOTES
-  Version:        1.1
+  Version:        1.2
   Author:         PatEvs (github.com/patevs)
-  Last Modified:  23/04/2020 - April 19th 2020
+  Last Modified:  04/06/2020 - June 4th 2020
 
 .EXAMPLE
   .\bootstrap.ps1
 #>
 
-# TODO: Check OS type and ensure running on windows
+# ------------------------------ [Initialisations] ------------------------------ #
+
+# Check OS and ensure we are running on Windows
+if (-Not ($Env:OS -eq "Windows_NT")) {
+  Write-Host "Error: This script only supports Windows machines. Exiting..."
+  exit 1
+}
 
 # -------------------------------- [Declarations] ------------------------------- #
 

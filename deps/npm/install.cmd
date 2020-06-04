@@ -61,7 +61,7 @@ CALL npm install --global check-it-out
 :: Note: requires perl to be installed
 CALL npm install --global diff-so-fancy
 :: # https://github.com/svhawks/g3l
-:: CALL npm install --global g3l
+CALL npm install --global g3l
 :: # https://github.com/mbostock/gistup
 :: CALL npm install --global gistup
 :: CALL npm install --global git-file-history

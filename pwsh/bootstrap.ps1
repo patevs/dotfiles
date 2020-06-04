@@ -2,7 +2,6 @@
 # bootstrap.ps1 #
 # ------------- #
 
-# TODO: Check OS type and ensure running on windows
 # TODO: Check current powershell version and reload shell
 
 $profileDir = Split-Path -parent $profile
