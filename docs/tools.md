@@ -155,6 +155,7 @@
 * [`rebound`](https://github.com/shobrook/rebound) Command-line tool that instantly fetches Stack Overflow results when an exception is thrown.
 * [`redditripper`](https://github.com/pmma1312/redditripper) Downloads all images of the subreddits specified in a text file.
 * [`routersploit`](https://github.com/threat9/routersploit) Exploitation Framework for Embedded Devices.
+* [`s-tui`](https://github.com/amanusk/s-tui) Terminal-based CPU stress and monitoring utility.
 * [`sherlock`](https://github.com/sherlock-project/sherlock)
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
