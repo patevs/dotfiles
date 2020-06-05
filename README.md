@@ -107,7 +107,6 @@ cd deps
 ├── git
 │   ├── .gitconfig
 │   └── .gitignore
-├── music
 ├── nvim
 │   └── init.vim
 ├── pwsh
