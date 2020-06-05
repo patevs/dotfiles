@@ -168,6 +168,7 @@
 * [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
 * [`thefuck`](https://github.com/nvbn/thefuck) Magnificent app which corrects your previous console command.
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
+* [`whoogle-search`](https://github.com/benbusby/whoogle-search) Self-hosted, ad-free, privacy-respecting Google metasearch engine.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`wttr.in`](https://github.com/chubin/wttr.in) The right way to check the weather.
 
