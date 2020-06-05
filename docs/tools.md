@@ -75,6 +75,12 @@
 
 ---
 
+## Deno Tools
+
+* [`drink-if-exists`](https://github.com/ninest/drink-if-exists) 🍷 The NPM drinking game recreated and cli-ified with Deno.
+
+---
+
 ## DotNet Tools
 
 * [`dotnet-outdated`](https://github.com/jerriep/dotnet-outdated)
@@ -168,6 +174,7 @@
 * [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
 * [`thefuck`](https://github.com/nvbn/thefuck) Magnificent app which corrects your previous console command.
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
+* [`whoogle-search`](https://github.com/benbusby/whoogle-search) Self-hosted, ad-free, privacy-respecting Google metasearch engine.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`wttr.in`](https://github.com/chubin/wttr.in) The right way to check the weather.
 
@@ -212,6 +219,7 @@
 ## Windows Tools
 
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
+* [`rainmeter`](https://github.com/rainmeter/rainmeter) Desktop customization tool for Windows.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)

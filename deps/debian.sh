@@ -54,6 +54,8 @@ sudo apt upgrade -y
 # System Utilities
 # ================
 
+# sudo apt install software-properties-common
+
 # Snap
 # ----
 
@@ -64,22 +66,25 @@ sudo apt install snapd
 # Window Manager
 # --------------
 
-sudo apt install dwm
+# sudo apt install dwm
 
 # Shell and Terminal
 # ------------------
 
+# sudo add-apt-repository ppa:mmstick76/alacritty
+# sudo apt install alacritty
+
 sudo apt install gnome-terminal
 # sudo apt install stterm
-# sudo apt install terminator
+sudo apt install terminator
 
-sudo apt install zsh
+# sudo apt install zsh
 # Set zsh as default shell
 # Note that this will not work if Zsh is not in your authorized shells list (/etc/shells)
-chsh -s $(which zsh)
+# chsh -s $(which zsh)
 
 # oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # --------------------------------------------------------------------------------------------------- #
 
