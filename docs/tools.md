@@ -75,6 +75,12 @@
 
 ---
 
+## Deno Tools
+
+* [`drink-if-exists`](https://github.com/ninest/drink-if-exists) 🍷 The NPM drinking game recreated and cli-ified with Deno.
+
+---
+
 ## DotNet Tools
 
 * [`dotnet-outdated`](https://github.com/jerriep/dotnet-outdated)
