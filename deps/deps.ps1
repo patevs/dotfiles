@@ -67,7 +67,11 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
 Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 
+# TODO: Run this with powershell not pwsh to install globally
+# TODO: Uninstall/remove version 1.0.0.1
 Install-Module -Name PackageManagement -Force
+# TODO: Run this with powershell not pwsh to install globally
+# TODO: Uninstall/remove version 1.0.0.1
 # Install-Module -Name PowerShellGet -Force
 Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
 # PS 6+
@@ -78,7 +82,7 @@ Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
 
 Install-Module -Name PSReadLine -Scope CurrentUser -Force
 Install-Module -Name PSWindowsUpdate -Scope CurrentUser -Force
-# Install-Module -Name PSWriteColor -Scope CurrentUser -Force
+Install-Module -Name PSWriteColor -Scope CurrentUser -Force
 # Install-Module -Name PSKoans -Scope CurrentUser -Force
 # Install-Module -Name PSeudo -Scope CurrentUser -Force
 
