@@ -9,10 +9,6 @@
 	path = bash/posh-git-sh
 	url = https://github.com/lyze/posh-git-sh
 
-[submodule "music"]
-	path = music
-	url = https://github.com/patevs/music.git
-
 [submodule "utils"]
 	path = utils
 	url = https://github.com/patevs/utility-scripts
