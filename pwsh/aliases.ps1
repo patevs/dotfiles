@@ -44,6 +44,7 @@ ${function:version} = { $PSVersionTable.PSVersion }
 ${function:modules} = { Get-Module -ListAvailable }
 
 # Correct the previous command
+# TODO: Ensure `thefuck` is installed
 $env:PYTHONIOENCODING="utf-8"
 Invoke-Expression "$(thefuck --alias)"
 
