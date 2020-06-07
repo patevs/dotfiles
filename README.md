@@ -98,6 +98,7 @@ cd deps
 │   ├── .bash_profile
 │   ├── .bashrc
 │   └── .profile
+├── bin
 ├── deps
 │   └── deps.ps1
 ├── docs
@@ -109,7 +110,10 @@ cd deps
 │   └── .gitignore
 ├── nvim
 │   └── init.vim
+├── pulseaudio
 ├── pwsh
+├── setup
+│   └── install.ps1
 ├── utils
 ├── wt
 │   └── profiles.json
