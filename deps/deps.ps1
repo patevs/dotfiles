@@ -374,8 +374,8 @@ python3 -m pip install --upgrade pip
 # python3 -m pip install --user --upgrade setuptools
 python3 -m pip install --upgrade setuptools
 
-python3 -m pip install --upgrade pipx
-python3 -m pipx ensurepath
+# python3 -m pip install --upgrade pipx
+# python3 -m pipx ensurepath
 
 python -m pip install --upgrade neovim
 python3 -m pip install --upgrade thefuck
@@ -384,7 +384,7 @@ python3 -m pip install --upgrade thefuck
 
 # Poetry
 # TODO: Ensure curl is installed
-Invoke-Expression "curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3"
+# Invoke-Expression "curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3"
 
 # buku
 # pip3 install buku
