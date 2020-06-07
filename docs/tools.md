@@ -147,6 +147,7 @@
 
 ## Python Tools
 
+* [`AirShare`](https://github.com/KuroLabs/Airshare) Cross-platform content sharing in a local network.
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
@@ -173,6 +174,7 @@
 * [`shortcut-pages`](https://github.com/mt-empty/shortcut-pages)
 * [`throwaway-vpn`](https://github.com/danpilch/throwaway-vpn) Generate a throwaway VPN via DigitalOcean.
 * [`thefuck`](https://github.com/nvbn/thefuck) Magnificent app which corrects your previous console command.
+* [`visidata`](https://github.com/saulpw/visidata) A terminal spreadsheet multitool for discovering and arranging data.
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
 * [`whoogle-search`](https://github.com/benbusby/whoogle-search) Self-hosted, ad-free, privacy-respecting Google metasearch engine.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
