@@ -147,6 +147,7 @@
 
 ## Python Tools
 
+* [`AirShare`](https://github.com/KuroLabs/Airshare) Cross-platform content sharing in a local network.
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
