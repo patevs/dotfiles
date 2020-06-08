@@ -114,7 +114,6 @@ cd deps
 ├── pwsh
 ├── setup
 │   └── install.ps1
-├── utils
 ├── wt
 │   └── profiles.json
 ├── .editorconfig
