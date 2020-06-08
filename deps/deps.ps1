@@ -132,8 +132,8 @@ choco install reactotron
 # choco install rsvg-convert
 # choco install sdformatter
 choco install vcxsrv
-choco install visualstudio2019community
-# choco install visualstudio2019buildtools
+# choco install visualstudio2019community
+choco install visualstudio2019buildtools
 choco install vscode.install
 # choco install webpi               --limit-output
 # choco install winmerge            --limit-output
