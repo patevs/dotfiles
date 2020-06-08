@@ -218,7 +218,7 @@ scoop install bat
 scoop install dust
 scoop install fd
 # scoop install grex
-scoop install heroku-cli
+# scoop install heroku-cli
 # scoop install hugo
 scoop install hugo-extended
 scoop install jq
