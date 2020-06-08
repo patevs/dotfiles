@@ -267,6 +267,7 @@ scoop install snappy-driver-installer-origin
 scoop install speccy
 scoop install sumatrapdf
 scoop install teracopy-np
+# scoop install vscodium
 # scoop install win32-disk-imager
 scoop install zeal
 
