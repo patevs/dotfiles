@@ -119,6 +119,7 @@ if (which cinst) {
 # System and Development Tools
 choco install 7zip.install
 # choco install curl                --limit-output
+choco install dexpot
 # choco install Fiddler             --limit-output
 choco install git.install
 choco install jdk8
