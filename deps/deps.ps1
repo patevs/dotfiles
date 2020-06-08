@@ -119,6 +119,7 @@ if (which cinst) {
 # System and Development Tools
 choco install 7zip.install
 # choco install curl                --limit-output
+choco install dexpot
 # choco install Fiddler             --limit-output
 choco install git.install
 choco install jdk8
@@ -131,8 +132,8 @@ choco install reactotron
 # choco install rsvg-convert
 # choco install sdformatter
 choco install vcxsrv
-choco install visualstudio2019community
-# choco install visualstudio2019buildtools
+# choco install visualstudio2019community
+choco install visualstudio2019buildtools
 choco install vscode.install
 # choco install webpi               --limit-output
 # choco install winmerge            --limit-output
@@ -217,7 +218,7 @@ scoop install bat
 scoop install dust
 scoop install fd
 # scoop install grex
-scoop install heroku-cli
+# scoop install heroku-cli
 # scoop install hugo
 scoop install hugo-extended
 scoop install jq
