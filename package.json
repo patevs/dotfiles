@@ -47,6 +47,6 @@
     "yolo": false,
     "publish": false,
     "preview": false,
-    "releaseDraft": false
+    "releaseDraft": true
   }
 }
