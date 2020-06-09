@@ -215,6 +215,12 @@
 
 ---
 
+## Android Tools
+
+* [`Lazymux`](https://github.com/Gameye98/Lazymux) Termux tool installer.
+
+---
+
 ## Linux Tools
 
 * [`playerctl`](https://github.com/altdesktop/playerctl) 🎧 mpris command-line controller and library for spotify, vlc, audacious, bmp, cmus, and others.
