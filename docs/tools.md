@@ -218,6 +218,7 @@
 ## Android Tools
 
 * [`Lazymux`](https://github.com/Gameye98/Lazymux) Termux tool installer.
+* [`oh-my-termux`](https://github.com/4679/oh-my-termux) Termux themes and styling.
 
 ---
 
