@@ -1,6 +1,6 @@
 # dotfiles
 
-> My personal system configuration files commonly known as .files (dotfiles).
+> Personal system configuration files commonly known as .files (dotfiles).
 
 ---
 
