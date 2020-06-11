@@ -146,6 +146,7 @@ choco install Firefox               # --limit-output; <# pin; evergreen #> choco
 choco install GoogleChrome          # --limit-output; <# pin; evergreen #> choco pin add --name GoogleChrome        --limit-output
 
 # Applications
+choco install figma
 choco install gimp
 choco install qbittorrent
 choco install revo-uninstaller
