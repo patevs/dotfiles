@@ -23,7 +23,8 @@
     "husky": "^4.2.5",
     "np": "^6.2.4",
     "npm-check-updates": "^7.0.1",
-    "script-progress": "^1.0.5"
+    "script-progress": "^1.0.5",
+    "updates": "^10.2.13"
   },
   "husky": {
     "hooks": {
