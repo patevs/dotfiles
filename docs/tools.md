@@ -6,7 +6,7 @@
 
 ## Documentation Tools
 
-* [`zeal`](https://github.com/zealdocs/zeal)
+* [`zeal`](https://github.com/zealdocs/zeal) Simple offline documentation browser.
   * [Documentation](https://zealdocs.org/usage.html)
   * [User Contributions](https://zealusercontributions.herokuapp.com/)
     * [`tldr`](https://zealusercontributions.herokuapp.com/api/docsets/tldr)
@@ -44,7 +44,7 @@
 
 ## Web Development
 
-* [`responsively-app`](https://github.com/manojVivek/responsively-app)
+* [`responsively-app`](https://github.com/manojVivek/responsively-app) A modified browser that helps in responsive web development.
 
 ---
 
@@ -59,7 +59,7 @@
 
 ## Bash Tools
 
-* [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Bash script for anonymizing the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
+* [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Anonymize the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
 * [`garie`](https://github.com/boyney123/garie) Open source web performance.
