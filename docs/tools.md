@@ -6,7 +6,7 @@
 
 ## Documentation Tools
 
-* [`zeal`](https://github.com/zealdocs/zeal)
+* [`zeal`](https://github.com/zealdocs/zeal) Simple offline documentation browser.
   * [Documentation](https://zealdocs.org/usage.html)
   * [User Contributions](https://zealusercontributions.herokuapp.com/)
     * [`tldr`](https://zealusercontributions.herokuapp.com/api/docsets/tldr)
@@ -44,7 +44,7 @@
 
 ## Web Development
 
-* [`responsively-app`](https://github.com/manojVivek/responsively-app)
+* [`responsively-app`](https://github.com/manojVivek/responsively-app) A modified browser that helps in responsive web development.
 
 ---
 
@@ -59,21 +59,21 @@
 
 ## Bash Tools
 
-* [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Bash script for anonymizing the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
+* [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Anonymize the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
 * [`garie`](https://github.com/boyney123/garie) Open source web performance.
 * [`Geo`](https://github.com/jakewmeyer/Geo) Bash utility for easy wan, lan, router, dns, mac address, and geolocation output.
-* [`git-branch-status`](https://github.com/bill-auger/git-branch-status)
-* [`git-extras`](https://github.com/tj/git-extras)
-* [`git-friendly`](https://github.com/jamiew/git-friendly)
+* [`git-branch-status`](https://github.com/bill-auger/git-branch-status) Shell script that prints out pretty git branch sync status reports.
+* [`git-extras`](https://github.com/tj/git-extras) GIT utilities - repo summary, repl, changelog population, author commit percentages and more.
+* [`git-friendly`](https://github.com/jamiew/git-friendly) Streamline your git workflow: just type `pull`, `branch`, `merge`, `push`.
 * [`git-quick-stats`](https://github.com/arzzen/git-quick-stats) Simple and efficient way to access various statistics in git repository.
 * [`git-wizard`](https://github.com/makelinux/git-wizard) Instant git magic and tricks.
-* [`has`](https://github.com/kdabir/has)
-* [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
+* [`has`](https://github.com/kdabir/has) Checks presence of various command line tools and their versions on the path.
+* [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status) lsg: List files with git status information.
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
-* [`multi-git-status`](https://github.com/fboender/multi-git-status)
-* [`neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`multi-git-status`](https://github.com/fboender/multi-git-status) Show uncommitted, untracked and unpushed changes for multiple Git repos.
+* [`neofetch`](https://github.com/dylanaraps/neofetch/) A command-line system information tool written in bash 3.2+
 * [`nmapAutomator`](https://github.com/21y4d/nmapAutomator) Background nmap scans.
 * [`otseca`](https://github.com/trimstray/otseca) Open source security auditing tool to search and dump system configuration.
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
@@ -101,6 +101,7 @@
 * [`bashful`](https://github.com/wagoodman/bashful) Use a yaml file to stitch together commands and run them with a bit of style.
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
+* [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
 * [`geek-life`](https://github.com/ajaxray/geek-life) CLI Task Manager for Geeks.
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
