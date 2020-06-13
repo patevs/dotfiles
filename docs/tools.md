@@ -64,16 +64,16 @@
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
 * [`garie`](https://github.com/boyney123/garie) Open source web performance.
 * [`Geo`](https://github.com/jakewmeyer/Geo) Bash utility for easy wan, lan, router, dns, mac address, and geolocation output.
-* [`git-branch-status`](https://github.com/bill-auger/git-branch-status)
-* [`git-extras`](https://github.com/tj/git-extras)
-* [`git-friendly`](https://github.com/jamiew/git-friendly)
+* [`git-branch-status`](https://github.com/bill-auger/git-branch-status) Shell script that prints out pretty git branch sync status reports.
+* [`git-extras`](https://github.com/tj/git-extras) GIT utilities - repo summary, repl, changelog population, author commit percentages and more.
+* [`git-friendly`](https://github.com/jamiew/git-friendly) Streamline your git workflow: just type `pull`, `branch`, `merge`, `push`.
 * [`git-quick-stats`](https://github.com/arzzen/git-quick-stats) Simple and efficient way to access various statistics in git repository.
 * [`git-wizard`](https://github.com/makelinux/git-wizard) Instant git magic and tricks.
-* [`has`](https://github.com/kdabir/has)
-* [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status)
+* [`has`](https://github.com/kdabir/has) Checks presence of various command line tools and their versions on the path.
+* [`ls-with-git-status`](https://github.com/gerph/ls-with-git-status) lsg: List files with git status information.
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
-* [`multi-git-status`](https://github.com/fboender/multi-git-status)
-* [`neofetch`](https://github.com/dylanaraps/neofetch/)
+* [`multi-git-status`](https://github.com/fboender/multi-git-status) Show uncommitted, untracked and unpushed changes for multiple Git repos.
+* [`neofetch`](https://github.com/dylanaraps/neofetch/) A command-line system information tool written in bash 3.2+
 * [`nmapAutomator`](https://github.com/21y4d/nmapAutomator) Background nmap scans.
 * [`otseca`](https://github.com/trimstray/otseca) Open source security auditing tool to search and dump system configuration.
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
