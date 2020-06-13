@@ -112,6 +112,7 @@ cd deps
 │   └── init.vim
 ├── pulseaudio
 ├── pwsh
+├── scripts
 ├── setup
 │   └── install.ps1
 ├── wt

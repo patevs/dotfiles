@@ -11,16 +11,21 @@
   "scripts": {
     "commit": "git-cz",
     "release": "np",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "updates": "script-progress node ./scripts/checkUpdates"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/core": "^8.3.5",
+    "chalk": "^4.1.0",
     "commitizen": "^4.1.2",
     "commitlint-config-gitmoji": "^1.0.1",
     "cz-emoji": "^1.2.1",
     "husky": "^4.2.5",
-    "np": "^6.2.4"
+    "np": "^6.2.4",
+    "npm-check-updates": "^7.0.1",
+    "script-progress": "^1.0.5",
+    "updates": "^10.2.13"
   },
   "husky": {
     "hooks": {
