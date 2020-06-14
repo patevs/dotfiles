@@ -154,11 +154,13 @@ set lazyredraw             " Only redraw when necessary.
 
 " ----------------------------------------------------------------------- "
 
+" ------- "
+" Plugins "
+" ------- "
+
 " Ensure vim-plug is installed
 "   https://github.com/junegunn/vim-plug
 "   https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
-
-" ----------------------------------------------------------------------- "
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -221,10 +223,12 @@ call plug#end()
 
 " ----------------------------------------------------------------------- "
 
+" -------------------- "
+" Plugin Configuration "
+" -------------------- "
+
 " Enable deplete plugin
 " let g:deoplete#enable_at_startup = 1
-
-" ----------------------------------------------------------------------- "
 
 " NERDTree
 " Open NERDTree automatically when neovim starts up
@@ -291,6 +295,10 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 " let g:NERDTreeShowIgnoredStatus = 1
 
 " ----------------------------------------------------------------------- "
+
+" ------------------------ "
+" Status Bar Configuration "
+" ------------------------ "
 
 " Set lightline configuration
 let g:lightline = {
