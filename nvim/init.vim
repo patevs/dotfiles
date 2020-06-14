@@ -1,7 +1,7 @@
-" -------------------- "
-" config/nvim/init.vim "
-" -------------------- "
-
+" ------------- "
+" nvim/init.vim "
+" ------------- "
+"
 "
 "                         ███████████████████████████
 "                         ███████▀▀▀░░░░░░░▀▀▀███████
@@ -26,19 +26,17 @@
 "                ╔══════════════════════════════════════════╗
 "                ║           ⎋ HERE BE DRAGONS ⎋            ║
 "                ╚══════════════════════════════════════════╝
-
-
+"
 " Default NeoVim configuration file location:
-"   ~/APPDATA/Local/nvim/init.vim
-"   Or: stdpath('config') . '/init.vim'
-
+"   stdpath('config') . '/init.vim'
+"
 " Resources:
 "   https://devhints.io/vim
 "   https://devhints.io/vimscript
-
-" ----------------------------------------------------------------------- "
-
-" Basic Configuration
+"
+" ------------------- "
+" Basic Configuration "
+" ------------------- "
 
 " No need to set this explicitly as Neovim always uses UTF-8 as the default encoding.
 set encoding=UTF-8
@@ -67,7 +65,7 @@ set backspace=indent,eol,start " make backspace behave in a sane manner
 set clipboard=unnamed
 
 if has('mouse')
-    set mouse=a
+  set mouse=a
 endif
 
 " display settings
@@ -156,35 +154,13 @@ set lazyredraw             " Only redraw when necessary.
 
 " ----------------------------------------------------------------------- "
 
+" ------- "
+" Plugins "
+" ------- "
+
 " Ensure vim-plug is installed
 "   https://github.com/junegunn/vim-plug
 "   https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
-
-" AutoInstall vim-plug
-" if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
-"   silent !curl -fLo ~\AppData\Local\nvim\autoload\plug.vim --create-dirs
-"     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-" endif
-
-" if empty(glob('~\AppData\Local\nvim\autoload\plug.vim'))
-"     silent !curl -fLo C:\Users\Patrick\AppData\Local\nvim\autoload\plug.vim --create-dirs
-"     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-" endif
-
-" md ~\AppData\Local\nvim\autoload
-" $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-" (New-Object Net.WebClient).DownloadFile(
-"   $uri,
-"   $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(
-"    "~\AppData\Local\nvim\autoload\plug.vim"
-"   )
-" )
-
-" (New-Object Net.WebClient).DownloadFile($uri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\AppData\Local\nvim\autoload\plug.vim"))
-
-" ----------------------------------------------------------------------- "
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -216,8 +192,8 @@ call plug#begin(stdpath('data') . '/plugged')
 " Plug 'tpope/vim-surround'
 
 Plug 'sheerun/vim-polyglot'
-" Plug 'editorconfig/editorconfig-vim'
-" Plug 'othree/html5.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'othree/html5.vim'
 
 " Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
@@ -238,7 +214,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " Plug 'KabbAmine/zeavim.vim'
 
-Plug 'ThePrimeagen/vim-be-good'
+" Plug 'ThePrimeagen/vim-be-good'
 " execute `:UpdateRemotePlugins` to install vim-be-good
 
 " Initialize plugin system
@@ -247,10 +223,12 @@ call plug#end()
 
 " ----------------------------------------------------------------------- "
 
+" -------------------- "
+" Plugin Configuration "
+" -------------------- "
+
 " Enable deplete plugin
 " let g:deoplete#enable_at_startup = 1
-
-" ----------------------------------------------------------------------- "
 
 " NERDTree
 " Open NERDTree automatically when neovim starts up
@@ -318,26 +296,30 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " ----------------------------------------------------------------------- "
 
+" ------------------------ "
+" Status Bar Configuration "
+" ------------------------ "
+
 " Set lightline configuration
 let g:lightline = {
-      \ 'colorscheme': 'powerline',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'gitbranch#name'
-      \ },
-      \ }
+  \ 'colorscheme': 'powerline',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'gitbranch#name'
+  \ },
+  \ }
 
 " Dont show `-- INSERT --` because the mode information is displayed in the statusline.
 set noshowmode
 
 " ----------------------------------------------------------------------- "
 
-" echo "Hello Pat!"
 " let name = "Pat"
 " echo "Hello, " . name
 
+" ----------------------------------------------------------------------- "
 
 " EOF "
