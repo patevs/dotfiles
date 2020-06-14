@@ -194,6 +194,7 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'othree/html5.vim'
+" 'mzlogin/vim-markdown-toc'
 
 " Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
