@@ -233,7 +233,7 @@ scoop install neovim
 # scoop install NuGet
 scoop install ripgrep
 scoop install s
-scoop install scrcpy
+# scoop install scrcpy
 # scoop install sqlite
 scoop install winfetch
 scoop install yarn
