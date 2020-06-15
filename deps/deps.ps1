@@ -246,7 +246,7 @@ scoop install pwsh
 scoop install windows-terminal
 
 # Git Tools
-scoop install github
+# scoop install github
 scoop install gitkraken
 scoop install hub
 scoop install lazygit
