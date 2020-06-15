@@ -278,7 +278,7 @@ scoop install dopamine
 scoop install ffmpeg
 scoop install mpv
 scoop install musikcube
-scoop install picard
+# scoop install picard
 # scoop install spotify-tui
 scoop install youtube-dl
 
