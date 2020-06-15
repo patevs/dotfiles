@@ -247,7 +247,7 @@ scoop install windows-terminal
 
 # Git Tools
 # scoop install github
-scoop install gitkraken
+# scoop install gitkraken
 scoop install hub
 scoop install lazygit
 scoop install onefetch
