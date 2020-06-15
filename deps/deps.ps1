@@ -271,7 +271,7 @@ scoop install sumatrapdf
 scoop install teracopy-np
 # scoop install vscodium
 # scoop install win32-disk-imager
-scoop install zeal
+# scoop install zeal
 
 # Music Applications
 scoop install dopamine
