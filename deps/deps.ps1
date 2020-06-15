@@ -222,7 +222,7 @@ scoop install fd
 # scoop install grex
 # scoop install heroku-cli
 # scoop install hugo
-scoop install hugo-extended
+# scoop install hugo-extended
 scoop install jq
 scoop install less
 scoop install lsd
