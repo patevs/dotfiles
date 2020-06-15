@@ -260,7 +260,7 @@ scoop install bulk-crap-uninstaller
 scoop install ccleaner
 # scoop install copyq
 # scoop install etcher
-scoop install imagemagick
+# scoop install imagemagick
 scoop install inkscape
 scoop install powertoys
 scoop install vncviewer
