@@ -183,7 +183,7 @@ Invoke-Expression "scoop bucket add extras"
 Invoke-Expression "scoop bucket add versions"
 Invoke-Expression "scoop bucket add nonportable"
 Invoke-Expression "scoop bucket add nerd-fonts"
-Invoke-Expression "scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket"
+# Invoke-Expression "scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket"
 Invoke-Expression "scoop bucket add scoop-completion https://github.com/Moeologist/scoop-completion"
 
 # Fix for scoop-completion error: https://github.com/lukesampson/scoop/issues/3528
@@ -279,7 +279,7 @@ scoop install ffmpeg
 scoop install mpv
 scoop install musikcube
 scoop install picard
-scoop install spotify-tui
+# scoop install spotify-tui
 scoop install youtube-dl
 
 # Fonts
