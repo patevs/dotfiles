@@ -131,7 +131,7 @@ choco install jdk8
 # choco install rpi-imager
 # choco install rsvg-convert
 # choco install sdformatter
-choco install vcxsrv
+# choco install vcxsrv
 # choco install visualstudio2019community
 choco install visualstudio2019buildtools
 choco install vscode.install
