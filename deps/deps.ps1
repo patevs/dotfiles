@@ -249,7 +249,7 @@ scoop install windows-terminal
 # scoop install github
 # scoop install gitkraken
 scoop install hub
-scoop install lazygit
+# scoop install lazygit
 scoop install onefetch
 
 # Applications
