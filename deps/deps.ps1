@@ -126,12 +126,12 @@ choco install jdk8
 # choco install nuget.commandline   --limit-output
 # choco install nvm.portable        --limit-output
 # choco install poweriso
-choco install pulseaudio
-choco install reactotron
+# choco install pulseaudio
+# choco install reactotron
 # choco install rpi-imager
 # choco install rsvg-convert
 # choco install sdformatter
-choco install vcxsrv
+# choco install vcxsrv
 # choco install visualstudio2019community
 choco install visualstudio2019buildtools
 choco install vscode.install
@@ -152,7 +152,7 @@ choco install gimp
 choco install qbittorrent
 choco install revo-uninstaller
 choco install spotify
-choco install steam
+# choco install steam
 choco install vlc
 
 RefreshEnvironment
@@ -222,7 +222,7 @@ scoop install fd
 # scoop install grex
 # scoop install heroku-cli
 # scoop install hugo
-scoop install hugo-extended
+# scoop install hugo-extended
 scoop install jq
 scoop install less
 scoop install lsd
@@ -233,7 +233,7 @@ scoop install neovim
 # scoop install NuGet
 scoop install ripgrep
 scoop install s
-scoop install scrcpy
+# scoop install scrcpy
 # scoop install sqlite
 scoop install winfetch
 scoop install yarn
@@ -246,10 +246,10 @@ scoop install pwsh
 scoop install windows-terminal
 
 # Git Tools
-scoop install github
-scoop install gitkraken
+# scoop install github
+# scoop install gitkraken
 scoop install hub
-scoop install lazygit
+# scoop install lazygit
 scoop install onefetch
 
 # Applications
@@ -260,7 +260,7 @@ scoop install bulk-crap-uninstaller
 scoop install ccleaner
 # scoop install copyq
 # scoop install etcher
-scoop install imagemagick
+# scoop install imagemagick
 scoop install inkscape
 scoop install powertoys
 scoop install vncviewer
@@ -271,7 +271,7 @@ scoop install sumatrapdf
 scoop install teracopy-np
 # scoop install vscodium
 # scoop install win32-disk-imager
-scoop install zeal
+# scoop install zeal
 
 # Music Applications
 scoop install dopamine

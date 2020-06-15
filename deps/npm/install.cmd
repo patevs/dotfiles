@@ -47,8 +47,8 @@ ECHO. & ECHO  [44m Installing Git Integration and Utility Modules: [0m & ECHO.
 :: # https://github.com/qw3rtman/git-fire
 
 
-CALL npm install --global @commitlint/cli
-CALL npm install --global commitlint-config-gitmoji
+:: CALL npm install --global @commitlint/cli
+:: CALL npm install --global commitlint-config-gitmoji
 :: # https://github.com/TejasQ/add-gitignore
 CALL npm install --global add-gitignore
 CALL npm install --global check-it-out
@@ -75,7 +75,7 @@ CALL npm install --global gitmoji-cli
 :: # https://github.com/himynameisdave/git-labelmaker
 :: CALL npm install --global git-labelmaker
 :: CALL npm install --global grafgiti
-CALL npm install --global husky
+:: CALL npm install --global husky
 :: # https://github.com/yyx990803/starz
 :: CALL npm install --global starz
 :: # https://github.com/FredrikNoren/ungit
