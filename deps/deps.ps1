@@ -152,7 +152,7 @@ choco install gimp
 choco install qbittorrent
 choco install revo-uninstaller
 choco install spotify
-choco install steam
+# choco install steam
 choco install vlc
 
 RefreshEnvironment
