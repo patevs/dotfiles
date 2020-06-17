@@ -12,10 +12,11 @@ Set-Environment "BAT_PAGER" "less -RFSX"
 Set-Environment "BAT_STYLE" "numbers,plain"
 
 # Android SDK and NDK
+# TODO: Use HOME environment variable instead of absolute path
 Set-Environment "ANDROID_HOME" "C:\Users\Pat\AppData\Local\Android\Sdk"
 Set-Environment "ANDROID_SDK" "C:\Users\Pat\AppData\Local\Android\Sdk"
 Set-Environment "ANDROID_SDK_ROOT" "C:\Users\Pat\AppData\Local\Android\Sdk"
-Set-Environment "ANDROID_NDK" "C:\Users\Pat\AppData\Local\Android\Sdk\ndk\21.2.6472646"
+Set-Environment "ANDROID_NDK" "C:\Users\Pat\AppData\Local\Android\Sdk\ndk\21.3.6528147"
 
 # VSCode
 Set-Environment "CODE_HOME" "C:\Program Files\Microsoft VS Code"
