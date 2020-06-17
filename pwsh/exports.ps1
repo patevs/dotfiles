@@ -24,9 +24,6 @@ Set-Environment "CODE_HOME" "C:\Program Files\Microsoft VS Code"
 # Git
 Set-Environment "GIT_HOME" "C:\Program Files\Git"
 
-# Hermes Engine
-# Set-Environment "HERMES_WS_DIR"  "C:\Users\Pat\git\dev\hermes_ws"
-
 # JDK
 Set-Environment "JAVA_HOME" "C:\Program Files\Java\jdk1.8.0_211"
 
@@ -35,9 +32,6 @@ Set-Environment "JAVA_HOME" "C:\Program Files\Java\jdk1.8.0_211"
 
 # Python Output Encoding
 # Set-Environment "PYTHONIOENCODING" "utf-8"
-
-# Watchman
-# Set-Environment "WATCHMAN_HOME" "C:\bin\watchman"
 
 # Make Neovim the default editor
 # Set-Environment "EDITOR" "nvim"
@@ -51,7 +45,6 @@ AppendEnvPath "$env:GIT_HOME\bin"
 AppendEnvPath "$env:GIT_HOME\cmd"
 AppendEnvPath "$env:JAVA_HOME\bin"
 # AppendEnvPath "$env:MSBUILD_HOME\bin"
-# AppendEnvPath "$env:WATCHMAN_HOME\bin"
 
 # Disable the Progress Bar
 # $ProgressPreference='SilentlyContinue'
