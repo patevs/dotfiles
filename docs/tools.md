@@ -25,6 +25,8 @@
     * [`jest`](https://zealusercontributions.herokuapp.com/api/docsets/Jest)
     * [`Zsh`](https://zealusercontributions.herokuapp.com/api/docsets/Zsh)
 
+* [`markdown-magic`](https://github.com/patevs/markdown-magic) 💫 Automatically format markdown files, sync external docs/src code & make better docs
+
 ---
 
 ## Editors
@@ -51,6 +53,7 @@
 ## Shells and Terminal Emulators
 
 * [`chafa`](https://github.com/hpjansson/chafa) 📺🗿 Terminal graphics for the 21st century.
+* [`electerm`](https://github.com/electerm/electerm) 📻Terminal/ssh/serial port/sftp client(linux, mac, win)
 * [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
 * [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
 * [`starship`](https://github.com/starship/starship) Minimal, blazing-fast, and infinitely customizable prompt for any shell!
@@ -146,6 +149,7 @@
 * [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) A module that provides tools for other modules and scripts.
 * [`psInlineProgress`](https://github.com/gravejester/psInlineProgress) Write inline progress bars in PowerShell.
 * [`PSModuleDevelopment`](https://github.com/PowershellFrameworkCollective/PSModuleDevelopment) Provides tools that help with module development.
+* [`tunic`](https://github.com/mikeslattery/tunic) Install Linux from a running Windows system, without need for a live USB.
 * [`winfetch`](https://github.com/lptstr/winfetch/)
 * [`z.lua`](https://github.com/skywind3000/z.lua) A command line tool which helps you navigate faster by learning your habits.
 * [`ZLocation`](https://github.com/vors/ZLocation) Tracks your most used directories, based on number of previously run commands.
@@ -202,6 +206,7 @@
 * [`eva`](https://github.com/NerdyPepper/eva)
 * [`fd`](https://github.com/sharkdp/fd)
 * [`ffsend`](https://github.com/timvisee/ffsend) Easily and securely share files from the command line. A fully featured Firefox Send client.
+* [`gitui`](https://github.com/extrawurst/gitui) Blazing fast terminal-ui for git written in rust
 * [`grex`](https://github.com/pemistahl/grex)
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`lsd`](https://github.com/Peltoche/lsd)
@@ -211,6 +216,7 @@
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
+* [`tauri`](https://github.com/tauri-apps/tauri) Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
 * [`ytop`](https://github.com/cjbassi/ytop)
 * [`zoxide`](https://github.com/ajeetdsouza/zoxide) A faster way to navigate your filesystem.
