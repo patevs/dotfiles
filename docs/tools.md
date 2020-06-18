@@ -25,6 +25,8 @@
     * [`jest`](https://zealusercontributions.herokuapp.com/api/docsets/Jest)
     * [`Zsh`](https://zealusercontributions.herokuapp.com/api/docsets/Zsh)
 
+* [`markdown-magic`](https://github.com/patevs/markdown-magic) 💫 Automatically format markdown files, sync external docs/src code & make better docs
+
 ---
 
 ## Editors
