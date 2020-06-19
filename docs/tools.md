@@ -225,6 +225,7 @@
 
 ## Android Tools
 
+* [`hackerpro`](https://github.com/technicaldada/hackerpro) All in One Hacking Tool for Linux & Android (Termux). Make your linux environment into a Hacking Machine.
 * [`Lazymux`](https://github.com/Gameye98/Lazymux) Termux tool installer.
 * [`oh-my-termux`](https://github.com/4679/oh-my-termux) Termux themes and styling.
 
