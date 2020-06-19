@@ -70,6 +70,7 @@
 * [`git-branch-status`](https://github.com/bill-auger/git-branch-status) Shell script that prints out pretty git branch sync status reports.
 * [`git-extras`](https://github.com/tj/git-extras) GIT utilities - repo summary, repl, changelog population, author commit percentages and more.
 * [`git-friendly`](https://github.com/jamiew/git-friendly) Streamline your git workflow: just type `pull`, `branch`, `merge`, `push`.
+* [`git-fuzzy`](https://github.com/bigH/git-fuzzy) interactive `git` with the help of `fzf`
 * [`git-quick-stats`](https://github.com/arzzen/git-quick-stats) Simple and efficient way to access various statistics in git repository.
 * [`git-wizard`](https://github.com/makelinux/git-wizard) Instant git magic and tricks.
 * [`has`](https://github.com/kdabir/has) Checks presence of various command line tools and their versions on the path.
@@ -225,6 +226,7 @@
 
 ## Android Tools
 
+* [`hackerpro`](https://github.com/technicaldada/hackerpro) All in One Hacking Tool for Linux & Android (Termux). Make your linux environment into a Hacking Machine.
 * [`Lazymux`](https://github.com/Gameye98/Lazymux) Termux tool installer.
 * [`oh-my-termux`](https://github.com/4679/oh-my-termux) Termux themes and styling.
 
