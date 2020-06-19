@@ -25,7 +25,7 @@
     "np": "^6.2.4",
     "npm-check-updates": "^7.0.1",
     "script-progress": "^1.0.5",
-    "updates": "^10.2.13"
+    "updates": "^10.2.14"
   },
   "husky": {
     "hooks": {
