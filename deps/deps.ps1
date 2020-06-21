@@ -2,6 +2,8 @@
 # deps.ps1 #
 # -------- #
 
+Write-Host "" # New Line
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Check OS and ensure we are running on Windows
@@ -65,7 +67,7 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 # PowerShell Modules
 # ==================
 
-Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
+# Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 
 # TODO: Run this with powershell not pwsh to install globally
 # TODO: Uninstall/remove version 1.0.0.1
