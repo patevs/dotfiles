@@ -332,11 +332,11 @@ Write-Host "Installing DotNet Tools..." -ForegroundColor "Yellow"
 
 # Verify dotnet-sdk is installed
 if (Get-Command dotnet) {
-  dotnet tool install --global dotnet-outdated
-  dotnet tool install --global dotnet-retire
-  dotnet tool install --global git-status-cli
-  dotnet tool install --global Moniker.Cli
-  dotnet tool install --global nyancat
+  Invoke-Expression "dotnet tool install --global dotnet-outdated"
+  Invoke-Expression "dotnet tool install --global dotnet-retire"
+  Invoke-Expression "dotnet tool install --global git-status-cli"
+  Invoke-Expression "dotnet tool install --global Moniker.Cli"
+  Invoke-Expression "dotnet tool install --global nyancat"
 } else {
   Write-Host "ERROR DotNet-SDK is not install!" -ForegroundColor "Red"
 }
@@ -350,9 +350,9 @@ Write-Host "Installing Go Tools..." -ForegroundColor "Yellow"
 
 # Verify Go is installed
 if (Get-Command go) {
-  go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
-  go get -u github.com/xxxserxxx/gotop/cmd/gotop
-  go get github.com/dborzov/lsp
+  Invoke-Expression "go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch"
+  Invoke-Expression "go get -u github.com/xxxserxxx/gotop/cmd/gotop"
+  Invoke-Expression "go get github.com/dborzov/lsp"
 } else {
   Write-Host "ERROR Go is not install!" -ForegroundColor "Red"
 }
@@ -423,7 +423,7 @@ python3 -m pip install --upgrade thefuck
 # TODO: Ensure Ruby, gem, and ridk are installed
 
 ridk install 1,2,3
-ridk exec pacman -S mingw-w64-x86_64-gdbm
+# ridk exec pacman -S mingw-w64-x86_64-gdbm
 
 gem update --system
 gem update
