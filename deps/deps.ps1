@@ -2,6 +2,8 @@
 # deps.ps1 #
 # -------- #
 
+Write-Host "" # New Line
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Check OS and ensure we are running on Windows
@@ -65,35 +67,35 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 # PowerShell Modules
 # ==================
 
-Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
+# Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
 
 # TODO: Run this with powershell not pwsh to install globally
 # TODO: Uninstall/remove version 1.0.0.1
-Install-Module -Name PackageManagement -Force
+# Install-Module -Name PackageManagement # -Force
 # TODO: Run this with powershell not pwsh to install globally
 # TODO: Uninstall/remove version 1.0.0.1
 # Install-Module -Name PowerShellGet -Force
-Install-Module -Name PowerShellGet -Force -SkipPublisherCheck
+# Install-Module -Name PowerShellGet -SkipPublisherCheck # -Force
 # PS 6+
 # Install-Module -Name Pester -Scope CurrentUser
 # PS 5.1
 # Install-Module -Name Pester -Force -SkipPublisherCheck -Scope CurrentUser
 # Install-Module -Name Configuration
 
-Install-Module -Name PSReadLine -Scope CurrentUser -Force
-Install-Module -Name PSWindowsUpdate -Scope CurrentUser -Force
-Install-Module -Name PSWriteColor -Scope CurrentUser -Force
+# Install-Module -Name PSReadLine -Scope CurrentUser # -Force
+# Install-Module -Name PSWindowsUpdate -Scope CurrentUser # -Force
+# Install-Module -Name PSWriteColor -Scope CurrentUser # -Force
 # Install-Module -Name PSKoans -Scope CurrentUser -Force
 # Install-Module -Name PSeudo -Scope CurrentUser -Force
 
-Install-Module -Name npm-completion -Scope CurrentUser -Force
-Install-Module -Name posh-cargo -Scope CurrentUser -Force -AllowClobber
+# Install-Module -Name npm-completion -Scope CurrentUser # -Force
+# Install-Module -Name posh-cargo -Scope CurrentUser -AllowClobber # -Force
 # Install-Module -Name posh-cli -Scope CurrentUser -Force
-Install-Module -Name posh-dotnet -Scope CurrentUser -Force
-Install-Module -Name posh-git -Scope CurrentUser -Force -AllowClobber
+# Install-Module -Name posh-dotnet -Scope CurrentUser # -Force
+# Install-Module -Name posh-git -Scope CurrentUser  -AllowClobber # -Force
 # Install-Module -Name posh-npm -Scope CurrentUser -Force
-Install-Module -Name scoop-completion -Scope CurrentUser -Force -AllowClobber
-Install-Module -Name yarn-completion -Scope CurrentUser -Force
+# Install-Module -Name scoop-completion -Scope CurrentUser -AllowClobber # -Force
+# Install-Module -Name yarn-completion -Scope CurrentUser # -Force
 
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
@@ -112,14 +114,15 @@ if (which cinst) {
 } else {
   # Install chocolatey
   Invoke-Expression (new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')
-  Refresh-Environment
-  choco feature enable -n=allowGlobalConfirmation
+  RefreshEnvironment
 }
+
+choco feature enable -n=allowGlobalConfirmation
 
 # System and Development Tools
 choco install 7zip.install
 # choco install curl                --limit-output
-choco install dexpot
+# choco install dexpot
 # choco install Fiddler             --limit-output
 choco install git.install
 choco install jdk8
@@ -202,6 +205,7 @@ scoop install aria2
 scoop install scoop-completion
 
 # Programming Languages
+scoop install dotnet-sdk
 scoop install go
 scoop install nodejs-lts
 scoop install perl
@@ -328,11 +332,11 @@ Write-Host "Installing DotNet Tools..." -ForegroundColor "Yellow"
 
 # Verify dotnet-sdk is installed
 if (Get-Command dotnet) {
-  dotnet tool install --global dotnet-outdated
-  dotnet tool install --global dotnet-retire
-  dotnet tool install --global git-status-cli
-  dotnet tool install --global Moniker.Cli
-  dotnet tool install --global nyancat
+  Invoke-Expression "dotnet tool install --global dotnet-outdated"
+  Invoke-Expression "dotnet tool install --global dotnet-retire"
+  Invoke-Expression "dotnet tool install --global git-status-cli"
+  Invoke-Expression "dotnet tool install --global Moniker.Cli"
+  Invoke-Expression "dotnet tool install --global nyancat"
 } else {
   Write-Host "ERROR DotNet-SDK is not install!" -ForegroundColor "Red"
 }
@@ -346,9 +350,9 @@ Write-Host "Installing Go Tools..." -ForegroundColor "Yellow"
 
 # Verify Go is installed
 if (Get-Command go) {
-  go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch
-  go get -u github.com/xxxserxxx/gotop/cmd/gotop
-  go get github.com/dborzov/lsp
+  Invoke-Expression "go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch"
+  Invoke-Expression "go get -u github.com/xxxserxxx/gotop/cmd/gotop"
+  Invoke-Expression "go get github.com/dborzov/lsp"
 } else {
   Write-Host "ERROR Go is not install!" -ForegroundColor "Red"
 }
@@ -419,7 +423,7 @@ python3 -m pip install --upgrade thefuck
 # TODO: Ensure Ruby, gem, and ridk are installed
 
 ridk install 1,2,3
-ridk exec pacman -S mingw-w64-x86_64-gdbm
+# ridk exec pacman -S mingw-w64-x86_64-gdbm
 
 gem update --system
 gem update
