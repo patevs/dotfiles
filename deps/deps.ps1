@@ -205,6 +205,7 @@ scoop install aria2
 scoop install scoop-completion
 
 # Programming Languages
+scoop install dotnet-sdk
 scoop install go
 scoop install nodejs-lts
 scoop install perl
