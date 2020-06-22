@@ -267,13 +267,13 @@ scoop install ccleaner
 # scoop install imagemagick
 scoop install inkscape
 scoop install powertoys
-scoop install vncviewer
 # scoop install rufus
 scoop install snappy-driver-installer-origin
 scoop install speccy
 scoop install sublime-text
 scoop install sumatrapdf
 scoop install teracopy-np
+scoop install vncviewer
 # scoop install vscodium
 # scoop install win32-disk-imager
 # scoop install zeal
