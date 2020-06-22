@@ -123,6 +123,7 @@ choco feature enable -n=allowGlobalConfirmation
 choco install 7zip.install
 # choco install curl                --limit-output
 # choco install dexpot
+choco install driverbooster
 # choco install Fiddler             --limit-output
 choco install git.install
 choco install jdk8
@@ -259,20 +260,22 @@ scoop install onefetch
 # Applications
 scoop install android-studio
 # scoop install android-sdk
-scoop install atom
+# scoop install atom
 scoop install bulk-crap-uninstaller
 scoop install ccleaner
 # scoop install copyq
 # scoop install etcher
 # scoop install imagemagick
 scoop install inkscape
+scoop install logitech-gaming-software-np
 scoop install powertoys
-scoop install vncviewer
 # scoop install rufus
 scoop install snappy-driver-installer-origin
 scoop install speccy
+scoop install sublime-text
 scoop install sumatrapdf
 scoop install teracopy-np
+scoop install vncviewer
 # scoop install vscodium
 # scoop install win32-disk-imager
 # scoop install zeal
