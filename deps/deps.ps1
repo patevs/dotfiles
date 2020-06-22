@@ -266,6 +266,7 @@ scoop install ccleaner
 # scoop install etcher
 # scoop install imagemagick
 scoop install inkscape
+scoop install logitech-gaming-software-np
 scoop install powertoys
 # scoop install rufus
 scoop install snappy-driver-installer-origin
