@@ -259,7 +259,7 @@ scoop install onefetch
 # Applications
 scoop install android-studio
 # scoop install android-sdk
-scoop install atom
+# scoop install atom
 scoop install bulk-crap-uninstaller
 scoop install ccleaner
 # scoop install copyq
