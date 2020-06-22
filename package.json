@@ -14,6 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "updates": "script-progress node ./scripts/checkUpdates"
   },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/core": "^8.3.5",
