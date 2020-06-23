@@ -25,6 +25,7 @@
 * [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) Good-lookin' diffs. *Note* - Requires [`Perl`](https://www.perl.org/) to be installed.
 * [`g3l`](https://github.com/svhawks/g3l) Easiest git cli in the w0rld!
 * [`gistup`](https://github.com/mbostock/gistup) Create a gist from terminal, then use git to update it.
+* [`git-dld`](https://github.com/ziishaned/git-dld) Download files or folders from GitHub.
 * [`git-open`](https://github.com/paulirish/git-open) Open the GitHub page or website for a repository in your browser. *Note* - The `hub browse` command does the same thing.
 * [`git-stats`](https://github.com/IonicaBizau/git-stats) Local git statistics including GitHub-like contributions calendars.
 * [`gitmoji-cli`](https://github.com/carloscuesta/gitmoji-cli) Interactive command line tool for using emojis on commits.
