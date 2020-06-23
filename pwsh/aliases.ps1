@@ -48,7 +48,8 @@ if (which thefuck){
   # Correct the previous command using `thefuck`
   $env:PYTHONIOENCODING="utf-8"
   Invoke-Expression "$(thefuck --alias)"
-  # TODO: Unset PYTHONIOENCODING env var
+  # Unset PYTHONIOENCODING environment variable
+  Remove-Item env:PYTHONIOENCODING
 }
 
 # ------------------------------------------------------------------------------------------------------- #
