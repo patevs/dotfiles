@@ -218,6 +218,8 @@ Plug 'ryanoasis/vim-devicons'
 " Plug 'ThePrimeagen/vim-be-good'
 " execute `:UpdateRemotePlugins` to install vim-be-good
 
+" Plug 'voldikss/vim-floaterm'
+
 " Initialize plugin system
 " Remember to run :PlugInstall
 call plug#end()
