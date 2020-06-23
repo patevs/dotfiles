@@ -43,10 +43,14 @@ ${function:version} = { $PSVersionTable.PSVersion }
 # Get installed PowerShell modules
 ${function:modules} = { Get-Module -ListAvailable }
 
-# Correct the previous command
-# TODO: Ensure `thefuck` is installed
-$env:PYTHONIOENCODING="utf-8"
-Invoke-Expression "$(thefuck --alias)"
+# Ensure `thefuck` is installed
+if (which thefuck){
+  # Correct the previous command using `thefuck`
+  $env:PYTHONIOENCODING="utf-8"
+  Invoke-Expression "$(thefuck --alias)"
+  # Unset PYTHONIOENCODING environment variable
+  Remove-Item env:PYTHONIOENCODING
+}
 
 # ------------------------------------------------------------------------------------------------------- #
 

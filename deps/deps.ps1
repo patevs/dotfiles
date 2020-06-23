@@ -123,7 +123,7 @@ choco feature enable -n=allowGlobalConfirmation
 choco install 7zip.install
 # choco install curl                --limit-output
 # choco install dexpot
-choco install driverbooster
+# choco install driverbooster
 # choco install Fiddler             --limit-output
 choco install git.install
 choco install jdk8
