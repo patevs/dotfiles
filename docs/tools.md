@@ -107,6 +107,7 @@
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
 * [`geek-life`](https://github.com/ajaxray/geek-life) CLI Task Manager for Geeks.
+* [`gg`](https://github.com/zombiezen/gg) Git with less typing.
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
 * [`gitleaks`](https://github.com/zricethezav/gitleaks) Scan git repos for secrets using regex and entropy 🔑
