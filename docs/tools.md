@@ -63,6 +63,7 @@
 ## Bash Tools
 
 * [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Anonymize the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
+* [`bash-it`](https://github.com/Bash-it/bash-it) A community Bash framework.
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
 * [`garie`](https://github.com/boyney123/garie) Open source web performance.
@@ -107,6 +108,7 @@
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
 * [`geek-life`](https://github.com/ajaxray/geek-life) CLI Task Manager for Geeks.
+* [`gg`](https://github.com/zombiezen/gg) Git with less typing.
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
 * [`gitleaks`](https://github.com/zricethezav/gitleaks) Scan git repos for secrets using regex and entropy 🔑
@@ -213,6 +215,7 @@
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
+* [`pastel`](https://github.com/sharkdp/pastel) A command-line tool to generate, analyze, convert and manipulate colors.
 * [`procs`](https://github.com/dalance/procs) A modern replacement for ps written in Rust.
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
