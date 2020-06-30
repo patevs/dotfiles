@@ -71,10 +71,10 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
 # TODO: Run this with powershell not pwsh to install globally
 # TODO: Uninstall/remove version 1.0.0.1
-# Install-Module -Name PackageManagement # -Force
+Install-Module -Name PackageManagement # -Force
 # TODO: Run this with powershell not pwsh to install globally
 # TODO: Uninstall/remove version 1.0.0.1
-# Install-Module -Name PowerShellGet -Force
+Install-Module -Name PowerShellGet -Force
 # Install-Module -Name PowerShellGet -SkipPublisherCheck # -Force
 # PS 6+
 # Install-Module -Name Pester -Scope CurrentUser
@@ -82,20 +82,20 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 # Install-Module -Name Pester -Force -SkipPublisherCheck -Scope CurrentUser
 # Install-Module -Name Configuration
 
-# Install-Module -Name PSReadLine -Scope CurrentUser # -Force
-# Install-Module -Name PSWindowsUpdate -Scope CurrentUser # -Force
-# Install-Module -Name PSWriteColor -Scope CurrentUser # -Force
+Install-Module -Name PSReadLine -Scope CurrentUser # -Force
+Install-Module -Name PSWindowsUpdate -Scope CurrentUser # -Force
+Install-Module -Name PSWriteColor -Scope CurrentUser # -Force
 # Install-Module -Name PSKoans -Scope CurrentUser -Force
 # Install-Module -Name PSeudo -Scope CurrentUser -Force
 
-# Install-Module -Name npm-completion -Scope CurrentUser # -Force
-# Install-Module -Name posh-cargo -Scope CurrentUser -AllowClobber # -Force
+Install-Module -Name npm-completion -Scope CurrentUser # -Force
+Install-Module -Name posh-cargo -Scope CurrentUser -AllowClobber # -Force
 # Install-Module -Name posh-cli -Scope CurrentUser -Force
-# Install-Module -Name posh-dotnet -Scope CurrentUser # -Force
-# Install-Module -Name posh-git -Scope CurrentUser  -AllowClobber # -Force
+Install-Module -Name posh-dotnet -Scope CurrentUser # -Force
+Install-Module -Name posh-git -Scope CurrentUser  -AllowClobber # -Force
 # Install-Module -Name posh-npm -Scope CurrentUser -Force
-# Install-Module -Name scoop-completion -Scope CurrentUser -AllowClobber # -Force
-# Install-Module -Name yarn-completion -Scope CurrentUser # -Force
+Install-Module -Name scoop-completion -Scope CurrentUser -AllowClobber # -Force
+Install-Module -Name yarn-completion -Scope CurrentUser # -Force
 
 # Install-Module Terminal-Icons -Scope CurrentUser -Force
 # Install-Module Get-ChildItemColor -Scope CurrentUser -Force
@@ -206,7 +206,7 @@ scoop install aria2
 scoop install scoop-completion
 
 # Programming Languages
-scoop install dotnet-sdk
+# scoop install dotnet-sdk
 scoop install go
 scoop install nodejs-lts
 scoop install perl
@@ -353,7 +353,7 @@ Write-Host "Installing Go Tools..." -ForegroundColor "Yellow"
 
 # Verify Go is installed
 if (Get-Command go) {
-  Invoke-Expression "go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch"
+  # Invoke-Expression "go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch"
   Invoke-Expression "go get -u github.com/xxxserxxx/gotop/cmd/gotop"
   Invoke-Expression "go get github.com/dborzov/lsp"
 } else {
