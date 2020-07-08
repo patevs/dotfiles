@@ -5991,11 +5991,6 @@ update-notifier@^4.0.0:
     semver-diff "^3.1.1"
     xdg-basedir "^4.0.0"
 
-updates@^10.2.15:
-  version "10.2.15"
-  resolved "https://registry.yarnpkg.com/updates/-/updates-10.2.15.tgz#6bd23c63c3d3d07978b17330367cdf9ea5fe9dba"
-  integrity sha512-NkghVbjJeIBaiuC+Yvr8B99L2E/THCBoO9REo1uH+ulpxJyO2S4UNKSwXgbSC7GBRjTd/+0LFYFTQsbVfLQNaw==
-
 uri-js@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.2.2.tgz#94c540e1ff772956e2299507c010aea6c8838eb0"
