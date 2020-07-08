@@ -209,9 +209,10 @@
 * [`eva`](https://github.com/NerdyPepper/eva)
 * [`fd`](https://github.com/sharkdp/fd)
 * [`ffsend`](https://github.com/timvisee/ffsend) Easily and securely share files from the command line. A fully featured Firefox Send client.
-* [`gitui`](https://github.com/extrawurst/gitui) Blazing fast terminal-ui for git written in rust
+* [`gitui`](https://github.com/extrawurst/gitui) Blazing fast terminal-ui for git written in rust.
 * [`grex`](https://github.com/pemistahl/grex)
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
+* [`just`](https://github.com/casey/just) Just a command runner.
 * [`lsd`](https://github.com/Peltoche/lsd)
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
