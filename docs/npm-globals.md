@@ -134,6 +134,7 @@
 * [`gitbook`](https://github.com/GitbookIO/gitbook) Modern documentation format and toolchain using Git and Markdown.
 * [`markmap-lib`](https://github.com/gera2ld/markmap-lib) Visualize your Markdown as mindmaps.
 * [`mermaid`](https://github.com/mermaid-js/mermaid) Generation of diagram and flowchart from text in a similar manner as markdown.
+* [`readme-md-generator`](https://github.com/kefranabg/readme-md-generator) CLI that generates beautiful README.md files.
 
 ---
 
