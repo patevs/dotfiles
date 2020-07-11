@@ -132,6 +132,7 @@
 * [`clog-cli`](https://github.com/kentcdodds/clog-cli) An npm distribution of the amazing [clog](https://github.com/clog-tool/clog-cli) tool.
 * [`doctoc`](https://github.com/thlorenz/doctoc) Generates table of contents for markdown files inside local git repository.
 * [`gitbook`](https://github.com/GitbookIO/gitbook) Modern documentation format and toolchain using Git and Markdown.
+* [`gitmoji-changelog`](https://github.com/frinyvonnick/gitmoji-changelog) A changelog generator for gitmoji.
 * [`markmap-lib`](https://github.com/gera2ld/markmap-lib) Visualize your Markdown as mindmaps.
 * [`mermaid`](https://github.com/mermaid-js/mermaid) Generation of diagram and flowchart from text in a similar manner as markdown.
 * [`readme-md-generator`](https://github.com/kefranabg/readme-md-generator) CLI that generates beautiful README.md files.
