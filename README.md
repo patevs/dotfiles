@@ -98,6 +98,7 @@ cd deps
 │   ├── .bash_profile
 │   ├── .bashrc
 │   └── .profile
+├── bat
 ├── bin
 ├── deps
 │   └── deps.ps1
@@ -120,6 +121,7 @@ cd deps
 ├── .editorconfig
 ├── .gitignore
 ├── .gitmodules
+├── .np-config.json
 ├── LICENSE
 ├── package.json
 └── README.md
