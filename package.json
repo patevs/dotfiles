@@ -23,7 +23,7 @@
     "commitlint-config-gitmoji": "^1.0.1",
     "cz-emoji": "^1.2.1",
     "husky": "^4.2.5",
-    "np": "^6.3.1",
+    "np": "^6.3.2",
     "script-progress": "^1.0.5"
   },
   "husky": {
