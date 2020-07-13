@@ -16,7 +16,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@commitlint/cli": "^9.0.1",
+    "@commitlint/cli": "^9.1.1",
     "@commitlint/core": "^9.0.1",
     "chalk": "^4.1.0",
     "commitizen": "^4.1.2",
