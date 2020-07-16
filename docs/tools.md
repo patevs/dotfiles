@@ -171,6 +171,7 @@
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
 * [`grip`](https://github.com/joeyespo/grip) Preview GitHub Markdown files like Readme locally before committing them.
 * [`gtui`](https://github.com/CtheSky/gtui) Simple Task Scheduler & Executor with Text User Interface.
+* [`hackingtool`](https://github.com/Z4nzu/hackingtool) All in One Hacking tool For Hackers.
 * [`instaloader`](https://github.com/instaloader/instaloader) Download pictures (or videos) along with metadata from Instagram.
 * [`jrnl`](https://github.com/jrnl-org/jrnl) Collect your thoughts and notes without leaving the command line.
 * [`Mercury`](https://github.com/metachar/Mercury) Hacking tool used to collect information and use the information to further hurt the target.
@@ -221,6 +222,7 @@
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
+* [`so`](https://github.com/samtay/so) A terminal interface for Stack Overflow.
 * [`tauri`](https://github.com/tauri-apps/tauri) Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
 * [`ytop`](https://github.com/cjbassi/ytop)
