@@ -171,6 +171,7 @@
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
 * [`grip`](https://github.com/joeyespo/grip) Preview GitHub Markdown files like Readme locally before committing them.
 * [`gtui`](https://github.com/CtheSky/gtui) Simple Task Scheduler & Executor with Text User Interface.
+* [`hackingtool`](https://github.com/Z4nzu/hackingtool) All in One Hacking tool For Hackers.
 * [`instaloader`](https://github.com/instaloader/instaloader) Download pictures (or videos) along with metadata from Instagram.
 * [`jrnl`](https://github.com/jrnl-org/jrnl) Collect your thoughts and notes without leaving the command line.
 * [`Mercury`](https://github.com/metachar/Mercury) Hacking tool used to collect information and use the information to further hurt the target.
