@@ -215,7 +215,8 @@ scoop install python
 # $pythonDir = Invoke-Expression "scoop prefix python"
 # Invoke-Expression "$pythonDir\install-pep-514.reg"
 scoop install python27
-scoop install ruby26
+scoop install ruby
+# scoop install ruby26
 scoop install rustup
 
 # Development Tools
