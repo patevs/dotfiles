@@ -255,6 +255,13 @@ function gss {
   g3l --status
 }
 
+# Clone a git repository and cd into the created directory
+function Invoke-GitClone($url) {
+  $name = $url.Split('/')[-1].Replace('.git', '')
+  & git clone $url $name | Out-Null
+  Set-Location $name
+}
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # NodeJS & NPM Functions
