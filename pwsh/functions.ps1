@@ -256,6 +256,7 @@ function gss {
 }
 
 # Clone a git repository and cd into the created directory
+# https://stackoverflow.com/a/32539370/6346131
 function Invoke-GitClone($url) {
   $name = $url.Split('/')[-1].Replace('.git', '')
   & git clone $url $name | Out-Null
