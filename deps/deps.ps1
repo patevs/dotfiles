@@ -131,6 +131,7 @@ choco install jdk8
 # choco install nvm.portable        --limit-output
 # choco install poweriso
 # choco install pulseaudio
+# choco install pyenv-win
 # choco install reactotron
 # choco install rpi-imager
 # choco install rsvg-convert
