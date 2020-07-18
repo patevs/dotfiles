@@ -62,14 +62,15 @@ ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 
 # Shutdown System
 # FIXME
-${function:shutdown} = { Stop-Computer -ComputerName localhost }
 # ${function:shutdown} = { shutdown /p }
-# Set-Alias -Name shut -Value shutdown
+${function:shutdown} = { Stop-Computer -ComputerName localhost }
+Set-Alias -Name shut -Value shutdown
 
 # Restart System
 # FIXME
 # ${function:restart} = { shutdown /r /t 0 }
-# Set-Alias -Name reboot -Value restart
+${function:restart} = { Restart-Computer }
+Set-Alias -Name reboot -Value restart
 
 # Create a new directory and enter it
 Set-Alias -Name mkd -Value CreateAndSetDirectory
