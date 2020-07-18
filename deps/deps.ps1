@@ -226,7 +226,8 @@ scoop install bat
 # scoop install colortool
 scoop install dust
 scoop install fd
-scoop install fzf
+# scoop install fzf
+# scoop install gow
 # scoop install grex
 # scoop install heroku-cli
 # scoop install hugo
@@ -318,6 +319,7 @@ scoop cache rm *
 
 # https://github.com/git-friendly/git-friendly
 
+# Note: Requires fzf and bc (scoop install fzf gow)
 # https://github.com/bigH/git-fuzzy
 
 # https://github.com/fboender/multi-git-status
