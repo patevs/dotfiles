@@ -61,14 +61,12 @@ if (which thefuck){
 ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 
 # Shutdown System
-# FIXME
-# ${function:shutdown} = { shutdown /p }
-# Set-Alias -Name shut -Value shutdown
+${function:shutdown} = { Stop-Computer -ComputerName localhost }
+Set-Alias -Name shut -Value shutdown
 
 # Restart System
-# FIXME
-# ${function:restart} = { shutdown /r /t 0 }
-# Set-Alias -Name reboot -Value restart
+${function:restart} = { Restart-Computer }
+Set-Alias -Name reboot -Value restart
 
 # Create a new directory and enter it
 Set-Alias -Name mkd -Value CreateAndSetDirectory
@@ -130,6 +128,9 @@ Set-Alias -Name time -Value Measure-Command
 
 # Git & GitHub Aliases
 # ====================
+
+# Git clone and cd
+Set-Alias -Name gcd -Value Invoke-GitClone
 
 # ls with git status
 ${function:lsg} = { Write-Host ""; bash C:\bin\ls-with-git-status\lsg }
