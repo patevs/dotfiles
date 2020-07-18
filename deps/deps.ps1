@@ -318,6 +318,8 @@ scoop cache rm *
 
 # https://github.com/git-friendly/git-friendly
 
+# https://github.com/bigH/git-fuzzy
+
 # https://github.com/fboender/multi-git-status
 
 # https://github.com/patevs/ls-with-git-status
