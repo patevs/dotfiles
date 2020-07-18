@@ -62,6 +62,7 @@ ${function:neofetch} = { bash C:\bin\neofetch\neofetch }
 
 # Shutdown System
 # FIXME
+${function:shutdown} = { Stop-Computer -ComputerName localhost }
 # ${function:shutdown} = { shutdown /p }
 # Set-Alias -Name shut -Value shutdown
 
