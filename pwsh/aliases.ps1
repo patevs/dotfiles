@@ -131,6 +131,9 @@ Set-Alias -Name time -Value Measure-Command
 # Git & GitHub Aliases
 # ====================
 
+# Git clone and cd
+Set-Alias -Name gcd -Value Invoke-GitClone
+
 # ls with git status
 ${function:lsg} = { Write-Host ""; bash C:\bin\ls-with-git-status\lsg }
 # Set-Alias -Name ls -Value lsg -option AllScope -Force
