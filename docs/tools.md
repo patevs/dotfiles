@@ -6,27 +6,8 @@
 
 ## Documentation Tools
 
-* [`zeal`](https://github.com/zealdocs/zeal) Simple offline documentation browser.
-  * [Documentation](https://zealdocs.org/usage.html)
-  * [User Contributions](https://zealusercontributions.herokuapp.com/)
-    * [`tldr`](https://zealusercontributions.herokuapp.com/api/docsets/tldr)
-    * [`Expo`](https://zealusercontributions.herokuapp.com/api/docsets/Expo)
-    * [`pwntools`](https://zealusercontributions.herokuapp.com/api/docsets/pwntools)
-    * [`IonIcons`](https://zealusercontributions.herokuapp.com/api/docsets/IonIcons)
-    * [`Yarn`](https://zealusercontributions.herokuapp.com/api/docsets/Yarn)
-    * [`npm`](https://zealusercontributions.herokuapp.com/api/docsets/npm)
-    * [`Powershell`](https://zealusercontributions.herokuapp.com/api/docsets/Powershell)
-    * [`electron`](https://zealusercontributions.herokuapp.com/api/docsets/electron)
-    * [`webpack`](https://zealusercontributions.herokuapp.com/api/docsets/webpack)
-    * [`react-native`](https://zealusercontributions.herokuapp.com/api/docsets/React_Native)
-    * [`neovim`](https://zealusercontributions.herokuapp.com/api/docsets/Neovim)
-    * [`JSDoc`](https://zealusercontributions.herokuapp.com/api/docsets/JSDoc)
-    * [`Unicode`](https://zealusercontributions.herokuapp.com/api/docsets/UnicodeCharacters)
-    * [`jest`](https://zealusercontributions.herokuapp.com/api/docsets/Jest)
-    * [`Zsh`](https://zealusercontributions.herokuapp.com/api/docsets/Zsh)
-
 * [`github-readme-stats`](https://github.com/anuraghazra/github-readme-stats) Dynamically generated stats for your github readmes.
-* [`markdown-magic`](https://github.com/patevs/markdown-magic) 💫 Automatically format markdown files, sync external docs/src code & make better docs
+* [`markdown-magic`](https://github.com/patevs/markdown-magic) Automatically format markdown files, sync external docs/src code & make better docs
 
 ---
 
