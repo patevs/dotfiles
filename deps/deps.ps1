@@ -226,7 +226,7 @@ scoop install bat
 # scoop install colortool
 scoop install dust
 scoop install fd
-scoop install fzf
+# scoop install fzf
 # scoop install gow
 # scoop install grex
 # scoop install heroku-cli
