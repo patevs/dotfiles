@@ -226,6 +226,7 @@ scoop install bat
 # scoop install colortool
 scoop install dust
 scoop install fd
+scoop install fzf
 # scoop install grex
 # scoop install heroku-cli
 # scoop install hugo
@@ -316,6 +317,8 @@ scoop cache rm *
 # https://github.com/tj/git-extras
 
 # https://github.com/git-friendly/git-friendly
+
+# https://github.com/bigH/git-fuzzy
 
 # https://github.com/fboender/multi-git-status
 
