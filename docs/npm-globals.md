@@ -156,6 +156,7 @@
 * [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) Mobile icon generator. *Note* - Requires [`GraphicsMagick`](http://www.graphicsmagick.org/).
 * [`mobisplash-cli`](https://github.com/SamVerschueren/mobisplash-cli) Mobile app splash screen generator.
 * [`start-android-emulator`](https://github.com/wswebcreation/start-android-emulator) Start an Android emulator on your local machine.
+* [`tape-cli`](https://github.com/edamameldn/tape-cli) CLI tool to collaborate better during mobile development, for iOS & tvOS simulators and Android emulators and devices. Share screenshots, screen recordings as video or GIFs. Use with tape.sh or bring your own bucket!
 
 ---
 
