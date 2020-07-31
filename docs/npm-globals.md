@@ -20,13 +20,15 @@
 * [`check-it-out`](https://github.com/jwu910/check-it-out) A CLI for Git Checkout. See branches available for checkout.
 * [`cli-github`](https://github.com/IonicaBizau/cli-github) A fancy GitHub client for command line.
 * [`cz-cli`](https://github.com/commitizen/cz-cli) The [`commitizen`](https://github.com/commitizen) command line utility.
-  * [`cz-conventional-changelog`](https://github.com/commitizen/cz-conventional-changelog) A commitizen adapter for the angular preset of [`conventional-changelog`](https://github.com/conventional-changelog/conventional-changelog).
+  * [`cz-conventional-changelog`](https://github.com/commitizen/cz-conventional-changelog) A commitizen adapter for [`conventional-changelog`](https://github.com/conventional-changelog/conventional-changelog).
   * [`cz-emoji`](https://github.com/ngryman/cz-emoji) Commitizen adapter for formatting commit messages using emojis.
-* [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) Good-lookin' diffs. *Note* - Requires [`Perl`](https://www.perl.org/) to be installed.
+* [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy) Good-lookin' diffs.
+  * *Note* - Requires [`Perl`](https://www.perl.org/) to be installed.
 * [`g3l`](https://github.com/svhawks/g3l) Easiest git cli in the w0rld!
 * [`gistup`](https://github.com/mbostock/gistup) Create a gist from terminal, then use git to update it.
 * [`git-dld`](https://github.com/ziishaned/git-dld) Download files or folders from GitHub.
-* [`git-open`](https://github.com/paulirish/git-open) Open the GitHub page or website for a repository in your browser. *Note* - The `hub browse` command does the same thing.
+* [`git-open`](https://github.com/paulirish/git-open) Open the GitHub page or website for a repository in your browser.
+  * *Note* - The `hub browse` command can be used instead.
 * [`git-stats`](https://github.com/IonicaBizau/git-stats) Local git statistics including GitHub-like contributions calendars.
 * [`gitmoji-cli`](https://github.com/carloscuesta/gitmoji-cli) Interactive command line tool for using emojis on commits.
 * [`git-labelmaker`](https://github.com/himynameisdave/git-labelmaker) Manage your GitHub labels from the command line.
@@ -42,14 +44,14 @@
 * [`cost-of-modules`](https://github.com/siddharthkp/cost-of-modules) Find out which of your dependencies are slowing you down.
 * [`david`](https://github.com/alanshaw/david) Tells you when your package npm dependencies are out of date.
 * [`depcheck`](https://github.com/depcheck/depcheck) Check your npm module for unused dependencies.
-* [`dependency-check`](https://github.com/dependency-check-team/dependency-check) Checks which modules you have used in your code and then makes sure they are listed as dependencies.
+* [`dependency-check`](https://github.com/dependency-check-team/dependency-check) Checks modules you have used and then makes sure they are dependencies.
 * [`emma-cli`](https://github.com/maticzav/emma-cli) Terminal assistant to find and install node packages.
 * [`install-peerdeps`](https://github.com/nathanhleung/install-peerdeps) CLI to install an NPM package and its peer dependencies automatically.
 * [`ncc`](https://github.com/vercel/ncc) CLI for compiling a Node.js module into a single file, together with all its dependencies.
 * [`node-clinic`](https://github.com/nearform/node-clinic) An Open Source Node.js performance profiling suite.
 * [`npm-audit-helper`](https://github.com/rouanw/npm-audit-helper) Helps you understand and work through npm audit results.
 * [`npm-check`](https://github.com/dylang/npm-check) Check for outdated, incorrect, and unused dependencies.
-* [`npm-check-updates`](https://github.com/tjunnone/npm-check-updates) Find newer versions of package dependencies than what your package.json or bower.json allows.
+* [`npm-check-updates`](https://github.com/tjunnone/npm-check-updates) Find newer versions of package dependencies than what your package.json allows.
 * [`npm-police`](https://github.com/pksunkara/npm-police) A module dependency version policing tool.
 * [`npq`](https://github.com/lirantal/npq) Safely* install packages with npm/yarn by auditing them as part of your install process.
 * [`nti`](https://github.com/sculove/nti) Npm Task Info: Interactive cli menu shown description to list/run npm tasks.
@@ -58,7 +60,8 @@
 * [`legally`](https://github.com/franciscop/legally) Check the licenses for the NPM packages that you use.
 * [`license-checker`](https://github.com/davglass/license-checker) Check NPM package licenses
 * [`lockfile-lint`](https://github.com/lirantal/lockfile-lint) Lint an npm or yarn lockfile to analyze and detect security issues.
-* [`ndb`](https://github.com/GoogleChromeLabs/ndb) An improved debugging experience for Node.js, enabled by Chrome DevTools. *Note* - Requires [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) to be installed.
+* [`ndb`](https://github.com/GoogleChromeLabs/ndb) An improved debugging experience for Node.js, enabled by Chrome DevTools.
+  * *Note* - Requires [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) to be installed.
 * [`np`](https://github.com/sindresorhus/np) A better `npm publish`.
 * [`npe`](https://github.com/zeke/npe) Node Package Editor: a CLI for one-off inspection and editing of properties in package.json files.
 * [`npkill`](https://github.com/voidcosmos/npkill) Easily find and remove old and heavy node_modules folders.
@@ -66,7 +69,8 @@
 * [`npm-gui`](https://github.com/q-nick/npm-gui) Graphic tool for managing javascript project dependencies.
 * [`npm-install-peers`](https://github.com/spatie/npm-install-peers) CLI command to install npm peerDependencies.
 * [`npm-package-json-lint`](https://github.com/tclindner/npm-package-json-lint) Configurable linter for package.json files.
-* [`npm-windows-upgrade`](https://github.com/felixrieseberg/npm-windows-upgrade) Upgrade npm on Windows. *Note* - Must be run from an elevated prompt.
+* [`npm-windows-upgrade`](https://github.com/felixrieseberg/npm-windows-upgrade) Upgrade npm on Windows.
+  * *Note* - Must be run from an elevated prompt.
 * [`npminstall`](https://github.com/cnpm/npminstall) : Make `npm install` fast and easy.
 * [`npms-cli`](https://github.com/npms-io/npms-cli) Search [npms.io](https://npms.io/) from the command line.
 * [`package.json-validator`](https://github.com/gorillamania/package.json-validator) A tool for validating package.json files.
@@ -75,7 +79,8 @@
 * [`shrinkpack`](https://github.com/JamieMason/shrinkpack) Fast, resilient, reproducible builds with npm install.
 * [`updates`](https://github.com/silverwind/updates) Flexible npm dependency update tool.
 * [`updtr`](https://github.com/peerigon/updtr) Update outdated npm modules with zero pain.
-* [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) Install C++ Build Tools for Windows using npm. *Note* - Must be run from an elevated prompt.
+* [`windows-build-tools`](https://github.com/felixrieseberg/windows-build-tools) C++ Build Tools for Windows.
+  * *Note* - Must be run from an elevated prompt.
 * [`wipe-modules`](https://github.com/bntzio/wipe-modules) Easily remove the node_modules folder of non-active projects.
 * [`ytl`](https://github.com/Muldoser/ytl) Yarn Task List: Interactive cli menu to list/run npm tasks with yarn.
 
@@ -102,14 +107,16 @@
 * [`bower`](https://github.com/bower/bower) A package manager for the web.
 * [`destiny`](https://github.com/benawad/destiny) Prettier for File Structures.
 * [`devion`](https://github.com/alchaplinsky/devion) One Command to Run All your Projects in Development.
-* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) Font Awesome split to individual SVG and PNG files of different sizes along with Node.JS based generator. *Note* - Requires [`rsvg-convert`](https://chocolatey.org/packages/rsvg-convert) to be installed.
+* [`Font-Awesome-SVG-PNG`](https://github.com/encharm/Font-Awesome-SVG-PNG) Font Awesome split to individual SVG and PNG files.
+  * *Note* - Requires [`rsvg-convert`](https://chocolatey.org/packages/rsvg-convert) to be installed.
 * [`foy`](https://github.com/zaaack/foy) A simple, light-weight and modern task runner for general purpose.
 * [`Jsome`](https://github.com/Javascipt/Jsome) Give style to your JSON on your console!
 * [`licensed`](https://github.com/plibither8/licensed) Interactive command line tool to help you choose and add licenses to your projects
 * [`loadtest`](https://github.com/alexfernandez/loadtest) Runs a load test on the selected HTTP or WebSockets URL.
 * [`localtunnel`](https://github.com/localtunnel/localtunnel) Exposes your localhost to the world for easy testing and sharing!
 * [`maid`](https://github.com/egoist/maid) Markdown driven task runner.
-* [`mklicense`](https://github.com/cezaraugusto/mklicense) CLI tool for generating Licenses. Easily. *Note* - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
+* [`mklicense`](https://github.com/cezaraugusto/mklicense) CLI tool for generating Licenses. Easily.
+  * *Note* - Requires `bash` - Try [`licensed`](https://github.com/plibither8/licensed) instead.
 * [`nativefier`](https://github.com/jiahaog/nativefier) Make any web page a desktop application.
 * [`neovim/node-client`](https://github.com/neovim/node-client) Nvim Node.js client and plugin host.
 * [`node-csvtojson`](https://github.com/Keyang/node-csvtojson) Blazing fast and Comprehensive CSV Parser for Node.JS / Browser / Command Line.
@@ -153,7 +160,8 @@
 ## Mobile Development Utilities
 
 * [`emus`](https://github.com/tienph6m/emus) Start the Android Emulator or the iOS Simulator from the command line.
-* [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) Mobile icon generator. *Note* - Requires [`GraphicsMagick`](http://www.graphicsmagick.org/).
+* [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) Mobile icon generator.
+  * *Note* - Requires [`GraphicsMagick`](http://www.graphicsmagick.org/).
 * [`mobisplash-cli`](https://github.com/SamVerschueren/mobisplash-cli) Mobile app splash screen generator.
 * [`start-android-emulator`](https://github.com/wswebcreation/start-android-emulator) Start an Android emulator on your local machine.
 * [`tape-cli`](https://github.com/edamameldn/tape-cli) CLI tool to collaborate better during mobile development, for iOS & tvOS simulators and Android emulators and devices. Share screenshots, screen recordings as video or GIFs. Use with tape.sh or bring your own bucket!
@@ -173,7 +181,8 @@
 * [`ignite`](https://github.com/infinitered/ignite) The hottest CLI for React Native, boilerplates, plugins, generators, and more!
 * [`react-native-cli`](https://github.com/react-native-community/cli) React Native command line tools.
 * [`react-native-rename`](https://github.com/junedomingo/react-native-rename) Rename react-native app with just one command.
-* [`rnpm`](https://github.com/rnpm/rnpm) React Native Package Manager. *Note* - Merged into react-native core from version 0.60 and up.
+* [`rnpm`](https://github.com/rnpm/rnpm) React Native Package Manager.
+  * *Note* - Merged into react-native core from version `0.60` and up.
 * [`rsx`](https://github.com/react-native-contrib/rsx) A CLI tool built to ease your daily React Native development.
 
 ---
@@ -207,7 +216,8 @@
 * [`screensaver`](https://github.com/gillstrom/screensaver) Start the screensaver.
 * [`share-cli`](https://github.com/marionebl/share-cli) Quickly share files from the command line.
 * [`trash-cli`](https://github.com/sindresorhus/trash-cli) Move files and folders to the trash.
-* [`vtop`](https://github.com/MrRio/vtop) Graphical activity monitor for the command line. *Note* - Requires `bash`. Try [`gtop`](https://github.com/aksakalli/gtop) instead.
+* [`vtop`](https://github.com/MrRio/vtop) Graphical activity monitor for the command line.
+  * *Note* - Requires `bash`. Try [`gtop`](https://github.com/aksakalli/gtop) instead.
 * [`wifi-password-cli`](https://github.com/kevva/wifi-password-cli) Get current wifi password.
 
 ---
