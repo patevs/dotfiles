@@ -269,6 +269,7 @@ CALL npm install --global emus
 :: CALL npm install --global mobisplash-cli
 :: # https://github.com/wswebcreation/start-android-emulator
 :: CALL npm install --global start-android-emulator
+CALL npm install --global tape-cli
 
 :: ---------------------------------------------------------------------------- ::
 
