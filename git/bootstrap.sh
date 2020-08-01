@@ -5,7 +5,7 @@
 # ------------ #
 
 # Copy global git config files
-cp ./gitconfig ~/.gitconfig
-cp ./gitignore ~/.gitignore
+cp .gitconfig ~/.gitconfig
+cp .gitignore ~/.gitignore
 
 # EOF #
