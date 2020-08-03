@@ -446,6 +446,20 @@ gem install bundler
 gem install rails
 gem install neovim
 
+# Rails Utilities
+# ---------------
+
+# Static analysis security vulnerability scanner
+#   https://github.com/presidentbeef/brakeman
+# gem install brakeman
+
+# Solargraph language server
+#   https://github.com/castwide/solargraph
+# gem install solargraph
+
+# https://github.com/dejan/rails_panel
+# gem install meta_request
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Rust Installs
