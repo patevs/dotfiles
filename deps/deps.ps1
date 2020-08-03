@@ -285,6 +285,9 @@ scoop install vncviewer
 # scoop install win32-disk-imager
 # scoop install zeal
 
+# Databases
+# scoop install postgresql
+
 # Music Applications
 scoop install dopamine
 scoop install ffmpeg
