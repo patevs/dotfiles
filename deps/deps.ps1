@@ -156,7 +156,7 @@ choco install figma
 choco install gimp
 choco install qbittorrent
 choco install revo-uninstaller
-choco install shortcut.install
+# choco install shortcut.install
 choco install spotify
 # choco install steam
 choco install vlc
