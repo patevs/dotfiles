@@ -156,7 +156,7 @@ choco install figma
 choco install gimp
 choco install qbittorrent
 choco install revo-uninstaller
-choco install shortcut.install
+# choco install shortcut.install
 choco install spotify
 # choco install steam
 choco install vlc
@@ -272,7 +272,7 @@ scoop install ccleaner
 # scoop install etcher
 # scoop install imagemagick
 scoop install inkscape
-scoop install logitech-gaming-software-np
+# scoop install logitech-gaming-software-np
 scoop install powertoys
 # scoop install rufus
 scoop install snappy-driver-installer-origin
@@ -284,6 +284,9 @@ scoop install vncviewer
 # scoop install vscodium
 # scoop install win32-disk-imager
 # scoop install zeal
+
+# Databases
+# scoop install postgresql
 
 # Music Applications
 scoop install dopamine
