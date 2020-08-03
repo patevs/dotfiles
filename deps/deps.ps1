@@ -446,6 +446,35 @@ gem install bundler
 gem install rails
 gem install neovim
 
+# Ruby Utilities
+# --------------
+
+# Ruby static code analyzer and formatter
+#   https://github.com/rubocop-hq/rubocop
+# gem install rubocop
+
+# Ruby code quality reporter
+#   https://github.com/whitesmith/rubycritic
+# gem install rubycritic
+
+# Solargraph language server
+#   https://github.com/castwide/solargraph
+gem install solargraph
+
+# Rails Utilities
+# ---------------
+
+# Static analysis security vulnerability scanner
+#   https://github.com/presidentbeef/brakeman
+# gem install brakeman
+
+# https://github.com/dejan/rails_panel
+# gem install meta_request
+
+# RuboCop extension focused on enforcing Rails best practices.
+#   https://github.com/rubocop-hq/rubocop-rails
+# gem install rubocop-rails
+
 # ------------------------------------------------------------------------------------------------------- #
 
 # Rust Installs
