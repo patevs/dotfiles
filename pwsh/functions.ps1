@@ -35,7 +35,12 @@ function edit-profile {
 
 # Open a given file
 function open($file) {
-  invoke-item $file
+  # Use open-cli if installed
+  if (which open-cli) {
+    open-cli $file
+  } else {
+    invoke-item $file
+  }
 }
 
 # Open Windows Explorer

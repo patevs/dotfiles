@@ -332,8 +332,7 @@ ECHO. & ECHO  [44m Installing System Utility Modules: [0m & ECHO.
 :: # https://github.com/aksakalli/gtop
 CALL npm install --global gtop
 :: CALL npm install --global incognitoz
-:: # https://github.com/sindresorhus/open-cli
-:: CALL npm install --global open-cli
+CALL npm install --global open-cli
 :: # https://github.com/sindresorhus/pageres-cli
 :: CALL npm install --global pageres-cli
 :: # https://github.com/gillstrom/screensaver
