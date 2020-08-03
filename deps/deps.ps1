@@ -449,6 +449,10 @@ gem install neovim
 # Ruby Utilities
 # --------------
 
+# Ruby code quality reporter
+#   https://github.com/whitesmith/rubycritic
+# gem install rubycritic
+
 # Solargraph language server
 #   https://github.com/castwide/solargraph
 gem install solargraph
