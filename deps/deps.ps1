@@ -453,6 +453,11 @@ gem install neovim
 #   https://github.com/rubocop-hq/rubocop
 # gem install rubocop
 
+# RuboCop extension focused on code performance checks.
+#   https://github.com/rubocop-hq/rubocop-performance
+# gem install rubocop-performance
+
+
 # Ruby code quality reporter
 #   https://github.com/whitesmith/rubycritic
 # gem install rubycritic
