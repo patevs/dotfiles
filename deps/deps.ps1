@@ -449,6 +449,10 @@ gem install neovim
 # Ruby Utilities
 # --------------
 
+# Ruby static code analyzer and formatter
+#   https://github.com/rubocop-hq/rubocop
+# gem install rubocop
+
 # Ruby code quality reporter
 #   https://github.com/whitesmith/rubycritic
 # gem install rubycritic
@@ -466,6 +470,10 @@ gem install solargraph
 
 # https://github.com/dejan/rails_panel
 # gem install meta_request
+
+# RuboCop extension focused on enforcing Rails best practices.
+#   https://github.com/rubocop-hq/rubocop-rails
+# gem install rubocop-rails
 
 # ------------------------------------------------------------------------------------------------------- #
 
