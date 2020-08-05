@@ -44,6 +44,12 @@ if (Get-Module -ListAvailable PSReadLine -ErrorAction SilentlyContinue) {
   }
 }
 
+# Posh-Git Configuration
+
+# Remove 'posh~git' prefix from terminal title
+# https://github.com/dahlbyk/posh-git/issues/424#issue-208094847
+$Global:GitPromptSettings.EnableWindowTitle = $true
+
 # Dracula Prompt Configuration
 # $GitPromptSettings.DefaultPromptPrefix.Text = "$([char]0x2192) " # arrow unicode symbol
 # $GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::Green
