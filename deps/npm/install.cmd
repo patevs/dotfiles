@@ -88,6 +88,7 @@ CALL npm install --global gitmoji-cli
 ECHO. & ECHO  [44m Installing NodeJS and NPM Utility Modules: [0m & ECHO.
 
 
+:: CALL npm install --global auto-install
 :: # https://github.com/siddharthkp/cost-of-modules
 :: CALL npm install --global cost-of-modules
 :: # https://github.com/alanshaw/david
