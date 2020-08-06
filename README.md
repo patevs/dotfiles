@@ -118,9 +118,11 @@ cd deps
 │   └── install.ps1
 ├── wt
 │   └── profiles.json
+├── .commitlintrc.json
 ├── .editorconfig
 ├── .gitignore
 ├── .gitmodules
+├── .huskyrc
 ├── .np-config.json
 ├── LICENSE
 ├── package.json

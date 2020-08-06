@@ -41,6 +41,7 @@
 
 ## NodeJS and NPM Utilities
 
+* [`auto-install`](https://github.com/siddharthkp/auto-install) Auto installs dependencies as you code. Just hit save.
 * [`cost-of-modules`](https://github.com/siddharthkp/cost-of-modules) Find out which of your dependencies are slowing you down.
 * [`david`](https://github.com/alanshaw/david) Tells you when your package npm dependencies are out of date.
 * [`depcheck`](https://github.com/depcheck/depcheck) Check your npm module for unused dependencies.

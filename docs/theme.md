@@ -4,6 +4,8 @@
 
 ---
 
+* [`GitHub-Dark`](https://github.com/StylishThemes/GitHub-Dark) Dark GitHub style.
+
 ## Fonts
 
 * [Nerd Fonts](https://www.nerdfonts.com/)
