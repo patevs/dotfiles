@@ -287,6 +287,7 @@ scoop install vncviewer
 
 # Databases
 # scoop install postgresql
+# scoop install pgadmin4-np
 
 # Music Applications
 scoop install dopamine
