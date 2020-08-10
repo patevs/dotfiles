@@ -19,7 +19,7 @@
     "chalk": "^4.1.0",
     "commitlint-config-gitmoji": "^1.0.1",
     "husky": "^4.2.5",
-    "np": "^6.3.2",
+    "np": "^6.4.0",
     "script-progress": "^1.0.5"
   }
 }
