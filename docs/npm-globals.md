@@ -178,6 +178,7 @@
 
 ## React Native Development Utilities
 
+* [`create-react-native-module`](https://github.com/brodybits/create-react-native-module) Tool to create a React Native library module.
 * [`reactxp`](https://github.com/microsoft/reactxp) Library for cross-platform app development using React and React Native.
 * [`ignite`](https://github.com/infinitered/ignite) The hottest CLI for React Native, boilerplates, plugins, generators, and more!
 * [`react-native-cli`](https://github.com/react-native-community/cli) React Native command line tools.
