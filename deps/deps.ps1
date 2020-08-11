@@ -246,7 +246,6 @@ scoop install neovim
 scoop install ripgrep
 scoop install s
 # scoop install scrcpy
-# scoop install sqlite
 scoop install winfetch
 scoop install yarn
 
@@ -290,6 +289,7 @@ scoop install vncviewer
 # Databases
 # scoop install postgresql
 # scoop install pgadmin4-np
+# scoop install sqlite
 
 # Music Applications
 scoop install dopamine
