@@ -6,6 +6,8 @@ Write-Host "" # New Line
 
 # ------------------------------------------------------------------------------------------------------- #
 
+Write-Host "Running Environment Checks..." -ForegroundColor "Yellow"
+
 # Check OS and ensure we are running on Windows
 if (-Not ($Env:OS -eq "Windows_NT")) {
   Write-Host "Error: This script only supports Windows machines. Exiting..."
@@ -22,7 +24,7 @@ function Test-Elevated {
   return $userPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
 }
 
-# Check to see if we are currently running "as Administrator"
+# Ensure we are running "as Administrator"
 if (!(Test-Elevated)) {
   $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell";
   $newProcess.Arguments = $myInvocation.MyCommand.Definition;
