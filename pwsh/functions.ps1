@@ -4,8 +4,19 @@
 
 # Write-Output "functions.ps1"
 
-# Basic Commands
-# ==============
+# ---------------- #
+# Helper Functions | ------------------------------------------------------------------------------------ #
+# ---------------- #
+
+# Current Foreground and Background Colors
+#   https://stackoverflow.com/a/26583010
+# $foreground = (get-host).ui.rawui.ForegroundColor
+# $background = (get-host).ui.rawui.BackgroundColor
+# Set-Variable background -option Constant -value (get-host).ui.rawui.BackgroundColor
+
+# -------------- #
+# Basic Commands | -------------------------------------------------------------------------------------- #
+# -------------- #
 
 function which($name) { Get-Command $name -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Definition }
 function touch($file) { "" | Out-File $file -Encoding ASCII }
@@ -67,10 +78,9 @@ function settings {
 #   & "${env:ProgramFiles(x86)}\Microsoft\Edge Dev\Application\msedge.exe"
 # }
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# PowerShell Utility Functions
-# ============================
+# ---------------------------- #
+# PowerShell Utility Functions | ------------------------------------------------------------------------ #
+# ---------------------------- #
 
 # Reload the Shell
 function ReloadPowershell {
@@ -93,10 +103,9 @@ function reset-colors {
   [Console]::ResetColor()
 }
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# System Utility Functions
-# ========================
+# ------------------------ #
+# System Utility Functions | ---------------------------------------------------------------------------- #
+# ------------------------ #
 
 # System Update - Update RubyGems, NPM, and their installed packages
 <#
@@ -126,10 +135,9 @@ function WindowsBuild {
 # 	stop-service wsearch
 # }
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# File System Functions
-# =====================
+# --------------------- #
+# File System Functions | ------------------------------------------------------------------------------- #
+# --------------------- #
 
 # Create a new directory and enter it
 function CreateAndSetDirectory([String] $path) {
@@ -154,10 +162,9 @@ function CleanDisks {
   Start-Process "$(Join-Path $env:WinDir 'system32\cleanmgr.exe')" -ArgumentList "/sagerun:6174" -Verb "runAs"
 }
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# Environment Functions
-# =====================
+# --------------------- #
+# Environment Functions | ------------------------------------------------------------------------------- #
+# --------------------- #
 
 # Reload the $env object from the registry
 function RefreshEnvironment {
@@ -197,10 +204,9 @@ function AppendEnvPath([String]$path) { $env:PATH = $env:PATH + ";$path" }
 # function PrependEnvPathIfExists([String]$path) { if (Test-Path $path) { PrependEnvPath $path } }
 # function AppendEnvPathIfExists([String]$path) { if (Test-Path $path) { AppendEnvPath $path } }
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# Git Functions
-# =============
+# ------------- #
+# Git Functions | --------------------------------------------------------------------------------------- #
+# ------------- #
 
 # Print Git Status
 function gs {
@@ -234,10 +240,9 @@ function Invoke-GitClone($url) {
   Set-Location $name
 }
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# NodeJS & NPM Functions
-# ======================
+# ---------------------- #
+# NodeJS & NPM Functions | ------------------------------------------------------------------------------ #
+# ---------------------- #
 
 # Print list of local NPM dependencies
 function npl {
@@ -253,10 +258,9 @@ function nplg {
   npm list --global --depth=0
 }
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# Chocolatey Functions
-# ====================
+# -------------------- #
+# Chocolatey Functions | -------------------------------------------------------------------------------- #
+# -------------------- #
 
 # Print list of local chocolatey installations
 function cll {
@@ -272,6 +276,4 @@ function clo {
   choco upgrade all --noop
 }
 
-# ------------------------------------------------------------------------------------------------------- #
-
-# EOF #
+# ----------------------------------------------- # EOF # ----------------------------------------------- #
