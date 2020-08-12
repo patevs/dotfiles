@@ -89,6 +89,13 @@
         "hidden": false
       },
       {
+        "guid": "{e2d2a2ce-3477-44c4-a75f-6e2c377ac0c8}",
+        "name" : "Cygwin",
+        "commandline" : "C:/cygwin/bin/bash --login -i",
+        "icon" : "C:/cygwin/cygwin.ico",
+        "startingDirectory" : "C:/cygwin/bin"
+      },
+      {
         "guid": "{27cc0c27-a2cb-4041-88e1-5b0e2c46829e}",
         "name" : "VS 2019 Dev Cmd",
         "commandline" : "cmd.exe /k \"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/Tools/VsDevCmd.bat\"",
