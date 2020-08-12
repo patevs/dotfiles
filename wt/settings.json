@@ -64,6 +64,14 @@
         "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png"
       },
       {
+        "guid": "{e2d2a2ce-3477-44c4-a75f-6e2c377ac0c8}",
+        "name" : "Cygwin",
+        "commandline" : "C:/cygwin/bin/bash --login -i",
+        // "icon" : "C:/cygwin/cygwin.ico",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cygwin.png",
+        "startingDirectory" : "C:/cygwin/bin"
+      },
+      {
         "guid": "{187e9a26-26c5-4de5-9565-e7379812e4ce}",
         "name" : "Git Bash",
         "commandline" : "C:/Program Files/Git/bin/bash.exe -li",
@@ -87,13 +95,6 @@
         "commandline" : "C:/Users/Pat/scoop/apps/msys2/current/msys2_shell.cmd -defterm -no-start -mingw64",
         "icon": "C:/Users/Pat/scoop/apps/msys2/current/msys2.ico",
         "hidden": false
-      },
-      {
-        "guid": "{e2d2a2ce-3477-44c4-a75f-6e2c377ac0c8}",
-        "name" : "Cygwin",
-        "commandline" : "C:/cygwin/bin/bash --login -i",
-        "icon" : "C:/cygwin/cygwin.ico",
-        "startingDirectory" : "C:/cygwin/bin"
       },
       {
         "guid": "{27cc0c27-a2cb-4041-88e1-5b0e2c46829e}",
