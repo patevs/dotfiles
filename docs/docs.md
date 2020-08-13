@@ -13,8 +13,6 @@
 
 ## Development Dependencies
 
-* [`commitizen`](https://github.com/commitizen/cz-cli)
-  * [`cz-emoji`](https://github.com/ngryman/cz-emoji)
 * [`commitlint`](https://github.com/conventional-changelog/commitlint)
   * [Documentation](https://commitlint.js.org)
   * [`commitlint-config-gitmoji`](https://github.com/arvinxx/commitlint-config-gitmoji)
@@ -22,12 +20,6 @@
 ---
 
 ### Example Dotfiles
-
-* [`jayharris/dotfiles-windows`](https://github.com/jayharris/dotfiles-windows)
-* [`mikemaccana/powershell-profile`](https://github.com/mikemaccana/powershell-profile)
-* [`felixriesebery/windows-development-environment`](https://github.com/felixrieseberg/windows-development-environment)
-
-[](.)
 
 * [`holman/dotfiles`](https://github.com/holman/dotfiles)
 * [`mathiadbynens/dotfiles`](https://github.com/mathiasbynens/dotfiles)
@@ -72,12 +64,6 @@ A few other notes:
 
 * [PowerShell Wakatime](https://github.com/wakatime/wakatime/issues/126)
 * [`powerwaka`](https://github.com/iamkarlson/powerwaka)
-
----
-
-## PowerShell
-
-* [About Prompts](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_prompts?view=powershell-7)
 
 ---
 
