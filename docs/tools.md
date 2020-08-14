@@ -8,6 +8,7 @@
 
 * [`github-readme-stats`](https://github.com/anuraghazra/github-readme-stats) Dynamically generated stats for your github readmes.
 * [`markdown-magic`](https://github.com/patevs/markdown-magic) Automatically format markdown files, sync external docs/src code & make better docs
+* [`readme-pagespeed-insights`](https://github.com/ankurparihar/readme-pagespeed-insights) Google lighthouse stats of your website that you can put in readme.
 
 ---
 
