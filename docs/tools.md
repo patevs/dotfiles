@@ -8,6 +8,7 @@
 
 * [`github-readme-stats`](https://github.com/anuraghazra/github-readme-stats) Dynamically generated stats for your github readmes.
 * [`markdown-magic`](https://github.com/patevs/markdown-magic) Automatically format markdown files, sync external docs/src code & make better docs
+* [`readme-pagespeed-insights`](https://github.com/ankurparihar/readme-pagespeed-insights) Google lighthouse stats of your website that you can put in readme.
 
 ---
 
@@ -95,6 +96,7 @@
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
 * [`gitleaks`](https://github.com/zricethezav/gitleaks) Scan git repos for secrets using regex and entropy 🔑
 * [`gotop`](https://github.com/xxxserxxx/gotop)
+* [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
@@ -204,6 +206,7 @@
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`renamer`](https://github.com/adriangoransson/renamer) A command line tool to rename multiple files at once.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
+* [`RustScan`](https://github.com/RustScan/RustScan) Faster Nmap Scanning with Rust.
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
 * [`so`](https://github.com/samtay/so) A terminal interface for Stack Overflow.
 * [`tauri`](https://github.com/tauri-apps/tauri) Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
@@ -231,6 +234,8 @@
 
 ## Windows Tools
 
+* [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
+* [`hain`](https://github.com/hainproject/hain) An 'alt+space' launcher for Windows, built with Electron.
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
 * [`rainmeter`](https://github.com/rainmeter/rainmeter) Desktop customization tool for Windows.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
