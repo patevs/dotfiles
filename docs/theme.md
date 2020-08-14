@@ -36,6 +36,21 @@
 * [`Visual Studio Code`](https://github.com/dracula/visual-studio-code)
 * [`Wox`](https://github.com/dracula/wox)
 
+### CMD & PowerShell Install
+
+```powershell
+# Install colortool
+scoop install colortool
+# Move to color schemes directory
+cd $(colortool --location)
+# Download the Dracula theme
+wget https://raw.githubusercontent.com/dracula/powershell/master/theme/Dracula-ColorTool.itermcolors
+# OR using curl
+curl --output Dracula-ColorTool.itermcolors https://raw.githubusercontent.com/dracula/powershell/master/theme/Dracula-ColorTool.itermcolors
+# Apply the theme
+colortool --both Dracula-ColorTool.itermcolors
+```
+
 ---
 
 ## Hugo
