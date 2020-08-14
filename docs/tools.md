@@ -95,6 +95,7 @@
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
 * [`gitleaks`](https://github.com/zricethezav/gitleaks) Scan git repos for secrets using regex and entropy 🔑
 * [`gotop`](https://github.com/xxxserxxx/gotop)
+* [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
