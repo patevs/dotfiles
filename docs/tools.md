@@ -205,6 +205,7 @@
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`renamer`](https://github.com/adriangoransson/renamer) A command line tool to rename multiple files at once.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
+* [`RustScan`](https://github.com/RustScan/RustScan) Faster Nmap Scanning with Rust.
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
 * [`so`](https://github.com/samtay/so) A terminal interface for Stack Overflow.
 * [`tauri`](https://github.com/tauri-apps/tauri) Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
