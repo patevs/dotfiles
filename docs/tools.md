@@ -105,6 +105,7 @@
 * [`stonks`](https://github.com/ericm/stonks) Terminal based stock visualizer and tracker that displays realtime stocks in graph format.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 * [`twf`](https://github.com/wvanlint/twf) Standalone tree view file explorer, inspired by fzf.
+* [`typer-go`](https://github.com/shilangyu/typer-go) Test your typing speed in the terminal!
 * [`wtf`](https://github.com/wtfutil/wtf) The personal information dashboard for your terminal.
 
 ---
