@@ -64,7 +64,7 @@ cd deps
 .
 ├── alacritty
 │   └── alacritty.yml
-├── bash
+├── bash                # Bash profile
 │   ├── .bash_aliases
 │   ├── .bash_profile
 │   ├── .bashrc
@@ -73,27 +73,25 @@ cd deps
 ├── bin
 ├── deps
 │   └── deps.ps1
-├── docs
+├── docs                # Documentation
 │   ├── docs.md
 │   ├── theme.md
 │   └── tools.md
-├── git
+├── git                 # Global Git configuration
 │   ├── .gitconfig
 │   └── .gitignore
-├── nvim
+├── nvim                # Neovim profile
 │   └── init.vim
 ├── pulseaudio
 ├── scripts
-├── wt
+├── wt                  # Windows Terminal profile
 │   └── profiles.json
-├── .commitlintrc.json
-├── .editorconfig
-├── .gitignore
-├── .gitmodules
-├── .huskyrc
-├── .np-config.json
+├── .editorconfig       # Editor configuration
+├── .gitignore          # Git ignore rules
+├── .gitmodules         # Git modules
+├── .np-config.js       # Npm publish (np) configuration
 ├── LICENSE
-├── package.json
+├── package.json        # Npm package configuration
 └── README.md
 ```
 
