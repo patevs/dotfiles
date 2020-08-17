@@ -1,4 +1,4 @@
-{
+module.exports = {
   "anyBranch": false,
   "cleanup": true,
   "tests": true,
