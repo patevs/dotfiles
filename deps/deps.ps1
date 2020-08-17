@@ -372,6 +372,7 @@ if (Get-Command go) {
   # Invoke-Expression "go get -u github.com/isacikgoz/gitbatch/cmd/gitbatch"
   Invoke-Expression "go get -u github.com/xxxserxxx/gotop/cmd/gotop"
   Invoke-Expression "go get github.com/dborzov/lsp"
+  Invoke-Expression "go get github.com/shilangyu/scoop-search"
 } else {
   Write-Host "ERROR Go is not install!" -ForegroundColor "Red"
 }
