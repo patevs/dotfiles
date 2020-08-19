@@ -173,6 +173,7 @@
 
 * [`create-react-app`](https://github.com/facebook/create-react-app) Create React apps with no build configuration.
 * [`generact`](https://github.com/diegohaz/generact) Tool for generating React components by replicating your own.
+* [`react-devtools`](https://github.com/facebook/react/tree/master/packages/react-devtools) React app debugger.
 
 ---
 
