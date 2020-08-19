@@ -275,12 +275,13 @@ CALL npm install --global tape-cli
 :: ---------------------------------------------------------------------------- ::
 
 :: React Development Utilities
-:: ECHO. & ECHO  [44m Installing React Development Utility Modules: [0m & ECHO.
+ECHO. & ECHO  [44m Installing React Development Utility Modules: [0m & ECHO.
 
 :: # https://github.com/facebook/create-react-app
 :: CALL npm install --global create-react-app
 :: # https://github.com/diegohaz/generact
 :: CALL npm install --global generact
+CALL npm install --global react-devtools
 
 :: ---------------------------------------------------------------------------- ::
 
