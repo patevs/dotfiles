@@ -37,6 +37,13 @@ cd nvim
 .\bootstrap.ps1
 ```
 
+Install Global NPM Modules:
+
+```powershell
+cd npm
+.\install.cmd
+```
+
 Initialize `Git` submodules:
 
 ```powershell
@@ -62,7 +69,7 @@ cd deps
 
 ```md
 .
-├── alacritty
+├── alacritty           # Alacritty profile
 │   └── alacritty.yml
 ├── bash                # Bash profile
 │   ├── .bash_aliases
@@ -80,6 +87,8 @@ cd deps
 ├── git                 # Global Git configuration
 │   ├── .gitconfig
 │   └── .gitignore
+├── npm                 # NPM global installs
+│   └── install.cmd
 ├── nvim                # Neovim profile
 │   └── init.vim
 ├── pulseaudio
