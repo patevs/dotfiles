@@ -87,8 +87,6 @@ cd deps
 ├── git                 # Global Git configuration
 │   ├── .gitconfig
 │   └── .gitignore
-├── npm                 # NPM global installs
-│   └── install.cmd
 ├── nvim                # Neovim profile
 │   └── init.vim
 ├── pulseaudio
