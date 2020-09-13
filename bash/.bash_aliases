@@ -123,27 +123,31 @@ alias dir="ls"
 # Git & GitHub Aliases
 # ====================
 
-# TODO: Verify hub is installed
 # Use GitHubs' cli in favor of git
-# eval "$(hub alias -s bash)"
-# alias git='hub'
+if [[ "$(existCommand hub)" ]]
+then
+  eval "$(hub alias -s bash)"
+  alias git='hub'
+fi
 
-# TODO: Verify git is installed
-alias gs='git status'
-
-# alias gc='git commit'
-# alias ga='git add'
-# alias gd='git diff'
-# alias gb='git branch'
-# alias gl='git log'
-# alias gsb='git show-branch'
-# alias gco='git checkout'
-# alias gg='git grep'
-# alias gk='gitk --all'
-# alias gr='git rebase'
-# alias gri='git rebase --interactive'
-# alias gcp='git cherry-pick'
-# alias grm='git rm'
+# Common git aliases
+if [[ "$(existCommand git)" ]]
+then
+  alias gs='git status'
+  # alias gc='git commit'
+  # alias ga='git add'
+  # alias gd='git diff'
+  # alias gb='git branch'
+  # alias gl='git log'
+  # alias gsb='git show-branch'
+  # alias gco='git checkout'
+  # alias gg='git grep'
+  # alias gk='gitk --all'
+  # alias gr='git rebase'
+  # alias gri='git rebase --interactive'
+  # alias gcp='git cherry-pick'
+  # alias grm='git rm'
+fi
 
 # ------------------------------------------------------------------------------------------------------- #
 
