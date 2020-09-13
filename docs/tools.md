@@ -139,6 +139,7 @@
 * [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) A module that provides tools for other modules and scripts.
 * [`psInlineProgress`](https://github.com/gravejester/psInlineProgress) Write inline progress bars in PowerShell.
 * [`PSModuleDevelopment`](https://github.com/PowershellFrameworkCollective/PSModuleDevelopment) Provides tools that help with module development.
+* [`PSScriptAnalyzer`](https://github.com/PowerShell/PSScriptAnalyzer) Static code checker for PowerShell modules and scripts.
 * [`tunic`](https://github.com/mikeslattery/tunic) Install Linux from a running Windows system, without need for a live USB.
 * [`winfetch`](https://github.com/lptstr/winfetch/)
 * [`z.lua`](https://github.com/skywind3000/z.lua) A command line tool which helps you navigate faster by learning your habits.
