@@ -107,9 +107,17 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Bash-Git-Prompt
+# ! Remember: git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 # if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
 #     GIT_PROMPT_ONLY_IN_REPO=1
 #     source $HOME/.bash-git-prompt/gitprompt.sh
+# fi
+
+# ! or on MacOS: brew install bash-git-prompt
+# if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+#   __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
+#   GIT_PROMPT_ONLY_IN_REPO=1
+#   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 # fi
 
 # TODO: Ensure wakatime is installed with: `pip install wakatime`
