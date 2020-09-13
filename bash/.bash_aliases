@@ -12,52 +12,52 @@ alias genpasswd="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr 
 alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 
 # Show active ports
-# alias port='netstat -tulanp'
+alias port='netstat -tulanp'
 
 # Grab a pretty ascii forecast picture for anywhere
 # Example: weather New York, NY
-# function weather() { curl -s http://wttr.in/$2; }
+function weather() { curl -s http://wttr.in/$2; }
 
 # Check if a given command exists
-# function checkExistCommand()
-# {
-#     local -r command="${1}"
-#     local -r errorMessage="${2}"
-#     if [[ "$(existCommand "${command}")" = 'false' ]]
-#     then
-#         if [[ "$(isEmptyString "${errorMessage}")" = 'true' ]]
-#         then
-#             fatal "\nFATAL : command '${command}' not found"
-#         fi
-#         fatal "\nFATAL : ${errorMessage}"
-#     fi
-# }
+function checkExistCommand()
+{
+    local -r command="${1}"
+    local -r errorMessage="${2}"
+    if [[ "$(existCommand "${command}")" = 'false' ]]
+    then
+        if [[ "$(isEmptyString "${errorMessage}")" = 'true' ]]
+        then
+            fatal "\nFATAL : command '${command}' not found"
+        fi
+        fatal "\nFATAL : ${errorMessage}"
+    fi
+}
 
-# function existCommand()
-# {
-#     local -r command="${1}"
-#     if [[ "$(which "${command}" 2> '/dev/null')" = '' ]]
-#     then
-#         echo 'false' && return 1
-#     fi
-#     echo 'true' && return 0
-# }
+function existCommand()
+{
+    local -r command="${1}"
+    if [[ "$(which "${command}" 2> '/dev/null')" = '' ]]
+    then
+        echo 'false' && return 1
+    fi
+    echo 'true' && return 0
+}
 
-# function isEmptyString()
-# {
-#     local -r string="${1}"
-#     if [[ "$(trimString "${string}")" = '' ]]
-#     then
-#         echo 'true' && return 0
-#     fi
-#     echo 'false' && return 1
-# }
+function isEmptyString()
+{
+    local -r string="${1}"
+    if [[ "$(trimString "${string}")" = '' ]]
+    then
+        echo 'true' && return 0
+    fi
+    echo 'false' && return 1
+}
 
-# function trimString()
-# {
-#     local -r string="${1}"
-#     sed 's,^[[:blank:]]*,,' <<< "${string}" | sed 's,[[:blank:]]*$,,'
-# }
+function trimString()
+{
+    local -r string="${1}"
+    sed 's,^[[:blank:]]*,,' <<< "${string}" | sed 's,[[:blank:]]*$,,'
+}
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -67,9 +67,9 @@ alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/
 # Move to desktop directory
 alias desk="cd ~/Desktop"
 
-# Move to dev directory
+# Move to code directory
 # TODO: Ensure this directory exists
-# alias dev="cd ~/Desktop/git"
+alias dev="cd ~/code"
 
 # ? move this to ~/.bashrc or ~/.profile
 # 'cd' into a directory and then list contents
@@ -84,27 +84,31 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Common variations of 'ls' command
-# alias ls="ls -la"
-# alias ll="ls -l"
-# alias lo="ls -o"
-# alias lh="ls -lh"
-# alias la="ls -la"
-# alias sl="ls"
-# alias l="ls"
-# alias s="ls"
-# alias lll='ls -alF'
-# alias la='ls -A'
-# alias l='ls -CF'
-
-# TODO: Verify if lsd is installed
-alias ls='lsd -a1'
-alias ll='lsd -l'
-alias lll='lsd -al'
-alias la='lsd -la'
-alias lt='lsd --tree'
-alias l="lsd -a1"
-alias s="lsd -a1"
+# Favour lsd over ls when installed
+if [[ "$(existCommand 'lsd')" ]]
+then
+  alias ls='lsd -A1'
+  alias sl='lsd -A1'
+  alias l="lsd -A1"
+  alias s="lsd -A1"
+  alias ll='lsd -l'
+  alias lll='lsd -al'
+  alias la='lsd -la'
+  alias lt='lsd --tree'
+else
+  # Common variations of 'ls' command
+  alias ls="ls -la"
+  alias sl="ls"
+  # alias l='ls -CF'
+  alias l="ls"
+  alias s="ls"
+  alias ll="ls -l"
+  alias lll='ls -alF'
+  alias la='ls -A'
+  alias la="ls -la"
+  # alias lo="ls -o"
+  # alias lh="ls -lh"
+fi
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -119,35 +123,42 @@ alias dir="ls"
 # Git & GitHub Aliases
 # ====================
 
-# TODO: Verify hub is installed
 # Use GitHubs' cli in favor of git
-# eval "$(hub alias -s bash)"
-# alias git='hub'
+if [[ "$(existCommand hub)" ]]
+then
+  eval "$(hub alias -s bash)"
+  alias git='hub'
+fi
 
-# TODO: Verify git is installed
-alias gs='git status'
-
-# alias gc='git commit'
-# alias ga='git add'
-# alias gd='git diff'
-# alias gb='git branch'
-# alias gl='git log'
-# alias gsb='git show-branch'
-# alias gco='git checkout'
-# alias gg='git grep'
-# alias gk='gitk --all'
-# alias gr='git rebase'
-# alias gri='git rebase --interactive'
-# alias gcp='git cherry-pick'
-# alias grm='git rm'
+# Common git aliases
+if [[ "$(existCommand git)" ]]
+then
+  alias gs='git status'
+  # alias gc='git commit'
+  # alias ga='git add'
+  # alias gd='git diff'
+  # alias gb='git branch'
+  # alias gl='git log'
+  # alias gsb='git show-branch'
+  # alias gco='git checkout'
+  # alias gg='git grep'
+  # alias gk='gitk --all'
+  # alias gr='git rebase'
+  # alias gri='git rebase --interactive'
+  # alias gcp='git cherry-pick'
+  # alias grm='git rm'
+fi
 
 # ------------------------------------------------------------------------------------------------------- #
 
 # NodeJS & NPM Aliases
 # ====================
 
-# TODO: Verify node & npm are installed
-alias npl='npm list --depth=0'
-alias nplg='npm list --global --depth=0'
+# NPM aliases
+if [[ "$(existCommand npm)" ]]
+then
+  alias npl='npm list --depth=0'
+  alias nplg='npm list --global --depth=0'
+fi
 
 # EOF #

@@ -9,34 +9,26 @@
     "url": "git+https://github.com/patevs/dotfiles.git"
   },
   "scripts": {
-    "release": "np",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "updates": "script-progress node ./scripts/checkUpdates"
+    "postinstall": "script-progress node ./scripts/postInstall",
+    "updates": "script-progress node ./scripts/checkUpdates",
+    "release": "np"
   },
-  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
     "chalk": "^4.1.0",
     "commitlint-config-gitmoji": "^1.0.1",
-    "husky": "^4.2.5",
-    "np": "^6.4.0",
+    "husky": "^4.3.0",
+    "np": "^6.5.0",
     "script-progress": "^1.0.5"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "commitlint": {
     "extends": [
       "./node_modules/commitlint-config-gitmoji"
-    ],
-    "rules": {
-      "header-max-length": [
-        0,
-        "always",
-        80
-      ]
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }

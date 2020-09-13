@@ -5,8 +5,5 @@
 [submodule "bash/bash-wakatime"]
 	path = bash/bash-wakatime
 	url = https://github.com/gjsheep/bash-wakatime.git
-[submodule "bash/posh-git-sh"]
-	path = bash/posh-git-sh
-	url = https://github.com/lyze/posh-git-sh
 
 # EOF #

@@ -88,11 +88,6 @@ esac
 #   sleep 10; alert
 # alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# if [ -f ~/.bash_aliases ]; then
-#   . ~/.bash_aliases
-# fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -106,6 +101,32 @@ esac
 
 # export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 
+# Alias definitions.
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
+
+# Bash-Git-Prompt
+# ! Remember: git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+# if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+#   GIT_PROMPT_ONLY_IN_REPO=1
+#   source $HOME/.bash-git-prompt/gitprompt.sh
+# fi
+
+# ! or on MacOS: brew install bash-git-prompt
+# if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+#   __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
+#   GIT_PROMPT_ONLY_IN_REPO=1
+#   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+# fi
+
+# Posh-Git-Sh
+# ! Remember: wget https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -O ~/.git-prompt.sh
+# ! or: curl https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -o ~/.git-prompt.sh
+# TODO: Ensure ~/.git-prompt.sh exists
+source ~/.git-prompt.sh
+PROMPT_COMMAND='__posh_git_ps1 "\[\033[01;32m\]\h \[\033[00m\]: \[\033[01;34m\]\w \[\033[00m\]: " "\n \[\033[00m\]$ ";'$PROMPT_COMMAND
+
 # TODO: Ensure wakatime is installed with: `pip install wakatime`
 # Wakatime
 # source bash-wakatime/bash-wakatime.sh
@@ -114,12 +135,6 @@ esac
 # if [ -f ~/.asdf ]; then
 #   . $HOME/.asdf/asdf.sh
 #   . $HOME/.asdf/completions/asdf.bash
-# fi
-
-# Bash-Git-Prompt
-# if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
-#     GIT_PROMPT_ONLY_IN_REPO=1
-#     source $HOME/.bash-git-prompt/gitprompt.sh
 # fi
 
 # Node Version Manager (NVM)
