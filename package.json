@@ -9,6 +9,7 @@
     "url": "git+https://github.com/patevs/dotfiles.git"
   },
   "scripts": {
+    "postinstall": "script-progress node ./scripts/postInstall",
     "updates": "script-progress node ./scripts/checkUpdates",
     "release": "np"
   },
