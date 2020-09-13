@@ -121,8 +121,10 @@ fi
 # fi
 
 # Posh-Git-Sh
-# ! Remember: wget https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -o ~/.git-prompt
-source ~/git-prompt.sh
+# ! Remember: wget https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -O ~/.git-prompt.sh
+# ! or: curl https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -o ~/.git-prompt.sh
+# TODO: Ensure ~/.git-prompt.sh exists
+source ~/.git-prompt.sh
 PROMPT_COMMAND='__posh_git_ps1 "\[\033[01;32m\]\h \[\033[00m\]: \[\033[01;34m\]\w \[\033[00m\]: " "\n \[\033[00m\]$ ";'$PROMPT_COMMAND
 
 # TODO: Ensure wakatime is installed with: `pip install wakatime`
