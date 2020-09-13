@@ -1,7 +1,7 @@
 module.exports = {
   "anyBranch": false,
   "cleanup": true,
-  "tests": true,
+  "tests": false,
   "yolo": false,
   "publish": false,
   "preview": false,
