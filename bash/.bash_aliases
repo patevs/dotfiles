@@ -12,52 +12,52 @@ alias genpasswd="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr 
 alias treed="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 
 # Show active ports
-# alias port='netstat -tulanp'
+alias port='netstat -tulanp'
 
 # Grab a pretty ascii forecast picture for anywhere
 # Example: weather New York, NY
-# function weather() { curl -s http://wttr.in/$2; }
+function weather() { curl -s http://wttr.in/$2; }
 
 # Check if a given command exists
-# function checkExistCommand()
-# {
-#     local -r command="${1}"
-#     local -r errorMessage="${2}"
-#     if [[ "$(existCommand "${command}")" = 'false' ]]
-#     then
-#         if [[ "$(isEmptyString "${errorMessage}")" = 'true' ]]
-#         then
-#             fatal "\nFATAL : command '${command}' not found"
-#         fi
-#         fatal "\nFATAL : ${errorMessage}"
-#     fi
-# }
+function checkExistCommand()
+{
+    local -r command="${1}"
+    local -r errorMessage="${2}"
+    if [[ "$(existCommand "${command}")" = 'false' ]]
+    then
+        if [[ "$(isEmptyString "${errorMessage}")" = 'true' ]]
+        then
+            fatal "\nFATAL : command '${command}' not found"
+        fi
+        fatal "\nFATAL : ${errorMessage}"
+    fi
+}
 
-# function existCommand()
-# {
-#     local -r command="${1}"
-#     if [[ "$(which "${command}" 2> '/dev/null')" = '' ]]
-#     then
-#         echo 'false' && return 1
-#     fi
-#     echo 'true' && return 0
-# }
+function existCommand()
+{
+    local -r command="${1}"
+    if [[ "$(which "${command}" 2> '/dev/null')" = '' ]]
+    then
+        echo 'false' && return 1
+    fi
+    echo 'true' && return 0
+}
 
-# function isEmptyString()
-# {
-#     local -r string="${1}"
-#     if [[ "$(trimString "${string}")" = '' ]]
-#     then
-#         echo 'true' && return 0
-#     fi
-#     echo 'false' && return 1
-# }
+function isEmptyString()
+{
+    local -r string="${1}"
+    if [[ "$(trimString "${string}")" = '' ]]
+    then
+        echo 'true' && return 0
+    fi
+    echo 'false' && return 1
+}
 
-# function trimString()
-# {
-#     local -r string="${1}"
-#     sed 's,^[[:blank:]]*,,' <<< "${string}" | sed 's,[[:blank:]]*$,,'
-# }
+function trimString()
+{
+    local -r string="${1}"
+    sed 's,^[[:blank:]]*,,' <<< "${string}" | sed 's,[[:blank:]]*$,,'
+}
 
 # ------------------------------------------------------------------------------------------------------- #
 
