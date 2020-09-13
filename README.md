@@ -18,23 +18,30 @@
 
 Clone the repository:
 
-```powershell
+```bash
 git clone https://github.com/patevs/dotfiles.git
 cd dotfiles
 ```
 
+Install `Bash` profile:
+
+```bash
+cd bash
+.\bootstrap.sh
+```
+
 Install global `Git` configuration:
 
-```powershell
+```bash
 cd git
-.\bootstrap.ps1
+.\bootstrap.sh
 ```
 
 Install `Neovim` profile:
 
-```powershell
+```bash
 cd nvim
-.\bootstrap.ps1
+.\bootstrap.sh
 ```
 
 <!--
