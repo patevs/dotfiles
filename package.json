@@ -9,9 +9,8 @@
     "url": "git+https://github.com/patevs/dotfiles.git"
   },
   "scripts": {
-    "release": "np",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "updates": "script-progress node ./scripts/checkUpdates"
+    "updates": "script-progress node ./scripts/checkUpdates",
+    "release": "np"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
