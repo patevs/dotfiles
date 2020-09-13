@@ -113,6 +113,7 @@
 ## NodeJS Tools
 
 * [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
+* [`bunyan`](https://github.com/trentm/node-bunyan) Simple and fast JSON logging module for node.js services.
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
 * [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
