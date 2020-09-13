@@ -24,17 +24,15 @@
 
 ## [Dracula](https://github.com/dracula/dracula-theme)
 
+* [`iTerm2`](https://github.com/dracula/iterm)
+* [`Terminal.app`](https://draculatheme.com/terminal/)
+
+[](.)
+
 * [`ConEmu`](https://github.com/dracula/conemu)
   * [`ConEmu-Color-Themes`](https://github.com/joonro/ConEmu-Color-Themes)
 * [`PowerShell`](https://github.com/dracula/powershell)
 * [`Windows Terminal`](https://github.com/dracula/windows-terminal)
-
-[](.)
-
-* [`gh-pages`](https://github.com/dracula/gh-pages)
-* [`Vim`](https://github.com/dracula/vim)
-* [`Visual Studio Code`](https://github.com/dracula/visual-studio-code)
-* [`Wox`](https://github.com/dracula/wox)
 
 ### CMD & PowerShell Install
 
@@ -50,6 +48,11 @@ curl --output Dracula-ColorTool.itermcolors https://raw.githubusercontent.com/dr
 # Apply the theme
 colortool --both Dracula-ColorTool.itermcolors
 ```
+
+* [`gh-pages`](https://github.com/dracula/gh-pages)
+* [`Vim`](https://github.com/dracula/vim)
+* [`Visual Studio Code`](https://github.com/dracula/visual-studio-code)
+* [`Wox`](https://github.com/dracula/wox)
 
 ---
 

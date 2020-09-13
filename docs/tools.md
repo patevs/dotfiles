@@ -113,6 +113,7 @@
 ## NodeJS Tools
 
 * [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
+* [`bunyan`](https://github.com/trentm/node-bunyan) Simple and fast JSON logging module for node.js services.
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
 * [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
@@ -138,6 +139,7 @@
 * [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) A module that provides tools for other modules and scripts.
 * [`psInlineProgress`](https://github.com/gravejester/psInlineProgress) Write inline progress bars in PowerShell.
 * [`PSModuleDevelopment`](https://github.com/PowershellFrameworkCollective/PSModuleDevelopment) Provides tools that help with module development.
+* [`PSScriptAnalyzer`](https://github.com/PowerShell/PSScriptAnalyzer) Static code checker for PowerShell modules and scripts.
 * [`tunic`](https://github.com/mikeslattery/tunic) Install Linux from a running Windows system, without need for a live USB.
 * [`winfetch`](https://github.com/lptstr/winfetch/)
 * [`z.lua`](https://github.com/skywind3000/z.lua) A command line tool which helps you navigate faster by learning your habits.
@@ -150,8 +152,9 @@
 * [`AirShare`](https://github.com/KuroLabs/Airshare) Cross-platform content sharing in a local network.
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
-* [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
 * [`catcli`](https://github.com/deadc0de6/catcli) The command line catalog tool for your offline data.
+* [`codequestion`](https://github.com/neuml/codequestion) Ask coding questions directly from the terminal.
+* [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
@@ -238,6 +241,7 @@
 ## Windows Tools
 
 * [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
+* [`guinget`](https://github.com/DrewNaylor/guinget) GUI for Microsoft's Windows Package Manager (winget).
 * [`hain`](https://github.com/hainproject/hain) An 'alt+space' launcher for Windows, built with Electron.
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
 * [`rainmeter`](https://github.com/rainmeter/rainmeter) Desktop customization tool for Windows.
