@@ -84,28 +84,31 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Common variations of 'ls' command
-# alias ls="ls -la"
-# alias ll="ls -l"
-# alias lo="ls -o"
-# alias lh="ls -lh"
-# alias la="ls -la"
-# alias sl="ls"
-# alias l="ls"
-# alias s="ls"
-# alias lll='ls -alF'
-# alias la='ls -A'
-# alias l='ls -CF'
-
-# TODO: Verify if lsd is installed
-# if [[ checkExistCommand('lsd') ]]
-alias ls='lsd -a1'
-alias ll='lsd -l'
-alias lll='lsd -al'
-alias la='lsd -la'
-alias lt='lsd --tree'
-alias l="lsd -a1"
-alias s="lsd -a1"
+# Favour lsd over ls when installed
+if [[ checkExistCommand 'lsd' ]]
+then
+  alias ls='lsd -a1'
+  alias sl='lsd -a1'
+  alias l="lsd -a1"
+  alias s="lsd -a1"
+  alias ll='lsd -l'
+  alias lll='lsd -al'
+  alias la='lsd -la'
+  alias lt='lsd --tree'
+else
+  # Common variations of 'ls' command
+  alias ls="ls -la"
+  alias sl="ls"
+  # alias l='ls -CF'
+  alias l="ls"
+  alias s="ls"
+  alias ll="ls -l"
+  alias lll='ls -alF'
+  alias la='ls -A'
+  alias la="ls -la"
+  # alias lo="ls -o"
+  # alias lh="ls -lh"
+fi
 
 # ------------------------------------------------------------------------------------------------------- #
 
