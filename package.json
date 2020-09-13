@@ -18,7 +18,7 @@
     "@commitlint/cli": "^9.1.2",
     "chalk": "^4.1.0",
     "commitlint-config-gitmoji": "^1.0.1",
-    "husky": "^4.2.5",
+    "husky": "^4.3.0",
     "np": "^6.5.0",
     "script-progress": "^1.0.5"
   },
