@@ -67,9 +67,9 @@ function trimString()
 # Move to desktop directory
 alias desk="cd ~/Desktop"
 
-# Move to dev directory
+# Move to code directory
 # TODO: Ensure this directory exists
-# alias dev="cd ~/Desktop/git"
+alias dev="cd ~/code"
 
 # ? move this to ~/.bashrc or ~/.profile
 # 'cd' into a directory and then list contents
