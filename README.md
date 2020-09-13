@@ -37,31 +37,13 @@ cd nvim
 .\bootstrap.ps1
 ```
 
-Install Global NPM Modules:
-
-```powershell
-cd npm
-.\install.cmd
-```
-
+<!--
 Initialize `Git` submodules:
 
 ```powershell
 git submodule update --init --recursive
 ```
-
----
-
-## Install Dependencies and Packages
-
-When setting up a new Windows box, you may want to install some common packages, utilities, and dependencies. These could include node.js packages via [NPM](https://www.npmjs.org), [Chocolatey](http://chocolatey.org/) packages, Windows Features and Tools via [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx), and Visual Studio Extensions from the [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/).
-
-```posh
-cd deps
-.\deps.ps1
-```
-
-> The scripts will install Chocolatey, node.js, and WebPI if necessary.
+-->
 
 ---
 
@@ -97,9 +79,9 @@ cd deps
 ├── .gitignore          # Git ignore rules
 ├── .gitmodules         # Git modules
 ├── .np-config.js       # Npm publish (np) configuration
-├── LICENSE
+├── LICENSE             # Project LICENSE
 ├── package.json        # Npm package configuration
-└── README.md
+└── README.md           # Project README
 ```
 
 ---
