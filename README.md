@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles ($HOME)
 
 > Personal system configuration files commonly known as .files (dotfiles).
 
