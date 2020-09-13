@@ -24,6 +24,13 @@ $destinationDir = "~"
 
 # --------------------------------- [Execution] --------------------------------- #
 
+# Bash-Git-Prompt
+# git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+
+# Posh-Git-Sh
+Invoke-WebRequest https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -O ~/.git-prompt.sh
+# or: curl https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -o ~/.git-prompt.sh
+
 # Copy files to destination directory
 Copy-Item -Path ./.bash_* -Destination $destinationDir
 Copy-Item -Path ./.bashrc -Destination $destinationDir
