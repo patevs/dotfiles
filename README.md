@@ -67,8 +67,6 @@ git submodule update --init --recursive
 │   └── .profile
 ├── bat
 ├── bin
-├── deps
-│   └── deps.ps1
 ├── docs                # Documentation
 │   ├── docs.md
 │   ├── theme.md
