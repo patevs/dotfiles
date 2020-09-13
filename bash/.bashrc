@@ -106,6 +106,12 @@ if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
 
+# Bash-Git-Prompt
+# if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+#     GIT_PROMPT_ONLY_IN_REPO=1
+#     source $HOME/.bash-git-prompt/gitprompt.sh
+# fi
+
 # TODO: Ensure wakatime is installed with: `pip install wakatime`
 # Wakatime
 # source bash-wakatime/bash-wakatime.sh
@@ -114,12 +120,6 @@ fi
 # if [ -f ~/.asdf ]; then
 #   . $HOME/.asdf/asdf.sh
 #   . $HOME/.asdf/completions/asdf.bash
-# fi
-
-# Bash-Git-Prompt
-# if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
-#     GIT_PROMPT_ONLY_IN_REPO=1
-#     source $HOME/.bash-git-prompt/gitprompt.sh
 # fi
 
 # Node Version Manager (NVM)
