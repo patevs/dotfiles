@@ -85,12 +85,12 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Favour lsd over ls when installed
-if [[ checkExistCommand 'lsd' ]]
+if [[ "$(existCommand 'lsd')" ]]
 then
-  alias ls='lsd -a1'
-  alias sl='lsd -a1'
-  alias l="lsd -a1"
-  alias s="lsd -a1"
+  alias ls='lsd -A1'
+  alias sl='lsd -A1'
+  alias l="lsd -A1"
+  alias s="lsd -A1"
   alias ll='lsd -l'
   alias lll='lsd -al'
   alias la='lsd -la'
