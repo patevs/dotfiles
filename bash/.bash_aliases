@@ -154,8 +154,11 @@ fi
 # NodeJS & NPM Aliases
 # ====================
 
-# TODO: Verify node & npm are installed
-alias npl='npm list --depth=0'
-alias nplg='npm list --global --depth=0'
+# NPM aliases
+if [[ "$(existCommand npm)" ]]
+then
+  alias npl='npm list --depth=0'
+  alias nplg='npm list --global --depth=0'
+fi
 
 # EOF #
