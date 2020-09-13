@@ -98,6 +98,7 @@ alias .....="cd ../../../.."
 # alias l='ls -CF'
 
 # TODO: Verify if lsd is installed
+# if [[ checkExistCommand('lsd') ]]
 alias ls='lsd -a1'
 alias ll='lsd -l'
 alias lll='lsd -al'
