@@ -9,7 +9,11 @@
 :: into my home directory.
 
 :: CLS
-ECHO. & ECHO  [100;4m Bash Configuration Script [0m & ECHO.
+ECHO. & ECHO  [100;4m Bash Profile Bootstrap Script [0m & ECHO.
+
+:: TODO: Ensure wget is installed
+CALL wget https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -O ~/.git-prompt.sh
+:: curl https://raw.githubusercontent.com/lyze/posh-git-sh/master/git-prompt.sh -o ~/.git-prompt.sh
 
 :: Copy bash configuration files
 CALL ECHO F | xcopy /Y /Q .bash_aliases %USERPROFILE%\.bash_aliases
