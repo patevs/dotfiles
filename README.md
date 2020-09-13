@@ -78,9 +78,9 @@ git submodule update --init --recursive
 ├── .editorconfig       # Editor configuration
 ├── .gitignore          # Git ignore rules
 ├── .gitmodules         # Git modules
-├── .np-config.js       # Npm publish (np) configuration
+├── .np-config.json     # NPM publish (np) configuration
 ├── LICENSE             # Project LICENSE
-├── package.json        # Npm package configuration
+├── package.json        # NPM package configuration
 └── README.md           # Project README
 ```
 
