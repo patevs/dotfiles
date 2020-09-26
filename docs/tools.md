@@ -34,6 +34,12 @@
 
 ---
 
+## System Administration Tools
+
+* [`NSudo`](https://github.com/M2Team/NSudo) Series of System Administration Tools.
+
+---
+
 ## Shells and Terminal Emulators
 
 * [`chafa`](https://github.com/hpjansson/chafa) 📺🗿 Terminal graphics for the 21st century.
