@@ -75,6 +75,12 @@
 
 ---
 
+## Database Tools
+
+* [`mycli`](https://github.com/dbcli/mycli) MySQL CLI with AutoCompletion and Syntax Highlighting.
+
+---
+
 ## Deno Tools
 
 * [`drink-if-exists`](https://github.com/ninest/drink-if-exists) 🍷 The NPM drinking game recreated and cli-ified with Deno.
