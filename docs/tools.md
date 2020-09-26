@@ -34,6 +34,12 @@
 
 ---
 
+## System Administration Tools
+
+* [`NSudo`](https://github.com/M2Team/NSudo) Series of System Administration Tools.
+
+---
+
 ## Shells and Terminal Emulators
 
 * [`chafa`](https://github.com/hpjansson/chafa) 📺🗿 Terminal graphics for the 21st century.
@@ -69,6 +75,12 @@
 
 ---
 
+## Database Tools
+
+* [`mycli`](https://github.com/dbcli/mycli) MySQL CLI with AutoCompletion and Syntax Highlighting.
+
+---
+
 ## Deno Tools
 
 * [`drink-if-exists`](https://github.com/ninest/drink-if-exists) 🍷 The NPM drinking game recreated and cli-ified with Deno.
@@ -85,11 +97,18 @@
 
 ---
 
+## Git & GitHub Tools
+
+* [`cli`](https://github.com/cli/cli) GitHub’s official command line tool.
+
+---
+
 ## Go Tools
 
 * [`bashful`](https://github.com/wagoodman/bashful) Use a yaml file to stitch together commands and run them with a bit of style.
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
+* [`croc`](https://github.com/schollz/croc) Easily and securely send things from one computer to another.
 * [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
 * [`geek-life`](https://github.com/ajaxray/geek-life) CLI Task Manager for Geeks.
 * [`gg`](https://github.com/zombiezen/gg) Git with less typing.
@@ -140,6 +159,7 @@
 * [`psInlineProgress`](https://github.com/gravejester/psInlineProgress) Write inline progress bars in PowerShell.
 * [`PSModuleDevelopment`](https://github.com/PowershellFrameworkCollective/PSModuleDevelopment) Provides tools that help with module development.
 * [`PSScriptAnalyzer`](https://github.com/PowerShell/PSScriptAnalyzer) Static code checker for PowerShell modules and scripts.
+* [`TabExpansionPlusPlus`](https://github.com/lzybkr/TabExpansionPlusPlus) PowerShell module to improve tab expansion and Intellisense.
 * [`tunic`](https://github.com/mikeslattery/tunic) Install Linux from a running Windows system, without need for a live USB.
 * [`winfetch`](https://github.com/lptstr/winfetch/)
 * [`z.lua`](https://github.com/skywind3000/z.lua) A command line tool which helps you navigate faster by learning your habits.
@@ -240,6 +260,7 @@
 
 ## Windows Tools
 
+* [`concfg`](https://github.com/lukesampson/concfg) Import / export Windows console settings.
 * [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
 * [`guinget`](https://github.com/DrewNaylor/guinget) GUI for Microsoft's Windows Package Manager (winget).
 * [`hain`](https://github.com/hainproject/hain) An 'alt+space' launcher for Windows, built with Electron.
