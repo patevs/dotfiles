@@ -91,6 +91,12 @@
 
 ---
 
+## Git & GitHub Tools
+
+* [`cli`](https://github.com/cli/cli) GitHub’s official command line tool.
+
+---
+
 ## Go Tools
 
 * [`bashful`](https://github.com/wagoodman/bashful) Use a yaml file to stitch together commands and run them with a bit of style.
