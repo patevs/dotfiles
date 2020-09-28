@@ -64,37 +64,25 @@
         "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cmd.png"
       },
       {
-        "guid": "{e2d2a2ce-3477-44c4-a75f-6e2c377ac0c8}",
-        "name" : "Cygwin",
-        "commandline" : "C:/cygwin/bin/bash --login -i",
-        // "icon" : "C:/cygwin/cygwin.ico",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cygwin.png",
-        "startingDirectory" : "C:/cygwin/bin"
-      },
-      {
         "guid": "{187e9a26-26c5-4de5-9565-e7379812e4ce}",
         "name" : "Git Bash",
         "commandline" : "C:/Program Files/Git/bin/bash.exe -li",
         "icon" : "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico"
       },
       {
-        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-        "name": "Ubuntu",
-        "source": "Windows.Terminal.Wsl",
-        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/ubuntu.png"
-      },
-      {
-          "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-          "name": "Ubuntu-20.04",
-          "source": "Windows.Terminal.Wsl",
-          "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/ubuntu.png"
-      },
-      {
         "guid": "{7df16305-71ee-4928-ae34-593a2c7ec2d5}",
         "name" : "MSYS2",
         "commandline" : "C:/Users/Pat/scoop/apps/msys2/current/msys2_shell.cmd -defterm -no-start -mingw64",
-        "icon": "C:/Users/Pat/scoop/apps/msys2/current/msys2.ico",
-        "hidden": false
+        "icon": "C:/Users/Pat/scoop/apps/msys2/current/msys2.ico"
+      },
+      {
+        "guid": "{e2d2a2ce-3477-44c4-a75f-6e2c377ac0c8}",
+        "name" : "Cygwin",
+        "commandline" : "C:/cygwin/bin/bash --login -i",
+        // "icon" : "C:/cygwin/cygwin.ico",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/cygwin.png",
+        "startingDirectory" : "C:/cygwin/bin",
+        "hidden": true
       },
       {
         "guid": "{27cc0c27-a2cb-4041-88e1-5b0e2c46829e}",
@@ -105,10 +93,22 @@
         "hidden": true
       },
       {
+        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "name": "Ubuntu",
+        "source": "Windows.Terminal.Wsl",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/ubuntu.png"
+      },
+      {
+        "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+        "name": "Ubuntu-20.04",
+        "source": "Windows.Terminal.Wsl",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/ubuntu.png"
+      },
+      {
         "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
         "name": "Azure Cloud Shell",
-        "source": "Windows.Terminal.Azure",
-        "hidden": true
+        "source": "Windows.Terminal.Azure"
+        // "hidden": true
       }
     ]
   },
