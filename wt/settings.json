@@ -165,19 +165,11 @@
       "command": "nextTab",
       "keys": "ctrl+tab"
     },
-    /*
-    {
-      "command": {
-        "action": "splitPane",
-        "split": "auto"
-      },
-      "keys": ["ctrl+shift+t"]
-    },
-    */
     // Creating a new pane
     { "command": { "action": "splitPane", "split": "horizontal" }, "keys": "alt+shift+-" },
     { "command": { "action": "splitPane", "split": "vertical" }, "keys": "alt+shift+plus" },
     { "command": { "action": "splitPane", "split": "auto" }, "keys": "alt+shift+t" },
+    // { "command": { "action": "splitPane", "split": "auto" }, "keys": "ctrl+shift+t" },
     // Resizing a pane
     { "command": { "action": "resizePane", "direction": "down" }, "keys": "alt+shift+down" },
     { "command": { "action": "resizePane", "direction": "left" }, "keys": "alt+shift+left" },
