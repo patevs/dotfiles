@@ -54,6 +54,7 @@
 
 * [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Anonymize the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
 * [`bash-it`](https://github.com/Bash-it/bash-it) A community Bash framework.
+* [`doesmyipsuck`](https://github.com/ialexs/doesmyispsucks) Speed test CLI with logging and graphs.
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
 * [`garie`](https://github.com/boyney123/garie) Open source web performance.
