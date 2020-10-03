@@ -118,6 +118,7 @@
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
 * [`gitleaks`](https://github.com/zricethezav/gitleaks) Scan git repos for secrets using regex and entropy 🔑
+* [`go-diagrams`](https://github.com/blushft/go-diagrams) Create beautiful system diagrams with Go.
 * [`gotop`](https://github.com/xxxserxxx/gotop)
 * [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
