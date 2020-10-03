@@ -9,6 +9,7 @@
 * [`git-badges`](https://github.com/puf17640/git-badges) An API serving useful badges for your GitHub Profile README.
 * [`github-readme-stats`](https://github.com/anuraghazra/github-readme-stats) Dynamically generated stats for your github readmes.
 * [`markdown-magic`](https://github.com/patevs/markdown-magic) Automatically format markdown files, sync external docs/src code & make better docs
+* [`pandoc`](https://github.com/jgm/pandoc) Universal markup converter.
 * [`readme-pagespeed-insights`](https://github.com/ankurparihar/readme-pagespeed-insights) Google lighthouse stats of your website that you can put in readme.
 
 ---
@@ -54,6 +55,7 @@
 
 * [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Anonymize the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
 * [`bash-it`](https://github.com/Bash-it/bash-it) A community Bash framework.
+* [`doesmyipsuck`](https://github.com/ialexs/doesmyispsucks) Speed test CLI with logging and graphs.
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
 * [`garie`](https://github.com/boyney123/garie) Open source web performance.
@@ -99,7 +101,9 @@
 
 ## Git & GitHub Tools
 
+* [`all-repos`](https://github.com/asottile/all-repos) Clone all your repositories and apply sweeping changes.
 * [`cli`](https://github.com/cli/cli) GitHub’s official command line tool.
+* [`git-code-debt`](https://github.com/asottile/git-code-debt) A dashboard for monitoring code debt in a git repository.
 
 ---
 
@@ -109,13 +113,15 @@
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`croc`](https://github.com/schollz/croc) Easily and securely send things from one computer to another.
+* [`duf`](https://github.com/muesli/duf) Disk Usage/Free Utility.
 * [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
 * [`geek-life`](https://github.com/ajaxray/geek-life) CLI Task Manager for Geeks.
 * [`gg`](https://github.com/zombiezen/gg) Git with less typing.
 * [`gitbatch`](https://github.com/isacikgoz/gitbatch)
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
 * [`gitleaks`](https://github.com/zricethezav/gitleaks) Scan git repos for secrets using regex and entropy 🔑
-* [`gotop`](https://github.com/xxxserxxx/gotop)
+* [`go-diagrams`](https://github.com/blushft/go-diagrams) Create beautiful system diagrams with Go.
+* [`gotop`](https://github.com/xxxserxxx/gotop) A terminal based graphical activity monitor inspired by gtop and vtop.
 * [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
@@ -138,6 +144,7 @@
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
 * [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
+* [`handpick`](https://github.com/redaxmedia/handpick) Handpick conditional dependencies like a boss.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`rot.js`](https://github.com/ondras/rot.js) ROguelike Toolkit.
@@ -175,6 +182,7 @@
 * [`catcli`](https://github.com/deadc0de6/catcli) The command line catalog tool for your offline data.
 * [`codequestion`](https://github.com/neuml/codequestion) Ask coding questions directly from the terminal.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
+* [`diagrams`](https://github.com/mingrammer/diagrams) Diagram as Code for prototyping cloud system architectures.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
