@@ -144,6 +144,7 @@
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
 * [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
+* [`handpick`](https://github.com/redaxmedia/handpick) Handpick conditional dependencies like a boss.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`rot.js`](https://github.com/ondras/rot.js) ROguelike Toolkit.
