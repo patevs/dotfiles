@@ -101,6 +101,7 @@
 
 ## Git & GitHub Tools
 
+* [`all-repos`](https://github.com/asottile/all-repos) Clone all your repositories and apply sweeping changes.
 * [`cli`](https://github.com/cli/cli) GitHub’s official command line tool.
 * [`git-code-debt`](https://github.com/asottile/git-code-debt) A dashboard for monitoring code debt in a git repository.
 
