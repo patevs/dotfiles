@@ -124,11 +124,11 @@ alias dir="ls"
 # ====================
 
 # Use GitHubs' cli in favor of git
-if [[ "$(existCommand hub)" ]]
-then
-  eval "$(hub alias -s bash)"
-  alias git='hub'
-fi
+# if [[ "$(existCommand hub)" ]]
+# then
+#   eval "$(hub alias -s bash)"
+#   alias git='hub'
+# fi
 
 # Common git aliases
 if [[ "$(existCommand git)" ]]
