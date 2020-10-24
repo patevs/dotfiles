@@ -46,6 +46,7 @@
 * [`chafa`](https://github.com/hpjansson/chafa) 📺🗿 Terminal graphics for the 21st century.
 * [`electerm`](https://github.com/electerm/electerm) 📻Terminal/ssh/serial port/sftp client(linux, mac, win)
 * [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
+* [`mosh`](https://github.com/mobile-shell/mosh) Remote terminal application that supports intermittent connectivity, allows roaming, and provides speculative local echo and line editing of user keystrokes.
 * [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
 * [`starship`](https://github.com/starship/starship) Minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
