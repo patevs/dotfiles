@@ -49,6 +49,7 @@
 * [`mosh`](https://github.com/mobile-shell/mosh) Remote terminal application that supports intermittent connectivity, allows roaming, and provides speculative local echo and line editing of user keystrokes.
 * [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
 * [`starship`](https://github.com/starship/starship) Minimal, blazing-fast, and infinitely customizable prompt for any shell!
+* [`Terminals`](https://github.com/Terminals-Origin/Terminals) Secure, multi tab terminal services/remote desktop client.
 
 ---
 
