@@ -46,8 +46,10 @@
 * [`chafa`](https://github.com/hpjansson/chafa) 📺🗿 Terminal graphics for the 21st century.
 * [`electerm`](https://github.com/electerm/electerm) 📻Terminal/ssh/serial port/sftp client(linux, mac, win)
 * [`extraterm`](https://github.com/sedwards2009/extraterm) The swiss army chainsaw of terminal emulators.
+* [`mosh`](https://github.com/mobile-shell/mosh) Remote terminal application that supports intermittent connectivity, allows roaming, and provides speculative local echo and line editing of user keystrokes.
 * [`nushell`](https://github.com/nushell/nushell) A modern shell written in Rust.
 * [`starship`](https://github.com/starship/starship) Minimal, blazing-fast, and infinitely customizable prompt for any shell!
+* [`Terminals`](https://github.com/Terminals-Origin/Terminals) Secure, multi tab terminal services/remote desktop client.
 
 ---
 
@@ -55,6 +57,7 @@
 
 * [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Anonymize the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
 * [`bash-it`](https://github.com/Bash-it/bash-it) A community Bash framework.
+* [`bashtop`](https://github.com/aristocratos/bashtop) Linux/OSX/FreeBSD resource monitor.
 * [`doesmyipsuck`](https://github.com/ialexs/doesmyispsucks) Speed test CLI with logging and graphs.
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
@@ -111,6 +114,7 @@
 
 * [`bashful`](https://github.com/wagoodman/bashful) Use a yaml file to stitch together commands and run them with a bit of style.
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
+* [`bubbletea`](https://github.com/charmbracelet/bubbletea) A powerful little TUI framework.
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`croc`](https://github.com/schollz/croc) Easily and securely send things from one computer to another.
 * [`duf`](https://github.com/muesli/duf) Disk Usage/Free Utility.
@@ -179,6 +183,7 @@
 * [`AirShare`](https://github.com/KuroLabs/Airshare) Cross-platform content sharing in a local network.
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
+* [`bpytop`](https://github.com/aristocratos/bpytop) Linux/OSX/FreeBSD resource monitor.
 * [`catcli`](https://github.com/deadc0de6/catcli) The command line catalog tool for your offline data.
 * [`codequestion`](https://github.com/neuml/codequestion) Ask coding questions directly from the terminal.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
@@ -278,6 +283,7 @@
 * [`sharpapp`](https://github.com/builtbybel/sharpapp) An app to minimize windows-10 telemetry and maximize privacy plus many more.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
+* [`WinDynamicDesktop`](https://github.com/t1m0thyj/WinDynamicDesktop) Port of macOS Mojave Dynamic Desktop feature to Windows 10.
 * [`WinQuickLook`](https://github.com/shibayan/WinQuickLook) "Quick Look" like Windows Explorer file viewer.
 * [`Wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
 
