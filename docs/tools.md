@@ -113,6 +113,7 @@
 
 * [`bashful`](https://github.com/wagoodman/bashful) Use a yaml file to stitch together commands and run them with a bit of style.
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
+* [`bubbletea`](https://github.com/charmbracelet/bubbletea) A powerful little TUI framework.
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
 * [`croc`](https://github.com/schollz/croc) Easily and securely send things from one computer to another.
 * [`duf`](https://github.com/muesli/duf) Disk Usage/Free Utility.
