@@ -112,6 +112,29 @@
 
 ## Go Tools
 
+* [`gocode`](https://github.com/mdempsky/gocode) Autocompletion daemon for the Go programming language.
+* [`gocode-gomod`](https://github.com/stamblerre/gocode) Autocompletion daemon for the Go programming language.
+* [`gopkgs`](https://github.com/uudashr/gopkgs) Tool to get list available Go packages.
+* [`go-outline`](https://github.com/lukehoban/go-outline) Utility to extract JSON representation of declarations from a Go source file.
+* [`godef`](https://github.com/rogpeppe/godef) Print where symbols are defined in Go source code.
+* [`goreturns`](https://github.com/sqs/goreturns) Tool that fills in Go return statements with zero values to match the func return types.
+* [`golint`](https://github.com/golang/lint) Linter for Go source code.
+
+[](.)
+
+* [`go-symbols`](https://github.com/newhook/go-symbols) A utility for extracting a JSON representation of the package symbols from a go source tree.
+* [`guru`](https://github.com/alvarolm/GoGuru) Tool for answering questions about Go source code.
+* [`gorename`](https://godoc.org/golang.org/x/tools/cmd/gorename) Performs precise type-safe renaming of identifiers in Go source code.
+* [`gotests`](https://github.com/cweill/gotests) Automatically generate Go test boilerplate from your source code.
+* [`gomodifytags`](https://github.com/fatih/gomodifytags) Tool to modify struct field tags.
+* [`impl`](https://github.com/josharian/impl) Generates method stubs for implementing an interface.
+* [`fillstrut`](https://github.com/davidrjenni/reftools/tree/master/cmd/fillstruct) Fills a struct literal with default values.
+* [`goplay`](https://github.com/haya14busa/goplay) The Go Playground (play.golang.org) client.
+* [`godoctor`](https://github.com/godoctor/godoctor) Golang Refactoring Engine.
+* [`delve`](https://github.com/go-delve/delve) Debugger for the Go programming language.
+
+[](.)
+
 * [`bashful`](https://github.com/wagoodman/bashful) Use a yaml file to stitch together commands and run them with a bit of style.
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
 * [`bubbletea`](https://github.com/charmbracelet/bubbletea) A powerful little TUI framework.
