@@ -264,6 +264,7 @@
 * [`eva`](https://github.com/NerdyPepper/eva)
 * [`fd`](https://github.com/sharkdp/fd)
 * [`ffsend`](https://github.com/timvisee/ffsend) Easily and securely share files from the command line. A fully featured Firefox Send client.
+* [`fnm`](https://github.com/Schniz/fnm) 🚀 Fast and simple Node.js version manager. *Note:* MacOS/Linux only.
 * [`gitui`](https://github.com/extrawurst/gitui) Blazing fast terminal-ui for git written in rust.
 * [`grex`](https://github.com/pemistahl/grex)
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
