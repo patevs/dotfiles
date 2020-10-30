@@ -81,6 +81,12 @@
 
 ---
 
+## C# Tools
+
+* [`spectre.console`](https://github.com/spectresystems/spectre.console) A library that makes it easier to create beautiful console applications.
+
+---
+
 ## Database Tools
 
 * [`mycli`](https://github.com/dbcli/mycli) MySQL CLI with AutoCompletion and Syntax Highlighting.
