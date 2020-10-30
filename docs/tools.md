@@ -302,6 +302,12 @@
 
 ---
 
+## MacOS Tools
+
+* [`eul`](https://github.com/gao-sun/eul) 🖥️ MacOS status monitoring app written in SwiftUI.
+
+---
+
 ## Windows Tools
 
 * [`concfg`](https://github.com/lukesampson/concfg) Import / export Windows console settings.
