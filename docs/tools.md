@@ -90,6 +90,7 @@
 ## Database Tools
 
 * [`mycli`](https://github.com/dbcli/mycli) MySQL CLI with AutoCompletion and Syntax Highlighting.
+* [`usql`](https://github.com/xo/usql) Universal command-line interface for SQL databases.
 
 ---
 
