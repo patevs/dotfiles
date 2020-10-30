@@ -246,6 +246,7 @@
 * [`whoogle-search`](https://github.com/benbusby/whoogle-search) Self-hosted, ad-free, privacy-respecting Google metasearch engine.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`wttr.in`](https://github.com/chubin/wttr.in) The right way to check the weather.
+* [`yt-dlc`](https://github.com/blackjack4494/yt-dlc) Media downloader for various sites.
 
 ---
 
