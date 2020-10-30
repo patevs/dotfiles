@@ -9,6 +9,7 @@
 * [`git-badges`](https://github.com/puf17640/git-badges) An API serving useful badges for your GitHub Profile README.
 * [`github-readme-stats`](https://github.com/anuraghazra/github-readme-stats) Dynamically generated stats for your github readmes.
 * [`markdown-magic`](https://github.com/patevs/markdown-magic) Automatically format markdown files, sync external docs/src code & make better docs
+* [`nb`](https://github.com/xwmx/nb) CLI plain-text note-taking, bookmarking, and archiving with encryption, filtering and search, Git-backed versioning and syncing, Pandoc-backed conversion, and more.
 * [`pandoc`](https://github.com/jgm/pandoc) Universal markup converter.
 * [`readme-pagespeed-insights`](https://github.com/ankurparihar/readme-pagespeed-insights) Google lighthouse stats of your website that you can put in readme.
 
@@ -80,9 +81,16 @@
 
 ---
 
+## C# Tools
+
+* [`spectre.console`](https://github.com/spectresystems/spectre.console) A library that makes it easier to create beautiful console applications.
+
+---
+
 ## Database Tools
 
 * [`mycli`](https://github.com/dbcli/mycli) MySQL CLI with AutoCompletion and Syntax Highlighting.
+* [`usql`](https://github.com/xo/usql) Universal command-line interface for SQL databases.
 
 ---
 
@@ -211,6 +219,7 @@
 * [`codequestion`](https://github.com/neuml/codequestion) Ask coding questions directly from the terminal.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
 * [`diagrams`](https://github.com/mingrammer/diagrams) Diagram as Code for prototyping cloud system architectures.
+* [`Eel`](https://github.com/samuelhwilliams/Eel) Library for making simple Electron-like HTML/JS GUI apps.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
@@ -239,6 +248,7 @@
 * [`whoogle-search`](https://github.com/benbusby/whoogle-search) Self-hosted, ad-free, privacy-respecting Google metasearch engine.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`wttr.in`](https://github.com/chubin/wttr.in) The right way to check the weather.
+* [`yt-dlc`](https://github.com/blackjack4494/yt-dlc) Media downloader for various sites.
 
 ---
 
@@ -256,6 +266,7 @@
 * [`eva`](https://github.com/NerdyPepper/eva)
 * [`fd`](https://github.com/sharkdp/fd)
 * [`ffsend`](https://github.com/timvisee/ffsend) Easily and securely share files from the command line. A fully featured Firefox Send client.
+* [`fnm`](https://github.com/Schniz/fnm) 🚀 Fast and simple Node.js version manager. *Note:* MacOS/Linux only.
 * [`gitui`](https://github.com/extrawurst/gitui) Blazing fast terminal-ui for git written in rust.
 * [`grex`](https://github.com/pemistahl/grex)
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
@@ -271,6 +282,7 @@
 * [`RustScan`](https://github.com/RustScan/RustScan) Faster Nmap Scanning with Rust.
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
 * [`so`](https://github.com/samtay/so) A terminal interface for Stack Overflow.
+* [`taskwarrior-tui`](https://github.com/kdheepak/taskwarrior-tui) A terminal user interface for taskwarrior.
 * [`tauri`](https://github.com/tauri-apps/tauri) Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
 * [`ytop`](https://github.com/cjbassi/ytop)
@@ -294,13 +306,21 @@
 
 ---
 
+## MacOS Tools
+
+* [`eul`](https://github.com/gao-sun/eul) 🖥️ MacOS status monitoring app written in SwiftUI.
+
+---
+
 ## Windows Tools
 
 * [`concfg`](https://github.com/lukesampson/concfg) Import / export Windows console settings.
 * [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
+* [`Fluent-Screen-Recorder`](https://github.com/MarcAnt01/Fluent-Screen-Recorder) A simple screen recorder built with UWP.
 * [`guinget`](https://github.com/DrewNaylor/guinget) GUI for Microsoft's Windows Package Manager (winget).
 * [`hain`](https://github.com/hainproject/hain) An 'alt+space' launcher for Windows, built with Electron.
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
+* [`quick-picture-viewer`](https://github.com/ModuleArt/quick-picture-viewer) Lightweight, versatile desktop image viewer.
 * [`rainmeter`](https://github.com/rainmeter/rainmeter) Desktop customization tool for Windows.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
 * [`sharpapp`](https://github.com/builtbybel/sharpapp) An app to minimize windows-10 telemetry and maximize privacy plus many more.
