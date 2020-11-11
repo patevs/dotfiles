@@ -85,30 +85,30 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Favour lsd over ls when installed
-if [[ "$(existCommand 'lsd')" ]]
-then
-    alias ls='lsd -A1'
-    alias sl='lsd -A1'
-    alias l="lsd -A1"
-    alias s="lsd -A1"
-    alias ll='lsd -l'
-    alias lll='lsd -al'
-    alias la='lsd -la'
-    alias lt='lsd --tree'
-else
+# if [[ "$(existCommand 'lsd')" ]]
+# then
+#     alias ls='lsd -A1'
+#     alias sl='lsd -A1'
+#     alias l="lsd -A1"
+#     alias s="lsd -A1"
+#     alias ll='lsd -l'
+#     alias lll='lsd -al'
+#     alias la='lsd -la'
+#     alias lt='lsd --tree'
+# else
     # Common variations of 'ls' command
-    alias ls="ls -la"
-    alias sl="ls"
+#     alias ls="ls -la"
+#     alias sl="ls"
     # alias l='ls -CF'
-    alias l="ls"
-    alias s="ls"
-    alias ll="ls -l"
-    alias lll='ls -alF'
-    alias la='ls -A'
-    alias la="ls -la"
+#     alias l="ls"
+#     alias s="ls"
+#     alias ll="ls -l"
+#     alias lll='ls -alF'
+#     alias la='ls -A'
+#     alias la="ls -la"
     # alias lo="ls -o"
     # alias lh="ls -lh"
-fi
+# fi
 
 # ------------------------------------------------------------------------------------------------------- #
 
@@ -131,9 +131,9 @@ alias dir="ls"
 # fi
 
 # Common git aliases
-if [[ "$(existCommand git)" ]]
-then
-    alias gs='git status'
+# if [[ "$(existCommand git)" ]]
+# then
+    # alias gs='git status'
     # alias gc='git commit'
     # alias ga='git add'
     # alias gd='git diff'
@@ -147,7 +147,7 @@ then
     # alias gri='git rebase --interactive'
     # alias gcp='git cherry-pick'
     # alias grm='git rm'
-fi
+# fi
 
 # ------------------------------------------------------------------------------------------------------- #
 
