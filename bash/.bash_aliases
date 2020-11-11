@@ -131,9 +131,9 @@ alias dir="ls"
 # fi
 
 # Common git aliases
-if [[ "$(existCommand git)" ]]
-then
-    alias gs='git status'
+# if [[ "$(existCommand git)" ]]
+# then
+    # alias gs='git status'
     # alias gc='git commit'
     # alias ga='git add'
     # alias gd='git diff'
@@ -147,7 +147,7 @@ then
     # alias gri='git rebase --interactive'
     # alias gcp='git cherry-pick'
     # alias grm='git rm'
-fi
+# fi
 
 # ------------------------------------------------------------------------------------------------------- #
 
