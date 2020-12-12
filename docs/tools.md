@@ -163,7 +163,7 @@
 * [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
 * [`realize`](https://github.com/oxequa/realize) Task Runner which enhance your workflow by automating the most common tasks.
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
-* [`stonks`](https://github.com/ericm/stonks) Terminal based stock visualizer and tracker that displays realtime stocks in graph format.
+* [`stonks`](https://github.com/ericm/stonks) CLI stock visualizer and tracker that displays realtime stocks in graph format.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 * [`twf`](https://github.com/wvanlint/twf) Standalone tree view file explorer, inspired by fzf.
 * [`typer-go`](https://github.com/shilangyu/typer-go) Test your typing speed in the terminal!
