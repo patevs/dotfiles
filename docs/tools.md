@@ -194,6 +194,7 @@
 * [`BurntToast`](https://github.com/Windos/BurntToast) Module for creating and displaying Toast Notifications on Microsoft Windows 10.
 * [`JAWS`](https://github.com/411Hall/JAWS) JAWS - Just Another Windows (Enum) Script
 * [`oh-my-posh`](https://github.com/JanDeDobbeleer/oh-my-posh) A prompt theming engine for Powershell.
+* [`ModuleBuilder`](https://github.com/PoshCode/ModuleBuilder) Module to help scripters write, version, sign, package, and publish.
 * [`Pansies`](https://github.com/PoshCode/Pansies) Powershell ANSI Escape Sequences, functions for colored output, etc.
 * [`Plaster`](https://github.com/PowerShell/Plaster) Template-based file and project generator written in PowerShell.
 * [`PSAppDeployToolkit`](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit) Functions to perform common application deployment tasks and to interact with the user during a deployment.
