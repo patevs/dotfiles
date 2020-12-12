@@ -158,11 +158,13 @@
 * [`go-diagrams`](https://github.com/blushft/go-diagrams) Create beautiful system diagrams with Go.
 * [`gotop`](https://github.com/xxxserxxx/gotop) A terminal based graphical activity monitor inspired by gtop and vtop.
 * [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
+* [`k6`](https://github.com/loadimpact/k6) Modern load testing tool, using Go and JavaScript.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
+* [`realize`](https://github.com/oxequa/realize) Task Runner which enhance your workflow by automating the most common tasks.
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
-* [`stonks`](https://github.com/ericm/stonks) Terminal based stock visualizer and tracker that displays realtime stocks in graph format.
+* [`stonks`](https://github.com/ericm/stonks) CLI stock visualizer and tracker that displays realtime stocks in graph format.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 * [`twf`](https://github.com/wvanlint/twf) Standalone tree view file explorer, inspired by fzf.
 * [`typer-go`](https://github.com/shilangyu/typer-go) Test your typing speed in the terminal!
@@ -194,6 +196,7 @@
 * [`BurntToast`](https://github.com/Windos/BurntToast) Module for creating and displaying Toast Notifications on Microsoft Windows 10.
 * [`JAWS`](https://github.com/411Hall/JAWS) JAWS - Just Another Windows (Enum) Script
 * [`oh-my-posh`](https://github.com/JanDeDobbeleer/oh-my-posh) A prompt theming engine for Powershell.
+* [`ModuleBuilder`](https://github.com/PoshCode/ModuleBuilder) Module to help scripters write, version, sign, package, and publish.
 * [`Pansies`](https://github.com/PoshCode/Pansies) Powershell ANSI Escape Sequences, functions for colored output, etc.
 * [`Plaster`](https://github.com/PowerShell/Plaster) Template-based file and project generator written in PowerShell.
 * [`PSAppDeployToolkit`](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit) Functions to perform common application deployment tasks and to interact with the user during a deployment.
@@ -215,6 +218,7 @@
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
 * [`bpytop`](https://github.com/aristocratos/bpytop) Linux/OSX/FreeBSD resource monitor.
+* [`castero`](https://github.com/xgi/castero) TUI podcast client for the terminal.
 * [`catcli`](https://github.com/deadc0de6/catcli) The command line catalog tool for your offline data.
 * [`codequestion`](https://github.com/neuml/codequestion) Ask coding questions directly from the terminal.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
@@ -268,6 +272,7 @@
 * [`ffsend`](https://github.com/timvisee/ffsend) Easily and securely share files from the command line. A fully featured Firefox Send client.
 * [`fnm`](https://github.com/Schniz/fnm) 🚀 Fast and simple Node.js version manager. *Note:* MacOS/Linux only.
 * [`gitui`](https://github.com/extrawurst/gitui) Blazing fast terminal-ui for git written in rust.
+* [`gping`](https://github.com/orf/gping) Ping, but with a graph.
 * [`grex`](https://github.com/pemistahl/grex)
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`just`](https://github.com/casey/just) Just a command runner.
@@ -281,6 +286,7 @@
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`RustScan`](https://github.com/RustScan/RustScan) Faster Nmap Scanning with Rust.
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
+* [`smag`](https://github.com/aantn/smag) Show Me A Graph - Command Line Graphing.
 * [`so`](https://github.com/samtay/so) A terminal interface for Stack Overflow.
 * [`taskwarrior-tui`](https://github.com/kdheepak/taskwarrior-tui) A terminal user interface for taskwarrior.
 * [`tauri`](https://github.com/tauri-apps/tauri) Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
@@ -323,6 +329,7 @@
 * [`quick-picture-viewer`](https://github.com/ModuleArt/quick-picture-viewer) Lightweight, versatile desktop image viewer.
 * [`rainmeter`](https://github.com/rainmeter/rainmeter) Desktop customization tool for Windows.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
+* [`RX-Explorer`](https://github.com/zhuxb711/RX-Explorer) Lightweight UWP Explorer.
 * [`sharpapp`](https://github.com/builtbybel/sharpapp) An app to minimize windows-10 telemetry and maximize privacy plus many more.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
