@@ -215,6 +215,7 @@
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
 * [`bpytop`](https://github.com/aristocratos/bpytop) Linux/OSX/FreeBSD resource monitor.
+* [`castero`](https://github.com/xgi/castero) TUI podcast client for the terminal.
 * [`catcli`](https://github.com/deadc0de6/catcli) The command line catalog tool for your offline data.
 * [`codequestion`](https://github.com/neuml/codequestion) Ask coding questions directly from the terminal.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
