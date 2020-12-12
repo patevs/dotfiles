@@ -226,6 +226,7 @@
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
 * [`diagrams`](https://github.com/mingrammer/diagrams) Diagram as Code for prototyping cloud system architectures.
 * [`Eel`](https://github.com/samuelhwilliams/Eel) Library for making simple Electron-like HTML/JS GUI apps.
+* [`GHunt`](https://github.com/mxrch/GHunt) 🕵️‍♂️ Investigate Google Accounts with emails.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
