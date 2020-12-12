@@ -78,6 +78,7 @@
 * [`nmapAutomator`](https://github.com/21y4d/nmapAutomator) Background nmap scans.
 * [`otseca`](https://github.com/trimstray/otseca) Open source security auditing tool to search and dump system configuration.
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
+* [`TheBashMenu`](https://github.com/HadrienAka/TheBashMenu) Easily create your own menu, which uses the directional keys.
 
 ---
 
@@ -115,6 +116,7 @@
 * [`all-repos`](https://github.com/asottile/all-repos) Clone all your repositories and apply sweeping changes.
 * [`cli`](https://github.com/cli/cli) GitHub’s official command line tool.
 * [`git-code-debt`](https://github.com/asottile/git-code-debt) A dashboard for monitoring code debt in a git repository.
+* [`git-workspace`](https://github.com/orf/git-workspace) Sync personal and work git repositories from multiple providers 🚀
 
 ---
 
@@ -143,6 +145,7 @@
 
 [](.)
 
+* [`ali`](https://github.com/nakabonne/ali) Generate HTTP load and plot the results in real-time.
 * [`bashful`](https://github.com/wagoodman/bashful) Use a yaml file to stitch together commands and run them with a bit of style.
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
 * [`bubbletea`](https://github.com/charmbracelet/bubbletea) A powerful little TUI framework.
@@ -156,12 +159,14 @@
 * [`gitin`](https://github.com/isacikgoz/gitin) commit/branch/workdir explorer for git.
 * [`gitleaks`](https://github.com/zricethezav/gitleaks) Scan git repos for secrets using regex and entropy 🔑
 * [`go-diagrams`](https://github.com/blushft/go-diagrams) Create beautiful system diagrams with Go.
+* [`gosivy`](https://github.com/nakabonne/gosivy) Real-time visualization tool for Go process metrics.
 * [`gotop`](https://github.com/xxxserxxx/gotop) A terminal based graphical activity monitor inspired by gtop and vtop.
 * [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
 * [`k6`](https://github.com/loadimpact/k6) Modern load testing tool, using Go and JavaScript.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
+* [`pbgopy`](https://github.com/nakabonne/pbgopy) Copy and paste between devices.
 * [`realize`](https://github.com/oxequa/realize) Task Runner which enhance your workflow by automating the most common tasks.
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`stonks`](https://github.com/ericm/stonks) CLI stock visualizer and tracker that displays realtime stocks in graph format.
@@ -224,6 +229,7 @@
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
 * [`diagrams`](https://github.com/mingrammer/diagrams) Diagram as Code for prototyping cloud system architectures.
 * [`Eel`](https://github.com/samuelhwilliams/Eel) Library for making simple Electron-like HTML/JS GUI apps.
+* [`GHunt`](https://github.com/mxrch/GHunt) 🕵️‍♂️ Investigate Google Accounts with emails.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
@@ -232,6 +238,7 @@
 * [`hackingtool`](https://github.com/Z4nzu/hackingtool) All in One Hacking tool For Hackers.
 * [`instaloader`](https://github.com/instaloader/instaloader) Download pictures (or videos) along with metadata from Instagram.
 * [`jrnl`](https://github.com/jrnl-org/jrnl) Collect your thoughts and notes without leaving the command line.
+* [`khal`](https://github.com/pimutils/khal) CLI calendar application.
 * [`Mercury`](https://github.com/metachar/Mercury) Hacking tool used to collect information and use the information to further hurt the target.
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
@@ -331,6 +338,7 @@
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
 * [`RX-Explorer`](https://github.com/zhuxb711/RX-Explorer) Lightweight UWP Explorer.
 * [`sharpapp`](https://github.com/builtbybel/sharpapp) An app to minimize windows-10 telemetry and maximize privacy plus many more.
+* [`SidebarDiagnostics`](https://github.com/ArcadeRenegade/SidebarDiagnostics) A simple sidebar for Windows desktop that displays hardware diagnostic information.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
 * [`WinDynamicDesktop`](https://github.com/t1m0thyj/WinDynamicDesktop) Port of macOS Mojave Dynamic Desktop feature to Windows 10.
