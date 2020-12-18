@@ -8,9 +8,9 @@
         "%LOCALAPPDATA%\Microsoft\Windows Terminal\settings.json"
 
 .NOTES
-    Version:        1.1
+    Version:        1.2
     Author:         PatEvs (github.com/patevs)
-    Last Modified:  04/06/2020 - June 4th 2020
+    Last Modified:  18/12/2020 - December 18th 2020
 
 .EXAMPLE
     .\bootstrap.ps1
@@ -27,7 +27,7 @@ if (-Not ($Env:OS -eq "Windows_NT")) {
 # -------------------------------- [Declarations] ------------------------------- #
 
 #Script Version
-# $sScriptVersion = "1.1"
+# $sScriptVersion = "1.2"
 
 # Current working directory
 $cwd = Get-Location
