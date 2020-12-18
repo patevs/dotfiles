@@ -185,6 +185,7 @@
 * [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
 * [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
+* [`forge-node-app`](https://github.com/irevenko/forge-node-app) 🛠📦🎊 Generate Node.js Boilerplate with Optional: TS/JS, Babel, Linter, Formatter, Tests, dotenv, nodemon, git.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`handpick`](https://github.com/redaxmedia/handpick) Handpick conditional dependencies like a boss.
 * [`iron-node`](https://github.com/s-a/iron-node) Debug Node.js code with Chrome Developer Tools.
