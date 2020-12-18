@@ -229,6 +229,7 @@
 * [`codequestion`](https://github.com/neuml/codequestion) Ask coding questions directly from the terminal.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
 * [`diagrams`](https://github.com/mingrammer/diagrams) Diagram as Code for prototyping cloud system architectures.
+* [`criticality_score`](https://github.com/ossf/criticality_score) Gives criticality score for an open source project.
 * [`Eel`](https://github.com/samuelhwilliams/Eel) Library for making simple Electron-like HTML/JS GUI apps.
 * [`GHunt`](https://github.com/mxrch/GHunt) 🕵️‍♂️ Investigate Google Accounts with emails.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
@@ -264,6 +265,12 @@
 
 ---
 
+## React Tools
+
+- [`guppy`](https://github.com/joshwcomeau/guppy) 🐠A friendly application manager and task runner for ReactJS.
+
+---
+
 ## Rust Tools
 
 * [`bat`](https://github.com/sharkdp/bat)
@@ -296,6 +303,7 @@
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
 * [`smag`](https://github.com/aantn/smag) Show Me A Graph - Command Line Graphing.
 * [`so`](https://github.com/samtay/so) A terminal interface for Stack Overflow.
+* [`sudoku`](https://github.com/crazymerlyn/sudoku) Sudoku in terminal.
 * [`taskwarrior-tui`](https://github.com/kdheepak/taskwarrior-tui) A terminal user interface for taskwarrior.
 * [`tauri`](https://github.com/tauri-apps/tauri) Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
@@ -334,6 +342,7 @@
 * [`guinget`](https://github.com/DrewNaylor/guinget) GUI for Microsoft's Windows Package Manager (winget).
 * [`hain`](https://github.com/hainproject/hain) An 'alt+space' launcher for Windows, built with Electron.
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
+* [`Microsoft-Activation-Scripts`](https://github.com/massgravel/Microsoft-Activation-Scripts) Scripts for activating Microsoft products using HWID / KMS38 / Online KMS activation methods
 * [`quick-picture-viewer`](https://github.com/ModuleArt/quick-picture-viewer) Lightweight, versatile desktop image viewer.
 * [`rainmeter`](https://github.com/rainmeter/rainmeter) Desktop customization tool for Windows.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
