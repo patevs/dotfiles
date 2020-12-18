@@ -264,6 +264,12 @@
 
 ---
 
+## React Tools
+
+- [`guppy`](https://github.com/joshwcomeau/guppy) 🐠A friendly application manager and task runner for ReactJS.
+
+---
+
 ## Rust Tools
 
 * [`bat`](https://github.com/sharkdp/bat)
