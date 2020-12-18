@@ -45,6 +45,18 @@
     "list":
     [
       {
+        "guid": "{fdf8f15b-c9da-403c-8c9b-016a3ab48b1d}",
+        "name": "80s Retrowave",
+        "commandline": "C:/Users/Pat/scoop/apps/pwsh/current/pwsh.exe",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell-core.png",
+        "backgroundImage": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/backgrounds/retro-background.gif",
+        "backgroundImageOpacity": 0.15,
+        "backgroundImageStretchMode": "uniformToFill",
+        "colorScheme": "80s Retrowave",
+        "antialiasingMode": "cleartype",
+        "tabColor": "#220036"
+      },
+      {
         "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
         "name": "PowerShell Core",
         // "source": "Windows.Terminal.PowershellCore",
