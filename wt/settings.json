@@ -135,7 +135,30 @@
       "red" : "#FF5555",
       "white" : "#F8F8F2",
       "yellow" : "#F1FA8C"
-    }
+    },
+    {
+      "name": "80s Retrowave",
+      "cursorColor": "#f949ff",
+      "selectionBackground": "#c20092",
+      "background": "#220036",
+      "foreground": "#ffa600",
+      "black": "#580051",
+      "blue": "#743eca",
+      "cyan": "#2AA198",
+      "green": "#ff00f2",
+      "purple": "#D33682",
+      "red": "#DC322F",
+      "white": "#6a008a",
+      "yellow": "#ff5e00",
+      "brightBlack": "#59c2ff",
+      "brightBlue": "#00d9ff",
+      "brightCyan": "#e7ffff",
+      "brightGreen": "#f949ff",
+      "brightPurple": "#ff00bf",
+      "brightRed": "#ff4d00",
+      "brightWhite": "#FDF6E3",
+      "brightYellow": "#c20092"
+  }
   ],
 
   // Add any keybinding overrides to this array.
