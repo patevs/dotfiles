@@ -8,7 +8,7 @@
         "%LOCALAPPDATA%\Microsoft\Windows Terminal\settings.json"
 
 .NOTES
-    Version:        1.2
+    Version:        1.3
     Author:         PatEvs (github.com/patevs)
     Last Modified:  18/12/2020 - December 18th 2020
 
@@ -27,7 +27,7 @@ if (-Not ($Env:OS -eq "Windows_NT")) {
 # -------------------------------- [Declarations] ------------------------------- #
 
 #Script Version
-# $sScriptVersion = "1.2"
+# $sScriptVersion = "1.3"
 
 # Current working directory
 $cwd = Get-Location
@@ -52,7 +52,7 @@ $wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
 # Create destination, icons, and backgrounds directories
 New-Item $destinationDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
 New-Item $iconsDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
-New-Item $iconsDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
+New-Item $backgroundsDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
 
 # Copy icons to destination
 Copy-Item -Path ./icons/*.png -Destination $iconsDir
@@ -63,6 +63,7 @@ Copy-Item -Path ./backgrounds/*.gif -Destination $backgroundsDir
 # Copy profile to destination
 Copy-Item -Path ./*.json -Destination $destinationDir
 
+Remove-Variable backgroundsDir
 Remove-Variable iconsDir
 Remove-Variable destinationDir
 
