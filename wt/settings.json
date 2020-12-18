@@ -45,6 +45,18 @@
     "list":
     [
       {
+        "guid": "{fdf8f15b-c9da-403c-8c9b-016a3ab48b1d}",
+        "name": "80s Retrowave",
+        "commandline": "C:/Users/Pat/scoop/apps/pwsh/current/pwsh.exe",
+        "icon": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/icons/powershell-core.png",
+        "backgroundImage": "C:/Users/Pat/AppData/Local/Microsoft/Windows Terminal/backgrounds/retro-background.gif",
+        "backgroundImageOpacity": 0.15,
+        "backgroundImageStretchMode": "uniformToFill",
+        "colorScheme": "80s Retrowave",
+        "antialiasingMode": "cleartype",
+        "tabColor": "#220036"
+      },
+      {
         "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
         "name": "PowerShell Core",
         // "source": "Windows.Terminal.PowershellCore",
@@ -135,7 +147,30 @@
       "red" : "#FF5555",
       "white" : "#F8F8F2",
       "yellow" : "#F1FA8C"
-    }
+    },
+    {
+      "name": "80s Retrowave",
+      "cursorColor": "#f949ff",
+      "selectionBackground": "#c20092",
+      "background": "#220036",
+      "foreground": "#ffa600",
+      "black": "#580051",
+      "blue": "#743eca",
+      "cyan": "#2AA198",
+      "green": "#ff00f2",
+      "purple": "#D33682",
+      "red": "#DC322F",
+      "white": "#6a008a",
+      "yellow": "#ff5e00",
+      "brightBlack": "#59c2ff",
+      "brightBlue": "#00d9ff",
+      "brightCyan": "#e7ffff",
+      "brightGreen": "#f949ff",
+      "brightPurple": "#ff00bf",
+      "brightRed": "#ff4d00",
+      "brightWhite": "#FDF6E3",
+      "brightYellow": "#c20092"
+  }
   ],
 
   // Add any keybinding overrides to this array.
