@@ -62,6 +62,7 @@
 * [`doesmyipsuck`](https://github.com/ialexs/doesmyispsucks) Speed test CLI with logging and graphs.
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
+* [`fzf-bluetooth-connect`](https://github.com/Rasukarusan/fzf-bluetooth-connect) 🐧 Fuzzy search and connect bluetooth devices via the terminal.
 * [`garie`](https://github.com/boyney123/garie) Open source web performance.
 * [`Geo`](https://github.com/jakewmeyer/Geo) Bash utility for easy wan, lan, router, dns, mac address, and geolocation output.
 * [`git-branch-status`](https://github.com/bill-auger/git-branch-status) Shell script that prints out pretty git branch sync status reports.
@@ -185,6 +186,7 @@
 * [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
 * [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
+* [`forge-node-app`](https://github.com/irevenko/forge-node-app) 🛠📦🎊 Generate Node.js Boilerplate with Optional: TS/JS, Babel, Linter, Formatter, Tests, dotenv, nodemon, git.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`handpick`](https://github.com/redaxmedia/handpick) Handpick conditional dependencies like a boss.
 * [`iron-node`](https://github.com/s-a/iron-node) Debug Node.js code with Chrome Developer Tools.
@@ -242,6 +244,7 @@
 * [`jrnl`](https://github.com/jrnl-org/jrnl) Collect your thoughts and notes without leaving the command line.
 * [`khal`](https://github.com/pimutils/khal) CLI calendar application.
 * [`Mercury`](https://github.com/metachar/Mercury) Hacking tool used to collect information and use the information to further hurt the target.
+* [`mltype`](https://github.com/jankrepl/mltype) Command line tool for improving typing skills (programmers friendly).
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
