@@ -62,6 +62,7 @@
 * [`doesmyipsuck`](https://github.com/ialexs/doesmyispsucks) Speed test CLI with logging and graphs.
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
+* [`fzf-bluetooth-connect`](https://github.com/Rasukarusan/fzf-bluetooth-connect) 🐧 Fuzzy search and connect bluetooth devices via the terminal.
 * [`garie`](https://github.com/boyney123/garie) Open source web performance.
 * [`Geo`](https://github.com/jakewmeyer/Geo) Bash utility for easy wan, lan, router, dns, mac address, and geolocation output.
 * [`git-branch-status`](https://github.com/bill-auger/git-branch-status) Shell script that prints out pretty git branch sync status reports.
