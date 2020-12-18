@@ -229,6 +229,7 @@
 * [`codequestion`](https://github.com/neuml/codequestion) Ask coding questions directly from the terminal.
 * [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) Command-line utility that creates projects from templates.
 * [`diagrams`](https://github.com/mingrammer/diagrams) Diagram as Code for prototyping cloud system architectures.
+* [`criticality_score`](https://github.com/ossf/criticality_score) Gives criticality score for an open source project.
 * [`Eel`](https://github.com/samuelhwilliams/Eel) Library for making simple Electron-like HTML/JS GUI apps.
 * [`GHunt`](https://github.com/mxrch/GHunt) 🕵️‍♂️ Investigate Google Accounts with emails.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
