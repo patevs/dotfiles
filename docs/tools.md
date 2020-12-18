@@ -340,6 +340,7 @@
 * [`guinget`](https://github.com/DrewNaylor/guinget) GUI for Microsoft's Windows Package Manager (winget).
 * [`hain`](https://github.com/hainproject/hain) An 'alt+space' launcher for Windows, built with Electron.
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
+* [`Microsoft-Activation-Scripts`](https://github.com/massgravel/Microsoft-Activation-Scripts) Scripts for activating Microsoft products using HWID / KMS38 / Online KMS activation methods
 * [`quick-picture-viewer`](https://github.com/ModuleArt/quick-picture-viewer) Lightweight, versatile desktop image viewer.
 * [`rainmeter`](https://github.com/rainmeter/rainmeter) Desktop customization tool for Windows.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
