@@ -8,7 +8,7 @@
 
 - [`docs`](./docs/docs.md)
 - [`theme`](./docs/theme.md)
-- [`tools`](./docs/theme.md)
+- [`tools`](./docs/tools.md)
 
 ---
 
@@ -84,7 +84,7 @@ git submodule update --init --recursive
 ├── .gitignore          # Git ignore rules
 ├── .gitmodules         # Git modules
 ├── .np-config.json     # NPM publish (np) configuration
-├── LICENSE             # Project LICENSE
+├── LICENSE             # Project license
 ├── package.json        # NPM package configuration
 └── README.md           # Project README
 ```

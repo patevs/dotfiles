@@ -235,6 +235,7 @@
 * [`Eel`](https://github.com/samuelhwilliams/Eel) Library for making simple Electron-like HTML/JS GUI apps.
 * [`GHunt`](https://github.com/mxrch/GHunt) 🕵️‍♂️ Investigate Google Accounts with emails.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
+* [`git-trend`](https://github.com/manojkarthick/git-trend) CLI tool for getting the trending github repositories and developers.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
 * [`grip`](https://github.com/joeyespo/grip) Preview GitHub Markdown files like Readme locally before committing them.
@@ -346,6 +347,7 @@
 * [`hain`](https://github.com/hainproject/hain) An 'alt+space' launcher for Windows, built with Electron.
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
 * [`Microsoft-Activation-Scripts`](https://github.com/massgravel/Microsoft-Activation-Scripts) Scripts for activating Microsoft products using HWID / KMS38 / Online KMS activation methods
+* [`openhardwaremonitor`](https://github.com/openhardwaremonitor/openhardwaremonitor) Open Hardware Monitor.
 * [`quick-picture-viewer`](https://github.com/ModuleArt/quick-picture-viewer) Lightweight, versatile desktop image viewer.
 * [`rainmeter`](https://github.com/rainmeter/rainmeter) Desktop customization tool for Windows.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
