@@ -235,6 +235,7 @@
 * [`Eel`](https://github.com/samuelhwilliams/Eel) Library for making simple Electron-like HTML/JS GUI apps.
 * [`GHunt`](https://github.com/mxrch/GHunt) 🕵️‍♂️ Investigate Google Accounts with emails.
 * [`git-plus`](https://github.com/tkrajina/git-plus) Git utilities.
+* [`git-trend`](https://github.com/manojkarthick/git-trend) CLI tool for getting the trending github repositories and developers.
 * [`gita`](https://github.com/nosarthur/gita) Manage multiple git repos side by side for sanity.
 * [`gitsome`](https://github.com/donnemartin/gitsome) A supercharged Git/GitHub command line interface (CLI).
 * [`grip`](https://github.com/joeyespo/grip) Preview GitHub Markdown files like Readme locally before committing them.
