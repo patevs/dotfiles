@@ -118,6 +118,7 @@
 * [`cli`](https://github.com/cli/cli) GitHub’s official command line tool.
 * [`git-code-debt`](https://github.com/asottile/git-code-debt) A dashboard for monitoring code debt in a git repository.
 * [`git-workspace`](https://github.com/orf/git-workspace) Sync personal and work git repositories from multiple providers 🚀
+* [`GitVersion`](https://github.com/GitTools/GitVersion) Easy Semantic Versioning for projects using Git.
 
 ---
 
@@ -174,6 +175,7 @@
 * [`thyme`](https://github.com/sourcegraph/thyme)
 * [`twf`](https://github.com/wvanlint/twf) Standalone tree view file explorer, inspired by fzf.
 * [`typer-go`](https://github.com/shilangyu/typer-go) Test your typing speed in the terminal!
+* [`uni`](https://github.com/arp242/uni) Query the Unicode database from the commandline, with good support for emojis.
 * [`wtf`](https://github.com/wtfutil/wtf) The personal information dashboard for your terminal.
 
 ---
