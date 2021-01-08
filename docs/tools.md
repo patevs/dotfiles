@@ -175,6 +175,7 @@
 * [`thyme`](https://github.com/sourcegraph/thyme)
 * [`twf`](https://github.com/wvanlint/twf) Standalone tree view file explorer, inspired by fzf.
 * [`typer-go`](https://github.com/shilangyu/typer-go) Test your typing speed in the terminal!
+* [`uni`](https://github.com/arp242/uni) Query the Unicode database from the commandline, with good support for emojis.
 * [`wtf`](https://github.com/wtfutil/wtf) The personal information dashboard for your terminal.
 
 ---
