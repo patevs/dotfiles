@@ -343,6 +343,7 @@
 ## Windows Tools
 
 * [`concfg`](https://github.com/lukesampson/concfg) Import / export Windows console settings.
+* [`Files`](https://github.com/files-community/Files) A modern file explorer that pushes the boundaries of the platform.
 * [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
 * [`Fluent-Screen-Recorder`](https://github.com/MarcAnt01/Fluent-Screen-Recorder) A simple screen recorder built with UWP.
 * [`guinget`](https://github.com/DrewNaylor/guinget) GUI for Microsoft's Windows Package Manager (winget).
