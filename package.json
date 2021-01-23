@@ -1,6 +1,6 @@
 {
   "name": "dotfiles",
-  "version": "0.76.5",
+  "version": "0.77.0",
   "description": "PatEvs' personal system configuration dotfiles",
   "author": "PatEvs",
   "license": "MIT",
@@ -26,8 +26,14 @@
       "gitmoji"
     ],
     "rules": {
-      "type-empty": [0, "never"],
-      "subject-empty": [0, "never"]
+      "type-empty": [
+        0,
+        "never"
+      ],
+      "subject-empty": [
+        0,
+        "never"
+      ]
     }
   },
   "husky": {
