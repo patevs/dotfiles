@@ -16,15 +16,19 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "chalk": "^4.1.0",
-    "commitlint-config-gitmoji": "^1.1.0",
+    "commitlint-config-gitmoji": "^2.1.2",
     "husky": "^4.3.8",
     "np": "^7.2.0",
     "script-progress": "^1.0.5"
   },
   "commitlint": {
     "extends": [
-      "./node_modules/commitlint-config-gitmoji"
-    ]
+      "gitmoji"
+    ],
+    "rules": {
+      "type-empty": [0, "never"],
+      "subject-empty": [0, "never"]
+    }
   },
   "husky": {
     "hooks": {
