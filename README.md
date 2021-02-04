@@ -80,6 +80,8 @@ git submodule update --init --recursive
 ├── scripts
 ├── wt                  # Windows Terminal profile
 │   └── profiles.json
+├── zsh                 # Zsh profile
+│   └── .zshrc
 ├── .editorconfig       # Editor configuration
 ├── .gitignore          # Git ignore rules
 ├── .gitmodules         # Git modules

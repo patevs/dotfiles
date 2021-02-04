@@ -173,6 +173,7 @@
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`stonks`](https://github.com/ericm/stonks) CLI stock visualizer and tracker that displays realtime stocks in graph format.
 * [`thyme`](https://github.com/sourcegraph/thyme)
+* [`ticker`](https://github.com/achannarasappa/ticker) Terminal stock ticker with live updates and position tracking.
 * [`twf`](https://github.com/wvanlint/twf) Standalone tree view file explorer, inspired by fzf.
 * [`typer-go`](https://github.com/shilangyu/typer-go) Test your typing speed in the terminal!
 * [`uni`](https://github.com/arp242/uni) Query the Unicode database from the commandline, with good support for emojis.
@@ -187,6 +188,7 @@
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
 * [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
+* [`deskreen`](https://github.com/pavlobu/deskreen) Turn any device with a web browser into a second screen for your computer.
 * [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
 * [`forge-node-app`](https://github.com/irevenko/forge-node-app) 🛠📦🎊 Generate Node.js Boilerplate with Optional: TS/JS, Babel, Linter, Formatter, Tests, dotenv, nodemon, git.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
@@ -253,6 +255,7 @@
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`pipx`](https://github.com/pipxproject/pipx) Install and Run Python Applications in Isolated Environments.
 * [`poetry`](https://github.com/python-poetry/poetry) Python dependency management and packaging made easy.
+* [`qutebrowser`](https://github.com/qutebrowser/qutebrowser) A keyboard-driven, vim-like browser based on PyQt5.
 * [`ranger`](https://github.com/ranger/ranger)
 * [`rebound`](https://github.com/shobrook/rebound) Command-line tool that instantly fetches Stack Overflow results when an exception is thrown.
 * [`redditripper`](https://github.com/pmma1312/redditripper) Downloads all images of the subreddits specified in a text file.
@@ -343,6 +346,7 @@
 ## Windows Tools
 
 * [`concfg`](https://github.com/lukesampson/concfg) Import / export Windows console settings.
+* [`EverythingToolbar`](https://github.com/stnkl/EverythingToolbar) Everything integration for the Windows taskbar.
 * [`Files`](https://github.com/files-community/Files) A modern file explorer that pushes the boundaries of the platform.
 * [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
 * [`Fluent-Screen-Recorder`](https://github.com/MarcAnt01/Fluent-Screen-Recorder) A simple screen recorder built with UWP.
@@ -358,6 +362,7 @@
 * [`sharpapp`](https://github.com/builtbybel/sharpapp) An app to minimize windows-10 telemetry and maximize privacy plus many more.
 * [`SidebarDiagnostics`](https://github.com/ArcadeRenegade/SidebarDiagnostics) A simple sidebar for Windows desktop that displays hardware diagnostic information.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
+* [`twinkle-tray`](https://github.com/xanderfrangos/twinkle-tray) Easily manage the brightness of your monitors in Windows from the system tray.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
 * [`WinDynamicDesktop`](https://github.com/t1m0thyj/WinDynamicDesktop) Port of macOS Mojave Dynamic Desktop feature to Windows 10.
 * [`WinQuickLook`](https://github.com/shibayan/WinQuickLook) "Quick Look" like Windows Explorer file viewer.
