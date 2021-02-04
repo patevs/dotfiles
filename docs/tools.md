@@ -173,6 +173,7 @@
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`stonks`](https://github.com/ericm/stonks) CLI stock visualizer and tracker that displays realtime stocks in graph format.
 * [`thyme`](https://github.com/sourcegraph/thyme)
+* [`ticker`](https://github.com/achannarasappa/ticker) Terminal stock ticker with live updates and position tracking.
 * [`twf`](https://github.com/wvanlint/twf) Standalone tree view file explorer, inspired by fzf.
 * [`typer-go`](https://github.com/shilangyu/typer-go) Test your typing speed in the terminal!
 * [`uni`](https://github.com/arp242/uni) Query the Unicode database from the commandline, with good support for emojis.
