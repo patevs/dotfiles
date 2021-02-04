@@ -187,6 +187,7 @@
 * [`cli-table`](https://github.com/Automattic/cli-table) Pretty unicode tables for the CLI.
 * [`cli-ux`](https://github.com/oclif/cli-ux) CLI IO utilities.
 * [`CPod`](https://github.com/z-------------/CPod) A simple, beautiful podcast app for Windows, macOS, and Linux.
+* [`deskreen`](https://github.com/pavlobu/deskreen) Turn any device with a web browser into a second screen for your computer.
 * [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
 * [`forge-node-app`](https://github.com/irevenko/forge-node-app) 🛠📦🎊 Generate Node.js Boilerplate with Optional: TS/JS, Babel, Linter, Formatter, Tests, dotenv, nodemon, git.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
