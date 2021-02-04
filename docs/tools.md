@@ -360,6 +360,7 @@
 * [`sharpapp`](https://github.com/builtbybel/sharpapp) An app to minimize windows-10 telemetry and maximize privacy plus many more.
 * [`SidebarDiagnostics`](https://github.com/ArcadeRenegade/SidebarDiagnostics) A simple sidebar for Windows desktop that displays hardware diagnostic information.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
+* [`twinkle-tray`](https://github.com/xanderfrangos/twinkle-tray) Easily manage the brightness of your monitors in Windows from the system tray.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
 * [`WinDynamicDesktop`](https://github.com/t1m0thyj/WinDynamicDesktop) Port of macOS Mojave Dynamic Desktop feature to Windows 10.
 * [`WinQuickLook`](https://github.com/shibayan/WinQuickLook) "Quick Look" like Windows Explorer file viewer.
