@@ -155,6 +155,7 @@
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
 * [`bubbletea`](https://github.com/charmbracelet/bubbletea) A powerful little TUI framework.
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
+* [`confused`](https://github.com/visma-prodsec/confused) Check for dependency confusion vulnerabilities in multiple package management systems.
 * [`croc`](https://github.com/schollz/croc) Easily and securely send things from one computer to another.
 * [`duf`](https://github.com/muesli/duf) Disk Usage/Free Utility.
 * [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
