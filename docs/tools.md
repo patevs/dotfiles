@@ -32,6 +32,8 @@
 
 ## Web Development
 
+* [`budibase`](https://github.com/Budibase/budibase) Development platform that helps you build internal apps on your own infrastructure 🚀
+* [`og-image`](https://github.com/vercel/og-image) Open Graph Image as a Service - generate cards for Twitter, Facebook, Slack, etc.
 * [`responsively-app`](https://github.com/manojVivek/responsively-app) A modified browser that helps in responsive web development.
 
 ---
@@ -80,6 +82,7 @@
 * [`otseca`](https://github.com/trimstray/otseca) Open source security auditing tool to search and dump system configuration.
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
 * [`TheBashMenu`](https://github.com/HadrienAka/TheBashMenu) Easily create your own menu, which uses the directional keys.
+* [`tuxi`](https://github.com/Bugswriter/tuxi) Tuxi is a cli assistant. Get answers of your questions instantly.
 
 ---
 
@@ -152,6 +155,7 @@
 * [`brook`](https://github.com/txthinking/brook) Cross-platform(Linux/BSD/MacOS/Windows/Android/iOS) proxy/vpn software. Zero-Configuration.
 * [`bubbletea`](https://github.com/charmbracelet/bubbletea) A powerful little TUI framework.
 * [`chezmoi`](https://github.com/twpayne/chezmoi)
+* [`confused`](https://github.com/visma-prodsec/confused) Check for dependency confusion vulnerabilities in multiple package management systems.
 * [`croc`](https://github.com/schollz/croc) Easily and securely send things from one computer to another.
 * [`duf`](https://github.com/muesli/duf) Disk Usage/Free Utility.
 * [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
@@ -277,7 +281,7 @@
 
 ## React Tools
 
-- [`guppy`](https://github.com/joshwcomeau/guppy) 🐠A friendly application manager and task runner for ReactJS.
+* [`guppy`](https://github.com/joshwcomeau/guppy) 🐠A friendly application manager and task runner for ReactJS.
 
 ---
 
@@ -307,6 +311,7 @@
 * [`pastel`](https://github.com/sharkdp/pastel) A command-line tool to generate, analyze, convert and manipulate colors.
 * [`procs`](https://github.com/dalance/procs) A modern replacement for ps written in Rust.
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
+* [`reddsaver`](https://github.com/manojkarthick/reddsaver) CLI tool to download saved media from Reddit.
 * [`renamer`](https://github.com/adriangoransson/renamer) A command line tool to rename multiple files at once.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`RustScan`](https://github.com/RustScan/RustScan) Faster Nmap Scanning with Rust.
@@ -366,6 +371,7 @@
 * [`twinkle-tray`](https://github.com/xanderfrangos/twinkle-tray) Easily manage the brightness of your monitors in Windows from the system tray.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
 * [`WinDynamicDesktop`](https://github.com/t1m0thyj/WinDynamicDesktop) Port of macOS Mojave Dynamic Desktop feature to Windows 10.
+* [`winfetch`](https://github.com/M4cs/winfetch) 💻 Neofetch/Screenfetch Alternative Written in Golang.
 * [`WinQuickLook`](https://github.com/shibayan/WinQuickLook) "Quick Look" like Windows Explorer file viewer.
 * [`Wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
 
