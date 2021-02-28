@@ -16,7 +16,7 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "chalk": "^4.1.0",
-    "commitlint-config-gitmoji": "^2.2.1",
+    "commitlint-config-gitmoji": "^2.2.2",
     "husky": "^4.3.8",
     "np": "^7.4.0",
     "script-progress": "^1.0.5"
