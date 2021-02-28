@@ -368,6 +368,7 @@
 * [`twinkle-tray`](https://github.com/xanderfrangos/twinkle-tray) Easily manage the brightness of your monitors in Windows from the system tray.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
 * [`WinDynamicDesktop`](https://github.com/t1m0thyj/WinDynamicDesktop) Port of macOS Mojave Dynamic Desktop feature to Windows 10.
+* [`winfetch`](https://github.com/M4cs/winfetch) 💻 Neofetch/Screenfetch Alternative Written in Golang.
 * [`WinQuickLook`](https://github.com/shibayan/WinQuickLook) "Quick Look" like Windows Explorer file viewer.
 * [`Wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
 
