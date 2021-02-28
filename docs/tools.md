@@ -280,7 +280,7 @@
 
 ## React Tools
 
-- [`guppy`](https://github.com/joshwcomeau/guppy) 🐠A friendly application manager and task runner for ReactJS.
+* [`guppy`](https://github.com/joshwcomeau/guppy) 🐠A friendly application manager and task runner for ReactJS.
 
 ---
 
@@ -310,6 +310,7 @@
 * [`pastel`](https://github.com/sharkdp/pastel) A command-line tool to generate, analyze, convert and manipulate colors.
 * [`procs`](https://github.com/dalance/procs) A modern replacement for ps written in Rust.
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
+* [`reddsaver`](https://github.com/manojkarthick/reddsaver) CLI tool to download saved media from Reddit.
 * [`renamer`](https://github.com/adriangoransson/renamer) A command line tool to rename multiple files at once.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`RustScan`](https://github.com/RustScan/RustScan) Faster Nmap Scanning with Rust.
