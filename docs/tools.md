@@ -82,6 +82,7 @@
 * [`otseca`](https://github.com/trimstray/otseca) Open source security auditing tool to search and dump system configuration.
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
 * [`TheBashMenu`](https://github.com/HadrienAka/TheBashMenu) Easily create your own menu, which uses the directional keys.
+* [`tuxi`](https://github.com/Bugswriter/tuxi) Tuxi is a cli assistant. Get answers of your questions instantly.
 
 ---
 
