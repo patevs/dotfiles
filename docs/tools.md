@@ -32,6 +32,7 @@
 
 ## Web Development
 
+* [`budibase`](https://github.com/Budibase/budibase) Development platform that helps you build internal apps on your own infrastructure 🚀
 * [`responsively-app`](https://github.com/manojVivek/responsively-app) A modified browser that helps in responsive web development.
 
 ---
