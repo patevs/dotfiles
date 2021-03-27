@@ -336,6 +336,12 @@
 
 ---
 
+## Miscellaneous
+
+* [`social-analyzer`](https://github.com/qeeqbox/social-analyzer) API and Web App for analyzing & finding a person profile across 300+ social media websites.
+
+---
+
 ## Android Tools
 
 * [`hackerpro`](https://github.com/technicaldada/hackerpro) All in One Hacking Tool for Linux & Android (Termux). Make your linux environment into a Hacking Machine.
