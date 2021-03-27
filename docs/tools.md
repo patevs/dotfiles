@@ -189,6 +189,12 @@
 
 ---
 
+## Java Tools
+
+* [`windows-task-scheduler-api`](https://github.com/martinodutto/windows-task-scheduler-api) A Java bridge to work with the Windows task scheduler.
+
+---
+
 ## NodeJS Tools
 
 * [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
