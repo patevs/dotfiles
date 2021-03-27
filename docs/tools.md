@@ -333,6 +333,7 @@
 
 ## System Utilities
 
+* [`clipboard-cli`](https://github.com/sindresorhus/clipboard-cli) Access the system clipboard (copy/paste).
 * [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
 
 ---
