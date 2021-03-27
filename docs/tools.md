@@ -83,6 +83,7 @@
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
 * [`TheBashMenu`](https://github.com/HadrienAka/TheBashMenu) Easily create your own menu, which uses the directional keys.
 * [`tuxi`](https://github.com/Bugswriter/tuxi) Tuxi is a cli assistant. Get answers of your questions instantly.
+* [`ytfzf`](https://github.com/pystardust/ytfzf) Find and watch youtube videos from the terminal. (With out API)
 
 ---
 
