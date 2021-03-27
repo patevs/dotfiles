@@ -168,6 +168,7 @@
 * [`go-diagrams`](https://github.com/blushft/go-diagrams) Create beautiful system diagrams with Go.
 * [`gosivy`](https://github.com/nakabonne/gosivy) Real-time visualization tool for Go process metrics.
 * [`gotop`](https://github.com/xxxserxxx/gotop) A terminal based graphical activity monitor inspired by gtop and vtop.
+* [`gryffin`](https://github.com/yahoo/gryffin) Large scale web security scanning platform.
 * [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
 * [`k6`](https://github.com/loadimpact/k6) Modern load testing tool, using Go and JavaScript.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
