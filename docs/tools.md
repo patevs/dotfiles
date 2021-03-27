@@ -330,6 +330,12 @@
 
 ---
 
+## System Utilities
+
+* [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
+
+---
+
 ## Android Tools
 
 * [`hackerpro`](https://github.com/technicaldada/hackerpro) All in One Hacking Tool for Linux & Android (Termux). Make your linux environment into a Hacking Machine.
