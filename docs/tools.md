@@ -191,6 +191,7 @@
 
 ## Java Tools
 
+* [`jsoup`](https://github.com/jhy/jsoup) Java HTML parser, built for HTML editing, cleaning, scraping, and XSS safety.
 * [`windows-task-scheduler-api`](https://github.com/martinodutto/windows-task-scheduler-api) A Java bridge to work with the Windows task scheduler.
 
 ---
