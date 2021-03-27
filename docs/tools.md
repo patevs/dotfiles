@@ -83,6 +83,7 @@
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
 * [`TheBashMenu`](https://github.com/HadrienAka/TheBashMenu) Easily create your own menu, which uses the directional keys.
 * [`tuxi`](https://github.com/Bugswriter/tuxi) Tuxi is a cli assistant. Get answers of your questions instantly.
+* [`ytfzf`](https://github.com/pystardust/ytfzf) Find and watch youtube videos from the terminal. (With out API)
 
 ---
 
@@ -158,6 +159,7 @@
 * [`confused`](https://github.com/visma-prodsec/confused) Check for dependency confusion vulnerabilities in multiple package management systems.
 * [`croc`](https://github.com/schollz/croc) Easily and securely send things from one computer to another.
 * [`duf`](https://github.com/muesli/duf) Disk Usage/Free Utility.
+* [`find`](https://github.com/schollz/find) High-precision indoor positioning framework for most wifi-enabled devices.
 * [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
 * [`geek-life`](https://github.com/ajaxray/geek-life) CLI Task Manager for Geeks.
 * [`gg`](https://github.com/zombiezen/gg) Git with less typing.
@@ -167,6 +169,7 @@
 * [`go-diagrams`](https://github.com/blushft/go-diagrams) Create beautiful system diagrams with Go.
 * [`gosivy`](https://github.com/nakabonne/gosivy) Real-time visualization tool for Go process metrics.
 * [`gotop`](https://github.com/xxxserxxx/gotop) A terminal based graphical activity monitor inspired by gtop and vtop.
+* [`gryffin`](https://github.com/yahoo/gryffin) Large scale web security scanning platform.
 * [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
 * [`k6`](https://github.com/loadimpact/k6) Modern load testing tool, using Go and JavaScript.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
@@ -183,6 +186,13 @@
 * [`typer-go`](https://github.com/shilangyu/typer-go) Test your typing speed in the terminal!
 * [`uni`](https://github.com/arp242/uni) Query the Unicode database from the commandline, with good support for emojis.
 * [`wtf`](https://github.com/wtfutil/wtf) The personal information dashboard for your terminal.
+
+---
+
+## Java Tools
+
+* [`jsoup`](https://github.com/jhy/jsoup) Java HTML parser, built for HTML editing, cleaning, scraping, and XSS safety.
+* [`windows-task-scheduler-api`](https://github.com/martinodutto/windows-task-scheduler-api) A Java bridge to work with the Windows task scheduler.
 
 ---
 
@@ -272,6 +282,7 @@
 * [`thefuck`](https://github.com/nvbn/thefuck) Magnificent app which corrects your previous console command.
 * [`visidata`](https://github.com/saulpw/visidata) A terminal spreadsheet multitool for discovering and arranging data.
 * [`weather-generator`](https://github.com/federicociner/weather-generator) A random weather data generator written in Python.
+* [`whereami`](https://github.com/kootenpv/whereami) Uses WiFi signals 📶 and machine learning to predict where you are.
 * [`whoogle-search`](https://github.com/benbusby/whoogle-search) Self-hosted, ad-free, privacy-respecting Google metasearch engine.
 * [`wig`](https://github.com/jekyc/wig) WebApp Information Gatherer.
 * [`wttr.in`](https://github.com/chubin/wttr.in) The right way to check the weather.
@@ -309,6 +320,7 @@
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`pastel`](https://github.com/sharkdp/pastel) A command-line tool to generate, analyze, convert and manipulate colors.
+* [`pipes-rs`](https://github.com/CookieCoder15/pipes-rs) An over-engineered rewrite of pipes.sh in Rust.
 * [`procs`](https://github.com/dalance/procs) A modern replacement for ps written in Rust.
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`reddsaver`](https://github.com/manojkarthick/reddsaver) CLI tool to download saved media from Reddit.
@@ -324,6 +336,19 @@
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
 * [`ytop`](https://github.com/cjbassi/ytop)
 * [`zoxide`](https://github.com/ajeetdsouza/zoxide) A faster way to navigate your filesystem.
+
+---
+
+## System Utilities
+
+* [`clipboard-cli`](https://github.com/sindresorhus/clipboard-cli) Access the system clipboard (copy/paste).
+* [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
+
+---
+
+## Miscellaneous
+
+* [`social-analyzer`](https://github.com/qeeqbox/social-analyzer) API and Web App for analyzing & finding a person profile across 300+ social media websites.
 
 ---
 
@@ -367,6 +392,7 @@
 * [`RX-Explorer`](https://github.com/zhuxb711/RX-Explorer) Lightweight UWP Explorer.
 * [`sharpapp`](https://github.com/builtbybel/sharpapp) An app to minimize windows-10 telemetry and maximize privacy plus many more.
 * [`SidebarDiagnostics`](https://github.com/ArcadeRenegade/SidebarDiagnostics) A simple sidebar for Windows desktop that displays hardware diagnostic information.
+* [`SoundSwitch`](https://github.com/Belphemur/SoundSwitch) Switch your playback and recording devices using simple hotkeys.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
 * [`twinkle-tray`](https://github.com/xanderfrangos/twinkle-tray) Easily manage the brightness of your monitors in Windows from the system tray.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
