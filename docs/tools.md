@@ -320,6 +320,7 @@
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`pastel`](https://github.com/sharkdp/pastel) A command-line tool to generate, analyze, convert and manipulate colors.
+* [`pipes-rs`](https://github.com/CookieCoder15/pipes-rs) An over-engineered rewrite of pipes.sh in Rust.
 * [`procs`](https://github.com/dalance/procs) A modern replacement for ps written in Rust.
 * [`pueue`](https://github.com/Nukesor/pueue) Command-line task management tool for sequential and parallel execution of long-running tasks.
 * [`reddsaver`](https://github.com/manojkarthick/reddsaver) CLI tool to download saved media from Reddit.
