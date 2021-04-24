@@ -287,6 +287,7 @@
 * [`mltype`](https://github.com/jankrepl/mltype) Command line tool for improving typing skills (programmers friendly).
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
+* [`periodic-table-tui`](https://github.com/pryme-svg/periodic-table-tui) A periodic table for the command line.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`pipx`](https://github.com/pipxproject/pipx) Install and Run Python Applications in Isolated Environments.
 * [`poetry`](https://github.com/python-poetry/poetry) Python dependency management and packaging made easy.
