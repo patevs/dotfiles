@@ -363,6 +363,7 @@
 ## System Utilities
 
 * [`clipboard-cli`](https://github.com/sindresorhus/clipboard-cli) Access the system clipboard (copy/paste).
+* [`cpufetch`](https://github.com/Dr-Noob/cpufetch) Simple yet fancy CPU architecture fetching tool.
 * [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
 
 ---
