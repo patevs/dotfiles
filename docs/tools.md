@@ -334,6 +334,7 @@
 * [`renamer`](https://github.com/adriangoransson/renamer) A command line tool to rename multiple files at once.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`RustScan`](https://github.com/RustScan/RustScan) Faster Nmap Scanning with Rust.
+* [`rusty-krab-manager`](https://github.com/aryakaul/rusty-krab-manager) 🕰️ - time management tui in rust.
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
 * [`smag`](https://github.com/aantn/smag) Show Me A Graph - Command Line Graphing.
 * [`so`](https://github.com/samtay/so) A terminal interface for Stack Overflow.
