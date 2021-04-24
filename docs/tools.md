@@ -182,6 +182,7 @@
 * [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
 * [`k6`](https://github.com/loadimpact/k6) Modern load testing tool, using Go and JavaScript.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
+* [`lipgloss`](https://github.com/charmbracelet/lipgloss) Style definitions for nice terminal layouts 👄
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
 * [`pbgopy`](https://github.com/nakabonne/pbgopy) Copy and paste between devices.
