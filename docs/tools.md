@@ -116,6 +116,12 @@
 
 ---
 
+## Flutter Tools
+
+* [`fvm`](https://github.com/leoafarias/fvm) Flutter Version Management: A simple CLI to manage Flutter SDK versions.
+
+---
+
 ## Git & GitHub Tools
 
 * [`all-repos`](https://github.com/asottile/all-repos) Clone all your repositories and apply sweeping changes.
