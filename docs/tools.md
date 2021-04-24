@@ -226,6 +226,7 @@
 * [`rot.js`](https://github.com/ondras/rot.js) ROguelike Toolkit.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
+* [`kmdr-cli`](https://github.com/kommandr/kmdr-cli) 🧠 The CLI tool for learning commands from your terminal.
 * [`workbox`](https://github.com/GoogleChrome/workbox) JavaScript libraries for Progressive Web Apps.
 
 ---
