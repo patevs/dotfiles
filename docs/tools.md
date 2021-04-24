@@ -81,6 +81,7 @@
 * [`nmapAutomator`](https://github.com/21y4d/nmapAutomator) Background nmap scans.
 * [`otseca`](https://github.com/trimstray/otseca) Open source security auditing tool to search and dump system configuration.
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
+* [`termv`](https://github.com/Roshan-R/termv) A terminal iptv player written in bash.
 * [`TheBashMenu`](https://github.com/HadrienAka/TheBashMenu) Easily create your own menu, which uses the directional keys.
 * [`tuxi`](https://github.com/Bugswriter/tuxi) Tuxi is a cli assistant. Get answers of your questions instantly.
 * [`ytfzf`](https://github.com/pystardust/ytfzf) Find and watch youtube videos from the terminal. (With out API)
