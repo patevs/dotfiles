@@ -81,6 +81,7 @@
 * [`nmapAutomator`](https://github.com/21y4d/nmapAutomator) Background nmap scans.
 * [`otseca`](https://github.com/trimstray/otseca) Open source security auditing tool to search and dump system configuration.
 * [`shml`](https://github.com/odb/shml) SHell Markup Language | Style Framework for The Terminal.
+* [`termv`](https://github.com/Roshan-R/termv) A terminal iptv player written in bash.
 * [`TheBashMenu`](https://github.com/HadrienAka/TheBashMenu) Easily create your own menu, which uses the directional keys.
 * [`tuxi`](https://github.com/Bugswriter/tuxi) Tuxi is a cli assistant. Get answers of your questions instantly.
 * [`ytfzf`](https://github.com/pystardust/ytfzf) Find and watch youtube videos from the terminal. (With out API)
@@ -113,6 +114,13 @@
 * [`git-status-cli`](https://github.com/jerriep/git-status-cli)
 * [`Moniker`](https://github.com/alexmg/Moniker)
 * [`nyancat.cs`](https://github.com/nickvdyck/nyancat.cs)
+
+---
+
+## Flutter Tools
+
+* [`fvm`](https://github.com/leoafarias/fvm) Flutter Version Management: A simple CLI to manage Flutter SDK versions.
+* [`sidekick`](https://github.com/leoafarias/sidekick) A simple app to make Flutter development more delightful.
 
 ---
 
@@ -169,10 +177,12 @@
 * [`go-diagrams`](https://github.com/blushft/go-diagrams) Create beautiful system diagrams with Go.
 * [`gosivy`](https://github.com/nakabonne/gosivy) Real-time visualization tool for Go process metrics.
 * [`gotop`](https://github.com/xxxserxxx/gotop) A terminal based graphical activity monitor inspired by gtop and vtop.
+* [`grit`](https://github.com/climech/grit) A multitree-based personal task manager.
 * [`gryffin`](https://github.com/yahoo/gryffin) Large scale web security scanning platform.
 * [`httpstat`](https://github.com/davecheney/httpstat) It's like curl -v, with colours.
 * [`k6`](https://github.com/loadimpact/k6) Modern load testing tool, using Go and JavaScript.
 * [`lazygit`](https://github.com/jesseduffield/lazygit)
+* [`lipgloss`](https://github.com/charmbracelet/lipgloss) Style definitions for nice terminal layouts 👄
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
 * [`pbgopy`](https://github.com/nakabonne/pbgopy) Copy and paste between devices.
@@ -192,7 +202,14 @@
 ## Java Tools
 
 * [`jsoup`](https://github.com/jhy/jsoup) Java HTML parser, built for HTML editing, cleaning, scraping, and XSS safety.
+* [`progressbar`](https://github.com/ctongfei/progressbar) Terminal-based progress bar for Java / JVM.
 * [`windows-task-scheduler-api`](https://github.com/martinodutto/windows-task-scheduler-api) A Java bridge to work with the Windows task scheduler.
+
+---
+
+## Neovim Tools
+
+* [`LunarVim`](https://github.com/ChristianChiarulli/LunarVim) A Neovim config made with sane defaults.
 
 ---
 
@@ -209,11 +226,14 @@
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
 * [`handpick`](https://github.com/redaxmedia/handpick) Handpick conditional dependencies like a boss.
 * [`iron-node`](https://github.com/s-a/iron-node) Debug Node.js code with Chrome Developer Tools.
+* [`majestic`](https://github.com/Raathigesh/majestic) ⚡ Zero config GUI for Jest.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
+* [`nx`](https://github.com/nrwl/nx) Powerful, Extensible Dev Tools.
 * [`rot.js`](https://github.com/ondras/rot.js) ROguelike Toolkit.
 * [`sinopia`](https://github.com/rlidwka/sinopia) Private npm repository server.
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
+* [`kmdr-cli`](https://github.com/kommandr/kmdr-cli) 🧠 The CLI tool for learning commands from your terminal.
 * [`workbox`](https://github.com/GoogleChrome/workbox) JavaScript libraries for Progressive Web Apps.
 
 ---
@@ -267,6 +287,7 @@
 * [`mltype`](https://github.com/jankrepl/mltype) Command line tool for improving typing skills (programmers friendly).
 * [`ng`](https://github.com/cls1991/ng) Get password of the wifi you're connected, and your current ip address.
 * [`pef`](https://github.com/cls1991/pef) Enhancement for pip uninstall command, that it removes all dependencies of an uninstalled package.
+* [`periodic-table-tui`](https://github.com/pryme-svg/periodic-table-tui) A periodic table for the command line.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`pipx`](https://github.com/pipxproject/pipx) Install and Run Python Applications in Isolated Environments.
 * [`poetry`](https://github.com/python-poetry/poetry) Python dependency management and packaging made easy.
@@ -327,6 +348,7 @@
 * [`renamer`](https://github.com/adriangoransson/renamer) A command line tool to rename multiple files at once.
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
 * [`RustScan`](https://github.com/RustScan/RustScan) Faster Nmap Scanning with Rust.
+* [`rusty-krab-manager`](https://github.com/aryakaul/rusty-krab-manager) 🕰️ - time management tui in rust.
 * [`sd`](https://github.com/chmln/sd) Intuitive find & replace CLI (sed alternative).
 * [`smag`](https://github.com/aantn/smag) Show Me A Graph - Command Line Graphing.
 * [`so`](https://github.com/samtay/so) A terminal interface for Stack Overflow.
@@ -342,6 +364,7 @@
 ## System Utilities
 
 * [`clipboard-cli`](https://github.com/sindresorhus/clipboard-cli) Access the system clipboard (copy/paste).
+* [`cpufetch`](https://github.com/Dr-Noob/cpufetch) Simple yet fancy CPU architecture fetching tool.
 * [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
 
 ---
@@ -380,6 +403,7 @@
 * [`EverythingToolbar`](https://github.com/stnkl/EverythingToolbar) Everything integration for the Windows taskbar.
 * [`Files`](https://github.com/files-community/Files) A modern file explorer that pushes the boundaries of the platform.
 * [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
+* [`Fluent-Metro`](https://github.com/bonzibudd/Fluent-Metro) A modern, highly customizable Start menu skin for Open-Shell.
 * [`Fluent-Screen-Recorder`](https://github.com/MarcAnt01/Fluent-Screen-Recorder) A simple screen recorder built with UWP.
 * [`guinget`](https://github.com/DrewNaylor/guinget) GUI for Microsoft's Windows Package Manager (winget).
 * [`hain`](https://github.com/hainproject/hain) An 'alt+space' launcher for Windows, built with Electron.
