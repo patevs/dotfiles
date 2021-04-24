@@ -206,6 +206,12 @@
 
 ---
 
+## Neovim Tools
+
+* [`LunarVim`](https://github.com/ChristianChiarulli/LunarVim) A Neovim config made with sane defaults.
+
+---
+
 ## NodeJS Tools
 
 * [`boxen`](https://github.com/sindresorhus/boxen) Create boxes in the terminal.
