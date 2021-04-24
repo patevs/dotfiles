@@ -119,6 +119,7 @@
 ## Flutter Tools
 
 * [`fvm`](https://github.com/leoafarias/fvm) Flutter Version Management: A simple CLI to manage Flutter SDK versions.
+* [`sidekick`](https://github.com/leoafarias/sidekick) A simple app to make Flutter development more delightful.
 
 ---
 
