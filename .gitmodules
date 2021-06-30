@@ -1,6 +1,5 @@
-# ----------- #
-# .gitmodules #
-# ----------- #
+# .gitmodules
+# -----------
 
 [submodule "bash/bash-wakatime"]
 	path = bash/bash-wakatime
