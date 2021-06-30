@@ -4,18 +4,14 @@
  *  scripts/checkUpdates.js
  */
 
-/*************
- * * IMPORTS *
- *************/
+// * IMPORTS *
 
-const childProcess = require("child_process")
 const os = require("os")
+const childProcess = require("child_process")
 
 const chalk = require('chalk');
 
-/***************
- * * CONSTANTS *
- ***************/
+// * CONSTANTS *
 
 const log = console.log;
 
@@ -23,22 +19,18 @@ const log = console.log;
 const info = chalk.bgGreen.black;
 const err = chalk.bgRed.black;
 
-/***************
- * * FUNCTIONS *
- ***************/
+log(info("\n Checking for Outdated Node Modules \n"));
+
+// * FUNCTIONS *
 
 /**
  * Check for outdated node modules
  */
 
-log(info("\n Checking for Outdated Node Modules \n"));
-
 [
   // TODO: Check yarn.lock exists else run `npm outdated`
   { command: "yarn outdated & echo." },
-
   { command: "npx -q npm-check-updates --packageFile package.json & echo." },
-
   { command: "npx -q updates & echo." }
 ]
   .filter(({ onlyPlatforms }) => !onlyPlatforms || onlyPlatforms.includes(os.platform()))
