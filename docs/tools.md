@@ -327,6 +327,7 @@
 * [`battop`](https://github.com/svartalf/rust-battop) Interactive batteries viewer.
 * [`bottom`](https://github.com/ClementTsang/bottom) Yet another cross-platform graphical process/system monitor.
 * [`broot`](https://github.com/Canop/broot)
+* [`delta`](https://github.com/dandavison/delta) A viewer for git and diff output.
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dua-cli`](https://github.com/Byron/dua-cli) View disk space usage and delete unwanted data, fast.
