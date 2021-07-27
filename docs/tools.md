@@ -190,6 +190,7 @@
 * [`realize`](https://github.com/oxequa/realize) Task Runner which enhance your workflow by automating the most common tasks.
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`stonks`](https://github.com/ericm/stonks) CLI stock visualizer and tracker that displays realtime stocks in graph format.
+* [`syft`](https://github.com/anchore/syft) CLI tool and library for generating a Software Bill of Materials from container images and filesystems.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 * [`ticker`](https://github.com/achannarasappa/ticker) Terminal stock ticker with live updates and position tracking.
 * [`trivy`](https://github.com/aquasecurity/trivy) Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI.
