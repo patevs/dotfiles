@@ -61,6 +61,7 @@
 * [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Anonymize the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
 * [`bash-it`](https://github.com/Bash-it/bash-it) A community Bash framework.
 * [`bashtop`](https://github.com/aristocratos/bashtop) Linux/OSX/FreeBSD resource monitor.
+* [`check-my-net`](https://github.com/hakerdefo/check-my-net) Simple shell script to check & diagnose internet connectivity issues.
 * [`doesmyipsuck`](https://github.com/ialexs/doesmyispsucks) Speed test CLI with logging and graphs.
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
