@@ -187,6 +187,7 @@
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
 * [`pbgopy`](https://github.com/nakabonne/pbgopy) Copy and paste between devices.
+* ['plow'](https://github.com/six-ddc/plow) A high-performance HTTP benchmarking tool with real-time web UI and terminal displaying.
 * [`realize`](https://github.com/oxequa/realize) Task Runner which enhance your workflow by automating the most common tasks.
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`stonks`](https://github.com/ericm/stonks) CLI stock visualizer and tracker that displays realtime stocks in graph format.
