@@ -373,6 +373,7 @@
 
 ## Miscellaneous
 
+* [`n8n`](https://github.com/n8n-io/n8n) Extendable workflow automation tool. Easily automate tasks across different services.
 * [`social-analyzer`](https://github.com/qeeqbox/social-analyzer) API and Web App for analyzing & finding a person profile across 300+ social media websites.
 
 ---
