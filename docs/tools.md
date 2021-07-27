@@ -61,6 +61,7 @@
 * [`4nonimizer`](https://github.com/Hackplayers/4nonimizer) Anonymize the public IP used to browsing Internet, managing the connection to TOR network and to different VPNs providers (OpenVPN).
 * [`bash-it`](https://github.com/Bash-it/bash-it) A community Bash framework.
 * [`bashtop`](https://github.com/aristocratos/bashtop) Linux/OSX/FreeBSD resource monitor.
+* [`check-my-net`](https://github.com/hakerdefo/check-my-net) Simple shell script to check & diagnose internet connectivity issues.
 * [`doesmyipsuck`](https://github.com/ialexs/doesmyispsucks) Speed test CLI with logging and graphs.
 * [`emojify`](https://github.com/mrowa44/emojify) Emoji on the command line 😱
 * [`enhancd`](https://github.com/b4b4r07/enhancd) Next-generation cd command with your interactive filter.
@@ -167,6 +168,7 @@
 * [`confused`](https://github.com/visma-prodsec/confused) Check for dependency confusion vulnerabilities in multiple package management systems.
 * [`croc`](https://github.com/schollz/croc) Easily and securely send things from one computer to another.
 * [`duf`](https://github.com/muesli/duf) Disk Usage/Free Utility.
+* [`earthly`](https://github.com/earthly/earthly) Build automation for the container era.
 * [`find`](https://github.com/schollz/find) High-precision indoor positioning framework for most wifi-enabled devices.
 * [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
 * [`geek-life`](https://github.com/ajaxray/geek-life) CLI Task Manager for Geeks.
@@ -186,9 +188,11 @@
 * [`lsp`](https://github.com/dborzov/lsp)
 * [`mop`](https://github.com/mop-tracker/mop) Stock market tracker for hackers.
 * [`pbgopy`](https://github.com/nakabonne/pbgopy) Copy and paste between devices.
+* ['plow'](https://github.com/six-ddc/plow) A high-performance HTTP benchmarking tool with real-time web UI and terminal displaying.
 * [`realize`](https://github.com/oxequa/realize) Task Runner which enhance your workflow by automating the most common tasks.
 * [`s`](https://github.com/zquestz/s) Web search from the terminal. Opens in your browser.
 * [`stonks`](https://github.com/ericm/stonks) CLI stock visualizer and tracker that displays realtime stocks in graph format.
+* [`syft`](https://github.com/anchore/syft) CLI tool and library for generating a Software Bill of Materials from container images and filesystems.
 * [`thyme`](https://github.com/sourcegraph/thyme)
 * [`ticker`](https://github.com/achannarasappa/ticker) Terminal stock ticker with live updates and position tracking.
 * [`trivy`](https://github.com/aquasecurity/trivy) Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI.
@@ -224,9 +228,11 @@
 * [`Emoji-Log`](https://github.com/ahmadawais/Emoji-Log) An Emoji Git commit log messages spec standard.
 * [`forge-node-app`](https://github.com/irevenko/forge-node-app) 🛠📦🎊 Generate Node.js Boilerplate with Optional: TS/JS, Babel, Linter, Formatter, Tests, dotenv, nodemon, git.
 * [`gimbal`](https://github.com/ModusCreateOrg/gimbal) Web Performance Auditing tooling.
+* [`git-split-diffs`](https://github.com/banga/git-split-diffs) GitHub style split diffs in your terminal.
 * [`handpick`](https://github.com/redaxmedia/handpick) Handpick conditional dependencies like a boss.
 * [`iron-node`](https://github.com/s-a/iron-node) Debug Node.js code with Chrome Developer Tools.
 * [`majestic`](https://github.com/Raathigesh/majestic) ⚡ Zero config GUI for Jest.
+* [`newman`](https://github.com/postmanlabs/newman) Newman is a command-line collection runner for Postman.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`nx`](https://github.com/nrwl/nx) Powerful, Extensible Dev Tools.
@@ -235,6 +241,7 @@
 * [`treeify`](https://github.com/notatestuser/treeify) Pretty-print a javascript object as a tree.
 * [`kmdr-cli`](https://github.com/kommandr/kmdr-cli) 🧠 The CLI tool for learning commands from your terminal.
 * [`workbox`](https://github.com/GoogleChrome/workbox) JavaScript libraries for Progressive Web Apps.
+* [`zx`](https://github.com/google/zx) A tool for writing better scripts.
 
 ---
 
@@ -290,6 +297,7 @@
 * [`periodic-table-tui`](https://github.com/pryme-svg/periodic-table-tui) A periodic table for the command line.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`pipx`](https://github.com/pipxproject/pipx) Install and Run Python Applications in Isolated Environments.
+* [`pirate-get`](https://github.com/vikstrous/pirate-get) A command line interface for The Pirate Bay.
 * [`poetry`](https://github.com/python-poetry/poetry) Python dependency management and packaging made easy.
 * [`qutebrowser`](https://github.com/qutebrowser/qutebrowser) A keyboard-driven, vim-like browser based on PyQt5.
 * [`ranger`](https://github.com/ranger/ranger)
@@ -323,7 +331,9 @@
   * [`bat-extras`](https://github.com/eth-p/bat-extras)
 * [`battery`](https://github.com/svartalf/rust-battery) Cross-platform information about the notebook batteries.
 * [`battop`](https://github.com/svartalf/rust-battop) Interactive batteries viewer.
+* [`bottom`](https://github.com/ClementTsang/bottom) Yet another cross-platform graphical process/system monitor.
 * [`broot`](https://github.com/Canop/broot)
+* [`delta`](https://github.com/dandavison/delta) A viewer for git and diff output.
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dua-cli`](https://github.com/Byron/dua-cli) View disk space usage and delete unwanted data, fast.
@@ -365,12 +375,14 @@
 
 * [`clipboard-cli`](https://github.com/sindresorhus/clipboard-cli) Access the system clipboard (copy/paste).
 * [`cpufetch`](https://github.com/Dr-Noob/cpufetch) Simple yet fancy CPU architecture fetching tool.
+* [`ferdi`](https://github.com/getferdi/ferdi) 🧔🏽 Ferdi helps you organize how you use your favourite apps by combining them into one application.
 * [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
 
 ---
 
 ## Miscellaneous
 
+* [`n8n`](https://github.com/n8n-io/n8n) Extendable workflow automation tool. Easily automate tasks across different services.
 * [`social-analyzer`](https://github.com/qeeqbox/social-analyzer) API and Web App for analyzing & finding a person profile across 300+ social media websites.
 
 ---
@@ -405,6 +417,7 @@
 * [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
 * [`Fluent-Metro`](https://github.com/bonzibudd/Fluent-Metro) A modern, highly customizable Start menu skin for Open-Shell.
 * [`Fluent-Screen-Recorder`](https://github.com/MarcAnt01/Fluent-Screen-Recorder) A simple screen recorder built with UWP.
+* [`gsudo`](https://github.com/gerardog/gsudo) A Sudo for Windows - run elevated without spawning a new Console Host Window.
 * [`guinget`](https://github.com/DrewNaylor/guinget) GUI for Microsoft's Windows Package Manager (winget).
 * [`hain`](https://github.com/hainproject/hain) An 'alt+space' launcher for Windows, built with Electron.
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
@@ -419,6 +432,7 @@
 * [`SoundSwitch`](https://github.com/Belphemur/SoundSwitch) Switch your playback and recording devices using simple hotkeys.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
 * [`twinkle-tray`](https://github.com/xanderfrangos/twinkle-tray) Easily manage the brightness of your monitors in Windows from the system tray.
+* [`WhyNotWin11`](https://github.com/rcmaehl/WhyNotWin11) Detection Script to help identify why your PC isn't Windows 11 Release Ready.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
 * [`WinDynamicDesktop`](https://github.com/t1m0thyj/WinDynamicDesktop) Port of macOS Mojave Dynamic Desktop feature to Windows 10.
 * [`winfetch`](https://github.com/M4cs/winfetch) 💻 Neofetch/Screenfetch Alternative Written in Golang.
