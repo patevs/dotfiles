@@ -228,6 +228,7 @@
 * [`handpick`](https://github.com/redaxmedia/handpick) Handpick conditional dependencies like a boss.
 * [`iron-node`](https://github.com/s-a/iron-node) Debug Node.js code with Chrome Developer Tools.
 * [`majestic`](https://github.com/Raathigesh/majestic) ⚡ Zero config GUI for Jest.
+* [`newman`](https://github.com/postmanlabs/newman) Newman is a command-line collection runner for Postman.
 * [`nodist`](https://github.com/nullivex/nodist) Natural node.js and npm version manager for windows.
 * [`nps`](https://github.com/sezna/nps) All the benefits of npm scripts without the cost of a bloated package.json and limits of json.
 * [`nx`](https://github.com/nrwl/nx) Powerful, Extensible Dev Tools.
