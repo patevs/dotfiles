@@ -323,6 +323,7 @@
   * [`bat-extras`](https://github.com/eth-p/bat-extras)
 * [`battery`](https://github.com/svartalf/rust-battery) Cross-platform information about the notebook batteries.
 * [`battop`](https://github.com/svartalf/rust-battop) Interactive batteries viewer.
+* [`bottom`](https://github.com/ClementTsang/bottom) Yet another cross-platform graphical process/system monitor.
 * [`broot`](https://github.com/Canop/broot)
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
