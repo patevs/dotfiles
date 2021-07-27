@@ -421,6 +421,7 @@
 * [`SoundSwitch`](https://github.com/Belphemur/SoundSwitch) Switch your playback and recording devices using simple hotkeys.
 * [`switch-desktop`](https://github.com/ahkohd/switch-desktop) Switch between your favourite apps lightning fast.
 * [`twinkle-tray`](https://github.com/xanderfrangos/twinkle-tray) Easily manage the brightness of your monitors in Windows from the system tray.
+* [`WhyNotWin11`](https://github.com/rcmaehl/WhyNotWin11) Detection Script to help identify why your PC isn't Windows 11 Release Ready.
 * [`win-brute-logon`](https://github.com/DarkCoderSc/win-brute-logon) Crack any Microsoft Windows users password without any privilege (Guest account included)
 * [`WinDynamicDesktop`](https://github.com/t1m0thyj/WinDynamicDesktop) Port of macOS Mojave Dynamic Desktop feature to Windows 10.
 * [`winfetch`](https://github.com/M4cs/winfetch) 💻 Neofetch/Screenfetch Alternative Written in Golang.
