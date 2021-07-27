@@ -297,6 +297,7 @@
 * [`periodic-table-tui`](https://github.com/pryme-svg/periodic-table-tui) A periodic table for the command line.
 * [`pidcat-win10`](https://github.com/patevs/pidcat-win10)
 * [`pipx`](https://github.com/pipxproject/pipx) Install and Run Python Applications in Isolated Environments.
+* [`pirate-get`](https://github.com/vikstrous/pirate-get) A command line interface for The Pirate Bay.
 * [`poetry`](https://github.com/python-poetry/poetry) Python dependency management and packaging made easy.
 * [`qutebrowser`](https://github.com/qutebrowser/qutebrowser) A keyboard-driven, vim-like browser based on PyQt5.
 * [`ranger`](https://github.com/ranger/ranger)
