@@ -167,6 +167,7 @@
 * [`confused`](https://github.com/visma-prodsec/confused) Check for dependency confusion vulnerabilities in multiple package management systems.
 * [`croc`](https://github.com/schollz/croc) Easily and securely send things from one computer to another.
 * [`duf`](https://github.com/muesli/duf) Disk Usage/Free Utility.
+* [`earthly`](https://github.com/earthly/earthly) Build automation for the container era.
 * [`find`](https://github.com/schollz/find) High-precision indoor positioning framework for most wifi-enabled devices.
 * [`fzf`](https://github.com/junegunn/fzf) General-purpose command-line fuzzy finder.
 * [`geek-life`](https://github.com/ajaxray/geek-life) CLI Task Manager for Geeks.
