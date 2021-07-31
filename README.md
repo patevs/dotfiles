@@ -77,6 +77,8 @@ git submodule update --init --recursive
 ├── nvim                # Neovim profile
 │   └── init.vim
 ├── pulseaudio
+├── ruby                # Global RubyGems configuration
+│   └── .gemrc
 ├── scripts
 ├── wt                  # Windows Terminal profile
 │   └── profiles.json
@@ -84,7 +86,7 @@ git submodule update --init --recursive
 │   └── .zshrc
 ├── .editorconfig       # Editor configuration
 ├── .gitignore          # Git ignore rules
-├── .gitmodules         # Git modules
+├── .gitmodules         # Git submodules
 ├── .np-config.json     # NPM publish (np) configuration
 ├── LICENSE             # Project license
 ├── package.json        # NPM package configuration
