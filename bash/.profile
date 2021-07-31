@@ -1,6 +1,5 @@
-# ---------- #
-# ~/.profile #
-# ---------- #
+# ~/.profile
+# ----------
 
 # If running bash
 if [ -n "$BASH_VERSION" ]; then

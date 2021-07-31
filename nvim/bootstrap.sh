@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# ------------ #
-# bootstrap.sh #
-# ------------ #
+# bootstrap.sh
+# ------------
 
 # TODO: Check OS type and ensure running on linux
 

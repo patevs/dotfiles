@@ -1,12 +1,11 @@
 @ECHO OFF
 
-:: ------------------ ::
-:: bash/bootstrap.cmd ::
-:: ------------------ ::
+:: bash/bootstrap.cmd
+:: ------------------
 
 :: Batch script for easily setting up my bash configuration
-:: The script copies '.bash_aliases', '.bash_profile', '.bashrc', and '.profile'
-:: into my home directory.
+:: The script copies `.bash_aliases`, `.bash_profile`, `.bashrc`, and `.profile`
+:: into User home directory.
 
 :: CLS
 ECHO. & ECHO  [100;4m Bash Profile Bootstrap Script [0m & ECHO.
