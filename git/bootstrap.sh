@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# ------------ #
-# bootstrap.sh #
-# ------------ #
+# bootstrap.sh
+# ------------
 
 # Copy global git config files
 cp .gitconfig ~/.gitconfig

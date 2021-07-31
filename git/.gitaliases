@@ -1,6 +1,5 @@
-# ----------- #
-# .gitaliases #
-# ----------- #
+# .gitaliases
+# -----------
 
 [alias]
 	a = add --all

@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# ----------------- #
-# bash/bootstrap.sh #
-# ----------------- #
+# bash/bootstrap.sh
+# -----------------
 
 # Bash script for easily setting up my bash configuration
 # The script copies '.bash_aliases', '.bash_profile', '.bashrc', and '.profile'

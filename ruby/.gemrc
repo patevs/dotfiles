@@ -1,0 +1,4 @@
+# ~/.gemrc
+# --------
+
+gem: --env-shebang --no-document

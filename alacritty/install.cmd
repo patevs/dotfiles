@@ -1,8 +1,7 @@
 @ECHO OFF
 
-:: ---------------------------- ::
-:: config/alacritty/install.cmd ::
-:: ---------------------------- ::
+:: alacritty/install.cmd
+:: ---------------------
 
 :: Batch script for easily setting up my alacritty terminal configuration
 :: The script copies `alacritty.yml` to `%USERPROFILE%\APPDATA\Roaming\alacritty\alacritty.yml`
