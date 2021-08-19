@@ -335,6 +335,7 @@
 * [`bottom`](https://github.com/ClementTsang/bottom) Yet another cross-platform graphical process/system monitor.
 * [`broot`](https://github.com/Canop/broot)
 * [`delta`](https://github.com/dandavison/delta) A viewer for git and diff output.
+* [`dog`](https://github.com/ogham/dog) A command-line DNS client.
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dua-cli`](https://github.com/Byron/dua-cli) View disk space usage and delete unwanted data, fast.
