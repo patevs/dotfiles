@@ -324,6 +324,7 @@
 ## React Tools
 
 * [`guppy`](https://github.com/joshwcomeau/guppy) 🐠A friendly application manager and task runner for ReactJS.
+* [`react-blessed`](https://github.com/Yomguithereal/react-blessed) A react renderer for blessed.
 
 ---
 
