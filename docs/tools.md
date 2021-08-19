@@ -367,6 +367,7 @@
 * [`taskwarrior-tui`](https://github.com/kdheepak/taskwarrior-tui) A terminal user interface for taskwarrior.
 * [`tauri`](https://github.com/tauri-apps/tauri) Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
+* [`xh`](https://github.com/ducaale/xh) Friendly and fast tool for sending HTTP requests.
 * [`ytop`](https://github.com/cjbassi/ytop)
 * [`zoxide`](https://github.com/ajeetdsouza/zoxide) A faster way to navigate your filesystem.
 
