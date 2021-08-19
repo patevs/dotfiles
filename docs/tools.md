@@ -214,6 +214,7 @@
 ## Neovim Tools
 
 * [`LunarVim`](https://github.com/ChristianChiarulli/LunarVim) A Neovim config made with sane defaults.
+* [`NvChad`](https://github.com/NvChad/NvChad) An attempt to make neovim cli as functional as an IDE while being very beautiful , blazing fast.
 
 ---
 
