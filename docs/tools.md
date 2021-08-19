@@ -269,6 +269,7 @@
 
 ## Python Tools
 
+* [`3klCon`](https://github.com/eslam3kl/3klCon) Automation Recon tool which works with Large & Medium scopes.
 * [`AirShare`](https://github.com/KuroLabs/Airshare) Cross-platform content sharing in a local network.
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
