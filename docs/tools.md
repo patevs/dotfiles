@@ -214,6 +214,7 @@
 ## Neovim Tools
 
 * [`LunarVim`](https://github.com/ChristianChiarulli/LunarVim) A Neovim config made with sane defaults.
+* [`NvChad`](https://github.com/NvChad/NvChad) An attempt to make neovim cli as functional as an IDE while being very beautiful , blazing fast.
 
 ---
 
@@ -268,6 +269,7 @@
 
 ## Python Tools
 
+* [`3klCon`](https://github.com/eslam3kl/3klCon) Automation Recon tool which works with Large & Medium scopes.
 * [`AirShare`](https://github.com/KuroLabs/Airshare) Cross-platform content sharing in a local network.
 * [`algo`](https://github.com/trailofbits/algo) Set up a personal VPN in the cloud.
 * [`Buku`](https://github.com/jarun/Buku) Browser-independent bookmark manager.
@@ -322,6 +324,7 @@
 ## React Tools
 
 * [`guppy`](https://github.com/joshwcomeau/guppy) 🐠A friendly application manager and task runner for ReactJS.
+* [`react-blessed`](https://github.com/Yomguithereal/react-blessed) A react renderer for blessed.
 
 ---
 
@@ -334,6 +337,7 @@
 * [`bottom`](https://github.com/ClementTsang/bottom) Yet another cross-platform graphical process/system monitor.
 * [`broot`](https://github.com/Canop/broot)
 * [`delta`](https://github.com/dandavison/delta) A viewer for git and diff output.
+* [`dog`](https://github.com/ogham/dog) A command-line DNS client.
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dua-cli`](https://github.com/Byron/dua-cli) View disk space usage and delete unwanted data, fast.
@@ -366,6 +370,7 @@
 * [`taskwarrior-tui`](https://github.com/kdheepak/taskwarrior-tui) A terminal user interface for taskwarrior.
 * [`tauri`](https://github.com/tauri-apps/tauri) Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
 * [`tokei`](https://github.com/XAMPPRocky/tokei)
+* [`xh`](https://github.com/ducaale/xh) Friendly and fast tool for sending HTTP requests.
 * [`ytop`](https://github.com/cjbassi/ytop)
 * [`zoxide`](https://github.com/ajeetdsouza/zoxide) A faster way to navigate your filesystem.
 
@@ -382,6 +387,7 @@
 
 ## Miscellaneous
 
+* [`fishdraw`](https://github.com/LingDong-/fishdraw) Procedurally generated fish drawings.
 * [`n8n`](https://github.com/n8n-io/n8n) Extendable workflow automation tool. Easily automate tasks across different services.
 * [`social-analyzer`](https://github.com/qeeqbox/social-analyzer) API and Web App for analyzing & finding a person profile across 300+ social media websites.
 
