@@ -1,0 +1,7 @@
+# Configuration file for `s`
+#
+# https://github.com/zquestz/s
+
+{
+    "provider": "google"
+}
