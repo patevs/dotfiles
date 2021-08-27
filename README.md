@@ -79,7 +79,9 @@ git submodule update --init --recursive
 ├── pulseaudio
 ├── ruby                # Global RubyGems configuration
 │   └── .gemrc
-├── scripts
+├── s                   # Global s configuration
+│   └── config
+├── scripts             # Utility scripts
 ├── wt                  # Windows Terminal profile
 │   └── profiles.json
 ├── zsh                 # Zsh profile
