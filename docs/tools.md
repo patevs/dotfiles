@@ -388,6 +388,7 @@
 ## Miscellaneous
 
 * [`fishdraw`](https://github.com/LingDong-/fishdraw) Procedurally generated fish drawings.
+* [`htcap`](https://github.com/fcavallarin/htcap) Web application scanner able to crawl single page application (SPA) recursively by intercepting ajax calls and DOM changes.
 * [`n8n`](https://github.com/n8n-io/n8n) Extendable workflow automation tool. Easily automate tasks across different services.
 * [`social-analyzer`](https://github.com/qeeqbox/social-analyzer) API and Web App for analyzing & finding a person profile across 300+ social media websites.
 
