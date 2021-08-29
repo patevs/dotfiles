@@ -387,6 +387,7 @@
 
 ## Miscellaneous
 
+* [`domdig`](https://github.com/fcavallarin/domdig) DOM XSS scanner for Single Page Applications.
 * [`fishdraw`](https://github.com/LingDong-/fishdraw) Procedurally generated fish drawings.
 * [`htcap`](https://github.com/fcavallarin/htcap) Web application scanner able to crawl single page application (SPA) recursively by intercepting ajax calls and DOM changes.
 * [`n8n`](https://github.com/n8n-io/n8n) Extendable workflow automation tool. Easily automate tasks across different services.
