@@ -387,8 +387,11 @@
 
 ## Miscellaneous
 
+* [`domdig`](https://github.com/fcavallarin/domdig) DOM XSS scanner for Single Page Applications.
 * [`fishdraw`](https://github.com/LingDong-/fishdraw) Procedurally generated fish drawings.
+* [`htcap`](https://github.com/fcavallarin/htcap) Web application scanner able to crawl single page application (SPA) recursively by intercepting ajax calls and DOM changes.
 * [`n8n`](https://github.com/n8n-io/n8n) Extendable workflow automation tool. Easily automate tasks across different services.
+* [`pifuhd`](https://github.com/facebookresearch/pifuhd) High-Resolution 3D Human Digitization from A Single Image.
 * [`social-analyzer`](https://github.com/qeeqbox/social-analyzer) API and Web App for analyzing & finding a person profile across 300+ social media websites.
 
 ---
@@ -429,6 +432,7 @@
 * [`LightBulb`](https://github.com/Tyrrrz/LightBulb) Reduces eye strain by adjusting gamma based on the current time.
 * [`Microsoft-Activation-Scripts`](https://github.com/massgravel/Microsoft-Activation-Scripts) Scripts for activating Microsoft products using HWID / KMS38 / Online KMS activation methods
 * [`openhardwaremonitor`](https://github.com/openhardwaremonitor/openhardwaremonitor) Open Hardware Monitor.
+* [`PowerPing`](https://github.com/Killeroo/PowerPing) Advanced command-line ping tool.
 * [`quick-picture-viewer`](https://github.com/ModuleArt/quick-picture-viewer) Lightweight, versatile desktop image viewer.
 * [`rainmeter`](https://github.com/rainmeter/rainmeter) Desktop customization tool for Windows.
 * [`RepoZ`](https://github.com/awaescher/RepoZ) A zero-conf git repository hub for Windows and macOS with Windows Explorer & CLI-enhancements.
