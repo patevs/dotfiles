@@ -352,6 +352,7 @@
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`just`](https://github.com/casey/just) Just a command runner.
 * [`lsd`](https://github.com/Peltoche/lsd)
+* [`macchina`](https://github.com/Macchina-CLI/macchina) A system information frontend, with an (unhealthy) emphasis on performance.
 * [`monolith`](https://github.com/Y2Z/monolith)
 * [`onefetch`](https://github.com/o2sh/onefetch)
 * [`pastel`](https://github.com/sharkdp/pastel) A command-line tool to generate, analyze, convert and manipulate colors.
