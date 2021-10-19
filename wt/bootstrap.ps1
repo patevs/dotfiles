@@ -10,7 +10,7 @@
 .NOTES
     Version:        1.4
     Author:         PatEvs (github.com/patevs)
-    Last Modified:  19/10/2020 - October 19th 2021
+    Last Modified:  19/10/2021 - October 19th 2021
 
 .EXAMPLE
     .\bootstrap.ps1
