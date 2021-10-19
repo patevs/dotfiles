@@ -1,15 +1,17 @@
-/**********************
+/**
  * * wt/settings.json *
- **********************/
+ */
 
 // Profiles for use with Windows Terminal
 
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 
-// Default location:
+// Legacy location:
 //  "%HOME%\AppData\Local\Microsoft\Windows Terminal\settings.json"
 //  "%LOCALAPPDATA%\Microsoft\Windows Terminal\settings.json"
+// Default location:
+//  "%LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",

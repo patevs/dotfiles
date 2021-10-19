@@ -8,7 +8,7 @@
         "%LOCALAPPDATA%\Microsoft\Windows Terminal\settings.json"
 
 .NOTES
-    Version:        1.5
+    Version:        1.6
     Author:         PatEvs (github.com/patevs)
     Last Modified:  19/10/2021 - October 19th 2021
 
@@ -27,13 +27,14 @@ if (-Not ($Env:OS -eq "Windows_NT")) {
 # -------------------------------- [Declarations] ------------------------------- #
 
 #Script Version
-# $sScriptVersion = "1.5"
+# $sScriptVersion = "1.6"
 
 # Current working directory
 $cwd = Get-Location
 
 # Profile directory location
-$destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
+$destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"    # Legacy destination
+$wtSettingsDir = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
 
 # Icons directory location
 $iconsDir = "$destinationDir\icons"
@@ -47,6 +48,7 @@ $backgroundsDir = "$destinationDir\backgrounds"
 # ! $wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
 
 # Find Windows Terminal installation location.
+# Default: $env:LOCALAPPDATA\Microsoft\WindowsApps\wt.exe
 $wt = Invoke-Expression "where.exe wt.exe"
 
 # --------------------------------- [Execution] --------------------------------- #
@@ -66,8 +68,18 @@ Copy-Item -Path ./icons/*.ico -Destination $iconsDir
 Copy-Item -Path ./backgrounds/*.gif -Destination $backgroundsDir
 
 # Copy profile to destination
-Copy-Item -Path ./*.json -Destination $destinationDir
+Copy-Item -Path ./settings.json -Destination $destinationDir   # Legacy destination
+Copy-Item -Path ./settings.json -Destination $wtSettingsDir
 
+# Create Windows Terminal desktop shortcut.
+# https://stackoverflow.com/a/9701907/6346131
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$HOME\Desktop\Windows Terminal.lnk")
+$Shortcut.TargetPath = "$wt"
+$Shortcut.IconLocation = "$destinationDir\icons\windows-terminal.ico"
+$Shortcut.Save()
+
+# Clean-up variables
 Remove-Variable backgroundsDir
 Remove-Variable iconsDir
 Remove-Variable destinationDir
