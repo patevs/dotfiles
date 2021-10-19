@@ -43,9 +43,11 @@ $backgroundsDir = "$destinationDir\backgrounds"
 
 # Windows Terminal installation.
 # ! Note: This currently assumes Windows Terminal has been install with scoop
-# TODO: Locate install location when not using scoop
-$wtDir = Invoke-Expression "scoop prefix windows-terminal"
-$wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
+# ! $wtDir = Invoke-Expression "scoop prefix windows-terminal"
+# ! $wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
+
+# Find Windows Terminal installation location.
+$wt = Invoke-Expression "where.exe wt.exe"
 
 # --------------------------------- [Execution] --------------------------------- #
 
@@ -68,7 +70,7 @@ Remove-Variable iconsDir
 Remove-Variable destinationDir
 
 # Open New Windows Terminal
-Invoke-Expression "$wt"
+Invoke-Expression "$wt -d $cwd"
 
 # Close Old Windows Terminal
 # exit
