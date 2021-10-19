@@ -51,6 +51,8 @@ $wt = Invoke-Expression "where.exe wt.exe"
 
 # --------------------------------- [Execution] --------------------------------- #
 
+# TODO: Create desktop shortcut for Windows Terminal.
+
 # Create destination, icons, and backgrounds directories
 New-Item $destinationDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
 New-Item $iconsDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
