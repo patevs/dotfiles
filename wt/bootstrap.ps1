@@ -71,6 +71,15 @@ Copy-Item -Path ./backgrounds/*.gif -Destination $backgroundsDir
 Copy-Item -Path ./settings.json -Destination $destinationDir   # Legacy destination
 Copy-Item -Path ./settings.json -Destination $wtSettingsDir
 
+# Create Windows Terminal desktop shortcut.
+# https://stackoverflow.com/a/9701907/6346131
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$HOME\Desktop\Windows Terminal.lnk")
+$Shortcut.TargetPath = "$wt"
+$Shortcut.IconLocation = "$destinationDir\icons\windows-terminal.ico"
+$Shortcut.Save()
+
+# Clean-up variables
 Remove-Variable backgroundsDir
 Remove-Variable iconsDir
 Remove-Variable destinationDir
