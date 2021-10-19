@@ -8,9 +8,9 @@
         "%LOCALAPPDATA%\Microsoft\Windows Terminal\settings.json"
 
 .NOTES
-    Version:        1.3
+    Version:        1.4
     Author:         PatEvs (github.com/patevs)
-    Last Modified:  18/12/2020 - December 18th 2020
+    Last Modified:  19/10/2021 - October 19th 2021
 
 .EXAMPLE
     .\bootstrap.ps1
@@ -27,7 +27,7 @@ if (-Not ($Env:OS -eq "Windows_NT")) {
 # -------------------------------- [Declarations] ------------------------------- #
 
 #Script Version
-# $sScriptVersion = "1.3"
+# $sScriptVersion = "1.4"
 
 # Current working directory
 $cwd = Get-Location
@@ -43,11 +43,15 @@ $backgroundsDir = "$destinationDir\backgrounds"
 
 # Windows Terminal installation.
 # ! Note: This currently assumes Windows Terminal has been install with scoop
-# TODO: Locate install location when not using scoop
-$wtDir = Invoke-Expression "scoop prefix windows-terminal"
-$wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
+# ! $wtDir = Invoke-Expression "scoop prefix windows-terminal"
+# ! $wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
+
+# Find Windows Terminal installation location.
+$wt = Invoke-Expression "where.exe wt.exe"
 
 # --------------------------------- [Execution] --------------------------------- #
+
+# TODO: Create desktop shortcut for Windows Terminal.
 
 # Create destination, icons, and backgrounds directories
 New-Item $destinationDir -ItemType Directory -Force -ErrorAction SilentlyContinue # 2>&1 | Out-Null
@@ -68,7 +72,7 @@ Remove-Variable iconsDir
 Remove-Variable destinationDir
 
 # Open New Windows Terminal
-Invoke-Expression "$wt"
+Invoke-Expression "$wt -d $cwd"
 
 # Close Old Windows Terminal
 # exit
