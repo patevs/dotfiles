@@ -60,6 +60,7 @@ New-Item $backgroundsDir -ItemType Directory -Force -ErrorAction SilentlyContinu
 
 # Copy icons to destination
 Copy-Item -Path ./icons/*.png -Destination $iconsDir
+Copy-Item -Path ./icons/*.ico -Destination $iconsDir
 
 # Copy backgrounds to destination
 Copy-Item -Path ./backgrounds/*.gif -Destination $backgroundsDir
