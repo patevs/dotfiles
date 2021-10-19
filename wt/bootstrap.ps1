@@ -33,7 +33,8 @@ if (-Not ($Env:OS -eq "Windows_NT")) {
 $cwd = Get-Location
 
 # Profile directory location
-$destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"
+$destinationDir = "$env:LOCALAPPDATA\Microsoft\Windows Terminal"    # Legacy destination
+$wtSettingsDir = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
 
 # Icons directory location
 $iconsDir = "$destinationDir\icons"
@@ -47,6 +48,7 @@ $backgroundsDir = "$destinationDir\backgrounds"
 # ! $wt = $wtDir + "\WindowsTerminal.exe -d $cwd"
 
 # Find Windows Terminal installation location.
+# Default: $env:LOCALAPPDATA\Microsoft\WindowsApps\wt.exe
 $wt = Invoke-Expression "where.exe wt.exe"
 
 # --------------------------------- [Execution] --------------------------------- #
@@ -66,7 +68,8 @@ Copy-Item -Path ./icons/*.ico -Destination $iconsDir
 Copy-Item -Path ./backgrounds/*.gif -Destination $backgroundsDir
 
 # Copy profile to destination
-Copy-Item -Path ./*.json -Destination $destinationDir
+Copy-Item -Path ./settings.json -Destination $destinationDir   # Legacy destination
+Copy-Item -Path ./settings.json -Destination $wtSettingsDir
 
 Remove-Variable backgroundsDir
 Remove-Variable iconsDir
