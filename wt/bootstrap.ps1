@@ -8,7 +8,7 @@
         "%LOCALAPPDATA%\Microsoft\Windows Terminal\settings.json"
 
 .NOTES
-    Version:        1.4
+    Version:        1.5
     Author:         PatEvs (github.com/patevs)
     Last Modified:  19/10/2021 - October 19th 2021
 
@@ -27,7 +27,7 @@ if (-Not ($Env:OS -eq "Windows_NT")) {
 # -------------------------------- [Declarations] ------------------------------- #
 
 #Script Version
-# $sScriptVersion = "1.4"
+# $sScriptVersion = "1.5"
 
 # Current working directory
 $cwd = Get-Location
@@ -60,6 +60,7 @@ New-Item $backgroundsDir -ItemType Directory -Force -ErrorAction SilentlyContinu
 
 # Copy icons to destination
 Copy-Item -Path ./icons/*.png -Destination $iconsDir
+Copy-Item -Path ./icons/*.ico -Destination $iconsDir
 
 # Copy backgrounds to destination
 Copy-Item -Path ./backgrounds/*.gif -Destination $backgroundsDir
