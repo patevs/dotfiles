@@ -8,17 +8,22 @@
     "type": "git",
     "url": "git+https://github.com/patevs/dotfiles.git"
   },
+  "type": "module",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
   "scripts": {
     "postinstall": "script-progress node ./scripts/postInstall",
     "updates": "script-progress node ./scripts/checkUpdates",
     "release": "np"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.2.1",
-    "chalk": "^4.1.2",
+    "@commitlint/cli": "^16.0.2",
+    "@types/node": "^17.0.8",
+    "chalk": "^5.0.0",
     "commitlint-config-gitmoji": "^2.2.5",
     "husky": "^4.3.8",
-    "np": "^7.5.0",
+    "np": "^7.6.0",
     "script-progress": "^1.0.5"
   },
   "commitlint": {

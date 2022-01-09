@@ -1,18 +1,25 @@
 #!/usr/bin/env node
 
 /**
- *  scripts/postInstall.js
+ * *  scripts/postInstall.js
  */
 
-const childProcess = require("child_process")
-const os = require("os")
+// IMPORTS //
 
-const chalk = require('chalk');
-const log = console.log;
+import os from 'node:os'
+import childProcess from 'node:child_process'
+
+import chalk from 'chalk'
+
+// CONSTANTS //
+
+const { log } = console;
 
 // Text Styles
 const info = chalk.bgGreen.black;
 const err = chalk.bgRed.black;
+
+// FUNCTIONS //
 
 log(info("\n Running Post-Install Script \n"))
 
