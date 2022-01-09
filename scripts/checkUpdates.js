@@ -1,20 +1,18 @@
 #!/usr/bin/env node
 
 /**
- *  bin/checkUpdates.js
+ * * bin/checkUpdates.js
  */
 
-// *IMPORTS *
+// IMPORTS //
 
-// import fs from 'fs'
-const fs = require('fs')
-const os = require('os')
-const childProcess = require('child_process')
+import fs from 'node:fs'
+import os from 'node:os'
+import childProcess from 'node:child_process'
 
-// eslint-disable-next-line import/no-extraneous-dependencies
-const chalk = require('chalk')
+import chalk from 'chalk'
 
-// * CONSTANTS *
+// CONSTANTS //
 
 const { log } = console;
 
@@ -22,7 +20,7 @@ const { log } = console;
 const info = chalk.bgGreen.black;
 const err = chalk.bgRed.black;
 
-// * FUNCTIONS *
+// FUNCTIONS //
 
 /**
  * Check for outdated node modules
@@ -33,7 +31,7 @@ log(info("\n Checking for Outdated Node Modules \n"));
 // Commands to run
 const commands = [
   { command: "npx -q npm-check-updates --packageFile package.json & echo." },
-  // { command: "npx -q updates & echo." }
+  { command: "npx -q updates & echo." }
 ];
 
 if (fs.existsSync('yarn.lock')) {
