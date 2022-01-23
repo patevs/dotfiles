@@ -30,6 +30,10 @@
 * [`vnote`](https://github.com/tamlok/vnote) A note-taking application that knows programmers and Markdown better.
 * [`Zettlr`](https://github.com/Zettlr/Zettlr) A Markdown Editor for the 21st century.
 
+## API Development
+
+* [`insomnia`](https://github.com/Kong/insomnia) The open-source, cross-platform API client for GraphQL, REST, and gRPC.
+
 ## Web Development
 
 * [`budibase`](https://github.com/Budibase/budibase) Development platform that helps you build internal apps on your own infrastructure 🚀
@@ -260,6 +264,7 @@
 * [`PSModuleDevelopment`](https://github.com/PowershellFrameworkCollective/PSModuleDevelopment) Provides tools that help with module development.
 * [`PSScriptAnalyzer`](https://github.com/PowerShell/PSScriptAnalyzer) Static code checker for PowerShell modules and scripts.
 * [`TabExpansionPlusPlus`](https://github.com/lzybkr/TabExpansionPlusPlus) PowerShell module to improve tab expansion and Intellisense.
+* [`Terminal-Icons`](https://github.com/devblackops/Terminal-Icons) PowerShell module to show file and folder icons in the terminal.
 * [`tunic`](https://github.com/mikeslattery/tunic) Install Linux from a running Windows system, without need for a live USB.
 * [`winfetch`](https://github.com/lptstr/winfetch/)
 * [`z.lua`](https://github.com/skywind3000/z.lua) A command line tool which helps you navigate faster by learning your habits.
@@ -383,6 +388,7 @@
 * [`cpufetch`](https://github.com/Dr-Noob/cpufetch) Simple yet fancy CPU architecture fetching tool.
 * [`ferdi`](https://github.com/getferdi/ferdi) 🧔🏽 Ferdi helps you organize how you use your favourite apps by combining them into one application.
 * [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
+* [`Hitomi-Downloader`](https://github.com/KurtBestor/Hitomi-Downloader) 🍰 Desktop utility to download images/videos/music/text from various websites, and more.
 
 ---
 
@@ -422,6 +428,7 @@
 ## Windows Tools
 
 * [`concfg`](https://github.com/lukesampson/concfg) Import / export Windows console settings.
+* [`DevToys`](https://github.com/veler/DevToys) A Swiss Army knife for developers.
 * [`EverythingToolbar`](https://github.com/stnkl/EverythingToolbar) Everything integration for the Windows taskbar.
 * [`Files`](https://github.com/files-community/Files) A modern file explorer that pushes the boundaries of the platform.
 * [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
