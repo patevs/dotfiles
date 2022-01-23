@@ -427,6 +427,7 @@
 ## Windows Tools
 
 * [`concfg`](https://github.com/lukesampson/concfg) Import / export Windows console settings.
+* [`DevToys`](https://github.com/veler/DevToys) A Swiss Army knife for developers.
 * [`EverythingToolbar`](https://github.com/stnkl/EverythingToolbar) Everything integration for the Windows taskbar.
 * [`Files`](https://github.com/files-community/Files) A modern file explorer that pushes the boundaries of the platform.
 * [`Flow.Launcher`](https://github.com/Flow-Launcher/Flow.Launcher) Launch apps with greater control, search files effortlessly and extend features with community plugins.
