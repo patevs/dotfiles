@@ -383,6 +383,7 @@
 * [`cpufetch`](https://github.com/Dr-Noob/cpufetch) Simple yet fancy CPU architecture fetching tool.
 * [`ferdi`](https://github.com/getferdi/ferdi) 🧔🏽 Ferdi helps you organize how you use your favourite apps by combining them into one application.
 * [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
+* [`Hitomi-Downloader`](https://github.com/KurtBestor/Hitomi-Downloader) 🍰 Desktop utility to download images/videos/music/text from various websites, and more.
 
 ---
 
