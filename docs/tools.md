@@ -30,6 +30,10 @@
 * [`vnote`](https://github.com/tamlok/vnote) A note-taking application that knows programmers and Markdown better.
 * [`Zettlr`](https://github.com/Zettlr/Zettlr) A Markdown Editor for the 21st century.
 
+## API Development
+
+* [`insomnia`](https://github.com/Kong/insomnia) The open-source, cross-platform API client for GraphQL, REST, and gRPC.
+
 ## Web Development
 
 * [`budibase`](https://github.com/Budibase/budibase) Development platform that helps you build internal apps on your own infrastructure 🚀
