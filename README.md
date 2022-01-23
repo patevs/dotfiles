@@ -74,6 +74,8 @@ git submodule update --init --recursive
 ├── git                 # Global Git configuration
 │   ├── .gitconfig
 │   └── .gitignore
+├── lsd                 # LSD configuration
+│   └── config.yaml
 ├── nvim                # Neovim profile
 │   └── init.vim
 ├── pulseaudio
