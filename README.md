@@ -86,6 +86,7 @@ git submodule update --init --recursive
 ├── scripts             # Utility scripts
 ├── wt                  # Windows Terminal profile
 │   └── profiles.json
+├── yarn                # Global yarn configuration
 ├── zsh                 # Zsh profile
 │   └── .zshrc
 ├── .editorconfig       # Editor configuration
