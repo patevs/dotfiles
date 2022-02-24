@@ -12,6 +12,7 @@
 [core]
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=4 -RFSX
+    # pager = git-split-diffs --color | less -RFX
 	# pager = delta --plus-style="syntax #012800" --minus-style="normal #340001" --syntax-theme='Monokai Extended'
 	longpaths = true
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
