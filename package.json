@@ -18,7 +18,7 @@
     "release": "np"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.1",
+    "@commitlint/cli": "^16.2.3",
     "@types/node": "*",
     "chalk": "^5.0.1",
     "commitlint-config-gitmoji": "^2.2.5",
