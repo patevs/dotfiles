@@ -33,6 +33,7 @@
 ## API Development
 
 * [`insomnia`](https://github.com/Kong/insomnia) The open-source, cross-platform API client for GraphQL, REST, and gRPC.
+* [`pipedream`](https://github.com/PipedreamHQ/pipedream) Connect APIs, remarkably fast. Free for developers.
 
 ## Web Development
 
@@ -133,6 +134,7 @@
 
 * [`all-repos`](https://github.com/asottile/all-repos) Clone all your repositories and apply sweeping changes.
 * [`cli`](https://github.com/cli/cli) GitHub’s official command line tool.
+* [`difftastic`](https://github.com/Wilfred/difftastic) Difftastic is an experimental diff tool that compares files based on their syntax.
 * [`git-code-debt`](https://github.com/asottile/git-code-debt) A dashboard for monitoring code debt in a git repository.
 * [`git-workspace`](https://github.com/orf/git-workspace) Sync personal and work git repositories from multiple providers 🚀
 * [`GitVersion`](https://github.com/GitTools/GitVersion) Easy Semantic Versioning for projects using Git.
@@ -346,6 +348,7 @@
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dua-cli`](https://github.com/Byron/dua-cli) View disk space usage and delete unwanted data, fast.
+* [`dum`](https://github.com/egoist/dum) An npm scripts runner written in Rust.
 * [`dust`](https://github.com/bootandy/dust)
 * [`eva`](https://github.com/NerdyPepper/eva)
 * [`fd`](https://github.com/sharkdp/fd)
@@ -354,6 +357,7 @@
 * [`gitui`](https://github.com/extrawurst/gitui) Blazing fast terminal-ui for git written in rust.
 * [`gping`](https://github.com/orf/gping) Ping, but with a graph.
 * [`grex`](https://github.com/pemistahl/grex)
+* [`himalaya`](https://github.com/soywod/himalaya) Command-line interface for email management.
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`just`](https://github.com/casey/just) Just a command runner.
 * [`lsd`](https://github.com/Peltoche/lsd)
@@ -389,6 +393,7 @@
 * [`ferdi`](https://github.com/getferdi/ferdi) 🧔🏽 Ferdi helps you organize how you use your favourite apps by combining them into one application.
 * [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
 * [`Hitomi-Downloader`](https://github.com/KurtBestor/Hitomi-Downloader) 🍰 Desktop utility to download images/videos/music/text from various websites, and more.
+* [`licecap`](https://github.com/justinfrankel/licecap) LICEcap simple animated screen capture tool for Windows and OS X.
 
 ---
 
@@ -406,6 +411,7 @@
 ## Android Tools
 
 * [`hackerpro`](https://github.com/technicaldada/hackerpro) All in One Hacking Tool for Linux & Android (Termux). Make your linux environment into a Hacking Machine.
+* [`L3MON`](https://github.com/D3VL/L3MON) A cloud based remote android managment suite, powered by NodeJS.
 * [`Lazymux`](https://github.com/Gameye98/Lazymux) Termux tool installer.
 * [`oh-my-termux`](https://github.com/4679/oh-my-termux) Termux themes and styling.
 
