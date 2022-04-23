@@ -134,6 +134,7 @@
 
 * [`all-repos`](https://github.com/asottile/all-repos) Clone all your repositories and apply sweeping changes.
 * [`cli`](https://github.com/cli/cli) GitHub’s official command line tool.
+* [`difftastic`](https://github.com/Wilfred/difftastic) Difftastic is an experimental diff tool that compares files based on their syntax.
 * [`git-code-debt`](https://github.com/asottile/git-code-debt) A dashboard for monitoring code debt in a git repository.
 * [`git-workspace`](https://github.com/orf/git-workspace) Sync personal and work git repositories from multiple providers 🚀
 * [`GitVersion`](https://github.com/GitTools/GitVersion) Easy Semantic Versioning for projects using Git.
