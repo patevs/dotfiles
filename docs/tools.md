@@ -357,6 +357,7 @@
 * [`gitui`](https://github.com/extrawurst/gitui) Blazing fast terminal-ui for git written in rust.
 * [`gping`](https://github.com/orf/gping) Ping, but with a graph.
 * [`grex`](https://github.com/pemistahl/grex)
+* [`himalaya`](https://github.com/soywod/himalaya) Command-line interface for email management.
 * [`hyperfine`](https://github.com/sharkdp/hyperfine)
 * [`just`](https://github.com/casey/just) Just a command runner.
 * [`lsd`](https://github.com/Peltoche/lsd)
