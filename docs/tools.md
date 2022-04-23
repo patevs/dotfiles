@@ -348,6 +348,7 @@
 * [`dot`](https://github.com/ubnt-intrepid/dot)
 * [`dotenv-linter`](https://github.com/mgrachev/dotenv-linter)
 * [`dua-cli`](https://github.com/Byron/dua-cli) View disk space usage and delete unwanted data, fast.
+* [`dum`](https://github.com/egoist/dum) An npm scripts runner written in Rust.
 * [`dust`](https://github.com/bootandy/dust)
 * [`eva`](https://github.com/NerdyPepper/eva)
 * [`fd`](https://github.com/sharkdp/fd)
