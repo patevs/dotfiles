@@ -33,6 +33,7 @@
 ## API Development
 
 * [`insomnia`](https://github.com/Kong/insomnia) The open-source, cross-platform API client for GraphQL, REST, and gRPC.
+* [`pipedream`](https://github.com/PipedreamHQ/pipedream) Connect APIs, remarkably fast. Free for developers.
 
 ## Web Development
 
