@@ -393,6 +393,7 @@
 * [`ferdi`](https://github.com/getferdi/ferdi) 🧔🏽 Ferdi helps you organize how you use your favourite apps by combining them into one application.
 * [`flameshot`](https://github.com/flameshot-org/flameshot) Powerful yet simple to use screenshot software 🖥️ 📸
 * [`Hitomi-Downloader`](https://github.com/KurtBestor/Hitomi-Downloader) 🍰 Desktop utility to download images/videos/music/text from various websites, and more.
+* [`licecap`](https://github.com/justinfrankel/licecap) LICEcap simple animated screen capture tool for Windows and OS X.
 
 ---
 
