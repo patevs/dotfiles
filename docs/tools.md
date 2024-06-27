@@ -4,6 +4,12 @@
 
 ---
 
+## Automation Tools
+
+* [`AutoHotKey`](https://github.com/AutoHotkey/AutoHotkey) Macro-creation and automation-oriented scripting utility for Windows.
+
+---
+
 ## Documentation Tools
 
 * [`git-badges`](https://github.com/puf17640/git-badges) An API serving useful badges for your GitHub Profile README.
