@@ -7,6 +7,7 @@
 ## Automation Tools
 
 * [`AutoHotKey`](https://github.com/AutoHotkey/AutoHotkey) Macro-creation and automation-oriented scripting utility for Windows.
+* [`FlaUI`](https://github.com/FlaUI/FlaUI) UI automation library for .Net
 
 ---
 
