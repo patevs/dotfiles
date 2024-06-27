@@ -8,6 +8,7 @@
 
 * [`AutoHotKey`](https://github.com/AutoHotkey/AutoHotkey) Macro-creation and automation-oriented scripting utility for Windows.
 * [`FlaUI`](https://github.com/FlaUI/FlaUI) UI automation library for .Net
+* [`WinAppDriver`](https://github.com/microsoft/WinAppDriver) Service to support Selenium-like UI Test Automation on Windows Applications.
 
 ---
 
