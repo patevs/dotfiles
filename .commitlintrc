@@ -1,0 +1,7 @@
+{
+  "extends": ["gitmoji"],
+  "rules": {
+    "subject-empty": [0, "never"],
+    "type-empty": [0, "never"]
+  }
+}
