@@ -28,20 +28,5 @@
   },
   "resolutions": {
     "got": "^11.8.5"
-  },
-  "commitlint": {
-    "extends": [
-      "gitmoji"
-    ],
-    "rules": {
-      "type-empty": [
-        0,
-        "never"
-      ],
-      "subject-empty": [
-        0,
-        "never"
-      ]
-    }
   }
 }
