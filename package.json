@@ -25,8 +25,5 @@
     "husky": "^9.1.6",
     "np": "^7.6.2",
     "script-progress": "^1.0.5"
-  },
-  "resolutions": {
-    "got": "^11.8.5"
   }
 }
