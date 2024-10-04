@@ -16,7 +16,7 @@
     "prepare": "husky",
     "postinstall": "script-progress node ./scripts/postInstall",
     "updates": "script-progress node ./scripts/checkUpdates",
-    "release": "np"
+    "release": "npx np"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
