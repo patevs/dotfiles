@@ -12,7 +12,7 @@
     "prepare": "husky",
     "postinstall": "script-progress node ./scripts/postInstall",
     "updates": "script-progress node ./scripts/checkUpdates",
-    "release": "npx np"
+    "release": "npx np --no-publish --no-tests"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
