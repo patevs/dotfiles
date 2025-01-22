@@ -15,6 +15,7 @@
 ## Command Line Tools
 
 * [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
+* [`trippy`](https://github.com/fujiapple852/trippy) Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues.
 
 ---
 
