@@ -12,6 +12,12 @@
 
 ---
 
+## Command Line Tools
+
+* [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
+
+---
+
 ## Documentation Tools
 
 * [`git-badges`](https://github.com/puf17640/git-badges) An API serving useful badges for your GitHub Profile README.
