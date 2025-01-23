@@ -422,6 +422,7 @@
 * [`n8n`](https://github.com/n8n-io/n8n) Extendable workflow automation tool. Easily automate tasks across different services.
 * [`pifuhd`](https://github.com/facebookresearch/pifuhd) High-Resolution 3D Human Digitization from A Single Image.
 * [`social-analyzer`](https://github.com/qeeqbox/social-analyzer) API and Web App for analyzing & finding a person profile across 300+ social media websites.
+* [`wealthfolio`](https://github.com/afadil/wealthfolio) A Beautiful Private and Secure Desktop Investment Tracking Application.
 
 ---
 
