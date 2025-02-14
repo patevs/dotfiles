@@ -14,6 +14,7 @@
 
 ## Command Line Tools
 
+* [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
 * [`trippy`](https://github.com/fujiapple852/trippy) Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues.
 * [`yazi`](https://github.com/sxyazi/yazi) 💥 Blazing fast terminal file manager written in Rust, based on async I/O.
