@@ -4,6 +4,7 @@
   "description": "PatEvs' personal system configuration dotfiles",
   "author": "PatEvs",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/patevs/dotfiles.git"
