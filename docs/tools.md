@@ -486,4 +486,8 @@
 * [`WinQuickLook`](https://github.com/shibayan/WinQuickLook) "Quick Look" like Windows Explorer file viewer.
 * [`Wox`](https://github.com/Wox-launcher/Wox) Launcher for Windows, an alternative to Alfred and Launchy.
 
+[](.)
+
+* [`Text-Grab`](https://github.com/TheJoeFin/Text-Grab) Use OCR in Windows quickly and easily with Text Grab.
+
 ---
