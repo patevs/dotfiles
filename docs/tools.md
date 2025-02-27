@@ -16,6 +16,7 @@
 
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`bandwhich`](https://github.com/imsnif/bandwhich) Terminal bandwidth utilization tool.
+* [`glow`](https://github.com/charmbracelet/glow) Markdown reader for the terminal with a TUI and encrypted cloud stash
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
 * [`sqruff`](https://github.com/quarylabs/sqruff) Fast SQL formatter/linter.
 * [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
