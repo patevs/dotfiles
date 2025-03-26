@@ -20,6 +20,7 @@
 * [`glow`](https://github.com/charmbracelet/glow) Markdown reader for the terminal with a TUI and encrypted cloud stash
 * [`lazysql`](https://github.com/jorgerojas26/lazysql) A cross-platform TUI database management tool written in Go.
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
+* [`monolith`](https://github.com/Y2Z/monolith) ⬛️ CLI tool and library for saving complete web pages as a single HTML file.
 * [`sqruff`](https://github.com/quarylabs/sqruff) Fast SQL formatter/linter.
 * [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
 * [`trashy`](https://github.com/oberblastmeister/trashy) a cli system trash manager, alternative to rm and trash-cli.
