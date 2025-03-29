@@ -22,6 +22,7 @@
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
 * [`monolith`](https://github.com/Y2Z/monolith) ⬛️ CLI tool and library for saving complete web pages as a single HTML file.
 * [`sqruff`](https://github.com/quarylabs/sqruff) Fast SQL formatter/linter.
+* [`superfile`](https://github.com/yorukot/superfile) Pretty fancy and modern terminal file manager.
 * [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
 * [`trashy`](https://github.com/oberblastmeister/trashy) a cli system trash manager, alternative to rm and trash-cli.
 * [`trippy`](https://github.com/fujiapple852/trippy) Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues.
