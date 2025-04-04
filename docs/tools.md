@@ -26,6 +26,7 @@
 * [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
 * [`trashy`](https://github.com/oberblastmeister/trashy) a cli system trash manager, alternative to rm and trash-cli.
 * [`trippy`](https://github.com/fujiapple852/trippy) Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues.
+* [`xan`](https://github.com/medialab/xan) Command line tool that can be used to process CSV files directly from the shell.
 * [`yazi`](https://github.com/sxyazi/yazi) 💥 Blazing fast terminal file manager written in Rust, based on async I/O.
 
 ---
