@@ -21,6 +21,7 @@
 * [`lazysql`](https://github.com/jorgerojas26/lazysql) A cross-platform TUI database management tool written in Go.
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
 * [`monolith`](https://github.com/Y2Z/monolith) ⬛️ CLI tool and library for saving complete web pages as a single HTML file.
+* [`ouch`](https://github.com/ouch-org/ouch) Painless compression and decompression in the terminal.
 * [`sqruff`](https://github.com/quarylabs/sqruff) Fast SQL formatter/linter.
 * [`superfile`](https://github.com/yorukot/superfile) Pretty fancy and modern terminal file manager.
 * [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
