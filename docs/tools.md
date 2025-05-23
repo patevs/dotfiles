@@ -30,6 +30,10 @@
 * [`xan`](https://github.com/medialab/xan) Command line tool that can be used to process CSV files directly from the shell.
 * [`yazi`](https://github.com/sxyazi/yazi) 💥 Blazing fast terminal file manager written in Rust, based on async I/O.
 
+[](.)
+
+* [`app-icon-badge`](https://github.com/obytes/app-icon-badge) 🧩 Expo plugin/library to add badges for your app icon: banner, ribbon, and fully customizable.
+
 ---
 
 ## Documentation Tools
