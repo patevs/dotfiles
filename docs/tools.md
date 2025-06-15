@@ -34,6 +34,7 @@
 
 * [`app-icon-badge`](https://github.com/obytes/app-icon-badge) 🧩 Expo plugin/library to add badges for your app icon: banner, ribbon, and fully customizable.
 * [`icon-banner`](https://github.com/ebelair/icon-banner) 🚩 IconBanner adds custom nice-looking banners over your mobile app icons 📱
+* [`mobicon-cli`](https://github.com/SamVerschueren/mobicon-cli) Mobile icon generator.
 
 ---
 
