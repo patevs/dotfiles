@@ -39,6 +39,12 @@
 
 ---
 
+## Mobile Development Tools
+
+* [`escrcpy`](https://github.com/viarotel-org/escrcpy) 📱 Display and control your Android device graphically with scrcpy.
+
+---
+
 ## Documentation Tools
 
 * [`git-badges`](https://github.com/puf17640/git-badges) An API serving useful badges for your GitHub Profile README.
