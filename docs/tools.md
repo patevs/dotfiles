@@ -16,6 +16,7 @@
 
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`bandwhich`](https://github.com/imsnif/bandwhich) Terminal bandwidth utilization tool.
+* [`gemini-cli`](https://github.com/google-gemini/gemini-cli) An open-source AI agent that brings the power of Gemini directly into your terminal.
 * [`ghq`](https://github.com/x-motemen/ghq) Manage remote repository clones.
 * [`glow`](https://github.com/charmbracelet/glow) Markdown reader for the terminal with a TUI and encrypted cloud stash
 * [`lazysql`](https://github.com/jorgerojas26/lazysql) A cross-platform TUI database management tool written in Go.
