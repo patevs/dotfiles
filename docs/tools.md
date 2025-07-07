@@ -14,6 +14,7 @@
 
 ## Command Line Tools
 
+* [`aichat`](https://github.com/sigoden/aichat) All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, and more.
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`bandwhich`](https://github.com/imsnif/bandwhich) Terminal bandwidth utilization tool.
 * [`gemini-cli`](https://github.com/google-gemini/gemini-cli) An open-source AI agent that brings the power of Gemini directly into your terminal.
