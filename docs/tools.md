@@ -17,6 +17,7 @@
 * [`aichat`](https://github.com/sigoden/aichat) All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, and more.
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`bandwhich`](https://github.com/imsnif/bandwhich) Terminal bandwidth utilization tool.
+* [`fend`](https://github.com/printfn/fend) Arbitrary-precision unit-aware calculator.
 * [`gemini-cli`](https://github.com/google-gemini/gemini-cli) An open-source AI agent that brings the power of Gemini directly into your terminal.
 * [`ghq`](https://github.com/x-motemen/ghq) Manage remote repository clones.
 * [`glow`](https://github.com/charmbracelet/glow) Markdown reader for the terminal with a TUI and encrypted cloud stash
