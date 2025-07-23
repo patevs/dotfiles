@@ -24,6 +24,7 @@
 * [`lazysql`](https://github.com/jorgerojas26/lazysql) A cross-platform TUI database management tool written in Go.
 * [`lsix`](https://github.com/hackerb9/lsix) Like "ls", but for images. Shows thumbnails in terminal using sixel graphics.
 * [`markdown-pdf`](https://github.com/alanshaw/markdown-pdf) 📄 Markdown to PDF converter
+* [`md-to-pdf`](https://github.com/simonhaenisch/md-to-pdf) Hackable CLI tool for converting Markdown files to PDF using Node.js and headless Chrome.
 * [`monolith`](https://github.com/Y2Z/monolith) ⬛️ CLI tool and library for saving complete web pages as a single HTML file.
 * [`ouch`](https://github.com/ouch-org/ouch) Painless compression and decompression in the terminal.
 * [`sqruff`](https://github.com/quarylabs/sqruff) Fast SQL formatter/linter.
