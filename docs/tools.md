@@ -26,6 +26,7 @@
 * [`markdown-pdf`](https://github.com/alanshaw/markdown-pdf) 📄 Markdown to PDF converter
 * [`md-to-pdf`](https://github.com/simonhaenisch/md-to-pdf) Hackable CLI tool for converting Markdown files to PDF using Node.js and headless Chrome.
 * [`monolith`](https://github.com/Y2Z/monolith) ⬛️ CLI tool and library for saving complete web pages as a single HTML file.
+* [`opencode`](https://github.com/sst/opencode) AI coding agent, built for the terminal.
 * [`ouch`](https://github.com/ouch-org/ouch) Painless compression and decompression in the terminal.
 * [`sqruff`](https://github.com/quarylabs/sqruff) Fast SQL formatter/linter.
 * [`superfile`](https://github.com/yorukot/superfile) Pretty fancy and modern terminal file manager.
