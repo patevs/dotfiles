@@ -32,6 +32,7 @@
 * [`superfile`](https://github.com/yorukot/superfile) Pretty fancy and modern terminal file manager.
 * [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
 * [`termusic`](https://github.com/tramhao/termusic) Music Player TUI written in Rust.
+* [`tracker`](https://github.com/ShenMian/tracker) A terminal-based real-time satellite tracking and orbit prediction application.
 * [`trashy`](https://github.com/oberblastmeister/trashy) a cli system trash manager, alternative to rm and trash-cli.
 * [`trippy`](https://github.com/fujiapple852/trippy) Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues.
 * [`xan`](https://github.com/medialab/xan) Command line tool that can be used to process CSV files directly from the shell.
