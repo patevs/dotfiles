@@ -15,6 +15,7 @@
 ## Command Line Tools
 
 * [`aichat`](https://github.com/sigoden/aichat) All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, and more.
+* [`air`](https://github.com/air-verse/air) ☁️ Live reload for Go apps.
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`bandwhich`](https://github.com/imsnif/bandwhich) Terminal bandwidth utilization tool.
 * [`fend`](https://github.com/printfn/fend) Arbitrary-precision unit-aware calculator.
