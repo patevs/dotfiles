@@ -18,6 +18,7 @@
 * [`air`](https://github.com/air-verse/air) ☁️ Live reload for Go apps.
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`bandwhich`](https://github.com/imsnif/bandwhich) Terminal bandwidth utilization tool.
+* [`copilot-cli`](https://github.com/github/copilot-cli) GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal.
 * [`fend`](https://github.com/printfn/fend) Arbitrary-precision unit-aware calculator.
 * [`gemini-cli`](https://github.com/google-gemini/gemini-cli) An open-source AI agent that brings the power of Gemini directly into your terminal.
 * [`ghq`](https://github.com/x-motemen/ghq) Manage remote repository clones.
