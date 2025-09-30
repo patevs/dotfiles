@@ -14,6 +14,7 @@
 
 ## Command Line Tools
 
+* [`agg`](https://github.com/asciinema/agg) agg is a command-line tool for generating animated GIF files from terminal session recordings.
 * [`aichat`](https://github.com/sigoden/aichat) All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, and more.
 * [`air`](https://github.com/air-verse/air) ☁️ Live reload for Go apps.
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
