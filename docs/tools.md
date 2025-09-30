@@ -32,6 +32,7 @@
 * [`monolith`](https://github.com/Y2Z/monolith) ⬛️ CLI tool and library for saving complete web pages as a single HTML file.
 * [`opencode`](https://github.com/sst/opencode) AI coding agent, built for the terminal.
 * [`ouch`](https://github.com/ouch-org/ouch) Painless compression and decompression in the terminal.
+* [`posh_codex`](https://github.com/rishi255/posh_codex) PowerShell module that enables you to use AI Code Completion in the command line.
 * [`sqruff`](https://github.com/quarylabs/sqruff) Fast SQL formatter/linter.
 * [`superfile`](https://github.com/yorukot/superfile) Pretty fancy and modern terminal file manager.
 * [`television`](https://github.com/alexpasmantier/television) Blazing fast general purpose fuzzy finder TUI.
