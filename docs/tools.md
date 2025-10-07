@@ -30,6 +30,7 @@
 * [`markdown-pdf`](https://github.com/alanshaw/markdown-pdf) 📄 Markdown to PDF converter
 * [`md-to-pdf`](https://github.com/simonhaenisch/md-to-pdf) Hackable CLI tool for converting Markdown files to PDF using Node.js and headless Chrome.
 * [`monolith`](https://github.com/Y2Z/monolith) ⬛️ CLI tool and library for saving complete web pages as a single HTML file.
+* [`multi-gitter`](https://github.com/lindell/multi-gitter) multi-gitter allows you to make changes in multiple repositories simultaneously.
 * [`opencode`](https://github.com/sst/opencode) AI coding agent, built for the terminal.
 * [`ouch`](https://github.com/ouch-org/ouch) Painless compression and decompression in the terminal.
 * [`posh_codex`](https://github.com/rishi255/posh_codex) PowerShell module that enables you to use AI Code Completion in the command line.
