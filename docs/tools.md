@@ -19,6 +19,7 @@
 * [`air`](https://github.com/air-verse/air) ☁️ Live reload for Go apps.
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`bandwhich`](https://github.com/imsnif/bandwhich) Terminal bandwidth utilization tool.
+* [`base64`](https://di-mgt.com.au/base64-for-windows.html) Conversion of the Linux base64 utility to encode/decode data and print to standard output.
 * [`copilot-cli`](https://github.com/github/copilot-cli) GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal.
 * [`fastfetch`](https://github.com/fastfetch-cli/fastfetch) A maintained, feature-rich and performance oriented, neofetch like system information tool.
 * [`fend`](https://github.com/printfn/fend) Arbitrary-precision unit-aware calculator.
