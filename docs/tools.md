@@ -20,6 +20,7 @@
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`bandwhich`](https://github.com/imsnif/bandwhich) Terminal bandwidth utilization tool.
 * [`base64`](https://di-mgt.com.au/base64-for-windows.html) Conversion of the Linux base64 utility to encode/decode data and print to standard output.
+* [`btop4win`](https://github.com/aristocratos/btop4win) Resource monitor that shows usage and stats for processor, memory, disks, network, processes and services.
 * [`copilot-cli`](https://github.com/github/copilot-cli) GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal.
 * [`fastfetch`](https://github.com/fastfetch-cli/fastfetch) A maintained, feature-rich and performance oriented, neofetch like system information tool.
 * [`fend`](https://github.com/printfn/fend) Arbitrary-precision unit-aware calculator.
