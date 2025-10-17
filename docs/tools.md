@@ -528,4 +528,8 @@
 * [`Simple-Icon-File-Maker`](https://github.com/TheJoeFin/Simple-Icon-File-Maker) Create .ico files quickly and at different scales.
 * [`Text-Grab`](https://github.com/TheJoeFin/Text-Grab) Use OCR in Windows quickly and easily with Text Grab.
 
+[](.)
+
+* [`winutil`](https://github.com/ChrisTitusTech/winutil) Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates
+
 ---
