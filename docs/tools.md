@@ -533,6 +533,7 @@
 
 [](.)
 
+* [`RunCat365`](https://github.com/Kyome22/RunCat365) A cute running cat animation on your Windows taskbar.
 * [`winutil`](https://github.com/ChrisTitusTech/winutil) Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates
 
 ---
