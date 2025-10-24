@@ -35,6 +35,7 @@
 * [`multi-gitter`](https://github.com/lindell/multi-gitter) multi-gitter allows you to make changes in multiple repositories simultaneously.
 * [`opencode`](https://github.com/sst/opencode) AI coding agent, built for the terminal.
 * [`ouch`](https://github.com/ouch-org/ouch) Painless compression and decompression in the terminal.
+* [`pastel`](https://github.com/sharkdp/pastel) A command-line tool to generate, analyze, convert and manipulate colors.
 * [`posh_codex`](https://github.com/rishi255/posh_codex) PowerShell module that enables you to use AI Code Completion in the command line.
 * [`qsv`](https://github.com/dathere/qsv) A command line CSV data-wrangling toolkit.
 * [`sqruff`](https://github.com/quarylabs/sqruff) Fast SQL formatter/linter.
