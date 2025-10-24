@@ -17,6 +17,7 @@
 * [`agg`](https://github.com/asciinema/agg) agg is a command-line tool for generating animated GIF files from terminal session recordings.
 * [`aichat`](https://github.com/sigoden/aichat) All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, and more.
 * [`air`](https://github.com/air-verse/air) ☁️ Live reload for Go apps.
+* [`asciiquarium`](https://github.com/cmatsuoka/asciiquarium) Enjoy the mysteries of the sea from the safety of your own terminal!
 * [`ATAC`](https://github.com/Julien-cpsn/ATAC) A simple API client (postman like) in your terminal.
 * [`bandwhich`](https://github.com/imsnif/bandwhich) Terminal bandwidth utilization tool.
 * [`base64`](https://di-mgt.com.au/base64-for-windows.html) Conversion of the Linux base64 utility to encode/decode data and print to standard output.
