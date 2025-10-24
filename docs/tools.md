@@ -38,6 +38,7 @@
 * [`ouch`](https://github.com/ouch-org/ouch) Painless compression and decompression in the terminal.
 * [`pastel`](https://github.com/sharkdp/pastel) A command-line tool to generate, analyze, convert and manipulate colors.
 * [`posh_codex`](https://github.com/rishi255/posh_codex) PowerShell module that enables you to use AI Code Completion in the command line.
+* [`PSCompletions`](https://github.com/abgox/PSCompletions) A completion manager for better and simpler use completions in PowerShell.
 * [`qsv`](https://github.com/dathere/qsv) A command line CSV data-wrangling toolkit.
 * [`sqruff`](https://github.com/quarylabs/sqruff) Fast SQL formatter/linter.
 * [`superfile`](https://github.com/yorukot/superfile) Pretty fancy and modern terminal file manager.
