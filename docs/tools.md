@@ -23,6 +23,7 @@
 * [`base64`](https://di-mgt.com.au/base64-for-windows.html) Conversion of the Linux base64 utility to encode/decode data and print to standard output.
 * [`btop4win`](https://github.com/aristocratos/btop4win) Resource monitor that shows usage and stats for processor, memory, disks, network, processes and services.
 * [`copilot-cli`](https://github.com/github/copilot-cli) GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal.
+* [`git-graph`](https://github.com/mlange-42/git-graph) Command line tool to show clear git graphs arranged for your branching model.
 * [`fastfetch`](https://github.com/fastfetch-cli/fastfetch) A maintained, feature-rich and performance oriented, neofetch like system information tool.
 * [`fend`](https://github.com/printfn/fend) Arbitrary-precision unit-aware calculator.
 * [`gemini-cli`](https://github.com/google-gemini/gemini-cli) An open-source AI agent that brings the power of Gemini directly into your terminal.
