@@ -4,6 +4,12 @@
 
 ---
 
+## AI Tools
+
+* [`Everywhere`](https://github.com/DearVa/Everywhere) A context-aware AI assistant for your desktop. Ready to respond intelligently, seamlessly integrating multiple LLMs and MCP tools.
+
+---
+
 ## Automation Tools
 
 * [`AutoHotKey`](https://github.com/AutoHotkey/AutoHotkey) Macro-creation and automation-oriented scripting utility for Windows.
